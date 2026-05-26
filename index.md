@@ -6,10 +6,5 @@ Welcome to my digital garden.
 
 ## Explore
 
-- [[Roadmap]]
-- [[Stage 1 — Foundations]]
-- [[Stage 2 — Linking & Structure]]
-- [[Stage 3 — Core Plugins]]
-- [[Stage 4 — Community Plugins]]
-- [[Stage 5 — Workflows & Methodology]]
-- [[Stage 6 — Advanced Automation]]
+- [[Introduction to Obsidian/Roadmap|Introduction to Obsidian]]
+- [[AI-LLM/Agentic Programming with LangGraph/Documentation/Index|AI-LLM]]
