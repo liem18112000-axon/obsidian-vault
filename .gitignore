@@ -3,3 +3,6 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
+
+# vault-graph enrichment cache (regenerated; not source of truth)
+.vault-graph/
