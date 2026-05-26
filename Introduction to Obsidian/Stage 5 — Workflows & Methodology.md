@@ -59,4 +59,4 @@ Method needs rhythm. A minimal review schedule:
 - **Per-sprint / monthly** — archive finished projects, prune orphans (the graph from [[Stage 2 — Linking & Structure]] shows them)
 ---
 **End-of-stage checkmark:** you can say which bucket any new note belongs in without hesitating, your inbox gets processed (not just accumulated), and you've run at least one weekly review. The method is working when the vault feels lighter over time instead of heavier.
-That leaves Stage 6 — sync across devices, publishing, and AI integration, which ties back into your Ollama and Claude/MCP work for actually _querying_ this knowledge base.
+That leaves [[Stage 6 — Advanced Automation]] — sync across devices, publishing, and AI integration, which ties back into your Ollama and Claude/MCP work for actually _querying_ this knowledge base.
