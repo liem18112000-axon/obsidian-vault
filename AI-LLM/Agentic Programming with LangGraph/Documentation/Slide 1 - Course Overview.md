@@ -1,8 +1,12 @@
 ---
 title: "Slide 1: Course Overview"
 slide_number: 1
-tags: [lecture/slide, langgraph, agentic-programming]
+tags:
+  - lecture/slide
+  - langgraph
+  - agentic-programming
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+excalidraw-plugin: parsed
 ---
 
 # Slide 1: Course Overview
