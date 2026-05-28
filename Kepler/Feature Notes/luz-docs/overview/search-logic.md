@@ -1,6 +1,6 @@
 # luz-docs Search Logic
 
-> **Reading order** below. Each section is its own note in [[search-logic/]] so you can jump around without scrolling a 600-line file. Every jargon term links to a plain-English definition in [[search-logic/Glossary|Glossary]].
+> **Reading order** below. Each section is its own note in the sibling `search-logic/` folder, so you can jump around without scrolling a 600-line file. Every jargon term links to a plain-English definition in [[search-logic/Glossary|Glossary]].
 
 Reference: [KLARA Documents Search (Confluence)](https://axonivy.atlassian.net/wiki/spaces/LUZ/pages/20525677912/KLARA+Documents+Search)
 

@@ -10,18 +10,18 @@ All operators are defined in `JsonStoreQueryExpression.java`. The conversion to 
 
 | Operator | One-liner | Section |
 |----------|-----------|---------|
-| `term` | Exact match on one value | [[#`term` — Exact match]] |
-| `terms` | Match any value in a list | [[#`terms` — Match any of multiple values]] |
-| `exists` | Field is present and not empty | [[#`exists` — Field has a value]] |
-| `not` | Invert another operator | [[#`not` — Negate a sub-query]] |
-| `regexp` | Pattern match on text | [[#`regexp` — Regular expression match]] |
-| `range` | Numeric/date comparisons | [[#`range` — Numeric or date comparison]] |
-| `and` | All sub-queries must match | [[#`and` — Logical AND]] |
-| `or` | At least one sub-query must match | [[#`or` — Logical OR]] |
+| `term` | Exact match on one value | [[#term — Exact match]] |
+| `terms` | Match any value in a list | [[#terms — Match any of multiple values]] |
+| `exists` | Field is present and not empty | [[#exists — Field has a value]] |
+| `not` | Invert another operator | [[#not — Negate a sub-query]] |
+| `regexp` | Pattern match on text | [[#regexp — Regular expression match]] |
+| `range` | Numeric/date comparisons | [[#range — Numeric or date comparison]] |
+| `and` | All sub-queries must match | [[#and — Logical AND]] |
+| `or` | At least one sub-query must match | [[#or — Logical OR]] |
 
 ---
 
-## `term` — Exact match
+## term — Exact match
 
 Matches documents where a field equals exactly one given value. Case-sensitive — `"Mobiliar"` ≠ `"mobiliar"`.
 
@@ -44,7 +44,7 @@ Matches documents where a field equals exactly one given value. Case-sensitive �
 
 ---
 
-## `terms` — Match any of multiple values
+## terms — Match any of multiple values
 
 Matches if a field equals **any** value in a list. Unlike `term`, this one is **case-insensitive** — values are matched as [[Glossary#Regex (Regular Expression)|regex]]es with the `i` option.
 
@@ -76,7 +76,7 @@ Values are validated as 24-character hex strings (must look like a real [[Glossa
 
 ---
 
-## `exists` — Field has a value
+## exists — Field has a value
 
 Two flavours: regular field vs. [[Glossary#Array (in MongoDB)|array]] field.
 
@@ -110,7 +110,7 @@ MongoDB:
 
 ---
 
-## `not` — Negate a sub-query
+## not — Negate a sub-query
 
 Wraps any other operator and inverts the match. Negation is supported for: `term`, `terms`, `exists`, `regexp`, `range`. (Not `and`/`or` — you'd typically restructure those instead.)
 
@@ -177,7 +177,7 @@ MongoDB: `{ "$expr": { "$not": { "$and": [ { "$gte": [ ... ] }, { "$lte": [ ... 
 
 ---
 
-## `regexp` — Regular expression match
+## regexp — Regular expression match
 
 Match text by [[Glossary#Regex (Regular Expression)|pattern]]. Always [[Glossary#Case-insensitive|case-insensitive]].
 
@@ -219,7 +219,7 @@ MongoDB: `{ "status": { "$regex": "^active$", "$options": "i" } }`
 
 ---
 
-## `range` — Numeric or date comparison
+## range — Numeric or date comparison
 
 Compare a numeric or date field against bounds. Uses MongoDB [[Glossary#`$expr`|`$expr`]] with typed comparisons; date strings are auto-parsed via `$dateFromString`.
 
@@ -298,7 +298,7 @@ MongoDB (no `$dateFromString` needed — it's already a number):
 
 ---
 
-## `and` — Logical AND
+## and — Logical AND
 
 Match if **all** sub-queries match.
 
@@ -323,7 +323,7 @@ MongoDB: `{ "$and": [ ... ] }`
 
 ---
 
-## `or` — Logical OR
+## or — Logical OR
 
 Match if **at least one** sub-query matches.
 

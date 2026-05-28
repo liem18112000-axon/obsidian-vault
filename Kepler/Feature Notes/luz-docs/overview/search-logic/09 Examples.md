@@ -14,7 +14,7 @@ Copy-pasteable recipes. Each example below is the request body for `POST /{tenan
 }
 ```
 
-Uses [[04 Query Operators#`term` — Exact match|term]] for exact case-sensitive match. If you need case-insensitive, use [[04 Query Operators#`terms` — Match any of multiple values|terms]] with a one-element list.
+Uses [[04 Query Operators#term — Exact match|term]] for exact case-sensitive match. If you need case-insensitive, use [[04 Query Operators#terms — Match any of multiple values|terms]] with a one-element list.
 
 ---
 
@@ -24,7 +24,7 @@ Uses [[04 Query Operators#`term` — Exact match|term]] for exact case-sensitive
 { "query": { "exists": { "field": "folderIds", "type": "array" } } }
 ```
 
-`type: "array"` because `folderIds` is a list — see [[04 Query Operators#`exists` — Field has a value|exists for arrays]].
+`type: "array"` because `folderIds` is a list — see [[04 Query Operators#exists — Field has a value|exists for arrays]].
 
 ---
 
@@ -165,7 +165,7 @@ Good for list views where you only show 3 columns. See [[03 Request Body]].
 }
 ```
 
-ISO-8601 strings; the server parses them via `$dateFromString`. See [[04 Query Operators#`range` — Numeric or date comparison|range]].
+ISO-8601 strings; the server parses them via `$dateFromString`. See [[04 Query Operators#range — Numeric or date comparison|range]].
 
 ---
 
