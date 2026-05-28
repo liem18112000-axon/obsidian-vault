@@ -1,0 +1,90 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw-jetbrains-plugin",
+  "elements": [
+    {
+      "type": "text", "id": "s5title", "x": 60, "y": 24, "width": 800, "height": 28,
+      "text": "Why each sub-count seeks instead of scans: _id as 2nd index key", "originalText": "Why each sub-count seeks instead of scans: _id as 2nd index key",
+      "fontSize": 22, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150001, "version": 1, "versionNonce": 150002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "s5key", "x": 60, "y": 80, "width": 420, "height": 50,
+      "strokeColor": "#22c55e", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150003, "version": 1, "versionNonce": 150004, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "s5keylbl", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 2}
+    },
+    {
+      "type": "text", "id": "s5keylbl", "x": 75, "y": 95, "width": 390, "height": 20,
+      "text": "{ _effectiveSecurityClassCodes:1, _id:1 }", "originalText": "{ _effectiveSecurityClassCodes:1, _id:1 }",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#22c55e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150005, "version": 1, "versionNonce": 150006, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "s5key", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "s5step1", "x": 60, "y": 170, "width": 230, "height": 80,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150007, "version": 1, "versionNonce": 150008, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "s5step1lbl", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "s5step1lbl", "x": 75, "y": 190, "width": 200, "height": 40,
+      "text": "1. seek to matching\nsecurity interval", "originalText": "1. seek to matching\nsecurity interval",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150009, "version": 1, "versionNonce": 150010, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "s5step1", "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "s5arrow", "x": 300, "y": 210, "width": 100, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150011, "version": 1, "versionNonce": 150012, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [100, 0]], "startBinding": {"elementId": "s5step1", "focus": 0, "gap": 6}, "endBinding": {"elementId": "s5step2", "focus": 0, "gap": 6}, "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle", "id": "s5step2", "x": 410, "y": 170, "width": 250, "height": 80,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150013, "version": 1, "versionNonce": 150014, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "s5step2lbl", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "s5step2lbl", "x": 425, "y": 190, "width": 220, "height": 40,
+      "text": "2. bound _id slice\ninside that interval", "originalText": "2. bound _id slice\ninside that interval",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#047857", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150015, "version": 1, "versionNonce": 150016, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "s5step2", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "s5bad", "x": 60, "y": 290, "width": 880, "height": 56,
+      "strokeColor": "#b91c1c", "backgroundColor": "#fee2e2", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150017, "version": 1, "versionNonce": 150018, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "s5badlbl", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "s5badlbl", "x": 75, "y": 305, "width": 850, "height": 25,
+      "text": "no _id in index → range becomes a post-filter: scan all matches, discard the rest (K× work)", "originalText": "no _id in index → range becomes a post-filter: scan all matches, discard the rest (K× work)",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#b91c1c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 150019, "version": 1, "versionNonce": 150020, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "s5bad", "lineHeight": 1.25
+    }
+  ],
+  "appState": { "gridSize": null, "viewBackgroundColor": "#ffffff" },
+  "files": {}
+}
