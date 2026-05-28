@@ -3,6 +3,7 @@
 > Split one slow count into **K concurrent sub-counts over disjoint `_id` ranges**, then sum the partials.
 
 [[divide-conquer-count.excalidraw|Overall Diagram]]
+[[divide-conquer-count.png|Raw Picture]]
 
 ---
 
