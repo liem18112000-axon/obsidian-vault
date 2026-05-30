@@ -1,7 +1,127 @@
 ---
-title: Agentic Programming with LangGraph - Index
-tags: [lecture/index, langgraph, agentic-programming, MOC]
+ai_hash: 178040719703f0c1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Agentic Programming with LangGraph
+- LangGraph
+- AI Trip Planner repo
+- AI Trip Planner
+- Developers
+- Lecture
+- Slide 1 - Course Overview
+- Slide 2 - What is Agentic Programming
+- Slide 3 - The AI Trip Planner - Your Real-World Blueprint
+- Slide 4 - LangGraph Core Concepts
+- Slide 5 - The Trip Planner Architecture
+- Slide 6 - State Definition in LangGraph
+- Slide 7 - Building the Graph
+- Slide 8 - Defining Edges (Control Flow)
+- Slide 9 - Writing Node Functions
+- Slide 10 - The Profile Node (Personalization)
+- Slide 11 - The Research Node (Tool Integration)
+- Slide 12 - The Weather Node (Real-Time Data)
+- Slide 13 - The Budget Node (Business Logic)
+- Slide 14 - The Aggregate Node (Data Fusion)
+- Slide 15 - The Journey Plan Node (LLM Synthesis)
+- Slide 16 - Running the Graph
+- Slide 17 - Observability & Tracing
+- Slide 18 - Error Handling in Agentic Systems
+- Slide 19 - Conditional Branching (Advanced)
+- Slide 20 - State Mutations & Immutability
+- Slide 21 - Testing Agentic Systems
+- Slide 22 - Integration Testing
+- Slide 23 - Synthetic Evaluation
+- Slide 24 - Streaming Responses
+- Slide 25 - Deployment Patterns
+- Slide 26 - Working with Custom Tools
+- Slide 27 - Tool Calling in Nodes
+- Slide 28 - Prompt Engineering for Agentic Systems
+- Slide 29 - Meta-LLM (Provider Agnosticism)
+- Slide 30 - RAG (Retrieval-Augmented Generation)
+- Slide 31 - Scaling & Performance Optimization
+- Slide 32 - Common Pitfalls & How to Avoid Them
+- Slide 33 - Debugging Techniques
+- Slide 34 - Building Adaptive Agents
+- Slide 35 - Agent Chains vs Agent Trees
+- Slide 36 - Tool Composition
+- Slide 37 - Monitoring & Alerting
+- Slide 38 - Real-World Adaptations
+- Slide 39 - Future of Agentic Programming
+- Slide 40 - Recap & Your Turn
+- Appendix A - Full Trip Planner Code Example
+- Appendix B - Quick Reference
+- Foundations
+- Architecture & state
+- Building the graph
+- Node deep-dives
+- Tools
+- Production concerns
+- Testing & debugging
+- Advanced patterns
+- Wrap-up
+- Course Overview
+- What is Agentic Programming
+- Core Concepts
+- The Trip Planner Architecture
+- State Definition
+- Control Flow
+- Writing Node Functions
+- Profile Node
+- Personalization
+- Research Node
+- Tool Integration
+- Weather Node
+- Real-Time Data
+- Budget Node
+- Business Logic
+- Aggregate Node
+- Data Fusion
+- Journey Plan Node
+- LLM Synthesis
+- Running the Graph
+- Observability
+- Tracing
+- Error Handling
+- Agentic Systems
+- Conditional Branching
+- State Mutations
+- Immutability
+- Testing Agentic Systems
+- Integration Testing
+- Synthetic Evaluation
+- Streaming Responses
+- Deployment Patterns
+- Custom Tools
+- Tool Calling
+- Nodes
+- Prompt Engineering
+- Meta-LLM
+- Provider Agnosticism
+- RAG
+- Retrieval-Augmented Generation
+- Scaling
+- Performance Optimization
+- Common Pitfalls
+- Debugging Techniques
+- Adaptive Agents
+- Agent Chains
+- Agent Trees
+- Tool Composition
+- Monitoring
+- Alerting
+- Real-World Adaptations
+- Future of Agentic Programming
+- Recap
+- Full Trip Planner Code Example
+- Quick Reference
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/index
+- langgraph
+- agentic-programming
+- MOC
+title: Agentic Programming with LangGraph - Index
 ---
 
 # 🤖 Agentic Programming with LangGraph
@@ -69,3 +189,168 @@ Useful entry points if you don't want to read linearly:
 - **Testing & debugging** — [[Slide 21 - Testing Agentic Systems]], [[Slide 22 - Integration Testing]], [[Slide 23 - Synthetic Evaluation]], [[Slide 33 - Debugging Techniques]]
 - **Advanced patterns** — [[Slide 19 - Conditional Branching (Advanced)]], [[Slide 24 - Streaming Responses]], [[Slide 29 - Meta-LLM (Provider Agnosticism)]], [[Slide 30 - RAG (Retrieval-Augmented Generation)]], [[Slide 34 - Building Adaptive Agents]], [[Slide 35 - Agent Chains vs Agent Trees]], [[Slide 39 - Future of Agentic Programming]]
 - **Wrap-up** — [[Slide 38 - Real-World Adaptations]], [[Slide 40 - Recap & Your Turn]], [[Appendix A - Full Trip Planner Code Example]], [[Appendix B - Quick Reference]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 1 - Course Overview]]
+- [[Slide 40 - Recap & Your Turn]]
+- [[Slide 3 - The AI Trip Planner - Your Real-World Blueprint]]
+- [[Appendix B - Quick Reference]]
+- [[Slide 7 - Building the Graph]]
+
+**Relations:**
+- Agentic Programming with LangGraph — *is_a* — Lecture
+- Agentic Programming with LangGraph — *is_for* — Developers
+- Agentic Programming with LangGraph — *adapted_from* — AI Trip Planner repo
+- AI Trip Planner repo — *url* — https://github.com/trieu/ai-trip-planner
+- AI Trip Planner — *is_a* — Real-World Blueprint
+- Agentic Programming with LangGraph — *uses* — LangGraph
+- Agentic Programming with LangGraph — *has_part* — Slide 1 - Course Overview
+- Agentic Programming with LangGraph — *has_part* — Slide 2 - What is Agentic Programming
+- Agentic Programming with LangGraph — *has_part* — Slide 3 - The AI Trip Planner - Your Real-World Blueprint
+- Agentic Programming with LangGraph — *has_part* — Slide 4 - LangGraph Core Concepts
+- Agentic Programming with LangGraph — *has_part* — Slide 5 - The Trip Planner Architecture
+- Agentic Programming with LangGraph — *has_part* — Slide 6 - State Definition in LangGraph
+- Agentic Programming with LangGraph — *has_part* — Slide 7 - Building the Graph
+- Agentic Programming with LangGraph — *has_part* — Slide 8 - Defining Edges (Control Flow)
+- Agentic Programming with LangGraph — *has_part* — Slide 9 - Writing Node Functions
+- Agentic Programming with LangGraph — *has_part* — Slide 10 - The Profile Node (Personalization)
+- Agentic Programming with LangGraph — *has_part* — Slide 11 - The Research Node (Tool Integration)
+- Agentic Programming with LangGraph — *has_part* — Slide 12 - The Weather Node (Real-Time Data)
+- Agentic Programming with LangGraph — *has_part* — Slide 13 - The Budget Node (Business Logic)
+- Agentic Programming with LangGraph — *has_part* — Slide 14 - The Aggregate Node (Data Fusion)
+- Agentic Programming with LangGraph — *has_part* — Slide 15 - The Journey Plan Node (LLM Synthesis)
+- Agentic Programming with LangGraph — *has_part* — Slide 16 - Running the Graph
+- Agentic Programming with LangGraph — *has_part* — Slide 17 - Observability & Tracing
+- Agentic Programming with LangGraph — *has_part* — Slide 18 - Error Handling in Agentic Systems
+- Agentic Programming with LangGraph — *has_part* — Slide 19 - Conditional Branching (Advanced)
+- Agentic Programming with LangGraph — *has_part* — Slide 20 - State Mutations & Immutability
+- Agentic Programming with LangGraph — *has_part* — Slide 21 - Testing Agentic Systems
+- Agentic Programming with LangGraph — *has_part* — Slide 22 - Integration Testing
+- Agentic Programming with LangGraph — *has_part* — Slide 23 - Synthetic Evaluation
+- Agentic Programming with LangGraph — *has_part* — Slide 24 - Streaming Responses
+- Agentic Programming with LangGraph — *has_part* — Slide 25 - Deployment Patterns
+- Agentic Programming with LangGraph — *has_part* — Slide 26 - Working with Custom Tools
+- Agentic Programming with LangGraph — *has_part* — Slide 27 - Tool Calling in Nodes
+- Agentic Programming with LangGraph — *has_part* — Slide 28 - Prompt Engineering for Agentic Systems
+- Agentic Programming with LangGraph — *has_part* — Slide 29 - Meta-LLM (Provider Agnosticism)
+- Agentic Programming with LangGraph — *has_part* — Slide 30 - RAG (Retrieval-Augmented Generation)
+- Agentic Programming with LangGraph — *has_part* — Slide 31 - Scaling & Performance Optimization
+- Agentic Programming with LangGraph — *has_part* — Slide 32 - Common Pitfalls & How to Avoid Them
+- Agentic Programming with LangGraph — *has_part* — Slide 33 - Debugging Techniques
+- Agentic Programming with LangGraph — *has_part* — Slide 34 - Building Adaptive Agents
+- Agentic Programming with LangGraph — *has_part* — Slide 35 - Agent Chains vs Agent Trees
+- Agentic Programming with LangGraph — *has_part* — Slide 36 - Tool Composition
+- Agentic Programming with LangGraph — *has_part* — Slide 37 - Monitoring & Alerting
+- Agentic Programming with LangGraph — *has_part* — Slide 38 - Real-World Adaptations
+- Agentic Programming with LangGraph — *has_part* — Slide 39 - Future of Agentic Programming
+- Agentic Programming with LangGraph — *has_part* — Slide 40 - Recap & Your Turn
+- Agentic Programming with LangGraph — *has_part* — Appendix A - Full Trip Planner Code Example
+- Agentic Programming with LangGraph — *has_part* — Appendix B - Quick Reference
+- Slide 1 - Course Overview — *covers* — Course Overview
+- Slide 2 - What is Agentic Programming — *covers* — What is Agentic Programming
+- Slide 3 - The AI Trip Planner - Your Real-World Blueprint — *covers* — AI Trip Planner
+- Slide 3 - The AI Trip Planner - Your Real-World Blueprint — *covers* — Real-World Blueprint
+- Slide 4 - LangGraph Core Concepts — *covers* — LangGraph Core Concepts
+- LangGraph Core Concepts — *is_about* — LangGraph
+- Slide 5 - The Trip Planner Architecture — *covers* — The Trip Planner Architecture
+- Slide 6 - State Definition in LangGraph — *covers* — State Definition
+- State Definition — *is_in* — LangGraph
+- Slide 7 - Building the Graph — *covers* — Building the Graph
+- Slide 8 - Defining Edges (Control Flow) — *covers* — Defining Edges
+- Slide 8 - Defining Edges (Control Flow) — *covers* — Control Flow
+- Defining Edges — *is_a_type_of* — Control Flow
+- Slide 9 - Writing Node Functions — *covers* — Writing Node Functions
+- Slide 10 - The Profile Node (Personalization) — *covers* — Profile Node
+- Profile Node — *is_for* — Personalization
+- Slide 11 - The Research Node (Tool Integration) — *covers* — Research Node
+- Research Node — *is_for* — Tool Integration
+- Slide 12 - The Weather Node (Real-Time Data) — *covers* — Weather Node
+- Weather Node — *is_for* — Real-Time Data
+- Slide 13 - The Budget Node (Business Logic) — *covers* — Budget Node
+- Budget Node — *is_for* — Business Logic
+- Slide 14 - The Aggregate Node (Data Fusion) — *covers* — Aggregate Node
+- Aggregate Node — *is_for* — Data Fusion
+- Slide 15 - The Journey Plan Node (LLM Synthesis) — *covers* — Journey Plan Node
+- Journey Plan Node — *is_for* — LLM Synthesis
+- Slide 16 - Running the Graph — *covers* — Running the Graph
+- Slide 17 - Observability & Tracing — *covers* — Observability
+- Slide 17 - Observability & Tracing — *covers* — Tracing
+- Slide 18 - Error Handling in Agentic Systems — *covers* — Error Handling
+- Error Handling — *is_in* — Agentic Systems
+- Slide 19 - Conditional Branching (Advanced) — *covers* — Conditional Branching
+- Conditional Branching — *is_a_type_of* — Advanced patterns
+- Slide 20 - State Mutations & Immutability — *covers* — State Mutations
+- Slide 20 - State Mutations & Immutability — *covers* — Immutability
+- Slide 21 - Testing Agentic Systems — *covers* — Testing Agentic Systems
+- Slide 22 - Integration Testing — *covers* — Integration Testing
+- Integration Testing — *is_a_type_of* — Testing Agentic Systems
+- Slide 23 - Synthetic Evaluation — *covers* — Synthetic Evaluation
+- Synthetic Evaluation — *is_a_type_of* — Testing Agentic Systems
+- Slide 24 - Streaming Responses — *covers* — Streaming Responses
+- Slide 25 - Deployment Patterns — *covers* — Deployment Patterns
+- Slide 26 - Working with Custom Tools — *covers* — Custom Tools
+- Slide 27 - Tool Calling in Nodes — *covers* — Tool Calling
+- Tool Calling — *is_in* — Nodes
+- Slide 28 - Prompt Engineering for Agentic Systems — *covers* — Prompt Engineering
+- Prompt Engineering — *is_for* — Agentic Systems
+- Slide 29 - Meta-LLM (Provider Agnosticism) — *covers* — Meta-LLM
+- Meta-LLM — *relates_to* — Provider Agnosticism
+- Slide 30 - RAG (Retrieval-Augmented Generation) — *covers* — RAG
+- RAG — *stands_for* — Retrieval-Augmented Generation
+- Slide 31 - Scaling & Performance Optimization — *covers* — Scaling
+- Slide 31 - Scaling & Performance Optimization — *covers* — Performance Optimization
+- Slide 32 - Common Pitfalls & How to Avoid Them — *covers* — Common Pitfalls
+- Slide 33 - Debugging Techniques — *covers* — Debugging Techniques
+- Slide 34 - Building Adaptive Agents — *covers* — Adaptive Agents
+- Slide 35 - Agent Chains vs Agent Trees — *compares* — Agent Chains
+- Slide 35 - Agent Chains vs Agent Trees — *compares* — Agent Trees
+- Slide 36 - Tool Composition — *covers* — Tool Composition
+- Slide 37 - Monitoring & Alerting — *covers* — Monitoring
+- Slide 37 - Monitoring & Alerting — *covers* — Alerting
+- Slide 38 - Real-World Adaptations — *covers* — Real-World Adaptations
+- Slide 39 - Future of Agentic Programming — *covers* — Future of Agentic Programming
+- Slide 40 - Recap & Your Turn — *covers* — Recap
+- Appendix A - Full Trip Planner Code Example — *covers* — Full Trip Planner Code Example
+- Appendix B - Quick Reference — *covers* — Quick Reference
+- Foundations — *includes* — Slide 1 - Course Overview
+- Foundations — *includes* — Slide 2 - What is Agentic Programming
+- Foundations — *includes* — Slide 4 - LangGraph Core Concepts
+- Architecture & state — *includes* — Slide 5 - The Trip Planner Architecture
+- Architecture & state — *includes* — Slide 6 - State Definition in LangGraph
+- Architecture & state — *includes* — Slide 20 - State Mutations & Immutability
+- Building the graph — *includes* — Slide 7 - Building the Graph
+- Building the graph — *includes* — Slide 8 - Defining Edges (Control Flow)
+- Building the graph — *includes* — Slide 9 - Writing Node Functions
+- Node deep-dives — *includes* — Slide 10 - The Profile Node (Personalization)
+- Node deep-dives — *includes* — Slide 11 - The Research Node (Tool Integration)
+- Node deep-dives — *includes* — Slide 12 - The Weather Node (Real-Time Data)
+- Node deep-dives — *includes* — Slide 13 - The Budget Node (Business Logic)
+- Node deep-dives — *includes* — Slide 14 - The Aggregate Node (Data Fusion)
+- Node deep-dives — *includes* — Slide 15 - The Journey Plan Node (LLM Synthesis)
+- Tools — *includes* — Slide 26 - Working with Custom Tools
+- Tools — *includes* — Slide 27 - Tool Calling in Nodes
+- Tools — *includes* — Slide 36 - Tool Composition
+- Production concerns — *includes* — Slide 17 - Observability & Tracing
+- Production concerns — *includes* — Slide 18 - Error Handling in Agentic Systems
+- Production concerns — *includes* — Slide 25 - Deployment Patterns
+- Production concerns — *includes* — Slide 31 - Scaling & Performance Optimization
+- Production concerns — *includes* — Slide 37 - Monitoring & Alerting
+- Testing & debugging — *includes* — Slide 21 - Testing Agentic Systems
+- Testing & debugging — *includes* — Slide 22 - Integration Testing
+- Testing & debugging — *includes* — Slide 23 - Synthetic Evaluation
+- Testing & debugging — *includes* — Slide 33 - Debugging Techniques
+- Advanced patterns — *includes* — Slide 19 - Conditional Branching (Advanced)
+- Advanced patterns — *includes* — Slide 24 - Streaming Responses
+- Advanced patterns — *includes* — Slide 29 - Meta-LLM (Provider Agnosticism)
+- Advanced patterns — *includes* — Slide 30 - RAG (Retrieval-Augmented Generation)
+- Advanced patterns — *includes* — Slide 34 - Building Adaptive Agents
+- Advanced patterns — *includes* — Slide 35 - Agent Chains vs Agent Trees
+- Advanced patterns — *includes* — Slide 39 - Future of Agentic Programming
+- Wrap-up — *includes* — Slide 38 - Real-World Adaptations
+- Wrap-up — *includes* — Slide 40 - Recap & Your Turn
+- Wrap-up — *includes* — Appendix A - Full Trip Planner Code Example
+- Wrap-up — *includes* — Appendix B - Quick Reference
+
+%% ai-graph-end %%

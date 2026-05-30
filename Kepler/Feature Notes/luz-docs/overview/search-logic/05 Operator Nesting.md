@@ -1,3 +1,38 @@
+---
+ai_hash: f52fa55c41984a48
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Operator Nesting
+- Query Operators
+- and
+- or
+- not
+- range
+- recursive dispatch
+- buildQueryBaseOnExpression()
+- buildOperatorQuery()
+- JSON tree
+- nested nodes
+- regexp
+- term
+- condition
+- $and
+- $or
+- multi-term fulltext search
+- documents
+- search term
+- Mobiliar
+- '2021'
+- documentTitle
+- senderName
+- standard fulltext-search shape
+- reading complexity
+- 04 Query Operators
+- 06 Server Filters
+- search-logic
+---
+
 # 05 — Operator Nesting
 
 ## The idea
@@ -57,3 +92,46 @@ This pattern (one `or`-of-fields per search term, all wrapped in an `and`) is ho
 ---
 
 **Navigation:** [[04 Query Operators|← prev]] · [[search-logic|↑ index]] · [[06 Server Filters|next →]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[04 Query Operators]]
+- [[09 Examples]]
+- [[search-logic]]
+- [[03 Request Body]]
+- [[Glossary]]
+
+**Relations:**
+- Operator Nesting — *uses* — Query Operators
+- and — *is a type of* — Query Operators
+- or — *is a type of* — Query Operators
+- not — *is a type of* — Query Operators
+- range — *is a type of* — Query Operators
+- Operator Nesting — *is implemented by* — recursive dispatch
+- recursive dispatch — *uses function* — buildQueryBaseOnExpression()
+- recursive dispatch — *uses function* — buildOperatorQuery()
+- buildQueryBaseOnExpression() — *processes* — JSON tree
+- buildOperatorQuery() — *processes* — JSON tree
+- JSON tree — *contains* — nested nodes
+- regexp — *is a* — condition
+- term — *is a* — condition
+- and — *maps to* — $and
+- or — *maps to* — $or
+- multi-term fulltext search — *is an application of* — Operator Nesting
+- multi-term fulltext search — *finds* — documents
+- multi-term fulltext search — *involves* — search term
+- Mobiliar — *is an example of* — search term
+- 2021 — *is an example of* — search term
+- documentTitle — *is a field for* — search term
+- senderName — *is a field for* — search term
+- multi-term fulltext search — *produces* — standard fulltext-search shape
+- and — *requires* — multiple conditions
+- or — *broadens* — conditions
+- not — *excludes* — conditions
+- Operator Nesting — *can lead to* — reading complexity
+- 05 Operator Nesting — *follows* — 04 Query Operators
+- 05 Operator Nesting — *precedes* — 06 Server Filters
+- 05 Operator Nesting — *is part of* — search-logic
+
+%% ai-graph-end %%

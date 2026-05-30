@@ -1,3 +1,62 @@
+---
+ai_hash: a9308951c0639456
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Query Operators
+- '`query` field'
+- Request Body
+- JSON object
+- '`JsonStoreQueryExpression.java`'
+- '`JsonStoreSearchQueryUtil.java`'
+- MongoDB syntax
+- luz-docs
+- MongoDB query
+- '`term`'
+- '`terms`'
+- '`exists`'
+- '`not`'
+- '`regexp`'
+- '`range`'
+- '`and`'
+- '`or`'
+- '`JsonStoreSearchQueryUtil.handleQueryTerm()`'
+- '`JsonStoreSearchQueryUtil.handleQueryTerms()`'
+- '`_id`'
+- ObjectId
+- '`JsonStoreSearchQueryUtil.handleQueryExists()`'
+- '`JsonStoreSearchQueryUtil.handleQueryNot()`'
+- '`JsonStoreSearchQueryUtil.handleQueryRegexp()`'
+- '`JsonStoreSearchQueryUtil.handleQueryRange()`'
+- '`JsonStoreSearchQueryUtil.buildOperatorQuery()`'
+- '`$exists`'
+- '`$ne`'
+- '`$size`'
+- '`$not`'
+- '`$regex`'
+- '`$options: "i"`'
+- '`$or`'
+- '`$and`'
+- '`$expr`'
+- '`$dateFromString`'
+- '`$toObjectId`'
+- '`$eq`'
+- '`$gte`'
+- '`$lte`'
+- '`$gt`'
+- '`$lt`'
+- Pass-through (in code)
+- Regex (Regular Expression)
+- Case-insensitive
+- Case-sensitive
+- HTTP 400 / HTTP status codes
+- Date comparison
+- Numeric comparison
+- Array field
+- Regular field
+- Building block
+---
+
 # 04 — Query Operators
 
 The `query` field in the [[03 Request Body|request body]] is a JSON object using one of these operators. Each operator is a building block.
@@ -351,3 +410,96 @@ MongoDB: `{ "$or": [ ... ] }`
 ---
 
 **Navigation:** [[03 Request Body|← prev]] · [[search-logic|↑ index]] · [[05 Operator Nesting|next →]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Glossary]]
+- [[05 Operator Nesting]]
+- [[search-logic]]
+- [[09 Examples]]
+- [[03 Request Body]]
+
+**Relations:**
+- `query` field — *is a* — JSON object
+- `query` field — *is part of* — Request Body
+- Query Operators — *are defined in* — `JsonStoreQueryExpression.java`
+- Query Operators — *are* — Building block
+- Query Operators — *convert to* — MongoDB syntax
+- Conversion to MongoDB syntax — *happens in* — `JsonStoreSearchQueryUtil.java`
+- luz-docs — *converts* — Query Operators
+- luz-docs — *to* — MongoDB query
+- `term` — *is a* — Query Operators
+- `terms` — *is a* — Query Operators
+- `exists` — *is a* — Query Operators
+- `not` — *is a* — Query Operators
+- `regexp` — *is a* — Query Operators
+- `range` — *is a* — Query Operators
+- `and` — *is a* — Query Operators
+- `or` — *is a* — Query Operators
+- `term` — *has implementation* — `JsonStoreSearchQueryUtil.handleQueryTerm()`
+- `term` — *is* — Pass-through (in code)
+- `term` — *is* — Case-sensitive
+- `terms` — *has implementation* — `JsonStoreSearchQueryUtil.handleQueryTerms()`
+- `terms` — *is* — Case-insensitive
+- `terms` — *has special case for* — `_id`
+- `_id` — *is a type of* — ObjectId
+- `terms` — *uses* — `$toObjectId`
+- `terms` — *uses* — `$expr`
+- `terms` — *uses* — `$eq`
+- `terms` — *maps to* — `$or`
+- `terms` — *maps to* — `$regex`
+- `terms` — *maps to* — `$options: "i"`
+- `exists` — *has implementation* — `JsonStoreSearchQueryUtil.handleQueryExists()`
+- `exists` — *for* — Regular field
+- `exists` — *for* — Array field
+- `exists` — *maps to* — `$exists`
+- `exists` — *maps to* — `$ne`
+- `exists` — *maps to* — `$size`
+- `not` — *has implementation* — `JsonStoreSearchQueryUtil.handleQueryNot()`
+- `not` — *supports* — `term`
+- `not` — *supports* — `terms`
+- `not` — *supports* — `exists`
+- `not` — *supports* — `regexp`
+- `not` — *supports* — `range`
+- `not` — *maps to* — `$not`
+- `not` — *for* — `terms`
+- `not` — *maps to* — `$and`
+- `regexp` — *has implementation* — `JsonStoreSearchQueryUtil.handleQueryRegexp()`
+- `regexp` — *is a* — Regex (Regular Expression)
+- `regexp` — *is* — Case-insensitive
+- `regexp` — *can result in* — HTTP 400 / HTTP status codes
+- `regexp` — *maps to* — `$regex`
+- `regexp` — *maps to* — `$options: "i"`
+- `range` — *has implementation* — `JsonStoreSearchQueryUtil.handleQueryRange()`
+- `range` — *uses* — `$expr`
+- `range` — *uses* — `$dateFromString`
+- `range` — *supports* — Date comparison
+- `range` — *supports* — Numeric comparison
+- `range` — *maps to* — `$and`
+- `range` — *supports* — `$gte`
+- `range` — *supports* — `$lte`
+- `range` — *supports* — `$gt`
+- `range` — *supports* — `$lt`
+- `and` — *has implementation* — `JsonStoreSearchQueryUtil.buildOperatorQuery()`
+- `and` — *maps to* — `$and`
+- `or` — *has implementation* — `JsonStoreSearchQueryUtil.buildOperatorQuery()`
+- `or` — *maps to* — `$or`
+- `$exists` — *is a* — MongoDB operator
+- `$ne` — *is a* — MongoDB operator
+- `$size` — *is a* — MongoDB operator
+- `$not` — *is a* — MongoDB operator
+- `$regex` — *is a* — MongoDB operator
+- `$options: "i"` — *is a* — MongoDB operator
+- `$or` — *is a* — MongoDB operator
+- `$and` — *is a* — MongoDB operator
+- `$expr` — *is a* — MongoDB operator
+- `$dateFromString` — *is a* — MongoDB operator
+- `$toObjectId` — *is a* — MongoDB operator
+- `$eq` — *is a* — MongoDB operator
+- `$gte` — *is a* — MongoDB operator
+- `$lte` — *is a* — MongoDB operator
+- `$gt` — *is a* — MongoDB operator
+- `$lt` — *is a* — MongoDB operator
+
+%% ai-graph-end %%

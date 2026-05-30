@@ -1,3 +1,68 @@
+---
+ai_hash: b93fc6f3578d854f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Cascade Attempt
+- index
+- Trigger flow
+- Marker state machine
+- Async Observer
+- MongoDB
+- MongoDB updateMany
+- Tenant's documents collection
+- Cascade Sequence Diagram
+- Cascade Marker
+- MaterializeRepository
+- MaterializeRepository.startCascadeMarker
+- Tenant ID
+- Token
+- Folder ID
+- Materialize Cascade Collection
+- START Status
+- Lock
+- onCascadeRetry
+- MongoDB Filter
+- MaterializeQueryBuilder
+- MaterializeQueryBuilder.buildFolderRenameFilter
+- New Folder Name
+- folderIds field
+- _folderNames field
+- $exists operator
+- $expr operator
+- $and operator
+- $eq operator
+- $size operator
+- $ne operator
+- $arrayElemAt operator
+- $indexOfArray operator
+- Filter Constraint
+- MongoDB Pipeline
+- MaterializeQueryBuilder.buildFolderRenamePipeline
+- $set stage
+- $map operator
+- $range operator
+- $cond operator
+- Folders Collection
+- Terminal Branches
+- matchedCount
+- modifiedCount
+- MaterializeRepository.deleteCascadeMarker
+- Marker ID
+- Branch A (Success)
+- Branch B (Partial)
+- Branch C (Error)
+- DocumentException (SC_MULTI_STATUS)
+- MaterializeRepository.markCascadeMarkerPartial
+- PARTIAL Status
+- SocketTimeoutException
+- MaterializeCascadeException
+- Idempotent
+- HTTP 207 / Multi-Status
+- Socket Timeout
+- Observer
+---
+
 # Cascade Attempt
 
 [[folder-rename-cascade|Back to index]] | Previous: [[02 Trigger Flow|Trigger flow]] | Next: [[04 Marker State Machine|Marker state machine]]
@@ -111,3 +176,70 @@ Branch A is the normal success path. Branch B is what retry handles. Branch C is
 | HTTP 207 / Multi-Status | A response meaning "the overall operation had mixed results." Here it means not every matched document was modified. |
 | Socket timeout | The app waited for a network/database response too long and gave up. |
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[folder-rename-cascade]]
+- [[01 Overview - Folder Rename Cascade]]
+- [[05 Retry Flow]]
+- [[04 Marker State Machine]]
+- [[02 Trigger Flow]]
+
+**Relations:**
+- Cascade Attempt — *is_described_in* — 03 Cascade Attempt
+- Cascade Attempt — *is_preceded_by* — Trigger flow
+- Cascade Attempt — *is_followed_by* — Marker state machine
+- Cascade Attempt — *returns_to* — index
+- Async Observer — *executes* — MongoDB updateMany
+- MongoDB updateMany — *targets* — Tenant's documents collection
+- Cascade Attempt — *is_illustrated_by* — Cascade Sequence Diagram
+- Cascade Marker — *is_written_before* — Cascade Attempt
+- MaterializeRepository.startCascadeMarker — *inserts* — Cascade Marker
+- Cascade Marker — *is_inserted_into* — Materialize Cascade Collection
+- Cascade Marker — *has_field* — _id
+- Cascade Marker — *has_field* — Folder ID
+- Cascade Marker — *has_field* — _cascadeAt
+- Cascade Marker — *has_field* — status
+- status — *can_be* — START Status
+- START Status — *acts_as* — Lock
+- onCascadeRetry — *ignores* — START Status
+- MaterializeQueryBuilder.buildFolderRenameFilter — *produces* — MongoDB Filter
+- MongoDB Filter — *uses* — Folder ID
+- MongoDB Filter — *uses* — New Folder Name
+- MongoDB Filter — *includes* — folderIds field
+- MongoDB Filter — *includes* — _folderNames field
+- MongoDB Filter — *includes* — $exists operator
+- MongoDB Filter — *includes* — $expr operator
+- MongoDB Filter — *includes* — $and operator
+- MongoDB Filter — *includes* — $eq operator
+- MongoDB Filter — *includes* — $size operator
+- MongoDB Filter — *includes* — $ne operator
+- MongoDB Filter — *includes* — $arrayElemAt operator
+- MongoDB Filter — *includes* — $indexOfArray operator
+- Filter Constraint — *explains* — MongoDB Filter
+- MaterializeQueryBuilder.buildFolderRenamePipeline — *produces* — MongoDB Pipeline
+- MongoDB Pipeline — *uses* — Folder ID
+- MongoDB Pipeline — *uses* — New Folder Name
+- MongoDB Pipeline — *contains* — $set stage
+- $set stage — *uses* — $map operator
+- $set stage — *uses* — $range operator
+- $set stage — *uses* — $cond operator
+- MongoDB Pipeline — *does_not_recompute_from* — Folders Collection
+- Terminal Branches — *describe_outcomes_of* — Cascade Attempt
+- Branch A (Success) — *occurs_when* — matchedCount == modifiedCount
+- Branch A (Success) — *leads_to* — MaterializeRepository.deleteCascadeMarker
+- Branch B (Partial) — *occurs_when* — matchedCount != modifiedCount
+- Branch B (Partial) — *causes* — DocumentException (SC_MULTI_STATUS)
+- Branch B (Partial) — *leads_to* — MaterializeRepository.markCascadeMarkerPartial
+- MaterializeRepository.markCascadeMarkerPartial — *sets_status_to* — PARTIAL Status
+- Branch C (Error) — *involves* — SocketTimeoutException
+- Branch C (Error) — *involves* — MaterializeCascadeException
+- Observer — *logs* — aborted
+- Branch C (Error) — *leaves_marker_status_as* — START Status
+- MongoDB updateMany — *reports* — matchedCount
+- MongoDB updateMany — *reports* — modifiedCount
+- Cascade Attempt — *is* — Idempotent
+- HTTP 207 / Multi-Status — *is_related_to* — DocumentException (SC_MULTI_STATUS)
+- Socket Timeout — *is_related_to* — SocketTimeoutException
+
+%% ai-graph-end %%

@@ -1,3 +1,34 @@
+---
+ai_hash: 281fe8c56993d25b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- luz-docs
+- documents
+- Google
+- web
+- JSON object
+- database query
+- MongoDB
+- translation layer
+- notes
+- REST API
+- JSON
+- HTTP
+- query DSL
+- Elasticsearch
+- translator
+- aggregation pipelines
+- JsonStoreSearchQueryUtil
+- query operator
+- JsonStoreQuerySearchUtil
+- Tenant
+- KLARA Documents Search (Confluence)
+- search-logic
+- 02 Endpoints
+- POST /luz_docs/api/{tenant_id}/documents
+---
+
 # 01 — Overview
 
 ## In one paragraph (plain English)
@@ -33,3 +64,36 @@ External: [KLARA Documents Search (Confluence)](https://axonivy.atlassian.net/wi
 ---
 
 **Navigation:** [[search-logic|↑ index]] · [[02 Endpoints|next →]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[search-logic]]
+- [[Glossary]]
+- [[index]]
+- [[08 Facets]]
+- [[02 Endpoints]]
+
+**Relations:**
+- luz-docs — *lets search for* — documents
+- Google — *lets search for* — web
+- luz-docs — *uses* — JSON object
+- luz-docs — *translates* — JSON object
+- JSON object — *translated into* — database query
+- database query — *against* — MongoDB
+- translation layer — *is about* — notes
+- REST API — *uses* — JSON
+- JSON — *over* — HTTP
+- query DSL — *looks like* — Elasticsearch
+- translator — *converts* — query DSL
+- query DSL — *converted into* — aggregation pipelines
+- aggregation pipelines — *for* — MongoDB
+- JsonStoreSearchQueryUtil — *handles* — query operator
+- JsonStoreQuerySearchUtil — *assembles* — aggregation pipelines
+- POST /luz_docs/api/{tenant_id}/documents — *is* — REST base path
+- {tenant_id} — *identifies* — Tenant
+- KLARA Documents Search (Confluence) — *is* — reference
+- search-logic — *is* — navigation target
+- 02 Endpoints — *is* — navigation target
+
+%% ai-graph-end %%

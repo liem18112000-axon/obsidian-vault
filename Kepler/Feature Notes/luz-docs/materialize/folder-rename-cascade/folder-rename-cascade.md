@@ -1,3 +1,36 @@
+---
+ai_hash: ec7fb054c304bee8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Folder Rename Cascade
+- LUZ-154157
+- eArchive backend P1.4.3 cascade changes
+- kepler/sprint-157/LUZ-154157-...
+- dev
+- 3661b7c
+- Overview
+- Trigger Flow
+- Cascade Attempt
+- Marker State Machine
+- Retry Flow
+- Files of Record
+- Operational Notes
+- Decision Log
+- Glossary for Newbies
+- folder
+- document
+- system
+- MongoDB
+- aggregation-pipeline updateMany
+- _folderNames
+- folderIds
+- PUT /folders/{id}
+- PATCH /folders/{id}
+- materializeCascade
+- tenant
+---
+
 # Folder Rename Cascade
 
 > Ticket: **LUZ-154157** - eArchive backend P1.4.3 cascade changes
@@ -58,3 +91,49 @@ _folderNames:  [Inbox, Legal]
 ```
 
 The folder ID stays stable. Only the stored display name changes.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[01 Overview - Folder Rename Cascade]]
+- [[03 Cascade Attempt]]
+- [[07 Operational Notes]]
+- [[02 Trigger Flow]]
+- [[05 Retry Flow]]
+
+**Relations:**
+- Folder Rename Cascade — *is_ticket* — LUZ-154157
+- LUZ-154157 — *is_for* — eArchive backend P1.4.3 cascade changes
+- LUZ-154157 — *has_branch* — kepler/sprint-157/LUZ-154157-...
+- Folder Rename Cascade — *rolled_out_to* — dev
+- dev — *has_latest_tag* — 3661b7c
+- Folder Rename Cascade — *explains* — folder rename process
+- Folder Rename Cascade — *involves* — document
+- Folder Rename Cascade — *involves* — folder
+- Folder Rename Cascade — *has_section* — Overview
+- Folder Rename Cascade — *has_section* — Trigger Flow
+- Folder Rename Cascade — *has_section* — Cascade Attempt
+- Folder Rename Cascade — *has_section* — Marker State Machine
+- Folder Rename Cascade — *has_section* — Retry Flow
+- Folder Rename Cascade — *has_section* — Files of Record
+- Folder Rename Cascade — *has_section* — Operational Notes
+- Folder Rename Cascade — *has_section* — Decision Log
+- Folder Rename Cascade — *has_section* — Glossary for Newbies
+- Overview — *leads_to* — Trigger Flow
+- Trigger Flow — *leads_to* — Cascade Attempt
+- Cascade Attempt — *leads_to* — Marker State Machine
+- Marker State Machine — *leads_to* — Retry Flow
+- folder — *renamed_by* — PUT /folders/{id}
+- folder — *renamed_by* — PATCH /folders/{id}
+- document — *references* — folder
+- document — *stores* — _folderNames
+- document — *stores* — folderIds
+- system — *updates* — _folderNames
+- system — *uses* — MongoDB
+- system — *uses* — aggregation-pipeline updateMany
+- system — *manages* — materializeCascade
+- materializeCascade — *stores_unfinished_work_for* — tenant
+- _folderNames — *is_updated_by* — system
+- folderIds — *is_paired_with* — _folderNames
+
+%% ai-graph-end %%

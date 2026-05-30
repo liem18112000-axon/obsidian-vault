@@ -1,3 +1,83 @@
+---
+ai_hash: a02d14f4da824430
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Obsidian
+- Community Plugins
+- Settings
+- Bases
+- Dataview
+- Datacore
+- Templater
+- Tasks
+- Calendar
+- Excalidraw
+- Mermaid
+- Core Templates
+- Markdown
+- Personal System
+- Third-party Code
+- Native Feature
+- Database View
+- Frontmatter Properties
+- Official Plugin
+- Querying Tool
+- Scrum Workflow
+- Daily-Note Workflow
+- Sortable Table
+- SQL-like Language
+- DQL
+- Aggregating Tasks
+- Dynamic To-Do List
+- Templates
+- Embedding Queries
+- React
+- Reusable Component Libraries
+- JavaScript Execution
+- Cursor Placement
+- Prompts
+- System Commands
+- Date Math
+- File Operations
+- Carryover Unchecked Tasks
+- Template Automation
+- Task Management
+- Due Dates
+- Priorities
+- Recurrence
+- Open Tasks
+- Daily Scrum Template
+- Checkboxes
+- Month Calendar
+- Sidebar
+- Daily Note
+- Days With Notes
+- Visual Navigation
+- Timeline
+- Sketching Canvas
+- Drawings
+- Notes
+- Architecture Sketches
+- Luz Service-Topology
+- Pub/Sub-Flow Diagrams
+- Code Fences
+- Structured Diagrams
+- Version-Controllable Diagrams
+- Freeform Whiteboarding
+- Maintenance
+- Slowdown
+- Knowledge System
+- Stage 5
+- Methodology
+- Zettelkasten
+- PARA
+- Effortless Academic
+- Practical PKM
+- Obsidian Rocks
+- alternativeto
+---
+
 # Overview
 This is where Obsidian stops being a nice Markdown editor and becomes a personal system. Two things to know before the list:
 
@@ -74,3 +154,125 @@ Resist installing 30 plugins. Each one is maintenance surface and a potential sl
 ---
 
 **End-of-stage checkmark:** you have a Base that rolls up your scrum notes into a live table, your standup checkboxes surface in a single Tasks view, and at least one template does something dynamic via Templater. At that point you're running a genuine knowledge system, and Stage 5 (methodology — Zettelkasten / PARA) is about deciding _how to think_ inside it rather than which buttons to press.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stage 3 — Core Plugins]]
+- [[Roadmap]]
+- [[Stage 5 — Workflows & Methodology]]
+- [[Stage 1 — Foundations]]
+- [[Stage 6 — Advanced Automation]]
+
+**Relations:**
+- Obsidian — *becomes* — Personal System
+- Community Plugins — *are_found_via* — Settings
+- Community Plugins — *are_type_of* — Third-party Code
+- Obsidian — *shipped* — Bases
+- Bases — *is_a* — Native Feature
+- Bases — *replaces_functionality_of* — Dataview
+- Bases — *transforms* — Notes
+- Notes — *into* — Database View
+- Database View — *driven_by* — Frontmatter Properties
+- Bases — *is_a* — Official Plugin
+- Bases — *causes_migrations_from* — Dataview
+- Bases — *is_easier_than* — Dataview
+- Bases — *provides* — Visual Interface
+- Bases — *has_property* — Faster Rendering
+- Bases — *has_property* — Inline Editing
+- Bases — *is_a* — Core Plugin
+- Bases — *is_a* — Querying Tool
+- Bases — *enables* — Scrum Workflow
+- Bases — *enables* — Daily-Note Workflow
+- Bases — *creates* — Sortable Table
+- Sortable Table — *from* — Scrum Notes
+- Bases — *preferred_over* — Dataview
+- alternativeto — *mentions* — Bases
+- Effortless Academic — *mentions* — Bases
+- Practical PKM — *mentions* — Bases
+- Dataview — *is_a* — Query Engine
+- Dataview — *uses* — DQL
+- DQL — *is_a* — SQL-like Language
+- Dataview — *is_complex* — true
+- Dataview — *will_be_replaced_by* — Bases
+- Dataview — *excels_at* — Aggregating Tasks
+- Aggregating Tasks — *creates* — Dynamic To-Do List
+- Dataview — *enables* — Embedding Queries
+- Embedding Queries — *in* — Templates
+- Bases — *lacks_feature* — Embedding Queries
+- Datacore — *is_a* — Successor
+- Successor — *of* — Dataview
+- Datacore — *is* — WIP
+- Datacore — *has_property* — Faster
+- Datacore — *has_property* — Native-feeling
+- Datacore — *lacks* — Friendly Query Syntax
+- Datacore — *requires* — React
+- Datacore — *for* — Reusable Component Libraries
+- Obsidian Rocks — *mentions* — Datacore
+- Templater — *is_an_upgrade_to* — Core Templates
+- Templater — *adds* — JavaScript Execution
+- JavaScript Execution — *to* — Templates
+- Templater — *adds* — Cursor Placement
+- Templater — *adds* — Prompts
+- Templater — *adds* — System Commands
+- Templater — *adds* — Date Math
+- Templater — *adds* — File Operations
+- Templater — *enables* — Carryover Unchecked Tasks
+- Templater — *for* — Template Automation
+- Tasks — *enables* — Task Management
+- Task Management — *includes* — Due Dates
+- Task Management — *includes* — Priorities
+- Task Management — *includes* — Recurrence
+- Tasks — *aggregates* — Open Tasks
+- Tasks — *is_alternative_to* — Dataview
+- Tasks — *for* — Task Aggregation
+- Tasks — *pairs_with* — Daily Scrum Template
+- Tasks — *tracks* — Checkboxes
+- Calendar — *is_a* — Month Calendar
+- Calendar — *located_in* — Sidebar
+- Calendar — *enables* — Opening Daily Note
+- Calendar — *enables* — Creating Daily Note
+- Calendar — *indicates* — Days With Notes
+- Calendar — *for* — Daily-Note Workflow
+- Calendar — *enables* — Visual Navigation
+- Visual Navigation — *of* — Timeline
+- Excalidraw — *is_a* — Sketching Canvas
+- Excalidraw — *stores* — Drawings
+- Drawings — *as* — Notes
+- Notes — *can_be* — Linked
+- Notes — *can_be* — Embedded
+- Excalidraw — *for* — Architecture Sketches
+- Architecture Sketches — *include* — Luz Service-Topology
+- Architecture Sketches — *include* — Pub/Sub-Flow Diagrams
+- Excalidraw — *complements* — Mermaid
+- Obsidian — *renders* — Mermaid
+- Mermaid — *rendered_in* — Code Fences
+- Mermaid — *for* — Structured Diagrams
+- Mermaid — *for* — Version-Controllable Diagrams
+- Excalidraw — *for* — Freeform Whiteboarding
+- Bases — *enables* — Querying Without Code
+- Tasks — *aggregates* — Checkboxes
+- Checkboxes — *from* — Scrum Template
+- Templater — *automates* — Daily Templates
+- Templater — *automates* — Meeting Templates
+- Calendar — *navigates* — Daily-Note Timeline
+- Excalidraw — *for* — Sketches Mermaid cannot do
+- Community Plugins — *can_cause* — Maintenance
+- Community Plugins — *can_cause* — Slowdown
+- Bases — *is_part_of* — Complete System
+- Tasks — *is_part_of* — Complete System
+- Templater — *is_part_of* — Complete System
+- Calendar — *is_part_of* — Complete System
+- Excalidraw — *is_part_of* — Complete System
+- Bases — *rolls_up* — Scrum Notes
+- Scrum Notes — *into* — Live Table
+- Tasks — *displays* — Standup Checkboxes
+- Templater — *enables* — Dynamic Templates
+- Knowledge System — *achieved_with* — Bases
+- Knowledge System — *achieved_with* — Tasks
+- Knowledge System — *achieved_with* — Templater
+- Stage 5 — *is_about* — Methodology
+- Methodology — *includes* — Zettelkasten
+- Methodology — *includes* — PARA
+
+%% ai-graph-end %%

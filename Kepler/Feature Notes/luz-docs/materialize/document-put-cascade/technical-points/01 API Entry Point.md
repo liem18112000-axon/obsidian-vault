@@ -1,3 +1,33 @@
+---
+ai_hash: edcb1f9b8dc8b196
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- API Entry Point
+- document-put-cascade
+- 02 Service Validation
+- Endpoint
+- JSON body
+- DocumentResource.java
+- documentService.updateDocumentMetadata
+- Response.ok()
+- REST resource
+- validation
+- materialized-field cascade
+- database save
+- MongoDB
+- HTTP 200 OK
+- Java class
+- API endpoints
+- '@PUT'
+- '@Path'
+- HTTP PUT requests
+- URL path
+- JavaScript object text
+- request
+- service
+---
+
 # API Entry Point
 
 [[document-put-cascade|Back to index]] | Next: [[02 Service Validation|Service validation]]
@@ -46,3 +76,39 @@ It does not directly update MongoDB.
 | JSON body | The data sent by the caller, shaped like JavaScript object text. |
 | `Response.ok()` | Builds an HTTP 200 OK response. |
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[document-put-cascade]]
+- [[02 Service Validation]]
+- [[08 Glossary for Newbies]]
+- [[06 Failure Paths]]
+- [[05 Save and Side Effects]]
+
+**Relations:**
+- API Entry Point — *links to index* — document-put-cascade
+- API Entry Point — *links to next* — 02 Service Validation
+- Endpoint — *is* — PUT /{tenantId}/documents/{document-id}
+- Endpoint — *receives* — JSON body
+- DocumentResource.java — *calls* — documentService.updateDocumentMetadata
+- DocumentResource.java — *returns* — Response.ok()
+- REST resource — *is a* — front door
+- documentService.updateDocumentMetadata — *performs* — validation
+- documentService.updateDocumentMetadata — *performs* — materialized-field cascade
+- documentService.updateDocumentMetadata — *performs* — database save
+- REST resource — *is a* — Java class
+- Java class — *exposes* — API endpoints
+- Endpoint — *is an* — API action
+- Endpoint — *example* — PUT /documents/{id}
+- @PUT — *handles* — HTTP PUT requests
+- @Path — *maps to* — URL path
+- JSON body — *is* — data sent by caller
+- JSON body — *is shaped like* — JavaScript object text
+- Response.ok() — *builds* — HTTP 200 OK
+- Endpoint — *receives* — request
+- Endpoint — *passes* — request
+- request — *to* — service
+- Endpoint — *returns* — HTTP 200 OK
+- Endpoint — *does not directly update* — MongoDB
+
+%% ai-graph-end %%

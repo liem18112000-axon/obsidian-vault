@@ -1,8 +1,46 @@
 ---
-title: "Slide 6: State Definition in LangGraph"
+ai_hash: 6f7687f000a7a46a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Slide 6
+- State Definition
+- LangGraph
+- State
+- Shared data structure
+- Nodes
+- Trip Planner State
+- '`state_models.py`'
+- '`TripState`'
+- messages
+- '`Annotated`'
+- '`List`'
+- '`operator.add`'
+- '`BaseMessage`'
+- trip_request
+- user_profile
+- CDP
+- database
+- location_coords
+- research
+- weather
+- budget
+- final itinerary
+- tool_calls
+- observability
+- reducer
+- node return values
+- '`backend/core_llm/state_models.py`'
+- Slide 5
+- Slide 7
+- Index
 slide_number: 6
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 6: State Definition in LangGraph'
 ---
 
 # Slide 6: State Definition in LangGraph
@@ -75,3 +113,44 @@ Open `backend/core_llm/state_models.py` and answer:
 ---
 
 ← [[Slide 5 - The Trip Planner Architecture|Previous]] · [[Index|🏠 Index]] · [[Slide 7 - Building the Graph|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 1 - Course Overview]]
+- [[Slide 9 - Writing Node Functions]]
+- [[Appendix B - Quick Reference]]
+- [[Slide 7 - Building the Graph]]
+- [[Slide 20 - State Mutations & Immutability]]
+
+**Relations:**
+- Slide 6 — *discusses* — State Definition
+- State Definition — *is_in* — LangGraph
+- State — *is_a* — Shared data structure
+- State — *is_passed_between* — Nodes
+- Trip Planner State — *is_an_example_of* — State
+- Trip Planner State — *is_defined_by* — `TripState`
+- `TripState` — *is_defined_in* — `state_models.py`
+- `state_models.py` — *is_located_at* — `backend/core_llm/state_models.py`
+- `TripState` — *includes_field* — messages
+- `TripState` — *includes_field* — trip_request
+- `TripState` — *includes_field* — user_profile
+- `TripState` — *includes_field* — location_coords
+- `TripState` — *includes_field* — research
+- `TripState` — *includes_field* — weather
+- `TripState` — *includes_field* — budget
+- `TripState` — *includes_field* — final itinerary
+- `TripState` — *includes_field* — tool_calls
+- messages — *uses_pattern* — `Annotated[List, operator.add]`
+- tool_calls — *uses_pattern* — `Annotated[List, operator.add]`
+- `Annotated[List, operator.add]` — *uses* — `operator.add`
+- `operator.add` — *is_a* — reducer
+- reducer — *applies_to* — node return values
+- user_profile — *sourced_from* — CDP
+- user_profile — *sourced_from* — database
+- tool_calls — *is_for* — observability
+- Slide 6 — *follows* — Slide 5
+- Slide 6 — *precedes* — Slide 7
+- Slide 6 — *is_part_of* — Index
+
+%% ai-graph-end %%

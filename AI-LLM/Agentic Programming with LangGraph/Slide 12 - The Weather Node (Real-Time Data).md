@@ -1,8 +1,37 @@
 ---
-title: "Slide 12: The Weather Node (Real-Time Data)"
+ai_hash: b95fa211fb896d35
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Slide 12
+- The Weather Node
+- Real-Time Data
+- _weather_node
+- TripState
+- destination
+- get_current_weather
+- location
+- unit
+- Open-Meteo
+- Graceful Fallback
+- System
+- Downstream agents
+- Slide 11
+- The Research Node
+- Tool Integration
+- Index
+- Slide 13
+- The Budget Node
+- Business Logic
+- tool_calls
+- weather
 slide_number: 12
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 12: The Weather Node (Real-Time Data)'
 ---
 
 # Slide 12: The Weather Node (Real-Time Data)
@@ -59,3 +88,37 @@ If tool fails → return sensible default
 ---
 
 ← [[Slide 11 - The Research Node (Tool Integration)|Previous]] · [[Index|🏠 Index]] · [[Slide 13 - The Budget Node (Business Logic)|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 27 - Tool Calling in Nodes]]
+- [[Slide 26 - Working with Custom Tools]]
+- [[Slide 13 - The Budget Node (Business Logic)]]
+- [[Slide 11 - The Research Node (Tool Integration)]]
+- [[Slide 18 - Error Handling in Agentic Systems]]
+
+**Relations:**
+- Slide 12 — *is titled* — The Weather Node (Real-Time Data)
+- The Weather Node — *processes* — Real-Time Data
+- _weather_node — *is a component of* — The Weather Node
+- _weather_node — *receives* — TripState
+- TripState — *contains* — destination
+- _weather_node — *invokes* — get_current_weather
+- get_current_weather — *requires* — location
+- get_current_weather — *can specify* — unit
+- get_current_weather — *calls* — Open-Meteo
+- The Weather Node — *demonstrates* — Graceful Fallback
+- Graceful Fallback — *ensures* — System continues
+- Graceful Fallback — *allows* — Downstream agents adapt
+- Slide 12 — *follows* — Slide 11
+- Slide 11 — *is titled* — The Research Node (Tool Integration)
+- Slide 12 — *precedes* — Slide 13
+- Slide 13 — *is titled* — The Budget Node (Business Logic)
+- Slide 12 — *is linked to* — Index
+- _weather_node — *returns* — weather
+- _weather_node — *returns* — tool_calls
+- tool_calls — *references* — get_current_weather
+- get_current_weather — *provides* — weather summary
+
+%% ai-graph-end %%

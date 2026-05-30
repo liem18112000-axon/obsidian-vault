@@ -1,7 +1,45 @@
 ---
-title: "Appendix A: Full Trip Planner Code Example"
-tags: [lecture/appendix, langgraph, agentic-programming]
+ai_hash: 8949fd16258a2ed5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- SmartTripPlanner
+- StateGraph
+- TripState
+- MetaLLM
+- DataServiceFactory
+- LLM
+- DataService
+- get_destination_info
+- get_costs
+- get_current_weather
+- deduplicate_tool_calls
+- build_trip_planner_prompt
+- SystemMessage
+- HumanMessage
+- Trip Planning
+- User Profile
+- Trip Request
+- Research
+- Weather
+- Budget
+- Journey Plan
+- Tool Calls
+- langgraph
+- langchain_core
+- logging
+- load_profile
+- research
+- weather
+- budget
+- aggregate
+- journey_plan
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/appendix
+- langgraph
+- agentic-programming
+title: 'Appendix A: Full Trip Planner Code Example'
 ---
 
 # Appendix A: Full Trip Planner Code Example
@@ -165,3 +203,57 @@ if __name__ == "__main__":
 ---
 
 ← [[Slide 40 - Recap & Your Turn|Previous]] · [[Index|🏠 Index]] · [[Appendix B - Quick Reference|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 15 - The Journey Plan Node (LLM Synthesis)]]
+- [[Slide 16 - Running the Graph]]
+- [[Appendix B - Quick Reference]]
+- [[Index]]
+- [[Slide 1 - Course Overview]]
+
+**Relations:**
+- SmartTripPlanner — *implements* — Trip Planning
+- SmartTripPlanner — *uses* — MetaLLM
+- SmartTripPlanner — *uses* — DataServiceFactory
+- SmartTripPlanner — *builds* — StateGraph
+- SmartTripPlanner — *uses* — logging
+- StateGraph — *manages_state_with* — TripState
+- StateGraph — *includes_node* — load_profile
+- StateGraph — *includes_node* — research
+- StateGraph — *includes_node* — weather
+- StateGraph — *includes_node* — budget
+- StateGraph — *includes_node* — aggregate
+- StateGraph — *includes_node* — journey_plan
+- load_profile — *retrieves* — User Profile
+- load_profile — *uses* — DataService
+- research — *uses* — get_destination_info
+- research — *generates* — Research
+- weather — *uses* — get_current_weather
+- weather — *generates* — Weather
+- budget — *uses* — get_costs
+- budget — *generates* — Budget
+- aggregate — *processes* — Tool Calls
+- aggregate — *uses* — deduplicate_tool_calls
+- journey_plan — *uses* — LLM
+- journey_plan — *uses* — build_trip_planner_prompt
+- journey_plan — *uses* — SystemMessage
+- journey_plan — *uses* — HumanMessage
+- journey_plan — *generates* — Journey Plan
+- SmartTripPlanner.plan — *takes_input* — Trip Request
+- SmartTripPlanner.plan — *executes* — StateGraph
+- MetaLLM — *provides* — LLM
+- DataServiceFactory — *provides* — DataService
+- langgraph — *provides* — StateGraph
+- langchain_core — *provides* — SystemMessage
+- langchain_core — *provides* — HumanMessage
+- TripState — *stores* — Trip Request
+- TripState — *stores* — User Profile
+- TripState — *stores* — Research
+- TripState — *stores* — Weather
+- TripState — *stores* — Budget
+- TripState — *stores* — Tool Calls
+- TripState — *stores* — Journey Plan
+
+%% ai-graph-end %%

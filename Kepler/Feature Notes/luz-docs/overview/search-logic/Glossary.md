@@ -1,3 +1,110 @@
+---
+ai_hash: 6eac2420d7bc7349
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- REST API
+- JSON
+- DSL
+- SQL
+- luz-docs
+- Query
+- Elasticsearch
+- MongoDB
+- Aggregation Pipeline
+- $match
+- $sort
+- $lookup
+- $project
+- $skip
+- $limit
+- $expr
+- $or
+- $and
+- $not
+- $regex
+- Regex
+- Case-insensitive
+- ObjectId
+- Field
+- Array (in MongoDB)
+- Soft delete
+- Hard delete
+- Tenant
+- Security class
+- Credential mapping
+- Facet
+- Aggregation
+- Pagination
+- Top-k optimization
+- Index (database)
+- HTTP status codes
+- Pass-through (in code)
+- Sub-query
+- Recursive dispatch
+- DSL → MongoDB translation
+- JsonStoreSearchQueryUtil.java
+- HTTP verbs
+- URLs
+- HTTP
+- documents
+- records
+- collection
+- stage
+- compiler
+- search-logic
+- GET
+- POST
+- term operator
+- range operator
+- and operator
+- not operator
+- WHERE (SQL)
+- SELECT (SQL)
+- _id
+- _deletionStatus
+- offset
+- page size
+- programs
+- structured data
+- databases
+- search engine
+- query language
+- text format
+- mini-language
+- logical operators
+- pattern
+- unique-id type
+- data
+- list of values
+- flag
+- customer
+- organization
+- label
+- server
+- clearance
+- permission layer
+- summary count
+- summary value
+- results
+- lookup structure
+- numeric codes
+- input
+- coding pattern
+- operators
+- MongoDB query
+- luz-docs's query DSL
+- Elasticsearch's query language
+- aggregation expressions
+- '$options: "i"'
+- skip-security-classes=true
+- '200'
+- '400'
+- '401'
+- '404'
+- '500'
+---
+
 # Glossary — search-logic terms in plain English
 
 A one-stop reference for every jargon term used in the [[search-logic]] notes. If a term in another note feels mysterious, jump here.
@@ -151,3 +258,149 @@ The job of `JsonStoreSearchQueryUtil.java`: take the user's JSON query (in luz-d
 ---
 
 **Back to:** [[search-logic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[search-logic]]
+- [[04 Query Operators]]
+- [[08 Facets]]
+- [[01 Overview]]
+- [[Divide-and-Conquer Count - Technical Points for Beginners]]
+
+**Relations:**
+- Glossary — *defines terms for* — search-logic
+- REST API — *is a way for* — programs
+- REST API — *uses* — URLs
+- REST API — *uses* — HTTP verbs
+- HTTP verbs — *include* — GET
+- HTTP verbs — *include* — POST
+- luz-docs — *uses* — REST API
+- luz-docs — *POSTs* — JSON
+- luz-docs — *POSTs to* — URLs
+- JSON — *is a* — text format
+- JSON — *for* — structured data
+- JSON — *is used by* — luz-docs's query DSL
+- JSON — *is used by* — Elasticsearch's query language
+- MongoDB — *stores* — documents
+- documents — *are* — JSON-like records
+- DSL — *is a* — mini-language
+- SQL — *is a* — DSL
+- SQL — *for* — databases
+- luz-docs — *has a* — query DSL
+- luz-docs's query DSL — *is* — JSON-shaped
+- luz-docs's query DSL — *describes* — what you want
+- Query — *is a* — description of
+- Query — *describes* — records
+- Query — *in* — luz-docs
+- Query — *is a* — JSON object
+- Query — *uses* — term operator
+- Query — *uses* — range operator
+- Query — *uses* — and operator
+- Elasticsearch — *is a* — search engine
+- Elasticsearch — *has a* — query language
+- Elasticsearch's query language — *is* — JSON-shaped
+- luz-docs's query DSL — *looks like* — Elasticsearch's query language
+- luz-docs — *translates to* — MongoDB
+- MongoDB — *is a* — database
+- MongoDB — *uses* — Aggregation Pipeline
+- Aggregation Pipeline — *is* — MongoDB's way of running steps
+- Aggregation Pipeline — *steps are called* — stage
+- stage — *includes* — $match
+- stage — *includes* — $sort
+- stage — *includes* — $lookup
+- stage — *includes* — $project
+- stage — *includes* — $skip
+- stage — *includes* — $limit
+- $match — *is a* — pipeline stage
+- $match — *filters* — documents
+- $match — *is equivalent to* — WHERE (SQL)
+- $match — *uses* — $expr
+- $sort — *is a* — pipeline stage
+- $sort — *orders* — documents
+- $sort — *is used in* — Top-k optimization
+- $lookup — *is a* — pipeline stage
+- $lookup — *joins with* — collection
+- $project — *is a* — pipeline stage
+- $project — *picks* — Field
+- $project — *is like* — SELECT (SQL)
+- $skip — *is a* — pipeline stage
+- $limit — *is a* — pipeline stage
+- $skip — *and* — $limit
+- $skip and $limit — *implement* — Pagination
+- $expr — *is a* — MongoDB construct
+- $expr — *allows* — aggregation expressions
+- $expr — *allows expressions inside* — $match
+- $expr — *is needed for* — range operator
+- $or — *is a* — MongoDB logical operator
+- $and — *is a* — MongoDB logical operator
+- $not — *is a* — MongoDB logical operator
+- $regex — *tells* — MongoDB
+- $regex — *to match against* — Regex
+- $regex — *uses* — Case-insensitive
+- Case-insensitive — *via* — $options: "i"
+- Regex — *is a* — pattern
+- Regex — *for matching* — text
+- luz-docs — *escapes* — Regex
+- Case-insensitive — *ignores* — UPPER vs lower case
+- ObjectId — *is* — MongoDB's unique-id type
+- _id — *is an* — ObjectId
+- Field — *is a* — named piece of data
+- Field — *on a* — document
+- Field — *can be an* — Array (in MongoDB)
+- Array (in MongoDB) — *is a* — list of values
+- Array (in MongoDB) — *in a* — Field
+- Soft delete — *is a* — delete
+- Soft delete — *sets a* — flag
+- Soft delete — *sets* — _deletionStatus
+- Soft delete — *is opposite of* — Hard delete
+- Hard delete — *removes* — row permanently
+- Tenant — *is an* — isolated customer
+- Tenant — *is an* — organization
+- luz-docs — *serves many* — Tenant
+- URL — *contains* — {tenant_id}
+- {tenant_id} — *to identify* — Tenant
+- Security class — *is a* — label
+- Security class — *on a* — document
+- Security class — *on a* — folder
+- Security class — *is checked by* — server
+- server — *checks* — clearance
+- skip-security-classes=true — *bypasses* — Security class
+- Credential mapping — *is a* — permission layer
+- Credential mapping — *for* — personal documents
+- Facet — *is a* — summary count
+- Facet — *grouped by* — Field
+- Facet — *is a form of* — Aggregation
+- Aggregation — *computes a* — summary value
+- Pagination — *returns* — results
+- Pagination — *in* — pages
+- Pagination — *uses* — offset
+- Pagination — *uses* — page size
+- Top-k optimization — *is a* — speed trick
+- Index (database) — *is a* — lookup structure
+- Index (database) — *makes* — find documents
+- find documents — *is* — fast
+- _id — *always has an* — Index (database)
+- HTTP status codes — *are* — numeric codes
+- HTTP status codes — *a server returns* — numeric codes
+- HTTP status codes — *include* — 200
+- HTTP status codes — *include* — 400
+- HTTP status codes — *include* — 401
+- HTTP status codes — *include* — 404
+- HTTP status codes — *include* — 500
+- Pass-through (in code) — *forwards* — input unchanged
+- term operator — *is a* — Pass-through (in code)
+- Sub-query — *is a* — Query
+- Sub-query — *nested inside another* — Query
+- Recursive dispatch — *is a* — coding pattern
+- Recursive dispatch — *handles* — operators
+- Recursive dispatch — *is used for* — and operator
+- Recursive dispatch — *is used for* — or operator
+- DSL → MongoDB translation — *is the job of* — JsonStoreSearchQueryUtil.java
+- DSL → MongoDB translation — *takes* — luz-docs's query DSL
+- DSL → MongoDB translation — *rewrites as* — MongoDB query
+- DSL → MongoDB translation — *rewrites as* — Aggregation Pipeline
+- DSL → MongoDB translation — *is like a* — compiler
+- JsonStoreSearchQueryUtil.java — *performs* — DSL → MongoDB translation
+
+%% ai-graph-end %%

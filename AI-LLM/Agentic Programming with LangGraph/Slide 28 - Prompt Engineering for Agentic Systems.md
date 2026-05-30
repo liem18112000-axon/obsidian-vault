@@ -1,8 +1,25 @@
 ---
-title: "Slide 28: Prompt Engineering for Agentic Systems"
+ai_hash: 526baba50cfbef72
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Slide 28
+- Prompt Engineering for Agentic Systems
+- Prompt Engineering
+- Agentic Systems
+- RESEARCH_AGENT_PROMPT
+- BUDGET_AGENT_PROMPT
+- backend/core_llm/prompt_builder.py
+- Slide 27 - Tool Calling in Nodes
+- Index
+- Slide 29 - Meta-LLM (Provider Agnosticism)
 slide_number: 28
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 28: Prompt Engineering for Agentic Systems'
 ---
 
 # Slide 28: Prompt Engineering for Agentic Systems
@@ -63,3 +80,26 @@ Format as a table with USD, local currency, and percentage breakdowns.
 ---
 
 ← [[Slide 27 - Tool Calling in Nodes|Previous]] · [[Index|🏠 Index]] · [[Slide 29 - Meta-LLM (Provider Agnosticism)|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 15 - The Journey Plan Node (LLM Synthesis)]]
+- [[Slide 3 - The AI Trip Planner - Your Real-World Blueprint]]
+- [[Slide 27 - Tool Calling in Nodes]]
+- [[Slide 34 - Building Adaptive Agents]]
+- [[Slide 13 - The Budget Node (Business Logic)]]
+
+**Relations:**
+- Slide 28 — *covers topic* — Prompt Engineering for Agentic Systems
+- Prompt Engineering for Agentic Systems — *is a type of* — Prompt Engineering
+- Prompt Engineering for Agentic Systems — *applies to* — Agentic Systems
+- RESEARCH_AGENT_PROMPT — *is an example of* — Prompt Engineering
+- BUDGET_AGENT_PROMPT — *is an example of* — Prompt Engineering
+- RESEARCH_AGENT_PROMPT — *is defined in file* — backend/core_llm/prompt_builder.py
+- BUDGET_AGENT_PROMPT — *is defined in file* — backend/core_llm/prompt_builder.py
+- Slide 28 — *is preceded by* — Slide 27 - Tool Calling in Nodes
+- Slide 28 — *is part of* — Index
+- Slide 28 — *is followed by* — Slide 29 - Meta-LLM (Provider Agnosticism)
+
+%% ai-graph-end %%

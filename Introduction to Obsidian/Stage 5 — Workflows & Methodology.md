@@ -1,3 +1,63 @@
+---
+ai_hash: 4548953df8ab661c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Stage 5 — Workflows & Methodology
+- Stage 1 — Foundations
+- Stage 2 — Linking & Structure
+- Stage 3 — Core Plugins
+- Stage 4 — Community Plugins
+- Zettelkasten
+- Niklas Luhmann
+- Atomicity
+- Your own words
+- Dense linking
+- Emergence
+- PARA
+- Tiago Forte
+- Projects (PARA)
+- Areas (PARA)
+- Resources (PARA)
+- Archives (PARA)
+- Luz-Enrichment pipeline
+- PIT tax filing
+- Klara maintenance
+- team mentoring
+- Quarkus notes
+- GCP patterns
+- Shipped projects
+- quantum-platform work
+- LYT / MOCs
+- Nick Milo
+- Maps of Content
+- Hybrid Method
+- Capture-to-Permanent Pipeline
+- Capture (Pipeline Step)
+- Process (Pipeline Step)
+- Connect (Pipeline Step)
+- Archive (Pipeline Step)
+- Process Cadence
+- Daily (Cadence)
+- Weekly (Cadence)
+- Per-sprint / monthly (Cadence)
+- Stage 6 — Advanced Automation
+- Ollama
+- Claude/MCP
+- AI integration
+- Plugins
+- Methodology
+- ML-paper work
+- engineering work
+- Luz MOC
+- daily note
+- inbox
+- scrum template
+- Tasks
+- Vault
+- Knowledge base
+---
+
 # Overview
 Here's the truth Stage 5 forces you to confront: **no plugin saves you from a lack of method.** [[Stage 1 — Foundations]] [[Stage 2 — Linking & Structure]] [[Stage 3 — Core Plugins]] [[Stage 4 — Community Plugins]] gave you a powerful machine; 
 Stage 5 is deciding what to _do_ with it. Pick wrong and you get a beautiful graph full of notes you never reuse. The methodologies below aren't rules — they're lenses. Most people, you included, will blend two.
@@ -60,3 +120,93 @@ Method needs rhythm. A minimal review schedule:
 ---
 **End-of-stage checkmark:** you can say which bucket any new note belongs in without hesitating, your inbox gets processed (not just accumulated), and you've run at least one weekly review. The method is working when the vault feels lighter over time instead of heavier.
 That leaves [[Stage 6 — Advanced Automation]] — sync across devices, publishing, and AI integration, which ties back into your Ollama and Claude/MCP work for actually _querying_ this knowledge base.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stage 2 — Linking & Structure]]
+- [[Roadmap]]
+- [[Stage 3 — Core Plugins]]
+- [[Stage 4 — Community Plugins]]
+- [[Stage 6 — Advanced Automation]]
+
+**Relations:**
+- Stage 5 — Workflows & Methodology — *forces to confront* — no plugin saves you from a lack of method
+- Stage 1 — Foundations — *contributed to* — powerful machine
+- Stage 2 — Linking & Structure — *contributed to* — powerful machine
+- Stage 3 — Core Plugins — *contributed to* — powerful machine
+- Stage 4 — Community Plugins — *contributed to* — powerful machine
+- Zettelkasten — *is a* — networked-thought method
+- Zettelkasten — *developed by* — Niklas Luhmann
+- Zettelkasten — *core principle* — Atomicity
+- Zettelkasten — *core principle* — Your own words
+- Zettelkasten — *core principle* — Dense linking
+- Zettelkasten — *core principle* — Emergence
+- Zettelkasten — *best for* — ML-paper work
+- Zettelkasten — *best for* — research
+- Zettelkasten — *best for* — durable knowledge
+- Zettelkasten — *weakness* — terrible for time-bound, actionable work
+- PARA — *developed by* — Tiago Forte
+- PARA — *organized by* — actionability
+- PARA — *has bucket* — Projects (PARA)
+- PARA — *has bucket* — Areas (PARA)
+- PARA — *has bucket* — Resources (PARA)
+- PARA — *has bucket* — Archives (PARA)
+- Projects (PARA) — *example* — Luz-Enrichment pipeline
+- Projects (PARA) — *example* — PIT tax filing
+- Areas (PARA) — *example* — Klara maintenance
+- Areas (PARA) — *example* — team mentoring
+- Resources (PARA) — *example* — Quarkus notes
+- Resources (PARA) — *example* — GCP patterns
+- Archives (PARA) — *example* — Shipped projects
+- Archives (PARA) — *example* — quantum-platform work
+- PARA — *best for* — engineering work
+- PARA — *weakness* — organizes files, not ideas
+- LYT / MOCs — *introduced in* — Stage 2 — Linking & Structure
+- LYT / MOCs — *developed by* — Nick Milo
+- LYT / MOCs — *treats as primary structure* — Maps of Content
+- LYT / MOCs — *sits on top of* — PARA
+- LYT / MOCs — *sits on top of* — Zettelkasten
+- LYT / MOCs — *best for* — connective tissue
+- Hybrid Method — *uses as skeleton* — PARA
+- Hybrid Method — *uses as connective layer* — Zettelkasten
+- Hybrid Method — *uses as navigation layer* — LYT / MOCs
+- PARA — *includes* — Projects (PARA)
+- PARA — *includes* — Areas (PARA)
+- PARA — *includes* — Resources (PARA)
+- PARA — *includes* — Archives (PARA)
+- PARA — *includes* — daily note
+- PARA — *includes* — Maps of Content
+- Zettelkasten — *applies to* — Resources (PARA)
+- Zettelkasten — *applies to* — Archives (PARA)
+- Maps of Content — *example* — Luz MOC
+- Capture-to-Permanent Pipeline — *step* — Capture (Pipeline Step)
+- Capture-to-Permanent Pipeline — *step* — Process (Pipeline Step)
+- Capture-to-Permanent Pipeline — *step* — Connect (Pipeline Step)
+- Capture-to-Permanent Pipeline — *step* — Archive (Pipeline Step)
+- Capture (Pipeline Step) — *involves* — daily note
+- Capture (Pipeline Step) — *involves* — inbox
+- Process (Pipeline Step) — *involves* — turning captures into atomic notes
+- Process (Pipeline Step) — *involves* — filing under PARA
+- Connect (Pipeline Step) — *involves* — linking new notes to existing ones
+- Connect (Pipeline Step) — *involves* — updating relevant MOC
+- Archive (Pipeline Step) — *involves* — moving finished projects
+- Process Cadence — *includes* — Daily (Cadence)
+- Process Cadence — *includes* — Weekly (Cadence)
+- Process Cadence — *includes* — Per-sprint / monthly (Cadence)
+- Daily (Cadence) — *involves* — capture into scrum/daily note
+- Daily (Cadence) — *automated from* — Stage 3 — Core Plugins
+- Weekly (Cadence) — *involves* — process inbox
+- Weekly (Cadence) — *involves* — link new notes
+- Weekly (Cadence) — *involves* — glance at open Tasks
+- Per-sprint / monthly (Cadence) — *involves* — archive finished projects
+- Per-sprint / monthly (Cadence) — *involves* — prune orphans
+- Stage 2 — Linking & Structure — *shows* — orphans
+- Stage 6 — Advanced Automation — *includes* — sync across devices
+- Stage 6 — Advanced Automation — *includes* — publishing
+- Stage 6 — Advanced Automation — *includes* — AI integration
+- AI integration — *ties back into* — Ollama
+- AI integration — *ties back into* — Claude/MCP
+- AI integration — *for* — querying Knowledge base
+
+%% ai-graph-end %%

@@ -1,3 +1,40 @@
+---
+ai_hash: 33729a6d241b29a2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- 07 Aggregation Pipeline
+- Aggregation Pipeline
+- MongoDB
+- Stages
+- JsonStoreQuerySearchUtil.buildDocumentQueryFilterWithSecurityClass()
+- /search pipeline
+- $sort
+- $match
+- $lookup
+- $addFields
+- $skip
+- $limit
+- $project
+- _id index
+- Top-k optimization
+- /count pipeline
+- $unwind
+- $group
+- 06 Server Filters
+- 08 Facets
+- search-logic
+- _id
+- folders
+- security-class
+- folderIds
+- _folderNames
+- pagination
+- includes/excludes
+- Index (database)
+- restricted folders
+---
+
 # 07 — Aggregation Pipeline Order
 
 ## What's an aggregation pipeline?
@@ -61,3 +98,50 @@ The `/count` pipeline is heavier than `/search`. If you don't need a count, pass
 ---
 
 **Navigation:** [[06 Server Filters|← prev]] · [[search-logic|↑ index]] · [[08 Facets|next →]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[02 Endpoints]]
+- [[search-logic]]
+- [[Glossary]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[Divide-and-Conquer Count - Technical Points for Beginners]]
+
+**Relations:**
+- MongoDB — *processes data using* — Aggregation Pipeline
+- Aggregation Pipeline — *consists of* — Stages
+- Aggregation Pipeline — *is built by* — JsonStoreQuerySearchUtil.buildDocumentQueryFilterWithSecurityClass()
+- /search pipeline — *is a type of* — Aggregation Pipeline
+- /count pipeline — *is a type of* — Aggregation Pipeline
+- /search pipeline — *includes stage* — $sort
+- /search pipeline — *includes stage* — $match
+- /search pipeline — *includes stage* — $lookup
+- /search pipeline — *includes stage* — $addFields
+- /search pipeline — *includes stage* — $skip
+- /search pipeline — *includes stage* — $limit
+- /search pipeline — *includes stage* — $project
+- $sort — *uses* — _id index
+- _id — *has* — Index (database)
+- $match — *uses* — 06 Server Filters
+- $sort — *enables* — Top-k optimization
+- $lookup — *joins* — folders
+- $match — *filters by* — security-class
+- $addFields — *drops* — restricted folders
+- $addFields — *appends* — _folderNames
+- $skip — *handles* — pagination
+- $limit — *handles* — pagination
+- $project — *applies* — includes/excludes
+- /count pipeline — *shares stages with* — /search pipeline
+- /count pipeline — *includes stage* — $unwind
+- /count pipeline — *includes stage* — $group
+- $unwind — *processes* — folderIds
+- $group — *deduplicates* — documents
+- $group — *counts* — documents
+- /count pipeline — *differs from* — /search pipeline
+- /count pipeline — *is heavier than* — /search pipeline
+- 07 Aggregation Pipeline — *follows* — 06 Server Filters
+- 07 Aggregation Pipeline — *is part of* — search-logic
+- 07 Aggregation Pipeline — *precedes* — 08 Facets
+
+%% ai-graph-end %%

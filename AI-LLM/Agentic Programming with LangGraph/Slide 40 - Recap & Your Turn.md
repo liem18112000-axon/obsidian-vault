@@ -1,8 +1,58 @@
 ---
-title: "Slide 40: Recap & Your Turn"
+ai_hash: 041be1b420c92b4c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Agentic programming
+- LLM calls
+- Orchestrated workflows
+- LangGraph
+- State management
+- Parallelism
+- Observability
+- State
+- Nodes
+- Tools
+- LLMs
+- Custom logic
+- Parallel execution
+- Latency
+- Error handling
+- Fallbacks
+- Tracing
+- RAG
+- AI systems
+- Trip Planner
+- Domain
+- PR generator
+- Customer support
+- Research assistant
+- Agents
+- APIs
+- Databases
+- LangGraph Documentation
+- AI Trip Planner Repo
+- Backend Tests
+- Arize Phoenix Observability
+- LangChain Discord
+- Humans
+- AI workers
+- Complex problems
+- Slide 39 - Future of Agentic Programming
+- Index
+- Appendix A - Full Trip Planner Code Example
+- Debugging
+- System resilience
+- Tasks
+- Resource
+- shared, immutable data
 slide_number: 40
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 40: Recap & Your Turn'
 ---
 
 # Slide 40: Recap & Your Turn
@@ -47,3 +97,55 @@ source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMM
 ---
 
 ← [[Slide 39 - Future of Agentic Programming|Previous]] · [[Index|🏠 Index]] · [[Appendix A - Full Trip Planner Code Example|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 1 - Course Overview]]
+- [[Index]]
+- [[Slide 3 - The AI Trip Planner - Your Real-World Blueprint]]
+- [[Slide 39 - Future of Agentic Programming]]
+- [[Slide 16 - Running the Graph]]
+
+**Relations:**
+- Agentic programming — *moves beyond* — LLM calls
+- Agentic programming — *uses* — Orchestrated workflows
+- LangGraph — *provides* — State management
+- LangGraph — *provides* — Parallelism
+- LangGraph — *provides* — Observability
+- State — *is* — shared, immutable data
+- State — *passed between* — Nodes
+- Nodes — *can be* — async
+- Nodes — *can use* — Tools
+- Nodes — *can call* — LLMs
+- Nodes — *can run* — Custom logic
+- Parallel execution — *improves* — Latency
+- Error handling — *ensures* — System resilience
+- Fallbacks — *ensures* — System resilience
+- Observability — *is essential for* — Debugging
+- Tracing — *is a form of* — Observability
+- RAG — *creates* — AI systems
+- Tools — *create* — AI systems
+- LLM reasoning — *creates* — AI systems
+- Trip Planner — *is an example of* — AI systems
+- Trip Planner — *can be adapted for* — Domain
+- PR generator — *is a type of* — Domain
+- Customer support — *is a type of* — Domain
+- Research assistant — *is a type of* — Domain
+- Agents — *identify* — Tasks
+- State — *flows between* — Agents
+- Tools — *call* — APIs
+- Tools — *call* — Databases
+- LangGraph Documentation — *is a* — Resource
+- AI Trip Planner Repo — *is a* — Resource
+- Backend Tests — *is a* — Resource
+- Arize Phoenix Observability — *is a* — Resource
+- LangChain Discord — *is a* — Resource
+- Agentic programming — *augments* — Humans
+- AI workers — *are* — specialized
+- AI workers — *collaborate to solve* — Complex problems
+- Slide 39 - Future of Agentic Programming — *is* — Previous Slide
+- Index — *is* — Home
+- Appendix A - Full Trip Planner Code Example — *is* — Next Slide
+
+%% ai-graph-end %%

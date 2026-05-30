@@ -1,3 +1,62 @@
+---
+ai_hash: aa81367180ea1d9f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Service Validation
+- DocumentService
+- updateDocumentMetadata
+- credentialToken
+- tenantId
+- documentId
+- JsonObject
+- metadata
+- validation
+- validateDocumentId
+- validateMatchDocumentId
+- jsonStoreMongoService
+- getDocumentMetadataById
+- currentMetadata
+- validateDocumentMetadata
+- validateMetadataVersion
+- validateDeletionStatus
+- validateCorrectFieldsType
+- folderIds
+- JsonObjectUtil
+- removeDuplicate
+- folderService
+- existFolderIds
+- _link
+- deleteByKey
+- LINK
+- validateTechnicalFields
+- technical fields
+- _folderNames
+- Validation
+- Current metadata
+- New metadata
+- Version number
+- Deduplicate
+- Technical field
+- API Entry Point
+- Cascade Decision Gate
+- document-put-cascade
+- invalid IDs
+- old document
+- document exists
+- document is valid
+- stale updates
+- deletion state
+- field types
+- repeated folder IDs
+- missing folders
+- response/navigation data
+- internal _... fields
+- Materialized fields
+- Client
+- Service
+---
+
 # Service Validation
 
 [[document-put-cascade|Back to index]] | Previous: [[01 API Entry Point|API entry point]] | Next: [[03 Cascade Decision Gate|Cascade decision gate]]
@@ -48,3 +107,58 @@ The client is not trusted to edit those fields directly. The service first check
 | Technical field | Internal system field, usually starting with `_`, not meant to be edited by users. |
 | `_link` | Helper field often used in API responses; it should not be saved back as document metadata. |
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[01 API Entry Point]]
+- [[document-put-cascade]]
+- [[06 Failure Paths]]
+- [[08 Glossary for Newbies]]
+- [[05 Save and Side Effects]]
+
+**Relations:**
+- updateDocumentMetadata — *is a method of* — DocumentService
+- updateDocumentMetadata — *takes parameter* — credentialToken
+- updateDocumentMetadata — *takes parameter* — tenantId
+- updateDocumentMetadata — *takes parameter* — documentId
+- updateDocumentMetadata — *takes parameter* — metadata
+- Service Validation — *protects* — updateDocumentMetadata
+- validation — *performs* — validateDocumentId
+- validateDocumentId — *rejects* — invalid IDs
+- validation — *performs* — validateMatchDocumentId
+- validateMatchDocumentId — *prevents* — updating one URL while sending another ID in the body
+- jsonStoreMongoService — *performs* — getDocumentMetadataById
+- getDocumentMetadataById — *loads* — old document
+- validation — *performs* — validateDocumentMetadata
+- validateDocumentMetadata — *ensures* — document exists
+- validateDocumentMetadata — *ensures* — document is valid
+- validateMetadataVersion — *prevents* — stale updates
+- validateDeletionStatus — *prevents* — caller from silently changing deletion state
+- validateCorrectFieldsType — *ensures* — field types
+- JsonObjectUtil — *performs* — removeDuplicate
+- removeDuplicate — *operates on* — folderIds
+- removeDuplicate — *avoids* — repeated folder IDs
+- folderService — *performs* — existFolderIds
+- existFolderIds — *prevents* — storing references to missing folders
+- JsonObjectUtil — *performs* — deleteByKey
+- deleteByKey — *removes* — _link
+- _link — *is* — response/navigation data
+- validateTechnicalFields — *validates* — technical fields
+- validateTechnicalFields — *blocks* — users from adding/updating/deleting internal _... fields
+- Materialized fields — *start with* — `_`
+- _folderNames — *is an example of* — Materialized fields
+- Client — *is not trusted to edit* — technical fields
+- Service — *recomputes and merges* — technical fields
+- Validation — *is defined as* — Checking input before accepting it
+- Current metadata — *is defined as* — The document metadata already stored in the database
+- New metadata — *is defined as* — The JSON body sent by the caller
+- Version number — *is defined as* — A number used to detect stale updates
+- Deduplicate — *is defined as* — Remove repeated values
+- Technical field — *is defined as* — Internal system field
+- Technical field — *starts with* — `_`
+- _link — *is defined as* — Helper field often used in API responses
+- Service Validation — *back to* — document-put-cascade
+- Service Validation — *previous step is* — API Entry Point
+- Service Validation — *next step is* — Cascade Decision Gate
+
+%% ai-graph-end %%

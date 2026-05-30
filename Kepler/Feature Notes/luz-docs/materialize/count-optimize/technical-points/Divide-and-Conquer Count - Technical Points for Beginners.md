@@ -1,8 +1,90 @@
 ---
+ai_hash: da9ec6e798ad0b73
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+created: 2026-05-28 09:17:32+07:00
+entities:
+- Divide-and-Conquer Count
+- Divide-and-Conquer Visible-Document Count
+- Database
+- Index
+- Performance Tuning
+- User
+- Document
+- CPU Core
+- _id space
+- Range
+- Parallel Counting
+- Security Code
+- Collection
+- Field
+- _id (field)
+- MongoDB
+- ObjectId
+- Hexadecimal
+- Visibility
+- _isPublic (field)
+- _effectiveSecurityClassCodes (field)
+- Count Query
+- Index Key
+- Ascending Index
+- Compound Index
+- Multikey Index
+- Array Field
+- Amplification Factor
+- De-duplication
+- Latency
+- Tail Latency
+- Thread
+- Concurrency
+- Parallelism
+- Divide and Conquer (pattern)
+- Problem
+- Sub-problem
+- Partition
+- K (number of partitions)
+- Boundary
+- Inclusive Bounds
+- Exclusive Bounds
+- Exact Count
+- Fan-out
+- Fan-in
+- Wall-clock time
+- CPU-bound
+- I/O-bound
+- Resident in memory
+- Working Set
+- Cache Hit
+- Cache Miss
+- Query Explain Plan
+- Seek
+- Scan
+- Post-filter
+- Stored Record
+- Data Structure
+- Processing Unit
+- Path of Execution
+- Duplicates
+- Request time
+- Precise result
+- Multiple sub-requests
+- Results
+- User waiting time
+- Query execution strategy
+- Index Scan (IXSCAN)
+- Collection Scan (COLLSCAN)
+- Specific index part
+- Many index entries
+- Broader result set
+source_note: '[[Kepler/Feature Notes/luz-docs/materialize/count-optimize/Divide-and-Conquer
+  Visible-Document Count.md]]'
+tags:
+- luz-docs
+- materialize
+- count-optimization
+- mongodb
+- beginner
 type: technical-explainer
-created: 2026-05-28 09:17:32 +07:00
-tags: [luz-docs, materialize, count-optimization, mongodb, beginner]
-source_note: "[[Kepler/Feature Notes/luz-docs/materialize/count-optimize/Divide-and-Conquer Visible-Document Count.md]]"
 ---
 
 # Divide-and-Conquer Count — Technical Points for Beginners
@@ -1161,3 +1243,89 @@ Uniform ObjectId ranges do not guarantee equal work. Measure per-partition laten
 - MongoDB Manual — Read preference: https://www.mongodb.com/docs/manual/core/read-preference/
 - Redis Docs — HyperLogLog: https://redis.io/docs/latest/develop/data-types/probabilistic/hyperloglogs/
 - RoaringBitmap project: https://roaringbitmap.org/
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[Glossary]]
+- [[07 Aggregation Pipeline]]
+- [[index]]
+- [[search-logic]]
+
+**Relations:**
+- Divide-and-Conquer Count — *explains* — Divide-and-Conquer Visible-Document Count
+- Divide-and-Conquer Count — *explains concepts for* — Database
+- Divide-and-Conquer Count — *explains concepts for* — Index
+- Divide-and-Conquer Count — *explains concepts for* — Performance Tuning
+- User — *can see* — Document
+- Divide-and-Conquer Count — *splits* — _id space
+- _id space — *is split into* — Range
+- Range — *is counted using* — Parallel Counting
+- Parallel Counting — *uses* — CPU Core
+- Document — *is a* — Stored Record
+- Collection — *is a group of* — Document
+- Document — *has* — Field
+- _id (field) — *is a* — Field
+- _id (field) — *is main identifier for* — Document
+- _id (field) — *is often an* — ObjectId
+- MongoDB — *uses* — ObjectId
+- ObjectId — *is displayed as* — Hexadecimal
+- Visibility — *determines if* — User can see Document
+- Document — *has* — _isPublic (field)
+- Document — *has* — _effectiveSecurityClassCodes (field)
+- _isPublic (field) — *influences* — Visibility
+- _effectiveSecurityClassCodes (field) — *influences* — Visibility
+- User — *has* — Security Code
+- Count Query — *determines number of* — Document
+- Index — *is a* — Data Structure
+- Index — *improves performance for* — Database
+- Index — *has* — Index Key
+- Ascending Index — *is a type of* — Index
+- Compound Index — *is a type of* — Index
+- Multikey Index — *is a type of* — Index
+- Multikey Index — *indexes* — Array Field
+- Amplification Factor — *describes* — Database internal work
+- De-duplication — *removes* — Duplicates
+- Multikey Index — *can cause* — Duplicates
+- Latency — *measures* — Request time
+- Tail Latency — *is a type of* — Latency
+- Divide-and-Conquer Count — *targets* — Tail Latency
+- CPU Core — *is a* — Processing Unit
+- Thread — *is a* — Path of Execution
+- Concurrency — *involves* — Multiple tasks in progress
+- Parallelism — *involves* — Multiple tasks running simultaneously
+- Parallelism — *uses* — CPU Core
+- Divide and Conquer (pattern) — *solves* — Problem
+- Problem — *is divided into* — Sub-problem
+- Divide-and-Conquer Count — *applies* — Divide and Conquer (pattern)
+- Partition — *is a* — Range
+- K (number of partitions) — *is the number of* — Partition
+- Boundary — *defines* — Range
+- Inclusive Bounds — *includes* — Boundary
+- Exclusive Bounds — *excludes* — Boundary
+- Exact Count — *is a* — Precise result
+- Divide-and-Conquer Count — *provides* — Exact Count
+- Fan-out — *creates* — Multiple sub-requests
+- Fan-in — *combines* — Results
+- Fan-in — *is also known as* — Converge
+- Wall-clock time — *is* — User waiting time
+- Fan-out — *can reduce* — Wall-clock time
+- CPU-bound — *means* — CPU is bottleneck
+- I/O-bound — *means* — I/O is bottleneck
+- Index — *can be* — Resident in memory
+- Working Set — *contains* — Frequently needed data and indexes
+- Cache Hit — *means* — Data found in memory
+- Cache Miss — *means* — Data fetched from slower storage
+- Query Explain Plan — *shows* — Query execution strategy
+- Query Explain Plan — *can indicate* — Index Scan (IXSCAN)
+- Query Explain Plan — *can indicate* — Collection Scan (COLLSCAN)
+- Seek — *accesses* — Specific index part
+- Scan — *reads* — Many index entries
+- Post-filter — *filters* — Broader result set
+- _id (field) — *should be second in* — Compound Index
+- Compound Index — *can start with* — _effectiveSecurityClassCodes (field)
+- Compound Index — *can start with* — _isPublic (field)
+- Range — *are* — Non-overlapping
+
+%% ai-graph-end %%

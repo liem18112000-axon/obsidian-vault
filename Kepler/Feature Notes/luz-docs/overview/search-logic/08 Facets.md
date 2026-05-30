@@ -1,3 +1,45 @@
+---
+ai_hash: 653c818a074df59b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Facets
+- Facet Aggregations
+- Online Shop
+- luz-docs
+- Request Body
+- Query
+- /count endpoint
+- /search endpoint
+- Basic terms facet
+- Multi-field grouping
+- Multi-facet operators
+- getMax
+- getMin
+- getFirst
+- getLast
+- addToSet
+- countByValue
+- isExisting
+- missing facet
+- field parameter
+- from parameter
+- size parameter
+- sort parameter
+- key sort option
+- count sort option
+- fields parameter
+- senderName field
+- senderTenantId field
+- senderCompanyId field
+- documentReferenceDate field
+- senderTenantIds field
+- MultiFacetOperator.java
+- Aggregation Pipeline
+- Examples
+- Glossary
+---
+
 # 08 — Facet Aggregations
 
 ## What's a facet?
@@ -127,3 +169,54 @@ Useful for "how many of my documents are missing required data?" dashboards.
 ---
 
 **Navigation:** [[07 Aggregation Pipeline|← prev]] · [[search-logic|↑ index]] · [[09 Examples|next →]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[search-logic]]
+- [[Glossary]]
+- [[04 Query Operators]]
+- [[03 Request Body]]
+- [[02 Endpoints]]
+
+**Relations:**
+- Facets — *ARE* — Facet Aggregations
+- Facets — *EXAMPLE_USE_CASE* — Online Shop
+- Facets — *COMPUTED_IN* — luz-docs
+- Facets — *LOCATED_IN* — Request Body
+- Request Body — *CONTAINS_KEY* — Query
+- Facets — *NOT_SUPPORTED_ON* — /count endpoint
+- Facets — *SUPPORTED_ON* — /search endpoint
+- Basic terms facet — *IS_A* — Facets
+- Basic terms facet — *USES* — field parameter
+- Basic terms facet — *USES* — from parameter
+- Basic terms facet — *USES* — size parameter
+- Basic terms facet — *USES* — sort parameter
+- sort parameter — *HAS_OPTION* — key sort option
+- sort parameter — *HAS_OPTION* — count sort option
+- Multi-field grouping — *IS_A* — Facets
+- Multi-field grouping — *USES* — fields parameter
+- Multi-field grouping — *USES* — from parameter
+- Multi-field grouping — *USES* — size parameter
+- Multi-field grouping — *USES* — sort parameter
+- Multi-facet operators — *USED_WITH* — Multi-field grouping
+- Multi-facet operators — *DEFINED_IN* — MultiFacetOperator.java
+- getMax — *IS_A* — Multi-facet operators
+- getMin — *IS_A* — Multi-facet operators
+- getFirst — *IS_A* — Multi-facet operators
+- getLast — *IS_A* — Multi-facet operators
+- addToSet — *IS_A* — Multi-facet operators
+- countByValue — *IS_A* — Multi-facet operators
+- isExisting — *IS_A* — Multi-facet operators
+- missing facet — *IS_A* — Facets
+- missing facet — *USES* — field parameter
+- senderName field — *IS_EXAMPLE_FIELD_FOR* — Basic terms facet
+- senderTenantId field — *IS_EXAMPLE_FIELD_FOR* — Multi-field grouping
+- senderCompanyId field — *IS_EXAMPLE_FIELD_FOR* — Multi-field grouping
+- documentReferenceDate field — *IS_EXAMPLE_FIELD_FOR* — Multi-field grouping
+- senderTenantIds field — *IS_EXAMPLE_FIELD_FOR* — missing facet
+- Facets — *PREVIOUS_TOPIC* — Aggregation Pipeline
+- Facets — *NEXT_TOPIC* — Examples
+- Facets — *DEFINED_IN* — Glossary
+
+%% ai-graph-end %%

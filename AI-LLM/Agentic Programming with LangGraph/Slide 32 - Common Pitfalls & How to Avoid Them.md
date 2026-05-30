@@ -1,8 +1,38 @@
 ---
-title: "Slide 32: Common Pitfalls & How to Avoid Them"
+ai_hash: 7870a4330f3fc85e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Slide 32
+- Common Pitfalls
+- State Mutations
+- Forgetting to Return Dict Updates
+- Unhandled Exceptions
+- Blocking Calls in Async Nodes
+- '`node` function'
+- '`state`'
+- '`requests.get`'
+- '`aiohttp.ClientSession`'
+- '`event loop`'
+- '`try-except` block'
+- '`logger.error`'
+- Slide 31
+- Index
+- Slide 33
+- shared state
+- old values
+- workflow crashes
+- graceful fallback
+- Non-blocking
+- Blocking Call
+- async HTTP
 slide_number: 32
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 32: Common Pitfalls & How to Avoid Them'
 ---
 
 # Slide 32: Common Pitfalls & How to Avoid Them
@@ -72,3 +102,38 @@ async def node(state):
 ---
 
 ← [[Slide 31 - Scaling & Performance Optimization|Previous]] · [[Index|🏠 Index]] · [[Slide 33 - Debugging Techniques|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 20 - State Mutations & Immutability]]
+- [[Slide 9 - Writing Node Functions]]
+- [[Slide 33 - Debugging Techniques]]
+- [[Slide 27 - Tool Calling in Nodes]]
+- [[Slide 12 - The Weather Node (Real-Time Data)]]
+
+**Relations:**
+- Slide 32 — *covers* — Common Pitfalls
+- Common Pitfalls — *include* — State Mutations
+- Common Pitfalls — *include* — Forgetting to Return Dict Updates
+- Common Pitfalls — *include* — Unhandled Exceptions
+- Common Pitfalls — *include* — Blocking Calls in Async Nodes
+- State Mutations — *is a type of* — Pitfall
+- Forgetting to Return Dict Updates — *is a type of* — Pitfall
+- Unhandled Exceptions — *is a type of* — Pitfall
+- Blocking Calls in Async Nodes — *is a type of* — Pitfall
+- State Mutations — *modifies* — shared state
+- Forgetting to Return Dict Updates — *leads to* — old values
+- Unhandled Exceptions — *causes* — workflow crashes
+- Blocking Calls in Async Nodes — *blocks* — event loop
+- `requests.get` — *is a* — Blocking Call
+- `aiohttp.ClientSession` — *enables* — Non-blocking
+- `aiohttp.ClientSession` — *used for* — async HTTP
+- `try-except` block — *provides* — graceful fallback
+- `logger.error` — *used in* — `try-except` block
+- Slide 32 — *preceded by* — Slide 31
+- Slide 32 — *part of* — Index
+- Slide 32 — *followed by* — Slide 33
+- `node` function — *operates on* — `state`
+
+%% ai-graph-end %%

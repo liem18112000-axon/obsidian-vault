@@ -1,3 +1,77 @@
+---
+ai_hash: 5feb511bba38af75
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Advanced Automation
+- Ollama
+- Claude
+- MCP
+- Obsidian
+- Vault
+- Markdown
+- Sync Across Devices
+- Publishing
+- AI Integration
+- iCloud
+- Google Drive
+- Dropbox
+- Git
+- Obsidian Git
+- Syncthing
+- Obsidian Sync
+- CostBench
+- Toolradar
+- Checkthat
+- Obsidian Publish
+- Quartz
+- GitHub Pages
+- BuildMVPFast
+- MCP server
+- Claude Desktop
+- Claude Code
+- Cursor
+- mcp-obsidian
+- MarkusPfundstein
+- Local REST API
+- obsidian-mcp-tools
+- jacksteamdev
+- Raw-files server
+- ChatGPT
+- Windsurf
+- Obsidian Claude Code MCP plugin
+- LobeHub
+- MCP Servers
+- Smart Connections
+- Copilot
+- HTTP-with-SSE MCP protocol
+- Streamable HTTP spec
+- Claim-Check pattern
+- ePost
+- Phone sync
+- Desktop sync
+- End-to-end encryption
+- Version history
+- Conflict resolution
+- Themes
+- Graph view
+- Full-text search
+- Static site
+- Semantic search
+- Obsidian templates
+- SLSA provenance attestations
+- BM25 search
+- WebSocket
+- HTTP/SSE
+- Local model
+- API
+- Knowledge base
+- Community plugin
+- Commercial use
+- Obsidian AI Setup
+- Luz
+---
+
 # Overview
 The final stage, and the one that ties back to the Ollama and Claude/MCP work you've already done with Obsidian. Three pillars: getting your vault everywhere, getting it onto the web, and wiring AI into it. This is also where the "you own plain text files" foundation pays off — every option here works _because_ your vault is just Markdown on disk.
 # Sync Across Devices
@@ -34,3 +108,106 @@ This is the upgrade to your earlier Obsidian + Ollama + Claude/MCP setup. The la
 ---
 
 **End-of-stage checkmark:** your vault syncs to your phone without manual git gymnastics, and you can ask Claude a question that gets answered from your _own_ notes — "what did we decide about the Claim-Check pattern for Luz?" returns your actual note, not a generic answer. That's the whole system closing the loop: capture → structure → query.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Roadmap]]
+- [[Stage 3 — Core Plugins]]
+- [[Stage 5 — Workflows & Methodology]]
+- [[Stage 2 — Linking & Structure]]
+- [[Stage 4 — Community Plugins]]
+
+**Relations:**
+- Advanced Automation — *involves* — Ollama
+- Advanced Automation — *involves* — Claude
+- Advanced Automation — *involves* — MCP
+- Advanced Automation — *involves* — Obsidian
+- Advanced Automation — *has_pillar* — Sync Across Devices
+- Advanced Automation — *has_pillar* — Publishing
+- Advanced Automation — *has_pillar* — AI Integration
+- Obsidian — *manages* — Vault
+- Vault — *consists_of* — Markdown
+- Sync Across Devices — *has_free_option* — iCloud
+- Sync Across Devices — *has_free_option* — Google Drive
+- Sync Across Devices — *has_free_option* — Dropbox
+- Sync Across Devices — *has_free_option* — Git
+- Sync Across Devices — *has_free_option* — Syncthing
+- Sync Across Devices — *has_paid_option* — Obsidian Sync
+- Obsidian Git — *is_a* — Community plugin
+- Obsidian Git — *uses* — Git
+- Obsidian Git — *for* — Obsidian
+- Obsidian Sync — *offers* — End-to-end encryption
+- Obsidian Sync — *offers* — Version history
+- Obsidian Sync — *offers* — Conflict resolution
+- CostBench — *provides_info_on* — Obsidian Sync
+- Toolradar — *provides_info_on* — Obsidian Sync
+- Obsidian Git — *recommended_for* — Desktop sync
+- Obsidian Sync — *solves_problem_of* — Phone sync
+- Obsidian — *commercial_use_status* — free
+- Checkthat — *provides_info_on* — Obsidian
+- Publishing — *has_official_tool* — Obsidian Publish
+- Publishing — *has_open_source_tool* — Quartz
+- Obsidian Publish — *offers* — Themes
+- Obsidian Publish — *offers* — Graph view
+- Obsidian Publish — *offers* — Full-text search
+- CostBench — *provides_info_on* — Obsidian Publish
+- Quartz — *publishes* — Vault
+- Quartz — *creates* — Static site
+- Quartz — *can_use* — GitHub Pages
+- Toolradar — *provides_info_on* — Quartz
+- AI Integration — *upgrades* — Obsidian AI Setup
+- BuildMVPFast — *provides_info_on* — AI Integration
+- AI Integration — *has_path* — Path A
+- AI Integration — *has_path* — Path B
+- AI Integration — *has_path* — Path C
+- Path A — *involves* — MCP server
+- MCP server — *exposes_vault_to* — Claude Desktop
+- MCP server — *exposes_vault_to* — Claude Code
+- MCP server — *exposes_vault_to* — Cursor
+- mcp-obsidian — *is_a* — MCP server
+- mcp-obsidian — *developed_by* — MarkusPfundstein
+- mcp-obsidian — *requires* — Local REST API
+- Local REST API — *is_a* — Community plugin
+- obsidian-mcp-tools — *is_a* — MCP server
+- obsidian-mcp-tools — *developed_by* — jacksteamdev
+- obsidian-mcp-tools — *adds_feature* — Semantic search
+- obsidian-mcp-tools — *adds_feature* — Obsidian templates
+- obsidian-mcp-tools — *has_security_feature* — SLSA provenance attestations
+- Raw-files server — *is_a* — MCP server
+- Raw-files server — *reads* — Markdown
+- Raw-files server — *works_with* — Claude Desktop
+- Raw-files server — *works_with* — Claude Code
+- Raw-files server — *works_with* — ChatGPT
+- Raw-files server — *works_with* — Cursor
+- Raw-files server — *works_with* — Windsurf
+- Path B — *involves* — Obsidian Claude Code MCP plugin
+- Obsidian Claude Code MCP plugin — *implements* — Path B
+- Obsidian Claude Code MCP plugin — *enables* — Claude Code integration
+- Obsidian Claude Code MCP plugin — *supports* — WebSocket
+- Obsidian Claude Code MCP plugin — *supports* — HTTP/SSE
+- LobeHub — *provides_info_on* — Obsidian Claude Code MCP plugin
+- MCP Servers — *provides_info_on* — Obsidian Claude Code MCP plugin
+- Path C — *involves* — In-app AI plugins
+- Smart Connections — *is_an* — In-app AI plugin
+- Copilot — *is_an* — In-app AI plugin
+- In-app AI plugins — *can_use* — Local model
+- In-app AI plugins — *can_use* — API
+- obsidian-mcp-tools — *recommended_for* — Claude Desktop
+- Obsidian Claude Code MCP plugin — *recommended_for* — Claude Code
+- Ollama — *recommended_for* — Offline queries
+- Ollama — *recommended_for* — Private queries
+- mcp-obsidian — *uses_protocol* — HTTP-with-SSE MCP protocol
+- obsidian-mcp-tools — *uses_protocol* — HTTP-with-SSE MCP protocol
+- Raw-files server — *uses_protocol* — HTTP-with-SSE MCP protocol
+- Obsidian Claude Code MCP plugin — *uses_protocol* — HTTP-with-SSE MCP protocol
+- Streamable HTTP spec — *is_newer_than* — HTTP-with-SSE MCP protocol
+- Claude — *answers_questions_from* — Knowledge base
+- Knowledge base — *consists_of* — Vault
+- Obsidian — *used_for* — ePost
+- Vault — *syncs_to* — Phone sync
+- Claude — *queries* — Vault
+- Vault — *contains_concept* — Claim-Check pattern
+- Vault — *mentions_person* — Luz
+
+%% ai-graph-end %%

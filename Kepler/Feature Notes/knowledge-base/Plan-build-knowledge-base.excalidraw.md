@@ -1,9 +1,25 @@
 ---
-
+ai_hash: df6645797e859510
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Luz-?
+- Repo
+- Graph code Review
+- Tool
+- Output
+- Relationship table
+- LLM MD file creation
+- MD file
+- Obsidian Vault
+- collecting
+- Manual Review
+- PR
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+- excalidraw
 ---
+
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
 
 
@@ -129,3 +145,17 @@ jkubz2ceoPRkGPb4Q7sqaEvWnu133hLUIeq0AyXajD0eRoEGRAGgZRoMCGKtKyEDBl3MAR9SoBPDInmA
 l6iVsgk20NhY4AcybIyodyO+TMAHh6w52D0MXhKeNaeSL+XCDFIaIFYIAA==
 ```
 %%
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+**Relations:**
+- Luz-? — *is a* — Repo
+- Graph code Review — *is a* — Tool
+- MD file — *is in* — Repo
+- Obsidian Vault — *performs* — collecting
+- Manual Review — *is a* — PR
+
+%% ai-graph-end %%

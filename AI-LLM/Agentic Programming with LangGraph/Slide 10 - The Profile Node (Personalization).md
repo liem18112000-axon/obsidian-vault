@@ -1,8 +1,41 @@
 ---
-title: "Slide 10: The Profile Node (Personalization)"
+ai_hash: 68e8fb7939579ec9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Profile Node
+- Personalization
+- User Context
+- Downstream Agents
+- Dietary restrictions
+- Travel style
+- Past trips
+- Payment method
+- _profile_node function
+- TripState
+- user_id
+- interests
+- Profile Service
+- CDP
+- PostgreSQL
+- Mock
+- Data Service Factory
+- Strategy Pattern
+- LEOCDPService
+- PostgresProfileService
+- MockTestService
+- Node Logic
+- Slide 9
+- Slide 10
+- Slide 11
+- Index
 slide_number: 10
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 10: The Profile Node (Personalization)'
 ---
 
 # Slide 10: The Profile Node (Personalization)
@@ -59,3 +92,40 @@ class DataServiceFactory:
 ---
 
 ← [[Slide 9 - Writing Node Functions|Previous]] · [[Index|🏠 Index]] · [[Slide 11 - The Research Node (Tool Integration)|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 9 - Writing Node Functions]]
+- [[Slide 34 - Building Adaptive Agents]]
+- [[Slide 21 - Testing Agentic Systems]]
+- [[Slide 15 - The Journey Plan Node (LLM Synthesis)]]
+- [[Slide 19 - Conditional Branching (Advanced)]]
+
+**Relations:**
+- Profile Node — *enables* — Personalization
+- Profile Node — *provides* — User Context
+- User Context — *is needed by* — Downstream Agents
+- User Context — *includes* — Dietary restrictions
+- User Context — *includes* — Travel style
+- User Context — *includes* — Past trips
+- User Context — *includes* — Payment method
+- _profile_node function — *implements* — Profile Node
+- _profile_node function — *receives* — TripState
+- _profile_node function — *extracts* — user_id
+- _profile_node function — *extracts* — interests
+- _profile_node function — *uses* — Profile Service
+- Profile Service — *can fetch from* — CDP
+- Profile Service — *can fetch from* — PostgreSQL
+- Profile Service — *can fetch from* — Mock
+- Data Service Factory — *implements* — Strategy Pattern
+- Data Service Factory — *provides instances of* — Profile Service
+- Data Service Factory — *returns* — LEOCDPService
+- Data Service Factory — *returns* — PostgresProfileService
+- Data Service Factory — *returns* — MockTestService
+- Data Service Factory — *enables changing backends without altering* — Node Logic
+- Slide 10 — *follows* — Slide 9
+- Slide 10 — *precedes* — Slide 11
+- Slide 10 — *links to* — Index
+
+%% ai-graph-end %%

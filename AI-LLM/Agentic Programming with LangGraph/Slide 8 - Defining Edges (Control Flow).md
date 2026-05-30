@@ -1,8 +1,36 @@
 ---
-title: "Slide 8: Defining Edges (Control Flow)"
+ai_hash: d3002a9c0e654b0f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Slide 8
+- Edges
+- Control Flow
+- Types of Edges
+- START
+- load_profile
+- Sequential
+- Implicit Parallelism
+- research
+- weather
+- budget
+- Converging Paths
+- aggregate
+- journey_plan
+- END
+- builder.add_edge
+- backend/core_llm/smart_trip_planner.py
+- _build_graph
+- Slide 7 - Building the Graph
+- Index
+- Slide 9 - Writing Node Functions
 slide_number: 8
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 8: Defining Edges (Control Flow)'
 ---
 
 # Slide 8: Defining Edges (Control Flow)
@@ -56,3 +84,47 @@ Then make a mental trace:
 ---
 
 ← [[Slide 7 - Building the Graph|Previous]] · [[Index|🏠 Index]] · [[Slide 9 - Writing Node Functions|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 7 - Building the Graph]]
+- [[Slide 1 - Course Overview]]
+- [[Slide 16 - Running the Graph]]
+- [[Slide 5 - The Trip Planner Architecture]]
+- [[Appendix B - Quick Reference]]
+
+**Relations:**
+- Slide 8 — *discusses* — Edges
+- Slide 8 — *discusses* — Control Flow
+- Edges — *include type* — Sequential
+- Edges — *include type* — Implicit Parallelism
+- Edges — *include type* — Converging Paths
+- builder.add_edge — *defines edge* — START
+- START — *connects to* — load_profile
+- builder.add_edge — *defines edge* — load_profile
+- load_profile — *connects to* — research
+- builder.add_edge — *defines edge* — load_profile
+- load_profile — *connects to* — weather
+- builder.add_edge — *defines edge* — load_profile
+- load_profile — *connects to* — budget
+- load_profile — *triggers parallel execution of* — research
+- load_profile — *triggers parallel execution of* — weather
+- load_profile — *triggers parallel execution of* — budget
+- builder.add_edge — *defines edge* — research
+- research — *connects to* — aggregate
+- builder.add_edge — *defines edge* — weather
+- weather — *connects to* — aggregate
+- builder.add_edge — *defines edge* — budget
+- budget — *connects to* — aggregate
+- aggregate — *requires completion of* — research
+- aggregate — *requires completion of* — weather
+- aggregate — *requires completion of* — budget
+- builder.add_edge — *defines edge* — journey_plan
+- journey_plan — *connects to* — END
+- backend/core_llm/smart_trip_planner.py — *contains function* — _build_graph
+- Slide 8 — *follows* — Slide 7 - Building the Graph
+- Slide 8 — *precedes* — Slide 9 - Writing Node Functions
+- Slide 8 — *is part of* — Index
+
+%% ai-graph-end %%

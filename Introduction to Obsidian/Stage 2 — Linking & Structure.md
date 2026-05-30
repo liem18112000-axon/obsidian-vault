@@ -1,3 +1,65 @@
+---
+ai_hash: 4bcee3dcf17e86a6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Stage 2
+- philosophy
+- Stage 1 — Foundations
+- mechanics
+- Roadmap
+- Backlinks
+- Links
+- Backlinks pane
+- idempotency key
+- Unlinked mentions
+- Tags
+- Notes
+- Quarkus
+- Alvin
+- Redis
+- Concepts
+- Entities
+- Ideas
+- States
+- Types
+- Contexts
+- Nested Tags
+- hierarchy
+- Graph View
+- Ctrl/Cmd + G
+- diagnostic tool
+- Orphan notes
+- Hubs
+- Maps of Content (MOCs)
+- scaling problem
+- Luz Platform MOC
+- luz-docs
+- luz-docs-batch
+- luz-thumbnail
+- Claim-Check pattern
+- Aggregator pattern
+- idempotency key design
+- GKE autoscaling
+- Istio DestinationRule tuning
+- Luz MOC
+- Klara MOC
+- Java/Quarkus MOC
+- Organizational Philosophy
+- Folders
+- Hybrid
+- metadata
+- navigation
+- /inbox
+- /notes
+- /MOCs (folder)
+- /daily
+- /templates
+- /attachments
+- Stage 3
+- plugins
+---
+
 # Overview
 [[Stage 1 — Foundations]] was about mechanics. Stage 2 is about _philosophy_ — deciding how your knowledge connects. This is the stage where most people either build a system that scales for years or paint themselves into a corner. Here's the breakdown.
 See [[Roadmap]] for full picture
@@ -95,3 +157,76 @@ That's it. You don't need deep folder trees because links and MOCs do the naviga
 ---
 
 **End-of-stage checkmark:** you can explain to someone _why_ you'd link vs. tag a given note, you have at least one MOC built for a real topic (Luz is the obvious candidate), and your graph has no surprise orphans. Once that clicks, you're ready for Stage 3's plugins to automate it.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stage 5 — Workflows & Methodology]]
+- [[Stage 3 — Core Plugins]]
+- [[Roadmap]]
+- [[Stage 1 — Foundations]]
+- [[index]]
+
+**Relations:**
+- Stage 2 — *focuses on* — philosophy
+- Stage 1 — Foundations — *focuses on* — mechanics
+- Stage 2 — *references* — Roadmap
+- Backlinks — *is reverse of* — Links
+- Links — *creates* — Backlinks
+- Backlinks pane — *displays* — Backlinks
+- Backlinks pane — *displays* — Unlinked mentions
+- idempotency key — *collects* — Backlinks
+- Links — *contrasts* — Tags
+- Links — *connects* — Notes
+- Tags — *connects* — Notes
+- Links — *has direction* — Bidirectional
+- Tags — *has direction* — Flat label
+- Links — *best for* — Concepts
+- Links — *best for* — Entities
+- Links — *best for* — Ideas
+- Tags — *best for* — States
+- Tags — *best for* — Types
+- Tags — *best for* — Contexts
+- Links — *has example* — Quarkus
+- Links — *has example* — Alvin
+- Redis — *is target of* — Links
+- Nested Tags — *is a* — Tags
+- Nested Tags — *supports* — hierarchy
+- Graph View — *is opened by* — Ctrl/Cmd + G
+- Graph View — *is a* — diagnostic tool
+- Graph View — *helps spot* — Orphan notes
+- Graph View — *helps spot* — Hubs
+- Maps of Content (MOCs) — *is key technique in* — Stage 2
+- Maps of Content (MOCs) — *is a type of* — Hubs
+- Maps of Content (MOCs) — *solves* — scaling problem
+- Luz Platform MOC — *is an example of* — Maps of Content (MOCs)
+- Luz Platform MOC — *links to* — luz-docs
+- Luz Platform MOC — *links to* — luz-docs-batch
+- Luz Platform MOC — *links to* — luz-thumbnail
+- Luz Platform MOC — *links to* — Claim-Check pattern
+- Luz Platform MOC — *links to* — Aggregator pattern
+- Luz Platform MOC — *links to* — idempotency key design
+- Luz Platform MOC — *links to* — GKE autoscaling
+- Luz Platform MOC — *links to* — Istio DestinationRule tuning
+- Maps of Content (MOCs) — *has example* — Luz MOC
+- Maps of Content (MOCs) — *has example* — Klara MOC
+- Maps of Content (MOCs) — *has example* — Java/Quarkus MOC
+- Stage 2 — *involves* — Organizational Philosophy
+- Folders — *is a type of* — Organizational Philosophy
+- Tags — *is a type of* — Organizational Philosophy
+- Links — *is a type of* — Organizational Philosophy
+- Hybrid — *is a type of* — Organizational Philosophy
+- Hybrid — *comprises* — minimal folders
+- Hybrid — *comprises* — heavy links
+- Hybrid — *comprises* — tags for metadata
+- Hybrid — *comprises* — MOCs for navigation
+- Hybrid — *employs* — /inbox
+- Hybrid — *employs* — /notes
+- Hybrid — *employs* — /MOCs (folder)
+- Hybrid — *employs* — /daily
+- Hybrid — *employs* — /templates
+- Hybrid — *employs* — /attachments
+- Stage 3 — *uses* — plugins
+- plugins — *automates* — Stage 2
+
+%% ai-graph-end %%

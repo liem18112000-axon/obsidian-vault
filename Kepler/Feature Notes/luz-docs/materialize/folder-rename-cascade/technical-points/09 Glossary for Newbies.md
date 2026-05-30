@@ -1,3 +1,63 @@
+---
+ai_hash: 9749561eed9e7d7d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Backend
+- Application
+- API
+- Software systems
+- Endpoint
+- Folder ID
+- Folder
+- Folder name
+- Cascade
+- Materialized data
+- Tenant
+- MongoDB
+- Collection
+- SQL databases
+- Document
+- Field
+- Array
+- Filter
+- '`updateMany`'
+- Aggregation pipeline
+- Index
+- Database
+- Records
+- Service
+- Business logic
+- Repository
+- Facade
+- Logic
+- Event
+- Observer
+- Async
+- Background work
+- Executor
+- Exception
+- Java
+- Retry
+- Marker
+- Lock
+- Partial
+- Timeout
+- Idempotent
+- Race condition
+- Race window
+- Manual cleanup
+- Operations script
+- Person
+- Unfinished work
+- Failed work
+- Simultaneous work
+- Normal flow
+- '`_folderNames`'
+- Table
+- Unfinished cascade work
+---
+
 # Glossary for Newbies
 
 [[folder-rename-cascade|Back to index]]
@@ -58,3 +118,79 @@ This glossary explains technical terms from the folder rename cascade notes in b
 | Race window | The time gap where a race condition could happen. |
 | Manual cleanup | A person or operations script fixes records the system intentionally did not auto-retry. |
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[03 Cascade Attempt]]
+- [[08 Glossary for Newbies]]
+- [[01 Overview - Folder Rename Cascade]]
+- [[08 Decision Log]]
+- [[05 Retry Flow]]
+
+**Relations:**
+- Backend — *IS_PART_OF* — Application
+- API — *ENABLES* — Software systems TO_TALK
+- Endpoint — *IS_A* — API
+- Folder ID — *IS_A* — Identifier
+- Folder ID — *IDENTIFIES* — Folder
+- Folder ID — *DOES_NOT_CHANGE_ON* — Folder name
+- Folder name — *IS_A* — Label
+- Folder name — *CAN_CHANGE* — true
+- Cascade — *IS_A* — Chain_reaction
+- Materialized data — *IS_A* — Data
+- Materialized data — *MUST_BE* — Synchronized
+- Tenant — *IS_A* — Customer_or_organization
+- Tenant — *HAS* — Separated_data
+- MongoDB — *IS_A* — Database
+- MongoDB — *STORES* — Document
+- Collection — *IS_A* — Group
+- Collection — *CONTAINS* — Document
+- Collection — *IS_SIMILAR_TO* — Table
+- Table — *IS_IN* — SQL databases
+- Document — *IS_A* — Record
+- Document — *IS_STORED_IN* — MongoDB
+- Field — *IS_A* — Value
+- Field — *IS_INSIDE* — Document
+- Array — *IS_A* — List_of_values
+- Filter — *AFFECTS* — Document
+- `updateMany` — *IS_A* — MongoDB_command
+- `updateMany` — *UPDATES* — Document
+- `updateMany` — *USES* — Filter
+- Aggregation pipeline — *IS_A* — List_of_steps
+- Aggregation pipeline — *COMPUTES* — `_folderNames`
+- Index — *IS_A* — Structure
+- Index — *HELPS* — Database FIND Records
+- Service — *IS_A* — Component
+- Service — *OWNS* — Business logic
+- Repository — *IS_A* — Class
+- Repository — *TALKS_TO* — Database
+- Facade — *IS_A* — Front_door
+- Facade — *HIDES* — Logic
+- Event — *IS_A* — Message
+- Observer — *LISTENS_FOR* — Event
+- Observer — *REACTS_TO* — Event
+- Async — *MEANS* — Work_happens_in_background
+- Executor — *IS_A* — Component
+- Executor — *RUNS* — Background work
+- Exception — *IS_AN* — Error_object
+- Exception — *IS_IN* — Java
+- Exception — *INDICATES* — Normal flow could_not_continue
+- Retry — *IS_A* — Process
+- Retry — *APPLIES_TO* — Unfinished work
+- Retry — *APPLIES_TO* — Failed work
+- Marker — *IS_A* — Record
+- Marker — *REMEMBERS* — Unfinished cascade work
+- Lock — *PREVENTS* — Simultaneous work
+- Partial — *MEANS* — Only_some_work_finished
+- Timeout — *MEANS* — System_stopped_waiting
+- Idempotent — *MEANS* — Safe_to_run_multiple_times
+- Idempotent — *MEANS* — Does_not_cause_extra_unwanted_changes
+- Race condition — *IS_A* — Bug
+- Race condition — *IS_CAUSED_BY* — Unlucky_timing
+- Race window — *IS_A* — Time_gap
+- Race window — *IS_WHERE* — Race_condition_could_happen
+- Manual cleanup — *FIXES* — Records
+- Manual cleanup — *IS_PERFORMED_BY* — Person
+- Manual cleanup — *IS_PERFORMED_BY* — Operations script
+
+%% ai-graph-end %%

@@ -1,8 +1,36 @@
 ---
-title: "Slide 30: RAG (Retrieval-Augmented Generation)"
+ai_hash: 81accc85a1b4a503
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- RAG (Retrieval-Augmented Generation)
+- LLMs (Large Language Models)
+- Roppongi
+- Art Triangle museums
+- Trip Planner RAG Architecture
+- TravelRAGService (Class)
+- Chroma (Vector Store)
+- OpenAIEmbeddings (Class)
+- text-embedding-3-small (Model)
+- load_guides (Method)
+- data/local_guides.json (File)
+- retrieve_recommendations (Method)
+- Research Node (Component)
+- _research_node (Function)
+- TripState (Data Structure)
+- rag_service (Instance)
+- llm (Instance)
+- Slide 29 - Meta-LLM (Provider Agnosticism)
+- Index
+- Slide 31 - Scaling & Performance Optimization
+- Slide 30
 slide_number: 30
-tags: [lecture/slide, langgraph, agentic-programming]
 source: https://github.com/trieu/ai-trip-planner/blob/main/docs/AGENTIC_PROGRAMMING_LECTURE.md
+tags:
+- lecture/slide
+- langgraph
+- agentic-programming
+title: 'Slide 30: RAG (Retrieval-Augmented Generation)'
 ---
 
 # Slide 30: RAG (Retrieval-Augmented Generation)
@@ -97,3 +125,37 @@ async def _research_node(self, state: TripState) -> Dict[str, Any]:
 ---
 
 ← [[Slide 29 - Meta-LLM (Provider Agnosticism)|Previous]] · [[Index|🏠 Index]] · [[Slide 31 - Scaling & Performance Optimization|Next]] →
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Slide 31 - Scaling & Performance Optimization]]
+- [[Slide 34 - Building Adaptive Agents]]
+- [[Slide 11 - The Research Node (Tool Integration)]]
+- [[Slide 36 - Tool Composition]]
+- [[Slide 15 - The Journey Plan Node (LLM Synthesis)]]
+
+**Relations:**
+- Slide 30 — *introduces* — RAG (Retrieval-Augmented Generation)
+- RAG (Retrieval-Augmented Generation) — *mitigates problem of* — LLMs (Large Language Models) hallucinating facts
+- RAG (Retrieval-Augmented Generation) — *is a technique for* — LLMs (Large Language Models)
+- Roppongi — *is an example location* — Roppongi
+- Art Triangle museums — *are located in* — Roppongi
+- Trip Planner RAG Architecture — *describes implementation of* — RAG (Retrieval-Augmented Generation)
+- Trip Planner RAG Architecture — *uses* — TravelRAGService (Class)
+- TravelRAGService (Class) — *utilizes* — Chroma (Vector Store)
+- TravelRAGService (Class) — *utilizes* — OpenAIEmbeddings (Class)
+- OpenAIEmbeddings (Class) — *employs model* — text-embedding-3-small (Model)
+- TravelRAGService (Class) — *defines method* — load_guides (Method)
+- load_guides (Method) — *loads data from* — data/local_guides.json (File)
+- TravelRAGService (Class) — *defines method* — retrieve_recommendations (Method)
+- Research Node (Component) — *implements function* — _research_node (Function)
+- _research_node (Function) — *processes* — TripState (Data Structure)
+- _research_node (Function) — *interacts with* — rag_service (Instance)
+- _research_node (Function) — *interacts with* — llm (Instance)
+- rag_service (Instance) — *is an instance of* — TravelRAGService (Class)
+- Slide 30 — *follows* — Slide 29 - Meta-LLM (Provider Agnosticism)
+- Slide 30 — *is part of* — Index
+- Slide 30 — *precedes* — Slide 31 - Scaling & Performance Optimization
+
+%% ai-graph-end %%

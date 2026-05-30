@@ -1,3 +1,53 @@
+---
+ai_hash: ac5eb48c14ec84ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Failure Paths
+- document-put-cascade
+- 05 Save and Side Effects
+- 07 Files of Record
+- PUT path
+- diagrams/06-failure-paths.png
+- Invalid document ID
+- Body ID does not match path ID
+- Version mismatch
+- Deletion status changed
+- Bad `folderIds` format
+- '`DocumentException`'
+- Bad Request Status
+- Folder ID does not exist
+- Client changed technical fields
+- Materialize repository problem
+- '`MaterializeCascadeException`'
+- '`onDocumentChange`'
+- Materialize retries exhausted
+- '`CAN_NOT_UPDATE_METADATA_IN_JSONSTORE`'
+- HTTP 500
+- '`MaterializeCascadeService.onDocumentChange`'
+- MicroProfile Fault Tolerance annotations
+- '`@Retry`'
+- '`@Fallback`'
+- '`NullPointerException`'
+- '`IllegalArgumentException`'
+- '`onCascadeFailed`'
+- folder loading
+- materialized computation
+- document update
+- Failure path
+- Bad request
+- HTTP 400
+- Retry
+- Fallback
+- Exception
+- Java object
+- Stale overwrite
+- newer data
+- older data
+- Request fails
+- Logs a warning
+---
+
 # Failure Paths
 
 [[document-put-cascade|Back to index]] | Previous: [[05 Save and Side Effects|save and side effects]] | Next: [[07 Files of Record|files of record]]
@@ -53,3 +103,70 @@ In plain English:
 | Exception | Java object representing an error. |
 | Stale overwrite | Accidentally replacing newer data with older data. |
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[02 Service Validation]]
+- [[08 Glossary for Newbies]]
+- [[05 Save and Side Effects]]
+- [[03 Cascade Attempt]]
+- [[document-put-cascade]]
+
+**Relations:**
+- document-put-cascade — *is_index_for* — Failure Paths
+- Failure Paths — *preceded_by* — 05 Save and Side Effects
+- Failure Paths — *followed_by* — 07 Files of Record
+- PUT path — *can_fail_due_to* — Invalid document ID
+- PUT path — *can_fail_due_to* — Body ID does not match path ID
+- PUT path — *can_fail_due_to* — Version mismatch
+- PUT path — *can_fail_due_to* — Deletion status changed
+- PUT path — *can_fail_due_to* — Bad `folderIds` format
+- PUT path — *can_fail_due_to* — Folder ID does not exist
+- PUT path — *can_fail_due_to* — Client changed technical fields
+- PUT path — *can_fail_due_to* — Materialize repository problem
+- PUT path — *can_fail_due_to* — Materialize retries exhausted
+- Visual explanation — *references* — diagrams/06-failure-paths.png
+- Invalid document ID — *causes* — Request fails
+- Body ID does not match path ID — *causes* — Request fails
+- Version mismatch — *causes* — Request fails
+- Deletion status changed — *causes* — Request fails
+- Bad `folderIds` format — *causes* — Logs a warning
+- Bad `folderIds` format — *throws* — `DocumentException`
+- `DocumentException` — *has_status* — Bad Request Status
+- Folder ID does not exist — *causes* — Request fails
+- Client changed technical fields — *causes* — Request fails
+- Materialize repository problem — *causes* — `MaterializeCascadeException`
+- `MaterializeCascadeException` — *triggers_retry_behavior_in* — `onDocumentChange`
+- Materialize retries exhausted — *throws* — `DocumentException`
+- `DocumentException` — *contains_code* — `CAN_NOT_UPDATE_METADATA_IN_JSONSTORE`
+- `DocumentException` — *has_http_status* — HTTP 500
+- `MaterializeCascadeService.onDocumentChange` — *uses* — MicroProfile Fault Tolerance annotations
+- MicroProfile Fault Tolerance annotations — *include* — `@Retry`
+- MicroProfile Fault Tolerance annotations — *include* — `@Fallback`
+- `@Retry` — *retries_on* — `MaterializeCascadeException`
+- `@Retry` — *aborts_on* — `NullPointerException`
+- `@Retry` — *aborts_on* — `IllegalArgumentException`
+- `@Fallback` — *uses_method* — `onCascadeFailed`
+- folder loading — *can_fail_with* — `MaterializeCascadeException`
+- materialized computation — *can_fail_with* — `MaterializeCascadeException`
+- Materialize retries exhausted — *leads_to* — document update
+- document update — *fails_with_status* — HTTP 500
+- Failure path — *is_a* — concept
+- Failure path — *describes* — What the code does when something goes wrong
+- Bad request — *is_a* — concept
+- Bad request — *is_equivalent_to* — HTTP 400
+- HTTP 400 — *indicates* — caller sent invalid data
+- HTTP 500 — *indicates* — Server-side failure
+- Retry — *is_a* — concept
+- Retry — *is_defined_as* — Try the same operation again after a short delay
+- Fallback — *is_a* — concept
+- Fallback — *is_defined_as* — Backup method called when retries do not solve the problem
+- Exception — *is_a* — concept
+- Exception — *is_a* — Java object
+- Exception — *represents* — an error
+- Stale overwrite — *is_a* — concept
+- Stale overwrite — *involves* — Accidentally replacing newer data with older data
+- Stale overwrite — *replaces* — newer data
+- Stale overwrite — *with* — older data
+
+%% ai-graph-end %%

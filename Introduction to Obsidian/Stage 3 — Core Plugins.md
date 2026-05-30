@@ -1,3 +1,55 @@
+---
+ai_hash: 840092da8430e006
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-05-30'
+entities:
+- Stage 3 — Core Plugins
+- Stage 1 — Foundations
+- Stage 2 — Linking & Structure
+- Obsidian
+- Core plugins
+- Settings → Core plugins
+- Community ecosystem
+- Stage 4 — Community Plugins
+- Daily Notes plugin
+- Templates plugin
+- Backlinks plugin
+- Outgoing Links plugin
+- Tag Pane plugin
+- Search feature
+- Embeds syntax
+- Callouts syntax
+- Templater plugin
+- Dataview plugin
+- Tasks plugin
+- Klara
+- Luz
+- Daily-note template
+- Date format YYYY-MM-DD
+- Folder /daily
+- Dynamic placeholders
+- Search operators
+- Note content embedding
+- Image embedding
+- Styled blocks
+- Community plugins
+- timestamped note
+- daily log
+- Markdown block
+- panes
+- links to current note
+- unlinked mentions
+- links from current note
+- tags
+- nested-tag scheme
+- gotchas
+- technical notes
+- MOC
+- Settings → Daily notes
+- scripting and prompts
+- daily note
+---
+
 # Overview
 [[Stage 1 — Foundations]] and [[Stage 2 — Linking & Structure]] were concepts you applied by hand. Stage 3 is where Obsidian starts doing work _for_ you. Core plugins ship with the app — no downloads, no risk — and you toggle them under **Settings → Core plugins**. Master these before touching the community ecosystem in Stage 4, because half the community plugins just extend these.
 
@@ -95,3 +147,82 @@ Enable, in order of payoff: **Daily Notes → Templates → Backlinks → Outgoi
 ---
 
 **End-of-stage checkmark:** your daily note auto-populates from a template, you capture into it instead of creating scattered notes, you can find anything with a search operator, and you're using callouts to flag the gotchas in your technical notes. At that point the core app is fully under your control — and [[Stage 4 — Community Plugins]] community plugins (Dataview, Templater, Tasks) will feel like natural upgrades rather than magic.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Roadmap]]
+- [[Stage 4 — Community Plugins]]
+- [[Stage 2 — Linking & Structure]]
+- [[Stage 1 — Foundations]]
+- [[Stage 5 — Workflows & Methodology]]
+
+**Relations:**
+- Stage 3 — Core Plugins — *introduces* — Core plugins
+- Core plugins — *ship with* — Obsidian
+- Core plugins — *are toggled under* — Settings → Core plugins
+- Core plugins — *precede* — Community ecosystem
+- Community plugins — *extend* — Core plugins
+- Community ecosystem — *is part of* — Stage 4 — Community Plugins
+- Daily Notes plugin — *is a* — Core plugins
+- Daily Notes plugin — *creates* — timestamped note
+- Daily Notes plugin — *configured under* — Settings → Daily notes
+- Daily Notes plugin — *uses date format* — Date format YYYY-MM-DD
+- Daily Notes plugin — *uses folder* — Folder /daily
+- Daily Notes plugin — *can use* — Daily-note template
+- timestamped note — *forms* — daily log
+- daily log — *includes reference to* — Klara
+- daily log — *includes reference to* — Luz
+- Templates plugin — *is a* — Core plugins
+- Templates plugin — *inserts* — Markdown block
+- Templates plugin — *supports* — Dynamic placeholders
+- Dynamic placeholders — *include* — {{date}} placeholder
+- Dynamic placeholders — *include* — {{time}} placeholder
+- Dynamic placeholders — *include* — {{title}} placeholder
+- Templater plugin — *provides* — scripting and prompts
+- Templater plugin — *is a* — Community plugins
+- Templater plugin — *is part of* — Stage 4 — Community Plugins
+- Templates plugin — *precedes* — Templater plugin
+- Backlinks plugin — *is a* — Core plugins
+- Outgoing Links plugin — *is a* — Core plugins
+- Backlinks plugin — *introduced in* — Stage 2 — Linking & Structure
+- Backlinks plugin — *renders* — panes
+- Outgoing Links plugin — *renders* — panes
+- Backlinks plugin — *shows* — links to current note
+- Backlinks plugin — *shows* — unlinked mentions
+- Outgoing Links plugin — *shows* — links from current note
+- Tag Pane plugin — *is a* — Core plugins
+- Tag Pane plugin — *renders* — tags
+- Tag Pane plugin — *combines with* — nested-tag scheme
+- Search feature — *is a* — Core plugins
+- Search feature — *supports* — Search operators
+- Search operators — *include* — tag:#klara operator
+- Search operators — *include* — path:luz/ operator
+- Search operators — *include* — file:MOC operator
+- Search operators — *include* — line:(redis SETNX) operator
+- Search operators — *include* — "exact phrase" operator
+- Search operators — *include* — /regex/ operator
+- Search feature — *precedes* — Dataview plugin
+- Embeds syntax — *is a* — Core syntax
+- Callouts syntax — *is a* — Core syntax
+- Embeds syntax — *enables* — Note content embedding
+- Embeds syntax — *enables* — Image embedding
+- Note content embedding — *can be used in* — MOC
+- Note content embedding — *can be used in* — daily note
+- Callouts syntax — *creates* — Styled blocks
+- Styled blocks — *flag* — gotchas
+- gotchas — *are found in* — technical notes
+- Daily Notes plugin — *recommended before* — Templates plugin
+- Templates plugin — *recommended before* — Backlinks plugin
+- Backlinks plugin — *recommended before* — Outgoing Links plugin
+- Outgoing Links plugin — *recommended before* — Tag Pane plugin
+- Tag Pane plugin — *recommended before* — Search feature
+- Dataview plugin — *is a* — Community plugins
+- Tasks plugin — *is a* — Community plugins
+- MOC — *is a type of* — note
+- daily note — *auto-populates from* — Daily-note template
+- daily note — *captures* — notes
+- Search feature — *finds* — anything
+- Callouts syntax — *flags* — gotchas
+
+%% ai-graph-end %%
