@@ -1,0 +1,102 @@
+# Auto-enrich the vault and publish it to GCS whenever notes change.
+#
+# On every push of Markdown to main this:
+#   1. enriches the vault (entities/links + embeddings) with the vault-graph tooling,
+#   2. commits the enriched notes + embeddings cache back to this repo,
+#   3. packs the vault into a tarball and uploads it to GCS,
+#   4. forces a new Cloud Run revision so the service re-syncs the fresh vault.
+#
+# Required repo secrets:
+#   GCP_SA_KEY    JSON key for vault-graph-vertex@klara-nonprod (Vertex + GCS + Cloud Run)
+#   TOOLING_PAT   PAT with read access to liem18112000-axon/vault-graph (the tooling repo)
+#
+# The bot's write-back commit is tagged [skip-enrich] so it does not re-trigger
+# this workflow; enrich.py is idempotent regardless, so a no-op run is harmless.
+name: enrich-and-upload
+
+on:
+  push:
+    branches: [main]
+    paths: ['**.md']
+  workflow_dispatch:
+
+concurrency:
+  group: enrich-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  GCS_TARBALL: gs://klara-nonprod-vault-graph/vault.tar.gz
+  SERVICE: vault-graph
+  REGION: europe-west6
+  PROJECT: klara-nonprod
+  VERTEX_PROJECT: klara-nonprod
+  VERTEX_LOCATION: us-central1
+  VERTEX_CHAT_MODEL: google/gemini-2.5-flash
+  VERTEX_EMBED_MODEL: text-embedding-005
+
+jobs:
+  enrich:
+    if: ${{ !contains(github.event.head_commit.message, '[skip-enrich]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+
+      - name: Checkout vault-graph tooling
+        uses: actions/checkout@v4
+        with:
+          repository: liem18112000-axon/vault-graph
+          token: ${{ secrets.TOOLING_PAT }}
+          path: .tooling
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install tooling deps
+        run: pip install --no-cache-dir -r .tooling/tools/vault-graph/requirements.txt
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Enrich vault
+        run: python .tooling/tools/vault-graph/enrich.py --vault .
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No enrichment changes; vault + GCS already current."
+          fi
+
+      - name: Commit enriched notes
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "vault-enrich-bot"
+          git config user.email "vault-enrich-bot@users.noreply.github.com"
+          git add -A
+          git commit -m "Auto-enrich vault [skip-enrich]"
+          git push
+
+      - name: Pack + upload vault tarball
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          tar -C . --exclude='./.git' --exclude='./.github' -czf /tmp/vault.tar.gz .
+          gcloud storage cp /tmp/vault.tar.gz "$GCS_TARBALL" --project="$PROJECT"
+
+      - name: Redeploy service to pick up new vault
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          gcloud run services update "$SERVICE" \
+            --region="$REGION" --project="$PROJECT" \
+            --update-labels=vault-sha=${{ github.sha }}
