@@ -1,4 +1,4 @@
----
+﻿---
 ai_hash: 5a356b8d432a2d59
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-05-30'
@@ -39,9 +39,20 @@ Welcome to my digital garden.
 ## Main areas
 
 - [[Introduction to Obsidian/Roadmap|Introduction to Obsidian]]
-- [[AI-LLM/Agentic Programming with LangGraph/Index|AI-LLM]]
-- [[Kepler/Feature Notes/luz-docs/overview/search-logic/01 Big Picture|Kepler / luz-docs]]
+- [[Kepler/Feature Notes/luz-docs/overview/search-logic|Kepler / luz-docs]]
+- [[1 Projects/1 Projects|Projects]]
+- [[2 Areas/2 Areas|Areas]]
+- [[3 Resources/3 Resources|Resources]]
+- [[4 Archives/4 Archives|Archives]]
 - [[Usage/Publish|Usage]]
+
+
+## PARA
+
+- [[1 Projects/1 Projects|Projects]] — active outcomes and current work.
+- [[2 Areas/2 Areas|Areas]] — ongoing responsibilities to maintain.
+- [[3 Resources/3 Resources|Resources]] — reusable reference notes and concepts.
+- [[4 Archives/4 Archives|Archives]] — inactive/completed material.
 
 ## Kepler / luz-docs
 
@@ -49,14 +60,16 @@ Welcome to my digital garden.
 
 Start here for the beginner-friendly split of the luz-docs search API:
 
-1. [[Kepler/Feature Notes/luz-docs/overview/search-logic/01 Big Picture]]
-2. [[Kepler/Feature Notes/luz-docs/overview/search-logic/02 Endpoints and Request Body]]
-3. [[Kepler/Feature Notes/luz-docs/overview/search-logic/03 Query Operators]]
-4. [[Kepler/Feature Notes/luz-docs/overview/search-logic/04 Operator Nesting]]
-5. [[Kepler/Feature Notes/luz-docs/overview/search-logic/05 Server Filters and Aggregation Pipeline]]
-6. [[Kepler/Feature Notes/luz-docs/overview/search-logic/06 Facets]]
-7. [[Kepler/Feature Notes/luz-docs/overview/search-logic/07 Common Use Cases]]
-8. [[Kepler/Feature Notes/luz-docs/overview/search-logic/08 Beginner Technical Terms]]
+1. [[Kepler/Feature Notes/luz-docs/overview/search-logic/01 Overview]]
+2. [[Kepler/Feature Notes/luz-docs/overview/search-logic/02 Endpoints]]
+3. [[Kepler/Feature Notes/luz-docs/overview/search-logic/03 Request Body]]
+4. [[Kepler/Feature Notes/luz-docs/overview/search-logic/04 Query Operators]]
+5. [[Kepler/Feature Notes/luz-docs/overview/search-logic/05 Operator Nesting]]
+6. [[Kepler/Feature Notes/luz-docs/overview/search-logic/06 Server Filters]]
+7. [[Kepler/Feature Notes/luz-docs/overview/search-logic/07 Aggregation Pipeline]]
+8. [[Kepler/Feature Notes/luz-docs/overview/search-logic/08 Facets]]
+9. [[Kepler/Feature Notes/luz-docs/overview/search-logic/09 Examples]]
+10. [[Kepler/Feature Notes/luz-docs/overview/search-logic/Glossary]]
 
 ### Count optimization
 
@@ -67,40 +80,6 @@ Start here for the beginner-friendly split of the luz-docs search API:
 
 - [[Kepler/Feature Notes/knowledge-base/Plan-build-knowledge-base.excalidraw]]
 
-%% ai-graph-start %%
 
-**Related notes:**
-- [[search-logic]]
-- [[01 Overview]]
-- [[Glossary]]
-- [[Stage 2 — Linking & Structure]]
-- [[08 Facets]]
 
-**Relations:**
-- index — *is a* — Home
-- Home — *contains* — digital garden
-- Home — *has part* — Main areas
-- Main areas — *includes* — Introduction to Obsidian
-- Introduction to Obsidian — *has part* — Roadmap
-- Main areas — *includes* — AI-LLM
-- AI-LLM — *has part* — Agentic Programming with LangGraph
-- Main areas — *includes* — Kepler / luz-docs
-- Main areas — *includes* — Usage
-- Usage — *has part* — Publish
-- Kepler / luz-docs — *has part* — Search logic
-- Search logic — *describes* — luz-docs search API
-- Search logic — *includes* — 01 Big Picture
-- Search logic — *includes* — 02 Endpoints and Request Body
-- Search logic — *includes* — 03 Query Operators
-- Search logic — *includes* — 04 Operator Nesting
-- Search logic — *includes* — 05 Server Filters and Aggregation Pipeline
-- Search logic — *includes* — 06 Facets
-- Search logic — *includes* — 07 Common Use Cases
-- Search logic — *includes* — 08 Beginner Technical Terms
-- Kepler / luz-docs — *has part* — Count optimization
-- Count optimization — *includes* — Divide-and-Conquer Visible-Document Count
-- Count optimization — *includes* — Divide-and-Conquer Count - Technical Points for Beginners
-- Kepler / luz-docs — *has part* — Knowledge base
-- Knowledge base — *includes* — Plan-build-knowledge-base.excalidraw
 
-%% ai-graph-end %%
