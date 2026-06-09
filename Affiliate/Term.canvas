@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"cpa","type":"file","file":"Affiliate/Term/Cost per Action.md","x":-260,"y":-520,"width":300,"height":50,"color":"4"},
+		{"id":"cookie","type":"file","file":"Affiliate/Term/Cookie Duration.md","x":-720,"y":90,"width":280,"height":50,"color":"1"},
+		{"id":"epc","type":"file","file":"Affiliate/Term/Earnings per Click.md","x":160,"y":90,"width":260,"height":50,"color":"2"},
+		{"id":"hdr-metrics","type":"text","text":"## Metrics — how you compare offers","x":160,"y":-60,"width":440,"height":50,"color":"2"},
+		{"id":"cpr","type":"file","file":"Affiliate/Term/Cost per Registration.md","x":-400,"y":-310,"width":320,"height":50},
+		{"id":"cps","type":"file","file":"Affiliate/Term/Cost per Sale.md","x":-40,"y":-310,"width":280,"height":50},
+		{"id":"revshare","type":"file","file":"Affiliate/Term/Revenue Share.md","x":420,"y":-335,"width":280,"height":50},
+		{"id":"ltv","type":"file","file":"Affiliate/Term/Lifetime Value.md","x":420,"y":-170,"width":280,"height":50,"color":"6"},
+		{"id":"aov","type":"file","file":"Affiliate/Term/Average Order Value.md","x":140,"y":255,"width":300,"height":50,"color":"2"},
+		{"id":"cpl","type":"file","file":"Affiliate/Term/Cost per Lead.md","x":-780,"y":-310,"width":280,"height":50},
+		{"id":"cpql","type":"file","file":"Affiliate/Term/Cost per Quality Lead.md","x":-800,"y":-145,"width":320,"height":50},
+		{"id":"hdr-gating","type":"text","text":"## Tracking & rules — what gates the payout","x":-720,"y":-35,"width":520,"height":50,"color":"1"},
+		{"id":"attribution","type":"file","file":"Affiliate/Term/Attribution Model.md","x":-720,"y":255,"width":280,"height":50,"color":"1"},
+		{"id":"reversal","type":"file","file":"Affiliate/Term/Reversal.md","x":-180,"y":90,"width":280,"height":50,"color":"1"},
+		{"id":"hdr-models","type":"text","text":"## Pricing models — how you get paid","x":-780,"y":-620,"width":900,"height":50,"color":"4"}
+	],
+	"edges":[
+		{"id":"e-cpa-cpl","fromNode":"cpa","fromSide":"bottom","toNode":"cpl","toSide":"top","label":"flavour"},
+		{"id":"e-cpa-cpr","fromNode":"cpa","fromSide":"bottom","toNode":"cpr","toSide":"top","label":"flavour"},
+		{"id":"e-cpa-cps","fromNode":"cpa","fromSide":"bottom","toNode":"cps","toSide":"top","label":"flavour"},
+		{"id":"e-cpa-revshare","fromNode":"cpa","fromSide":"bottom","toNode":"revshare","toSide":"top","label":"recurring counterpart"},
+		{"id":"e-cpl-cpql","fromNode":"cpl","fromSide":"bottom","toNode":"cpql","toSide":"top","label":"+ quality gate"},
+		{"id":"e-revshare-ltv","fromNode":"revshare","fromSide":"bottom","toNode":"ltv","toSide":"top","label":"value set by"},
+		{"id":"e-epc-aov","fromNode":"epc","fromSide":"bottom","toNode":"aov","toSide":"top","label":"uses"},
+		{"id":"e-epc-ltv","fromNode":"epc","fromSide":"right","toNode":"ltv","toSide":"bottom","label":"uses (recurring)"},
+		{"id":"e-cookie-attr","fromNode":"cookie","fromSide":"bottom","toNode":"attribution","toSide":"top","label":"window for"},
+		{"id":"e-cps-cookie","fromNode":"cps","fromSide":"bottom","toNode":"cookie","toSide":"top","label":"gated by"},
+		{"id":"e-cps-reversal","fromNode":"cps","fromSide":"bottom","toNode":"reversal","toSide":"top","label":"refunds claw back"}
+	]
+}

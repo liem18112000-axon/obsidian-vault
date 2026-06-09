@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"center","type":"text","text":"## 🔁 Tool-led flywheel\n*each loop compounds — income & audience fund the next tool*","x":-150,"y":-60,"width":300,"height":120,"color":"3"},
+		{"id":"a","type":"text","text":"### 1. Build a free tool\n*(weekend deep block)*","x":-150,"y":-420,"width":300,"height":110,"color":"4"},
+		{"id":"b","type":"text","text":"### 2. Ranks for \"free X tool\" + earns backlinks\nlinkable asset a blog post never is","x":260,"y":-300,"width":300,"height":120},
+		{"id":"c","type":"text","text":"### 3. Domain authority rises → reviews & comparisons rank too\n*(authority halo)*","x":300,"y":40,"width":300,"height":130,"color":"6"},
+		{"id":"d","type":"text","text":"### 4. User solves problem instantly → trusts you","x":-150,"y":360,"width":300,"height":110},
+		{"id":"e","type":"text","text":"### 5. Contextual affiliate CTA\n\"want pro results? → do it better\"","x":-560,"y":40,"width":300,"height":120,"color":"2"},
+		{"id":"f","type":"text","text":"### 6. Recurring / CPS commission\n+ email capture (return audience)","x":-560,"y":-300,"width":300,"height":120,"color":"5"},
+		{"id":"note","type":"text","text":"**Why it beats a blog:** other sites link to a useful *tool*, almost never to a plain review. Those links lift the whole domain — so your money pages rank on the tools' coat-tails. A non-coder affiliate can't copy this.","x":680,"y":-60,"width":340,"height":160,"color":"1"}
+	],
+	"edges":[
+		{"id":"ab","fromNode":"a","fromSide":"right","toNode":"b","toSide":"top","toEnd":"arrow"},
+		{"id":"bc","fromNode":"b","fromSide":"bottom","toNode":"c","toSide":"top","toEnd":"arrow"},
+		{"id":"cd","fromNode":"c","fromSide":"bottom","toNode":"d","toSide":"right","toEnd":"arrow"},
+		{"id":"de","fromNode":"d","fromSide":"left","toNode":"e","toSide":"bottom","toEnd":"arrow"},
+		{"id":"ef","fromNode":"e","fromSide":"top","toNode":"f","toSide":"bottom","toEnd":"arrow"},
+		{"id":"fa","fromNode":"f","fromSide":"top","toNode":"a","toSide":"left","toEnd":"arrow","label":"income + audience fund the next tool"},
+		{"id":"c-note","fromNode":"c","fromSide":"right","toNode":"note","toSide":"left","toEnd":"none","color":"1"}
+	]
+}

@@ -46,7 +46,7 @@ The key comparison is **recurring RevShare vs a one-time bounty**:
 >
 > The break-even here is ~7 months. RevShare pays off only if customers **retain**. Low-churn products (essential SaaS, hosting) favour RevShare; high-churn ones favour taking the flat bounty.
 
-This is why RevShare value tracks the customer's **lifetime value (LTV)**: your earnings ≈ `RevShare % × monthly price × average customer lifetime`.
+This is why RevShare value tracks the customer's **[[Lifetime Value|lifetime value (LTV)]]**: your earnings ≈ `RevShare % × monthly price × average customer lifetime`.
 
 ## Variants
 
