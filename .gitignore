@@ -6,3 +6,10 @@
 
 # vault-graph enrichment cache (regenerated; not source of truth)
 .vault-graph/
+
+# CI (enrich-and-upload): never commit runtime artifacts that `git add -A` would sweep up.
+# The tooling repo is checked out here at runtime:
+.tooling/
+# google-github-actions/auth writes the GCP SA key into the workspace (push protection
+# rejects it, and it must never be committed):
+gha-creds-*.json
