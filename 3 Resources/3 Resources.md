@@ -5,106 +5,61 @@ type: moc
 
 # Resources
 
-> Atomic notes and reusable technical lessons, organized by strongly related concepts.
+> Reusable reference and atomic technical lessons, filed by domain.
+> 14 top-level domains — open the domain folder, then the sub-topic.
 
-## AI Tools
+## Languages
 
-### Claude Code
+Java (CDI and MicroProfile, concurrency, Gradle, Jackson, JAX-RS, JSON-P, Java-EE, Lombok, Maven, Netty, Testing, WildFly), Python (asyncio, packaging, pytest), JavaScript, Node.js, Data Formats (JSON Patch, YAML).
 
-- [[3 Resources/AI/Claude-Code/Hooks/Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
-- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]]
-- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
-- [[3 Resources/AI/Claude-Code/Hooks/Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
-- [[3 Resources/AI/Claude-Code/Hooks/Relocating a hardcoded-path hook integration self-locate or patch every reference site]]
-- [[3 Resources/AI/Claude-Code/Hooks/PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
-- [[3 Resources/AI/Claude-Code/Hooks/PSScriptRoot-relative state breaks when a hook moves to a subfolder]]
-- [[3 Resources/AI/Claude-Code/Hooks/Relocating a hardcoded-path hook integration self-locate or patch every reference site]]
-- [[3 Resources/AI/Claude-Code/Hooks/Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+## Frontend
 
-## DevOps
+CSS, React, Next.js, DOM, UX, HTMX, Electron.
 
-### Containers and Registries
+## Web
 
-- [[3 Resources/Infra/Containers and Registries/Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output]]
-- [[3 Resources/Infra/Containers and Registries/GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
-- [[3 Resources/Infra/Containers and Registries/Trivy scan-before-push needs a single-arch load build first]]
+Playwright, Scraping (incl. Facebook), Annotation, Build.
 
-### Cloud Run and GCP
+## Backend
 
-- [[3 Resources/Infra/Cloud Run and GCP/Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
-- [[3 Resources/Infra/Cloud Run and GCP/IAM roles a CI service account needs to build and deploy to Cloud Run]]
+API Design, Concurrency, Design, CLI, Node, caching, Search, Pagination, Kafka.
 
-## Version Control
+## Data
 
-### Git
+MongoDB (indexing, patterns), PostgreSQL, Database Performance, Algorithms (HyperLogLog, logic, text), Gorse, Airflow.
 
-- [[3 Resources/Tooling/Git/FETCH_HEAD is volatile when an IDE auto-fetches]]
-- [[3 Resources/Tooling/Git/Split intermixed single-file changes into two commits via backup and intermediate edit]]
+## Cloud
 
-## Programming
+GCP (Cloud Logging, Cloud SQL, Memorystore, Vertex AI, text-to-speech), VNGCloud.
 
+## Infra
 
-### Data Formats — JSON Patch
+Kubernetes (GKE), Docker, Terraform, CI-CD (GitHub Actions), Deployment, Observability, Incident Response, Containers and Registries, Cloud Run and GCP, App-Config, Code Signing.
 
-- [[3 Resources/Languages/Data Formats/JSON Patch/RFC-6902 replace at array index expects a scalar element not an array]]
-### Java — Core Language
+## Tooling
 
-- [[3 Resources/Languages/Java/Core Language/Adding a field to a Java record breaks all factory and constructor calls in tests]]
-- [[3 Resources/Languages/Java/Core Language/Visibility downgrade breaks external callers]]
+Git, GitHub, Bitbucket, Atlassian, Shell, PowerShell, Windows (Git-Bash, networking), Eclipse.
 
-### Java — CDI and MicroProfile
+## AI
 
-- [[3 Resources/Languages/Java/CDI and MicroProfile/CDI self-invocation bypasses interceptor proxy]]
-- [[3 Resources/Languages/Java/CDI and MicroProfile/CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
-- [[3 Resources/Languages/Java/CDI and MicroProfile/Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
-- [[3 Resources/Languages/Java/CDI and MicroProfile/CDI self-invocation bypasses interceptor proxy]]
-- [[3 Resources/Languages/Java/CDI and MicroProfile/Preserve compensation state when rollback itself fails]]
-- [[3 Resources/Languages/Java/CDI and MicroProfile/Snapshot for rollback must live outside retry boundary]]
+Claude-Code (hooks, plugins, pptx), Agents, Engineering (prompting), LLM, MCP, RAG, Ollama, Safety, Machine Translation.
 
-### Java — Testing
+## Practices
 
-- [[3 Resources/Languages/Java/Testing/A merged-in test breaks when the target branch's service gained a new injected dependency]]
-- [[3 Resources/Languages/Java/Testing/Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
-- [[3 Resources/Languages/Java/Testing/Mock at the facade boundary after consolidating logic behind a facade method]]
-- [[3 Resources/Languages/Java/Testing/Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
-- [[3 Resources/Languages/Java/Testing/New collaborator call NPEs old @InjectMocks tests]]
-- [[3 Resources/Languages/Java/Testing/Parameterize JUnit5 tests across overload variants with Named Function MethodSource]]
+Software Design, Architecture, Patterns, Testing, Performance, Security, Debugging, code-review, Schema Evolution, Software Licensing, Agile.
 
-### Java — JSON-P
+## Visual
 
-- [[3 Resources/Languages/Java/JSON-P/javax.json JsonObject is immutable so aliasing replaces defensive deep copies]]
+Excalidraw, Excalimate, Mermaid, drawio, Diagrams, Data Visualization, Blender, 3D-Avatars, Video, Presentations, Media, PDF, Stimulsoft, concept-to-video.
 
-### Python — Imports and Paths
+## Obsidian
 
-- [[3 Resources/Languages/Python/Imports and Paths/Flat-import Python modules can be relocated together without rewriting imports]]
-- [[3 Resources/Languages/Python/Imports and Paths/Path(__file__).parent breaks when a module is moved to a deeper directory]]
+Vault mechanics, plus the [[3 Resources/Obsidian/Introduction to Obsidian/Roadmap|Introduction to Obsidian]] course.
 
-## Product Notes
+## Work-Kepler
 
-### luz-docs — Materialize
+Reference for the Kepler/Klara work: luz-docs, luz_store, Luz, Klara, klara-envs, eArchive, Payrexx, Axon Ivy, luz-docs-statistic, Product.
 
-- [[3 Resources/Work-Kepler/Product/luz-docs/Materialize/Empty per-folder codes means public, not no-access]]
-- [[3 Resources/Work-Kepler/luz-docs/materialize/Cascade-marker pattern for crash-safe async retry]]
-- [[3 Resources/Work-Kepler/Product/luz-docs/Materialize/Parallel arrays in materialize sentinel preserve folderId order]]
-- [[3 Resources/Work-Kepler/Product/luz-docs/Materialize/userSecurityClassCodes param must be JSON array text not comma-separated]]
+## Work-Side
 
-### luz-docs — Utils
-
-- [[3 Resources/Work-Kepler/Product/luz-docs/Utils/JsonObjectUtil.convertJsonArrayToListString unwraps JsonString already]]
-
-## Software Engineering
-
-### API and Design Patterns
-
-- [[3 Resources/Practices/Patterns/Pick the variant matching the data you already hold, not the triggering operation]]
-
-### Schema Evolution
-
-- [[3 Resources/Practices/Schema Evolution/Absent discriminator field as legacy default in evolving document schemas]]
-
-## Operating Systems
-
-### Windows
-
-- [[3 Resources/Tooling/Windows/winget PATH update only applies to new shells, not the current session]]
-
+Reference for side projects: Accesstrade, Affiliate (+ Terms), Monetag, AppsFlyer, LEO-CDP, fb-info-project, Polaris, Vinnstack, Zalo Bot API.

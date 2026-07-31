@@ -9,33 +9,34 @@ type: moc
 
 ## luz-docs
 
-### Folder Recovery and Security Cascade
+The largest active workstream. Sub-folders:
 
-Notes around LUZ-155107 / folder recovery, inherited security recomputation, and recovery test strategy.
+- **count** — visible-document count scaling (`estimate`, `optimize` incl. [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count|Divide-and-Conquer Visible-Document Count]])
+- **earchive** — eArchive work (`integration`, `performance`)
+- **materialize** — materialize sentinels and cascades (`cascades` incl. Folder Rename Cascade, `gate`)
+- **Folder Recovery and Security Cascade** — LUZ-155107 folder recovery + inherited security
+- **JsonStore Change Tracking**, **parallelize**, **search**, **folder-delete**, **integration-test**, **campaigns**, **sprint-158**
 
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/FolderService.recoverFolder is not materialize-aware]]
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery must recompute inherited security after deletion statuses are cleared]]
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/getCollectionMetadataByTerms silently ignored includeDeletedRecord for non-document collections]]
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Unit-testing FolderService recoverFolder requires per-collection stubs because process objects call back into the real service]]
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/LUZ-155107 shipped as two commits so the inheritedSecurityClassCode fix can cherry-pick to earchive-master]]
+## Vinnstack
 
-### Materialize Cascades
+Desktop/Interrogation-Room app work — packaging, auth providers, Polaris touchpoints, Postgres migration.
 
-Active implementation notes for document materialization cascades.
+## luz_store
 
-- [[1 Projects/luz-docs/materialize/cascades/Folder recovery reuses the parent-change materialize cascade]]
-- [[1 Projects/luz-docs/materialize/cascades/Materialize folder parentFolderIds change cascade (LUZ-154159)]]
-- [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/Folder parent-change cascade is a no-op when the security-code union is unchanged]]
-- [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/_folderNames is parent-chain-independent — depends only on each folder's own name]]
+Store work, including `invoicing` and `LUZ-157476` (Payrexx decline-code taxonomy).
 
-### JsonStore Change Tracking
+## leo-cdp
 
-- [[1 Projects/luz-docs/JsonStore Change Tracking/luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+LEO CDP integration — `framework`, `migration`, `personalization-engine`.
 
-### eArchive Integration
+## appsflyer-connector
 
-- [[1 Projects/luz-docs/earchive/integration/Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]
-- [[1 Projects/luz-docs/earchive/integration/eArchive PRs in luz_docs target earchive-master integration branch, not master]]
-- [[1 Projects/luz-docs/earchive/integration/Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]
+AppsFlyer → CDP connector: sink reduction, S3/vStorage config, package layout.
+
+## Accesstrade Integration
+
+Building the Accesstrade automation: skill design and the three use cases (conversion digest, bulk tracking links, campaign/datafeed briefs).
+
+## Smaller efforts
+
+`luz_online_payment`, `fb-info-project`, `Ivy-setup`, `virtual-avatar`, `Music-Tech AI Tools Site`, `luz-epost-business-web`.

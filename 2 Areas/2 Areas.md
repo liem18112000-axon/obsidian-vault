@@ -7,19 +7,31 @@ type: moc
 
 > Ongoing responsibilities to maintain over time (no end date).
 
-## luz-docs
+## Kepler
 
-### Build and Deployment
+Operational knowledge for the Kepler/Klara platform.
 
-Operational knowledge for keeping luz-docs build/deploy flows understandable.
+- **luz-docs** — `Build and Deployment`, `folders`, `Materialize Operations` (incl. the numbered **Document PUT Cascade** walkthrough), `migration`
+- **Luz** — Luz platform, incl. `luz-docs-statistic`
+- **luz-online-payment** — local run pattern and payment ops
+- **luz-kubernetes** — overlay layout and per-env `system.properties`
 
-- [[2 Areas/Kepler/luz-docs/Build and Deployment/luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
+## Vinnstack
 
-### Materialize Operations
+Ongoing Vinnstack ownership — headless Claude bridge, BDD workspace, release channel.
 
-Ongoing operational behaviour and risk profile of materialize cascades.
+## Claude-Code
 
-- [[2 Areas/Kepler/luz-docs/Materialize Operations/luz_docs bulk folder PATCH runs the materialize cascade once per entry]]
-- [[2 Areas/Kepler/luz-docs/Materialize Operations/luz_docs has two materialize cascade delivery mechanisms]]
-- [[2 Areas/Kepler/luz-docs/Materialize Operations/luz_docs materialize passive retry via cascade markers]]
-- [[2 Areas/Kepler/luz-docs/Materialize Operations/luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races]]
+Maintained personal tooling: `Hooks` and `Skills`.
+
+## Knowledge-System
+
+This vault and its publishing pipeline — [[2 Areas/Knowledge-System/Publish|Publish]], the knowledge-ecosystem map, and the knowledge-base plan.
+
+## Polaris
+
+Polaris MCP platform and the running [[2 Areas/Polaris/Action Points|Action Points]] log.
+
+## Affiliate
+
+Standing affiliate strategy.

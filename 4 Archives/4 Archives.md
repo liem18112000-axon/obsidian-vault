@@ -7,4 +7,6 @@ type: moc
 
 > Inactive items from the other three buckets, kept for reference.
 
-## Notes
+## Affiliate
+
+- [[4 Archives/Affiliate/Campaigns/Highland Coffee/Coffee House|Highland Coffee — Coffee House campaign]]
