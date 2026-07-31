@@ -18,4 +18,4 @@ Consequence for the divide-and-conquer count: through the gateway you can have c
 ## Related
 
 - [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
-- [[Parallelize visible-doc count by fan-out over _id ranges (luz-docs)]]
+- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]

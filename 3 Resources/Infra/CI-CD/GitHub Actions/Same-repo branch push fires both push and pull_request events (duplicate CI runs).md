@@ -22,12 +22,10 @@ When a branch in the SAME repo has an open PR, pushing a commit fires **two** Gi
 - Or a `concurrency` group — but push and PR events have different `github.ref` (`refs/heads/x` vs `refs/pull/N/merge`), so a ref-keyed group will NOT cancel one against the other. Key on `github.event.pull_request.head.sha || github.sha` if you want cross-event dedup.
 
 ## Related
-- [[CI: build Docker image on every run, push only on non-PR]]
+- [[3 Resources/Infra/CI-CD/GitHub Actions/CI build Docker image on every run, push only on non-PR]]
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 
 ## Related
 
-- [[CI: build Docker image on every run]]
-- [[push only on non-PR]]
-- [[LEO CDP CI provisions deps CI-natively]]
-- [[pinned to devops-script versions for parity]]
+- [[3 Resources/Infra/CI-CD/GitHub Actions/CI build Docker image on every run, push only on non-PR]]
+- [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]

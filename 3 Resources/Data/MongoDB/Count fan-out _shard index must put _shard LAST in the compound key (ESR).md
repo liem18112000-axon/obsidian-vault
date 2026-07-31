@@ -29,6 +29,6 @@ luz-docs `parallelize` package: `ParallelizePartitioner` / `ParallelizeCount`, S
 ## Related
 
 - [[MongoDB ESR rule]]
-- [[Mongo facet $group count: index only helps the $match prefix, not the count]]
+- [[3 Resources/Data/MongoDB/Mongo facet $group count index only helps the $match prefix, not the count]]
 - [[Random shard key gives balanced fan-out partitions (equal-width = equal-work only if uniform)]]
 - [[Don't share one predicate between a read-path gate and a backfill selector]]

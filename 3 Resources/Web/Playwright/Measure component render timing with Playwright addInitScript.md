@@ -33,4 +33,4 @@ Also pull `performance.getEntriesByType('navigation')` + `'paint'` for FCP / dom
 ## Related
 
 - [[Playwright browser_wait_for time is a hard sleep]]
-- [[Playwright full-nav detection needs a JS-heap marker, not URL compare]]
+- [[3 Resources/Web/Playwright/Playwright full-nav detection needs a JS-heap marker not URL compare]]

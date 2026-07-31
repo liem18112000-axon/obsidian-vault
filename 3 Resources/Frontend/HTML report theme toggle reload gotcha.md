@@ -28,4 +28,4 @@ Any reload-based theme toggle MUST persist to localStorage (or a cookie) or the 
 
 ## Related
 
-- [[Theme toggle that overrides prefers-color-scheme via data-theme on :root]] — the CSS layering this toggle drives
+- [[3 Resources/Frontend/CSS/Theme toggle that overrides prefers-color-scheme via data-theme on root]] — the CSS layering this toggle drives

@@ -9,7 +9,7 @@ tags: [luz-docs, materialize, earchive, mongodb, cascade, LUZ-154159]
 
 # luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic
 
-Fix for finding #25 (eArchive materialise code review, sprint-158). The parent-change cascade re-stamps doc sentinels via a deterministic `updateManyByFilter` whose filter was **loose**: `{_folderIds:{$in: affectedFolderIds}}`. That matched every doc touching an affected folder, including ones already carrying the correct codes, so HTTP 207 was expected on success yet identical to a real partial write — the code's blanket 'benign 207' swallow was unsound. (Background: [[Tight update filter makes Mongo matched-vs-modified count diagnostic]].)
+Fix for finding #25 (eArchive materialise code review, sprint-158). The parent-change cascade re-stamps doc sentinels via a deterministic `updateManyByFilter` whose filter was **loose**: `{_folderIds:{$in: affectedFolderIds}}`. That matched every doc touching an affected folder, including ones already carrying the correct codes, so HTTP 207 was expected on success yet identical to a real partial write — the code's blanket 'benign 207' swallow was unsound. (Background: [[3 Resources/Data/MongoDB/Tight updateMany filter makes HTTP 207 a reliable partial-write signal]].)
 
 **Option A applied:** tighten the filter to mirror the existing tight folder-rename filter. Keep `_folderIds $in` (index-friendly prefilter) **and** add a `$expr`:
 
@@ -24,5 +24,5 @@ Result: only docs that genuinely need re-stamping match ⇒ matched==modified on
 ## Related
 
 - [[Materialize folder parentFolderIds change cascade (LUZ-154159)]]
-- [[Tight update filter makes Mongo matched-vs-modified count diagnostic]]
+- [[3 Resources/Data/MongoDB/Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
 - [[Materialize code review report - sprint-156 findings index]]

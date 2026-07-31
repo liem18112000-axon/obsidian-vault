@@ -24,6 +24,4 @@ On dvtliem's machine this resolves to `C:\Users\dvtliem\Kepler\luz_docs_integrat
 
 ## Related
 
-- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate]]
-- [[implement]]
-- [[PR agents)]]
+- [[3 Resources/Work-Kepler/luz-docs/integration-test/luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]

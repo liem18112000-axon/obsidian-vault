@@ -23,4 +23,4 @@ An Axon Ivy project is not just Java — application logic is deliberately split
 
 ## Related
 
-- [[Klara/Luz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+- [[3 Resources/Work-Kepler/Klara/KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]

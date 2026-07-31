@@ -17,4 +17,4 @@ Related: a background merge-watcher that polls `origin/main` for advancement is 
 
 ## Related
 
-- [[Vinnstack release: push to main triggers Cloud Build which publishes to GCS latest/ auto-update channel]]
+- [[2 Areas/Vinnstack/Vinnstack release push to main triggers Cloud Build which publishes to GCS latest auto-update channel]]

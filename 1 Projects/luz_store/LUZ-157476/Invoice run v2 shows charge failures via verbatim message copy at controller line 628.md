@@ -16,5 +16,5 @@ TransactionState.FAILED controls message survival, not content: isWarningState (
 Consequences: DECLINED (message=null) → warning state with EMPTY message in UI. Line 628 is the single injection point for category→localized-string display in LUZ-157476 Phase 4. Also an NPE risk: handleChargeByCreditCard can return null (controller:853-856) but controller:627 dereferences without null check.
 
 ## Related
-- [[Prod card declines reach luz_store as ERROR plus Payrexx prose, not DECLINED]]
+- [[1 Projects/luz_store/LUZ-157476/Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[DECLINED status falls through invoice charge-failure handling in luz_store]]

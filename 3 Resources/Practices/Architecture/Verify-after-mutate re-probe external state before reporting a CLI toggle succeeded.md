@@ -15,5 +15,4 @@ Why: gives the UI an honest green state and avoids the 'said on, actually off' c
 
 ## Related
 
-- [[Wiring an external MCP-serving CLI into a Next.js app status-on-provider]]
-- [[actions-on-dedicated-route]]
+- [[3 Resources/Practices/Architecture/Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]]

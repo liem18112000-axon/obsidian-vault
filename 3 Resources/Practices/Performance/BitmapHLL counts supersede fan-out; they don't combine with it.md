@@ -26,5 +26,5 @@ Gotchas:
 
 - [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
 - [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
-- [[Fan-out count is only faster if the shard field is the index trailing key]]
+- [[3 Resources/Data/MongoDB/Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]

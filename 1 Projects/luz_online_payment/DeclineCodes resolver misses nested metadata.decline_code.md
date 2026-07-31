@@ -19,6 +19,5 @@ Background: [[Payrexx delivers decline code only via webhook, not sync response]
 
 ## Related
 
-- [[Payrexx delivers decline code only via webhook]]
-- [[not sync response]]
+- [[3 Resources/Work-Kepler/Payrexx/Payrexx delivers decline code only via webhook, not sync response]]
 - [[Payrexx decline code lives at transaction.metadata.decline_code]]

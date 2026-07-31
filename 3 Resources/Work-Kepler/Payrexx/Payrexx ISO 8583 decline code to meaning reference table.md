@@ -81,4 +81,4 @@ Draft category grouping (feeds LUZ-157809; counts over all 51 codes): **insuffic
 - [[Payrexx decline code lives at transaction.metadata.decline_code]]
 - [[Payrexx publishes no catalog of API wrapper error messages]]
 - [[luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values]]
-- [[Map decline codes to failureCategory at the KlaraPay boundary, not by prose-parsing in luz_store]]
+- [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]

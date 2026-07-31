@@ -19,6 +19,6 @@ The fan-out floor (~3s regardless of K) is **MongoDB primary contention**, not a
 
 ## Related
 
-- [[luz_docs count>N badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[1 Projects/luz-docs/luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 - [[luz_docs estimated-count POC drops CAS and backfill gate]]
-- [[HyperLogLog small-range error needs linear-counting correction]]
+- [[3 Resources/Data/Algorithms/HyperLogLog error in the small-range (linear-counting) regime]]

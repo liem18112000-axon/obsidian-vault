@@ -19,5 +19,4 @@ Related: [[Scroll Facebook reel comments via JS, never mouse.wheel]] — both ar
 
 ## Related
 
-- [[Scroll Facebook reel comments via JS]]
-- [[never mouse.wheel]]
+- [[3 Resources/Web/Playwright/Scroll Facebook reel comments via JS, never mouse.wheel]]

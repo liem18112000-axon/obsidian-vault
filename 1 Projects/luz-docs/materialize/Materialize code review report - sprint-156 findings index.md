@@ -21,6 +21,6 @@ Check the report before re-reviewing this package — refuted candidates listed 
 
 - [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
 - [[DistributionCacheException.isNotFound is inverted in luz_docs]]
-- [[Mongo pipeline no-op updates trigger SC_MULTI_STATUS in luz_jsonstore - not retryable]]
-- [[MicroProfile @Retry @Fallback bypassed by bare this-call - use injected self proxy]]
+- [[3 Resources/Data/MongoDB/Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+- [[3 Resources/Languages/Java/CDI and MicroProfile/CDI self-invocation bypasses interceptor proxy]]
 - [[jsonstore projections need quoted JSON keys and Mongo 16MB doc limit caps single-doc snapshots]]

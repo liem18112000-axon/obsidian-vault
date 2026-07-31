@@ -23,4 +23,4 @@ Schema + full plan live in the repo: db/schema.sql and doc/interrogation-persist
 
 ## Related
 
-- [[Vinnstack auth providers: two patterns and the rule for adding one]]
+- [[3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule for adding one]]

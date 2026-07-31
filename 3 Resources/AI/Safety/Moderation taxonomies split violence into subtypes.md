@@ -15,5 +15,4 @@ When building a detector, mirror this: report per-subtype scores (e.g. general v
 
 ## Related
 
-- [[Violence detection needs a trained classifier]]
-- [[not keyword lists]]
+- [[3 Resources/AI/Safety/Violence detection needs a trained classifier, not keyword lists]]

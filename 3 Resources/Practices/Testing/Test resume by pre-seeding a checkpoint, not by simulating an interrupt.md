@@ -17,9 +17,9 @@ To test a resume/checkpoint feature deterministically, **don't simulate the inte
 
 **Split of coverage:** unit tests = does an interrupt persist the right state (write path); pre-seeded integration test = does that state resume correctly (read path). Together they cover the feature without a flaky end-to-end interrupt.
 
-Related: [[A persisted dedup cache doubles as a resume log]], [[Checkpoint files: atomic tmp+rename write plus an input fingerprint]]
+Related: [[A persisted dedup cache doubles as a resume log]], [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]]
 
 ## Related
 
 - [[A persisted dedup cache doubles as a resume log]]
-- [[Checkpoint files: atomic tmp+rename write plus an input fingerprint]]
+- [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]]

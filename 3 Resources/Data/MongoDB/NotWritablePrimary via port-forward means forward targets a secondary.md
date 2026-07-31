@@ -25,4 +25,4 @@ The primary moves on failover — always re-probe, never hardcode a pod (as of 2
 
 - [[directConnection=true counts read only the connected node and can be stale on a secondary]]
 - [[Dev mongod pods have legacy mongo shell only, no mongosh]]
-- [[Stale kubectl port-forward silently holds local port on Windows]]
+- [[3 Resources/Infra/Kubernetes/Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]

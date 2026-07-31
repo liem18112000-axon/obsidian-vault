@@ -17,5 +17,5 @@ Concrete case (luz_docs, 2026-06-04): `FolderServiceRecoverFolderTest` from the 
 
 ## Related
 - [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
-- [[3 Resources/Programming/Java/Testing/Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
+- [[3 Resources/Languages/Java/Testing/Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
 

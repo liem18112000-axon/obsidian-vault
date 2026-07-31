@@ -20,5 +20,4 @@ Seen in docs/fulltext-search/S2-index-size-options.md (Kepler eArchive full-text
 ## Related
 
 - [[Bounded bucketed hashing caps trigram index entries per document]]
-- [[A large secondary index hurts via working-set vs cache]]
-- [[not disk bytes]]
+- [[3 Resources/Data/MongoDB/indexing/A large secondary index hurts via working-set vs cache, not disk bytes]]

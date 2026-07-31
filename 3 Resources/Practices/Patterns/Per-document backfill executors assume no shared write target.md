@@ -21,5 +21,4 @@ See [[Shared aggregate write targets need CAS, not plain $set]] for the live-wri
 
 ## Related
 
-- [[Shared aggregate write targets need CAS]]
-- [[not plain $set]]
+- [[3 Resources/Practices/Patterns/Shared aggregate write targets need CAS, not plain $set]]

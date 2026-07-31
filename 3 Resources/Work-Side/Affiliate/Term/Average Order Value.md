@@ -83,4 +83,4 @@ Brand B's lower rate wins because its AOV is 3.6× higher. Without AOV in the co
 - [[Reversal]] — refunds on high-AOV orders cost the most.
 
 ---
-*See also: [[Affiliate/Term|all affiliate terms]]*
+*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*

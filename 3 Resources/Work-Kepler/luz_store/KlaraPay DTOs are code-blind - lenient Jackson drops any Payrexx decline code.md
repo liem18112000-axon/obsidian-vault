@@ -14,5 +14,5 @@ luz_online_payment (KlaraPay) captures no structured Payrexx decline code: the c
 Lesson: lenient deserialization (ignore-unknown) hides available upstream data — when hunting for 'does the provider send X', reading the DTO tells you what is CONSUMED, never what is SENT. Wire-capture is required for the difference. Payrexx is called via its Transaction API (PayrexxTransactionRestClient, POST Transaction/{id}), base URL https://api.klarapay.ch/ (whitelabel domain).
 
 ## Related
-- [[Prod card declines reach luz_store as ERROR plus Payrexx prose, not DECLINED]]
+- [[1 Projects/luz_store/LUZ-157476/Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[Payrexx ISO 8583 decline code to meaning reference table]]

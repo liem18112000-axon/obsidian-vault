@@ -19,5 +19,4 @@ From luz_docs S2-index-size-options.md, rejected option (Kepler eArchive).
 
 ## Related
 
-- [[Multikey ngram index size is driven by distinct-entry count]]
-- [[not bytes per entry]]
+- [[3 Resources/Data/MongoDB/indexing/Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]

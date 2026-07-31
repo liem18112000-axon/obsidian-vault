@@ -23,4 +23,4 @@ Context: Claude Hooks & Skills talk; `voiceover-vi.md` in `C:\Users\dvtliem\.cla
 
 ## Related
 
-- [[Google Cloud TTS from Windows: fetch the token in bash, pass via env to Python]]
+- [[3 Resources/Cloud/GCP/Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]

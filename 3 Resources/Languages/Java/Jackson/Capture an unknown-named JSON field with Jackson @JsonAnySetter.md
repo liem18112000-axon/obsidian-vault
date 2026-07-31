@@ -15,9 +15,8 @@ This buys two things at once: deserialization never fails, and you can discover/
 
 Gotcha with Lombok `@Data`/`@Builder`: exclude the capture map from generated accessors and equals/hashCode/toString (`@Getter(AccessLevel.NONE)`, `@Setter(AccessLevel.NONE)`, `@ToString.Exclude`, `@EqualsAndHashCode.Exclude`), mark it `@JsonIgnore` so it is not re-serialized, and use `@Builder.Default` with a `new HashMap<>()` initializer so builder/no-args paths still get a non-null map.
 
-See [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]] for the concrete use.
+See [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]] for the concrete use.
 
 ## Related
 
-- [[LUZ-157476 decline-code flow: luz-online-payment forwards]]
-- [[luz_store maps]]
+- [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]

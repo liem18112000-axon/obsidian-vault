@@ -19,9 +19,8 @@ To write the same data to several destinations at once (e.g. publish to Kafka AN
 
 CLI ergonomics: let `--sink` take a comma list (`kafka,cdp`); a single value returns that one sink, multiple wrap in the composite. Harden the per-kind builder to reject unknown kinds explicitly (free-form input exposes any 'unknown falls through to default' bug).
 
-Used in the Leo CDP AppsFlyer connector (MultiSink) so both the push receiver and the pull pipeline/DAG can write to the endpoint and Kafka together. See [[Kafka sink: append-only log, idempotency via dedupe_key message key]].
+Used in the Leo CDP AppsFlyer connector (MultiSink) so both the push receiver and the pull pipeline/DAG can write to the endpoint and Kafka together. See [[3 Resources/Backend/Kafka/Kafka sink append-only log, idempotency via dedupe_key message key]].
 
 ## Related
 
-- [[Kafka sink: append-only log]]
-- [[idempotency via dedupe_key message key]]
+- [[3 Resources/Backend/Kafka/Kafka sink append-only log, idempotency via dedupe_key message key]]

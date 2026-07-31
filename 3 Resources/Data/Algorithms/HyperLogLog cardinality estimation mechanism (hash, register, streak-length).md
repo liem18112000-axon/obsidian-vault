@@ -22,5 +22,4 @@ See [[HyperLogLog error in the small-range (linear-counting) regime]] for the er
 ## Related
 
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
-- [[Sketch merge (register-wise max) only answers union queries]]
-- [[never AND]]
+- [[3 Resources/Data/Algorithms/Sketch merge (register-wise max) only answers union queries, never AND]]

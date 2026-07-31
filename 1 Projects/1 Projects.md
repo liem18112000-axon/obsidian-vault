@@ -13,7 +13,7 @@ type: moc
 
 Notes around LUZ-155107 / folder recovery, inherited security recomputation, and recovery test strategy.
 
-- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery re-parent leaves folder-side inheritedSecurityClassCode stale]]
+- [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
 - [[1 Projects/luz-docs/Folder Recovery and Security Cascade/FolderService.recoverFolder is not materialize-aware]]
 - [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery must recompute inherited security after deletion statuses are cleared]]
 - [[1 Projects/luz-docs/Folder Recovery and Security Cascade/Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
@@ -25,10 +25,10 @@ Notes around LUZ-155107 / folder recovery, inherited security recomputation, and
 
 Active implementation notes for document materialization cascades.
 
-- [[1 Projects/luz-docs/Materialize Cascades/Folder recovery reuses the parent-change materialize cascade]]
-- [[1 Projects/luz-docs/Materialize Cascades/Materialize folder parentFolderIds change cascade (LUZ-154159)]]
-- [[1 Projects/luz-docs/Materialize Cascades/Folder Rename Cascade/Folder parent-change cascade is a no-op when the security-code union is unchanged]]
-- [[1 Projects/luz-docs/Materialize Cascades/Folder Rename Cascade/_folderNames is parent-chain-independent — depends only on each folder's own name]]
+- [[1 Projects/luz-docs/materialize/cascades/Folder recovery reuses the parent-change materialize cascade]]
+- [[1 Projects/luz-docs/materialize/cascades/Materialize folder parentFolderIds change cascade (LUZ-154159)]]
+- [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/Folder parent-change cascade is a no-op when the security-code union is unchanged]]
+- [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/_folderNames is parent-chain-independent — depends only on each folder's own name]]
 
 ### JsonStore Change Tracking
 
@@ -36,6 +36,6 @@ Active implementation notes for document materialization cascades.
 
 ### eArchive Integration
 
-- [[1 Projects/luz-docs/eArchive Integration/Choose Put vs Patch UpdatingSecurityClassFolderProcess by input shape not endpoint verb]]
-- [[1 Projects/luz-docs/eArchive Integration/eArchive PRs in luz_docs target earchive-master integration branch, not master]]
-- [[1 Projects/luz-docs/eArchive Integration/Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]
+- [[1 Projects/luz-docs/earchive/integration/Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]
+- [[1 Projects/luz-docs/earchive/integration/eArchive PRs in luz_docs target earchive-master integration branch, not master]]
+- [[1 Projects/luz-docs/earchive/integration/Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]

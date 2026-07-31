@@ -20,4 +20,4 @@ Only var-shaped names fire: `[A-Z][A-Z0-9_]{2,}` — lowercase config keys won't
 ## Related
 
 - [[luz-kubernetes-add-env skill propagates env properties across overlay environments]]
-- [[luz_kubernetes overlay layout: system.properties per env-<env>/<service>]]
+- [[2 Areas/Kepler/luz_kubernetes overlay layout system.properties per env-envservice]]

@@ -17,5 +17,4 @@ Fix: on first read with no row, if the fallback layer has real data, PERSIST the
 
 ## Related
 
-- [[Per-account write silently skipped when the server cant resolve the session looks saved]]
-- [[isnt]]
+- [[3 Resources/Backend/Design/Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]

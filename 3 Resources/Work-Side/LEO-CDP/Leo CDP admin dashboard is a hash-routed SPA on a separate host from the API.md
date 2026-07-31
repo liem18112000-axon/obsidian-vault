@@ -22,9 +22,9 @@ Example given for the journey-map view: `leoCdpRouter('Data_Journey_Map','')`. T
 
     https://dcdp.bigdatavietnam.org/#calljs-leoCdpRouter('Profile_Details','<profileId>')
 
-**Why it matters:** because the API returns 200 on save but the events aren't immediately queryable via `event/list` (see [[Leo CDP save returns 200 but event/list cannot read it back]]), the dashboard is the practical way to visually confirm a push landed. The connector's `examples/push_to_data_observer.py` bakes this as the default `LEO_CDP_DASHBOARD_URL` template (override env var if the route differs). Related: [[Leo CDP public REST API contract]].
+**Why it matters:** because the API returns 200 on save but the events aren't immediately queryable via `event/list` (see [[1 Projects/appsflyer-connector/Leo CDP save returns 200 but eventlist cannot read it back]]), the dashboard is the practical way to visually confirm a push landed. The connector's `examples/push_to_data_observer.py` bakes this as the default `LEO_CDP_DASHBOARD_URL` template (override env var if the route differs). Related: [[Leo CDP public REST API contract]].
 
 ## Related
 
-- [[Leo CDP save returns 200 but event/list cannot read it back]]
+- [[1 Projects/appsflyer-connector/Leo CDP save returns 200 but eventlist cannot read it back]]
 - [[Leo CDP public REST API contract]]

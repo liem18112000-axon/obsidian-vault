@@ -18,8 +18,8 @@ As of sprint 158 (LUZ-155460, June 2026) luz_docs_statistic tracks a fourth face
 
 These fields are written by luz_docs' materialize pass; the metric exists to monitor backfill progress — it should trend to 0 once the materialise rollout/backfill completes for a tenant. Filter lives in `JsonStoreQueryUtil.unmaterializedDocumentConditionsBuilder()`, facet wiring in `DocumentStatisticUtils.buildFacetArrays()`.
 
-Related: [[luz_docs_statistic updates stats via 1-minute EJB timer over Pub/Sub and $facet aggregation]]
+Related: [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
 
 ## Related
 
-- [[luz_docs_statistic updates stats via 1-minute EJB timer over Pub/Sub and $facet aggregation]]
+- [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]

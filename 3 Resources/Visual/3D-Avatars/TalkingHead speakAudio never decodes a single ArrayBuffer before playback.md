@@ -26,4 +26,4 @@ General lesson: when a library's documented parameter type is broader than what 
 ## Related
 
 - [[Unguarded top-level await in a module script blocks every statement after it]]
-- [[jsdelivr gh CDN can pin to an exact commit SHA, not just tags/branches]]
+- [[3 Resources/Visual/3D-Avatars/jsdelivr gh CDN can pin to an exact commit SHA, not just tagsbranches]]

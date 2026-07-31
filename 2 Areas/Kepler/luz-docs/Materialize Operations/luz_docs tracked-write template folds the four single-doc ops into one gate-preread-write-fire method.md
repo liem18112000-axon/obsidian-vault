@@ -21,5 +21,4 @@ Flow: gate (untracked collection / suppression / untouched fields) -> optional p
 ## Related
 
 - [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
-- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper]]
-- [[RestClient qualifier is the bypass]]
+- [[3 Resources/Languages/Java/CDI/Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]

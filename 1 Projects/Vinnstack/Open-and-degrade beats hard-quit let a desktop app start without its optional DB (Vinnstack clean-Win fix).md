@@ -24,5 +24,5 @@ Other clean-Win prerequisites are runtime/feature-level, NOT startup blockers, a
 
 ## Related
 
-- [[Testing the packaged Vinnstack exe: needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
+- [[1 Projects/Vinnstack/Testing the packaged Vinnstack exe needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
 - [[ELECTRON_RUN_AS_NODE=1 in the env makes an Electron exe run as Node and 'look broken' — check/clear it before testing]]

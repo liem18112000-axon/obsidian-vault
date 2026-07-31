@@ -32,4 +32,4 @@ Found while building the Claude Hooks & Skills deck (`C:\Users\dvtliem\.claude\d
 
 ## Related
 
-- [[QA a pptx on Windows: LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
+- [[3 Resources/AI/Claude-Code/pptx/QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]

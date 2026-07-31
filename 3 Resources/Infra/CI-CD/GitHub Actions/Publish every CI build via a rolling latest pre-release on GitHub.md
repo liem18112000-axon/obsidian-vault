@@ -27,5 +27,4 @@ Related: [[GitHub Actions push filters - tags-only skips branch pushes, paths ig
 
 ## Related
 
-- [[GitHub Actions push filters - tags-only skips branch pushes]]
-- [[paths ignored for tags]]
+- [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags]]

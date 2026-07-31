@@ -16,10 +16,10 @@ To run Excalimate locally with live preview:
 3. **Register once** — `claude mcp add --transport http --scope user excalimate http://localhost:3001/mcp` (writes `C:\Users\dvtliem\.claude.json`; user scope = all projects).
 4. **Live preview** — start the server, open app.excalimate.com, click the **Live** button; the agent (loaded with the skills) builds diagrams that render live.
 
-Gotchas: [[MCP servers load only at Claude Code startup; skills hot-reload]] and [[A 406 from curl on an MCP /mcp endpoint is normal]]. Backdrop: [[Excalimate is AI skills plus an optional MCP server, not one app]].
+Gotchas: [[MCP servers load only at Claude Code startup; skills hot-reload]] and [[3 Resources/AI/MCP/A 406 from curl on an MCP mcp endpoint is normal]]. Backdrop: [[Excalimate is AI skills plus an optional MCP server, not one app]].
 
 ## Related
 
 - [[Excalimate is AI skills plus an optional MCP server, not one app]]
 - [[MCP servers load only at Claude Code startup; skills hot-reload]]
-- [[A 406 from curl on an MCP /mcp endpoint is normal]]
+- [[3 Resources/AI/MCP/A 406 from curl on an MCP mcp endpoint is normal]]

@@ -15,7 +15,7 @@ luz_docs shipped its HyperLogLog-based estimated document count as a POC with tw
 
 **How to apply:** when a user scope-reduces a feature to "just prove X" mid-build, look for the concurrency-safety and rollout-safety layers first — those are usually the parts that exist to protect production correctness, not the core mechanism being proven, and are the cheapest things to strip for a POC. The stripped mechanisms should stay documented (not deleted) in the original design doc as the path back to production-hardening — see the implementation plan doc's CAS/gate design, now stale against the POC code but kept on purpose.
 
-Related: [[HyperLogLog small-range error needs linear-counting correction]], [[luz_docs benchmark: full count scan is a dead end for sub-second targets]].
+Related: [[3 Resources/Data/Algorithms/HyperLogLog error in the small-range (linear-counting) regime]], [[luz_docs benchmark: full count scan is a dead end for sub-second targets]].
 
 ## Related
 

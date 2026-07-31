@@ -17,8 +17,8 @@ Two facts that broke the standard luz-skill-ship flow for the luz_docs_statistic
 
 Working recipe: stage → `TRIGGER_NAME=docs-statistic-service ship.sh "<msg>"` (ship.sh is safe to re-run; it skips commit/push when already done) → expect the rollout step to fail → kubectl set image as above. Image tags are full commit SHAs.
 
-Related: [[luz_docs_statistic updates stats via 1-minute EJB timer over Pub/Sub and $facet aggregation]]
+Related: [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
 
 ## Related
 
-- [[luz_docs_statistic updates stats via 1-minute EJB timer over Pub/Sub and $facet aggregation]]
+- [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]

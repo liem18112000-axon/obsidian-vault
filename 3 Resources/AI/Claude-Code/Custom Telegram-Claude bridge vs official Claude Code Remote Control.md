@@ -27,4 +27,4 @@ Reference points: official docs `code.claude.com/docs/en/remote-control`; commun
 ## Related
 
 - [[Remote permission approval via a blocking PreToolUse hook]]
-- [[Windows claude subprocess is a process tree — taskkill /T to reap it]]
+- [[3 Resources/AI/Claude-Code/Windows claude subprocess is a process tree — taskkill T to reap it]]

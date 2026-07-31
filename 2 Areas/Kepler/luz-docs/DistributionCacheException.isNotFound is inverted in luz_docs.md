@@ -20,4 +20,4 @@ Any consumer writing the natural idiom `if (!e.isNotFound()) throw e; return nul
 
 ## Related
 
-- [[MicroProfile @Retry @Fallback bypassed by bare this-call - use injected self proxy]]
+- [[3 Resources/Languages/Java/CDI and MicroProfile/CDI self-invocation bypasses interceptor proxy]]

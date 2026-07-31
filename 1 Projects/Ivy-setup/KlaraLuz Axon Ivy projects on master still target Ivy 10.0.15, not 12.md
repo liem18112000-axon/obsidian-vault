@@ -22,8 +22,8 @@ Implications:
 - **Dependency graph exceeds the 3 cloned repos**: builds also need `luz_ivy_common` (parent), `klara_faces`, `luz_templates`, `luz_common`, `xent_*` (6+ modules), `incamail`, `ch.ivyteam.ivy.addons` — resolved from the corporate registry. Projects deploy to Google Artifact Registry (`europe-west6-maven.pkg.dev/klara-repo/...`); dependency resolution repos are set to `repo.axongroupio.ch/artifactory` in settings.xml.
 
 ## Related
-[[Pre-configure an Eclipse/Ivy Designer workspace by seeding .prefs files]]
+[[3 Resources/Tooling/Eclipse/Pre-configure an EclipseIvy Designer workspace by seeding .prefs files]]
 
 ## Related
 
-- [[Pre-configure an Eclipse/Ivy Designer workspace by seeding .prefs files]]
+- [[3 Resources/Tooling/Eclipse/Pre-configure an EclipseIvy Designer workspace by seeding .prefs files]]

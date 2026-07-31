@@ -27,5 +27,4 @@ Related: [[JSON-driven Scenario Outline pattern for luz_docs materialize integra
 ## Related
 
 - [[JSON-driven Scenario Outline pattern for luz_docs materialize integration tests]]
-- [[document_service.recover_document drops an empty folderIds list]]
-- [[so it cannot clear folders]]
+- [[3 Resources/Work-Kepler/luz-docs/integration-test/document_service.recover_document drops an empty folderIds list, so it cannot clear folders]]

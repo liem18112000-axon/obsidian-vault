@@ -22,6 +22,4 @@ Also: on JDK 24+ (JEP 491) synchronized blocks no longer pin carriers, removing 
 
 ## Related
 
-- [[Records break Gson pre-2.10]]
-- [[ArangoDB driver 6 VPACK]]
-- [[and handlebars getter resolution]]
+- [[3 Resources/Languages/Java/Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter resolution]]

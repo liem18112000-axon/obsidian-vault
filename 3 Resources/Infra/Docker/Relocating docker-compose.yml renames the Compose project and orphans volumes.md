@@ -19,8 +19,8 @@ services:
   ...
 ```
 
-Discovered while splitting one Dockerfile into purpose-built web/mcp/cli images under a `dockers/` folder. See [[Docker Compose path resolution: env_file vs build context vs dockerfile]] for the relative-path rules that bite at the same time.
+Discovered while splitting one Dockerfile into purpose-built web/mcp/cli images under a `dockers/` folder. See [[3 Resources/Infra/Docker/Docker Compose path resolution env_file vs build context vs dockerfile]] for the relative-path rules that bite at the same time.
 
 ## Related
 
-- [[Docker Compose path resolution: env_file vs build context vs dockerfile]]
+- [[3 Resources/Infra/Docker/Docker Compose path resolution env_file vs build context vs dockerfile]]

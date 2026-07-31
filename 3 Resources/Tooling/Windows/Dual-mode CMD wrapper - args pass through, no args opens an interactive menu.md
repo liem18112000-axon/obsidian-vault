@@ -27,4 +27,4 @@ if errorlevel 2 goto sign
 
 Useful for operator tooling handed to non-technical users while keeping full CLI flexibility for yourself. Example: tools\license_admin.cmd in fb-info-project wrapping an Ed25519 license keygen/sign script.
 
-Related: [[CMD set /p keeps the existing value on empty Enter - preset the default]]
+Related: [[3 Resources/Tooling/Windows/CMD set p keeps the existing value on empty Enter - preset the default]]

@@ -25,6 +25,5 @@ When a workload is **concurrency-bound on a single Mongo primary**, adding index
 
 ## Related
 
-- [[eArchive load wall is the materialize security aggregate]]
-- [[not index coverage]]
+- [[3 Resources/Work-Kepler/eArchive/eArchive load wall is the materialize security aggregate, not index coverage]]
 - [[Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load]]

@@ -19,5 +19,5 @@ Source: electron-updater `packages/electron-updater/src/NsisUpdater.ts`. Context
 
 ## Related
 
-- [[Unsigned Electron app first-launch: transient Cannot find module during Defender post-install scan]]
+- [[3 Resources/Frontend/Electron/Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
 - [[Electron]]

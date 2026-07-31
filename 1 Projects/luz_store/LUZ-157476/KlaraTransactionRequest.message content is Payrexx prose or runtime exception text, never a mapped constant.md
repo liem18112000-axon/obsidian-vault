@@ -25,6 +25,5 @@ Repo: luz_online_payment. Ticket: LUZ-157476.
 
 ## Related
 
-- [[Payrexx card declines reach luz_store as ERROR with prose]]
-- [[not DECLINED]]
+- [[1 Projects/luz_store/LUZ-157476/Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[luz_online_payment silently drops Payrexx decline codes]]

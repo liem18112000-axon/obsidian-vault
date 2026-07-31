@@ -27,7 +27,7 @@ aliases:
 ## Link hygiene
 
 - **Only approved landing pages:** OBS enforces this via [[Accesstrade Creative APIs|accepted-URL regex]]; on classic, self-enforce — links to unapproved pages often don't track or get reversed.
-- **Only RUNNING, approved campaigns:** enforce with a [[Affiliate automation hook patterns|PreToolUse hook]] so dead links never ship.
+- **Only RUNNING, approved campaigns:** enforce with a [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model|PreToolUse hook]] so dead links never ship.
 - **No cloaking that violates merchant/network terms;** keep `sub1` meaningful, not deceptive.
 - **Re-validate periodically:** products go out of stock, campaigns pause, coupons expire — schedule a link/coupon health check.
 
@@ -51,7 +51,7 @@ flowchart TD
 
 ## Related
 
-- [[Affiliate automation hook patterns]]
+- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
 - [[Accesstrade Creative APIs]]
 - [[Use case - bulk tracking link generation]]
 - [[Secrets handling for affiliate API keys]]

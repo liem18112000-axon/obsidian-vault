@@ -27,5 +27,4 @@ Then: `./gradlew --init-script rewrite-init.gradle rewriteDryRun` -> reviewable 
 
 ## Related
 
-- [[Java 25 requires Gradle 9.1.0 or later]]
-- [[not Gradle 9.0.0]]
+- [[3 Resources/Languages/Java/Gradle/Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]

@@ -19,10 +19,10 @@ A memoization or dedup cache keyed by work-item identity is, structurally, alrea
 
 Caveat: only persist entries that represent genuinely-completed work — see [[Cache only successful results so failures retry on resume]].
 
-Related: [[A resume must not re-charge one-time accounting]], [[Checkpoint files: atomic tmp+rename write plus an input fingerprint]].
+Related: [[A resume must not re-charge one-time accounting]], [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]].
 
 ## Related
 
 - [[Cache only successful results so failures retry on resume]]
 - [[A resume must not re-charge one-time accounting]]
-- [[Checkpoint files: atomic tmp+rename write plus an input fingerprint]]
+- [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]]

@@ -15,4 +15,4 @@ On a GKE cluster with Workload Identity enabled, creating the Google service acc
 
 ## Related
 
-- [[GKE LoadBalancer Service: External vs Internal and how to tell by IP]]
+- [[3 Resources/Infra/Kubernetes/GKE LoadBalancer Service External vs Internal and how to tell by IP]]

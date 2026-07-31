@@ -21,8 +21,8 @@ When a server streams a child process's output to a browser over NDJSON, the **s
 
 Surfaced fixing vinnstack's chat route + ChatProvider (review Findings 5/6/7).
 
-Related: [[Keep error/failure text out of LLM-summarized durable memory]].
+Related: [[3 Resources/AI/Agents/Keep errorfailure text out of LLM-summarized durable memory]].
 
 ## Related
 
-- [[Keep error/failure text out of LLM-summarized durable memory]]
+- [[3 Resources/AI/Agents/Keep errorfailure text out of LLM-summarized durable memory]]

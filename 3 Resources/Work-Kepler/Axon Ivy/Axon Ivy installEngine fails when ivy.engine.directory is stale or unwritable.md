@@ -13,7 +13,7 @@ The Axon Ivy `com.axonivy.ivy.ci:project-build-plugin` binds an **installEngine*
 
 **Gotcha:** if that property points at a directory the current OS user cannot write to — classically a path baked into the machine's *global* `settings.xml` referencing a **previous user's** home (e.g. `C:\Users\<someone-else>\.m2\repository\.cache\ivy\...`) — installEngine fails with `Failed to unpack downloaded engine ... Cannot create output directories`. It is not a network/download problem.
 
-**Fix:** point `ivy.engine.directory` (and the sibling engine keys) at a writable, already-unpacked engine of the *matching* version, and make sure the plugin version equals the engine version (a stale `ivyVersion` in settings.xml can force an older plugin against a newer engine). A healthy run logs `Using engine in '<dir>'` with no download. See [[Maven user settings.xml overrides global same-id profile properties]] for a non-invasive way to override the bad global value, and [[Axon Ivy project anatomy: logic split across processes, data classes, HTML dialogs, and Java]].
+**Fix:** point `ivy.engine.directory` (and the sibling engine keys) at a writable, already-unpacked engine of the *matching* version, and make sure the plugin version equals the engine version (a stale `ivyVersion` in settings.xml can force an older plugin against a newer engine). A healthy run logs `Using engine in '<dir>'` with no download. See [[Maven user settings.xml overrides global same-id profile properties]] for a non-invasive way to override the bad global value, and [[3 Resources/Work-Kepler/Axon Ivy/Axon Ivy project anatomy logic split across processes, data classes, HTML dialogs, and Java]].
 
 ## Related
 

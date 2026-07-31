@@ -19,6 +19,5 @@ A test that asserted 'verification rejects a semantically wrong pick' failed and
 
 ## Related
 
-- [[Self-healing scraper selectors — LLM fallback only on verified failure]]
-- [[then cache]]
+- [[3 Resources/Web/Scraping/Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
 - [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]

@@ -24,8 +24,8 @@ className={`relative w-full overflow-hidden lg:shrink-0 ${open ? "lg:w-56" : "lg
 Found and fixed in the vinnstack project (AiFeedback.tsx, PrdComments.tsx comment rail) while making a desktop-only layout degrade to tablet widths — verified with Playwright screenshots at 768/900/1280px that the fixed-width panels then correctly went full-width below `lg` and back to their pixel width above it.
 
 ## Related
-[[Stack a rail-and-content row responsively with flex-col to lg:flex-row]]
+[[3 Resources/Frontend/CSS/Stack a rail-and-content row responsively with flex-col to lgflex-row]]
 
 ## Related
 
-- [[Stack a rail-and-content row responsively with flex-col to lg:flex-row]]
+- [[3 Resources/Frontend/CSS/Stack a rail-and-content row responsively with flex-col to lgflex-row]]

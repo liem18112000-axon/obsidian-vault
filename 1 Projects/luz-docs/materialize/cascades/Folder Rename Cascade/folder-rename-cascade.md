@@ -43,15 +43,15 @@ This note explains what happens when a folder is renamed and the system must upd
 
 If you are new to the topic, read in this order:
 
-1. [[technical-points/01 Overview - Folder Rename Cascade|Overview]]
-2. [[technical-points/02 Trigger Flow|Trigger flow]]
-3. [[technical-points/03 Cascade Attempt|Cascade attempt]]
-4. [[technical-points/04 Marker State Machine|Marker state machine]]
-5. [[technical-points/05 Retry Flow|Retry flow]]
-6. [[technical-points/06 Files of Record|Files of record]]
-7. [[technical-points/07 Operational Notes|Operational notes]]
-8. [[technical-points/08 Decision Log|Decision log]]
-9. [[technical-points/09 Glossary for Newbies|Glossary for newbies]]
+1. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/01 Overview - Folder Rename Cascade|Overview]]
+2. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/02 Trigger Flow|Trigger flow]]
+3. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/03 Cascade Attempt|Cascade attempt]]
+4. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/04 Marker State Machine|Marker state machine]]
+5. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/05 Retry Flow|Retry flow]]
+6. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/06 Files of Record|Files of record]]
+7. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/07 Operational Notes|Operational notes]]
+8. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/08 Decision Log|Decision log]]
+9. [[1 Projects/luz-docs/materialize/cascades/Folder Rename Cascade/technical-points/09 Glossary for Newbies|Glossary for newbies]]
 
 ## TL;DR
 

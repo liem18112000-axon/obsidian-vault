@@ -22,6 +22,5 @@ Therefore a dedicated stored field is required for a correct+fast+balanced fan-o
 
 ## Related
 
-- [[Partition the materialized count on a uniform _countShard int]]
-- [[not _id]]
+- [[1 Projects/luz-docs/materialize/Partition the materialized count on a uniform _countShard int, not _id]]
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]

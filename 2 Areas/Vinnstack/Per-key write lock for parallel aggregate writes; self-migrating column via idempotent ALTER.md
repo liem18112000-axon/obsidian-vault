@@ -15,4 +15,4 @@ Two store patterns from adding parallel process-flow generation + a new column t
 
 **2. Self-migrating column.** Vinnstack applies db/schema.sql only via manual migrate scripts, so adding a column to a live DB normally needs an ops step. To avoid that: a memoized `ensureSchemaExtensions()` in the store runs `ALTER TABLE ... ADD COLUMN IF NOT EXISTS ...` once per process (idempotent), awaited at the top of getInterrogation/saveInterrogation. The column also goes in schema.sql (CREATE TABLE + the same idempotent ALTER) for fresh DBs. Net: an existing DB gains the column on first access, no separate migration run.
 
-Related: [[Vinnstack release: push to main triggers Cloud Build which publishes to GCS latest/ auto-update channel]].
+Related: [[2 Areas/Vinnstack/Vinnstack release push to main triggers Cloud Build which publishes to GCS latest auto-update channel]].

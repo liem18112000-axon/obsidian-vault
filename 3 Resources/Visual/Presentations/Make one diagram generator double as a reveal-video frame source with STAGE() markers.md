@@ -18,8 +18,8 @@ fs.writeFileSync(OUT, JSON.stringify({...full diagram, elements: els...}));   //
 emit(els, FILES, bounds, framesDir, 'prefix', pinW, pinH);                     // cumulative frames
 ```
 
-The shared `emit()` writes one `.excalidraw` per stage = `els.slice(0, bounds[k])`, each with TWO invisible white corner-pin rectangles at (0,0) and (pinW,pinH) so every partial frame renders at the SAME canvas size (otherwise excalidraw crops to content and frames jump). Then: render each frame to PNG, and feed the PNG sequence to a make-video script (Ken Burns + crossfade) → the reveal mp4. Embed the mp4 in pptx with `addMedia({type:'video', path, cover: <base64 png>, ...})` on a slide right BEFORE the still-diagram slide. This is the video+still pair pattern the obsidian/telegram decks use. Relates to [[Full-bleed slide images need ~16:9 aspect or their text renders too small]].
+The shared `emit()` writes one `.excalidraw` per stage = `els.slice(0, bounds[k])`, each with TWO invisible white corner-pin rectangles at (0,0) and (pinW,pinH) so every partial frame renders at the SAME canvas size (otherwise excalidraw crops to content and frames jump). Then: render each frame to PNG, and feed the PNG sequence to a make-video script (Ken Burns + crossfade) → the reveal mp4. Embed the mp4 in pptx with `addMedia({type:'video', path, cover: <base64 png>, ...})` on a slide right BEFORE the still-diagram slide. This is the video+still pair pattern the obsidian/telegram decks use. Relates to [[3 Resources/Visual/Presentations/Full-bleed slide images need ~169 aspect or their text renders too small]].
 
 ## Related
 
-- [[Full-bleed slide images need ~16:9 aspect or their text renders too small]]
+- [[3 Resources/Visual/Presentations/Full-bleed slide images need ~169 aspect or their text renders too small]]

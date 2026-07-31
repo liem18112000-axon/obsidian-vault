@@ -20,4 +20,4 @@ Full phased integration plan: `doc/polaris-mcp-integration-plan.md` (Phases 0-3 
 
 ## Related
 
-- [[Polaris 0.2.0 serves agents/skills/rules over an MCP tunnel]]
+- [[3 Resources/Work-Side/Polaris/Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]

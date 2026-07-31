@@ -34,5 +34,5 @@ Fully `@ApplicationScoped` bean chains work off-thread, so tests exercising only
 
 - [[WildFly custom managed-executor-service needs context-service for CDIWeld tasks]]
 - [[CompletableFuture parallel fan-out needs .toList() barrier before joining]]
-- [[Parallelize visible-doc count by fan-out over _id ranges (luz-docs)]]
+- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
 - [[Per-pod single-flight kills cache stampede without semantic change]]

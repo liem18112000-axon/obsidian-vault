@@ -30,7 +30,7 @@ Longer windows credit more **delayed conversions**, which directly raises your [
 |---------------|-------------------------|
 | 24 hours (e.g. Amazon) | Only near-instant buyers count; many delayed sales lost |
 | 30 days | Industry standard; captures most considered purchases |
-| 60–90 days | Captures slow deciders; great for high-[[Average Order Value\|AOV]] / B2B |
+| 60–90 days | Captures slow deciders; great for high-[[3 Resources/Work-Side/Affiliate/Term/Average Order Value|AOV]] / B2B |
 | Lifetime / unlimited | Every future action counts (rare; common in SaaS recurring) |
 
 > [!tip] Longer cookie = more credited conversions = higher EPC
@@ -70,4 +70,4 @@ Longer windows credit more **delayed conversions**, which directly raises your [
 - [[Reversal]] — even a credited in-window sale can later be clawed back.
 
 ---
-*See also: [[Affiliate/Term|all affiliate terms]]*
+*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*

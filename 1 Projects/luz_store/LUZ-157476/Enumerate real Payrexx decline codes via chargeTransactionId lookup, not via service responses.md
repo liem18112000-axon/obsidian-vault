@@ -15,4 +15,4 @@ Expectation: Payrexx public docs show no decline-code field on the API transacti
 
 ## Related
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
-- [[Payrexx decline codes are ISO 8583 issuer codes from the card-issuing bank]]
+- [[3 Resources/Work-Kepler/Payrexx/Payrexx ISO 8583 decline code to meaning reference table]]

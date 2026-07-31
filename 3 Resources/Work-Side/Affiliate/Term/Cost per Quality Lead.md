@@ -93,4 +93,4 @@ If your traffic is broad and you can't pre-qualify, plain [[Cost per Lead]] (or 
 - [[Reversal]] — clawback of leads that fail validation after being provisionally counted.
 
 ---
-*See also: [[Affiliate/Term|all affiliate terms]]*
+*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*

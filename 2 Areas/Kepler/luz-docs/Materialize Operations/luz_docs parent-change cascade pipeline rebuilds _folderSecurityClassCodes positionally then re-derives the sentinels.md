@@ -21,6 +21,6 @@ Every array access is `$ifNull`-guarded to `[]`, so short/missing parallel array
 
 ## Related
 
-- [[Mongo update pipelines cannot use $lookup (WriteError 72) - prefetch and inline literal tables instead]]
+- [[3 Resources/Data/MongoDB/MongoDB forbids $lookup inside update pipeline (WriteError 72)]]
 - [[luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races]]
 - [[luz_docs has two materialize cascade delivery mechanisms]]

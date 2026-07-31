@@ -17,6 +17,4 @@ When automating this (e.g. a web relay that feeds the paste value to setup-token
 
 ## Related
 
-- [[Driving a raw-mode or ink TTY prompt through a PTY needs carriage return]]
-- [[not newline]]
-- [[to submit]]
+- [[3 Resources/Backend/CLI/Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]

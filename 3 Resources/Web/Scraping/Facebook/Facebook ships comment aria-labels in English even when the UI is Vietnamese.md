@@ -17,5 +17,4 @@ Surfaced while fixing the reply-to column in fb-info-project. Parent idea: [[Fac
 
 ## Related
 
-- [[Facebook reply hierarchy lives in the article aria-label]]
-- [[not DOM nesting]]
+- [[3 Resources/Web/Scraping/Facebook/Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]

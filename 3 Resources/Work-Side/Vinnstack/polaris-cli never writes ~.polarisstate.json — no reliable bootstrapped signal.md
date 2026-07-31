@@ -22,4 +22,4 @@ Lesson: before making a file the source of truth for a state check, grep the too
 
 ## Related
 
-- [[Vinnstack auth providers: two patterns and the rule for adding one]]
+- [[3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule for adding one]]

@@ -27,4 +27,4 @@ To actually USE Polaris: bootstrap + `polaris up`, then reload the editor (Claud
 
 ## Related
 
-- [[polaris-cli never writes ~/.polaris/state.json — no reliable bootstrapped signal]]
+- [[3 Resources/Work-Side/Vinnstack/polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]

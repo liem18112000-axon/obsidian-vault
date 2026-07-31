@@ -23,5 +23,4 @@ Related: [[Bitbucket Cloud API pagination returns full URLs in 'next', not relat
 
 ## Related
 
-- [[Bitbucket Cloud API pagination returns full URLs in 'next']]
-- [[not relative paths]]
+- [[3 Resources/Tooling/Bitbucket/Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]

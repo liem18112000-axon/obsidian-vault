@@ -44,7 +44,7 @@ flowchart TD
 Many publishers run **both**: affiliate links inside high-intent content (reviews, comparisons) and an ad network on everything else (and on traffic the affiliate offer can't use). The two fill different slots of the same audience.
 
 > [!tip] Automation parity
-> Both expose publisher APIs, so the Claude pattern is identical — a [[Designing an Accesstrade skill for Claude Code|skill wrapping the API]] + [[Affiliate automation hook patterns|hooks for digests/guards]]. Only the *metrics* differ (CPM/zone vs commission/sub1).
+> Both expose publisher APIs, so the Claude pattern is identical — a [[Designing an Accesstrade skill for Claude Code|skill wrapping the API]] + [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model|hooks for digests/guards]]. Only the *metrics* differ (CPM/zone vs commission/sub1).
 
 ## Related
 

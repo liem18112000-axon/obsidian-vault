@@ -28,4 +28,4 @@ Dev tenant `d0783310-d67f-4ab7-9aab-dcaef3f17f48` (128,000 docs, 8-12 folders), 
 ## Related
 
 - [[luz-docs parallelized count undercounts documents missing _shard]]
-- [[luz_docs /documents/count is scan-bound and cannot reach sub-second at 128k]]
+- [[1 Projects/luz-docs/luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]

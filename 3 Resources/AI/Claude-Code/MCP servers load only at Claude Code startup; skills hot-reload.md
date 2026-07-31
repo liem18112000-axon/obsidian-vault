@@ -13,8 +13,8 @@ Claude Code discovers **skills** by scanning the skills folders continuously, so
 
 So after wiring a new MCP server, expect: skills usable immediately, MCP tools only after restart. `claude mcp list` / `claude mcp get <name>` reporting "Connected" only confirms the server is reachable, not that the current session has loaded its tools.
 
-Related: [[Claude Code holds an open handle on every skills folder under ~/.claude]].
+Related: [[3 Resources/AI/Claude-Code/Claude Code holds an open handle on every skills folder under ~.claude]].
 
 ## Related
 
-- [[Claude Code holds an open handle on every skills folder under ~/.claude]]
+- [[3 Resources/AI/Claude-Code/Claude Code holds an open handle on every skills folder under ~.claude]]

@@ -39,7 +39,7 @@ flowchart TD
 
 ## Guardrails (where hooks earn their keep)
 
-- A **`PreToolUse` hook** denies minting against a paused/unapproved campaign, so you never ship a dead link — see [[Affiliate automation hook patterns]].
+- A **`PreToolUse` hook** denies minting against a paused/unapproved campaign, so you never ship a dead link — see [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]].
 - A **`PostToolUse` hook** appends every minted link to a ledger CSV for later reconciliation against conversions.
 
 ## Efficiency notes
@@ -51,6 +51,6 @@ flowchart TD
 
 - [[Accesstrade tracking link creation]]
 - [[Accesstrade Campaigns API]]
-- [[Affiliate automation hook patterns]]
+- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
 - [[Affiliate compliance and link hygiene]]
 - [[Accesstrade API Integration - MOC]]

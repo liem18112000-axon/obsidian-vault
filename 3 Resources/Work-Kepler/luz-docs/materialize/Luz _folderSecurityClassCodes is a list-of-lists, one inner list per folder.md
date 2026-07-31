@@ -28,5 +28,4 @@ Discovered while writing folder-delete materialize cascade tests (LUZ-154157) in
 
 ## Related
 
-- [[Comparing _folderSecurityClassCodes in tests needs a multiset-of-sets]]
-- [[not a flat set]]
+- [[3 Resources/Work-Kepler/luz-docs/materialize/Comparing _folderSecurityClassCodes in tests needs a multiset-of-sets, not a flat set]]

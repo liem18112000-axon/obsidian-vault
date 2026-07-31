@@ -16,10 +16,10 @@ The Klara/Luz Axon Ivy projects (`axonivy-prod` Bitbucket) resolve internal Mave
 
 **Recipe to build off-VPN:** run Maven with a settings.xml that KEEPS Maven Central + the Ivy `ch` properties (`ivyVersion=10.0.15`, engine dir `~/.m2/repository/.cache/ivy/10.0.15`) but DROPS the axongroupio repositories/pluginRepositories, and ensure `gcloud auth application-default print-access-token` works. Add `-U` so snapshot metadata refreshes from GAR instead of the dead host. Verified: `klara_theme` (plain `jar`) builds SUCCESS; `luz_components` `validate` SUCCESS (release parent `ch.klara.ivy:luz_ivy_common:2.0.01.0` resolves from GAR).
 
-**Residual blocker (not infra):** GAR snapshot **retention is short**, so old pinned internal SNAPSHOTs are purged. `klara_prototype` master pins `klara_theme:1.00.22.00-SNAPSHOT` (timestamp `20250725.044911-3`) which no longer exists in GAR (current master theme is `1.00.48.00-SNAPSHOT`) → `Could not find artifact`. Fixing that needs either the corporate VPN (Artifactory retains more snapshots), bumping the pin to a current version (source change, API-drift risk), or building the matching klara_theme commit locally. See [[Klara/Luz Axon Ivy projects on master still target Ivy 10.0.15, not 12]].
+**Residual blocker (not infra):** GAR snapshot **retention is short**, so old pinned internal SNAPSHOTs are purged. `klara_prototype` master pins `klara_theme:1.00.22.00-SNAPSHOT` (timestamp `20250725.044911-3`) which no longer exists in GAR (current master theme is `1.00.48.00-SNAPSHOT`) → `Could not find artifact`. Fixing that needs either the corporate VPN (Artifactory retains more snapshots), bumping the pin to a current version (source change, API-drift risk), or building the matching klara_theme commit locally. See [[1 Projects/Ivy-setup/KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]].
 
 ## Related
-[[Klara/Luz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+[[1 Projects/Ivy-setup/KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
 [[Clone a Bitbucket repo with an app password without leaking it (inline credential helper)]]
 
 ## Related

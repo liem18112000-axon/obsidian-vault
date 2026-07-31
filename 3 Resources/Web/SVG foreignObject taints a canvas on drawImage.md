@@ -19,5 +19,4 @@ Found while debugging why [[Mermaid defaults to foreignObject HTML labels, break
 
 ## Related
 
-- [[Mermaid defaults to foreignObject HTML labels]]
-- [[breaking canvas export]]
+- [[3 Resources/Visual/Mermaid/Mermaid defaults to foreignObject HTML labels, breaking canvas export]]

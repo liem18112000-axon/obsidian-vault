@@ -38,13 +38,13 @@ Welcome to my digital garden.
 
 ## Main areas
 
-- [[Introduction to Obsidian/Roadmap|Introduction to Obsidian]]
-- [[Kepler/Feature Notes/luz-docs/overview/search-logic|Kepler / luz-docs]]
+- [[3 Resources/Obsidian/Introduction to Obsidian/Roadmap|Introduction to Obsidian]]
+- [[3 Resources/Work-Kepler/luz-docs/search/search-logic|Kepler / luz-docs]]
 - [[1 Projects/1 Projects|Projects]]
 - [[2 Areas/2 Areas|Areas]]
 - [[3 Resources/3 Resources|Resources]]
 - [[4 Archives/4 Archives|Archives]]
-- [[Usage/Publish|Usage]]
+- [[2 Areas/Knowledge-System/Publish|Usage]]
 
 
 ## PARA
@@ -60,25 +60,25 @@ Welcome to my digital garden.
 
 Start here for the beginner-friendly split of the luz-docs search API:
 
-1. [[Kepler/Feature Notes/luz-docs/overview/search-logic/01 Overview]]
-2. [[Kepler/Feature Notes/luz-docs/overview/search-logic/02 Endpoints]]
-3. [[Kepler/Feature Notes/luz-docs/overview/search-logic/03 Request Body]]
-4. [[Kepler/Feature Notes/luz-docs/overview/search-logic/04 Query Operators]]
-5. [[Kepler/Feature Notes/luz-docs/overview/search-logic/05 Operator Nesting]]
-6. [[Kepler/Feature Notes/luz-docs/overview/search-logic/06 Server Filters]]
-7. [[Kepler/Feature Notes/luz-docs/overview/search-logic/07 Aggregation Pipeline]]
-8. [[Kepler/Feature Notes/luz-docs/overview/search-logic/08 Facets]]
-9. [[Kepler/Feature Notes/luz-docs/overview/search-logic/09 Examples]]
-10. [[Kepler/Feature Notes/luz-docs/overview/search-logic/Glossary]]
+1. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/01 Overview]]
+2. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/02 Endpoints]]
+3. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/03 Request Body]]
+4. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/04 Query Operators]]
+5. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/05 Operator Nesting]]
+6. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/06 Server Filters]]
+7. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/07 Aggregation Pipeline]]
+8. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/08 Facets]]
+9. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/09 Examples]]
+10. [[3 Resources/Work-Kepler/luz-docs/search/search-logic/Glossary]]
 
 ### Count optimization
 
-- [[Kepler/Feature Notes/luz-docs/materialize/count-optimize/Divide-and-Conquer Visible-Document Count]]
-- [[Kepler/Feature Notes/luz-docs/materialize/count-optimize/technical-points/Divide-and-Conquer Count - Technical Points for Beginners]]
+- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+- [[1 Projects/luz-docs/count/optimize/technical-points/Divide-and-Conquer Count - Technical Points for Beginners]]
 
 ### Knowledge base
 
-- [[Kepler/Feature Notes/knowledge-base/Plan-build-knowledge-base.excalidraw]]
+- [[2 Areas/Knowledge-System/Plan-build-knowledge-base.excalidraw]]
 
 
 

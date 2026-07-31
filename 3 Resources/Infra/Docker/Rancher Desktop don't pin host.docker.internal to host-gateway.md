@@ -17,9 +17,9 @@ On **Rancher Desktop** (WSL2 backend), do NOT add `extra_hosts: ["host.docker.in
 
 **Tell engines apart:** `docker info --format '{{.OperatingSystem}}'` → `Rancher Desktop WSL Distribution` vs `Docker Desktop`.
 
-Found while a Dockerized FastAPI app couldn't reach the host's Ollama for an LLM feature. Related: [[Docker Compose path resolution: env_file vs build context vs dockerfile]], [[Relocating docker-compose.yml renames the Compose project and orphans volumes]].
+Found while a Dockerized FastAPI app couldn't reach the host's Ollama for an LLM feature. Related: [[3 Resources/Infra/Docker/Docker Compose path resolution env_file vs build context vs dockerfile]], [[Relocating docker-compose.yml renames the Compose project and orphans volumes]].
 
 ## Related
 
-- [[Docker Compose path resolution: env_file vs build context vs dockerfile]]
+- [[3 Resources/Infra/Docker/Docker Compose path resolution env_file vs build context vs dockerfile]]
 - [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]

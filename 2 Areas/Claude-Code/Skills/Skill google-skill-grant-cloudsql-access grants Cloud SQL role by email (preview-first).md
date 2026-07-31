@@ -22,4 +22,4 @@ See the role cheat-sheet for which `ROLE` to pass for a given intent.
 
 ## Related
 
-- [[GCP Cloud SQL IAM role cheat-sheet: which role grants cloudsql.instances.get]]
+- [[3 Resources/Cloud/GCP/GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]

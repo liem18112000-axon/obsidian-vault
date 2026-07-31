@@ -33,4 +33,4 @@ Fail-loud is preserved without an explicit `CompletableFuture.allOf(...).join()`
 
 ## Related
 
-- [[Parallelize visible-doc count by fan-out over _id ranges (luz-docs)]]
+- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]

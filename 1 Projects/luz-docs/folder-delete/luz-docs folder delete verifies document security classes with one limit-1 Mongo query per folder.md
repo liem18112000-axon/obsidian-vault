@@ -19,9 +19,9 @@ If the query returns anything → throw `DocumentMismatchSecurityClassCodeExcept
 
 Caveat: `_deletionStatus` is matched with strict equality `"false"` (docs missing the field are excluded) to mirror the old `getAllDocumentsMetadata` criteria — do NOT swap in `buildDeletionStatusCondition`, whose \ treats a missing field as non-deleted.
 
-Context: [[luz-docs folder delete filter double-fetched every subfolder]], [[Partition documents by folder membership with exact-array-match and array-index-exists filters]]
+Context: [[luz-docs folder delete filter double-fetched every subfolder]], [[3 Resources/Data/MongoDB/Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
 
 ## Related
 
 - [[luz-docs folder delete filter double-fetched every subfolder]]
-- [[Partition documents by folder membership with exact-array-match and array-index-exists filters]]
+- [[3 Resources/Data/MongoDB/Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]

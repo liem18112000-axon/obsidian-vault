@@ -66,14 +66,14 @@ This note set explains how `PUT /{tenantId}/documents/{document-id}` updates a d
 
 Read in this order:
 
-1. [[technical-points/01 API Entry Point|API entry point]]
-2. [[technical-points/02 Service Validation|Service validation]]
-3. [[technical-points/03 Cascade Decision Gate|Cascade decision gate]]
-4. [[technical-points/04 Materialized Fields Computation|Materialized fields computation]]
-5. [[technical-points/05 Save and Side Effects|Save and side effects]]
-6. [[technical-points/06 Failure Paths|Failure paths]]
-7. [[technical-points/07 Files of Record|Files of record]]
-8. [[technical-points/08 Glossary for Newbies|Glossary for newbies]]
+1. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/01 API Entry Point|API entry point]]
+2. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/02 Service Validation|Service validation]]
+3. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/03 Cascade Decision Gate|Cascade decision gate]]
+4. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/04 Materialized Fields Computation|Materialized fields computation]]
+5. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/05 Save and Side Effects|Save and side effects]]
+6. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/06 Failure Paths|Failure paths]]
+7. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/07 Files of Record|Files of record]]
+8. [[2 Areas/Kepler/luz-docs/Materialize Operations/Document PUT Cascade/technical-points/08 Glossary for Newbies|Glossary for newbies]]
 
 ## TL;DR
 

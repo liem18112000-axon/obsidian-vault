@@ -17,8 +17,8 @@ luz WildFly services (e.g. luz_online_payment) run locally via docker-compose wi
 4. Cross-service integrations point at `host.docker.internal:8080` (JWT/luzsec, luz_compensation, luz_online, luz_eletter). They are called lazily at runtime, so the app boots without them; run the real services or a `kubectl port-forward services/api-forwarder 8080` to the dev cluster for full functionality.
 5. luz_online_payment local ports: app 8128->8080, debug 8788, bundled Postgres 6666->5432. App base path `/luz_online_payment/api`.
 
-See [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]] for the feature context.
+See [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]] for the feature context.
 
 ## Related
 
-- [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]]
+- [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]

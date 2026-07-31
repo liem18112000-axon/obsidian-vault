@@ -19,6 +19,5 @@ Lesson: set all three explicitly, and treat the shipped `config.toml` template a
 
 ## Related
 
-- [[Gorse config exposes model family and cadence]]
-- [[never hyperparameters]]
+- [[3 Resources/Data/Gorse/Gorse config exposes model family and cadence, never hyperparameters]]
 - [[Gorse v0.4 docs describe a defunct config schema — trust the shipped config.toml template]]

@@ -20,4 +20,4 @@ Two HLL (or similar cardinality) sketches combine by element-wise `max()` over t
 ## Related
 
 - [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
-- [[luz_docs count>N badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[1 Projects/luz-docs/luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]

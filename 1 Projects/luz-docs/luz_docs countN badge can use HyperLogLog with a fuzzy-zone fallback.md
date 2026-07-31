@@ -22,4 +22,4 @@ This is a narrowing of an existing, already-decided rule in the luz_docs codebas
 ## Related
 
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
-- [[luz_docs /documents/count is scan-bound and cannot reach sub-second at 128k]]
+- [[1 Projects/luz-docs/luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]

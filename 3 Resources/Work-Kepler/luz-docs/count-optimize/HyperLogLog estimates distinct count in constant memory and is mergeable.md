@@ -28,6 +28,4 @@ Mechanism:
 
 - [[Visible-document count as cardinality of a bitmap union]]
 - [[Roaring bitmaps give exact set cardinality via chunked containers]]
-- [[Count-scaling path: fan-out first]]
-- [[Roaring next]]
-- [[HyperLogLog for approximate]]
+- [[1 Projects/luz-docs/count/optimize/Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]

@@ -20,7 +20,7 @@ tags: [luz-store, luz-online-payment, payrexx, invoice-run, taxonomy, design-dec
 **Open question at the time:** does Payrexx deliver the ISO code as a structured field at all (task 2.1)? Must be confirmed before freezing the mapping.
 
 > [!warning] Superseded
-> Scope was later reversed — see [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]], and the final split in [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]].
+> Scope was later reversed — see [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]], and the final split in [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]].
 
 Ticket: LUZ-157476 / LUZ-157809, epic LUZ-156281 (credit-card-only billing).
 
@@ -29,5 +29,5 @@ Ticket: LUZ-157476 / LUZ-157809, epic LUZ-156281 (credit-card-only billing).
 - [[DECLINED status falls through invoice charge-failure handling in luz_store]]
 - [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[luz_online_payment silently drops Payrexx decline codes]]
-- [[Payrexx decline codes are ISO 8583 issuer codes from the card-issuing bank]]
+- [[3 Resources/Work-Kepler/Payrexx/Payrexx ISO 8583 decline code to meaning reference table]]
 - [[luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values]]

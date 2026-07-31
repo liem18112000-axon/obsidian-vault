@@ -20,8 +20,8 @@ Quirks worth remembering:
 - Document sizes are stored as **strings with a `Byte` suffix** (e.g. "3028Byte"), not numbers — anything consuming the entity must parse that.
 - Pub/Sub messages are only triggers; the aggregation always recomputes from scratch, so duplicates/lost increments are harmless (eventually-consistent by design).
 
-See [[luz_docs_statistic two-token model: service-tenant vs per-tenant cache token]] for which token each step uses.
+See [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic two-token model service-tenant vs per-tenant cache token]] for which token each step uses.
 
 ## Related
 
-- [[luz_docs_statistic two-token model: service-tenant vs per-tenant cache token]]
+- [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]

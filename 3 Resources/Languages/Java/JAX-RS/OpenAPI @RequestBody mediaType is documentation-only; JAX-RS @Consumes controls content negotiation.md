@@ -21,5 +21,4 @@ Related: [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not
 
 ## Related
 
-- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized]]
-- [[not a BSON wire format]]
+- [[3 Resources/Languages/Java/JAX-RS/A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]

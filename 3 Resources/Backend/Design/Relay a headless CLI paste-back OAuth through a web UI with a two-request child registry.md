@@ -23,4 +23,4 @@ Requirements/gotchas:
 
 ## Related
 
-- [[Per-account CLI sessions: inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint]]
+- [[3 Resources/Backend/Design/Per-account CLI sessions inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint]]

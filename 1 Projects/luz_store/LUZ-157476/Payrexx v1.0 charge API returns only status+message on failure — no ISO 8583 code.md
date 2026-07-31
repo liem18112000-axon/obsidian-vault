@@ -24,10 +24,9 @@ Consequences for LUZ-157476:
 
 Open follow-up: ask Payrexx whether the code is retrievable via any API field / query param / other endpoint at all; if not, the code-based taxonomy is blocked upstream.
 
-Related: [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]], [[Capture an unknown-named JSON field with Jackson @JsonAnySetter]]
+Related: [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]], [[Capture an unknown-named JSON field with Jackson @JsonAnySetter]]
 
 ## Related
 
-- [[LUZ-157476 decline-code flow: luz-online-payment forwards]]
-- [[luz_store maps]]
+- [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
 - [[Capture an unknown-named JSON field with Jackson @JsonAnySetter]]

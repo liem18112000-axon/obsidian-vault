@@ -19,6 +19,4 @@ Pattern pairs well with: load-all once on the client, then FILTER client-side (i
 
 ## Related
 
-- [[Polaris MCP is search-only 5 tools]]
-- [[no list-all]]
-- [[driven over HTTP JSON-RPC not the CLI]]
+- [[3 Resources/Work-Side/Polaris/Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]

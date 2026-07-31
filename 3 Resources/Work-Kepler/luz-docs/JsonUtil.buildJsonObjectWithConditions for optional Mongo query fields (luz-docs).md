@@ -22,4 +22,4 @@ Companion builders in the same util family: `singletonJsonObject(key,value)`, `b
 
 ## Related
 
-- [[Parallelize visible-doc count by fan-out over _id ranges (luz-docs)]]
+- [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]

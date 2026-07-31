@@ -20,6 +20,5 @@ Whichever is chosen, the threshold must be calibrated on labeled examples from t
 
 ## Related
 
-- [[Violence detection needs a trained classifier]]
-- [[not keyword lists]]
+- [[3 Resources/AI/Safety/Violence detection needs a trained classifier, not keyword lists]]
 - [[Moderation taxonomies split violence into subtypes]]

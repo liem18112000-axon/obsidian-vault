@@ -17,4 +17,4 @@ Net effect: the architecture is plain CLI orchestration (stateless subprocess ca
 
 ## Related
 [[Vinnstack ai-framework.html is aspirational, not the real code]]
-[[Vinnstack withholds git/gh from the model in BDD step implementation]]
+[[3 Resources/Work-Side/Vinnstack/Vinnstack withholds gitgh from the model in BDD step implementation]]

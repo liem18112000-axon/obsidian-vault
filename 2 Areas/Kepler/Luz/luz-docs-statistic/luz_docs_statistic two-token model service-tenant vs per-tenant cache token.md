@@ -21,4 +21,4 @@ Why: the service tenant has no right to read tenant documents directly; imperson
 ## Related
 
 - [[Luz services access MongoDB only through the luz_jsonstore REST API]]
-- [[luz_docs_statistic updates stats via 1-minute EJB timer over Pub/Sub and $facet aggregation]]
+- [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]

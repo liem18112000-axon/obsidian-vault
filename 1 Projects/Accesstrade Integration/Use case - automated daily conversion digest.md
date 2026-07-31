@@ -53,6 +53,6 @@ flowchart TD
 
 - [[Accesstrade conversion and transaction reporting]]
 - [[Accesstrade API rate limits and pagination]]
-- [[Affiliate automation hook patterns]]
+- [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
 - [[Accesstrade SubID attribution]]
 - [[Accesstrade API Integration - MOC]]

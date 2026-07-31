@@ -20,4 +20,4 @@ Repo: luz_online_payment.
 ## Related
 
 - [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
-- [[Map decline codes to failureCategory at the KlaraPay boundary, not by prose-parsing in luz_store]]
+- [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]

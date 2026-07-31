@@ -23,8 +23,8 @@ svg text{font-family:var(--sans)}
 
 Second, related gotcha in the same page: a **`@media (prefers-color-scheme)` rule cannot be overridden by a manual toggle** — a log/code box styled only in a media block stays put when the user clicks the theme button. Route those colors through the same `:root[data-theme]` variables instead.
 
-Diagnostic tell: "the page flips but the diagrams / one box stay dark" ⇒ hunt for hard-coded hex in SVG attributes and in `@media`-only rules. Discovered building the luz-docs 800k perf report — see [[Theme toggle that overrides prefers-color-scheme via data-theme on :root]].
+Diagnostic tell: "the page flips but the diagrams / one box stay dark" ⇒ hunt for hard-coded hex in SVG attributes and in `@media`-only rules. Discovered building the luz-docs 800k perf report — see [[3 Resources/Frontend/CSS/Theme toggle that overrides prefers-color-scheme via data-theme on root]].
 
 ## Related
 
-- [[Theme toggle that overrides prefers-color-scheme via data-theme on :root]]
+- [[3 Resources/Frontend/CSS/Theme toggle that overrides prefers-color-scheme via data-theme on root]]

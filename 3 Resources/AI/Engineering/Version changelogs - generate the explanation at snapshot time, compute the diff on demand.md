@@ -21,5 +21,4 @@ Related: [[Version artifacts by lifecycle event with content-dedupe, store in DB
 
 ## Related
 
-- [[Version artifacts by lifecycle event with content-dedupe]]
-- [[store in DB not files]]
+- [[3 Resources/Practices/Architecture/Version artifacts by lifecycle event with content-dedupe, store in DB not files]]

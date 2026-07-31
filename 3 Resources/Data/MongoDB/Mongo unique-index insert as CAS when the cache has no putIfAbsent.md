@@ -18,4 +18,4 @@ Gotchas:
 
 ## Related
 
-- [[Lock-based stampede control: losers hit the cache before the winner fills it]]
+- [[3 Resources/Backend/Concurrency/Lock-based stampede control losers hit the cache before the winner fills it]]

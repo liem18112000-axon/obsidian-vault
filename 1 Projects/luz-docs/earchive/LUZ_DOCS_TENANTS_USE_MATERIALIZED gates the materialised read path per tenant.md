@@ -17,5 +17,4 @@ Caveat: the name hash suffix means the ConfigMap is kustomize-generated; an in-p
 
 ## Related
 
-- [[luz_docs parent-change cascade recovers forward]]
-- [[not via snapshot rollback]]
+- [[1 Projects/luz-docs/earchive/luz_docs parent-change cascade recovers forward, not via snapshot rollback]]

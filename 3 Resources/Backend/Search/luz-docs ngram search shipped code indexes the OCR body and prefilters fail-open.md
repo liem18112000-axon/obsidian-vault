@@ -19,4 +19,4 @@ Two facts about the **shipped** `ch.klara.luz.docs.ngram` package that diverge f
 
 Other code facts: `TrigramGenerator.normalize` = lowercase(ROOT) → NFD + strip combining marks → collapse whitespace → trim; write-side and query-side share it (the #1 correctness rule). `NgramMigrationExecutor` backfills BATCH_SIZE=300 under Semaphore(3), COMPLETED only if zero docs fail. Gate's untrigrammed count uses `_searchTrigrams $exists:false` (a COLLSCAN, acceptable because cached and returns 0 once done).
 
-Related: [[Trigram index makes substring search indexable: filter by 3-grams, then verify by regex]].
+Related: [[3 Resources/Backend/Search/Trigram index makes substring search indexable filter by 3-grams, then verify by regex]].

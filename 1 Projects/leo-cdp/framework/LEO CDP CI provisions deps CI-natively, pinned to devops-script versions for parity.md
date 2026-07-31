@@ -23,6 +23,5 @@ The CI `validate` job in `.github/workflows/ci-cd.yml` provisions its dependenci
 
 ## Related
 
-- [[GitHub Actions runners pick JDK from inherited JAVA_HOME]]
-- [[not PATH]]
+- [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH]]
 - [[Shim legacy docker-compose v1 to docker compose v2 on GitHub runners]]

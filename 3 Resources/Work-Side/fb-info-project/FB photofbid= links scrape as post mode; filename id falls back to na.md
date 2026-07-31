@@ -17,4 +17,4 @@ Confirmed by a live run on 2026-06-14: `/photo/?fbid=2218458972230714` -> `outpu
 
 ## Related
 
-- [[Stale FB session signature: login popup + profile 302 to /login + empty location columns]]
+- [[3 Resources/Work-Side/fb-info-project/Stale FB session signature login popup + profile 302 to login + empty location columns]]

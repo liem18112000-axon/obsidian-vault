@@ -25,4 +25,4 @@ Prefer a one-off `--context` flag over `use-context` so you do not clobber the s
 
 - [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
 - [[Materialize tenant allowlist removed - cascade unconditional]]
-- [[Atlassian MCP grant is per-site - axonivy.atlassian.net not covered]]
+- [[3 Resources/AI/Claude-Code/Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]

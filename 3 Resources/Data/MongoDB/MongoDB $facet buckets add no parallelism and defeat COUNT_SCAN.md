@@ -20,10 +20,9 @@ Two real but secondary effects of the facet approach:
 
 Corollary: the real sub-2s lever for a scan-bound count is making the scan cheap (cover the predicate so a plain `count` is a COUNT_SCAN) or caching it — NOT more buckets and NOT $facet. Also note `countDocuments` runs an aggregation (fetches) while the legacy `count` command can use COUNT_SCAN.
 
-Related: [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]] · [[Shard count fan-out: most of the win is at K=4, diminishing returns after]]
+Related: [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]] · [[3 Resources/Practices/Performance/Shard count fan-out most of the win is at K=4, diminishing returns after]]
 
 ## Related
 
 - [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
-- [[Shard count fan-out: most of the win is at K=4]]
-- [[diminishing returns after]]
+- [[3 Resources/Practices/Performance/Shard count fan-out most of the win is at K=4, diminishing returns after]]

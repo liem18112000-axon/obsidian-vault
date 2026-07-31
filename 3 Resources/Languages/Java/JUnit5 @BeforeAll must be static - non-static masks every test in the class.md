@@ -13,5 +13,4 @@ JUnit 5: @BeforeAll/@AfterAll methods MUST be static (unless the class is @TestI
 
 ## Related
 
-- [[Wall of NoClassDefFoundError on first test run = static-init IO]]
-- [[split unit from integration]]
+- [[3 Resources/Languages/Java/Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]

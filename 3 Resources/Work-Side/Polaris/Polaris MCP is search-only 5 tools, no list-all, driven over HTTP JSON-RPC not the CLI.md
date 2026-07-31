@@ -21,8 +21,8 @@ The 5 MCP tools: `search_skills(q,tags?,page?,limit?)`, `search_agents(q,tags?,o
 
 **`status` never says 'bootstrapped'** even right after a successful bootstrap — don't gate app logic on it. Bootstrap mutates ~/.claude/CLAUDE.md, ~/.mcp.json, ~/.claude.json, and VS Code mcp.json.
 
-Full reference: doc/polaris/polaris-mcp-surface.md. Related: [[Polaris 0.2.0 serves agents/skills/rules over an MCP tunnel]], [[Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]].
+Full reference: doc/polaris/polaris-mcp-surface.md. Related: [[3 Resources/Work-Side/Polaris/Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]], [[Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]].
 
 ## Related
 
-- [[Polaris 0.2.0 serves agents/skills/rules over an MCP tunnel]]
+- [[3 Resources/Work-Side/Polaris/Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]

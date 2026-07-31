@@ -19,7 +19,7 @@ Filter for these aborted requests with `labels.response_flag!="-"` (normal compl
 - After the caller gives up, the *server*’s own access log may still later show a `200/201` with high latency — it kept processing after the caller bailed. So correlate by `request_id` + time window, not by assuming a failed status on the server side.
 - The caller’s `"Read timed out"` log line usually does **not** contain the target URL (the URL is on a different line), so an `AND "jwt"`-style single-line text filter will miss them — search the stack-trace text separately from the target.
 
-Companion: [[klara-prod PROD logging access gcloud logging read only, no kubectl]]. Applied to [[jwt-service token endpoints and replicas (Luz prod)]].
+Companion: [[3 Resources/Work-Kepler/Klara/klara-prod is a separate GCP project, not a namespace]]. Applied to [[jwt-service token endpoints and replicas (Luz prod)]].
 
 ## Related
 

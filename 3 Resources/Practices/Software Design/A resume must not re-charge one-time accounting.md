@@ -19,9 +19,9 @@ When you add resume/restart to a job that has **side-effecting accounting** (usa
 
 Rule of thumb: idempotency under resume is per-counter — verify each, don't assume.
 
-Related: [[A persisted dedup cache doubles as a resume log]], [[Checkpoint files: atomic tmp+rename write plus an input fingerprint]]
+Related: [[A persisted dedup cache doubles as a resume log]], [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]]
 
 ## Related
 
 - [[A persisted dedup cache doubles as a resume log]]
-- [[Checkpoint files: atomic tmp+rename write plus an input fingerprint]]
+- [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]]

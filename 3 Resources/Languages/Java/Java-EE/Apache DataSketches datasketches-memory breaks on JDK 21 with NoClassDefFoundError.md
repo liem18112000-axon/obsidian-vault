@@ -20,8 +20,6 @@ Practical takeaway: before depending on datasketches-java in a project, verify t
 
 ## Related
 
-- [[HyperLogLog cardinality estimation mechanism (hash]]
-- [[register]]
-- [[streak-length)]]
+- [[3 Resources/Data/Algorithms/HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[luz_docs runs non-clustered WildFly pods]]
 - [[so pod-local sketch/counter state is broken]]

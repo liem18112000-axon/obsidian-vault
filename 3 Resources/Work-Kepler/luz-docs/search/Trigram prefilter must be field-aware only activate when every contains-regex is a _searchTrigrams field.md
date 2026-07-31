@@ -19,6 +19,5 @@ General principle: any approximate index prefilter paired with an exact residual
 
 ## Related
 
-- [[ngram trigram prefilter reads the built mongo query]]
-- [[not the raw payload]]
+- [[3 Resources/Work-Kepler/luz-docs/search/ngram trigram prefilter reads the built mongo query, not the raw payload]]
 - [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]

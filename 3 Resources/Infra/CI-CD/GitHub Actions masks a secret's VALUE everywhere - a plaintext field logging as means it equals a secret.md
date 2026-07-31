@@ -15,4 +15,4 @@ Real example: a guard printed `config {config.LICENSE_PUBKEY}` and it rendered a
 
 Corollary: you cannot exfiltrate a secret by re-printing it (it re-masks), and you can use this masking as a free equality check against secret values during debugging.
 
-Related: [[GitHub Actions secret is not set usually means a name mismatch - verify with gh secret list]], [[Signed-token verify fails on rotation drift - pinned public key and signing private key from different keypairs]]
+Related: [[3 Resources/Infra/CI-CD/GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]], [[Signed-token verify fails on rotation drift - pinned public key and signing private key from different keypairs]]

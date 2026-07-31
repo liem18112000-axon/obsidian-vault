@@ -25,4 +25,4 @@ Real cases (vinnstack, 2026-07): `usePrdComments`; and `MdExportControl` + `Vers
 ## Related
 
 - [[A render crash masks latent crashes elsewhere in the same React subtree]]
-- [[Order-independent prefills: fold precedence into the functional updater, not effect order]]
+- [[3 Resources/Frontend/React/Order-independent prefills fold precedence into the functional updater, not effect order]]

@@ -13,8 +13,8 @@ Decision (2026-07-20, LUZ-156314): `NgramResponseFilter` — the JAX-RS filter t
 
 Why: stripping adds a response-rewrite cost on every read for purely cosmetic benefit; the field is just hashed trigram ints (no sensitive content recoverable), and internal `_`-prefixed fields already leak elsewhere. Not an oversight — do not "fix" by reintroducing a filter.
 
-Related: [[Campaign-gate template: cache then campaign status L1 then repository L2]]
+Related: [[1 Projects/luz-docs/search/Campaign-gate template cache then campaign status L1 then repository L2]]
 
 ## Related
 
-- [[Campaign-gate template: cache then campaign status L1 then repository L2]]
+- [[1 Projects/luz-docs/search/Campaign-gate template cache then campaign status L1 then repository L2]]

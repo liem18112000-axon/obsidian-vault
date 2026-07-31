@@ -13,8 +13,8 @@ Excalimate is three loosely-coupled layers, not a single hosted app. (1) A stati
 
 The skills are the part that matters most for output quality, and they live on the *agent* side (loaded as context), not inside the hosted app. They work independently of the MCP server — the server just enables the live in-app preview. So "installing Excalimate skills" and "running the MCP server" are two separate acts.
 
-See [[Running Excalimate locally: skills in ~/.claude/skills plus MCP server on port 3001]].
+See [[3 Resources/Visual/Excalimate/Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]].
 
 ## Related
 
-- [[Running Excalimate locally: skills in ~/.claude/skills plus MCP server on port 3001]]
+- [[3 Resources/Visual/Excalimate/Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]

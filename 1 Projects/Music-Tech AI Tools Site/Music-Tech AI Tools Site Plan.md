@@ -9,7 +9,7 @@ status: draft
 # Project Plan — Free Music × Tech (AI) Tools Site
 
 > [!summary]
-> A free site of **AI-powered tools for musicians**, built by you (the SE), where the tools are the traffic magnet and the trust-builder, and **affiliate offers are the monetisation layer**. This is the concrete build-out of the "wedge" + "build tools as moat" ideas from [[Affiliate/Research/Strategy|the strategy note]]. Core engine: *free tool solves a problem instantly → earns trust + backlinks → funnels the user to the paid tool that does it better → recurring/CPS affiliate income.*
+> A free site of **AI-powered tools for musicians**, built by you (the SE), where the tools are the traffic magnet and the trust-builder, and **affiliate offers are the monetisation layer**. This is the concrete build-out of the "wedge" + "build tools as moat" ideas from [[2 Areas/Affiliate/Strategy|the strategy note]]. Core engine: *free tool solves a problem instantly → earns trust + backlinks → funnels the user to the paid tool that does it better → recurring/CPS affiliate income.*
 
 ---
 
@@ -19,7 +19,7 @@ status: draft
 
 Why this positioning wins:
 - **Free + no-signup** = lowest-friction entry; tools get used, shared, and linked.
-- **"Built by a musician who codes"** = the rare SE×musician authority from [[Affiliate/Research/Strategy|Strategy §3]]. You can both *build* the tool and *judge* the paid alternatives credibly.
+- **"Built by a musician who codes"** = the rare SE×musician authority from [[2 Areas/Affiliate/Strategy|Strategy §3]]. You can both *build* the tool and *judge* the paid alternatives credibly.
 - **AI angle** = rides the highest-search-growth topic in music right now, and AI music SaaS have generous, long-cookie affiliate programs (see §6).
 
 > [!important] The tools are not the product — *trust + traffic* are. The affiliate offers are the product.
@@ -58,7 +58,7 @@ Each tool is chosen for **(search demand) × (buildable on weekends) × (clean f
 
 | Tool | Build effort | AI? | Funnels to (affiliate) |
 |------|-------------|-----|------------------------|
-| **AI music tool directory** (filterable list of every AI music tool) | Low (data + UI) | curates AI | *Every listing* — Lalal.ai, LANDR, Moises, Suno… [[Cost per Sale\|CPS]]/[[Revenue Share\|RevShare]] |
+| **AI music tool directory** (filterable list of every AI music tool) | Low (data + UI) | curates AI | *Every listing* — Lalal.ai, LANDR, Moises, Suno… [[3 Resources/Work-Side/Affiliate/Term/Cost per Sale|CPS]]/[[3 Resources/Work-Side/Affiliate/Term/Revenue Share|RevShare]] |
 | **Vocal remover / stem splitter** (wrap open model e.g. Demucs, or cap usage) | Med–High (compute) | ✅ | Lalal.ai (30%/180-day), Moises, iZotope RX |
 | **Chord progression generator** | Low (client-side) | optional AI | DAWs, Plugin Boutique, songwriting courses |
 | **Key & BPM detector** (upload → analyse) | Med (WASM/Essentia) | — | DJ software, DAWs, sample libraries |
@@ -66,7 +66,7 @@ Each tool is chosen for **(search demand) × (buildable on weekends) × (clean f
 | **Loudness / LUFS meter** | Med (Web Audio) | — | AI mastering (LANDR, eMastered) |
 | **AI lyric / songwriting assistant** | Low (LLM API) | ✅ | Songwriting tools, courses |
 | **Metronome / tuner / tap-BPM** | Very low | — | Apps, instruments (low value, high traffic, link-bait) |
-| **Gear comparison engine** (interactive audio-interface / MIDI-controller DB) | Med (data + UI) | — | Sweetwater / Sam Ash / Thomann [[Cost per Sale\|CPS]], high [[Average Order Value\|AOV]] |
+| **Gear comparison engine** (interactive audio-interface / MIDI-controller DB) | Med (data + UI) | — | Sweetwater / Sam Ash / Thomann [[3 Resources/Work-Side/Affiliate/Term/Cost per Sale|CPS]], high [[3 Resources/Work-Side/Affiliate/Term/Average Order Value|AOV]] |
 
 > [!tip] Start with the **directory + 1 client-side tool + 1 AI tool**.
 > The directory monetises from day one (every row is an affiliate link) and is pure data work — perfect for tired weeknights. Pair it with one zero-cost client-side tool (chord generator) and one flagship AI tool (vocal remover) as the linkable centrepiece.
@@ -110,17 +110,17 @@ Each `/tools/X` page: the live tool up top, a short "how it works", then a conte
 
 | Your tool | Paid offer to funnel to | Reported terms | Model |
 |-----------|------------------------|----------------|-------|
-| Vocal remover / stem splitter | **Lalal.ai** | **30% commission, 180-day cookie** ✅ | [[Cost per Sale\|CPS]] |
-| Vocal remover / practice tools | **Moises** | verify (has affiliate) | [[Cost per Sale\|CPS]]/sub |
-| LUFS meter / mastering content | **LANDR** | mastering + distribution; verify rate | [[Revenue Share\|RevShare]]/sub |
+| Vocal remover / stem splitter | **Lalal.ai** | **30% commission, 180-day cookie** ✅ | [[3 Resources/Work-Side/Affiliate/Term/Cost per Sale|CPS]] |
+| Vocal remover / practice tools | **Moises** | verify (has affiliate) | [[3 Resources/Work-Side/Affiliate/Term/Cost per Sale|CPS]]/sub |
+| LUFS meter / mastering content | **LANDR** | mastering + distribution; verify rate | [[3 Resources/Work-Side/Affiliate/Term/Revenue Share|RevShare]]/sub |
 | AI directory listings | **Suno / Udio / Soundraw / Aiva** | verify referral/affiliate | varies |
-| Plugin/DAW tools & reviews | **Plugin Boutique** | professional affiliate program | [[Cost per Sale\|CPS]] |
-| Gear comparison engine | **Sweetwater / Sam Ash / Thomann** | ~3–10%, cookies vary | [[Cost per Sale\|CPS]], high [[Average Order Value\|AOV]] |
-| Lesson/scale tools | **Musora (Pianote/Drumeo)** | subscription | [[Revenue Share\|RevShare]]/sub |
+| Plugin/DAW tools & reviews | **Plugin Boutique** | professional affiliate program | [[3 Resources/Work-Side/Affiliate/Term/Cost per Sale|CPS]] |
+| Gear comparison engine | **Sweetwater / Sam Ash / Thomann** | ~3–10%, cookies vary | [[3 Resources/Work-Side/Affiliate/Term/Cost per Sale|CPS]], high [[3 Resources/Work-Side/Affiliate/Term/Average Order Value|AOV]] |
+| Lesson/scale tools | **Musora (Pianote/Drumeo)** | subscription | [[3 Resources/Work-Side/Affiliate/Term/Revenue Share|RevShare]]/sub |
 
 > [!tip] Lalal.ai's **180-day cookie** is exceptional — six months for the referred sale to count (see [[Cookie Duration]]). Make the **vocal remover your flagship tool** and Lalal.ai its primary funnel.
 
-Prioritise per [[Affiliate/Research/Strategy|Strategy §4]]: **[[Revenue Share]] (recurring)** first for income that compounds on your scarce time, **[[Cost per Sale]]** for digital + high-[[Average Order Value|AOV]] gear. Compare everything on [[Earnings per Click|EPC]].
+Prioritise per [[2 Areas/Affiliate/Strategy|Strategy §4]]: **[[Revenue Share]] (recurring)** first for income that compounds on your scarce time, **[[Cost per Sale]]** for digital + high-[[Average Order Value|AOV]] gear. Compare everything on [[Earnings per Click|EPC]].
 
 ---
 
@@ -129,7 +129,7 @@ Prioritise per [[Affiliate/Research/Strategy|Strategy §4]]: **[[Revenue Share]]
 You're building this on a real stack — so **document the build** in `/how-i-built-this/` and affiliate the exact dev tools you use:
 
 - Host on **Vercel / Cloudflare / Netlify** → their referral/affiliate.
-- Use a managed DB / auth / monitoring SaaS → recurring [[Revenue Share]] (the best programs from [[Affiliate/Research/Strategy|Strategy §5]]).
+- Use a managed DB / auth / monitoring SaaS → recurring [[Revenue Share]] (the best programs from [[2 Areas/Affiliate/Strategy|Strategy §5]]).
 - "How I built a free AI vocal remover for $0/mo" is exactly the post that ranks among developers *and* funnels to high-LTV dev SaaS.
 
 This quietly bolts **Pillar A (dev SaaS, recurring)** onto a music site — the SE×musician wedge paying off in both directions.
@@ -144,7 +144,7 @@ This quietly bolts **Pillar A (dev SaaS, recurring)** onto a music site — the 
 | Tools runtime | **Web Audio API / Tone.js / WASM (Essentia, ONNX)** | Client-side = $0 compute, infinite scale |
 | Heavy AI | **Serverless function w/ strict caps**, or link out | Avoid GPU bills (see §4) |
 | Content | **Markdown / MDX** | Fits your Obsidian habit; reviews live as files |
-| Affiliate links | **own `/go/{slug}` redirect** | Cloaking + click tracking → real [[Earnings per Click\|EPC]] |
+| Affiliate links | **own `/go/{slug}` redirect** | Cloaking + click tracking → real [[3 Resources/Work-Side/Affiliate/Term/Earnings per Click|EPC]] |
 | Analytics | Plausible / GA4 | Per-tool + per-offer conversion |
 | Email | ConvertKit / Buttondown | Return audience = recurring asset |
 | Host | Vercel / Cloudflare Pages | Free tier; *and* dogfood the affiliate (§7) |
@@ -176,8 +176,8 @@ This quietly bolts **Pillar A (dev SaaS, recurring)** onto a music site — the 
 > - **Weekends:** build **tool #3** (BPM/key finder); write **"how I built this for $0"** → dev-SaaS affiliate; launch newsletter.
 
 > [!example]- Months 4–6 — Compound
-> - **Weeknights:** expand the directory, refresh reviews, prune losers by [[Earnings per Click\|EPC]].
-> - **Weekends:** add the **gear comparison engine** (high [[Average Order Value\|AOV]]) and a 4th tool; double down on the highest-EPC funnel; consider a second demo-video series.
+> - **Weeknights:** expand the directory, refresh reviews, prune losers by [[3 Resources/Work-Side/Affiliate/Term/Earnings per Click|EPC]].
+> - **Weekends:** add the **gear comparison engine** (high [[3 Resources/Work-Side/Affiliate/Term/Average Order Value|AOV]]) and a 4th tool; double down on the highest-EPC funnel; consider a second demo-video series.
 
 ---
 
@@ -199,7 +199,7 @@ This quietly bolts **Pillar A (dev SaaS, recurring)** onto a music site — the 
 > - **AI space churn** — tools/models/programs appear and vanish monthly; the **directory must be actively curated** or it rots (and dead affiliate links earn nothing).
 > - **Google + AI content** — thin AI-generated pages get penalised. Your edge is *genuinely useful tools* + *hands-on, plays-the-instrument reviews*. Keep it real.
 > - **Copyright / ethics** — AI generation and stem-separation touch copyright gray zones; add clear disclaimers and a usage policy.
-> - **Slow ramp** — still a 6–12 month SEO game ([[Affiliate/Research/Strategy|Strategy §6]]); the tools shorten it (backlinks) but don't eliminate it.
+> - **Slow ramp** — still a 6–12 month SEO game ([[2 Areas/Affiliate/Strategy|Strategy §6]]); the tools shorten it (backlinks) but don't eliminate it.
 
 ---
 
@@ -218,9 +218,9 @@ Researched June 2026 (verify on official affiliate pages — terms change):
 - [LANDR AI Music Tools](https://www.landr.com/ai-music-tools)
 - [21 Best AI Affiliate Programs 2026 (Lasso)](https://getlasso.co/niche/ai/)
 - [Plugin Boutique](https://www.pluginboutique.com/)
-- Music/gear program terms: see [[Affiliate/Research/Strategy#Sources|Strategy note sources]]
+- Music/gear program terms: see [[2 Areas/Affiliate/Strategy#Sources|Strategy note sources]]
 
 ## Related
 
-- [[Affiliate/Research/Strategy]] — the parent strategy this plan implements.
-- [[Affiliate/Term|Affiliate terms glossary]] — definitions for every model and metric used here.
+- [[2 Areas/Affiliate/Strategy]] — the parent strategy this plan implements.
+- [[3 Resources/Work-Side/Affiliate/Term|Affiliate terms glossary]] — definitions for every model and metric used here.

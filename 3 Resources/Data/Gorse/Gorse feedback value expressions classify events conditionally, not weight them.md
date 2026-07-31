@@ -15,5 +15,4 @@ This is **conditional classification** — deciding whether an event is positive
 
 ## Related
 
-- [[Gorse config exposes model family and cadence]]
-- [[never hyperparameters]]
+- [[3 Resources/Data/Gorse/Gorse config exposes model family and cadence, never hyperparameters]]

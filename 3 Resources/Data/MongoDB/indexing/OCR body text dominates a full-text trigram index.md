@@ -19,6 +19,5 @@ From luz_docs S2-index-size-options.md + S2-benchmark-perf-scaling.md (Kepler eA
 
 ## Related
 
-- [[Multikey ngram index size is driven by distinct-entry count]]
-- [[not bytes per entry]]
+- [[3 Resources/Data/MongoDB/indexing/Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
 - [[Bounded bucketed hashing caps trigram index entries per document]]

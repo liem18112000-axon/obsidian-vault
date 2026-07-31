@@ -85,4 +85,4 @@ If the purchase happens offline or weeks later (insurance, mortgages, enterprise
 - [[Revenue Share]] — the recurring alternative, paying a cut of ongoing revenue rather than the one-off sale.
 
 ---
-*See also: [[Affiliate/Term|all affiliate terms]]*
+*See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*

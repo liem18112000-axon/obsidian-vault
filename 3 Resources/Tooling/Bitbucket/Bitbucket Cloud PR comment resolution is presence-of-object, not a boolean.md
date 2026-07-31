@@ -20,4 +20,4 @@ Verified against `https://api.bitbucket.org/swagger.json` (`definitions.pullrequ
 ## Related
 
 - [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
-- [[Regenerate-from-review-feedback pattern: reuse the branch/PR, don't open a new one]]
+- [[3 Resources/AI/Agents/patterns/Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]

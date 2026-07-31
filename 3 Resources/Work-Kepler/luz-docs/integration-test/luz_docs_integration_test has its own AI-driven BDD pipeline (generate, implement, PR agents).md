@@ -20,7 +20,7 @@ CLI entry point: `python -m helpers.ai.service {generate|implement|full} <KEY>` 
 
 Relevant when designing any new "generate BDD tests" or "implement BDD steps" automation for this org — this pipeline is the working reference implementation to mirror conventions from, even if the new automation (e.g. a Claude-based vinnstack skill) uses a different LLM/orchestration layer.
 
-Related: [[luz_docs_integration_test AI pipeline branch and PR mechanics]], [[luz_docs_integration_test Gherkin and step-definition conventions]], [[vinnstack BDD pipeline stops at Jira/Xray, never writes files into a cloned repo]]
+Related: [[luz_docs_integration_test AI pipeline branch and PR mechanics]], [[luz_docs_integration_test Gherkin and step-definition conventions]], [[3 Resources/Work-Side/Vinnstack/vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
 
 ## Related
 

@@ -15,11 +15,9 @@ Root cause: `luz_jsonstore` never passes `allowDiskUse:true`. The generic aggreg
 
 Confirmed via `luz-skill-flow-logs` on the Performance env for tenant `45b05710-b9d4-4d3e-935e-83c4525369fa`: recurring `SEVERE ... aggregate: MongoCommandException ... error 292 ... on server luz-mongodb04-cluster-rs-2`, once per test iteration.
 
-Top fix: set `allowDiskUse(true)` (ideally behind an explicit flag). Companion fixes: index `folderIds`, and ensure the facet request sends `"type":"array"` — see [[luz-docs facet $unwind branch keys off client-supplied type:array, not schema]].
+Top fix: set `allowDiskUse(true)` (ideally behind an explicit flag). Companion fixes: index `folderIds`, and ensure the facet request sends `"type":"array"` — see [[3 Resources/Work-Kepler/luz-docs/search/luz-docs facet $unwind branch keys off client-supplied typearray, not schema]].
 
 ## Related
 
-- [[luz-docs facet $unwind branch keys off client-supplied type:array]]
-- [[not schema]]
-- [[Mongo $group is blocking so time-to-error is scan-bound]]
-- [[not timeout-bound]]
+- [[3 Resources/Work-Kepler/luz-docs/search/luz-docs facet $unwind branch keys off client-supplied typearray, not schema]]
+- [[3 Resources/Data/MongoDB/Mongo $group is blocking so time-to-error is scan-bound, not timeout-bound]]

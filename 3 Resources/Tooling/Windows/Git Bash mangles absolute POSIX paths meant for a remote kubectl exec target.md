@@ -12,7 +12,7 @@ Git Bash on Windows automatically rewrites any command-line argument that LOOKS 
 
 Fix: set `MSYS_NO_PATHCONV=1` in the environment for that command, which disables Git Bash's automatic path conversion entirely. Only needed when the absolute-path argument targets a REMOTE environment (another container, a different filesystem) rather than the local machine.
 
-Where this bit specifically: `kubectl exec pod -c container -- /opt/java/openjdk/bin/jcmd 148 Thread.print` from within Git Bash. Worked instantly once MSYS_NO_PATHCONV=1 was set. See [[Read JVM/process thread count via /proc/pid/status, no app auth needed]] for the investigation this came up in (ended up not needing the absolute-path jcmd call at all once /proc/<pid>/status covered the same need).
+Where this bit specifically: `kubectl exec pod -c container -- /opt/java/openjdk/bin/jcmd 148 Thread.print` from within Git Bash. Worked instantly once MSYS_NO_PATHCONV=1 was set. See [[3 Resources/Infra/Kubernetes/Read JVMprocess thread count via procpidstatus, no app auth needed]] for the investigation this came up in (ended up not needing the absolute-path jcmd call at all once /proc/<pid>/status covered the same need).
 
 ## Related
 

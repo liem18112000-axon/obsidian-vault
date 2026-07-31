@@ -13,7 +13,6 @@ Legacy Gradle projects sometimes deliberately gitignore the wrapper (`**/gradlew
 
 ## Related
 
-- [[Java 25 requires Gradle 9.1.0 or later]]
-- [[not Gradle 9.0.0]]
+- [[3 Resources/Languages/Java/Gradle/Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
 
 Follow-up from the same migration: even after un-ignoring `gradlew`, the wrapper **jar** was still silently excluded by a module-level blanket `*.jar` rule (`core-leo-cdp/.gitignore`). Fix with a negation right after the blanket rule: `!gradle/wrapper/gradle-wrapper.jar`. Lesson: check-ignore every wrapper file individually — `gradlew`, `gradlew.bat`, `gradle-wrapper.properties`, **and** `gradle-wrapper.jar` can each be caught by a different rule in a different .gitignore.

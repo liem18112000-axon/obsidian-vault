@@ -17,8 +17,8 @@ Two exceptions where put() is deliberately NOT wrapped: the migration OVERLAPPIN
 
 How to apply: when adding a new gate/service that touches DualCache, copy the private `safeCache` in-class; do not create a shared CacheUtil, and do not wrap lock-acquisition puts.
 
-Related: [[Campaign-gate template: cache then campaign status L1 then repository L2]]
+Related: [[1 Projects/luz-docs/search/Campaign-gate template cache then campaign status L1 then repository L2]]
 
 ## Related
 
-- [[Campaign-gate template: cache then campaign status L1 then repository L2]]
+- [[1 Projects/luz-docs/search/Campaign-gate template cache then campaign status L1 then repository L2]]

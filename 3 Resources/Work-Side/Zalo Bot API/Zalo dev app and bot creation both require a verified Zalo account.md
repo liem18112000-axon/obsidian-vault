@@ -22,6 +22,4 @@ Relates to [[Zalo OA API is webhook+OAuth and CS messages are rate-limited unlik
 ## Related
 
 - [[Zalo OA API is webhook+OAuth and CS messages are rate-limited unlike the Bot API]]
-- [[Zalo Bot API endpoints]]
-- [[token]]
-- [[and message shapes]]
+- [[3 Resources/Work-Side/Zalo Bot API/Zalo Bot API endpoints, token, and message shapes]]

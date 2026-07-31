@@ -22,9 +22,9 @@ Gotchas:
 
 Fix: `<managed-executor-service name="countFanout" core-threads="${env.COUNT_FANOUT_NUMBER_THREAD}" context-service="default" jndi-name="java:jboss/ee/concurrency/executor/countFanout"/>`
 
-Related: [[Shard count fan-out: most of the win is at K=4, diminishing returns after]]
+Related: [[3 Resources/Practices/Performance/Shard count fan-out most of the win is at K=4, diminishing returns after]]
 
 ## Related
 
-- [[Shard count fan-out: most of the win is at K=4, diminishing returns after]]
+- [[3 Resources/Practices/Performance/Shard count fan-out most of the win is at K=4, diminishing returns after]]
 - [[ManagedExecutorService.execute loses CDI request context]]

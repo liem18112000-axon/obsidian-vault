@@ -21,5 +21,4 @@ Caveat: rect-past-viewport alone is NOT proof of visible overflow — content in
 
 ## Related
 
-- [[Grid blowout - bare 1fr is minmax(auto]]
-- [[1fr) and intrinsic-width content can explode the column]]
+- [[3 Resources/Frontend/CSS/Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column]]

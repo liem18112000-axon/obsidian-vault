@@ -38,5 +38,5 @@ Hit in the hook-present deck diagrams (`gen-05.js` / `gen-loops.js`), the AppsFl
 
 ## Related
 
-- [[QA a pptx on Windows: LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
-- [[pptxgenjs addImage stretches when w/h aspect drifts from the real image — read PNG IHDR size]]
+- [[3 Resources/AI/Claude-Code/pptx/QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
+- [[3 Resources/AI/Claude-Code/pptx/pptxgenjs addImage stretches when wh aspect drifts from the real image — read PNG IHDR size]]

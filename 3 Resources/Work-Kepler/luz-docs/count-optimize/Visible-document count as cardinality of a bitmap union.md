@@ -21,7 +21,7 @@ Union = bitwise **OR**; count = **popcount**.
 
 **Why it matters — it removes the doc×code amplification.** The naive count (public OR docs intersecting any of the user's codes) makes the index walk pay for every `(doc × matching-code)` entry and then dedup by RecordId, so work scales with amplification, not with the answer — this is the heavy-user p99 tail. After OR, a doc carrying 5 of the user's codes is one bit: dedup is free and work scales with the **number of codes**, not doc×code entries.
 
-**Representations:** [[Roaring bitmaps give exact set cardinality via chunked containers]] (exact — required for a security-facing number) and [[HyperLogLog estimates distinct count in constant memory and is mergeable]] (approximate, ~12 KB fixed, ~1–2% error). See [[Count-scaling path: fan-out first, Roaring next, HyperLogLog for approximate]].
+**Representations:** [[Roaring bitmaps give exact set cardinality via chunked containers]] (exact — required for a security-facing number) and [[HyperLogLog estimates distinct count in constant memory and is mergeable]] (approximate, ~12 KB fixed, ~1–2% error). See [[1 Projects/luz-docs/count/optimize/Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]].
 
 **Cost / why it is deferred (DESIGN §8 "decide separately"):** the per-code bitmaps plus a stable doc-id↔int ordinal dictionary must be **maintained on the write path** (create / delete / security-class change) and kept hot. That is a bigger change than `_shard` fan-out.
 
@@ -32,4 +32,4 @@ Union = bitwise **OR**; count = **popcount**.
 - [[Roaring bitmaps give exact set cardinality via chunked containers]]
 - [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
 - [[luz-docs parallelized count undercounts documents missing _shard]]
-- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmap/HLL]]
+- [[1 Projects/luz-docs/materialize/Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]

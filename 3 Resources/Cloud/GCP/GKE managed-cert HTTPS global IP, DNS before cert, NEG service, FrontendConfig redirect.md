@@ -23,4 +23,4 @@ Gotcha chain to expect: cert stuck Provisioning = DNS not resolving or resolving
 
 ## Related
 
-- [[Free built-in GCP domain: Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP]]
+- [[3 Resources/Cloud/GCP/Free built-in GCP domain Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP]]

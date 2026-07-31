@@ -21,5 +21,4 @@ Found while debugging vinnstack's BDD "Run Tests" feature (lib/bdd/verifyRunner.
 
 ## Related
 
-- [[A stalled-looking test step may just be a long silent poll]]
-- [[not a hang]]
+- [[3 Resources/Practices/Testing/A stalled-looking test step may just be a long silent poll, not a hang]]

@@ -18,8 +18,8 @@ The fix pattern: capture the actual error channel during the operation (here: th
 Rule of thumb: a fallback may be graceful, but it must be **honest** — degrade to a visible error, not to fiction. If you can't distinguish your fallback output from a real success at a glance, the fallback is hiding bugs.
 
 ## Related
-[[Node spawn shell:false on Windows won't run .cmd/.ps1 wrappers (ENOENT)]]
+[[3 Resources/Languages/Node.js/Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
 
 ## Related
 
-- [[Node spawn shell:false on Windows won't run .cmd/.ps1 wrappers (ENOENT)]]
+- [[3 Resources/Languages/Node.js/Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]

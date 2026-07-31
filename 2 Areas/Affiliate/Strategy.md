@@ -93,8 +93,8 @@ Your scarcest resource is *production time*, so favour models where **one asset 
 | Rank | Model | Why it fits a time-constrained SE+musician | Use it for |
 |------|-------|--------------------------------------------|------------|
 | 1 | **[[Revenue Share]]** (recurring) | Build once → compound monthly as subscribers renew. Best ROI on scarce time; rewards authority over volume. | SaaS, dev tools, hosting, lesson subscriptions |
-| 2 | **[[Cost per Sale]]** (CPS) | Digital music software = high margin; gear = high [[Average Order Value\|AOV]] so few sales pay well. | Music software/plugins, courses, instruments, dev hardware |
-| 3 | **[[Cost per Action]]** hybrid / **[[Cost per Registration\|CPR]]** | Many SaaS pay a signup bounty *plus* recurring — take both. CPR works for freemium dev-tool sign-ups. | Freemium SaaS, dev tools with free tiers |
+| 2 | **[[Cost per Sale]]** (CPS) | Digital music software = high margin; gear = high [[3 Resources/Work-Side/Affiliate/Term/Average Order Value|AOV]] so few sales pay well. | Music software/plugins, courses, instruments, dev hardware |
+| 3 | **[[Cost per Action]]** hybrid / **[[3 Resources/Work-Side/Affiliate/Term/Cost per Registration|CPR]]** | Many SaaS pay a signup bounty *plus* recurring — take both. CPR works for freemium dev-tool sign-ups. | Freemium SaaS, dev tools with free tiers |
 | ✗ | **[[Cost per Lead]] / [[Cost per Quality Lead]]** | Off-brand for you, fraud-sensitive, needs **volume + fast response** your schedule can't supply. Finance/insurance/iGaming lead-gen ignores your expertise. | **Skip** unless you abandon the authority play |
 
 > [!tip] Compare every offer on [[Earnings per Click]] (EPC), not headline rate.
@@ -126,7 +126,7 @@ Benchmark: good SaaS programs pay **20–40%**, cookies **30–120 days**, recur
 | Sweetwater | ~4–8%, 30-day (reports vary; some per-click) | Big US gear retailer; **verify structure** |
 | Sam Ash | ~3–10% sliding, up to 60-day cookie | Longer cookie than most gear retailers |
 | Thomann | ~3.5–4.5%, **14-day cookie** | EU giant, but short cookie weakens it |
-| Musora (Pianote/Drumeo/Guitareo) | Lesson subscriptions | Check for recurring; subscription [[Lifetime Value\|LTV]] |
+| Musora (Pianote/Drumeo/Guitareo) | Lesson subscriptions | Check for recurring; subscription [[3 Resources/Work-Side/Affiliate/Term/Lifetime Value|LTV]] |
 
 > [!note] Amazon Associates is the obvious default for gear — **but** its cookie is ~24 h and music-category rates are low. Use specialist retailers above for anything high-value; keep Amazon only for incidental low-cost items.
 
@@ -181,4 +181,4 @@ Researched June 2026 (secondary roundups — verify on official program pages):
 
 ## Related
 
-- [[Affiliate/Term|Affiliate terms glossary]] — definitions for every model and metric referenced above.
+- [[3 Resources/Work-Side/Affiliate/Term|Affiliate terms glossary]] — definitions for every model and metric referenced above.

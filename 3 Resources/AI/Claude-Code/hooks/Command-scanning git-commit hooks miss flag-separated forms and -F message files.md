@@ -21,5 +21,4 @@ Verified 2026-06-05 against `~/.claude/hooks/git/block-coauthor.ps1` with a 7-ca
 
 ## Related
 
-- [[Block AI commit attribution by anchoring on the email]]
-- [[not the trailer label]]
+- [[3 Resources/AI/Claude-Code/Hooks/Block AI commit attribution by anchoring on the email, not the trailer label]]

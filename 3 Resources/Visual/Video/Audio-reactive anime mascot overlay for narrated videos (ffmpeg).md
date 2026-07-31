@@ -31,6 +31,6 @@ Context: `C:\Users\dvtliem\.claude\docs\hook-present\build\add-avatar.py` + `ava
 
 ## Related
 
-- [[Full-bleed slide images need ~16:9 aspect or their text renders too small]]
-- [[Hedra talking-avatar flow + gotcha: video generation is paid-only (free tier blocks Generate)]]
+- [[3 Resources/Visual/Presentations/Full-bleed slide images need ~169 aspect or their text renders too small]]
+- [[3 Resources/Visual/Video/Hedra talking-avatar flow + gotcha video generation is paid-only (free tier blocks Generate)]]
 - [[concept-to-video avatar overlay sits bottom-right — keep callouts clear]]

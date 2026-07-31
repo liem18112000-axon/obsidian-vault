@@ -19,4 +19,4 @@ So PATCH-based security changes leave document sentinels (`_isPublic`, `_effecti
 
 ## Related
 
-- [[Mongo pipeline no-op updates trigger SC_MULTI_STATUS in luz_jsonstore - not retryable]]
+- [[3 Resources/Data/MongoDB/Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]

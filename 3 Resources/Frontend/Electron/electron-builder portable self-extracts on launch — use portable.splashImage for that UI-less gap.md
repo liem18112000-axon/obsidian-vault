@@ -25,5 +25,4 @@ Config (path is relative to project root; put the bmp somewhere NOT gitignored �
 ## Related
 
 - [[Vinnstack EXE release]]
-- [[Windows holds file handles briefly after taskkill — rmSync EPERMs]]
-- [[so retry]]
+- [[3 Resources/Tooling/Windows/Windows holds file handles briefly after taskkill — rmSync EPERMs, so retry]]

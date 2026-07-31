@@ -19,5 +19,4 @@ Context: fb-info-project `src/patterns.py` HOME regex, branch `fix/hometown-see-
 
 ## Related
 
-- [[Facebook reply hierarchy lives in the article aria-label]]
-- [[not DOM nesting]]
+- [[3 Resources/Web/Scraping/Facebook/Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]

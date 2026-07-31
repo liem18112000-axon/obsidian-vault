@@ -20,4 +20,4 @@ Symptom cluster that means the saved Facebook session in `session/fb_session.jso
 
 ## Related
 
-- [[FB /photo/?fbid= links scrape as post mode; filename id falls back to na]]
+- [[3 Resources/Work-Side/fb-info-project/FB photofbid= links scrape as post mode; filename id falls back to na]]

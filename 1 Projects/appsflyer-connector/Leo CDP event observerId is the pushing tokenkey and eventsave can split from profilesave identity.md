@@ -15,9 +15,9 @@ Two identity facts observed on the live Leo CDP Data Observer API:
 
 2. **`event/save` (targetUpdateEmail) did NOT merge into the `profile/save` (primaryEmail) profile.** `POST /api/profile/save updateByKey=primaryEmail` returned profile id `1sM9LB0RC8UXRvD0lA5UNm` (email set, no events). The event pushed via `CdpHttpSink` with `targetUpdateEmail=<same email>` instead landed on a SEPARATE, email-less visitor profile `3DmymIkokb6VcEB9irMdbO`. Identity resolution between the two endpoints is not guaranteed to converge on one profile by email — so do not assume an event sent by `targetUpdateEmail` attaches to the profile you created by `primaryEmail`.
 
-Positive signal: that event profile's `eventStatistics` showed `mobile_install: 4`, matching the 4 times the demo push was run — confirming repeated pushes aggregate (counter increments) rather than duplicate. Related: [[Identity-keyed CDP API breaks content-hash idempotency]], [[Leo CDP profile/list ignores start and limit and embeds event data]].
+Positive signal: that event profile's `eventStatistics` showed `mobile_install: 4`, matching the 4 times the demo push was run — confirming repeated pushes aggregate (counter increments) rather than duplicate. Related: [[Identity-keyed CDP API breaks content-hash idempotency]], [[1 Projects/appsflyer-connector/Leo CDP profilelist ignores start and limit and embeds event data]].
 
 ## Related
 
 - [[Identity-keyed CDP API breaks content-hash idempotency]]
-- [[Leo CDP profile/list ignores start and limit and embeds event data]]
+- [[1 Projects/appsflyer-connector/Leo CDP profilelist ignores start and limit and embeds event data]]

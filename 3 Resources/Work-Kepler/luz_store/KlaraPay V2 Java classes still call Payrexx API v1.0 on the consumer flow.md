@@ -17,4 +17,4 @@ Lesson: never infer API version from class-name suffixes — read the resolved b
 
 ## Related
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
-- [[Prod card declines reach luz_store as ERROR plus Payrexx prose, not DECLINED]]
+- [[1 Projects/luz_store/LUZ-157476/Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]

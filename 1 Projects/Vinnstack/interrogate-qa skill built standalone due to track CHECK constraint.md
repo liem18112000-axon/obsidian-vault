@@ -20,6 +20,4 @@ General lesson: when a new "kind" of interrogation/question-set is requested but
 
 ## Related
 
-- [[interrogate-qa is cross-cutting across all Epics]]
-- [[Stories]]
-- [[and Flows]]
+- [[1 Projects/Vinnstack/interrogate-qa is cross-cutting across all Epics, Stories, and Flows]]

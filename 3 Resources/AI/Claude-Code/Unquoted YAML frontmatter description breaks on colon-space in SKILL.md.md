@@ -17,8 +17,8 @@ Fix: single-quote the whole description (`description: '...'`), doubling any int
 
 Prevention: after editing any SKILL.md frontmatter, validate with a quick `yaml.safe_load` sweep over `skills/**/SKILL.md` — a 2026-06-10 sweep found 5 broken files in luz-skills-plugin plus 4 more local-only skills, all from the same `: ` pattern.
 
-Applies to [[Luz plugin repos: how skills and hooks are packaged for distribution]].
+Applies to [[2 Areas/Claude-Code/Luz plugin repos how skills and hooks are packaged for distribution]].
 
 ## Related
 
-- [[Luz plugin repos: how skills and hooks are packaged for distribution]]
+- [[2 Areas/Claude-Code/Luz plugin repos how skills and hooks are packaged for distribution]]

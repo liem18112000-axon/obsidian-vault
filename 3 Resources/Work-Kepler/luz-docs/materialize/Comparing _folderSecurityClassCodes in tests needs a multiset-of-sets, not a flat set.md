@@ -27,5 +27,4 @@ def _norm_nested(value):
 
 ## Related
 
-- [[Luz _folderSecurityClassCodes is a list-of-lists]]
-- [[one inner list per folder]]
+- [[3 Resources/Work-Kepler/luz-docs/materialize/Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]

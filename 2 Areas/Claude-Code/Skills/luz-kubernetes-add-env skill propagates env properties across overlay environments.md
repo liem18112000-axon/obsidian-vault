@@ -9,7 +9,7 @@ tags: [claude-code, skill, luz, kubernetes, config]
 
 # luz-kubernetes-add-env skill propagates env properties across overlay environments
 
-The `luz-kubernetes-add-env` skill (`~/.claude/skills/luz-kubernetes-add-env/`) adds or updates `KEY=VALUE` properties in `system.properties` across all overlay environments of [[luz_kubernetes overlay layout: system.properties per env-<env>/<service>]] in one command.
+The `luz-kubernetes-add-env` skill (`~/.claude/skills/luz-kubernetes-add-env/`) adds or updates `KEY=VALUE` properties in `system.properties` across all overlay environments of [[2 Areas/Kepler/luz_kubernetes overlay layout system.properties per env-envservice]] in one command.
 
 Key behaviors:
 - `add-env.sh KEY=VALUE ...` is **preview-first**: prints a unified diff per env and writes nothing until re-run with `APPLY=1` (after user confirmation).
@@ -25,5 +25,5 @@ Gotcha: `BRANCH=<name>` creates the new branch **from the current HEAD**, not fr
 
 ## Related
 
-- [[luz_kubernetes overlay layout: system.properties per env-<env>/<service>]]
+- [[2 Areas/Kepler/luz_kubernetes overlay layout system.properties per env-envservice]]
 - [[luz-env-config-reminder hook nudges overlay propagation for new env reads in luz repos]]

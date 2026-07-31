@@ -15,5 +15,4 @@ The v0.4-era `[openai]` chat integration is gone from current config; a chat-bas
 
 ## Related
 
-- [[Gorse config exposes model family and cadence]]
-- [[never hyperparameters]]
+- [[3 Resources/Data/Gorse/Gorse config exposes model family and cadence, never hyperparameters]]
