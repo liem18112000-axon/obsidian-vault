@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"aaaa000000000001","type":"text","x":40,"y":30,"width":700,"height":70,"color":"1","text":"# Accesstrade API Map\nEndpoint capabilities grouped around the publisher API. Same `Token` auth; two generations."},
+		{"id":"aaaa000000000002","type":"file","x":770,"y":20,"width":320,"height":90,"file":"Affiliate/API Integration/Accesstrade API Integration - MOC.md"},
+		{"id":"bbbb000000000001","type":"group","x":10,"y":260,"width":380,"height":400,"color":"3","label":"Foundations"},
+		{"id":"bbbb000000000002","type":"group","x":960,"y":80,"width":400,"height":820,"color":"5","label":"Endpoints (capabilities)"},
+		{"id":"cccc000000000001","type":"text","x":470,"y":380,"width":340,"height":150,"color":"1","text":"# Accesstrade REST API\n\n`Authorization: Token <key>`\n\nTwo generations:\n.vn (flat) · OBS (siteId)"},
+		{"id":"dddd000000000001","type":"file","x":40,"y":300,"width":320,"height":95,"file":"Affiliate/API Integration/Accesstrade has two API generations.md"},
+		{"id":"dddd000000000002","type":"file","x":40,"y":415,"width":320,"height":95,"file":"Affiliate/API Integration/Accesstrade Publisher API authentication.md"},
+		{"id":"dddd000000000003","type":"file","x":40,"y":530,"width":320,"height":95,"file":"Affiliate/API Integration/Accesstrade API rate limits and pagination.md"},
+		{"id":"eeee000000000001","type":"file","x":990,"y":120,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade Campaigns API.md"},
+		{"id":"eeee000000000002","type":"file","x":990,"y":215,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade tracking link creation.md"},
+		{"id":"eeee000000000003","type":"file","x":990,"y":310,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade SubID attribution.md"},
+		{"id":"eeee000000000004","type":"file","x":990,"y":405,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade conversion and transaction reporting.md"},
+		{"id":"eeee000000000005","type":"file","x":990,"y":500,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade Datafeeds API.md"},
+		{"id":"eeee000000000006","type":"file","x":990,"y":595,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade Promotions and Top Products APIs.md"},
+		{"id":"eeee000000000007","type":"file","x":990,"y":690,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade Creative APIs.md"},
+		{"id":"eeee000000000008","type":"file","x":990,"y":785,"width":340,"height":85,"file":"Affiliate/API Integration/Accesstrade postback and S2S conversion tracking.md"}
+	],
+	"edges":[
+		{"id":"ffff000000000001","fromNode":"cccc000000000001","fromSide":"left","toNode":"dddd000000000001","toSide":"right","toEnd":"arrow"},
+		{"id":"ffff000000000002","fromNode":"cccc000000000001","fromSide":"left","toNode":"dddd000000000002","toSide":"right","toEnd":"arrow"},
+		{"id":"ffff000000000003","fromNode":"cccc000000000001","fromSide":"left","toNode":"dddd000000000003","toSide":"right","toEnd":"arrow"},
+		{"id":"ffff000000000004","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000001","toSide":"left","toEnd":"arrow"},
+		{"id":"ffff000000000005","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000002","toSide":"left","toEnd":"arrow"},
+		{"id":"ffff000000000006","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000003","toSide":"left","toEnd":"arrow"},
+		{"id":"ffff000000000007","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000004","toSide":"left","toEnd":"arrow"},
+		{"id":"ffff000000000008","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000005","toSide":"left","toEnd":"arrow"},
+		{"id":"ffff000000000009","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000006","toSide":"left","toEnd":"arrow"},
+		{"id":"ffff000000000010","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000007","toSide":"left","toEnd":"arrow"},
+		{"id":"ffff000000000011","fromNode":"cccc000000000001","fromSide":"right","toNode":"eeee000000000008","toSide":"left","toEnd":"arrow"}
+	]
+}

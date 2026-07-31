@@ -1,0 +1,23 @@
+---
+title: "CSS Custom Highlight API paints text ranges without DOM mutation"
+created: 2026-07-03
+type: howto
+status: seedling
+source: "session 2026-07-03, vinnstack PRD inline-comments plan"
+tags: [css, react, highlighting, selection]
+---
+
+# CSS Custom Highlight API paints text ranges without DOM mutation
+
+To highlight arbitrary text ranges in React-rendered content (e.g. comment anchors over ReactMarkdown output), use the **CSS Custom Highlight API** (`CSS.highlights.set(name, new Highlight(...ranges))` + `::highlight(name)` CSS) instead of wrapping text in `<mark>` elements.
+
+Why it wins:
+- **No DOM mutation** — React re-renders don't fight your injected elements, and you never corrupt React's virtual-DOM bookkeeping.
+- **Multi-node ranges work natively** — a selection spanning a table cell and a paragraph is one `Range`; `<mark>`-wrapping would require splitting per text node.
+- Supported in all evergreen browsers and Chromium ≥ 105 (so current Electron too).
+
+Fallback plan if the runtime is older: skip inline painting entirely (sidebar-only comments) rather than doing DOM surgery.
+
+## Related
+
+- [[TextQuoteSelector anchoring survives document regeneration]]

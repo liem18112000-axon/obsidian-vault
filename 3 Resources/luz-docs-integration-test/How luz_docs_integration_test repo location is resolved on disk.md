@@ -1,0 +1,29 @@
+---
+title: "How luz_docs_integration_test repo location is resolved on disk"
+created: 2026-07-11
+type: howto
+status: seedling
+source: "vinnstack session 2026-07-11: building implement-bdd-steps skill"
+tags: [luz-docs-integration-test, repo-location, tooling]
+---
+
+# How luz_docs_integration_test repo location is resolved on disk
+
+The `~/.claude/skills/luz-docs-integration-test/run_it.sh` skill's `locate_repo()` function resolves the `luz_docs_integration_test` repo on disk by checking a fixed candidate-path list, in order:
+
+```
+$HOME/Kepler/luz_docs_integration_test
+$HOME/luz_docs_integration_test
+$HOME/AI/luz_docs_integration_test
+$HOME/Kepler/leo-cdp-framework/luz_docs_integration_test
+```
+
+then falls back to a bounded scan (`find "$HOME" -maxdepth 4 -type d -name luz_docs_integration_test`), accepting a match only if it also contains `requirements.txt` and a `features/` directory. If nothing matches, it stops and prints a clone notice (`git clone https://bitbucket.org/axonivy-prod/luz_docs_integration_test.git ~/Kepler/luz_docs_integration_test`) rather than cloning automatically.
+
+On dvtliem's machine this resolves to `C:\Users\dvtliem\Kepler\luz_docs_integration_test` (git remote `bitbucket.org/axonivy-prod/luz_docs_integration_test`). Any new skill/tool that needs to locate this repo should reuse this same candidate-list-then-bounded-scan pattern rather than hardcoding one path, so it keeps working across machines.
+
+## Related
+
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate]]
+- [[implement]]
+- [[PR agents)]]

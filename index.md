@@ -1,4 +1,4 @@
-﻿---
+---
 ai_hash: 5a356b8d432a2d59
 ai_model: google/gemini-2.5-flash
 ai_updated: '2026-05-30'

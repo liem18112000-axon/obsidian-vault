@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    { "id": "1111111111111111", "type": "text", "x": -60, "y": -150, "width": 640, "height": 80, "color": "4", "text": "# Affiliate Automation Blueprint\nClaude × Accesstrade — discover → link → publish → convert → optimize" },
+    { "id": "1111111111111113", "type": "text", "x": 600, "y": -150, "width": 420, "height": 80, "color": "2", "text": "## ↻ The loop repeats\nReport feeds the next Discover — content compounds." },
+    { "id": "1111111111111112", "type": "file", "x": 1040, "y": -150, "width": 360, "height": 90, "file": "Affiliate/API Integration/Accesstrade API Integration - MOC.md" },
+
+    { "id": "2222222222222221", "type": "group", "x": -60, "y": -50, "width": 1760, "height": 620, "color": "5", "label": "The affiliate loop (Accesstrade)" },
+    { "id": "2222222222222222", "type": "group", "x": -60, "y": 590, "width": 1760, "height": 300, "color": "6", "label": "Claude integration layer — how it actually runs" },
+
+    { "id": "3333333333330001", "type": "text", "x": 0, "y": 10, "width": 260, "height": 110, "color": "4", "text": "## 1 · Discover & Plan\nFind RUNNING campaigns, demand and live coupons in your niche." },
+    { "id": "3333333333330002", "type": "text", "x": 340, "y": 10, "width": 260, "height": 110, "color": "4", "text": "## 2 · Generate Links\nMint attributed tracking links; stamp a stable `sub1`." },
+    { "id": "3333333333330003", "type": "text", "x": 680, "y": 10, "width": 260, "height": 110, "color": "4", "text": "## 3 · Publish\nContent + clear disclosure + coupon CTA." },
+    { "id": "3333333333330004", "type": "text", "x": 1020, "y": 10, "width": 260, "height": 110, "color": "4", "text": "## 4 · Track & Convert\nClicks → conversions; pending → approved/rejected." },
+    { "id": "3333333333330005", "type": "text", "x": 1360, "y": 10, "width": 260, "height": 110, "color": "4", "text": "## 5 · Report & Optimize\nEPC by `sub1`, daily digest, refine the plan." },
+
+    { "id": "4444444444440001", "type": "file", "x": -10, "y": 170, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade Campaigns API.md" },
+    { "id": "4444444444440002", "type": "file", "x": -10, "y": 290, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade Datafeeds API.md" },
+    { "id": "4444444444440003", "type": "file", "x": -10, "y": 410, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade Promotions and Top Products APIs.md" },
+
+    { "id": "4444444444440004", "type": "file", "x": 330, "y": 170, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade tracking link creation.md" },
+    { "id": "4444444444440005", "type": "file", "x": 330, "y": 290, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade SubID attribution.md" },
+
+    { "id": "4444444444440006", "type": "file", "x": 670, "y": 170, "width": 280, "height": 100, "file": "Affiliate/API Integration/Affiliate compliance and link hygiene.md" },
+    { "id": "4444444444440007", "type": "file", "x": 670, "y": 290, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade Creative APIs.md" },
+
+    { "id": "4444444444440008", "type": "file", "x": 1010, "y": 170, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade conversion and transaction reporting.md" },
+    { "id": "4444444444440009", "type": "file", "x": 1010, "y": 290, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade postback and S2S conversion tracking.md" },
+
+    { "id": "4444444444440010", "type": "file", "x": 1350, "y": 170, "width": 280, "height": 100, "file": "Affiliate/API Integration/Use case - automated daily conversion digest.md" },
+    { "id": "4444444444440011", "type": "file", "x": 1350, "y": 290, "width": 280, "height": 100, "file": "Affiliate/API Integration/Affiliate API engineering best practices.md" },
+    { "id": "4444444444440012", "type": "file", "x": 1350, "y": 410, "width": 280, "height": 100, "file": "Affiliate/API Integration/Accesstrade API rate limits and pagination.md" },
+
+    { "id": "5555555555550001", "type": "file", "x": -30, "y": 650, "width": 250, "height": 150, "file": "Affiliate/API Integration/Claude Code Skill anatomy.md" },
+    { "id": "5555555555550002", "type": "file", "x": 250, "y": 650, "width": 250, "height": 150, "file": "Affiliate/API Integration/Designing an Accesstrade skill for Claude Code.md" },
+    { "id": "5555555555550003", "type": "file", "x": 530, "y": 650, "width": 250, "height": 150, "file": "Affiliate/API Integration/Claude Code hooks event model.md" },
+    { "id": "5555555555550004", "type": "file", "x": 810, "y": 650, "width": 250, "height": 150, "file": "Affiliate/API Integration/Affiliate automation hook patterns.md" },
+    { "id": "5555555555550005", "type": "file", "x": 1090, "y": 650, "width": 250, "height": 150, "file": "Affiliate/API Integration/Secrets handling for affiliate API keys.md" },
+    { "id": "5555555555550006", "type": "file", "x": 1370, "y": 650, "width": 250, "height": 150, "file": "Affiliate/API Integration/Skills vs Hooks vs MCP vs subagents.md" }
+  ],
+  "edges": [
+    { "id": "6666666666660001", "fromNode": "3333333333330001", "fromSide": "right", "toNode": "3333333333330002", "toSide": "left", "toEnd": "arrow" },
+    { "id": "6666666666660002", "fromNode": "3333333333330002", "fromSide": "right", "toNode": "3333333333330003", "toSide": "left", "toEnd": "arrow" },
+    { "id": "6666666666660003", "fromNode": "3333333333330003", "fromSide": "right", "toNode": "3333333333330004", "toSide": "left", "toEnd": "arrow" },
+    { "id": "6666666666660004", "fromNode": "3333333333330004", "fromSide": "right", "toNode": "3333333333330005", "toSide": "left", "toEnd": "arrow" },
+
+    { "id": "6666666666660005", "fromNode": "3333333333330001", "fromSide": "bottom", "toNode": "4444444444440001", "toSide": "top", "toEnd": "arrow" },
+    { "id": "6666666666660006", "fromNode": "4444444444440001", "fromSide": "bottom", "toNode": "4444444444440002", "toSide": "top", "toEnd": "none" },
+    { "id": "6666666666660007", "fromNode": "4444444444440002", "fromSide": "bottom", "toNode": "4444444444440003", "toSide": "top", "toEnd": "none" },
+
+    { "id": "6666666666660008", "fromNode": "3333333333330002", "fromSide": "bottom", "toNode": "4444444444440004", "toSide": "top", "toEnd": "arrow" },
+    { "id": "6666666666660009", "fromNode": "4444444444440004", "fromSide": "bottom", "toNode": "4444444444440005", "toSide": "top", "toEnd": "none" },
+
+    { "id": "6666666666660010", "fromNode": "3333333333330003", "fromSide": "bottom", "toNode": "4444444444440006", "toSide": "top", "toEnd": "arrow" },
+    { "id": "6666666666660011", "fromNode": "4444444444440006", "fromSide": "bottom", "toNode": "4444444444440007", "toSide": "top", "toEnd": "none" },
+
+    { "id": "6666666666660012", "fromNode": "3333333333330004", "fromSide": "bottom", "toNode": "4444444444440008", "toSide": "top", "toEnd": "arrow" },
+    { "id": "6666666666660013", "fromNode": "4444444444440008", "fromSide": "bottom", "toNode": "4444444444440009", "toSide": "top", "toEnd": "none" },
+
+    { "id": "6666666666660014", "fromNode": "3333333333330005", "fromSide": "bottom", "toNode": "4444444444440010", "toSide": "top", "toEnd": "arrow" },
+    { "id": "6666666666660015", "fromNode": "4444444444440010", "fromSide": "bottom", "toNode": "4444444444440011", "toSide": "top", "toEnd": "none" },
+    { "id": "6666666666660016", "fromNode": "4444444444440011", "fromSide": "bottom", "toNode": "4444444444440012", "toSide": "top", "toEnd": "none" }
+  ]
+}
