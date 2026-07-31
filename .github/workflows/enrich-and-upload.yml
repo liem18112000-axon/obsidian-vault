@@ -67,7 +67,7 @@ jobs:
       - uses: google-github-actions/setup-gcloud@v2
 
       - name: Enrich vault
-        run: python .tooling/tools/vault-graph/enrich.py --vault .
+        run: python .tooling/tools/vault-graph/src/enrich.py --vault .
 
       - name: Detect changes
         id: diff
