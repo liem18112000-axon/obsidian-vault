@@ -1,10 +1,19 @@
 ---
-title: "A luz_store subscription changes billing period only by new-row or direct DB write"
+ai_hash: 81a29708ecf14a1e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: model
+entities: []
+source: session 2026-06-19 monthly->yearly investigation
 status: seedling
-source: "session 2026-06-19 monthly->yearly investigation"
-tags: [luz_store, subscriptions, billing, incident-analysis]
+tags:
+- luz_store
+- subscriptions
+- billing
+- incident-analysis
+title: A luz_store subscription changes billing period only by new-row or direct DB
+  write
+type: model
 ---
 
 # A luz_store subscription changes billing period only by new-row or direct DB write
@@ -20,3 +29,14 @@ Diagnostic key: **is the new plan on a new id (A) or the original id (B)?** For 
 
 - [[luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable]]
 - [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable]]
+- [[Attributing a luz_store subscription's origin from created_by, method and updated_by]]
+- [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+- [[luz_store product.price_plans is a joined string that constrains a subscription's allowed plans]]
+- [[luz_store company_uri format and marketing-code price-plan suffixes]]
+
+%% ai-graph-end %%

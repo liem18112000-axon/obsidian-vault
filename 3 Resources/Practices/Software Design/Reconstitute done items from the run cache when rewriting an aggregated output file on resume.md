@@ -1,10 +1,19 @@
 ---
-title: "Reconstitute done items from the run cache when rewriting an aggregated output file on resume"
+ai_hash: 06e9aa93bf1eb78b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: session 2026-06-23
 status: seedling
-source: "session 2026-06-23"
-tags: [resume, checkpointing, batch-processing, gotcha]
+tags:
+- resume
+- checkpointing
+- batch-processing
+- gotcha
+title: Reconstitute done items from the run cache when rewriting an aggregated output
+  file on resume
+type: lesson
 ---
 
 # Reconstitute done items from the run cache when rewriting an aggregated output file on resume
@@ -20,3 +29,14 @@ Concrete instance: [[fb-info-project merges bare-id 'profile UUID' inputs into o
 ## Related
 
 - [[fb-info-project merges bare-id 'profile UUID' inputs into one combined workbook]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A persisted dedup cache doubles as a resume log]]
+- [[fb-info-project merges bare-id 'profile UUID' inputs into one combined workbook]]
+- [[Crash-safe incremental output as_completed + indexed results + stable filename reused for checkpoint and final]]
+- [[A resume must not re-charge one-time accounting]]
+- [[Cache only successful results so failures retry on resume]]
+
+%% ai-graph-end %%

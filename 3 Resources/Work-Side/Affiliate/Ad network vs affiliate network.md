@@ -1,18 +1,22 @@
 ---
-title: Ad network vs affiliate network
-created: 2026-06-12
-type: concept
-status: seedling
-source: research session 2026-06-12
-tags:
-  - monetization
-  - affiliate
-  - ad-network
-  - concept
+ai_hash: 09e3fd1831ef519e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - CPM vs CPS
-  - Monetag vs Accesstrade
-  - Ad network versus affiliate
+- CPM vs CPS
+- Monetag vs Accesstrade
+- Ad network versus affiliate
+created: 2026-06-12
+entities: []
+source: research session 2026-06-12
+status: seedling
+tags:
+- monetization
+- affiliate
+- ad-network
+- concept
+title: Ad network vs affiliate network
+type: concept
 ---
 
 # Ad network vs affiliate network
@@ -53,3 +57,14 @@ Many publishers run **both**: affiliate links inside high-intent content (review
 - [[Accesstrade affiliate network overview]]
 - [[Accesstrade API Integration - MOC]]
 - [[Monetag - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monetag - MOC]]
+- [[Monetag overview]]
+- [[Accesstrade affiliate network overview]]
+- [[Monetag SSP API and integration]]
+- [[Monetag referral program]]
+
+%% ai-graph-end %%

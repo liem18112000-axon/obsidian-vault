@@ -1,10 +1,19 @@
 ---
-title: "Facebook reply hierarchy lives in the article aria-label, not DOM nesting"
+ai_hash: 2432346d0f975f7b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-22
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-22
 status: seedling
-source: "fb-info-project session 2026-06-22"
-tags: [facebook, scraping, dom, playwright, gotcha]
+tags:
+- facebook
+- scraping
+- dom
+- playwright
+- gotcha
+title: Facebook reply hierarchy lives in the article aria-label, not DOM nesting
+type: lesson
 ---
 
 # Facebook reply hierarchy lives in the article aria-label, not DOM nesting
@@ -25,3 +34,14 @@ See also the locale gotcha: [[Facebook ships comment aria-labels in English even
 ## Related
 
 - [[Facebook ships comment aria-labels in English even when the UI is Vietnamese]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook ships comment aria-labels in English even when the UI is Vietnamese]]
+- [[Facebook reply-expander button label variants]]
+- [[Unanchored 'From' regex captures the profile name from Facebook's 'See more from' buttons]]
+- [[Facebook reel comments are hidden behind the comment icon]]
+- [[Facebook Comet comment DOM does not expose the commenter's numeric UID]]
+
+%% ai-graph-end %%

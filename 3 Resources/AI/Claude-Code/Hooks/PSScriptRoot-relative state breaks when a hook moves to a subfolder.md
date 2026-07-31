@@ -1,3 +1,10 @@
+---
+ai_hash: f78a27f4b4a65c67
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+---
+
 ﻿---
 title: "PSScriptRoot-relative state breaks when a hook moves to a subfolder"
 created: 2026-06-02
@@ -24,3 +31,13 @@ Related: [[Relocating a hardcoded-path hook integration self-locate or patch eve
 - [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
 - [[Relocating a hardcoded-path hook integration self-locate or patch every reference site]]
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Relocating a hardcoded-path hook integration self-locate or patch every reference site]]
+- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
+- [[Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]]
+
+%% ai-graph-end %%

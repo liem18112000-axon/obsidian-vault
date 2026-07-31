@@ -1,10 +1,17 @@
 ---
-title: "Uniform bucket-level access means GCS permissions are IAM-only"
+ai_hash: ad9309dd45c2b59e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: concept
+entities: []
+source: vinnstack cloudbuild.yaml setup, 2026-07-07
 status: seedling
-source: "vinnstack cloudbuild.yaml setup, 2026-07-07"
-tags: [gcp, gcs, iam]
+tags:
+- gcp
+- gcs
+- iam
+title: Uniform bucket-level access means GCS permissions are IAM-only
+type: concept
 ---
 
 # Uniform bucket-level access means GCS permissions are IAM-only
@@ -15,3 +22,14 @@ Practically: to let a service account write objects into such a bucket, grant it
 
 ## Related
 [[Publish a single file to GCS from Cloud Build with gcloud storage cp]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish a single file to GCS from Cloud Build with gcloud storage cp]]
+- [[IAM roles a CI service account needs to build and deploy to Cloud Run]]
+- [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+- [[artifactregistry.repoAdmin cannot grant IAM despite the name]]
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+
+%% ai-graph-end %%

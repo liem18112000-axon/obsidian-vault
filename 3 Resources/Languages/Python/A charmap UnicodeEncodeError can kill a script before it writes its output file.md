@@ -1,10 +1,19 @@
 ---
-title: "A charmap UnicodeEncodeError can kill a script before it writes its output file"
+ai_hash: 80118cec48aa59bc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: gotcha
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [python, windows, encoding, gotcha]
+tags:
+- python
+- windows
+- encoding
+- gotcha
+title: A charmap UnicodeEncodeError can kill a script before it writes its output
+  file
+type: gotcha
 ---
 
 # A charmap UnicodeEncodeError can kill a script before it writes its output file
@@ -27,3 +36,13 @@ and **write data files before printing human output**, so a formatting crash can
 ## Related
 
 - [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows cp1252 console crashes on non-ASCII Python prints; force UTF-8]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]
+
+%% ai-graph-end %%

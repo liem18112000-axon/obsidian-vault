@@ -1,3 +1,10 @@
+---
+ai_hash: 1ef92cc1f5025d79
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+---
+
 ﻿---
 title: "PowerShell pipe appends a newline to native-command stdin, shifting any hash"
 created: 2026-06-02
@@ -20,3 +27,11 @@ Workaround: don't recompute the hash externally. Let the process emit/persist it
 - [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
 - [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+- [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
+
+%% ai-graph-end %%

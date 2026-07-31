@@ -1,10 +1,20 @@
 ---
-title: "Windows holds file handles briefly after taskkill — rmSync EPERMs, so retry"
+ai_hash: c475e8bd2eff887d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: gotcha
+entities: []
+source: session 2026-07-15 vinnstack exe smoke harness
 status: seedling
-source: "session 2026-07-15 vinnstack exe smoke harness"
-tags: [windows, nodejs, electron, taskkill, eperm, gotcha]
+tags:
+- windows
+- nodejs
+- electron
+- taskkill
+- eperm
+- gotcha
+title: Windows holds file handles briefly after taskkill — rmSync EPERMs, so retry
+type: gotcha
 ---
 
 # Windows holds file handles briefly after taskkill — rmSync EPERMs, so retry
@@ -26,3 +36,14 @@ Surfaced writing `scripts/exe-release-smoke.mjs` (the Vinnstack EXE-release test
 ## Related
 
 - [[Vinnstack EXE release]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows child processes survive when only the parent is killed]]
+- [[electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[An Electron GUI app can't be smoke-tested from a non-interactive automation session]]
+- [[Electron GPU process launch failure is fatal; disable hardware acceleration to avoid it]]
+
+%% ai-graph-end %%

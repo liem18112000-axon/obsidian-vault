@@ -1,11 +1,20 @@
 ---
-title: "Roaring bitmaps give exact set cardinality via chunked containers"
+ai_hash: b0b275b51f378649
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Roaring bitmap
 created: 2026-06-16
-aliases: ["Roaring bitmap"]
-type: concept
+entities: []
+source: session 2026-06-16
 status: seedling
-source: "session 2026-06-16"
-tags: [roaring, bitmap, count, luz-docs]
+tags:
+- roaring
+- bitmap
+- count
+- luz-docs
+title: Roaring bitmaps give exact set cardinality via chunked containers
+type: concept
 ---
 
 # Roaring bitmaps give exact set cardinality via chunked containers
@@ -28,3 +37,14 @@ Use this to back [[Visible-document count as cardinality of a bitmap union]] whe
 
 - [[Visible-document count as cardinality of a bitmap union]]
 - [[1 Projects/luz-docs/count/optimize/Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Visible-document count as cardinality of a bitmap union]]
+- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
+- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
+
+%% ai-graph-end %%

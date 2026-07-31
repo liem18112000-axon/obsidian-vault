@@ -1,10 +1,19 @@
 ---
-title: "Sketch merge (register-wise max) only answers union queries, never AND"
+ai_hash: 1d6a669899e8ebb4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: luz_docs docs/count-estimate research, 2026-07-09 — caught a wrong AND example
+  in a diagram
 status: seedling
-source: "luz_docs docs/count-estimate research, 2026-07-09 — caught a wrong AND example in a diagram"
-tags: [hyperloglog, cardinality-estimation, probabilistic-data-structures, gotcha]
+tags:
+- hyperloglog
+- cardinality-estimation
+- probabilistic-data-structures
+- gotcha
+title: Sketch merge (register-wise max) only answers union queries, never AND
+type: lesson
 ---
 
 # Sketch merge (register-wise max) only answers union queries, never AND
@@ -21,3 +30,14 @@ Two HLL (or similar cardinality) sketches combine by element-wise `max()` over t
 
 - [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[1 Projects/luz-docs/luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
+- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[HyperLogLog error in the small-range (linear-counting) regime]]
+- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
+- [[Visible-document count as cardinality of a bitmap union]]
+
+%% ai-graph-end %%

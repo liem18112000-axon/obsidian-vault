@@ -1,10 +1,18 @@
 ---
-title: "Run GitHub Copilot CLI in a GitHub Actions workflow"
+ai_hash: 0b6bf046fbb3c738
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: howto
+entities: []
+source: session 2026-06-05 leo-agentic-notebook
 status: seedling
-source: "session 2026-06-05 leo-agentic-notebook"
-tags: [github-actions, copilot, ci, migration]
+tags:
+- github-actions
+- copilot
+- ci
+- migration
+title: Run GitHub Copilot CLI in a GitHub Actions workflow
+type: howto
 ---
 
 # Run GitHub Copilot CLI in a GitHub Actions workflow
@@ -35,3 +43,14 @@ See [[GitHub Actions default GITHUB_TOKEN does not grant Copilot CLI access]] fo
 ## Related
 
 - [[GitHub Actions default GITHUB_TOKEN does not grant Copilot CLI access]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Copilot code review is a native PR reviewer, not a workflow job]]
+- [[GitHub Actions default GITHUB_TOKEN does not grant Copilot CLI access]]
+- [[Google ships an official Gemini CLI GitHub Action for PR review and mentions]]
+- [[Re-triggering GitHub Copilot PR review via API and its quota-limit gotcha]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+
+%% ai-graph-end %%

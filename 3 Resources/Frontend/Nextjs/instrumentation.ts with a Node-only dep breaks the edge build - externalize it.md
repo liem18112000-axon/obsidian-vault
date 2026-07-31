@@ -1,11 +1,26 @@
 ---
-title: "instrumentation.ts with a Node-only dep breaks the edge build - externalize it"
-aliases: ["Next instrumentation.ts compiles for edge too; warm Node-only singletons via a nodejs route GET, not instrumentation"]
+ai_hash: 1810e80dff7f439f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Next instrumentation.ts compiles for edge too; warm Node-only singletons via a nodejs
+  route GET, not instrumentation
 created: 2026-07-24
-type: gotcha
+entities: []
+source: sessions 2026-07-18 (Vinnstack warm-up) / 2026-07-24 (Claude Routine smoke
+  test)
 status: seedling
-source: "sessions 2026-07-18 (Vinnstack warm-up) / 2026-07-24 (Claude Routine smoke test)"
-tags: [nextjs, instrumentation, webpack, edge-runtime, build, gotcha, vinnstack]
+tags:
+- nextjs
+- instrumentation
+- webpack
+- edge-runtime
+- build
+- gotcha
+- vinnstack
+title: instrumentation.ts with a Node-only dep breaks the edge build - externalize
+  it
+type: gotcha
 ---
 
 # instrumentation.ts with a Node-only dep breaks the edge build - externalize it
@@ -43,3 +58,14 @@ Related: [[Next 14 ignores instrumentation.ts without experimental.instrumentati
 
 - [[Next 14 ignores instrumentation.ts without experimental.instrumentationHook]]
 - [[Offline English-Vietnamese MT for a Node-Electron app Transformers.js + Xenova opus-mt-en-vi]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Next 14 ignores instrumentation.ts without experimental.instrumentationHook]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+- [[Next.js .nextcache is a build-time-only cache, never bundle it]]
+- [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+
+%% ai-graph-end %%

@@ -1,10 +1,17 @@
 ---
-title: "How luz_docs_integration_test repo location is resolved on disk"
+ai_hash: 64fe4fe336775bb8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: howto
+entities: []
+source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
 status: seedling
-source: "vinnstack session 2026-07-11: building implement-bdd-steps skill"
-tags: [luz-docs-integration-test, repo-location, tooling]
+tags:
+- luz-docs-integration-test
+- repo-location
+- tooling
+title: How luz_docs_integration_test repo location is resolved on disk
+type: howto
 ---
 
 # How luz_docs_integration_test repo location is resolved on disk
@@ -25,3 +32,14 @@ On dvtliem's machine this resolves to `C:\Users\dvtliem\Kepler\luz_docs_integrat
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/integration-test/luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_integration_test AI pipeline branch and PR mechanics]]
+- [[Luz plugin repos how skills and hooks are packaged for distribution]]
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[luz-skills-plugin packages skills by category directory listed in plugin.json]]
+
+%% ai-graph-end %%

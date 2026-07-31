@@ -1,4 +1,8 @@
 ---
+ai_hash: c11486de7ea09e72
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
 title: Home
 type: moc
 ---
@@ -31,3 +35,14 @@ Welcome to my digital garden. Everything lives in one of the four PARA buckets.
 
 - `Templates/`, `Excalidraw/` and `attachments/` stay at the vault root because plugin configs bind to those exact paths.
 - Resources are filed by domain: Languages, Frontend, Web, Backend, Data, Cloud, Infra, Tooling, AI, Practices, Visual, Obsidian, Work-Kepler, Work-Side.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[1 Projects]]
+- [[3 Resources]]
+- [[2 Areas]]
+- [[Stage 5 — Workflows & Methodology]]
+- [[search-logic]]
+
+%% ai-graph-end %%

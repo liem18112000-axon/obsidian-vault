@@ -1,10 +1,20 @@
 ---
-title: "Adding a field to a Java record breaks all factory and constructor calls in tests"
+ai_hash: 02eb8f0726494449
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: session 2026-06-01
 status: seedling
-source: "session 2026-06-01"
-tags: [java, records, refactoring, testing, gotcha]
+tags:
+- java
+- records
+- refactoring
+- testing
+- gotcha
+title: Adding a field to a Java record breaks all factory and constructor calls in
+  tests
+type: lesson
 ---
 
 # Adding a field to a Java record breaks all factory and constructor calls in tests
@@ -21,3 +31,14 @@ Companion: bump any assertion that counts derived outputs (e.g. `appendAsPatchOp
 
 ## Related
 [[MaterializeState]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
+- [[Run the full affected test package locally, not a hand-picked subset]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+- [[New collaborator call NPEs old @InjectMocks tests]]
+
+%% ai-graph-end %%

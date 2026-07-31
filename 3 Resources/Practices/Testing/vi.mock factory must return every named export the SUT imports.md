@@ -1,11 +1,20 @@
 ---
-title: "vi.mock factory must return every named export the SUT imports"
+ai_hash: 92e4e719577d3949
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-updated: 2026-07-26
-type: lesson
+entities: []
+source: vinnstack 2026-07-03 subject generalization; vinnstack cloud-build fix 2026-07-26
 status: seedling
-source: "vinnstack 2026-07-03 subject generalization; vinnstack cloud-build fix 2026-07-26"
-tags: [vitest, testing, mocking, typescript, gotcha]
+tags:
+- vitest
+- testing
+- mocking
+- typescript
+- gotcha
+title: vi.mock factory must return every named export the SUT imports
+type: lesson
+updated: 2026-07-26
 ---
 
 # vi.mock factory must return every named export the SUT imports
@@ -30,3 +39,14 @@ Node builtins are a special case: the factory must ALSO return `default` — see
 - [[vi.mock of a node builtin needs a default export too (Vite CJS interop)]]
 - [[vi.fn with a zero-arg default locks the mock to a zero-arg signature]]
 - [[When a merge turns CI red decide test-vs-source fix by reading code intent]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vi.mock of a node builtin needs a default export too (Vite CJS interop)]]
+- [[vi.fn with a zero-arg default locks the mock to a zero-arg signature]]
+- [[mockReset does not reliably restore a vi.hoisted factory implementation]]
+- [[vi.clearAllMocks() does not undo a prior mockReturnValue]]
+- [[Test module-load env decisions with vi.resetModules plus dynamic import per case]]
+
+%% ai-graph-end %%

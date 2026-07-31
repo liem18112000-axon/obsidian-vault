@@ -1,10 +1,20 @@
 ---
-title: "Wire electron-updater to a public GCS bucket via the generic provider"
+ai_hash: a5a0ae65060cc32a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: howto
+entities: []
+source: Vinnstack session 2026-07-16
 status: seedling
-source: "Vinnstack session 2026-07-16"
-tags: [electron-updater, gcs, electron-builder, ci, auto-update, vinnstack]
+tags:
+- electron-updater
+- gcs
+- electron-builder
+- ci
+- auto-update
+- vinnstack
+title: Wire electron-updater to a public GCS bucket via the generic provider
+type: howto
 ---
 
 # Wire electron-updater to a public GCS bucket via the generic provider
@@ -27,3 +37,14 @@ Context: Vinnstack, NSIS oneClick, Cloud Build → `gs://vinnstack-exe-release/l
 ## Related
 
 - [[electron-updater skips NSIS signature verification when the installed app is unsigned]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack release push to main triggers Cloud Build which publishes to GCS latest auto-update channel]]
+- [[electron-updater skips NSIS signature verification when the installed app is unsigned]]
+- [[Publish a single file to GCS from Cloud Build with gcloud storage cp]]
+- [[Vinnstack publishes its exe to a GCS bucket, not Artifact Registry]]
+- [[Publish arbitrary binaries to Artifact Registry with a generic repo]]
+
+%% ai-graph-end %%

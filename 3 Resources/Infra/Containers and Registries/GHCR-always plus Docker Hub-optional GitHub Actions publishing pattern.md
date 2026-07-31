@@ -1,10 +1,19 @@
 ---
-title: "GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern"
+ai_hash: b835325b907b40fb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-04
-type: howto
+entities: []
+source: session 2026-06-04, LEO CDP CI pipeline
 status: seedling
-source: "session 2026-06-04, LEO CDP CI pipeline"
-tags: [github-actions, docker, ghcr, dockerhub, ci-cd]
+tags:
+- github-actions
+- docker
+- ghcr
+- dockerhub
+- ci-cd
+title: GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern
+type: howto
 ---
 
 # GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern
@@ -23,3 +32,14 @@ Note: secrets are empty strings (not errors) when unset, so `[[ -n "$DH_USER" &&
 ## Related
 
 - [[Trivy scan-before-push needs a single-arch load build first]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Trivy scan-before-push needs a single-arch load build first]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+
+%% ai-graph-end %%

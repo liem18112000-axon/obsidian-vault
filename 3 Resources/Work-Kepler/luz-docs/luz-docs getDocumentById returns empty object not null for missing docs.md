@@ -1,10 +1,19 @@
 ---
-title: "luz-docs getDocumentById returns empty object not null for missing docs"
+ai_hash: 71463268e0762809
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: gotcha
+entities: []
+source: session 2026-06-09 MaterializeRepository.java:224 fix
 status: seedling
-source: "session 2026-06-09 MaterializeRepository.java:224 fix"
-tags: [luz-docs, materialize, java, gotcha, http-404]
+tags:
+- luz-docs
+- materialize
+- java
+- gotcha
+- http-404
+title: luz-docs getDocumentById returns empty object not null for missing docs
+type: gotcha
 ---
 
 # luz-docs getDocumentById returns empty object not null for missing docs
@@ -22,3 +31,14 @@ This is a concrete instance of [[empty-object-not-null sentinel defeats Optional
 ## Related
 
 - [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[javax.json single-arg getString throws NPE on missing key]]
+- [[luz-jsonstore intermittently returns 200 with empty body on folder finds]]
+- [[getCollectionMetadataByTerms silently ignored includeDeletedRecord for non-document collections]]
+
+%% ai-graph-end %%

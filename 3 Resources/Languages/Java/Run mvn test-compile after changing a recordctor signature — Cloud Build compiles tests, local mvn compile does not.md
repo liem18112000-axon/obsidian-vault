@@ -1,10 +1,22 @@
 ---
-title: "Run mvn test-compile after changing a record/ctor signature — Cloud Build compiles tests, local mvn compile does not"
+ai_hash: b0bc2aea298d299f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: LUZ-154613 session 2026-06-16
 status: seedling
-source: "LUZ-154613 session 2026-06-16"
-tags: [java, maven, cloud-build, records, testing, gotcha, luz-docs]
+tags:
+- java
+- maven
+- cloud-build
+- records
+- testing
+- gotcha
+- luz-docs
+title: Run mvn test-compile after changing a record/ctor signature — Cloud Build compiles
+  tests, local mvn compile does not
+type: lesson
 ---
 
 # Run mvn test-compile after changing a record/ctor signature — Cloud Build compiles tests, local mvn compile does not
@@ -18,3 +30,14 @@ Adjacent: when a record gains a field that is random/non-deterministic (_shard),
 ## Related
 
 - [[1 Projects/luz-docs/materialize/Partition the materialized count on a uniform _countShard int, not _id]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run the full affected test package locally, not a hand-picked subset]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[Adding a field to a Java record breaks all factory and constructor calls in tests]]
+- [[Luz gates must inject per-package Allowlist beans not static Campaign isAffectedFor]]
+
+%% ai-graph-end %%

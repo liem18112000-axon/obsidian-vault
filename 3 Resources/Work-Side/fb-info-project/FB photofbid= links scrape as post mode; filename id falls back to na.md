@@ -1,10 +1,18 @@
 ---
-title: "FB /photo/?fbid= links scrape as post mode; filename id falls back to na"
+ai_hash: f5a444a5bf021e99
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: observation
+entities: []
+source: live run 2026-06-14
 status: seedling
-source: "live run 2026-06-14"
-tags: [fb-info-project, facebook, url-parsing, gotcha]
+tags:
+- fb-info-project
+- facebook
+- url-parsing
+- gotcha
+title: FB /photo/?fbid= links scrape as post mode; filename id falls back to na
+type: observation
 ---
 
 # FB /photo/?fbid= links scrape as post mode; filename id falls back to na
@@ -18,3 +26,14 @@ Confirmed by a live run on 2026-06-14: `/photo/?fbid=2218458972230714` -> `outpu
 ## Related
 
 - [[3 Resources/Work-Side/fb-info-project/Stale FB session signature login popup + profile 302 to login + empty location columns]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stale FB session signature login popup + profile 302 to login + empty location columns]]
+- [[fb-info-project merges bare-id 'profile UUID' inputs into one combined workbook]]
+- [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
+- [[Facebook page userID is the viewer not the profile owner]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Model options for detecting violent text by weight class"
+ai_hash: 77318239bfbfb6d8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: howto
+entities: []
+source: web research session 2026-07-20
 status: seedling
-source: "web research session 2026-07-20"
-tags: [content-moderation, huggingface, llm-safety, models]
+tags:
+- content-moderation
+- huggingface
+- llm-safety
+- models
+title: Model options for detecting violent text by weight class
+type: howto
 ---
 
 # Model options for detecting violent text by weight class
@@ -22,3 +30,12 @@ Whichever is chosen, the threshold must be calibrated on labeled examples from t
 
 - [[3 Resources/AI/Safety/Violence detection needs a trained classifier, not keyword lists]]
 - [[Moderation taxonomies split violence into subtypes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Moderation taxonomies split violence into subtypes]]
+- [[Violence detection needs a trained classifier, not keyword lists]]
+- [[Property damage falls outside person-directed violence taxonomies]]
+
+%% ai-graph-end %%

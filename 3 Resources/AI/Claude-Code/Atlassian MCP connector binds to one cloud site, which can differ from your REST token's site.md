@@ -1,12 +1,23 @@
 ---
-title: "Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site"
-created: 2026-07-23
-type: lesson
-status: seedling
-source: "sessions 2026-07-23 (Kepler / LUZ tickets)"
-tags: [claude-code, atlassian, jira, mcp, gotcha, kepler]
+ai_hash: d38e94af8e1800fd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Atlassian MCP grant is per-site - axonivy.atlassian.net not covered
+- Atlassian MCP grant is per-site - axonivy.atlassian.net not covered
+created: 2026-07-23
+entities: []
+source: sessions 2026-07-23 (Kepler / LUZ tickets)
+status: seedling
+tags:
+- claude-code
+- atlassian
+- jira
+- mcp
+- gotcha
+- kepler
+title: Atlassian MCP connector binds to one cloud site, which can differ from your
+  REST token's site
+type: lesson
 ---
 
 # Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site
@@ -25,3 +36,14 @@ The nastier variant is a **silent split** when the app also talks to Jira via a 
 
 - [[Jira issue HTML export view bypasses missing MCP grant]]
 - [[Long agentic API routes need the inner run timeout below the route maxDuration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Jira issue HTML export view bypasses missing MCP grant]]
+- [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
+- [[Vinnstack's Jira client avoids the Atlassian MCP connector]]
+- [[Headless claude exit 0 does not mean the operation succeeded]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+
+%% ai-graph-end %%

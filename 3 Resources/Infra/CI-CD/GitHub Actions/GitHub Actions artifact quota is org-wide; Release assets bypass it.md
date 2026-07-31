@@ -1,11 +1,21 @@
 ---
-title: "GitHub Actions artifact quota is org-wide; Release assets bypass it"
+ai_hash: f91428472c84a4fb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-updated: 2026-07-31
-type: lesson
+entities: []
+source: session 2026-06-19 HoSoBaiGiang; session 2026-06-21 fb-info-project build-exe.yml
 status: seedling
-source: "session 2026-06-19 HoSoBaiGiang; session 2026-06-21 fb-info-project build-exe.yml"
-tags: [github-actions, ci, gotcha, artifacts, releases, storage]
+tags:
+- github-actions
+- ci
+- gotcha
+- artifacts
+- releases
+- storage
+title: GitHub Actions artifact quota is org-wide; Release assets bypass it
+type: lesson
+updated: 2026-07-31
 ---
 
 # GitHub Actions artifact quota is org-wide; Release assets bypass it
@@ -35,3 +45,14 @@ gh api repos/{owner}/{repo}/actions/artifacts --paginate --jq '.artifacts[].id' 
 - [[GitHub Actions artifacts need login to download; Release assets do not]]
 - [[GitHub Release assets are capped at 2 GiB per file]]
 - [[GitHub Actions Node 20 deprecation warning from v4 actions is harmless noise]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Actions artifacts need login to download; Release assets do not]]
+- [[GitHub Release assets are capped at 2 GiB per file]]
+- [[Publish every CI build via a rolling latest pre-release on GitHub]]
+- [[GitHub Actions Node 20 deprecation warning from v4 actions is harmless noise]]
+- [[GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags]]
+
+%% ai-graph-end %%

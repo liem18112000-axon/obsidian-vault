@@ -1,10 +1,19 @@
 ---
-title: "git reset --hard overwrites local-only edits to tracked files; back them up first"
+ai_hash: b0df94893ec52e0e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: fb-info-project rollback, session 2026-06-30
 status: seedling
-source: "fb-info-project rollback, session 2026-06-30"
-tags: [git, reset, gotcha, safety]
+tags:
+- git
+- reset
+- gotcha
+- safety
+title: git reset --hard overwrites local-only edits to tracked files; back them up
+  first
+type: lesson
 ---
 
 # git reset --hard overwrites local-only edits to tracked files; back them up first
@@ -24,3 +33,14 @@ Also: a hard reset that drops commits is reversible — the dropped commits live
 ## Related
 
 - [[fb-info-project]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A concurrent session's git stash can silently revert your in-progress edits]]
+- [[Pre-staged files silently merge selective commit batches - check the index first]]
+- [[FETCH_HEAD is volatile when an IDE auto-fetches]]
+- [[Apply one feature from a stale branch without reverting newer work (checkout ref -- paths)]]
+- [[Re-check live dependencies right before committing in a shared repo]]
+
+%% ai-graph-end %%

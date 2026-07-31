@@ -1,10 +1,19 @@
 ---
-title: "Idempotent link minting with content-hash cache keys"
+ai_hash: 534c689c7e20e2d0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: howto
+entities: []
+source: session 2026-06-11, accesstrade_integration repo
 status: seedling
-source: "session 2026-06-11, accesstrade_integration repo"
-tags: [affiliate, accesstrade, idempotency, caching, python]
+tags:
+- affiliate
+- accesstrade
+- idempotency
+- caching
+- python
+title: Idempotent link minting with content-hash cache keys
+type: howto
 ---
 
 # Idempotent link minting with content-hash cache keys
@@ -22,3 +31,14 @@ This implements the idempotent-writes practice from [[Affiliate API engineering 
 - [[Accesstrade tracking link creation]]
 - [[Affiliate API engineering best practices]]
 - [[Accesstrade SubID attribution]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Affiliate API engineering best practices]]
+- [[Accesstrade tracking link creation]]
+- [[Use case - bulk tracking link generation]]
+- [[An optimization-only cache should fail soft, never raise on backend errors]]
+- [[Affiliate content-brief generator produces the grounded skeleton, not the prose]]
+
+%% ai-graph-end %%

@@ -1,10 +1,54 @@
 ---
-title: "Levers to optimise the visible-document count beyond _shard fan-out"
+ai_hash: 2cbf70db156d6666
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: argument
+entities:
+- visible-document count
+- _shard fan-out
+- CACHE
+- luz_cache
+- tenant
+- code-set
+- cascade hooks
+- BITMAP UNION
+- Roaring exact
+- HLL approx
+- per-code bitmaps
+- doc-id↔int map
+- COUNT_SCAN
+- FETCH
+- explain
+- gateway query
+- folderIds
+- mediaType
+- index
+- CONNECTION POOL
+- K concurrent sub-counts
+- jsonstore
+- Mongo
+- READ-REPLICA routing
+- read-preference knob
+- frozen gateway
+- Bigger pod
+- more cores
+- exact totals
+- UI
+- approximate totals
+- Dev benchmark _shard count fan-out project
+- Visible-document count as cardinality of a bitmap union resource
+- Act order
+source: LUZ-154613 session 2026-06-17
 status: seedling
-source: "LUZ-154613 session 2026-06-17"
-tags: [luz-docs, performance, count, caching, roaring, index]
+tags:
+- luz-docs
+- performance
+- count
+- caching
+- roaring
+- index
+title: Levers to optimise the visible-document count beyond _shard fan-out
+type: argument
 ---
 
 # Levers to optimise the visible-document count beyond _shard fan-out
@@ -25,3 +69,54 @@ Act order: (3) explain → (1) cache → (4) pool → then (2) bitmap vs (7) app
 
 - [[1 Projects/luz-docs/materialize/Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
 - [[3 Resources/Work-Kepler/luz-docs/count-optimize/Visible-document count as cardinality of a bitmap union]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Visible-document count as cardinality of a bitmap union]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+
+**Relations:**
+- visible-document count — *optimized beyond* — _shard fan-out
+- _shard fan-out — *capped at* — ~1.8x
+- CACHE — *optimizes* — visible-document count
+- CACHE — *uses* — luz_cache
+- luz_cache — *keyed by* — tenant
+- luz_cache — *keyed by* — code-set
+- CACHE — *invalidated by* — cascade hooks
+- BITMAP UNION — *optimizes* — visible-document count
+- BITMAP UNION — *is a type of* — Roaring exact
+- BITMAP UNION — *is a type of* — HLL approx
+- BITMAP UNION — *requires* — per-code bitmaps
+- BITMAP UNION — *requires* — doc-id↔int map
+- COUNT_SCAN — *preferred over* — FETCH
+- explain — *analyzes* — gateway query
+- folderIds — *can force* — FETCH
+- mediaType — *can force* — FETCH
+- index — *enables* — COUNT_SCAN
+- CONNECTION POOL — *optimizes* — visible-document count
+- CONNECTION POOL — *supports* — K concurrent sub-counts
+- K concurrent sub-counts — *needs* — jsonstore
+- K concurrent sub-counts — *needs* — Mongo
+- READ-REPLICA routing — *optimizes* — visible-document count
+- READ-REPLICA routing — *needs* — read-preference knob
+- READ-REPLICA routing — *on* — frozen gateway
+- Bigger pod — *optimizes* — visible-document count
+- more cores — *optimizes* — visible-document count
+- Bigger pod — *raises* — _shard fan-out
+- more cores — *raises* — _shard fan-out
+- approximate totals — *optimizes* — visible-document count
+- UI — *uses* — approximate totals
+- UI — *caps at* — '999+'
+- Dev benchmark _shard count fan-out project — *related to* — _shard fan-out
+- Visible-document count as cardinality of a bitmap union resource — *related to* — BITMAP UNION
+- explain — *is first step in* — Act order
+- CACHE — *is second step in* — Act order
+- CONNECTION POOL — *is third step in* — Act order
+- BITMAP UNION — *is fourth step in* — Act order
+- approximate totals — *is fourth step in* — Act order
+
+%% ai-graph-end %%

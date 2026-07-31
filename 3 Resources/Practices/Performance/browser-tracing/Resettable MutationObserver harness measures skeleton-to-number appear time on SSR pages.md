@@ -1,10 +1,20 @@
 ---
-title: "Resettable MutationObserver harness measures skeleton-to-number appear time on SSR pages"
+ai_hash: 6f97cf2ebfaf54d1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: howto
+entities: []
+source: session 2026-07-21
 status: seedling
-source: "session 2026-07-21"
-tags: [playwright, performance, earchive, mutationobserver, luz-docs]
+tags:
+- playwright
+- performance
+- earchive
+- mutationobserver
+- luz-docs
+title: Resettable MutationObserver harness measures skeleton-to-number appear time
+  on SSR pages
+type: howto
 ---
 
 # Resettable MutationObserver harness measures skeleton-to-number appear time on SSR pages
@@ -18,3 +28,14 @@ Used in `luz_docs/docs/performance-test-800k/end-to-end-tools/trace-earchive.js`
 ## Related
 
 - [[eArchive front-end trace tool]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure component render timing with Playwright addInitScript]]
+- [[eArchive perf test plan 5 scenarios, all automated by trace tool]]
+- [[eArchive page DOM selectors (performance automation)]]
+- [[eArchive counter metrics timed from page-load start to skeleton replacement]]
+- [[eArchive count skeleton CSS classes are the reliable counts-loaded signal]]
+
+%% ai-graph-end %%

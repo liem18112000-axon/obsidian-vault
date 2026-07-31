@@ -1,10 +1,18 @@
 ---
-title: "Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures"
+ai_hash: 6eebcd97812b6273
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: gotcha
+entities: []
+source: session 2026-06-05 LUZ-154804
 status: seedling
-source: "session 2026-06-05 LUZ-154804"
-tags: [mockito, strict-stubs, unit-testing, gotcha]
+tags:
+- mockito
+- strict-stubs
+- unit-testing
+- gotcha
+title: Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures
+type: gotcha
 ---
 
 # Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures
@@ -26,3 +34,14 @@ Related: [[luz_docs materialize passive retry via cascade markers]]
 ## Related
 
 - [[luz_docs materialize passive retry via cascade markers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mockito strict stubbing turns removed production calls into UnnecessaryStubbingException test failures]]
+- [[Mockito helper that stubs must not run inside an outer when().thenReturn() argument]]
+- [[A merged-in test breaks when the target branch's service gained a new injected dependency]]
+- [[MicroProfile Fallback is dead in plain Mockito unit tests]]
+- [[Mockito @InjectMocks by type stale @Mock after @RestClient swap leaves real field null]]
+
+%% ai-graph-end %%

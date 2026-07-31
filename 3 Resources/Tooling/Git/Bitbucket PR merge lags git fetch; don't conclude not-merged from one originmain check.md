@@ -1,10 +1,20 @@
 ---
-title: "Bitbucket PR merge lags git fetch; don't conclude not-merged from one origin/main check"
+ai_hash: 7c0b86fc73ea4647
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-18
 status: seedling
-source: "Vinnstack session 2026-07-18"
-tags: [git, bitbucket, ci, gotcha, vinnstack]
+tags:
+- git
+- bitbucket
+- ci
+- gotcha
+- vinnstack
+title: Bitbucket PR merge lags git fetch; don't conclude not-merged from one origin/main
+  check
+type: lesson
 ---
 
 # Bitbucket PR merge lags git fetch; don't conclude not-merged from one origin/main check
@@ -18,3 +28,13 @@ Related: a background merge-watcher that polls `origin/main` for advancement is 
 ## Related
 
 - [[2 Areas/Vinnstack/Vinnstack release push to main triggers Cloud Build which publishes to GCS latest auto-update channel]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[FETCH_HEAD is volatile when an IDE auto-fetches]]
+- [[gh CLI is GitHub-only, not Bitbucket-aware]]
+- [[Bitbucket Cloud pull-request REST API shape]]
+- [[Bitbucket Cloud PR comment resolution is presence-of-object, not a boolean]]
+
+%% ai-graph-end %%

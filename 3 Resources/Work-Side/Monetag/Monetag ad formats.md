@@ -1,17 +1,21 @@
 ---
-title: Monetag ad formats
-created: 2026-06-12
-type: term
-status: seedling
-source: research session 2026-06-12
-tags:
-  - monetag
-  - ad-network
-  - ad-formats
+ai_hash: 9d115a05d5bb5cb0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Monetag formats
-  - MultiTag
-  - Monetag popunder push
+- Monetag formats
+- MultiTag
+- Monetag popunder push
+created: 2026-06-12
+entities: []
+source: research session 2026-06-12
+status: seedling
+tags:
+- monetag
+- ad-network
+- ad-formats
+title: Monetag ad formats
+type: term
 ---
 
 # Monetag ad formats
@@ -42,3 +46,14 @@ aliases:
 - [[Monetag SSP API and integration]]
 - [[Monetag overview]]
 - [[Monetag - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monetag - MOC]]
+- [[Monetag overview]]
+- [[Monetag SSP API and integration]]
+- [[Ad network vs affiliate network]]
+- [[Monetag referral program]]
+
+%% ai-graph-end %%

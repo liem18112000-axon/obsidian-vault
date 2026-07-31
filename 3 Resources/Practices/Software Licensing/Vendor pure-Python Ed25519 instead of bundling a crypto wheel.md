@@ -1,10 +1,18 @@
 ---
-title: "Vendor pure-Python Ed25519 instead of bundling a crypto wheel"
+ai_hash: 3396c501f01d9818
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-14
 status: seedling
-source: "fb-info-project session 2026-06-14"
-tags: [ed25519, pyinstaller, packaging, cryptography]
+tags:
+- ed25519
+- pyinstaller
+- packaging
+- cryptography
+title: Vendor pure-Python Ed25519 instead of bundling a crypto wheel
+type: lesson
 ---
 
 # Vendor pure-Python Ed25519 instead of bundling a crypto wheel
@@ -20,3 +28,13 @@ Same "stdlib-only to keep the bundle clean" trade-off applies to any optional fe
 ## Related
 
 - [[Offline signed-token licensing for distributed binaries]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline signed-token licensing for distributed binaries]]
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+- [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+
+%% ai-graph-end %%

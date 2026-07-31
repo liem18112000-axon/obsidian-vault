@@ -1,10 +1,18 @@
 ---
-title: "Copy shared model objects before aggregating them for a view"
+ai_hash: 42bc5bf95e1bf8a1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: session 2026-06-23 LUZ Detailnachweis aggregation
 status: seedling
-source: "session 2026-06-23 LUZ Detailnachweis aggregation"
-tags: [design, immutability, gotcha, java]
+tags:
+- design
+- immutability
+- gotcha
+- java
+title: Copy shared model objects before aggregating them for a view
+type: lesson
 ---
 
 # Copy shared model objects before aggregating them for a view
@@ -22,3 +30,13 @@ In the Luz detail-PDF aggregation, the `InvoiceItem`'s `Billing` list is also re
 ## Related
 
 - [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+- [[Use Lombok toBuilder for a shallow model copy, not manual setters or deep clone]]
+- [[Aggregation collapses rows only if the key excludes per-record-unique fields]]
+- [[Stimulsoft billingDetail mrt already had the MengeQuantity column and Calc columns]]
+
+%% ai-graph-end %%

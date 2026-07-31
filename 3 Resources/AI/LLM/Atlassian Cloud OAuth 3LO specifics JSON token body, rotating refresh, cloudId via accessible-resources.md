@@ -1,10 +1,20 @@
 ---
-title: "Atlassian Cloud OAuth 3LO specifics: JSON token body, rotating refresh, cloudId via accessible-resources"
+ai_hash: 4a981eafab595fa1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: session 2026-07-01
 status: seedling
-source: "session 2026-07-01"
-tags: [oauth, atlassian, jira, confluence, vinnstack]
+tags:
+- oauth
+- atlassian
+- jira
+- confluence
+- vinnstack
+title: 'Atlassian Cloud OAuth 3LO specifics: JSON token body, rotating refresh, cloudId
+  via accessible-resources'
+type: lesson
 ---
 
 # Atlassian Cloud OAuth 3LO specifics: JSON token body, rotating refresh, cloudId via accessible-resources
@@ -21,3 +31,14 @@ One-time setup: register an app at developer.atlassian.com with the callback URL
 ## Related
 
 - [[Local-app OAuth bridges the browser callback to the waiting login via an in-memory state-to-resolver map]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Local-app OAuth bridges the browser callback to the waiting login via an in-memory state-to-resolver map]]
+- [[Verifying an API credential 401 means invalid, 403 means valid but scope-limited]]
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
+- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+
+%% ai-graph-end %%

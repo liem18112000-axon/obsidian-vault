@@ -1,10 +1,18 @@
 ---
-title: "SameSite=None cookies require Secure or Chromium drops them"
+ai_hash: 752a8cf3fe6c3e4a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: code-review session 2026-06-10, fb-info-project
 status: seedling
-source: "code-review session 2026-06-10, fb-info-project"
-tags: [cookies, playwright, chromium, gotcha]
+tags:
+- cookies
+- playwright
+- chromium
+- gotcha
+title: SameSite=None cookies require Secure or Chromium drops them
+type: lesson
 ---
 
 # SameSite=None cookies require Secure or Chromium drops them
@@ -18,3 +26,11 @@ See [[JSON null survives str() as 'None' and corrupts lookup-table normalization
 ## Related
 
 - [[JSON null survives str() as 'None' and corrupts lookup-table normalization]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JSON null survives str() as 'None' and corrupts lookup-table normalization]]
+- [[Stale FB session signature login popup + profile 302 to login + empty location columns]]
+
+%% ai-graph-end %%

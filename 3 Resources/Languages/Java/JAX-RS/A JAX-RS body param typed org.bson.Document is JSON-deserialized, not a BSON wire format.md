@@ -1,10 +1,20 @@
 ---
-title: "A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format"
+ai_hash: 50a7b65be4c5d940
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-29
-type: lesson
+entities: []
+source: luz_jsonstore session 2026-07-29
 status: seedling
-source: "luz_jsonstore session 2026-07-29"
-tags: [jax-rs, mongodb, bson, serialization, gotcha]
+tags:
+- jax-rs
+- mongodb
+- bson
+- serialization
+- gotcha
+title: A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON
+  wire format
+type: lesson
 ---
 
 # A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format
@@ -22,3 +32,14 @@ Related: [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consume
 ## Related
 
 - [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation]]
+- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+- [[JSON-P createArrayBuilder(Collection) rejects built JsonValues]]
+- [[luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off]]
+
+%% ai-graph-end %%

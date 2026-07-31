@@ -1,10 +1,20 @@
 ---
-title: "Add response fields tolerant-reader-first when producer and consumer deploy separately"
+ai_hash: 98723a3d4c51f8b8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: lesson
+entities: []
+source: LUZ-157476 implementation plan 2026-07-24
 status: seedling
-source: "LUZ-157476 implementation plan 2026-07-24"
-tags: [rest, jackson, rollout, api-evolution, design-decision]
+tags:
+- rest
+- jackson
+- rollout
+- api-evolution
+- design-decision
+title: Add response fields tolerant-reader-first when producer and consumer deploy
+  separately
+type: lesson
 ---
 
 # Add response fields tolerant-reader-first when producer and consumer deploy separately
@@ -16,3 +26,14 @@ Applied in LUZ-157476 rollout order: 1) luz_store gets the failureCategory field
 ## Related
 - [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
+- [[Payrexx notify webhook dispatches to two consumers, neither forwards decline code]]
+- [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+
+%% ai-graph-end %%

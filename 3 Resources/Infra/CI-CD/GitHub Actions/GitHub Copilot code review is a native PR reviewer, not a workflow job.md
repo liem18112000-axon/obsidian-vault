@@ -1,10 +1,19 @@
 ---
-title: "GitHub Copilot code review is a native PR reviewer, not a workflow job"
+ai_hash: 2dd3bb907bf63623
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml 2026-06-06"
-tags: [github, copilot, code-review, ci, decision]
+tags:
+- github
+- copilot
+- code-review
+- ci
+- decision
+title: GitHub Copilot code review is a native PR reviewer, not a workflow job
+type: lesson
 ---
 
 # GitHub Copilot code review is a native PR reviewer, not a workflow job
@@ -26,3 +35,14 @@ Decision context: in leo-cdp-framework we removed the Gemini review/assistant jo
 
 - [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions continue-on-error step-level goes green, job-level stays red]]
 - [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Google ships an official Gemini CLI GitHub Action for PR review and mentions]]
+- [[Run GitHub Copilot CLI in a GitHub Actions workflow]]
+- [[Re-triggering GitHub Copilot PR review via API and its quota-limit gotcha]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[GitHub Actions default GITHUB_TOKEN does not grant Copilot CLI access]]
+
+%% ai-graph-end %%

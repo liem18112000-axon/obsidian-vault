@@ -1,10 +1,20 @@
 ---
-title: "TalkingHead speakAudio never decodes a single ArrayBuffer before playback"
+ai_hash: fca437d31001c1e0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar session 2026-07-11, static/app.js + TalkingHead source read
+  directly
 status: seedling
-source: "virtual-avatar session 2026-07-11, static/app.js + TalkingHead source read directly"
-tags: [talkinghead, web-audio-api, decodeaudiodata, gotcha, javascript]
+tags:
+- talkinghead
+- web-audio-api
+- decodeaudiodata
+- gotcha
+- javascript
+title: TalkingHead speakAudio never decodes a single ArrayBuffer before playback
+type: lesson
 ---
 
 # TalkingHead speakAudio never decodes a single ArrayBuffer before playback
@@ -27,3 +37,14 @@ General lesson: when a library's documented parameter type is broader than what 
 
 - [[Unguarded top-level await in a module script blocks every statement after it]]
 - [[3 Resources/Visual/3D-Avatars/jsdelivr gh CDN can pin to an exact commit SHA, not just tagsbranches]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Poll a library's public boolean state flags with a grace period when there is no completion callback]]
+- [[TalkingHead requires offline Blender conversion for VRM avatars]]
+- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
+- [[jsdelivr gh CDN can pin to an exact commit SHA, not just tagsbranches]]
+- [[State machines must catch expected-failure operations or they get stuck forever]]
+
+%% ai-graph-end %%

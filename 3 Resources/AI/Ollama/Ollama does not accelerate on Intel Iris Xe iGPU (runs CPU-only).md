@@ -1,10 +1,18 @@
 ---
-title: "Ollama does not accelerate on Intel Iris Xe iGPU (runs CPU-only)"
+ai_hash: 66d0185b60c6f53e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: session 2026-06-30
 status: seedling
-source: "session 2026-06-30"
-tags: [ollama, local-llm, gotcha, hardware]
+tags:
+- ollama
+- local-llm
+- gotcha
+- hardware
+title: Ollama does not accelerate on Intel Iris Xe iGPU (runs CPU-only)
+type: lesson
 ---
 
 # Ollama does not accelerate on Intel Iris Xe iGPU (runs CPU-only)
@@ -18,3 +26,10 @@ Concrete machine where this was confirmed: Intel Core i7-1365U (10-core U-series
 ## Related
 
 - [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+
+%% ai-graph-end %%

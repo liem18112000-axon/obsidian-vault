@@ -1,10 +1,20 @@
 ---
-title: "Bitmap/HLL counts supersede fan-out; they don't combine with it"
+ai_hash: 57122e40170dd21d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: luz_docs LUZ-154613 2026-06-17
 status: seedling
-source: "luz_docs LUZ-154613 2026-06-17"
-tags: [performance, mongodb, bitmap, roaring, hyperloglog, counting]
+tags:
+- performance
+- mongodb
+- bitmap
+- roaring
+- hyperloglog
+- counting
+title: Bitmap/HLL counts supersede fan-out; they don't combine with it
+type: lesson
 ---
 
 # Bitmap/HLL counts supersede fan-out; they don't combine with it
@@ -28,3 +38,14 @@ Gotchas:
 - [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
 - [[3 Resources/Data/MongoDB/Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Visible-document count as cardinality of a bitmap union]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+- [[Levers to optimise the visible-document count beyond _shard fan-out]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+
+%% ai-graph-end %%

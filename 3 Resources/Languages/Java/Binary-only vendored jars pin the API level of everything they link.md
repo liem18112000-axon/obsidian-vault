@@ -1,10 +1,19 @@
 ---
-title: "Binary-only vendored jars pin the API level of everything they link"
+ai_hash: 802a393b30b11d93
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: howto
+entities: []
+source: LEO CDP migration planning, session 2026-06-06
 status: seedling
-source: "LEO CDP migration planning, session 2026-06-06"
-tags: [java, jar, audit, vendored-deps, leo-cdp]
+tags:
+- java
+- jar
+- audit
+- vendored-deps
+- leo-cdp
+title: Binary-only vendored jars pin the API level of everything they link
+type: howto
 ---
 
 # Binary-only vendored jars pin the API level of everything they link
@@ -22,3 +31,14 @@ The same trick audits jars for removed/internal JDK APIs (sun.misc, jdk.internal
 ## Related
 
 - [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+- [[Vert.x 3.9 breaks with hand-pinned Netty 4.1.60+]]
+- [[Vert.x 3.8.5 plus Netty 4.1.44 run on JDK 25 with flags only - LEO CDP empirical result]]
+- [[Baseline-diff gates must compare post-build to post-build when artifacts are committed]]
+- [[Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter resolution]]
+
+%% ai-graph-end %%

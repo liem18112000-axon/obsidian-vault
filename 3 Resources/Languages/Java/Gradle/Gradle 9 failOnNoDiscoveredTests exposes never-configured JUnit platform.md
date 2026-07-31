@@ -1,10 +1,19 @@
 ---
-title: "Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform"
+ai_hash: 86b97253961c4875
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: lesson
+entities: []
+source: LEO CDP CI/test-stage failure, 2026-06-07
 status: seedling
-source: "LEO CDP CI/test-stage failure, 2026-06-07"
-tags: [gradle, gradle9, junit5, testing, gotcha]
+tags:
+- gradle
+- gradle9
+- junit5
+- testing
+- gotcha
+title: Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform
+type: lesson
 ---
 
 # Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform
@@ -14,3 +23,14 @@ Gradle 9 added a `failOnNoDiscoveredTests` check: if test SOURCES exist but the 
 ## Related
 
 - [[Gradle 9 forbids attributes() on declarable configurations in configurations.all]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[junit-platform-launcher needs an explicit version without a junit-bom]]
+- [[Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]
+- [[JUnit5 @BeforeAll must be static - non-static masks every test in the class]]
+- [[Gradle 9 forbids attributes() on declarable configurations in configurations.all]]
+- [[Verify test files still exist on disk before trusting prior green test runs]]
+
+%% ai-graph-end %%

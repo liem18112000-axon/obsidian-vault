@@ -1,10 +1,20 @@
 ---
-title: "Where to find a luz-docs API request body driven from the eArchive UI"
+ai_hash: f35e86bce4d40075
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: lesson
+entities: []
+source: session 2026-07-13 eArchive api_calls capture
 status: seedling
-source: "session 2026-07-13 eArchive api_calls capture"
-tags: [luz-docs, luz-jsonstore, earchive, logging, gotcha, jsf]
+tags:
+- luz-docs
+- luz-jsonstore
+- earchive
+- logging
+- gotcha
+- jsf
+title: Where to find a luz-docs API request body driven from the eArchive UI
+type: lesson
 ---
 
 # Where to find a luz-docs API request body driven from the eArchive UI
@@ -25,3 +35,14 @@ Log sources, in the order to try them:
 
 - [[luz-skill-flow-logs]]
 - [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive request flow and log correlation (perf)]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[01 Overview]]
+- [[search-logic]]
+- [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
+
+%% ai-graph-end %%

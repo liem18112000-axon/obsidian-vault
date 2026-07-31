@@ -1,10 +1,18 @@
 ---
-title: "Mermaid defaults to foreignObject HTML labels, breaking canvas export"
+ai_hash: 031c654eb98557a0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08
 status: seedling
-source: "vinnstack session 2026-07-08"
-tags: [mermaid, svg, canvas, gotcha]
+tags:
+- mermaid
+- svg
+- canvas
+- gotcha
+title: Mermaid defaults to foreignObject HTML labels, breaking canvas export
+type: lesson
 ---
 
 # Mermaid defaults to foreignObject HTML labels, breaking canvas export
@@ -19,3 +27,14 @@ The fix is to disable `htmlLabels` in Mermaid's init config, which falls back to
 
 - [[SVG foreignObject taints a canvas on drawImage]]
 - [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+- [[SVG foreignObject taints a canvas on drawImage]]
+- [[Mermaid text clipping causes useMaxWidth shrink, narrow wrappingWidth, and web-font race]]
+- [[Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering]]
+- [[Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization]]
+
+%% ai-graph-end %%

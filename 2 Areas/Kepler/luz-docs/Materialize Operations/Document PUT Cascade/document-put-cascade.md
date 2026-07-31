@@ -1,46 +1,50 @@
 ---
-ai_hash: 25c3bb366fd9c22a
+ai_hash: 21c0a32eacdcf816
 ai_model: google/gemini-2.5-flash
-ai_updated: '2026-05-30'
+ai_updated: '2026-07-31'
 entities:
 - document-put-cascade
 - Document PUT Cascade
+- Source endpoint
 - '@PUT'
-- '@Path("/{document-id}")'
+- '@Path'
 - Response
-- updateDocumentMetadata
+- DocumentResource.updateDocumentMetadata
 - documentService
 - credentialToken
 - tenantId
 - documentId
 - documents
 - DocumentResource.java
-- C:\Users\dvtliem\Kepler\luz_docs\src\main\java\ch\klara\luz\docs\rest\DocumentResource.java
+- C:\Users\dvtliem\Kepler\luz_docs\src\main\java\ch\klara\luz_docs\rest\DocumentResource.java
 - PUT /{tenantId}/documents/{document-id}
-- document
 - materialized technical fields
-- API entry point
-- Service validation
-- Cascade decision gate
-- Materialized fields computation
+- API Entry Point
+- Service Validation
+- Cascade Decision Gate
+- Materialized Fields Computation
 - Save and Side Effects
 - Failure Paths
 - Files of Record
 - Glossary for Newbies
-- DocumentService.updateDocumentMetadata
 - REST entry point
+- DocumentService.updateDocumentMetadata
 - full document metadata PUT
+- service
 - request
 - folderIds
-- _... fields
-- user
+- technical fields
+- user edits
+- tenant
 - securityClassCode
 - _folderNames
 - _effectiveSecurityClassCodes
 - _isPublic
 - folder rename cascade
+- synchronous
+- derived fields
+- document
 - diagrams/01-put-flow.png
-- Overview diagram
 ---
 
 # Document PUT Cascade
@@ -98,54 +102,57 @@ Unlike folder rename cascade, this `PUT` path is **synchronous**: the derived fi
 %% ai-graph-start %%
 
 **Related notes:**
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
 - [[01 API Entry Point]]
-- [[03 Cascade Decision Gate]]
-- [[08 Glossary for Newbies]]
+- [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]]
 - [[07 Files of Record]]
-- [[02 Service Validation]]
+- [[03 Cascade Decision Gate]]
 
 **Relations:**
-- document-put-cascade — *is a* — Document PUT Cascade
-- updateDocumentMetadata — *is annotated with* — @PUT
-- updateDocumentMetadata — *is annotated with* — @Path("/{document-id}")
-- updateDocumentMetadata — *returns* — Response
-- updateDocumentMetadata — *calls* — documentService.updateDocumentMetadata
-- documentService.updateDocumentMetadata — *takes parameter* — credentialToken
-- documentService.updateDocumentMetadata — *takes parameter* — tenantId
-- documentService.updateDocumentMetadata — *takes parameter* — documentId
-- documentService.updateDocumentMetadata — *takes parameter* — documents
-- updateDocumentMetadata — *is defined in* — DocumentResource.java
-- DocumentResource.java — *located at* — C:\Users\dvtliem\Kepler\luz_docs\src\main\java\ch\klara\luz\docs\rest\DocumentResource.java
-- document-put-cascade — *explains* — PUT /{tenantId}/documents/{document-id}
-- PUT /{tenantId}/documents/{document-id} — *updates* — document
-- PUT /{tenantId}/documents/{document-id} — *recomputes* — materialized technical fields
-- document-put-cascade — *includes* — API entry point
-- document-put-cascade — *includes* — Service validation
-- document-put-cascade — *includes* — Cascade decision gate
-- document-put-cascade — *includes* — Materialized fields computation
-- document-put-cascade — *includes* — Save and Side Effects
-- document-put-cascade — *includes* — Failure Paths
-- document-put-cascade — *includes* — Files of Record
-- document-put-cascade — *includes* — Glossary for Newbies
-- updateDocumentMetadata — *is a* — REST entry point
-- DocumentService.updateDocumentMetadata — *contains logic for* — full document metadata PUT
-- full document metadata PUT — *validates* — request
-- full document metadata PUT — *deduplicates* — folderIds
-- full document metadata PUT — *checks* — folderIds
-- full document metadata PUT — *blocks user edits to* — _... fields
-- full document metadata PUT — *decides recomputation of* — materialized technical fields
-- materialized technical fields — *recomputed if tenant is* — allowlisted
-- materialized technical fields — *recomputed if* — folderIds changed
-- materialized technical fields — *recomputed if* — securityClassCode changed
-- full document metadata PUT — *recomputes* — _folderNames
-- full document metadata PUT — *recomputes* — _effectiveSecurityClassCodes
-- full document metadata PUT — *recomputes* — _isPublic
-- _folderNames — *means* — Folder names in the same order as folderIds
-- _effectiveSecurityClassCodes — *means* — Union of document security codes plus security codes from folders
-- _isPublic — *means* — Whether the document should be considered public
-- PUT /{tenantId}/documents/{document-id} — *is* — synchronous
-- materialized technical fields — *computed before* — document is saved
-- PUT /{tenantId}/documents/{document-id} — *is unlike* — folder rename cascade
-- Overview diagram — *is* — diagrams/01-put-flow.png
+- document-put-cascade — *IS_ABOUT* — Document PUT Cascade
+- Source endpoint — *USES* — @PUT
+- Source endpoint — *USES* — @Path
+- Source endpoint — *RETURNS* — Response
+- Source endpoint — *INVOKES* — DocumentResource.updateDocumentMetadata
+- DocumentResource.updateDocumentMetadata — *IS_DEFINED_IN* — DocumentResource.java
+- DocumentResource.java — *IS_LOCATED_AT* — C:\Users\dvtliem\Kepler\luz_docs\src\main\java\ch\klara\luz_docs\rest\DocumentResource.java
+- DocumentResource.updateDocumentMetadata — *CALLS* — documentService.updateDocumentMetadata
+- documentService.updateDocumentMetadata — *USES* — credentialToken
+- documentService.updateDocumentMetadata — *USES* — tenantId
+- documentService.updateDocumentMetadata — *USES* — documentId
+- documentService.updateDocumentMetadata — *USES* — documents
+- PUT /{tenantId}/documents/{document-id} — *IS_EXPLAINED_BY* — document-put-cascade
+- PUT /{tenantId}/documents/{document-id} — *UPDATES* — document
+- PUT /{tenantId}/documents/{document-id} — *RECOMPUTES* — materialized technical fields
+- document-put-cascade — *HAS_STEP* — API Entry Point
+- document-put-cascade — *HAS_STEP* — Service Validation
+- document-put-cascade — *HAS_STEP* — Cascade Decision Gate
+- document-put-cascade — *HAS_STEP* — Materialized Fields Computation
+- document-put-cascade — *HAS_STEP* — Save and Side Effects
+- document-put-cascade — *HAS_STEP* — Failure Paths
+- document-put-cascade — *HAS_STEP* — Files of Record
+- document-put-cascade — *HAS_STEP* — Glossary for Newbies
+- DocumentResource.updateDocumentMetadata — *IS_A* — REST entry point
+- DocumentService.updateDocumentMetadata — *CONTAINS* — real logic
+- full document metadata PUT — *TRIGGERS* — service
+- service — *VALIDATES* — request
+- service — *DEDUPLICATES* — folderIds
+- service — *CHECKS* — folderIds
+- service — *BLOCKS* — user edits
+- user edits — *TO* — technical fields
+- service — *DECIDES* — materialized fields recomputation
+- materialized fields — *ARE_RECOMPUTED_IF* — tenant is allowlisted
+- materialized fields — *ARE_RECOMPUTED_IF* — folderIds changed
+- materialized fields — *ARE_RECOMPUTED_IF* — securityClassCode changed
+- recomputed fields — *INCLUDE* — _folderNames
+- recomputed fields — *INCLUDE* — _effectiveSecurityClassCodes
+- recomputed fields — *INCLUDE* — _isPublic
+- _folderNames — *DESCRIBES* — Folder names in the same order as folderIds
+- _effectiveSecurityClassCodes — *DESCRIBES* — Union of document security codes plus security codes from folders
+- _isPublic — *DESCRIBES* — Whether the document should be considered public
+- PUT path — *IS* — synchronous
+- derived fields — *ARE_COMPUTED_BEFORE* — document is saved
+- document-put-cascade — *HAS_OVERVIEW_DIAGRAM* — diagrams/01-put-flow.png
+- PUT path — *IS_DIFFERENT_FROM* — folder rename cascade
 
 %% ai-graph-end %%

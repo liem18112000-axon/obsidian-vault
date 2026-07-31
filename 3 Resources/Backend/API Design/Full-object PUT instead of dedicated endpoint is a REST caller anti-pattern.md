@@ -1,10 +1,18 @@
 ---
-title: "Full-object PUT instead of dedicated endpoint is a REST caller anti-pattern"
+ai_hash: 056ef8eeaa33bcae
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: session 2026-07-08, luz-epost-business-web → luz-docs-view-controller audit
 status: seedling
-source: "session 2026-07-08, luz-epost-business-web → luz-docs-view-controller audit"
-tags: [rest-api, code-review, luz, anti-pattern]
+tags:
+- rest-api
+- code-review
+- luz
+- anti-pattern
+title: Full-object PUT instead of dedicated endpoint is a REST caller anti-pattern
+type: lesson
 ---
 
 # Full-object PUT instead of dedicated endpoint is a REST caller anti-pattern
@@ -23,3 +31,14 @@ Instance: `LetterModifyingInteractor.assignSecurityClass` / `unassignSecurityCla
 
 - [[luz-docs folder delete filter double-fetched every subfolder]]
 - [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_epost_business_web to luz_docs_view_controller integration goes through one REST client package]]
+- [[Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]
+- [[Pick the variant matching the data you already hold, not the triggering operation]]
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+
+%% ai-graph-end %%

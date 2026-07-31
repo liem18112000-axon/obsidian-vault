@@ -1,7 +1,16 @@
 ---
-title: luz-docs-statistic get-latest-document-statistic endpoint
-tags: [luz, luz-docs-statistic, kepler, rest-api, integration-test]
+ai_hash: d3deaf149c183607
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
+entities: []
+tags:
+- luz
+- luz-docs-statistic
+- kepler
+- rest-api
+- integration-test
+title: luz-docs-statistic get-latest-document-statistic endpoint
 ---
 
 # luz-docs-statistic — get latest document statistic
@@ -28,3 +37,14 @@ GET {base}/{serviceTenantId}/document-statistic/{tenantId}
 `unmaterializedDocuments`, `totalFolders`, `averageFoldersPerDocument`.
 
 Also: `DELETE {base}/{companyTenantId}/tenant` deletes a tenant's statistic (requires `TENANT_DELETION` permission).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
+- [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
+- [[totalFolders needs a second aggregate because a $facet pipeline is bound to one collection]]
+- [[luz_docs_statistic unmaterializedDocuments metric counts docs missing any materialize sentinel field]]
+
+%% ai-graph-end %%

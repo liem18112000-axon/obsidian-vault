@@ -1,6 +1,14 @@
 ---
-tags: [luz-docs, materialize, gotcha, json]
+ai_hash: d8f3bdb6aba71e29
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-02
+entities: []
+tags:
+- luz-docs
+- materialize
+- gotcha
+- json
 ---
 
 # `userSecurityClassCodes` param must be JSON array text, not comma-separated
@@ -26,3 +34,14 @@ JsonParsing Unexpected char 83 at (line no=1, column no=1, offset=0)
 The pre-existing tests on `kepler/sprint-157/add-new-folder-security-code-materialized-fields` passed comma-separated / bare strings and threw `JsonParsing` in CI — locally they appeared to pass because the surrounding mvn invocation suppressed surefire output. Always check the surefire report, don't trust `mvn -q test` exit codes alone.
 
 Related: [[Parameterize JUnit5 tests across overload variants with Named Function MethodSource]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+- [[Empty per-folder codes means public, not no-access]]
+- [[JsonObjectUtil.convertJsonArrayToListString unwraps JsonString already]]
+- [[flattenArrayAddOps runs only in materialize branch]]
+- [[Parallel arrays in materialize sentinel preserve folderId order]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Jinja inline-if else branch is optional, unlike Python's ternary"
+ai_hash: d53ca210cace94c4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: session 2026-06-14, Copilot PR review analysis
 status: seedling
-source: "session 2026-06-14, Copilot PR review analysis"
-tags: [jinja2, templating, python, code-review, gotcha]
+tags:
+- jinja2
+- templating
+- python
+- code-review
+- gotcha
+title: Jinja inline-if else branch is optional, unlike Python's ternary
+type: lesson
 ---
 
 # Jinja inline-if else branch is optional, unlike Python's ternary
@@ -18,3 +27,10 @@ This is a common false-positive from reviewers/linters (incl. GitHub Copilot, ob
 A gotcha that IS real in the same spot: `{{ value or '' }}` blanks a legitimate falsy value like `0`/`0.0`. For a numeric field that can legitimately be 0, use `{{ value if value is not none else '' }}` instead of `value or ''`.
 
 Verified by rendering with `jinja2.Environment().from_string(...).render(...)` and by a passing page-render test.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

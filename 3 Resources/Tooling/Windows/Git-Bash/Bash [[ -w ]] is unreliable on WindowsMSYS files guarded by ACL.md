@@ -1,10 +1,20 @@
 ---
-title: "Bash [[ -w ]] is unreliable on Windows/MSYS files guarded by ACL"
+ai_hash: fea4d5c6011ccb4f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-05
-type: lesson
+entities: []
+source: session 2026-07-05
 status: seedling
-source: "session 2026-07-05"
-tags: [git-bash, msys, windows, bash, permissions, gotcha]
+tags:
+- git-bash
+- msys
+- windows
+- bash
+- permissions
+- gotcha
+title: Bash [[ -w ]] is unreliable on Windows/MSYS files guarded by ACL
+type: lesson
 ---
 
 # Bash [[ -w ]] is unreliable on Windows/MSYS files guarded by ACL
@@ -31,3 +41,11 @@ Related: there is no `sudo` on Windows, so the usual `[[ -w f ]] || sudo cmd` fa
 ## Related
 
 - [[3 Resources/Tooling/Windows/Git-Bash/Git Bash etchosts is not the Windows hosts file ssh reads]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Git Bash etchosts is not the Windows hosts file ssh reads]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+
+%% ai-graph-end %%

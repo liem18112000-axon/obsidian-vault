@@ -1,10 +1,18 @@
 ---
-title: "Payrexx publishes no catalog of API wrapper error messages"
+ai_hash: 3a9cb7fedc985321
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: observation
+entities: []
+source: web research 2026-07-24
 status: seedling
-source: "web research 2026-07-24"
-tags: [payrexx, documentation, api, luz-157476]
+tags:
+- payrexx
+- documentation
+- api
+- luz-157476
+title: Payrexx publishes no catalog of API wrapper error messages
+type: observation
 ---
 
 # Payrexx publishes no catalog of API wrapper error messages
@@ -18,3 +26,14 @@ Unverified hypothesis worth checking: Payrexx pre-authorizations expire after ~5
 ## Related
 - [[Payrexx ISO 8583 decline code to meaning reference table]]
 - [[Observed Payrexx prose vocabulary in dev is only three messages]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Payrexx delivers decline code only via webhook, not sync response]]
+- [[Payrexx v1.0 charge API returns only status+message on failure — no ISO 8583 code]]
+- [[Payrexx ISO 8583 decline code to meaning reference table]]
+- [[KlaraTransactionRequest.message content is Payrexx prose or runtime exception text, never a mapped constant]]
+- [[PROD shows Stripe under Payrexx and multilingual decline prose]]
+
+%% ai-graph-end %%

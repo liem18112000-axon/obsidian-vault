@@ -1,16 +1,20 @@
 ---
-title: RFC-6902 replace at array index expects a scalar element not an array
-created: 2026-06-02
-type: concept
-status: seedling
-source: RFC 6902 §4.3 + JSON-Patch behaviour observed in luz-docs verifyAndUpdateFolderIds
-tags:
-  - json-patch
-  - rfc-6902
-  - luz-docs
-  - concept
+ai_hash: 8fc87c79a7c9c5b0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - JSON-Patch array index replace semantics
+- JSON-Patch array index replace semantics
+created: 2026-06-02
+entities: []
+source: RFC 6902 §4.3 + JSON-Patch behaviour observed in luz-docs verifyAndUpdateFolderIds
+status: seedling
+tags:
+- json-patch
+- rfc-6902
+- luz-docs
+- concept
+title: RFC-6902 replace at array index expects a scalar element not an array
+type: concept
 ---
 
 # RFC-6902 replace at array index expects a scalar element not an array
@@ -45,3 +49,14 @@ Library-level validators that "normalize all values to arrays" silently corrupt 
 - [[flattenArrayAddOps runs only in materialize branch]]
 - [[securityClassCodes scalar string breaks materialize sentinels]]
 - [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[flattenArrayAddOps runs only in materialize branch]]
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+- [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+- [[json-patch-independent-translation-breaks-reset-then-append]]
+- [[JSON-Patch remove-to-replace[] conversion skipped folderIds when another field's remove came first]]
+
+%% ai-graph-end %%

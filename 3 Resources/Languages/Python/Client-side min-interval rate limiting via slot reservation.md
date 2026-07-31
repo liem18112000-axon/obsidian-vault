@@ -1,10 +1,18 @@
 ---
-title: "Client-side min-interval rate limiting via slot reservation"
+ai_hash: 7b3e239e29627f84
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: howto
+entities: []
+source: session 2026-06-11, accesstrade_integration repo
 status: seedling
-source: "session 2026-06-11, accesstrade_integration repo"
-tags: [python, rate-limit, concurrency, testing]
+tags:
+- python
+- rate-limit
+- concurrency
+- testing
+title: Client-side min-interval rate limiting via slot reservation
+type: howto
 ---
 
 # Client-side min-interval rate limiting via slot reservation
@@ -29,3 +37,13 @@ Inject `clock` and `sleep` as constructor params — tests then verify spacing w
 
 - [[Accesstrade API rate limits and pagination]]
 - [[Affiliate API engineering best practices]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Acquire a client-side rate limiter once per call, outside the retry loop]]
+- [[Affiliate API engineering best practices]]
+- [[Accesstrade API rate limits and pagination]]
+- [[Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request window]]
+
+%% ai-graph-end %%

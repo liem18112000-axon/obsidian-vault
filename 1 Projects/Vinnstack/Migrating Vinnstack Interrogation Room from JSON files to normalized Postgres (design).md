@@ -1,10 +1,52 @@
 ---
-title: "Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)"
+ai_hash: b3d6371dfeda3c7e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: argument
+entities:
+- Vinnstack Interrogation Room
+- JSON files
+- PostgreSQL
+- Interrogation
+- lib/interrogationStore.ts
+- epic
+- questions
+- options
+- answers
+- visuals
+- prd
+- revisions
+- stories
+- flows
+- Markdown mirror
+- chat agent
+- git auto-commit
+- DB-only
+- Sync
+- async
+- tsc
+- app/api/interrogation/route.ts
+- lib/interrogationRunner.ts
+- transaction
+- ultracodeRunner
+- VAULT_DIR
+- DATABASE_URL
+- Docker postgres:16
+- db/schema.sql
+- doc/interrogation-persistence-plan.md
+- 3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule
+  for adding one
+source: session 2026-07-02
 status: seedling
-source: "session 2026-07-02"
-tags: [vinnstack, postgres, persistence, migration, interrogation-room]
+tags:
+- vinnstack
+- postgres
+- persistence
+- migration
+- interrogation-room
+title: Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres
+  (design)
+type: argument
 ---
 
 # Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)
@@ -24,3 +66,55 @@ Schema + full plan live in the repo: db/schema.sql and doc/interrogation-persist
 ## Related
 
 - [[3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule for adding one]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+- [[Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)]]
+- [[DB-first-with-file-fallback opt-in Postgres persistence over a file cache]]
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+
+**Relations:**
+- Vinnstack Interrogation Room — *currently uses* — JSON files
+- Vinnstack Interrogation Room — *will migrate to* — PostgreSQL
+- lib/interrogationStore.ts — *manages* — Interrogation
+- Interrogation — *comprises* — epic
+- Interrogation — *comprises* — questions
+- Interrogation — *comprises* — options
+- Interrogation — *comprises* — answers
+- Interrogation — *comprises* — visuals
+- Interrogation — *comprises* — prd
+- Interrogation — *comprises* — revisions
+- Interrogation — *comprises* — stories
+- Interrogation — *comprises* — flows
+- JSON files — *are stored per* — epic
+- Current persistence — *includes* — Markdown mirror
+- Markdown mirror — *is read by* — chat agent
+- Current persistence — *includes* — git auto-commit
+- PostgreSQL — *will be* — fully normalized
+- PostgreSQL — *will be* — DB-only
+- lib/interrogationStore.ts functions — *are currently* — Sync
+- PostgreSQL migration — *makes functions* — async
+- async change — *is a* — type-level breaking change
+- tsc — *identifies* — callers
+- app/api/interrogation/route.ts — *calls* — lib/interrogationStore.ts functions
+- lib/interrogationRunner.ts — *calls* — lib/interrogationStore.ts functions
+- Normalized + aggregate access — *requires* — delete-and-reinsert children
+- delete-and-reinsert children — *occurs in* — one transaction
+- DB-only — *conflicts with* — chat agent's file context
+- chat agent — *reads* — <epic>.md
+- chat agent — *uses* — ultracodeRunner
+- ultracodeRunner — *uses* — VAULT_DIR
+- Solution for chat agent — *is to regenerate* — <epic>.md
+- <epic>.md — *is a* — READ-ONLY projection
+- DB — *is the* — source of truth
+- DB-only — *requires* — reachable Postgres
+- DB-only — *requires* — DATABASE_URL
+- Prerequisite — *is to provision* — Docker postgres:16
+- Schema — *is defined in* — db/schema.sql
+- Full plan — *is documented in* — doc/interrogation-persistence-plan.md
+- Current note — *is related to* — 3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule for adding one
+
+%% ai-graph-end %%

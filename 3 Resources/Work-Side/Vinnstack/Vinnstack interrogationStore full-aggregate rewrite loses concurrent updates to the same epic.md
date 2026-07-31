@@ -1,10 +1,20 @@
 ---
-title: "Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic"
+ai_hash: f70d03ebe062c3b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-07
 status: seedling
-source: "Vinnstack session 2026-07-07"
-tags: [vinnstack, postgres, concurrency, race-condition, gotcha]
+tags:
+- vinnstack
+- postgres
+- concurrency
+- race-condition
+- gotcha
+title: Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates
+  to the same epic
+type: lesson
 ---
 
 # Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic
@@ -20,3 +30,14 @@ Relevant because any queueing feature added on top of the Interrogation Room or 
 ## Related
 
 - [[Promise-chain queueTail pattern serializes async jobs with instant enqueue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+- [[Delete-and-reinsert aggregate saves silently cascade-wipe new child tables]]
+- [[Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+
+%% ai-graph-end %%

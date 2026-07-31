@@ -1,10 +1,22 @@
 ---
-title: "Split bulk scans on folderIds.1 exists to separate single-array-element fast path"
+ai_hash: 41510e00ba29a310
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: howto
+entities: []
+source: luz-docs enhance-delete-folder-api, sprint 158 (2026-06-10)
 status: seedling
-source: "luz-docs enhance-delete-folder-api, sprint 158 (2026-06-10)"
-tags: [mongodb, query, arrays, projection, performance, pagination, luz-docs]
+tags:
+- mongodb
+- query
+- arrays
+- projection
+- performance
+- pagination
+- luz-docs
+title: Split bulk scans on folderIds.1 exists to separate single-array-element fast
+  path
+type: howto
 ---
 
 # Split bulk scans on folderIds.1 exists to separate single-array-element fast path
@@ -24,3 +36,14 @@ Pattern from luz-docs folder deletion: single-membership documents need no per-d
 - [[Validate with a count query for violators instead of loading all documents]]
 - [[luz-docs folder delete filter double-fetched every subfolder]]
 - [[Pass fetched objects down recursion instead of IDs to avoid N+1 re-fetch]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+- [[Validate with a count query for violators instead of loading all documents]]
+- [[Batched folder delete strips folder ids via union updateMany]]
+- [[Removing the union of array values per document is safe because absent values are no-ops]]
+- [[luz-docs folder delete filter double-fetched every subfolder]]
+
+%% ai-graph-end %%

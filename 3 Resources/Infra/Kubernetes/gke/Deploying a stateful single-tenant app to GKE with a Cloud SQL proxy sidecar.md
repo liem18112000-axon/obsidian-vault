@@ -1,10 +1,20 @@
 ---
-title: "Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar"
+ai_hash: 906f8ea50b096167
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03
 status: seedling
-source: "session 2026-07-03"
-tags: [gke, kubernetes, cloud-sql, workload-identity, cloudbuild, vinnstack]
+tags:
+- gke
+- kubernetes
+- cloud-sql
+- workload-identity
+- cloudbuild
+- vinnstack
+title: Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar
+type: howto
 ---
 
 # Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar
@@ -23,3 +33,14 @@ cloudbuild.yaml deploy step: test → build → push → `gcloud container clust
 ## Related
 
 - [[Connecting to the Vinnstack Cloud SQL Postgres (vinnstackdb) via the Auth Proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Connecting to the Vinnstack Cloud SQL Postgres (vinnstackdb) via the Auth Proxy]]
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
+- [[Cloud Build GKE deploy get-credentials needs --project for a cross-project cluster]]
+
+%% ai-graph-end %%

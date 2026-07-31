@@ -1,10 +1,19 @@
 ---
-title: "Larger n-grams make a substring ngram index bigger, not smaller"
+ai_hash: 3d9e3fe29ead2c3e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: counter-argument
+entities: []
+source: luz_docs S2-index-size-options.md, 2026-06-30
 status: seedling
-source: "luz_docs S2-index-size-options.md, 2026-06-30"
-tags: [ngram, trigram, index, gotcha, luz-docs]
+tags:
+- ngram
+- trigram
+- index
+- gotcha
+- luz-docs
+title: Larger n-grams make a substring ngram index bigger, not smaller
+type: counter-argument
 ---
 
 # Larger n-grams make a substring ngram index bigger, not smaller
@@ -20,3 +29,14 @@ From luz_docs S2-index-size-options.md, rejected option (Kepler eArchive).
 ## Related
 
 - [[3 Resources/Data/MongoDB/indexing/Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
+- [[Bounded bucketed hashing caps trigram index entries per document]]
+- [[A large secondary index hurts via working-set vs cache, not disk bytes]]
+- [[OCR body text dominates a full-text trigram index]]
+- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+
+%% ai-graph-end %%

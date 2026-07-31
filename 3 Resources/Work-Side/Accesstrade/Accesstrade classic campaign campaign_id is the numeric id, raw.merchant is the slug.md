@@ -1,10 +1,20 @@
 ---
-title: "Accesstrade classic campaign: campaign_id is the numeric id, raw.merchant is the slug"
+ai_hash: 83a9e7c9db7386ab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: Accesstrade integration, session 2026-06-14
 status: seedling
-source: "Accesstrade integration, session 2026-06-14"
-tags: [accesstrade, affiliate, api, gotcha, identifiers]
+tags:
+- accesstrade
+- affiliate
+- api
+- gotcha
+- identifiers
+title: 'Accesstrade classic campaign: campaign_id is the numeric id, raw.merchant
+  is the slug'
+type: lesson
 ---
 
 # Accesstrade classic campaign: campaign_id is the numeric id, raw.merchant is the slug
@@ -25,3 +35,14 @@ The cached `campaigns` table stores `campaign_id` (numeric) as the key and keeps
 `raw.type` hints at the campaign kind: `type=3` is **CPS** (cost-per-sale, e-commerce) and these carry a reward % and *usually* have a product datafeed; `type=1`/`2` are landing-page / app-offer campaigns with **no** datafeed. But **reward % is NOT a reliable proxy for datafeed presence** — observed: `tiktok_cps` (type 3, 20% reward, highest) returns **0** products, while `tikivn` and `concung` return 8. So to default a UI to "a campaign that has products" you must actually **probe the datafeed** (a cheap 1-row/1-page peek per candidate), not just sort by reward. Probe highest-reward-first and cap the number of probes to bound latency.
 
 Related: [[Mounting host gcloud ADC into a container to authenticate Vertex AI]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade Campaigns API]]
+- [[Affiliate content-brief generator produces the grounded skeleton, not the prose]]
+- [[Accesstrade tracking link creation]]
+- [[Use case - campaign discovery and datafeed content briefs]]
+- [[Accesstrade Datafeeds API]]
+
+%% ai-graph-end %%

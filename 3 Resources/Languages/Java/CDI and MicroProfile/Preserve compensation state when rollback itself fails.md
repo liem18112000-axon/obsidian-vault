@@ -1,10 +1,23 @@
 ---
-title: "Preserve compensation state when rollback itself fails"
+ai_hash: dab53f069b2bbacd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-03
-type: lesson
+entities: []
+source: luz_docs session 2026-06-03 LUZ-154159
 status: seedling
-source: "luz_docs session 2026-06-03 LUZ-154159"
-tags: [java, cdi, microprofile-fault-tolerance, rollback, compensation, saga, snapshot, observability, luz-docs]
+tags:
+- java
+- cdi
+- microprofile-fault-tolerance
+- rollback
+- compensation
+- saga
+- snapshot
+- observability
+- luz-docs
+title: Preserve compensation state when rollback itself fails
+type: lesson
 ---
 
 # Preserve compensation state when rollback itself fails
@@ -67,3 +80,14 @@ void onAttemptExhausted(..., String snapshotId) {   // @Fallback
 
 - [[Snapshot for rollback must live outside retry boundary]]
 - [[CDI self-invocation bypasses interceptor proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Snapshot for rollback must live outside retry boundary]]
+- [[Cascade-marker pattern for crash-safe async retry]]
+- [[luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[luz_docs materialize passive retry via cascade markers]]
+
+%% ai-graph-end %%

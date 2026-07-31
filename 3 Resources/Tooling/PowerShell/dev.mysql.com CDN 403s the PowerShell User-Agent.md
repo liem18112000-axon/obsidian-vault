@@ -1,10 +1,19 @@
 ---
-title: "dev.mysql.com CDN 403s the PowerShell User-Agent"
+ai_hash: 8a377893e8628228
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: session 2026-06-17
 status: seedling
-source: "session 2026-06-17"
-tags: [powershell, downloads, curl, gotcha, mysql]
+tags:
+- powershell
+- downloads
+- curl
+- gotcha
+- mysql
+title: dev.mysql.com CDN 403s the PowerShell User-Agent
+type: lesson
 ---
 
 # dev.mysql.com CDN 403s the PowerShell User-Agent
@@ -18,3 +27,11 @@ The nasty part: `Invoke-WebRequest -OutFile` **silently saves the HTML error pag
 ## Related
 
 - [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[download.blender.org rejects default urllib User-Agent]]
+- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]
+
+%% ai-graph-end %%

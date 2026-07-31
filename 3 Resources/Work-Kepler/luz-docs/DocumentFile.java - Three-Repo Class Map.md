@@ -1,10 +1,19 @@
 ---
-title: "DocumentFile.java - Three-Repo Class Map"
+ai_hash: 016e530f67ba9dc2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: observation
+entities: []
+source: session 2026-07-07
 status: seedling
-source: "session 2026-07-07"
-tags: [java, code-graph, luz_docs, luz_enrichment, dependency-analysis]
+tags:
+- java
+- code-graph
+- luz_docs
+- luz_enrichment
+- dependency-analysis
+title: DocumentFile.java - Three-Repo Class Map
+type: observation
 ---
 
 # DocumentFile.java - Three-Repo Class Map
@@ -42,3 +51,14 @@ The filename `DocumentFile.java` is shared across three unrelated packages in th
 ## Open questions
 
 - The luz_docs graph view truncated 7 outgoing edges — fetch via Bitbucket read tools if the full field-type list is needed.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[07 Files of Record]]
+- [[luz_epost_business_web to luz_docs_view_controller integration goes through one REST client package]]
+- [[06 Files of Record]]
+- [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
+- [[document-put-cascade]]
+
+%% ai-graph-end %%

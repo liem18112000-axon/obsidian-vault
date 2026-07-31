@@ -1,10 +1,18 @@
 ---
-title: "Decouple internal PK from external ticket ID for draft-before-push records"
+ai_hash: a9b76034d05891bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08
 status: seedling
-source: "vinnstack session 2026-07-08"
-tags: [architecture, data-modeling, jira, integration]
+tags:
+- architecture
+- data-modeling
+- jira
+- integration
+title: Decouple internal PK from external ticket ID for draft-before-push records
+type: lesson
 ---
 
 # Decouple internal PK from external ticket ID for draft-before-push records
@@ -23,3 +31,14 @@ In the vinnstack Interrogation Room, a Jira Story's `key` used to always be its 
 
 ## Related
 - [[Vinnstack Interrogation Room]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[New ID formats silently break regex validators elsewhere that assumed the old shape]]
+- [[Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Vinnstack story flows keep only the latest version - history lives in md_exports snapshots]]
+
+%% ai-graph-end %%

@@ -1,10 +1,22 @@
 ---
-title: "Terraform S3 backend on a non-AWS store (vStorage/MinIO) needs skip-checks + path-style"
+ai_hash: 39c544b990bbc5eb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: howto
+entities: []
+source: appsflyer-data-connector IaC appendix, 2026-06-24
 status: seedling
-source: "appsflyer-data-connector IaC appendix, 2026-06-24"
-tags: [terraform, backend, s3, vstorage, vngcloud, minio, state]
+tags:
+- terraform
+- backend
+- s3
+- vstorage
+- vngcloud
+- minio
+- state
+title: Terraform S3 backend on a non-AWS store (vStorage/MinIO) needs skip-checks
+  + path-style
+type: howto
 ---
 
 # Terraform S3 backend on a non-AWS store (vStorage/MinIO) needs skip-checks + path-style
@@ -32,3 +44,14 @@ Same skip-checks + path-style pattern applies to ANY non-AWS S3-compatible store
 ## Related
 
 - [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO swap)]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+- [[AppsFlyer connector S3 config is vStorage-only - VSTORAGE_ env vars]]
+- [[MinIO server creds (ROOT_USERPASSWORD) are distinct env vars from the S3 client creds (ACCESS_KEYSECRET_KEY)]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+
+%% ai-graph-end %%

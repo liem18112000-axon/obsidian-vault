@@ -1,17 +1,21 @@
 ---
-title: Accesstrade Campaigns API
-created: 2026-06-11
-type: term
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - campaigns
+ai_hash: 3aa4f504c9933277
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade campaigns endpoint
-  - Accesstrade join campaign
+- Accesstrade campaigns endpoint
+- Accesstrade join campaign
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- campaigns
+title: Accesstrade Campaigns API
+type: term
 ---
 
 # Accesstrade Campaigns API
@@ -59,3 +63,14 @@ This is the natural first step for a Claude skill: *"find RUNNING campaigns in <
 - [[Accesstrade Datafeeds API]]
 - [[Use case - campaign discovery and datafeed content briefs]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade API Integration - MOC]]
+- [[Accesstrade affiliate network overview]]
+- [[Use case - campaign discovery and datafeed content briefs]]
+- [[Accesstrade Datafeeds API]]
+- [[Use case - bulk tracking link generation]]
+
+%% ai-graph-end %%

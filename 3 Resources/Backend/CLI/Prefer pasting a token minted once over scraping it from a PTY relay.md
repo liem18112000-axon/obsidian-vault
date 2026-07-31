@@ -1,10 +1,19 @@
 ---
-title: "Prefer pasting a token minted once over scraping it from a PTY relay"
+ai_hash: 0bfa018ea689890d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-06
-type: decision
+entities: []
+source: vinnstack dev claude auth 2026-07-06, 401 Invalid bearer token
 status: seedling
-source: "vinnstack dev claude auth 2026-07-06, 401 Invalid bearer token"
-tags: [oauth, token-capture, relay, claude-cli, vinnstack]
+tags:
+- oauth
+- token-capture
+- relay
+- claude-cli
+- vinnstack
+title: Prefer pasting a token minted once over scraping it from a PTY relay
+type: decision
 ---
 
 # Prefer pasting a token minted once over scraping it from a PTY relay
@@ -17,3 +26,14 @@ Robust alternative: let the human mint the token ONCE in a real terminal where t
 
 - [[Claude CLI OAuth paste-back expects CODE#STATE]]
 - [[not the bare authorization code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
+- [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+- [[Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]
+
+%% ai-graph-end %%

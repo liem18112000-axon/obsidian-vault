@@ -1,10 +1,19 @@
 ---
-title: "jwt-service token endpoints and replicas (Luz prod)"
+ai_hash: 2991822e776fe68b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: concept
+entities: []
+source: PROD jwt-service investigation 2026-06-30
 status: seedling
-source: "PROD jwt-service investigation 2026-06-30"
-tags: [luz, jwt-service, security, prod, endpoints]
+tags:
+- luz
+- jwt-service
+- security
+- prod
+- endpoints
+title: jwt-service token endpoints and replicas (Luz prod)
+type: concept
 ---
 
 # jwt-service token endpoints and replicas (Luz prod)
@@ -23,3 +32,14 @@ Many Luz services depend on it to mint tokens, so jwt-service latency fans out w
 
 - [[Luz caller read-timeout settings to jwt-service]]
 - [[Istio DC response_flag with round latency = caller read timeout]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz caller read-timeout settings to jwt-service]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+- [[Klara app API-key to token exchange flow (jwt-service to luztenant-service)]]
+- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
+
+%% ai-graph-end %%

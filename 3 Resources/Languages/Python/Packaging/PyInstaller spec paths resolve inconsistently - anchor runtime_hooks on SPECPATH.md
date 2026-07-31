@@ -1,10 +1,18 @@
 ---
-title: "PyInstaller spec paths resolve inconsistently - anchor runtime_hooks on SPECPATH"
+ai_hash: 5c1dafd8cdb2ab71
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: fb-info-project CI failure, session 2026-06-10
 status: seedling
-source: "fb-info-project CI failure, session 2026-06-10"
-tags: [pyinstaller, packaging, ci, gotcha]
+tags:
+- pyinstaller
+- packaging
+- ci
+- gotcha
+title: PyInstaller spec paths resolve inconsistently - anchor runtime_hooks on SPECPATH
+type: lesson
 ---
 
 # PyInstaller spec paths resolve inconsistently - anchor runtime_hooks on SPECPATH
@@ -24,3 +32,12 @@ Related: [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PAT
 ## Related
 
 - [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+- [[PyInstaller needs collect_all for packages that ship non-Python payloads]]
+- [[Black-box E2E test a PyInstaller one-dir app from a temp CWD]]
+
+%% ai-graph-end %%

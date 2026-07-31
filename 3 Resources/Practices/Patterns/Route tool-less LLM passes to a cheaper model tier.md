@@ -1,10 +1,17 @@
 ---
-title: "Route tool-less LLM passes to a cheaper model tier"
+ai_hash: 78203a010bd6d478
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [llm, cost-optimization, architecture]
+tags:
+- llm
+- cost-optimization
+- architecture
+title: Route tool-less LLM passes to a cheaper model tier
+type: lesson
 ---
 
 # Route tool-less LLM passes to a cheaper model tier
@@ -25,3 +32,14 @@ Grep for every distinct LLM call site in a codebase and check tool count per cal
 
 ## Related
 - [[Unrestricted directory mounts for LLM tools risk multi-megabyte single-tool-call reads]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]]
+- [[Unrestricted directory mounts for LLM tools risk multi-megabyte single-tool-call reads]]
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+- [[Unattended AI pipeline - auto-advance to the next human gate inside a night-shift window]]
+
+%% ai-graph-end %%

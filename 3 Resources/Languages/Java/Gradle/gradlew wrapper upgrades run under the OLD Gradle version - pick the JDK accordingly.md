@@ -1,10 +1,18 @@
 ---
-title: "gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly"
+ai_hash: 2494d058627bf561
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: LEO CDP migration Phase 1c, 2026-06-06
 status: seedling
-source: "LEO CDP migration Phase 1c, 2026-06-06"
-tags: [gradle, wrapper, gotcha, jdk25]
+tags:
+- gradle
+- wrapper
+- gotcha
+- jdk25
+title: gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly
+type: lesson
 ---
 
 # gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly
@@ -14,3 +22,14 @@ tags: [gradle, wrapper, gotcha, jdk25]
 ## Related
 
 - [[3 Resources/Languages/Java/Gradle/Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+- [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+- [[String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment]]
+- [[GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH]]
+
+%% ai-graph-end %%

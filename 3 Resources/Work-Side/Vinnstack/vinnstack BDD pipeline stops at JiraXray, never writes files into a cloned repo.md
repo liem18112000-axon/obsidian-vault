@@ -1,10 +1,20 @@
 ---
-title: "vinnstack BDD pipeline stops at Jira/Xray, never writes files into a cloned repo"
+ai_hash: ac3b06d472fa7da1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: observation
+entities: []
+source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
 status: seedling
-source: "vinnstack session 2026-07-11: building implement-bdd-steps skill"
-tags: [vinnstack, bdd, architecture, xray, jira]
+tags:
+- vinnstack
+- bdd
+- architecture
+- xray
+- jira
+title: vinnstack BDD pipeline stops at Jira/Xray, never writes files into a cloned
+  repo
+type: observation
 ---
 
 # vinnstack BDD pipeline stops at Jira/Xray, never writes files into a cloned repo
@@ -20,3 +30,14 @@ Related: [[luz_docs_integration_test has its own AI-driven BDD pipeline (generat
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/integration-test/luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+- [[Vinnstack ai-framework.html is aspirational, not the real code]]
+- [[Vinnstack vinnstack-data-model.html predates the BDD workspace]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+
+%% ai-graph-end %%

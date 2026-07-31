@@ -1,9 +1,18 @@
 ---
-title: "publish.sh ships the vault to the Quartz site in one command"
+ai_hash: cf58eba12f782571
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-05-27
-type: howto
+entities: []
 status: seedling
-tags: [obsidian, quartz, publishing, git-submodule, knowledge-management]
+tags:
+- obsidian
+- quartz
+- publishing
+- git-submodule
+- knowledge-management
+title: publish.sh ships the vault to the Quartz site in one command
+type: howto
 ---
 
 # publish.sh ships the vault to the Quartz site in one command
@@ -28,3 +37,14 @@ Run it from anywhere — the path is absolute. Optional convenience never set up
 ## Related
 
 - [[My knowledge ecosystem Claude hooksskills - Obsidian vault - Quartz wiki + vault-graph (Vertex Graph RAG)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[obsidian-quartz publishes via a content submodule pointer bump]]
+- [[My knowledge ecosystem Claude hooksskills - Obsidian vault - Quartz wiki + vault-graph (Vertex Graph RAG)]]
+- [[Classify local vs upstream with git merge-base to pick ff or rebase]]
+- [[git submodule update --remote can clobber unpushed submodule HEAD]]
+- [[Stage 6 — Advanced Automation]]
+
+%% ai-graph-end %%

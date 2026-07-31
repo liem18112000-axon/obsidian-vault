@@ -1,10 +1,21 @@
 ---
-title: "Unsigned asar:false Electron app: ~30s first-launch delay is Defender scanning loose files"
+ai_hash: dffcc679368503d9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: session 2026-07-15 vinnstack startup profiling
 status: seedling
-source: "session 2026-07-15 vinnstack startup profiling"
-tags: [electron, electron-builder, asar, windows-defender, startup, performance]
+tags:
+- electron
+- electron-builder
+- asar
+- windows-defender
+- startup
+- performance
+title: 'Unsigned asar:false Electron app: ~30s first-launch delay is Defender scanning
+  loose files'
+type: lesson
 ---
 
 # Unsigned asar:false Electron app: ~30s first-launch delay is Defender scanning loose files
@@ -25,3 +36,14 @@ A packaged, UNSIGNED Electron app built with `asar:false` can take tens of secon
 ## Related
 
 - [[electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unsigned NSIS install under Defender ~2min of zero files is pre-scan, not a hang]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap]]
+- [[electron-builder asar requires asarUnpack for native .node addons]]
+- [[electron-updater skips NSIS signature verification when the installed app is unsigned]]
+
+%% ai-graph-end %%

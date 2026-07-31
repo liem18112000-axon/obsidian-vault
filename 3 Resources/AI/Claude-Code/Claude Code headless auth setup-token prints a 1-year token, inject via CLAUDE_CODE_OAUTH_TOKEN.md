@@ -1,10 +1,18 @@
 ---
-title: "Claude Code headless auth: setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN"
+ai_hash: 7239ed69f7754e5b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: reference
+entities: []
+source: session 2026-07-04, claude-code-guide agent
 status: seedling
-source: "session 2026-07-04, claude-code-guide agent"
-tags: [claude-code, auth, headless, ci]
+tags:
+- claude-code
+- auth
+- headless
+- ci
+title: 'Claude Code headless auth: setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN'
+type: reference
 ---
 
 # Claude Code headless auth: setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN
@@ -21,3 +29,14 @@ Design implication: for per-account CLI homes, EITHER relay `auth login` paste-b
 ## Related
 
 - [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
+- [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
+
+%% ai-graph-end %%

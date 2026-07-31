@@ -1,11 +1,23 @@
 ---
-title: "ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node"
-aliases: ["ELECTRON_RUN_AS_NODE=1 in the env makes an Electron exe run as Node and 'look broken' — check/clear it before testing"]
+ai_hash: 1ffbe1e9265f2480
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- ELECTRON_RUN_AS_NODE=1 in the env makes an Electron exe run as Node and 'look broken'
+  — check/clear it before testing
 created: 2026-07-07
-type: lesson
+entities: []
+source: Vinnstack desktop-packaging sessions 2026-07-07 / 2026-07-15
 status: seedling
-source: "Vinnstack desktop-packaging sessions 2026-07-07 / 2026-07-15"
-tags: [electron, windows, testing, env, debugging, gotcha]
+tags:
+- electron
+- windows
+- testing
+- env
+- debugging
+- gotcha
+title: ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node
+type: lesson
 ---
 
 # ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node
@@ -25,3 +37,14 @@ The var is commonly set by tooling that itself embeds Electron (editor extension
 - For a portable build, extract with `7za` and run the **inner** electron binary — the self-extractor detaches and does not forward ad-hoc env.
 
 Related: [[An Electron GUI app can't be smoke-tested from a non-interactive automation session]] (that note's original "no desktop" diagnosis was wrong — it was this env var), [[Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup]], [[3 Resources/Languages/Node.js/Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]], [[Windows child processes survive when only the parent is killed]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[An Electron GUI app can't be smoke-tested from a non-interactive automation session]]
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Electron GPU process launch failure is fatal; disable hardware acceleration to avoid it]]
+
+%% ai-graph-end %%

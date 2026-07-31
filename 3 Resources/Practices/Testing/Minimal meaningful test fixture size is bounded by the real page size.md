@@ -1,10 +1,18 @@
 ---
-title: "Minimal meaningful test fixture size is bounded by the real page size"
+ai_hash: c580a14deb1b48eb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26
 status: seedling
-source: "session 2026-06-26"
-tags: [testing, integration-test, pagination, luz-docs]
+tags:
+- testing
+- integration-test
+- pagination
+- luz-docs
+title: Minimal meaningful test fixture size is bounded by the real page size
+type: lesson
 ---
 
 # Minimal meaningful test fixture size is bounded by the real page size
@@ -22,3 +30,14 @@ Related: [[Bulk write paths in folder delete only engage with more than one docu
 ## Related
 
 - [[Bulk write paths in folder delete only engage with more than one document]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bulk write paths in folder delete only engage with more than one document]]
+- [[luz_docs FolderDeletingServiceIT coverage gaps]]
+- [[luz-docs delete-folder batching roadmap - remaining per-item paths]]
+- [[luz-docs delete detail-response field for removed links is removedLinkParents not removedLink]]
+- [[Black-box test missing-_shard count correctness with a delta test]]
+
+%% ai-graph-end %%

@@ -1,18 +1,22 @@
 ---
-title: Accesstrade API Integration - MOC
-created: 2026-06-11
-type: moc
-status: evergreen
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - claude-code
-  - moc
+ai_hash: 0cd7b3fd85cf14dc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade Claude Integration Index
-  - Affiliate API Integration MOC
+- Accesstrade Claude Integration Index
+- Affiliate API Integration MOC
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: evergreen
+tags:
+- affiliate
+- accesstrade
+- api
+- claude-code
+- moc
+title: Accesstrade API Integration - MOC
+type: moc
 ---
 
 # Accesstrade API Integration - MOC
@@ -95,3 +99,14 @@ flowchart TD
 
 - [[Affiliate compliance and link hygiene]]
 - [[Designing an Accesstrade skill for Claude Code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Designing an Accesstrade skill for Claude Code]]
+- [[Use case - bulk tracking link generation]]
+- [[Accesstrade Campaigns API]]
+- [[Accesstrade affiliate network overview]]
+- [[Claude Code Skill anatomy]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races"
+ai_hash: 36e3acad377e9aa6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: observation
+entities: []
+source: session 2026-06-05 LUZ-154804 code review
 status: seedling
-source: "session 2026-06-05 LUZ-154804 code review"
-tags: [luz-docs, materialize, risk, performance, paging]
+tags:
+- luz-docs
+- materialize
+- risk
+- performance
+- paging
+title: luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap,
+  paging races
+type: observation
 ---
 
 # luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races
@@ -25,3 +35,14 @@ Related: [[luz_docs materialize passive retry via cascade markers]], [[luz_docs 
 
 - [[luz_docs materialize passive retry via cascade markers]]
 - [[luz_docs bulk folder PATCH runs the materialize cascade once per entry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs bulk folder PATCH runs the materialize cascade once per entry]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]
+- [[luz_docs materialize passive retry via cascade markers]]
+- [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
+- [[Materialize bulk PATCH fans out into N serial per-doc PATCH calls]]
+
+%% ai-graph-end %%

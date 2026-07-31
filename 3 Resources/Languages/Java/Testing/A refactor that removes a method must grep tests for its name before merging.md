@@ -1,10 +1,19 @@
 ---
-title: "A refactor that removes a method must grep tests for its name before merging"
+ai_hash: 14f27c8c86073f8e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: lesson
+entities: []
+source: 'session 2026-07-21, luz-docs PR #1363'
 status: seedling
-source: "session 2026-07-21, luz-docs PR #1363"
-tags: [java, maven, refactoring, gotcha, luz-docs]
+tags:
+- java
+- maven
+- refactoring
+- gotcha
+- luz-docs
+title: A refactor that removes a method must grep tests for its name before merging
+type: lesson
 ---
 
 # A refactor that removes a method must grep tests for its name before merging
@@ -16,3 +25,14 @@ A merge can leave the default branch unable to compile its tests when a refactor
 ## Related
 
 - [[Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
+- [[Run the full affected test package locally, not a hand-picked subset]]
+- [[Verify test files still exist on disk before trusting prior green test runs]]
+- [[A merged-in test breaks when the target branch's service gained a new injected dependency]]
+
+%% ai-graph-end %%

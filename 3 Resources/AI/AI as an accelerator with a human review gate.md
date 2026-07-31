@@ -1,10 +1,20 @@
 ---
-title: "AI as an accelerator with a human review gate"
+ai_hash: ebecff17ef11eb95
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: argument
+entities: []
+source: interview prep, session 2026-07-20
 status: seedling
-source: "interview prep, session 2026-07-20"
-tags: [ai, testing, qa, sdet, review-gate, career]
+tags:
+- ai
+- testing
+- qa
+- sdet
+- review-gate
+- career
+title: AI as an accelerator with a human review gate
+type: argument
 ---
 
 # AI as an accelerator with a human review gate
@@ -31,3 +41,14 @@ Context: my own Java / Jakarta REST / MongoDB work; used as the core narrative f
 ## Related
 
 - [[NVIDIA Vietnam SDET Interview Prep]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[Keep the release gate deterministic; put AI judgment in upstream signals not the gate]]
+- [[When a merge turns CI red decide test-vs-source fix by reading code intent]]
+- [[AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run]]
+- [[LLM-picked UI actions can be verified mechanically but not semantically]]
+
+%% ai-graph-end %%

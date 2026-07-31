@@ -1,10 +1,19 @@
 ---
-title: "Toggle a layout mode with one Tailwind descendant override instead of threading state"
+ai_hash: 3843e6a76db35fb6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: howto
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [tailwind, css, layout, vinnstack]
+tags:
+- tailwind
+- css
+- layout
+- vinnstack
+title: Toggle a layout mode with one Tailwind descendant override instead of threading
+  state
+type: howto
 ---
 
 # Toggle a layout mode with one Tailwind descendant override instead of threading state
@@ -25,3 +34,14 @@ Notes:
 **Correction (same day):** use `max-w-full`, NOT `max-w-none`. `none` removes the cap entirely, so inner content can overrun the pane's right padding and hit the panel edge (observed on the PRD tab). `full` = 100% of the padded parent — full-width AND the container's own `px-*` breathing room is preserved.
 
 **Second correction (same feature):** the initial pane survey used `grep | head -5` and silently dropped the 5th occurrence of the shared pane class string — so the TRACKS pane (the feature's primary target!) never got the override, and the feature 'didn't work' for exactly the tabs the user cared about. When patching every occurrence of a repeated string, never truncate the survey (`grep -c` first, then list ALL), and verify by counting the replaced form afterwards.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Inline style width beats Tailwind breakpoint width classes]]
+- [[Tailwind class-string order doesn't determine cascade override]]
+- [[Stack a rail-and-content row responsively with flex-col to lgflex-row]]
+- [[Debug UI overflow by headless reproduction with DOM overflow diagnostics, not blind CSS guesses]]
+- [[Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column]]
+
+%% ai-graph-end %%

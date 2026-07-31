@@ -1,11 +1,22 @@
 ---
-title: "HyperLogLog estimates distinct count in constant memory and is mergeable"
+ai_hash: 44e5602d4601a55e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- HyperLogLog
+- HLL
 created: 2026-06-16
-aliases: ["HyperLogLog", "HLL"]
-type: concept
+entities: []
+source: session 2026-06-16
 status: seedling
-source: "session 2026-06-16"
-tags: [hyperloglog, hll, count, cardinality, luz-docs]
+tags:
+- hyperloglog
+- hll
+- count
+- cardinality
+- luz-docs
+title: HyperLogLog estimates distinct count in constant memory and is mergeable
+type: concept
 ---
 
 # HyperLogLog estimates distinct count in constant memory and is mergeable
@@ -29,3 +40,14 @@ Mechanism:
 - [[Visible-document count as cardinality of a bitmap union]]
 - [[Roaring bitmaps give exact set cardinality via chunked containers]]
 - [[1 Projects/luz-docs/count/optimize/Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
+- [[Visible-document count as cardinality of a bitmap union]]
+- [[HyperLogLog error in the small-range (linear-counting) regime]]
+- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[Sketch merge (register-wise max) only answers union queries, never AND]]
+
+%% ai-graph-end %%

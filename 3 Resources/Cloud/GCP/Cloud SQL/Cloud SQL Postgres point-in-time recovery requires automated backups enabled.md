@@ -1,10 +1,20 @@
 ---
-title: "Cloud SQL Postgres point-in-time recovery requires automated backups enabled"
+ai_hash: 3bc3b7ea7864f5a8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: accesstrade deployment/ Terraform, 2026-06-14
 status: seedling
-source: "accesstrade deployment/ Terraform, 2026-06-14"
-tags: [gcp, cloud-sql, postgres, terraform, backup, gotcha]
+tags:
+- gcp
+- cloud-sql
+- postgres
+- terraform
+- backup
+- gotcha
+title: Cloud SQL Postgres point-in-time recovery requires automated backups enabled
+type: lesson
 ---
 
 # Cloud SQL Postgres point-in-time recovery requires automated backups enabled
@@ -21,3 +31,12 @@ Seen provisioning the accesstrade_integration `deployment/` Terraform (project k
 ## Related
 
 - [[Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider]]
+- [[Cloud SQL ENTERPRISE_PLUS edition rejects shared-core tiers like db-f1-micro]]
+- [[Memorystore Redis is always VPC-internal — no public endpoint]]
+
+%% ai-graph-end %%

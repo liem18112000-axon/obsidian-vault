@@ -1,10 +1,19 @@
 ---
-title: "workflow_dispatch Run button only appears on the default branch - use gh workflow run --ref to dispatch from a feature branch"
+ai_hash: 2a35566e9e2bdfce
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04 fb-info-project sign-license.yml
 status: seedling
-source: "session 2026-07-04 fb-info-project sign-license.yml"
-tags: [github-actions, gh-cli, workflow-dispatch, gotcha]
+tags:
+- github-actions
+- gh-cli
+- workflow-dispatch
+- gotcha
+title: workflow_dispatch Run button only appears on the default branch - use gh workflow
+  run --ref to dispatch from a feature branch
+type: lesson
 ---
 
 # workflow_dispatch Run button only appears on the default branch - use gh workflow run --ref to dispatch from a feature branch
@@ -23,3 +32,14 @@ gh run download <run-id> -n <artifact-name>
 `-f` passes `workflow_dispatch` inputs. So the loop is: dispatch from the branch via CLI to validate, then merge so the UI button appears for routine use.
 
 Related: [[Deliver a CI-minted credential via a masked short-retention artifact, not the run log]], [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Scheduled GitHub Actions only run on the default branch; self-closing reminder issue pattern]]
+- [[GitHub Actions in a monorepo workflows live at repo root, scope per project with paths filters]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]]
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+
+%% ai-graph-end %%

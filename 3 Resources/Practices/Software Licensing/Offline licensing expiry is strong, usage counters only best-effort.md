@@ -1,10 +1,18 @@
 ---
-title: "Offline licensing: expiry is strong, usage counters only best-effort"
+ai_hash: d8e9925b37bdd995
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-14
 status: seedling
-source: "fb-info-project session 2026-06-14"
-tags: [licensing, security, offline, gotcha]
+tags:
+- licensing
+- security
+- offline
+- gotcha
+title: 'Offline licensing: expiry is strong, usage counters only best-effort'
+type: lesson
 ---
 
 # Offline licensing: expiry is strong, usage counters only best-effort
@@ -23,3 +31,14 @@ Part of [[Offline signed-token licensing for distributed binaries]].
 ## Related
 
 - [[Offline signed-token licensing for distributed binaries]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal]]
+- [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+- [[Offline signed-token licensing for distributed binaries]]
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+
+%% ai-graph-end %%

@@ -1,10 +1,50 @@
 ---
-title: "TECHNICAL_ERROR is not retried in-flight but is retry-eligible on invoice-item rerun"
+ai_hash: 670d3fb8fe98b69a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: concept
+entities:
+- TECHNICAL_ERROR
+- in-flight retry
+- invoice-item rerun
+- luz_store
+- CreditCardTransactionService
+- MicroProfile @Retry
+- REST call
+- batch
+- handleChargeCredit
+- isTransactionToBeRetriedMarkedAsTechnicalError
+- LUZ-92848
+- invoiceRunUuid
+- shouldProcessChargeTransactions
+- NOT_FINISHED transaction
+- FAILED
+- REFUND_FAILED
+- ROLLBACKED
+- upstream success
+- Payrexx
+- getPayrexxTransactions
+- referenceId
+- invoiceItem.id
+- startChargingDate
+- completedTransactions
+- charge call
+- DECLINED
+- LUZ-157476
+- stolen-card decline
+- category-aware retry policy
+- Fault-tolerance annotations
+- invoice charge-failure handling
+source: LUZ-157476 session 2026-07-24
 status: budding
-source: "LUZ-157476 session 2026-07-24"
-tags: [luz-store, invoice-run, retry, payrexx]
+tags:
+- luz-store
+- invoice-run
+- retry
+- payrexx
+title: TECHNICAL_ERROR is not retried in-flight but is retry-eligible on invoice-item
+  rerun
+type: concept
 ---
 
 # TECHNICAL_ERROR is not retried in-flight but is retry-eligible on invoice-item rerun
@@ -18,3 +58,47 @@ Gotcha for LUZ-157476: DECLINED also persists as state FAILED, making hard decli
 ## Related
 - [[Fault-tolerance annotations imported but never applied in CreditCardTransactionService]]
 - [[DECLINED status falls through invoice charge-failure handling in luz_store]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[DECLINED status falls through invoice charge-failure handling in luz_store]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[Payrexx declines travel in-band on HTTP 2xx in the luz charge flow]]
+- [[Invoice run v2 shows charge failures via verbatim message copy at controller line 628]]
+- [[Fault-tolerance annotations imported but never applied in CreditCardTransactionService]]
+
+**Relations:**
+- TECHNICAL_ERROR — *is not retried* — in-flight retry
+- TECHNICAL_ERROR — *is retry-eligible on* — invoice-item rerun
+- luz_store — *retries* — TECHNICAL_ERROR
+- CreditCardTransactionService — *imports* — MicroProfile @Retry
+- CreditCardTransactionService — *does not apply* — MicroProfile @Retry
+- REST call — *failure marks* — batch
+- batch — *as status* — TECHNICAL_ERROR
+- handleChargeCredit — *re-charges based on* — isTransactionToBeRetriedMarkedAsTechnicalError
+- handleChargeCredit — *re-charges based on* — shouldProcessChargeTransactions
+- isTransactionToBeRetriedMarkedAsTechnicalError — *checks for status* — TECHNICAL_ERROR
+- isTransactionToBeRetriedMarkedAsTechnicalError — *involves* — invoiceRunUuid
+- LUZ-92848 — *is related to* — isTransactionToBeRetriedMarkedAsTechnicalError
+- shouldProcessChargeTransactions — *checks for* — NOT_FINISHED transaction
+- NOT_FINISHED transaction — *has state* — FAILED
+- NOT_FINISHED transaction — *has state* — REFUND_FAILED
+- NOT_FINISHED transaction — *has state* — ROLLBACKED
+- TECHNICAL_ERROR — *can hide* — upstream success
+- getPayrexxTransactions — *searches* — Payrexx
+- getPayrexxTransactions — *uses parameter* — referenceId
+- referenceId — *is* — invoiceItem.id
+- getPayrexxTransactions — *uses time window* — startChargingDate
+- getPayrexxTransactions — *feeds* — completedTransactions
+- completedTransactions — *into* — charge call
+- DECLINED — *persists as state* — FAILED
+- DECLINED — *is* — retry-eligible
+- LUZ-157476 — *is related to* — DECLINED persists as state FAILED
+- category-aware retry policy — *is a fix for* — stolen-card decline
+- Fault-tolerance annotations — *are imported by* — CreditCardTransactionService
+- Fault-tolerance annotations — *are not applied in* — CreditCardTransactionService
+- DECLINED — *status falls through* — invoice charge-failure handling
+- invoice charge-failure handling — *is in* — luz_store
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "MongoDB forbids $lookup inside update pipeline (WriteError 72)"
+ai_hash: 0ddb4c135c3deae9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: lesson
+entities: []
+source: luz-docs materialize code review 2026-06-09; luz-docs parent-change cascade
+  2026-06-05
 status: seedling
-source: "luz-docs materialize code review 2026-06-09; luz-docs parent-change cascade 2026-06-05"
-tags: [mongodb, aggregation, update-pipeline, gotcha, lookup, luz-docs]
+tags:
+- mongodb
+- aggregation
+- update-pipeline
+- gotcha
+- lookup
+- luz-docs
+title: MongoDB forbids $lookup inside update pipeline (WriteError 72)
+type: lesson
 ---
 
 # MongoDB forbids $lookup inside update pipeline (WriteError 72)
@@ -19,3 +30,14 @@ An update-with-aggregation-pipeline (`updateMany(filter, [stages])`) accepts onl
 
 - [[Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
 - [[luz_docs has two materialize cascade delivery mechanisms]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out]]
+- [[luz-docs updateManyByFilter requires every targeted document to actually change]]
+- [[Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
+- [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+- [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
+
+%% ai-graph-end %%

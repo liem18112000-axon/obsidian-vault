@@ -1,10 +1,20 @@
 ---
-title: "luz-docs /documents/count is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck"
+ai_hash: e49c75e24455a67e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: observation
+entities: []
+source: sessions 2026-07-13 eArchive api_calls capture, 2026-07-14 performance benchmark
 status: seedling
-source: "sessions 2026-07-13 eArchive api_calls capture, 2026-07-14 performance benchmark"
-tags: [luz-docs, earchive, performance, sharding, mongodb]
+tags:
+- luz-docs
+- earchive
+- performance
+- sharding
+- mongodb
+title: luz-docs /documents/count is ~130s on an 800k tenant — the 16-shard fan-out,
+  not counting, is the bottleneck
+type: observation
 ---
 
 # luz-docs /documents/count is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck
@@ -26,3 +36,14 @@ Full data: `luz_docs/docs/performance-test-800k/test.md`.
 - [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
 - [[Luz K count-partitions env var]]
 - [[Visible-document count as cardinality of a bitmap union]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
+- [[eArchive 800k bottleneck is view-controller not K]]
+- [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[eArchive request flow and log correlation (perf)]]
+
+%% ai-graph-end %%

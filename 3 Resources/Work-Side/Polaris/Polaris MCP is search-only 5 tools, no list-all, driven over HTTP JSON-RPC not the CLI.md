@@ -1,10 +1,20 @@
 ---
-title: "Polaris MCP is search-only: 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI"
+ai_hash: b4b6f3ff6feb3c2d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: observation
+entities: []
+source: session 2026-07-14 WI-0 spike
 status: seedling
-source: "session 2026-07-14 WI-0 spike"
-tags: [polaris, mcp, json-rpc, gotcha, epost]
+tags:
+- polaris
+- mcp
+- json-rpc
+- gotcha
+- epost
+title: 'Polaris MCP is search-only: 5 tools, no list-all, driven over HTTP JSON-RPC
+  not the CLI'
+type: observation
 ---
 
 # Polaris MCP is search-only: 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI
@@ -26,3 +36,14 @@ Full reference: doc/polaris/polaris-mcp-surface.md. Related: [[3 Resources/Work-
 ## Related
 
 - [[3 Resources/Work-Side/Polaris/Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Polaris MCP tool catalog and usage pattern]]
+- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
+- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[Polaris MCP moved to hosted endpoint polaris-mcp.epost.ch (requires auth)]]
+
+%% ai-graph-end %%

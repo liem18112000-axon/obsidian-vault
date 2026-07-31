@@ -1,10 +1,17 @@
 ---
-title: "A test-output file is only valid evidence if its mtime postdates the fix commit"
+ai_hash: 5b3be0913ec5de23
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-22
-type: lesson
+entities: []
+source: session 2026-06-22
 status: seedling
-source: "session 2026-06-22"
-tags: [testing, gotcha, verification]
+tags:
+- testing
+- gotcha
+- verification
+title: A test-output file is only valid evidence if its mtime postdates the fix commit
+type: lesson
 ---
 
 # A test-output file is only valid evidence if its mtime postdates the fix commit
@@ -18,3 +25,11 @@ This bit during the fb-info-project hometown fix: a stale `output/` xlsx from ea
 ## Related
 
 - [[Verify the Quê quán hometown fix by asserting no output row has Quê quán equal to Name]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify the Quê quán hometown fix by asserting no output row has Quê quán equal to Name]]
+- [[Black-box artifact E2E drive a committed sample fixture so the only live input is the secret]]
+
+%% ai-graph-end %%

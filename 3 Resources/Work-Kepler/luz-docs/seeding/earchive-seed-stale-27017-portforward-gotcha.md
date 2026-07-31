@@ -1,7 +1,18 @@
 ---
-title: earchive seed "Authentication failed" = stale localhost:27017 port-forward
-tags: [luz, earchive, mongodb, kubectl, port-forward, gotcha, dev]
+ai_hash: 7c83e3ab0ea7bef7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
+entities: []
+tags:
+- luz
+- earchive
+- mongodb
+- kubectl
+- port-forward
+- gotcha
+- dev
+title: earchive seed "Authentication failed" = stale localhost:27017 port-forward
 type: resource
 ---
 
@@ -37,3 +48,14 @@ Then re-run the seed. Kill only after confirming it's a stray tunnel, not a real
 - Tenant `d0783310` lives on **cluster01** (`luz-mongodb01`); skill auto-derives it correctly now (first hex `d`=13, 13 mod 4 = 1).
 - Matches the perf-env note "stale 27017 PF = false auth fail".
 - Inspecting the holding process's *command line* via PowerShell gets blocked by the credential-exploration classifier — you don't need it; `netstat` + kill by PID is enough.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[NotWritablePrimary via port-forward means forward targets a secondary]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+- [[Reuse an existing kubectl port-forward for ad-hoc mongo scripts]]
+
+%% ai-graph-end %%

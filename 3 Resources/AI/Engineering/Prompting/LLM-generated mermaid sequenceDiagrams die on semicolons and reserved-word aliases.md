@@ -1,10 +1,19 @@
 ---
-title: "LLM-generated mermaid sequenceDiagrams die on semicolons and reserved-word aliases"
+ai_hash: d1100fac3cfd757b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: gotcha
+entities: []
+source: session 2026-07-03, vinnstack sequence-diagram failures
 status: seedling
-source: "session 2026-07-03, vinnstack sequence-diagram failures"
-tags: [mermaid, llm, diagrams, vinnstack]
+tags:
+- mermaid
+- llm
+- diagrams
+- vinnstack
+title: LLM-generated mermaid sequenceDiagrams die on semicolons and reserved-word
+  aliases
+type: gotcha
 ---
 
 # LLM-generated mermaid sequenceDiagrams die on semicolons and reserved-word aliases
@@ -19,3 +28,14 @@ Defense in depth: (a) a mechanical `repairMermaid()` pass at render time, attemp
 ## Related
 
 - [[AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering]]
+- [[Mermaid Flowchart - Multi-word Labels and Decision Branches]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+
+%% ai-graph-end %%

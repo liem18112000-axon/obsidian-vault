@@ -1,10 +1,19 @@
 ---
-title: "Keep error/failure text out of LLM-summarized durable memory"
+ai_hash: b5dbd4fcaf786053
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: code review 2026-07-01 (vinnstack)
 status: seedling
-source: "code review 2026-07-01 (vinnstack)"
-tags: [llm, agents, memory, context-pollution, gotcha]
+tags:
+- llm
+- agents
+- memory
+- context-pollution
+- gotcha
+title: Keep error/failure text out of LLM-summarized durable memory
+type: lesson
 ---
 
 # Keep error/failure text out of LLM-summarized durable memory
@@ -22,3 +31,14 @@ Related: [[Never cache a negative fallback in the same slot as a resolved value]
 ## Related
 
 - [[Never cache a negative fallback in the same slot as a resolved value]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Classify stream failures on the server, not the client]]
+- [[Vinnstack skill-usage counter missed reads past a 4MB stdout cap]]
+- [[A feedback loop with only its write side wired looks like a broken feature]]
+- [[State machines must catch expected-failure operations or they get stuck forever]]
+- [[Secondary-write failures should fail loud when their silent version was the actual bug]]
+
+%% ai-graph-end %%

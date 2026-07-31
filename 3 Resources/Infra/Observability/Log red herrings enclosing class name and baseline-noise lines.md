@@ -1,10 +1,18 @@
 ---
-title: "Log red herrings: enclosing class name and baseline-noise lines"
+ai_hash: 97f007e2a33368b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: PROD jwt-service investigation 2026-06-30
 status: seedling
-source: "PROD jwt-service investigation 2026-06-30"
-tags: [diagnostics, root-cause, logs, gotcha]
+tags:
+- diagnostics
+- root-cause
+- logs
+- gotcha
+title: 'Log red herrings: enclosing class name and baseline-noise lines'
+type: lesson
 ---
 
 # Log red herrings: enclosing class name and baseline-noise lines
@@ -21,3 +29,14 @@ General rule: confirm a dependency was actually slow by measuring ITS latency in
 
 - [[3 Resources/Infra/Observability/Cascading DC follow the timeout chain one layer down]]
 - [[Off-mesh services (istio inject=false) have no Istio access logs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cascading DC follow the timeout chain one layer down]]
+- [[Istio DC response_flag with round latency = caller read timeout]]
+- [[Off-mesh services (istio inject=false) have no Istio access logs]]
+- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+
+%% ai-graph-end %%

@@ -1,7 +1,15 @@
 ---
-title: Luz K count-partitions env var
-tags: [luz-docs, config, parallelize, microprofile]
+ai_hash: 6d5a3f82a0de4d63
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
+entities: []
+tags:
+- luz-docs
+- config
+- parallelize
+- microprofile
+title: Luz K count-partitions env var
 ---
 
 # Luz K count-partitions env var
@@ -17,3 +25,14 @@ Do NOT confuse with the materialize path's own knob `LUZ_DOCS_MATERIALIZE_COUNT_
 Benchmark context (dev, disk-bound caveat): K=8 was ~6x cold-path only while data fit the mongo cache; past ~840k docs it goes disk-bound and K stops helping. Perf run 2026-07-16 tests K=12 on the 800k tenant.
 
 Related: [[Luz performance env cluster topology]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[eArchive 800k bottleneck is view-controller not K]]
+- [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
+- [[Levers to optimise the visible-document count beyond _shard fan-out]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "luz-docs-integration-test dev poller derives the GKE job name from the wrong id"
+ai_hash: fda9f18c7327c71e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: session 2026-06-15
 status: seedling
-source: "session 2026-06-15"
-tags: [luz-docs, integration-test, cloud-build, gke, gotcha]
+tags:
+- luz-docs
+- integration-test
+- cloud-build
+- gke
+- gotcha
+title: luz-docs-integration-test dev poller derives the GKE job name from the wrong
+  id
+type: lesson
 ---
 
 # luz-docs-integration-test dev poller derives the GKE job name from the wrong id
@@ -21,3 +31,14 @@ Recovery (get the real result yourself):
 Also: an in-cluster dev run is much faster than local (no kubectl port-forward overhead) — 8 recover-materialize scenarios took ~12s on dev vs ~4m40s locally.
 
 Related: [[JSON-driven Scenario Outline pattern for luz_docs materialize integration tests]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-it-staging-trigger-poller-mismatch]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
+- [[luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+
+%% ai-graph-end %%

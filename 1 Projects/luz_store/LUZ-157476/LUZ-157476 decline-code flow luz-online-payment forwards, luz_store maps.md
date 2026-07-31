@@ -1,10 +1,44 @@
 ---
-title: "LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps"
+ai_hash: 91c0afe3f6d5bffd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-29
-type: decision
+entities:
+- LUZ-157476
+- decline-code flow
+- luz-online-payment
+- luz_store
+- FailureCategory
+- Payrexx
+- ISO 8583 two-digit decline code
+- message
+- Stripe
+- Transaction
+- declineCode
+- KlaraTransactionRequest
+- taxonomy
+- FailureCategory enum
+- FailureCategory.map(...)
+- prose keyword-matching
+- DECLINED transaction
+- success path
+- KlaraTransactionRequestConverter
+- wrapper-error
+- TransactionTask
+- Payrexx API
+- JSON field name
+- Jackson @JsonAnySetter
+- Capture an unknown-named JSON field with Jackson @JsonAnySetter
+source: session 2026-07-29; luz_store/docs/luz-157476/PAYREXX-RESPONSE.md
 status: seedling
-source: "session 2026-07-29; luz_store/docs/luz-157476/PAYREXX-RESPONSE.md"
-tags: [luz-157476, payrexx, klarapay, failure-category, online-payment]
+tags:
+- luz-157476
+- payrexx
+- klarapay
+- failure-category
+- online-payment
+title: 'LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps'
+type: decision
 ---
 
 # LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps
@@ -22,3 +56,40 @@ Open dependency (2026-07-29): the exact Payrexx **API** JSON field name for the 
 ## Related
 
 - [[Capture an unknown-named JSON field with Jackson @JsonAnySetter]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[Payrexx v1.0 charge API returns only status+message on failure — no ISO 8583 code]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
+- [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]]
+
+**Relations:**
+- LUZ-157476 — *describes* — decline-code flow
+- decline-code flow — *involves* — luz-online-payment
+- decline-code flow — *involves* — luz_store
+- FailureCategory — *is keyed off* — ISO 8583 two-digit decline code
+- ISO 8583 two-digit decline code — *from* — Payrexx
+- message — *from* — Stripe
+- message — *from* — Payrexx
+- luz-online-payment — *extracts code from* — Transaction
+- Transaction — *is a* — Payrexx response
+- luz-online-payment — *forwards* — declineCode
+- declineCode — *is a field on* — KlaraTransactionRequest
+- luz-online-payment — *does not map to* — FailureCategory
+- luz_store — *owns* — FailureCategory enum
+- luz_store — *owns* — FailureCategory.map(...)
+- FailureCategory.map(...) — *keys off* — declineCode
+- FailureCategory.map(...) — *uses as fallback* — prose keyword-matching
+- DECLINED transaction — *goes through* — success path
+- success path — *uses* — KlaraTransactionRequestConverter
+- wrapper-error — *goes through* — TransactionTask catch block
+- Payrexx API — *has* — JSON field name
+- JSON field name — *for* — declineCode
+- Jackson @JsonAnySetter — *captures* — unknown-named JSON field
+- KlaraTransactionRequest — *needs* — declineCode field
+- LUZ-157476 — *related to* — Capture an unknown-named JSON field with Jackson @JsonAnySetter
+
+%% ai-graph-end %%

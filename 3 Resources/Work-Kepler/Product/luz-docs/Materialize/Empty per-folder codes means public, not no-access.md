@@ -1,10 +1,18 @@
 ---
-title: "Empty per-folder codes means public, not no-access"
+ai_hash: 26461d86e5c4fec5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: session 2026-06-01
 status: seedling
-source: "session 2026-06-01"
-tags: [luz-docs, materialize, security, gotcha]
+tags:
+- luz-docs
+- materialize
+- security
+- gotcha
+title: Empty per-folder codes means public, not no-access
+type: lesson
 ---
 
 # Empty per-folder codes means public, not no-access
@@ -22,3 +30,14 @@ In `MaterializeResponseBuilder.isFolderVisible`, an entry in `_folderSecurityCla
 
 ## Related
 [[Parallel arrays in materialize sentinel preserve folderId order]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Missing folder reference produces fail-closed materialize state]]
+- [[Fail-closed defense over a parallel array distinguish present-but-short from absent]]
+- [[Parallel arrays in materialize sentinel preserve folderId order]]
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+- [[Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
+
+%% ai-graph-end %%

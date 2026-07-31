@@ -1,10 +1,20 @@
 ---
-title: "Black-box artifact E2E: drive a committed sample fixture so the only live input is the secret"
+ai_hash: f5b17bdebdc94762
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: fb-info-project, 2026-06-14
 status: seedling
-source: "fb-info-project, 2026-06-14"
-tags: [testing, e2e, black-box, ci, design-decision]
+tags:
+- testing
+- e2e
+- black-box
+- ci
+- design-decision
+title: 'Black-box artifact E2E: drive a committed sample fixture so the only live
+  input is the secret'
+type: lesson
 ---
 
 # Black-box artifact E2E: drive a committed sample fixture so the only live input is the secret
@@ -23,3 +33,14 @@ Context: fb-info-project `test/test_modes_live.py` + CI live tier in `build-exe.
 
 - [[Gate a GitHub Actions step on a secret's presence via env]]
 - [[not if:]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Black-box exe test suite skips silently when no artifact is present]]
+- [[fb-info-project CI and build workflow split]]
+- [[Black-box E2E test a PyInstaller one-dir app from a temp CWD]]
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+- [[A test-output file is only valid evidence if its mtime postdates the fix commit]]
+
+%% ai-graph-end %%

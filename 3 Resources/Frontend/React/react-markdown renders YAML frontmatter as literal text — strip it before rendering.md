@@ -1,10 +1,20 @@
 ---
-title: "react-markdown renders YAML frontmatter as literal text — strip it before rendering"
+ai_hash: dcbe62c77600d524
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: session 2026-07-01 (Vinnstack SkillsView)
 status: seedling
-source: "session 2026-07-01 (Vinnstack SkillsView)"
-tags: [react, markdown, react-markdown, frontmatter, gotcha, vinnstack]
+tags:
+- react
+- markdown
+- react-markdown
+- frontmatter
+- gotcha
+- vinnstack
+title: react-markdown renders YAML frontmatter as literal text — strip it before rendering
+type: lesson
 ---
 
 # react-markdown renders YAML frontmatter as literal text — strip it before rendering
@@ -18,3 +28,10 @@ react-markdown (remark/rehype) has **no built-in frontmatter support**: a leadin
 Real case: Vinnstack SkillsView rendered SKILL.md files raw, so every skill's YAML header leaked into the body. Fixed by stripping in the client component (one place covers all skill sources), leaving the server APIs untouched. Note a similar server-side strip already existed in interrogationRunner.loadSkill — but sharing a one-line regex across the client/server boundary wasn't worth a util.
 
 General gotcha: any renderer of user/authored Markdown that may carry frontmatter must decide to strip or parse it — never assume the library hides it.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[react-markdown without rehype-raw silently drops HTML blocks and swallows following lines]]
+
+%% ai-graph-end %%

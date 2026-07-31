@@ -1,10 +1,20 @@
 ---
-title: "Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge"
+ai_hash: f30d964015010032
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: howto
+entities: []
+source: session 2026-07-20
 status: seedling
-source: "session 2026-07-20"
-tags: [pdf, pypdf, headless-chrome, edge, cv]
+tags:
+- pdf
+- pypdf
+- headless-chrome
+- edge
+- cv
+title: Update a designed PDF without its source by rebuilding as HTML and printing
+  with headless Edge
+type: howto
 ---
 
 # Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge
@@ -20,3 +30,11 @@ Chromium preserves `<a href>` as real clickable PDF link annotations, so links s
 ## Related
 
 - [[Absolutely-positioned list bullets slide under a floated sidebar]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PDF page count cannot prove a fixed-height page fits when overflow is hidden]]
+- [[Absolutely-positioned list bullets slide under a floated sidebar]]
+
+%% ai-graph-end %%

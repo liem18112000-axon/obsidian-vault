@@ -1,10 +1,20 @@
 ---
-title: "Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry"
+ai_hash: 9883e4aa16c52735
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04, vinnstack CLI login relay
 status: seedling
-source: "session 2026-07-04, vinnstack CLI login relay"
-tags: [oauth, cli, headless, nextjs, vinnstack]
+tags:
+- oauth
+- cli
+- headless
+- nextjs
+- vinnstack
+title: Relay a headless CLI paste-back OAuth through a web UI with a two-request child
+  registry
+type: howto
 ---
 
 # Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry
@@ -24,3 +34,14 @@ Requirements/gotchas:
 ## Related
 
 - [[3 Resources/Backend/Design/Per-account CLI sessions inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[Per-account CLI sessions inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Gate a headless-only relay behind an explicit env flag so local browser login still works]]
+
+%% ai-graph-end %%

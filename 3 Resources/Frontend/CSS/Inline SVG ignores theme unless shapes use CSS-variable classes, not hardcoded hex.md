@@ -1,10 +1,21 @@
 ---
-title: "Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded hex"
+ai_hash: 082e1d7ff6d4011d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: gotcha
+entities: []
+source: session 2026-07-14 perf report HTML
 status: seedling
-source: "session 2026-07-14 perf report HTML"
-tags: [css, svg, theming, dark-mode, frontend, gotcha]
+tags:
+- css
+- svg
+- theming
+- dark-mode
+- frontend
+- gotcha
+title: Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded
+  hex
+type: gotcha
 ---
 
 # Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded hex
@@ -28,3 +39,13 @@ Diagnostic tell: "the page flips but the diagrams / one box stay dark" ⇒ hunt 
 ## Related
 
 - [[3 Resources/Frontend/CSS/Theme toggle that overrides prefers-color-scheme via data-theme on root]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Theme toggle that overrides prefers-color-scheme via data-theme on root]]
+- [[HTML report theme toggle reload gotcha]]
+- [[Theme shared overlays with CSS-variable-backed Tailwind classes, not hardcoded colors]]
+- [[Scope a highlight.js theme override with a wrapper class instead of !important]]
+
+%% ai-graph-end %%

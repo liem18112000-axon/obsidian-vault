@@ -1,10 +1,19 @@
 ---
-title: "luz-docs IT $SCn security-class placeholders resolve against the token claim"
+ai_hash: 3543f3cb02255837
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: concept
+entities: []
+source: session 2026-06-15
 status: seedling
-source: "session 2026-06-15"
-tags: [luz-docs, integration-test, behave, security-class, gotcha]
+tags:
+- luz-docs
+- integration-test
+- behave
+- security-class
+- gotcha
+title: luz-docs IT $SCn security-class placeholders resolve against the token claim
+type: concept
 ---
 
 # luz-docs IT $SCn security-class placeholders resolve against the token claim
@@ -26,3 +35,14 @@ In `luz_docs_integration_test` (behave), feature files and materialize JSON case
 - [[luz-docs IT skips security-class scenarios when the tenant token lacks enough codes]]
 - [[luz-docs IT before_scenario reads but does not substitute $SCn into step text]]
 - [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs IT before_scenario reads but does not substitute $SCn into step text]]
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+- [[luz-docs IT skips security-class scenarios when the tenant token lacks enough codes]]
+- [[JSON-driven Scenario Outline pattern for luz_docs materialize integration tests]]
+- [[behave step patterns differing only by quote style are distinct definitions]]
+
+%% ai-graph-end %%

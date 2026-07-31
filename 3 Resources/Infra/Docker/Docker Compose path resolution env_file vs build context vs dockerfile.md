@@ -1,10 +1,18 @@
 ---
-title: "Docker Compose path resolution: env_file vs build context vs dockerfile"
+ai_hash: c79e08de865e233f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-13
-type: concept
+entities: []
+source: session 2026-06-13 accesstrade_integration
 status: seedling
-source: "session 2026-06-13 accesstrade_integration"
-tags: [docker, docker-compose, build-context, reference]
+tags:
+- docker
+- docker-compose
+- build-context
+- reference
+title: 'Docker Compose path resolution: env_file vs build context vs dockerfile'
+type: concept
 ---
 
 # Docker Compose path resolution: env_file vs build context vs dockerfile
@@ -30,3 +38,14 @@ Rule of thumb: **context-relative** = dockerfile + .dockerignore; **compose-file
 ## Related
 
 - [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+- [[Docker hostname for reaching a service depends on where the caller runs]]
+- [[BuildKit honors a per-Dockerfile .dockerignore]]
+- [[Path(__file__).parent breaks when a module is moved to a deeper directory]]
+- [[Separate docker-compose files are isolated networks; use one file + a profile for optional services]]
+
+%% ai-graph-end %%

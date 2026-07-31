@@ -1,17 +1,21 @@
 ---
-title: Monetag overview
-created: 2026-06-12
-type: concept
-status: seedling
-source: research session 2026-06-12
-tags:
-  - monetag
-  - ad-network
-  - monetization
-  - concept
+ai_hash: b6e4ebe06c0ab04e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - What is Monetag
-  - Monetag
+- What is Monetag
+- Monetag
+created: 2026-06-12
+entities: []
+source: research session 2026-06-12
+status: seedling
+tags:
+- monetag
+- ad-network
+- monetization
+- concept
+title: Monetag overview
+type: concept
 ---
 
 # Monetag overview
@@ -39,3 +43,14 @@ It's a monetization platform with a real **publisher API + SDK** ([[Monetag SSP 
 - [[Monetag payments and payout terms]]
 - [[Ad network vs affiliate network]]
 - [[Monetag - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monetag - MOC]]
+- [[Monetag SSP API and integration]]
+- [[Ad network vs affiliate network]]
+- [[Monetag ad formats]]
+- [[Monetag referral program]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Leo CDP public REST API contract"
+ai_hash: a52ba1c0683ef542
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: concept
+entities: []
+source: leo-cdp-api-examples repo; session 2026-06-30
 status: seedling
-source: "leo-cdp-api-examples repo; session 2026-06-30"
-tags: [leo-cdp, api, integration, reference]
+tags:
+- leo-cdp
+- api
+- integration
+- reference
+title: Leo CDP public REST API contract
+type: concept
 ---
 
 # Leo CDP public REST API contract
@@ -28,3 +36,14 @@ See [[Identity-keyed CDP API breaks content-hash idempotency]].
 ## Related
 
 - [[Identity-keyed CDP API breaks content-hash idempotency]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Leo CDP save returns 200 but eventlist cannot read it back]]
+- [[Leo CDP event observerId is the pushing tokenkey and eventsave can split from profilesave identity]]
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+- [[Leo CDP admin dashboard is a hash-routed SPA on a separate host from the API]]
+- [[Leo CDP profilelist ignores start and limit and embeds event data]]
+
+%% ai-graph-end %%

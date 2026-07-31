@@ -1,10 +1,20 @@
 ---
-title: "Version changelogs - generate the explanation at snapshot time, compute the diff on demand"
+ai_hash: c356aef0cf0d5424
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: model
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [versioning, diff, changelog, llm, vinnstack]
+tags:
+- versioning
+- diff
+- changelog
+- llm
+- vinnstack
+title: Version changelogs - generate the explanation at snapshot time, compute the
+  diff on demand
+type: model
 ---
 
 # Version changelogs - generate the explanation at snapshot time, compute the diff on demand
@@ -22,3 +32,14 @@ Related: [[Version artifacts by lifecycle event with content-dedupe, store in DB
 ## Related
 
 - [[3 Resources/Practices/Architecture/Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+- [[Async-enriched columns need a lazy backfill for pre-feature rows]]
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[Comparison narratives invent deltas - anchor every claimed change to the machine diff]]
+- [[LLM-implementable plan exports must bundle unresolved review state with precedence rules]]
+
+%% ai-graph-end %%

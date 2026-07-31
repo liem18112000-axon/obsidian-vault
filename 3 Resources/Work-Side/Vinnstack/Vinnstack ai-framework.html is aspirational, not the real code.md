@@ -1,10 +1,18 @@
 ---
-title: "Vinnstack ai-framework.html is aspirational, not the real code"
+ai_hash: 147d57f15263b3b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html
 status: seedling
-source: "session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html"
-tags: [vinnstack, docs, architecture, gotcha]
+tags:
+- vinnstack
+- docs
+- architecture
+- gotcha
+title: Vinnstack ai-framework.html is aspirational, not the real code
+type: lesson
 ---
 
 # Vinnstack ai-framework.html is aspirational, not the real code
@@ -18,3 +26,14 @@ Treat ai-framework.html as vision/pitch material only ("why we build this way"),
 ## Related
 [[Vinnstack vinnstack-data-model.html predates the BDD workspace]]
 [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Vinnstack vinnstack-data-model.html predates the BDD workspace]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Approximating list-all over a search-only API: union broad seed queries, paginate, dedupe"
+ai_hash: da2df4852cec214a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: lesson
+entities: []
+source: session 2026-07-14
 status: seedling
-source: "session 2026-07-14"
-tags: [api, search, mcp, pattern, gotcha, polaris]
+tags:
+- api
+- search
+- mcp
+- pattern
+- gotcha
+- polaris
+title: 'Approximating list-all over a search-only API: union broad seed queries, paginate,
+  dedupe'
+type: lesson
 ---
 
 # Approximating list-all over a search-only API: union broad seed queries, paginate, dedupe
@@ -20,3 +31,11 @@ Pattern pairs well with: load-all once on the client, then FILTER client-side (i
 ## Related
 
 - [[3 Resources/Work-Side/Polaris/Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+- [[Polaris MCP tool catalog and usage pattern]]
+
+%% ai-graph-end %%

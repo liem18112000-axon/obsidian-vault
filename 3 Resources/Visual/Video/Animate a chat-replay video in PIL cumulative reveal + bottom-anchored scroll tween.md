@@ -1,10 +1,21 @@
 ---
-title: "Animate a chat-replay video in PIL: cumulative reveal + bottom-anchored scroll tween"
+ai_hash: af60bd17d3331a89
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: howto
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [pil, pillow, ffmpeg, animation, video, chat]
+tags:
+- pil
+- pillow
+- ffmpeg
+- animation
+- video
+- chat
+title: 'Animate a chat-replay video in PIL: cumulative reveal + bottom-anchored scroll
+  tween'
+type: howto
 ---
 
 # Animate a chat-replay video in PIL: cumulative reveal + bottom-anchored scroll tween
@@ -22,3 +33,11 @@ Font gotchas (Windows): the **braille spinner** glyphs ⠋⠙⠹… live in the 
 ## Related
 
 - [[Render color emoji in PIL by splitting runs onto the Segoe UI Emoji font]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Render color emoji in PIL by splitting runs onto the Segoe UI Emoji font]]
+- [[HTML-rendered chat demo videos serve over http, cumulative screenshots, pre-pad dark]]
+
+%% ai-graph-end %%

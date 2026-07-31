@@ -1,10 +1,18 @@
 ---
-title: "Reuse an existing kubectl port-forward for ad-hoc mongo scripts"
+ai_hash: 855f7cd71f618c20
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: lesson
+entities: []
+source: eArchive ops session 2026-07-13
 status: seedling
-source: "eArchive ops session 2026-07-13"
-tags: [kubernetes, mongodb, kubectl, port-forward]
+tags:
+- kubernetes
+- mongodb
+- kubectl
+- port-forward
+title: Reuse an existing kubectl port-forward for ad-hoc mongo scripts
+type: lesson
 ---
 
 # Reuse an existing kubectl port-forward for ad-hoc mongo scripts
@@ -18,3 +26,14 @@ Useful for quick admin tasks (drop an index, check a count, inspect a doc) again
 ## Related
 
 - [[Luz eArchive tenant mongo database collection list]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[NotWritablePrimary via port-forward means forward targets a secondary]]
+- [[earchive-seed-stale-27017-portforward-gotcha]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+
+%% ai-graph-end %%

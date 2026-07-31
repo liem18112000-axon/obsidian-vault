@@ -1,5 +1,15 @@
 ---
-tags: [gcp, cloud-build, artifact-registry, klara, kepler, ci]
+ai_hash: a620495dcaa4e05e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- gcp
+- cloud-build
+- artifact-registry
+- klara
+- kepler
+- ci
 ---
 
 # Klara Cloud Build pushes images to klara-repo Artifact Registry with the SA on the trigger
@@ -15,3 +25,14 @@ Convention across klara/Kepler repos (e.g. luz_docs, vinnstack) for Google Cloud
 **Gotcha:** the SA email is not in the repo — don't grep for it there; it's trigger config in GCP. Runtime SAs found in these repos (`klara-dev-pubsub@...`, `klara-dev-vn-docs-storage@...` in klara-nonprod) are for the *app*, not the build.
 
 Related: [[Next.js standalone Docker image must copy public and .next static next to server.js]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
+- [[Vinnstack Cloud Build trigger lives in klara-infra, not klara-nonprod]]
+- [[klara-nonprod is the GCP project for non-prod Artifact Registry IAM]]
+- [[Vinnstack publishes its exe to a GCS bucket, not Artifact Registry]]
+- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Classify stream failures on the server, not the client"
+ai_hash: 0d394d5cae687534
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: code review 2026-07-01 (vinnstack)
 status: seedling
-source: "code review 2026-07-01 (vinnstack)"
-tags: [streaming, ndjson, client-server, error-handling, coupling, retry]
+tags:
+- streaming
+- ndjson
+- client-server
+- error-handling
+- coupling
+- retry
+title: Classify stream failures on the server, not the client
+type: lesson
 ---
 
 # Classify stream failures on the server, not the client
@@ -26,3 +36,14 @@ Related: [[3 Resources/AI/Agents/Keep errorfailure text out of LLM-summarized du
 ## Related
 
 - [[3 Resources/AI/Agents/Keep errorfailure text out of LLM-summarized durable memory]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keep errorfailure text out of LLM-summarized durable memory]]
+- [[A silent canned fallback masks real failures — surface the underlying error]]
+- [[Vinnstack skill-usage counter missed reads past a 4MB stdout cap]]
+- [[State machines must catch expected-failure operations or they get stuck forever]]
+- [[Cache only successful results so failures retry on resume]]
+
+%% ai-graph-end %%

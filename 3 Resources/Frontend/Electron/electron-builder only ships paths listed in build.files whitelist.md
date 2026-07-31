@@ -1,10 +1,18 @@
 ---
-title: "electron-builder only ships paths listed in build.files whitelist"
+ai_hash: 5c34776430dd9f71
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-17
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-17
 status: seedling
-source: "Vinnstack session 2026-07-17"
-tags: [electron-builder, packaging, vinnstack, gotcha]
+tags:
+- electron-builder
+- packaging
+- vinnstack
+- gotcha
+title: electron-builder only ships paths listed in build.files whitelist
+type: lesson
 ---
 
 # electron-builder only ships paths listed in build.files whitelist
@@ -18,3 +26,14 @@ Rule of thumb: any directory an API route / runtime reads off disk (not just `.n
 ## Related
 
 - [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
+- [[electron-builder files node_modules glob disables devDependency pruning]]
+- [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
+- [[electron-builder --win CLI flag overrides win.target in package.json]]
+- [[Dead bundling config outlives the runtime code that read it]]
+
+%% ai-graph-end %%

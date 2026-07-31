@@ -1,10 +1,20 @@
 ---
-title: "Horizontal story slicing is only workable with contract-first and an integration story"
+ai_hash: 6e4b5272512535ca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: howto
+entities: []
+source: session 2026-07-22, prd-to-story v2 research
 status: seedling
-source: "session 2026-07-22, prd-to-story v2 research"
-tags: [agile, story-splitting, horizontal-slicing, contract-first, vinnstack]
+tags:
+- agile
+- story-splitting
+- horizontal-slicing
+- contract-first
+- vinnstack
+title: Horizontal story slicing is only workable with contract-first and an integration
+  story
+type: howto
 ---
 
 # Horizontal story slicing is only workable with contract-first and an integration story
@@ -27,3 +37,13 @@ Applied in vinnstack prd-to-story skill v2.0.0 (switched from vertical tracer-bu
 ## Related
 
 - [[Horizontal slicing sharpens AFK vs HITL classification]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Horizontal contract-first slicing - contract story, parallel layer stories, integration story]]
+- [[Horizontal slicing sharpens AFK vs HITL classification]]
+- [[vinnstack pipeline skills share one slicing model - flipping it cascades]]
+- [[interrogate-qa is cross-cutting across all Epics, Stories, and Flows]]
+
+%% ai-graph-end %%

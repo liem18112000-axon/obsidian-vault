@@ -1,10 +1,20 @@
 ---
-title: "jsonstore projections need quoted JSON keys and Mongo 16MB doc limit caps single-doc snapshots"
+ai_hash: 1bd0dcce708aa10d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: lesson
+entities: []
+source: materialize code review 2026-06-07
 status: seedling
-source: "materialize code review 2026-06-07"
-tags: [mongodb, luz-jsonstore, luz-docs, bson, limits]
+tags:
+- mongodb
+- luz-jsonstore
+- luz-docs
+- bson
+- limits
+title: jsonstore projections need quoted JSON keys and Mongo 16MB doc limit caps single-doc
+  snapshots
+type: lesson
 ---
 
 # jsonstore projections need quoted JSON keys and Mongo 16MB doc limit caps single-doc snapshots
@@ -19,3 +29,14 @@ Two constraints for raw jsonstore / Mongo plumbing in luz_docs:
 
 - [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
 - [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Materialize code review report - sprint-156 findings index]]
+- [[Canary tenant eArchive folder list trips Mongo code 292 sort-memory-limit]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+- [[luz-docs facet $unwind branch keys off client-supplied typearray, not schema]]
+
+%% ai-graph-end %%

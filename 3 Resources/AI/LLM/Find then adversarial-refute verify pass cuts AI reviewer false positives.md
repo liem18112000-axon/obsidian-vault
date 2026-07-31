@@ -1,10 +1,19 @@
 ---
-title: "Find then adversarial-refute verify pass cuts AI reviewer false positives"
+ai_hash: 5376bd93e9abcd7c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-19
-type: lesson
+entities: []
+source: Vinnstack QA Cockpit 2026-07-19
 status: seedling
-source: "Vinnstack QA Cockpit 2026-07-19"
-tags: [llm, ai-review, prompting, verification, vinnstack]
+tags:
+- llm
+- ai-review
+- prompting
+- verification
+- vinnstack
+title: Find then adversarial-refute verify pass cuts AI reviewer false positives
+type: lesson
 ---
 
 # Find then adversarial-refute verify pass cuts AI reviewer false positives
@@ -25,3 +34,14 @@ Related: [[Append-only QA signal bus with DISTINCT ON latest-per-dimension decou
 ## Related
 
 - [[Append-only QA signal bus with DISTINCT ON latest-per-dimension decouples quality dashboards from raw tables]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Keep the release gate deterministic; put AI judgment in upstream signals not the gate]]
+- [[AI as an accelerator with a human review gate]]
+- [[A refine regenerate can close open items from evidence the first pass left unexploited]]
+- [[Let developers veto stated assumptions instead of designing details]]
+- [[AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run]]
+
+%% ai-graph-end %%

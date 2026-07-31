@@ -1,10 +1,19 @@
 ---
-title: "Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes"
+ai_hash: 317f7a949b5b2187
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-05
-type: gotcha
+entities: []
+source: vinnstack code review 2026-07-05, approveStoryFlow
 status: seedling
-source: "vinnstack code review 2026-07-05, approveStoryFlow"
-tags: [concurrency, lost-update, persistence, vinnstack]
+tags:
+- concurrency
+- lost-update
+- persistence
+- vinnstack
+title: Whole-aggregate read-modify-write for a per-child toggle causes lost updates
+  under concurrent sibling writes
+type: gotcha
 ---
 
 # Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes
@@ -18,3 +27,14 @@ Tell: a "fast" no-LLM/instant action built on a load→mutate→save aggregate h
 ## Related
 
 - [[Secondary-write failures should fail loud when their silent version was the actual bug]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shared aggregate write targets need CAS, not plain $set]]
+- [[Delete-and-reinsert aggregate saves silently cascade-wipe new child tables]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+
+%% ai-graph-end %%

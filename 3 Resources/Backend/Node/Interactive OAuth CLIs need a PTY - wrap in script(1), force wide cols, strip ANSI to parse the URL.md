@@ -1,10 +1,21 @@
 ---
-title: "Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL"
+ai_hash: fa388916f8844cfe
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: gotcha
+entities: []
+source: session 2026-07-04, vinnstack claude login relay
 status: seedling
-source: "session 2026-07-04, vinnstack claude login relay"
-tags: [pty, cli, oauth, ansi, claude-code, vinnstack]
+tags:
+- pty
+- cli
+- oauth
+- ansi
+- claude-code
+- vinnstack
+title: Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip
+  ANSI to parse the URL
+type: gotcha
 ---
 
 # Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL
@@ -19,3 +30,14 @@ Bonus finding: claude setup-token's OAuth uses `redirect_uri=https://platform.cl
 ## Related
 
 - [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
+- [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]
+
+%% ai-graph-end %%

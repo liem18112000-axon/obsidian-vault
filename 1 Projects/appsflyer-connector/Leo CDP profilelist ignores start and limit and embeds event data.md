@@ -1,10 +1,54 @@
 ---
-title: "Leo CDP profile/list ignores start and limit and embeds event data"
+ai_hash: ffbfde9a29440a9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities:
+- Leo CDP
+- Data Observer API
+- /api/event/list
+- /api/profile/list
+- lastTrackingEvent
+- behavioralEvents
+- eventStatistics
+- funnelStage
+- funnelStageTimeline
+- inJourneyMaps
+- pagination
+- start parameter
+- limit parameter
+- AppsFlyer
+- maximum_rows
+- examples/list_all_events.py
+- Leo CDP public REST API contract
+- 1 Projects/appsflyer-connector/Leo CDP save returns 200 but eventlist cannot read
+  it back
+- profileId
+- errorCode 500
+- No profile found
+- metricName
+- metricValue
+- createdAt
+- observerId
+- isConversion
+- journeyId
+- metric
+- segment_id
+- event data
+- profiles
+- list all events endpoint
+- paging loop
+- NEW ids
+source: session 2026-06-30; live probes with read token
 status: seedling
-source: "session 2026-06-30; live probes with read token"
-tags: [leo-cdp, api, pagination, gotcha, events]
+tags:
+- leo-cdp
+- api
+- pagination
+- gotcha
+- events
+title: Leo CDP profile/list ignores start and limit and embeds event data
+type: lesson
 ---
 
 # Leo CDP profile/list ignores start and limit and embeds event data
@@ -24,3 +68,50 @@ Implemented in `examples/list_all_events.py`. Related: [[Leo CDP public REST API
 
 - [[Leo CDP public REST API contract]]
 - [[1 Projects/appsflyer-connector/Leo CDP save returns 200 but eventlist cannot read it back]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Leo CDP save returns 200 but eventlist cannot read it back]]
+- [[Leo CDP event observerId is the pushing tokenkey and eventsave can split from profilesave identity]]
+- [[Leo CDP admin dashboard is a hash-routed SPA on a separate host from the API]]
+- [[Leo CDP public REST API contract]]
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+
+**Relations:**
+- Leo CDP — *has API* — Data Observer API
+- Data Observer API — *provides endpoint* — /api/event/list
+- Data Observer API — *provides endpoint* — /api/profile/list
+- Leo CDP — *lacks* — list all events endpoint
+- /api/event/list — *returns error* — errorCode 500
+- /api/event/list — *returns message* — No profile found
+- /api/event/list — *requires parameter* — profileId
+- /api/profile/list — *embeds* — lastTrackingEvent
+- /api/profile/list — *embeds* — behavioralEvents
+- /api/profile/list — *embeds* — eventStatistics
+- /api/profile/list — *embeds* — funnelStage
+- /api/profile/list — *embeds* — funnelStageTimeline
+- /api/profile/list — *embeds* — inJourneyMaps
+- /api/profile/list — *ignores parameter* — start parameter
+- /api/profile/list — *ignores parameter* — limit parameter
+- pagination — *is fake for* — /api/profile/list
+- AppsFlyer — *has parameter* — maximum_rows
+- maximum_rows — *is silently overridden* — AppsFlyer
+- examples/list_all_events.py — *implements* — paging loop
+- lastTrackingEvent — *includes field* — metricName
+- lastTrackingEvent — *includes field* — metricValue
+- lastTrackingEvent — *includes field* — createdAt
+- lastTrackingEvent — *includes field* — observerId
+- lastTrackingEvent — *includes field* — isConversion
+- behavioralEvents — *lists* — metricName
+- eventStatistics — *counts by* — journeyId
+- eventStatistics — *counts by* — metric
+- Leo CDP public REST API contract — *is related to* — Leo CDP
+- 1 Projects/appsflyer-connector/Leo CDP save returns 200 but eventlist cannot read it back — *is related to* — Leo CDP
+- /api/profile/list — *is practical way to read* — event data
+- /api/profile/list — *returns* — profiles
+- profiles — *contain* — event data
+- paging loop — *must stop when it sees no* — NEW ids
+- paging loop — *avoids* — loops forever
+
+%% ai-graph-end %%

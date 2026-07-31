@@ -1,10 +1,19 @@
 ---
-title: "Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)"
+ai_hash: cc3928205a17bc50
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: lesson
+entities: []
+source: session 2026-07-02
 status: seedling
-source: "session 2026-07-02"
-tags: [postgres, performance, pg, latency, vinnstack]
+tags:
+- postgres
+- performance
+- pg
+- latency
+- vinnstack
+title: Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)
+type: lesson
 ---
 
 # Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)
@@ -22,3 +31,14 @@ Applied 2026-07-02 in lib/interrogationStore.ts writeAggregate.
 ## Related
 
 - [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Delete-and-reinsert aggregate saves silently cascade-wipe new child tables]]
+- [[DB-first-with-file-fallback opt-in Postgres persistence over a file cache]]
+
+%% ai-graph-end %%

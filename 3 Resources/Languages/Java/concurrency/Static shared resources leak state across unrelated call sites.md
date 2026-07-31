@@ -1,10 +1,19 @@
 ---
-title: "Static shared resources leak state across unrelated call sites"
+ai_hash: a5949bae356596c2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: luz_docs MaterializeMigrationExecutor.java review, 2026-07-10
 status: seedling
-source: "luz_docs MaterializeMigrationExecutor.java review, 2026-07-10"
-tags: [java, concurrency, static, resource-leak, gotcha]
+tags:
+- java
+- concurrency
+- static
+- resource-leak
+- gotcha
+title: Static shared resources leak state across unrelated call sites
+type: lesson
 ---
 
 # Static shared resources leak state across unrelated call sites
@@ -17,3 +26,11 @@ This is what makes small acquire/release bugs dangerous: the failure does not st
 
 ## Related
 [[Semaphore permit leak when risky code sits between acquire and try]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Semaphore permit leak when risky code sits between acquire and try]]
+- [[Semaphore acquire before try leaks permits on static semaphores]]
+
+%% ai-graph-end %%

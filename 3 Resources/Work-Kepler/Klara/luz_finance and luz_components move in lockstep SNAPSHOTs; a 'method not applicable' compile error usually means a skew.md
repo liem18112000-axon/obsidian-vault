@@ -1,10 +1,21 @@
 ---
-title: "luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew"
+ai_hash: db1269cdf3260d07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: lesson
+entities: []
+source: session 2026-07-27 luz_finance setup
 status: seedling
-source: "session 2026-07-27 luz_finance setup"
-tags: [klara-luz, maven, snapshot, version-skew, gotcha, axon-ivy]
+tags:
+- klara-luz
+- maven
+- snapshot
+- version-skew
+- gotcha
+- axon-ivy
+title: luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable'
+  compile error usually means a skew
+type: lesson
 ---
 
 # luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew
@@ -21,3 +32,14 @@ tags: [klara-luz, maven, snapshot, version-skew, gotcha, axon-ivy]
 - [[data classes]]
 - [[HTML dialogs]]
 - [[and Java]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[Axon Ivy project anatomy logic split across processes, data classes, HTML dialogs, and Java]]
+- [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
+- [[luz_epost_business_web to luz_docs_view_controller integration goes through one REST client package]]
+
+%% ai-graph-end %%

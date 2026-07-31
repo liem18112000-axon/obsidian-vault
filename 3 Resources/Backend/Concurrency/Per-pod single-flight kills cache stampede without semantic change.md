@@ -1,10 +1,19 @@
 ---
-title: "Per-pod single-flight kills cache stampede without semantic change"
+ai_hash: 65bff11b8653f427
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: howto
+entities: []
+source: session 2026-07-23 MaterializeGate stampede panel
 status: seedling
-source: "session 2026-07-23 MaterializeGate stampede panel"
-tags: [concurrency, cache, stampede, single-flight, java]
+tags:
+- concurrency
+- cache
+- stampede
+- single-flight
+- java
+title: Per-pod single-flight kills cache stampede without semantic change
+type: howto
 ---
 
 # Per-pod single-flight kills cache stampede without semantic change
@@ -21,3 +30,14 @@ Hardening from adversarial review: peek the shared cache once in the follower-ti
 
 - [[ManagedExecutorService.execute loses CDI request context]]
 - [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lock-based stampede control losers hit the cache before the winner fills it]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+
+%% ai-graph-end %%

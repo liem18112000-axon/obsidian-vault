@@ -1,10 +1,18 @@
 ---
-title: "Python embeddable distribution needs import site enabled for pip"
+ai_hash: 9a24389b28d33720
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: session 2026-06-17
 status: seedling
-source: "session 2026-06-17"
-tags: [python, packaging, offline, windows]
+tags:
+- python
+- packaging
+- offline
+- windows
+title: Python embeddable distribution needs import site enabled for pip
+type: lesson
 ---
 
 # Python embeddable distribution needs import site enabled for pip
@@ -16,3 +24,11 @@ Used when building **portable/offline Python bundles**: extract the embeddable z
 ## Related
 
 - [[tiktoken downloads its BPE vocab on first use]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[tiktoken downloads its BPE vocab on first use]]
+- [[pip install does not bundle templatesstatic referenced relative to a package]]
+
+%% ai-graph-end %%

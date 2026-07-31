@@ -1,10 +1,19 @@
 ---
-title: "luz-docs parallelized count undercounts documents missing _shard"
+ai_hash: 791194473cb5569f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [luz-docs, mongodb, count, materialize, gotcha]
+tags:
+- luz-docs
+- mongodb
+- count
+- materialize
+- gotcha
+title: luz-docs parallelized count undercounts documents missing _shard
+type: lesson
 ---
 
 # luz-docs parallelized count undercounts documents missing _shard
@@ -26,3 +35,14 @@ Related: [[Black-box test missing-_shard count correctness with a delta test]]
 ## Related
 
 - [[Black-box test missing-_shard count correctness with a delta test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[Black-box test missing-_shard count correctness with a delta test]]
+- [[No existing luz-docs field works as a fan-out count partition key — survey]]
+- [[Fan-out gate and backfill filter must cover the same field set]]
+- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
+
+%% ai-graph-end %%

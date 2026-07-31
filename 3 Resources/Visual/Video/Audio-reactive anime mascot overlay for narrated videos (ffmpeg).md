@@ -1,11 +1,25 @@
 ---
-title: "Audio-reactive anime mascot overlay for narrated videos (ffmpeg)"
+ai_hash: 7eab8c206e18af32
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-updated: 2026-07-31
-type: howto
+entities: []
+source: sessions 2026-06-18 / 2026-06-19
 status: seedling
-source: "sessions 2026-06-18 / 2026-06-19"
-tags: [ffmpeg, video, avatar, narration, presentation, vtuber, showwaves, vertex-ai, imagen, tts]
+tags:
+- ffmpeg
+- video
+- avatar
+- narration
+- presentation
+- vtuber
+- showwaves
+- vertex-ai
+- imagen
+- tts
+title: Audio-reactive anime mascot overlay for narrated videos (ffmpeg)
+type: howto
+updated: 2026-07-31
 ---
 
 # Audio-reactive anime mascot overlay for narrated videos (ffmpeg)
@@ -34,3 +48,14 @@ Context: `C:\Users\dvtliem\.claude\docs\hook-present\build\add-avatar.py` + `ava
 - [[3 Resources/Visual/Presentations/Full-bleed slide images need ~169 aspect or their text renders too small]]
 - [[3 Resources/Visual/Video/Hedra talking-avatar flow + gotcha video generation is paid-only (free tier blocks Generate)]]
 - [[concept-to-video avatar overlay sits bottom-right — keep callouts clear]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Assemble a narrated slide video pptx to png + per-slide Google TTS + ffmpeg -shortest segments + concat]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+- [[concept-to-video avatar overlay sits bottom-right — keep callouts clear]]
+- [[Narration-synced highlight region-based dimemphasize excalidraw variants + timed xfade]]
+- [[Hedra talking-avatar flow + gotcha video generation is paid-only (free tier blocks Generate)]]
+
+%% ai-graph-end %%

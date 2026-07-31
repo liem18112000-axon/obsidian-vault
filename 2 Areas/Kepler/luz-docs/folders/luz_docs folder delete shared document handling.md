@@ -1,10 +1,19 @@
 ---
-title: "luz_docs folder delete shared document handling"
+ai_hash: a8fdeb1a9313f565
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: concept
+entities: []
+source: FolderUtil / FolderDeletingService, session 2026-06-05
 status: seedling
-source: "FolderUtil / FolderDeletingService, session 2026-06-05"
-tags: [luz-docs, folders, documents, delete, materialize]
+tags:
+- luz-docs
+- folders
+- documents
+- delete
+- materialize
+title: luz_docs folder delete shared document handling
+type: concept
 ---
 
 # luz_docs folder delete shared document handling
@@ -21,3 +30,14 @@ The `folderIds` trim is also the only place the **materialize cascade** fires du
 
 - [[luz_docs folder delete multi-parent semantics]]
 - [[luz_docs folder deletion is not transactional]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs folder delete multi-parent semantics]]
+- [[Batched folder delete strips folder ids via union updateMany]]
+- [[luz_docs delete folder API soft vs permanent state machine]]
+- [[luz_docs deleteFolder isDetailResponse error contract and non-transactionality]]
+- [[Folder recovery reuses the parent-change materialize cascade]]
+
+%% ai-graph-end %%

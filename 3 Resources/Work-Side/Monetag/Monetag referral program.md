@@ -1,16 +1,20 @@
 ---
-title: Monetag referral program
-created: 2026-06-12
-type: term
-status: seedling
-source: research session 2026-06-12
-tags:
-  - monetag
-  - referral
-  - passive-income
+ai_hash: 1d9b41f513d16b32
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Monetag 5 percent referral
-  - Monetag refer a publisher
+- Monetag 5 percent referral
+- Monetag refer a publisher
+created: 2026-06-12
+entities: []
+source: research session 2026-06-12
+status: seedling
+tags:
+- monetag
+- referral
+- passive-income
+title: Monetag referral program
+type: term
 ---
 
 # Monetag referral program
@@ -40,3 +44,14 @@ If you publish tutorials/reviews about web monetization, the referral link is a 
 - [[Monetag payments and payout terms]]
 - [[Ad network vs affiliate network]]
 - [[Monetag - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monetag - MOC]]
+- [[Monetag overview]]
+- [[Monetag payments and payout terms]]
+- [[Ad network vs affiliate network]]
+- [[Monetag ad formats]]
+
+%% ai-graph-end %%

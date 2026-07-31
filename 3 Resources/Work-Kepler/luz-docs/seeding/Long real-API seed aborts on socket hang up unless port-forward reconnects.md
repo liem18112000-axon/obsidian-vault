@@ -1,10 +1,19 @@
 ---
-title: "Long real-API seed aborts on socket hang up unless port-forward reconnects"
+ai_hash: e313854d91a65370
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-22
-type: lesson
+entities: []
+source: session 2026-06-22
 status: seedling
-source: "session 2026-06-22"
-tags: [luz-docs, kubectl, port-forward, resilience, gotcha]
+tags:
+- luz-docs
+- kubectl
+- port-forward
+- resilience
+- gotcha
+title: Long real-API seed aborts on socket hang up unless port-forward reconnects
+type: lesson
 ---
 
 # Long real-API seed aborts on socket hang up unless port-forward reconnects
@@ -25,3 +34,14 @@ Related: [[Resume a partial earchive seed with APPEND instead of re-truncating]]
 ## Related
 
 - [[Resume a partial earchive seed with APPEND instead of re-truncating]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recount before every reach-a-target retry — crashed runs insert silently]]
+- [[earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)]]
+- [[earchive-seed-stale-27017-portforward-gotcha]]
+- [[Resume a partial earchive seed with APPEND instead of re-truncating]]
+- [[earchive-data-prepare logs document progress only every 10 batches]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Vertex AI global endpoint host has no region prefix"
+ai_hash: 4b1af22f364d497a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: sessions 2026-07-11, klara-nonprod Claude on Vertex setup (user-confirmed
+  live test)
 status: evergreen
-source: "sessions 2026-07-11, klara-nonprod Claude on Vertex setup (user-confirmed live test)"
-tags: [gcp, vertex-ai, gotcha, api, rest-api, claude]
+tags:
+- gcp
+- vertex-ai
+- gotcha
+- api
+- rest-api
+- claude
+title: Vertex AI global endpoint host has no region prefix
+type: lesson
 ---
 
 # Vertex AI global endpoint host has no region prefix
@@ -25,3 +36,14 @@ Confirmed HTTP 200 against `projects/klara-nonprod/locations/global/.../models/c
 - [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
 - [[Claude models are available on GCP Vertex AI Model Garden]]
 - [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Vertex models.list() shows the catalog, not what the project can invoke; Gemini 3 needs the global endpoint]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+
+%% ai-graph-end %%

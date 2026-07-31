@@ -1,10 +1,20 @@
 ---
-title: "Composite fan-out sink: materialize once, best-effort, idempotent retries"
+ai_hash: 95937b5b468b4c05
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-27
-type: lesson
+entities: []
+source: session 2026-06-27 feat/appsflyer-pull-kafka-sink; MultiSink
 status: seedling
-source: "session 2026-06-27 feat/appsflyer-pull-kafka-sink; MultiSink"
-tags: [design-pattern, sinks, idempotency, fan-out, connector, leo-cdp]
+tags:
+- design-pattern
+- sinks
+- idempotency
+- fan-out
+- connector
+- leo-cdp
+title: 'Composite fan-out sink: materialize once, best-effort, idempotent retries'
+type: lesson
 ---
 
 # Composite fan-out sink: materialize once, best-effort, idempotent retries
@@ -24,3 +34,14 @@ Used in the Leo CDP AppsFlyer connector (MultiSink) so both the push receiver an
 ## Related
 
 - [[3 Resources/Backend/Kafka/Kafka sink append-only log, idempotency via dedupe_key message key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Kafka sink append-only log, idempotency via dedupe_key message key]]
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+- [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+- [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
+- [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
+
+%% ai-graph-end %%

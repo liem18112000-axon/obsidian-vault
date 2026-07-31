@@ -1,10 +1,19 @@
 ---
-title: "Guard tests that need an optional dependency with pytest.importorskip"
+ai_hash: 4314d334ec815a28
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: session 2026-06-15, accesstrade_integration CI failure
 status: seedling
-source: "session 2026-06-15, accesstrade_integration CI failure"
-tags: [pytest, testing, optional-dependency, ci-cd, gotcha]
+tags:
+- pytest
+- testing
+- optional-dependency
+- ci-cd
+- gotcha
+title: Guard tests that need an optional dependency with pytest.importorskip
+type: lesson
 ---
 
 # Guard tests that need an optional dependency with pytest.importorskip
@@ -19,3 +28,12 @@ General rules:
 - Don't write tests whose result depends on what happens to be installed in the dev venv. Either guard with importorskip or install the dep in CI (ideally both — importorskip for robustness, the extra in CI so it doesn't no-op).
 - Mirror the runtime contract: if code FALLS BACK when a lib is missing, test the fallback unconditionally and the enabled path under importorskip.
 - Catch this class of bug by running tests in the SAME extras set CI uses, not your fully-loaded venv. Relates to [[An optimization-only cache should fail soft, never raise on backend errors]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[pytest imports all test modules before applying -m deselection]]
+- [[An optimization-only cache should fail soft, never raise on backend errors]]
+- [[Black-box exe test suite skips silently when no artifact is present]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "download.blender.org rejects default urllib User-Agent"
+ai_hash: e662ba307b6ffed1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar project, 2026-07-11
 status: seedling
-source: "virtual-avatar project, 2026-07-11"
-tags: [python, urllib, http, gotcha]
+tags:
+- python
+- urllib
+- http
+- gotcha
+title: download.blender.org rejects default urllib User-Agent
+type: lesson
 ---
 
 # download.blender.org rejects default urllib User-Agent
@@ -16,3 +24,11 @@ General lesson: when a download from a normal public file host 403s with no othe
 ## Related
 
 - [[Blender Windows portable builds are plain zips]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Blender Windows portable builds are plain zips]]
+- [[dev.mysql.com CDN 403s the PowerShell User-Agent]]
+
+%% ai-graph-end %%

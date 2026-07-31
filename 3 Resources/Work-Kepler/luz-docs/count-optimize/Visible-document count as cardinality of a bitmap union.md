@@ -1,10 +1,20 @@
 ---
-title: "Visible-document count as cardinality of a bitmap union"
+ai_hash: c29ef904d61265c6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: concept
+entities: []
+source: sessions 2026-06-16 (LUZ-154613)
 status: seedling
-source: "sessions 2026-06-16 (LUZ-154613)"
-tags: [luz-docs, bitmap, roaring, count, materialize, performance]
+tags:
+- luz-docs
+- bitmap
+- roaring
+- count
+- materialize
+- performance
+title: Visible-document count as cardinality of a bitmap union
+type: concept
 ---
 
 # Visible-document count as cardinality of a bitmap union
@@ -33,3 +43,14 @@ Union = bitwise **OR**; count = **popcount**.
 - [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
 - [[luz-docs parallelized count undercounts documents missing _shard]]
 - [[1 Projects/luz-docs/materialize/Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
+- [[Levers to optimise the visible-document count beyond _shard fan-out]]
+- [[Roaring bitmaps give exact set cardinality via chunked containers]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[Count-scaling path fan-out first, Roaring next, HyperLogLog for approximate]]
+
+%% ai-graph-end %%

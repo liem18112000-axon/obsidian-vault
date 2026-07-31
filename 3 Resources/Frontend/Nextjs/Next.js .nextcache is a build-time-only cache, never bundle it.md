@@ -1,10 +1,18 @@
 ---
-title: "Next.js .next/cache is a build-time-only cache, never bundle it"
+ai_hash: fff0efd98969bb73
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack build optimization session
 status: seedling
-source: "vinnstack build optimization session"
-tags: [nextjs, build, bundle-size, packaging]
+tags:
+- nextjs
+- build
+- bundle-size
+- packaging
+title: Next.js .next/cache is a build-time-only cache, never bundle it
+type: lesson
 ---
 
 # Next.js .next/cache is a build-time-only cache, never bundle it
@@ -18,3 +26,14 @@ Related: [[electron-builder files node_modules glob disables devDependency pruni
 ## Related
 
 - [[electron-builder files node_modules glob disables devDependency pruning]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[electron-builder files node_modules glob disables devDependency pruning]]
+- [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+- [[Trim a cross-built Electron exe drop the host-platform native binaries the target never uses (+ maxCompression, one locale)]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+- [[Next.js production server never loads the native SWC binary at runtime]]
+
+%% ai-graph-end %%

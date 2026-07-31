@@ -1,10 +1,22 @@
 ---
-title: "Zalo OA API is webhook+OAuth and CS messages are rate-limited unlike the Bot API"
+ai_hash: 6900c015309d1c8b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: lesson
+entities: []
+source: session 2026-06-09 adapting zalo skill after bot-creation was blocked
 status: seedling
-source: "session 2026-06-09 adapting zalo skill after bot-creation was blocked"
-tags: [zalo, oa-api, oauth, webhook, gotcha, messaging, claude-code-skills]
+tags:
+- zalo
+- oa-api
+- oauth
+- webhook
+- gotcha
+- messaging
+- claude-code-skills
+title: Zalo OA API is webhook+OAuth and CS messages are rate-limited unlike the Bot
+  API
+type: lesson
 ---
 
 # Zalo OA API is webhook+OAuth and CS messages are rate-limited unlike the Bot API
@@ -23,3 +35,12 @@ The Zalo **Official Account (OA) API** (`openapi.zalo.me/v3.0/oa/...`, docs at d
 
 - [[3 Resources/Work-Side/Zalo Bot API/Zalo Bot API endpoints, token, and message shapes]]
 - [[Zalo Bot API has no getUpdates offset and no reply_to_message]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Zalo Bot API endpoints, token, and message shapes]]
+- [[Zalo dev app and bot creation both require a verified Zalo account]]
+- [[Zalo Bot API has no getUpdates offset and no reply_to_message]]
+
+%% ai-graph-end %%

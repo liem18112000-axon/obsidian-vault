@@ -1,10 +1,43 @@
 ---
-title: "LUZ_DOCS_TENANTS_USE_MATERIALIZED gates the materialised read path per tenant"
+ai_hash: 0d4f4b2c6379962d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: reference
+entities:
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED
+- materialised read path
+- tenant
+- luz.docs.tenants.use-materialized
+- MaterializeConstants.TENANT_USE_MATERIALIZED
+- eArchive
+- luz-docs
+- dev GKE
+- luz-docs-env-configmap-<kustomize-hash>
+- kubectl
+- statefulset luz-docs
+- ConfigMap
+- kubectl rollout restart statefulset/luz-docs
+- kustomize
+- kubernetes-overlays
+- luz-kubernetes-add-env skill
+- 1 Projects/luz-docs/earchive/luz_docs parent-change cascade recovers forward, not
+  via snapshot rollback
+- envFrom
+- pods
+- name hash suffix
+- in-place patch
+- kubectl apply
+- durable change
+source: session 2026-06-11
 status: seedling
-source: "session 2026-06-11"
-tags: [luz-docs, earchive, materialize, configmap, gke]
+tags:
+- luz-docs
+- earchive
+- materialize
+- configmap
+- gke
+title: LUZ_DOCS_TENANTS_USE_MATERIALIZED gates the materialised read path per tenant
+type: reference
 ---
 
 # LUZ_DOCS_TENANTS_USE_MATERIALIZED gates the materialised read path per tenant
@@ -18,3 +51,36 @@ Caveat: the name hash suffix means the ConfigMap is kustomize-generated; an in-p
 ## Related
 
 - [[1 Projects/luz-docs/earchive/luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Campaign flag now guards materialize write path (isAllowedTenant)]]
+- [[luz-docs migration runs on a cron window via LUZ_DOCS_MIGRATION_PROCESSING_CRON]]
+- [[luz-docs migration campaign per-tenant activation flow]]
+- [[Materialize tenant allowlist removed - cascade unconditional]]
+- [[Campaign-gate template cache then campaign status L1 then repository L2]]
+
+**Relations:**
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED — *gates* — materialised read path
+- materialised read path — *is per* — tenant
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED — *is an env var* — LUZ_DOCS_TENANTS_USE_MATERIALIZED
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED — *has config property* — luz.docs.tenants.use-materialized
+- luz.docs.tenants.use-materialized — *is defined in* — MaterializeConstants.TENANT_USE_MATERIALIZED
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED — *is tenant allowlist for* — eArchive materialised read path
+- eArchive materialised read path — *is in* — luz-docs
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED — *lives in* — luz-docs-env-configmap-<kustomize-hash>
+- luz-docs-env-configmap-<kustomize-hash> — *is on* — dev GKE
+- luz-docs-env-configmap-<kustomize-hash> — *discovered via* — kubectl
+- kubectl — *queries* — statefulset luz-docs
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED — *is consumed via* — envFrom
+- ConfigMap patch — *requires* — kubectl rollout restart statefulset/luz-docs
+- kubectl rollout restart statefulset/luz-docs — *is required for pods to see* — new value
+- ConfigMap — *is* — kustomize-generated
+- kustomize-generated ConfigMap — *has* — name hash suffix
+- in-place patch — *can be reconciled by* — kubectl apply
+- durable change — *requires update to* — kubernetes-overlays
+- kubernetes-overlays — *uses* — luz-kubernetes-add-env skill
+- LUZ_DOCS_TENANTS_USE_MATERIALIZED — *is related to* — 1 Projects/luz-docs/earchive/luz_docs parent-change cascade recovers forward, not via snapshot rollback
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Playwright click() auto-waits the full timeout on a missing locator; probe with count() first"
+ai_hash: 86170c1ee319e7ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: fb-info-project thorough-mode debugging, session 2026-06-30
 status: seedling
-source: "fb-info-project thorough-mode debugging, session 2026-06-30"
-tags: [playwright, timeout, performance, gotcha]
+tags:
+- playwright
+- timeout
+- performance
+- gotcha
+title: Playwright click() auto-waits the full timeout on a missing locator; probe
+  with count() first
+type: lesson
 ---
 
 # Playwright click() auto-waits the full timeout on a missing locator; probe with count() first
@@ -24,3 +33,14 @@ Playwright actions **auto-wait**: `locator.click()` (and `scroll_into_view_if_ne
 
 - [[Distinguish absent control from missed click when expanding lazy lists]]
 - [[innerText forces layout and can hang Playwright scans on huge DOMs; prefer textContent]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[innerText forces layout and can hang Playwright scans on huge DOMs; prefer textContent]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+- [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+- [[Playwright browser_wait_for time is a hard sleep]]
+- [[scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile]]
+
+%% ai-graph-end %%

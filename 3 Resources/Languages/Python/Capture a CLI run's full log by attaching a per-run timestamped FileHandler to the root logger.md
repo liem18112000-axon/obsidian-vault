@@ -1,10 +1,19 @@
 ---
-title: "Capture a CLI run's full log by attaching a per-run timestamped FileHandler to the root logger"
+ai_hash: e82faa4158553128
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: session 2026-06-23
 status: seedling
-source: "session 2026-06-23"
-tags: [python, logging, cli, gotcha]
+tags:
+- python
+- logging
+- cli
+- gotcha
+title: Capture a CLI run's full log by attaching a per-run timestamped FileHandler
+  to the root logger
+type: lesson
 ---
 
 # Capture a CLI run's full log by attaching a per-run timestamped FileHandler to the root logger
@@ -18,3 +27,12 @@ Also: on re-init, remove the previous FileHandler from root (handler.close()) be
 ## Related
 
 - [[fb-info-project merges bare-id 'profile UUID' inputs into one combined workbook]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
+- [[Crash-safe incremental output as_completed + indexed results + stable filename reused for checkpoint and final]]
+- [[fb-info-project merges bare-id 'profile UUID' inputs into one combined workbook]]
+
+%% ai-graph-end %%

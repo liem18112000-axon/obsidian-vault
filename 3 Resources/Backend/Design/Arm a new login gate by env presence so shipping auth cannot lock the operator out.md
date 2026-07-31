@@ -1,10 +1,19 @@
 ---
-title: "Arm a new login gate by env presence so shipping auth cannot lock the operator out"
+ai_hash: 6e0a6c226926e9dd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04, vinnstack Google OAuth
 status: seedling
-source: "session 2026-07-04, vinnstack Google OAuth"
-tags: [auth, oauth, rollout, vinnstack]
+tags:
+- auth
+- oauth
+- rollout
+- vinnstack
+title: Arm a new login gate by env presence so shipping auth cannot lock the operator
+  out
+type: lesson
 ---
 
 # Arm a new login gate by env presence so shipping auth cannot lock the operator out
@@ -18,3 +27,14 @@ Corollaries: providers array is conditionally empty (NextAuth boots fine with ze
 ## Related
 
 - [[A server-side action rejection is a stale-view signal - resync on error]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Separate read-check from create in a first-run onboarding gate]]
+- [[Gate a headless-only relay behind an explicit env flag so local browser login still works]]
+- [[NextAuth cannot share apiauth with an existing dynamic route - single segments get shadowed]]
+- [[Vinnstack desktop app dropped Google OAuth for a typed-email operator identity]]
+- [[Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+
+%% ai-graph-end %%

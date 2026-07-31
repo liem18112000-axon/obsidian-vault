@@ -1,10 +1,18 @@
 ---
-title: "Blender Windows portable builds are plain zips"
+ai_hash: dae22c594c4e1702
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar project, 2026-07-11
 status: seedling
-source: "virtual-avatar project, 2026-07-11"
-tags: [blender, automation, windows, ci]
+tags:
+- blender
+- automation
+- windows
+- ci
+title: Blender Windows portable builds are plain zips
+type: lesson
 ---
 
 # Blender Windows portable builds are plain zips
@@ -19,3 +27,11 @@ Gotcha: the download host (download.blender.org) 403s a bare Python `urllib` req
 
 - [[Blender headless add-on install via bpy.ops.preferences]]
 - [[download.blender.org rejects default urllib User-Agent]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[download.blender.org rejects default urllib User-Agent]]
+- [[Blender headless add-on install via bpy.ops.preferences]]
+
+%% ai-graph-end %%

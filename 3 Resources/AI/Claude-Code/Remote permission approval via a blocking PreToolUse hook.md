@@ -1,10 +1,18 @@
 ---
-title: "Remote permission approval via a blocking PreToolUse hook"
+ai_hash: 95513bea0417ee43
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: howto
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [claude-code, hooks, telegram, permissions]
+tags:
+- claude-code
+- hooks
+- telegram
+- permissions
+title: Remote permission approval via a blocking PreToolUse hook
+type: howto
 ---
 
 # Remote permission approval via a blocking PreToolUse hook
@@ -30,3 +38,14 @@ Built for the [[Custom Telegram-Claude bridge vs official Claude Code Remote Con
 ## Related
 
 - [[Custom Telegram-Claude bridge vs official Claude Code Remote Control]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Custom Telegram-Claude bridge vs official Claude Code Remote Control]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Claude Code hooks event model]]
+- [[Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]]
+- [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
+
+%% ai-graph-end %%

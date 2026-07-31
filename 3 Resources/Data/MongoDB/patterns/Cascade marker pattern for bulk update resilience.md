@@ -1,9 +1,18 @@
 ---
-title: "Cascade marker pattern for bulk update resilience"
+ai_hash: 785c8346b3f6c26e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: pattern
+entities: []
 status: seedling
-tags: [resilience, bulk-update, mongodb, cascade, checkpoint]
+tags:
+- resilience
+- bulk-update
+- mongodb
+- cascade
+- checkpoint
+title: Cascade marker pattern for bulk update resilience
+type: pattern
 ---
 
 # Cascade marker pattern for bulk update resilience
@@ -25,3 +34,14 @@ Lifecycle (`MaterializeRepository`, folder rename / parent-change cascades):
 
 - [[Sentinel fields pattern for query optimization]]
 - [[Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cascade-marker pattern for crash-safe async retry]]
+- [[luz_docs materialize passive retry via cascade markers]]
+- [[03 Cascade Attempt]]
+- [[04 Marker State Machine]]
+- [[luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races]]
+
+%% ai-graph-end %%

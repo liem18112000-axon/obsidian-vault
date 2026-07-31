@@ -1,10 +1,19 @@
 ---
-title: "Facebook reel comments are hidden behind the comment icon"
+ai_hash: f5f8900ed4674ac0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-06
 status: seedling
-source: "fb-info-project session 2026-06-06"
-tags: [facebook, scraping, playwright, gotcha, fb-info-project]
+tags:
+- facebook
+- scraping
+- playwright
+- gotcha
+- fb-info-project
+title: Facebook reel comments are hidden behind the comment icon
+type: lesson
 ---
 
 # Facebook reel comments are hidden behind the comment icon
@@ -25,3 +34,14 @@ Once the panel is open, comments use the exact same DOM as on posts (`div[role="
 ## Related
 
 - [[Facebook comment DOM uses role=article containers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Scroll Facebook reel comments via JS, never mouse.wheel]]
+- [[Facebook shows a See more on Facebook login dialog when the session is logged out]]
+- [[Facebook sharev links can resolve to reels — classify after the redirect]]
+- [[Facebook post permalinks render the post twice — dialog plus a hidden page copy]]
+- [[Verify Facebook comment sort switch by re-reading the sort button label]]
+
+%% ai-graph-end %%

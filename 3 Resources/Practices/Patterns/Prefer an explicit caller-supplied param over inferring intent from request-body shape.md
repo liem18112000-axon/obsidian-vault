@@ -1,10 +1,19 @@
 ---
-title: "Prefer an explicit caller-supplied param over inferring intent from request-body shape"
+ai_hash: 5ec5817b2e1132ab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: luz_docs estimatedcount feature, 2026-07-09 — deleted FolderCountQueryMatcher
+  in favour of the existing folder-id query param
 status: seedling
-source: "luz_docs estimatedcount feature, 2026-07-09 — deleted FolderCountQueryMatcher in favour of the existing folder-id query param"
-tags: [api-design, rest, simplicity]
+tags:
+- api-design
+- rest
+- simplicity
+title: Prefer an explicit caller-supplied param over inferring intent from request-body
+  shape
+type: lesson
 ---
 
 # Prefer an explicit caller-supplied param over inferring intent from request-body shape
@@ -20,3 +29,14 @@ Rule of thumb: before writing a shape detector over a generic payload, check whe
 ## Related
 
 - [[Pick the variant matching the data you already hold, not the triggering operation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Validate with a count query for violators instead of loading all documents]]
+- [[Verify a response-shape regression by tracing the downstream consumer, not the shape diff]]
+- [[Pick the variant matching the data you already hold, not the triggering operation]]
+- [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "KlaraPay V2 Java classes still call Payrexx API v1.0 on the consumer flow"
+ai_hash: 4b1aa7c3e01197f5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: lesson
+entities: []
+source: luz_online_payment re-verification 2026-07-24
 status: budding
-source: "luz_online_payment re-verification 2026-07-24"
-tags: [klarapay, payrexx, api-versioning, gotcha]
+tags:
+- klarapay
+- payrexx
+- api-versioning
+- gotcha
+title: KlaraPay V2 Java classes still call Payrexx API v1.0 on the consumer flow
+type: lesson
 ---
 
 # KlaraPay V2 Java classes still call Payrexx API v1.0 on the consumer flow
@@ -18,3 +26,14 @@ Lesson: never infer API version from class-name suffixes — read the resolved b
 ## Related
 - [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
 - [[1 Projects/luz_store/LUZ-157476/Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
+- [[KlaraTransactionRequest.message content is Payrexx prose or runtime exception text, never a mapped constant]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[Enumerate real Payrexx decline codes via chargeTransactionId lookup, not via service responses]]
+- [[Payrexx declines travel in-band on HTTP 2xx in the luz charge flow]]
+
+%% ai-graph-end %%

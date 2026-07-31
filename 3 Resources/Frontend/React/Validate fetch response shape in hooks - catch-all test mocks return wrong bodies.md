@@ -1,11 +1,24 @@
 ---
-title: "Validate fetch response shape in hooks - catch-all test mocks return wrong bodies"
-aliases: ["Guard array-typed React state seeded from a fetch with ?? []"]
+ai_hash: 7c23b1d955fe6a86
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Guard array-typed React state seeded from a fetch with ?? []
 created: 2026-07-03
-type: lesson
+entities: []
+source: vinnstack usePrdComments crash 2026-07-03; vinnstack cloud-build fix 2026-07-26
 status: seedling
-source: "vinnstack usePrdComments crash 2026-07-03; vinnstack cloud-build fix 2026-07-26"
-tags: [react, hooks, typescript, testing, fetch, defensive-coding, gotcha]
+tags:
+- react
+- hooks
+- typescript
+- testing
+- fetch
+- defensive-coding
+- gotcha
+title: Validate fetch response shape in hooks - catch-all test mocks return wrong
+  bodies
+type: lesson
 ---
 
 # Validate fetch response shape in hooks - catch-all test mocks return wrong bodies
@@ -26,3 +39,14 @@ Real cases (vinnstack, 2026-07): `usePrdComments`; and `MdExportControl` + `Vers
 
 - [[A render crash masks latent crashes elsewhere in the same React subtree]]
 - [[3 Resources/Frontend/React/Order-independent prefills fold precedence into the functional updater, not effect order]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A render crash masks latent crashes elsewhere in the same React subtree]]
+- [[When a merge turns CI red decide test-vs-source fix by reading code intent]]
+- [[Order-independent prefills fold precedence into the functional updater, not effect order]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+- [[Inferred union returns grow optional-undefined members - annotate to keep in-narrowing]]
+
+%% ai-graph-end %%

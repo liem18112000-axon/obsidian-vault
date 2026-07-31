@@ -1,10 +1,19 @@
 ---
-title: "scalar add to securityClassCodes tail is a known luz-docs IT pre-existing failure"
+ai_hash: c9d2dfef90bb491b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: dev IT run d833dbe 2026-06-16
 status: seedling
-source: "dev IT run d833dbe 2026-06-16"
-tags: [luz-docs, integration-test, behave, gotcha, security-class]
+tags:
+- luz-docs
+- integration-test
+- behave
+- gotcha
+- security-class
+title: scalar add to securityClassCodes tail is a known luz-docs IT pre-existing failure
+type: lesson
 ---
 
 # scalar add to securityClassCodes tail is a known luz-docs IT pre-existing failure
@@ -29,3 +38,14 @@ Relates to the `$SCn` security-class IT conversion and the materialize-pattern I
 ## Related
 
 - [[luz-docs integration test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+- [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+- [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+
+%% ai-graph-end %%

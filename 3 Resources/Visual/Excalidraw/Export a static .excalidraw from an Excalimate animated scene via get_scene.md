@@ -1,10 +1,19 @@
 ---
-title: "Export a static .excalidraw from an Excalimate animated scene via get_scene"
+ai_hash: 7d192d52792e915c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: howto
+entities: []
+source: session 2026-06-16 divide-conquer-count overview
 status: seedling
-source: "session 2026-06-16 divide-conquer-count overview"
-tags: [excalimate, excalidraw, animation, export, gotcha]
+tags:
+- excalimate
+- excalidraw
+- animation
+- export
+- gotcha
+title: Export a static .excalidraw from an Excalimate animated scene via get_scene
+type: howto
 ---
 
 # Export a static .excalidraw from an Excalimate animated scene via get_scene
@@ -24,3 +33,14 @@ Note: get_scene output is large and gets spilled to a tool-results file — read
 ## Related
 
 - [[Excalimate camera pan = translateX keyframes at each scene's center X]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalimate export is browser-only; headless export needs Playwright + share URL]]
+- [[Excalimate camera pan = translateX keyframes at each scene's center X]]
+- [[Excalimate cloud share links are CORS-broken — use Connect to MCP server instead]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Inject anchored inline comments into LLM regeneration prompts as quoted passages"
+ai_hash: bcf827ec7c603879
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: model
+entities: []
+source: session 2026-07-03, vinnstack PRD inline-comments plan
 status: seedling
-source: "session 2026-07-03, vinnstack PRD inline-comments plan"
-tags: [llm, prompting, review-loop, vinnstack]
+tags:
+- llm
+- prompting
+- review-loop
+- vinnstack
+title: Inject anchored inline comments into LLM regeneration prompts as quoted passages
+type: model
 ---
 
 # Inject anchored inline comments into LLM regeneration prompts as quoted passages
@@ -29,3 +37,14 @@ Key points: the block-quoted passage removes all ambiguity about what "this" ref
 ## Related
 
 - [[TextQuoteSelector anchoring survives document regeneration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TextQuoteSelector anchoring survives document regeneration]]
+- [[LLM-implementable plan exports must bundle unresolved review state with precedence rules]]
+- [[Version-stamp quality ratings so stale feedback stops driving regeneration]]
+- [[AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run]]
+- [[A feedback loop with only its write side wired looks like a broken feature]]
+
+%% ai-graph-end %%

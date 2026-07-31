@@ -1,10 +1,19 @@
 ---
-title: "Cached-rejected lazy import silently breaks a feature for the whole session"
+ai_hash: cfe78d1a5d540b09
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [react, lazy-import, mermaid, gotcha, vinnstack]
+tags:
+- react
+- lazy-import
+- mermaid
+- gotcha
+- vinnstack
+title: Cached-rejected lazy import silently breaks a feature for the whole session
+type: lesson
 ---
 
 # Cached-rejected lazy import silently breaks a feature for the whole session
@@ -31,3 +40,14 @@ Diagnosis technique worth keeping: validate mermaid code headless with node + js
 ## Related
 
 - [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering]]
+- [[A render crash masks latent crashes elsewhere in the same React subtree]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+- [[Async-rendered content (Mermaid) causes layout shift that misdirects form clicks]]
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+
+%% ai-graph-end %%

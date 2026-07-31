@@ -1,10 +1,19 @@
 ---
-title: "Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent"
+ai_hash: c099378bc4ea1a37
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
-type: observation
+entities: []
+source: Vinnstack session 2026-07-18
 status: seedling
-source: "Vinnstack session 2026-07-18"
-tags: [vinnstack, performance, claude-cli, latency, gotcha]
+tags:
+- vinnstack
+- performance
+- claude-cli
+- latency
+- gotcha
+title: Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent
+type: observation
 ---
 
 # Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent
@@ -20,3 +29,14 @@ So: do not promise "blazing fast" for CLI-spawn features; the floor is ~12s. If 
 ## Related
 
 - [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+- [[Enable Claude Code fast mode in headless -p runs via --settings fastMode]]
+- [[runClaude onChunk streams stream-json; forward as NDJSON and read with getReader]]
+
+%% ai-graph-end %%

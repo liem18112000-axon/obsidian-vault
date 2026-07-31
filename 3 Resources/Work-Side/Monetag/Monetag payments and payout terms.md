@@ -1,16 +1,20 @@
 ---
-title: Monetag payments and payout terms
-created: 2026-06-12
-type: term
-status: seedling
-source: research session 2026-06-12 (third-party reviews; verify on monetag.com)
-tags:
-  - monetag
-  - payments
-  - payout
+ai_hash: a6f9566fa498e44e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Monetag minimum payout
-  - Monetag payment methods
+- Monetag minimum payout
+- Monetag payment methods
+created: 2026-06-12
+entities: []
+source: research session 2026-06-12 (third-party reviews; verify on monetag.com)
+status: seedling
+tags:
+- monetag
+- payments
+- payout
+title: Monetag payments and payout terms
+type: term
 ---
 
 # Monetag payments and payout terms
@@ -41,3 +45,14 @@ A weekly cadence + per-zone, per-country statistics ([[Monetag SSP API and integ
 - [[Monetag SSP API and integration]]
 - [[Monetag referral program]]
 - [[Monetag - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monetag - MOC]]
+- [[Monetag referral program]]
+- [[Monetag overview]]
+- [[Monetag ad formats]]
+- [[Monetag SSP API and integration]]
+
+%% ai-graph-end %%

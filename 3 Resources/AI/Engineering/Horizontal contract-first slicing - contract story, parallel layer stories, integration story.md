@@ -1,10 +1,20 @@
 ---
-title: "Horizontal contract-first slicing - contract story, parallel layer stories, integration story"
+ai_hash: 084f9f2a266fc342
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: model
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [slicing, stories, contract-first, vinnstack, methodology]
+tags:
+- slicing
+- stories
+- contract-first
+- vinnstack
+- methodology
+title: Horizontal contract-first slicing - contract story, parallel layer stories,
+  integration story
+type: model
 ---
 
 # Horizontal contract-first slicing - contract story, parallel layer stories, integration story
@@ -20,3 +30,13 @@ Rules with teeth: a contract change after dependents are filed reopens ALL of th
 Why the pivot matters: vertical slices optimize for demoability per story; horizontal+contract-first optimizes for PARALLELISM (multiple modules/agents building simultaneously against frozen stubs) — the right trade when an autonomous build loop supplies cheap parallel implementers and humans own only contracts + integration.
 
 Related: [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Horizontal story slicing is only workable with contract-first and an integration story]]
+- [[Horizontal slicing sharpens AFK vs HITL classification]]
+- [[vinnstack pipeline skills share one slicing model - flipping it cascades]]
+- [[Action Points]]
+
+%% ai-graph-end %%

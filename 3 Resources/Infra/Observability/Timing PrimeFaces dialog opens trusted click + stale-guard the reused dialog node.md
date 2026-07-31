@@ -1,10 +1,21 @@
 ---
-title: "Timing PrimeFaces dialog opens: trusted click + stale-guard the reused dialog node"
+ai_hash: c9f5746ce6ed1eea
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: lesson
+entities: []
+source: session 2026-07-16
 status: seedling
-source: "session 2026-07-16"
-tags: [primefaces, jsf, playwright, timing, gotcha, luz-docs]
+tags:
+- primefaces
+- jsf
+- playwright
+- timing
+- gotcha
+- luz-docs
+title: 'Timing PrimeFaces dialog opens: trusted click + stale-guard the reused dialog
+  node'
+type: lesson
 ---
 
 # Timing PrimeFaces dialog opens: trusted click + stale-guard the reused dialog node
@@ -29,3 +40,14 @@ Context: luz-docs 800k eArchive "open a document" ×10 timing (client ≈1.2–1
 ## Related
 
 - [[luz-docs 800k eArchive performance test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure component render timing with Playwright addInitScript]]
+- [[eArchive page DOM selectors (performance automation)]]
+- [[Trace tool folder-drill waits 3min because folder view lacks Documents-Custom counters]]
+- [[Server-rendered JSF apps never expose their internal API calls to browser network capture]]
+- [[Perf 800k tenant eArchive reload timing]]
+
+%% ai-graph-end %%

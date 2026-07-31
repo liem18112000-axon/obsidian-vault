@@ -1,10 +1,19 @@
 ---
-title: "vinnstack spawns the local claude CLI for subscription-authenticated automation"
+ai_hash: 7d8d11efa013ff86
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: howto
+entities: []
+source: Kepler/vinnstack code inspection, 2026-07-11
 status: evergreen
-source: "Kepler/vinnstack code inspection, 2026-07-11"
-tags: [claude, claude-code, cli, subprocess, vinnstack]
+tags:
+- claude
+- claude-code
+- cli
+- subprocess
+- vinnstack
+title: vinnstack spawns the local claude CLI for subscription-authenticated automation
+type: howto
 ---
 
 # vinnstack spawns the local claude CLI for subscription-authenticated automation
@@ -24,3 +33,14 @@ This is a legitimate pattern **only** because vinnstack is a single-operator too
 
 - [[Claude subscription OAuth cannot power a third-party audience-facing app]]
 - [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
+- [[Vinnstack is local-only by design spawned-CLI login + local FS state + single-tenant]]
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+
+%% ai-graph-end %%

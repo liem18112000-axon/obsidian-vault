@@ -1,10 +1,37 @@
 ---
-title: "Folder recovery must recompute inherited security after deletion statuses are cleared"
+ai_hash: fb830281dfac5046
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-04
-type: lesson
+entities:
+- Folder recovery
+- Inherited security
+- Deletion statuses
+- '`executeRecovery`'
+- '`_deletionStatus`'
+- '`restoreToNewParentFolderIds`'
+- Mongo
+- '`FolderNotFoundException`'
+- '`RecoveryUpdatingSecurityClassFolderProcess`'
+- '`run()`'
+- '`inheritedSecurityClassCode`'
+- LUZ-155136
+- Recursive subtree walk
+- Lifecycle flag
+- getCollectionMetadataByTerms silently ignored includeDeletedRecord for non-document
+  collections
+- Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not
+  logic
+source: session 2026-06-04, FolderService.java
 status: seedling
-source: "session 2026-06-04, FolderService.java"
-tags: [luz-docs, LUZ-155136, ordering, soft-delete]
+tags:
+- luz-docs
+- LUZ-155136
+- ordering
+- soft-delete
+title: Folder recovery must recompute inherited security after deletion statuses are
+  cleared
+type: lesson
 ---
 
 # Folder recovery must recompute inherited security after deletion statuses are cleared
@@ -18,3 +45,38 @@ The recompute is also **unconditional** on recovery (new `RecoveryUpdatingSecuri
 ## Related
 - [[getCollectionMetadataByTerms silently ignored includeDeletedRecord for non-document collections]]
 - [[Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+- [[getCollectionMetadataByTerms silently ignored includeDeletedRecord for non-document collections]]
+- [[FolderService.recoverFolder is not materialize-aware]]
+- [[Folder recovery reuses the parent-change materialize cascade]]
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
+
+**Relations:**
+- Folder recovery — *requires recomputing* — Inherited security
+- Inherited security — *recompute must run after* — Deletion statuses
+- `executeRecovery` — *clears* — `_deletionStatus`
+- `restoreToNewParentFolderIds` — *runs before* — Inherited security recompute
+- Running recompute too early — *breaks* — Recursive subtree walk
+- Recursive subtree walk — *fetches parents from* — Mongo
+- Still-soft-deleted parent — *is not returned by* — Mongo
+- Not finding parents — *leads to* — `FolderNotFoundException`
+- `FolderNotFoundException` — *results in* — only top folder updated
+- Descendants — *remain stale due to* — `FolderNotFoundException`
+- LUZ-155136 — *is a follow-up bug for* — stale descendants
+- `RecoveryUpdatingSecurityClassFolderProcess` — *calls* — `run()`
+- `run()` — *includes* — equality skip check
+- Equality skip check — *treats missing* — `inheritedSecurityClassCode` as empty set
+- Equality skip check — *prevents write and subtree walk when* — nothing changed
+- Inherited security recompute — *is unconditional during* — recovery
+- Parents' security classes — *can change while* — folder in trash
+- Re-parenting — *is not the only cause of* — inherited codes going stale
+- Inherited security recompute — *depends on reads filtered by* — Lifecycle flag
+- Inherited security recompute — *should be sequenced after* — step that flips Lifecycle flag
+- Folder recovery — *is related to* — getCollectionMetadataByTerms silently ignored includeDeletedRecord for non-document collections
+- Folder recovery — *is related to* — Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic
+
+%% ai-graph-end %%

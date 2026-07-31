@@ -1,10 +1,19 @@
 ---
-title: "Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger"
+ai_hash: 0c3f0274ddd41286
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: model
+entities: []
+source: session 2026-07-04 fb-info-project licensing discussion
 status: seedling
-source: "session 2026-07-04 fb-info-project licensing discussion"
-tags: [security, licensing, key-management, operations]
+tags:
+- security
+- licensing
+- key-management
+- operations
+title: Offline token licensing - one operator keypair, tokens tracked in an auto-appended
+  issuance ledger
+type: model
 ---
 
 # Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger
@@ -17,3 +26,14 @@ In a signed-token licensing scheme there is exactly one keypair, owned by the op
 Give every token a unique `id` (not a shared default) - the id is embedded in the signed payload and surfaces in the client's local license state, so a machine can be traced back to its ledger row and a renewal is distinguishable from the original.
 
 Related: [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]], [[Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline signed-token licensing for distributed binaries]]
+- [[Key-fingerprint license id identifies the signing key, not the individual token]]
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+- [[Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal]]
+- [[Offline licensing expiry is strong, usage counters only best-effort]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Windows setx does not update already-running processes' environment"
+ai_hash: 89df3fc679a5a081
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-07
 status: seedling
-source: "Vinnstack session 2026-07-07"
-tags: [windows, environment-variables, setx, gotcha]
+tags:
+- windows
+- environment-variables
+- setx
+- gotcha
+title: Windows setx does not update already-running processes' environment
+type: lesson
 ---
 
 # Windows setx does not update already-running processes' environment
@@ -18,3 +26,14 @@ tags: [windows, environment-variables, setx, gotcha]
 ## Related
 
 - [[winget PATH update only applies to new shells, not the current session]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Config read into a module-level const applies only on next process launch]]
+- [[Node.js process.env is case-insensitive on Windows]]
+- [[winget PATH update only applies to new shells, not the current session]]
+- [[Never cache a negative fallback in the same slot as a resolved value]]
+- [[Open-and-degrade beats hard-quit let a desktop app start without its optional DB (Vinnstack clean-Win fix)]]
+
+%% ai-graph-end %%

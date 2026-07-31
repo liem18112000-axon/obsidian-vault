@@ -1,10 +1,17 @@
 ---
-title: "Cloud Logging share link endTime can truncate a job's logs mid-run"
+ai_hash: 3c4ab8d66cac79ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: session 2026-06-11
 status: seedling
-source: "session 2026-06-11"
-tags: [gcp, cloud-logging, gotcha]
+tags:
+- gcp
+- cloud-logging
+- gotcha
+title: Cloud Logging share link endTime can truncate a job's logs mid-run
+type: lesson
 ---
 
 # Cloud Logging share link endTime can truncate a job's logs mid-run
@@ -18,3 +25,11 @@ See also [[Resolve Cloud Logging share links via redirect Location header]].
 ## Related
 
 - [[Resolve Cloud Logging share links via redirect Location header]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resolve Cloud Logging share links via redirect Location header]]
+- [[GKE log FRESHNESS window gets swamped by noise on high-traffic clusters]]
+
+%% ai-graph-end %%

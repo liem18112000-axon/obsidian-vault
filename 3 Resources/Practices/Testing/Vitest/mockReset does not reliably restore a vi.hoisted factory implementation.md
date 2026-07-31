@@ -1,10 +1,18 @@
 ---
-title: "mockReset does not reliably restore a vi.hoisted factory implementation"
+ai_hash: 1b2b5bfa1c471949
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08 (electron/main.js test coverage)
 status: seedling
-source: "vinnstack session 2026-07-08 (electron/main.js test coverage)"
-tags: [vitest, mocking, gotcha, testing]
+tags:
+- vitest
+- mocking
+- gotcha
+- testing
+title: mockReset does not reliably restore a vi.hoisted factory implementation
+type: lesson
 ---
 
 # mockReset does not reliably restore a vi.hoisted factory implementation
@@ -18,3 +26,14 @@ Practical effect: don`t reach for `resetAllMocks()` in a `beforeEach` expecting 
 ## Related
 
 - [[vi.clearAllMocks() does not undo a prior mockReturnValue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vi.clearAllMocks() does not undo a prior mockReturnValue]]
+- [[vi.mock factory must return every named export the SUT imports]]
+- [[vi.mock of a node builtin needs a default export too (Vite CJS interop)]]
+- [[Test module-load env decisions with vi.resetModules plus dynamic import per case]]
+- [[vi.fn with a zero-arg default locks the mock to a zero-arg signature]]
+
+%% ai-graph-end %%

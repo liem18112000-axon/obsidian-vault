@@ -1,11 +1,23 @@
 ---
-title: "Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup"
+ai_hash: 615367e7db04fc1b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-updated: 2026-07-31
-type: lesson
+entities: []
+source: session 2026-07-14 (Vinnstack release exe)
 status: seedling
-source: "session 2026-07-14 (Vinnstack release exe)"
-tags: [electron, nextjs, swc, cross-build, cloud-build, native-deps, gotcha]
+tags:
+- electron
+- nextjs
+- swc
+- cross-build
+- cloud-build
+- native-deps
+- gotcha
+title: Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary,
+  so the packaged app fails at startup
+type: lesson
+updated: 2026-07-31
 ---
 
 # Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup
@@ -28,3 +40,14 @@ npm install --no-save --force "@next/swc-win32-x64-msvc@${NEXT_VER}"
 ## Related
 
 - [[Cross-building Electron Windows exe on Linux needs wine]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Next.js production server never loads the native SWC binary at runtime]]
+- [[Trim a cross-built Electron exe drop the host-platform native binaries the target never uses (+ maxCompression, one locale)]]
+- [[Cross-building Electron Windows exe on Linux needs wine]]
+- [[electron-builder asar requires asarUnpack for native .node addons]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+
+%% ai-graph-end %%

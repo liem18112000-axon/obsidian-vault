@@ -1,10 +1,18 @@
 ---
-title: "Never cache a negative fallback in the same slot as a resolved value"
+ai_hash: 7ee31add32316874
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: code review 2026-07-01 (vinnstack)
 status: seedling
-source: "code review 2026-07-01 (vinnstack)"
-tags: [memoization, caching, gotcha, resolver]
+tags:
+- memoization
+- caching
+- gotcha
+- resolver
+title: Never cache a negative fallback in the same slot as a resolved value
+type: lesson
 ---
 
 # Never cache a negative fallback in the same slot as a resolved value
@@ -24,3 +32,14 @@ Related: negative-result caching (caching a *miss* at all) is a separate decisio
 ## Related
 
 - [[Node.js process.env is case-insensitive on Windows]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Node.js process.env is case-insensitive on Windows]]
+- [[A silent canned fallback masks real failures — surface the underlying error]]
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[Config read into a module-level const applies only on next process launch]]
+- [[Windows setx does not update already-running processes' environment]]
+
+%% ai-graph-end %%

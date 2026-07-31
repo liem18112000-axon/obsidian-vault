@@ -1,10 +1,19 @@
 ---
-title: "Merge competing selection popovers into one toolbar via a target registry"
+ai_hash: 2f55ae0f459bb35a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [ux, selection, popover, react, vinnstack]
+tags:
+- ux
+- selection
+- popover
+- react
+- vinnstack
+title: Merge competing selection popovers into one toolbar via a target registry
+type: lesson
 ---
 
 # Merge competing selection popovers into one toolbar via a target registry
@@ -25,3 +34,11 @@ Related: [[Gesture-only features need an always-visible teacher - empty state mu
 ## Related
 
 - [[Gesture-only features need an always-visible teacher - empty state must not hide the affordance]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gesture-only features need an always-visible teacher - empty state must not hide the affordance]]
+- [[Event-bus overlay components silently no-op where the singleton is not mounted]]
+
+%% ai-graph-end %%

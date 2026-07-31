@@ -1,10 +1,19 @@
 ---
-title: "jsonstore $in vs $nin ObjectId conversion gap"
+ai_hash: dd6d631b9cc9bb07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: luz_docs parallelize code review, 2026-07-09/10
 status: seedling
-source: "luz_docs parallelize code review, 2026-07-09/10"
-tags: [mongodb, jsonstore, objectid, gotcha, code-review]
+tags:
+- mongodb
+- jsonstore
+- objectid
+- gotcha
+- code-review
+title: jsonstore $in vs $nin ObjectId conversion gap
+type: lesson
 ---
 
 # jsonstore $in vs $nin ObjectId conversion gap
@@ -16,3 +25,14 @@ Concretely: in one codebase's jsonstore-style service, a `convertToObjectId` hel
 **Lesson:** when auditing an ID-conversion or type-coercion middleware layer, always check whether it handles the *negated* form of every operator it supports ($nin vs $in, $ne vs $eq, $nor vs $or). Negation operators look 'covered' at a glance (same field, similar shape) but are easy to leave out since they're written as a separate literal-string branch, not derived from the positive form. The failure mode is silent and structural — the query still runs successfully, it just matches the wrong set of documents.
 
 Found while reviewing luz_docs' `ParallelizeMigrationExecutor`, which built an `_id: {$nin: excludeIds}` clause meant to skip permanently-failing documents on retry — the omission meant failed documents were retried forever instead of being skipped.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
+- [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
+- [[luz-docs getDocumentById returns empty object not null for missing docs]]
+- [[luz-docs updateManyByFilter requires every targeted document to actually change]]
+- [[Partition the materialized count on a uniform _countShard int, not _id]]
+
+%% ai-graph-end %%

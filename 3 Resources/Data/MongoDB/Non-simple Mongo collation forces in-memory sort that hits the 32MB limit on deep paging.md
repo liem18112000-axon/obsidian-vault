@@ -1,10 +1,20 @@
 ---
-title: "Non-simple Mongo collation forces in-memory sort that hits the 32MB limit on deep paging"
+ai_hash: 98f6ab108ea20798
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26, commit 0361009
 status: seedling
-source: "session 2026-06-26, commit 0361009"
-tags: [mongodb, collation, performance, luz-docs, gotcha]
+tags:
+- mongodb
+- collation
+- performance
+- luz-docs
+- gotcha
+title: Non-simple Mongo collation forces in-memory sort that hits the 32MB limit on
+  deep paging
+type: lesson
 ---
 
 # Non-simple Mongo collation forces in-memory sort that hits the 32MB limit on deep paging
@@ -20,3 +30,14 @@ Related: [[Bulk write paths in folder delete only engage with more than one docu
 ## Related
 
 - [[Bulk write paths in folder delete only engage with more than one document]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)]]
+- [[jsonstore projections need quoted JSON keys and Mongo 16MB doc limit caps single-doc snapshots]]
+- [[luz-docs facet $unwind branch keys off client-supplied typearray, not schema]]
+- [[Mongo facet $group count index only helps the $match prefix, not the count]]
+- [[Canary tenant eArchive folder list trips Mongo code 292 sort-memory-limit]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Convert a Python module to a package without breaking importers via re-exporting __init__"
+ai_hash: 54c511480411e572
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03 appsflyer-data-connector
 status: seedling
-source: "session 2026-07-03 appsflyer-data-connector"
-tags: [python, refactoring, packaging]
+tags:
+- python
+- refactoring
+- packaging
+title: Convert a Python module to a package without breaking importers via re-exporting
+  __init__
+type: howto
 ---
 
 # Convert a Python module to a package without breaking importers via re-exporting __init__
@@ -25,3 +33,14 @@ One breakage class survives the re-export trick — see [[Monkeypatched module a
 - [[Monkeypatched module attributes are a hidden breakage risk when a module becomes a package]]
 
 **When the goal is relocation, not splitting:** if modules are being *moved to a new home* (e.g. `common/config.py` + `common/envelope.py` → `common/models/`), a compatibility re-export at the old path is the wrong tool — it leaves two import paths alive forever. Rewrite every import site instead (grep-audit first, then anchored `sed` across src/tests/examples/docs), and let the new package's `__init__.py` re-export only at the NEW path.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monkeypatched module attributes are a hidden breakage risk when a module becomes a package]]
+- [[Extracting a shared utils package - classify by whether code knows source semantics]]
+- [[AppsFlyer package layout package-per-concern with no loose modules]]
+- [[Flat-import Python modules can be relocated together without rewriting imports]]
+- [[Strip all comments and docstrings from Python safely with tokenize plus AST]]
+
+%% ai-graph-end %%

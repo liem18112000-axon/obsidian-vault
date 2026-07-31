@@ -1,10 +1,17 @@
 ---
-title: "Extracting a shared utils package - classify by whether code knows source semantics"
+ai_hash: e3aa54a4d4ffe915
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: session 2026-07-03 appsflyer-data-connector
 status: seedling
-source: "session 2026-07-03 appsflyer-data-connector"
-tags: [python, refactoring, architecture]
+tags:
+- python
+- refactoring
+- architecture
+title: Extracting a shared utils package - classify by whether code knows source semantics
+type: lesson
 ---
 
 # Extracting a shared utils package - classify by whether code knows source semantics
@@ -26,3 +33,14 @@ Mechanics follow [[Convert a Python module to a package without breaking importe
 **Follow-up (resolving the flagged wart):** when a moved-to-common helper still carries a domain literal (e.g. `source="appsflyer"` inside `common/sink/factory.build_sink`), de-domain-ize it by promoting the literal to a keyword parameter whose default is the *generic* behavior (`source: str | None = None` → fall back to each event's own source), and have the existing domain callers pass the old literal explicitly. Behavior stays byte-identical for current callers while the common module stops knowing about any one connector.
 
 **Sed-rename gotcha:** an underscore-prefixed name is a substring of any snake_case name ending in the same word, so `s/_partition(/partition_key(/g` also mangles `write_partition(` → `writepartition_key(`. `\b` is unreliable here (`_` is a word char). Anchor on an explicit non-identifier char instead: `s/\([^a-zA-Z0-9_]\)_partition(/\1partition_key(/g` plus a line-start variant — then grep for damaged identifiers (tests caught this one via `AttributeError`).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+- [[AppsFlyer package layout package-per-concern with no loose modules]]
+- [[Monkeypatched module attributes are a hidden breakage risk when a module becomes a package]]
+- [[Extract shared use-case code into a sibling shared package, not a peer use case]]
+- [[Grep-audit env vars against code before pruning .env files]]
+
+%% ai-graph-end %%

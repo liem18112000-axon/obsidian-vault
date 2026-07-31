@@ -1,10 +1,19 @@
 ---
-title: "electron-builder --win CLI flag overrides win.target in package.json"
+ai_hash: 9804cc28c008f966
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-15
 status: seedling
-source: "Vinnstack session 2026-07-15"
-tags: [electron-builder, electron, ci, gotcha, vinnstack]
+tags:
+- electron-builder
+- electron
+- ci
+- gotcha
+- vinnstack
+title: electron-builder --win CLI flag overrides win.target in package.json
+type: lesson
 ---
 
 # electron-builder --win CLI flag overrides win.target in package.json
@@ -20,3 +29,14 @@ Context: Vinnstack Electron app. Both `dist:win` and the Cloud Build `package-ex
 ## Related
 
 - [[Electron]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cross-building Electron Windows exe on Linux needs wine]]
+- [[electron-builder only ships paths listed in build.files whitelist]]
+- [[electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap]]
+- [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
+- [[Trim a cross-built Electron exe drop the host-platform native binaries the target never uses (+ maxCompression, one locale)]]
+
+%% ai-graph-end %%

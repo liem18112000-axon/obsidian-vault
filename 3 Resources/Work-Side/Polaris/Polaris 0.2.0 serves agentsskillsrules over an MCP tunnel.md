@@ -1,10 +1,18 @@
 ---
-title: "Polaris 0.2.0 serves agents/skills/rules over an MCP tunnel"
+ai_hash: b212d222cf3ad9ca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: concept
+entities: []
+source: session 2026-07-14
 status: seedling
-source: "session 2026-07-14"
-tags: [polaris, mcp, epost, claude-code]
+tags:
+- polaris
+- mcp
+- epost
+- claude-code
+title: Polaris 0.2.0 serves agents/skills/rules over an MCP tunnel
+type: concept
 ---
 
 # Polaris 0.2.0 serves agents/skills/rules over an MCP tunnel
@@ -22,3 +30,14 @@ Why it matters: any app embedding Polaris must decide whether to consume it live
 ## Related
 
 - [[Vinnstack Polaris integration is three passive touchpoints]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Polaris MCP moved to hosted endpoint polaris-mcp.epost.ch (requires auth)]]
+- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+
+%% ai-graph-end %%

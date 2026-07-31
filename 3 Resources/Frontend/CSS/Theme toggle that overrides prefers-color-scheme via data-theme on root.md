@@ -1,11 +1,22 @@
 ---
-title: "Theme toggle that overrides prefers-color-scheme via data-theme on :root"
-aliases: ["CSS dark mode that honors both OS preference and a manual toggle"]
+ai_hash: 48334bb8c07d2547
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- CSS dark mode that honors both OS preference and a manual toggle
 created: 2026-07-14
-type: howto
+entities: []
+source: session 2026-07-14 perf report HTML; accesstrade_integration web console 2026-06-12
 status: seedling
-source: "session 2026-07-14 perf report HTML; accesstrade_integration web console 2026-06-12"
-tags: [css, theming, dark-mode, html, frontend, htmx]
+tags:
+- css
+- theming
+- dark-mode
+- html
+- frontend
+- htmx
+title: Theme toggle that overrides prefers-color-scheme via data-theme on :root
+type: howto
 ---
 
 # Theme toggle that overrides prefers-color-scheme via data-theme on :root
@@ -42,3 +53,13 @@ Applied in the luz-docs 800k perf-test report and the Accesstrade Console (FastA
 - [[HTML report theme toggle reload gotcha]]
 - [[Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded hex]]
 - [[luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded hex]]
+- [[HTML report theme toggle reload gotcha]]
+- [[Theme shared overlays with CSS-variable-backed Tailwind classes, not hardcoded colors]]
+- [[Scope a highlight.js theme override with a wrapper class instead of !important]]
+
+%% ai-graph-end %%

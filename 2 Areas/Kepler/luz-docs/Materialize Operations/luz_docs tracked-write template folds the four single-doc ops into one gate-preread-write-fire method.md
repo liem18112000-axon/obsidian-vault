@@ -1,10 +1,19 @@
 ---
-title: "luz_docs tracked-write template folds the four single-doc ops into one gate-preread-write-fire method"
+ai_hash: ae468dff8ed734af
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: model
+entities: []
+source: TrackingJsonStoreClient template extraction, session 2026-06-05
 status: budding
-source: "TrackingJsonStoreClient template extraction, session 2026-06-05"
-tags: [luz-docs, change-tracking, template-method, refactoring]
+tags:
+- luz-docs
+- change-tracking
+- template-method
+- refactoring
+title: luz_docs tracked-write template folds the four single-doc ops into one gate-preread-write-fire
+  method
+type: model
 ---
 
 # luz_docs tracked-write template folds the four single-doc ops into one gate-preread-write-fire method
@@ -22,3 +31,14 @@ Flow: gate (untracked collection / suppression / untouched fields) -> optional p
 
 - [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
 - [[3 Resources/Languages/Java/CDI/Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+- [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
+- [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
+- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+- [[Diff-based write tracking dies silently if the write runs before the pre-read]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "try-with-resources surfaces the checked exception of close() even when the block body throws nothing"
+ai_hash: b2f40b178ee15790
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: DocMaterializeObserver refactor compile failure, session 2026-06-05
 status: budding
-source: "DocMaterializeObserver refactor compile failure, session 2026-06-05"
-tags: [java, exceptions, try-with-resources, gotcha]
+tags:
+- java
+- exceptions
+- try-with-resources
+- gotcha
+title: try-with-resources surfaces the checked exception of close() even when the
+  block body throws nothing
+type: lesson
 ---
 
 # try-with-resources surfaces the checked exception of close() even when the block body throws nothing
@@ -20,3 +29,14 @@ Hit in luz_docs when extracting `DocMaterializeObserver.handle()` from the obser
 ## Related
 
 - [[CDI observer methods are inherited from superclasses but not across packages if package-private]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[CDI observer methods are inherited from superclasses but not across packages if package-private]]
+- [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+- [[Semaphore permit leak when risky code sits between acquire and try]]
+
+%% ai-graph-end %%

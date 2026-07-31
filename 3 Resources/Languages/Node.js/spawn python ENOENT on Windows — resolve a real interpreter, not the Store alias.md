@@ -1,5 +1,14 @@
 ---
-tags: [nodejs, windows, spawn, python, gotcha]
+ai_hash: 2ba46671bf531714
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- nodejs
+- windows
+- spawn
+- python
+- gotcha
 ---
 
 # spawn python ENOENT on Windows — resolve a real interpreter, not the Store alias
@@ -18,3 +27,14 @@ tags: [nodejs, windows, spawn, python, gotcha]
 Then spawn `[resolvedPath, ...prefixArgs, "-m", "venv", …]`. Real interpreter paths (including a venv's own `Scripts\python.exe` after creation) spawn fine — only the bare name / Store alias is the problem.
 
 Observed in Vinnstack's Graphify in-app installer: `spawn python ENOENT` → resolver picked `…\Python\Launcher\py.exe -3` (3.14.0) and the venv+pip install then ran clean. Related: [[In-app provisioning of a Python-venv tool with a pollable install state]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node]]
+- [[In-app provisioning of a Python-venv tool with a pollable install state]]
+- [[Node.js process.env is case-insensitive on Windows]]
+- [[A silent canned fallback masks real failures — surface the underlying error]]
+
+%% ai-graph-end %%

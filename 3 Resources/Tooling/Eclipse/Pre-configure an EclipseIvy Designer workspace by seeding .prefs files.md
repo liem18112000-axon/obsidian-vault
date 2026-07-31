@@ -1,10 +1,20 @@
 ---
-title: "Pre-configure an Eclipse/Ivy Designer workspace by seeding .prefs files"
+ai_hash: bdcbc590e97a4ca0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: howto
+entities: []
+source: session 2026-07-27 (Ivy setup)
 status: seedling
-source: "session 2026-07-27 (Ivy setup)"
-tags: [eclipse, axon-ivy, m2e, validation, workspace, howto]
+tags:
+- eclipse
+- axon-ivy
+- m2e
+- validation
+- workspace
+- howto
+title: Pre-configure an Eclipse/Ivy Designer workspace by seeding .prefs files
+type: howto
 ---
 
 # Pre-configure an Eclipse/Ivy Designer workspace by seeding .prefs files
@@ -38,3 +48,12 @@ To use a seeded workspace, launch the app and select that folder at the workspac
 ## Related
 
 - [[Resources index]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Maven user settings.xml overrides global same-id profile properties]]
+- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+- [[Axon Ivy installEngine fails when ivy.engine.directory is stale or unwritable]]
+
+%% ai-graph-end %%

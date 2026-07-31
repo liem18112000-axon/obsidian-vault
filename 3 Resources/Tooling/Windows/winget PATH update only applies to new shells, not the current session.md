@@ -1,10 +1,19 @@
 ---
-title: "winget PATH update only applies to new shells, not the current session"
+ai_hash: 9a6dd6608969adcd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: session 2026-06-01
 status: seedling
-source: "session 2026-06-01"
-tags: [windows, winget, batch, path, gotcha]
+tags:
+- windows
+- winget
+- batch
+- path
+- gotcha
+title: winget PATH update only applies to new shells, not the current session
+type: lesson
 ---
 
 # winget PATH update only applies to new shells, not the current session
@@ -24,3 +33,12 @@ Related: [[PATH environment variable]]
 ## Related
 
 - [[PATH environment variable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows setx does not update already-running processes' environment]]
+- [[Batch files must use call for activate.bat or the script stops there]]
+- [[spawn python ENOENT on Windows — resolve a real interpreter, not the Store alias]]
+
+%% ai-graph-end %%

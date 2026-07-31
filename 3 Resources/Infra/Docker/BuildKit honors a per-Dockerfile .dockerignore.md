@@ -1,10 +1,18 @@
 ---
-title: "BuildKit honors a per-Dockerfile .dockerignore"
+ai_hash: 11934c2c7ec54b88
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-20
-type: lesson
+entities: []
+source: session 2026-06-20 appsflyer-data-connector ITs
 status: seedling
-source: "session 2026-06-20 appsflyer-data-connector ITs"
-tags: [docker, buildkit, dockerignore, gotcha]
+tags:
+- docker
+- buildkit
+- dockerignore
+- gotcha
+title: BuildKit honors a per-Dockerfile .dockerignore
+type: lesson
 ---
 
 # BuildKit honors a per-Dockerfile .dockerignore
@@ -18,3 +26,14 @@ BuildKit looks for a dockerignore file named after the specific Dockerfile — `
 - It fully *replaces* the default — it is not merged. List everything you want excluded.
 
 Discovered building the AppsFlyer connector integration-test image (`Dockerfile.it`).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Two Dockerfiles differing only in entrypoint should be one image plus compose override]]
+- [[Docker Compose path resolution env_file vs build context vs dockerfile]]
+- [[Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+
+%% ai-graph-end %%

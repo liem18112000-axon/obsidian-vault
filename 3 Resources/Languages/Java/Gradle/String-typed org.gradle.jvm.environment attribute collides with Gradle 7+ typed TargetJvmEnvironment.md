@@ -1,10 +1,20 @@
 ---
-title: "String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment"
+ai_hash: aec474f0e1461453
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: LEO CDP migration Phase 1a, 2026-06-06
 status: seedling
-source: "LEO CDP migration Phase 1a, 2026-06-06"
-tags: [gradle, gotcha, guava, attributes, leo-cdp]
+tags:
+- gradle
+- gotcha
+- guava
+- attributes
+- leo-cdp
+title: String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed
+  TargetJvmEnvironment
+type: lesson
 ---
 
 # String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment
@@ -29,3 +39,14 @@ Found while stepping LEO CDP 6.9.4 → 7.6.4: this was the FIRST failure of the 
 - [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
 - [[Gradle copy{} inside a task body runs at configuration time, not execution]]
 - [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
+- [[Fully-qualified class names fail inside Gradle closures with a non-Project delegate]]
+- [[Gradle 9 forbids attributes() on declarable configurations in configurations.all]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+
+%% ai-graph-end %%

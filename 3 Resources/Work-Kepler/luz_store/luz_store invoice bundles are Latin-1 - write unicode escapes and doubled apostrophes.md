@@ -1,10 +1,19 @@
 ---
-title: "luz_store invoice bundles are Latin-1 - write unicode escapes and doubled apostrophes"
+ai_hash: ee2a162d445740d5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: lesson
+entities: []
+source: LUZ-157476 implementation 2026-07-24
 status: budding
-source: "LUZ-157476 implementation 2026-07-24"
-tags: [luz-store, i18n, properties, encoding, gotcha]
+tags:
+- luz-store
+- i18n
+- properties
+- encoding
+- gotcha
+title: luz_store invoice bundles are Latin-1 - write unicode escapes and doubled apostrophes
+type: lesson
 ---
 
 # luz_store invoice bundles are Latin-1 - write unicode escapes and doubled apostrophes
@@ -16,3 +25,14 @@ Category-key fallback pattern used for LUZ-157476: bundle.containsKey(prefix+cat
 ## Related
 - [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]]
 - [[Write-time localization into the existing message column avoids schema change]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Write-time localization into the existing message column avoids schema change]]
+- [[Invoice run v2 shows charge failures via verbatim message copy at controller line 628]]
+- [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]]
+- [[Observed Payrexx prose vocabulary in dev is only three messages]]
+- [[QR payment-method error message is a hardcoded English constant in luz_store]]
+
+%% ai-graph-end %%

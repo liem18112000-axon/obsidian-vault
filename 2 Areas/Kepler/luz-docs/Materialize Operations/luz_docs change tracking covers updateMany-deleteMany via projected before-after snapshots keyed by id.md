@@ -1,10 +1,20 @@
 ---
-title: "luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id"
+ai_hash: a1dffc0e8b0f6326
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: model
+entities: []
+source: TrackingJsonStoreClient many-ops, session 2026-06-05
 status: budding
-source: "TrackingJsonStoreClient many-ops, session 2026-06-05"
-tags: [luz-docs, change-tracking, mongodb, bulk-ops, design-decision]
+tags:
+- luz-docs
+- change-tracking
+- mongodb
+- bulk-ops
+- design-decision
+title: luz_docs change tracking covers updateMany-deleteMany via projected before-after
+  snapshots keyed by id
+type: model
 ---
 
 # luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id
@@ -26,3 +36,14 @@ Three load-bearing details:
 - [[luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard]]
 
 > [!warning] Status 2026-06-05: REMOVED from the codebase for now (user decision, same day it was built). Both layers taken out: the per-doc UPDATE_MANY/DELETE_MANY tracking and the bulk set-based recompute. updateMany/deleteMany are plain pass-throughs again; tracking covers single-doc ops only. This note preserves the working design for when it is reintroduced; the per-doc variant also exists in git history (commit 61e2777a2 on kepler/sprint-158/test-json-change-tracking, removed by the follow-up commit).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out]]
+- [[luz_docs change tracking phase 1 is scoped to the documents collection only]]
+- [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
+- [[luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+
+%% ai-graph-end %%

@@ -1,11 +1,22 @@
 ---
-title: "Scroll Facebook reel comments via JS, never mouse.wheel"
-aliases: ["Scrolling a Facebook reel page must target the comment panel, not the video"]
+ai_hash: a9b8a849f0e2f832
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Scrolling a Facebook reel page must target the comment panel, not the video
 created: 2026-06-13
-type: gotcha
+entities: []
+source: fb-info-project sessions 2026-06-06 / 2026-06-13 (reel scroll bug)
 status: seedling
-source: "fb-info-project sessions 2026-06-06 / 2026-06-13 (reel scroll bug)"
-tags: [playwright, facebook, scraping, gotcha, reels, fb-info-project]
+tags:
+- playwright
+- facebook
+- scraping
+- gotcha
+- reels
+- fb-info-project
+title: Scroll Facebook reel comments via JS, never mouse.wheel
+type: gotcha
 ---
 
 # Scroll Facebook reel comments via JS, never mouse.wheel
@@ -38,3 +49,14 @@ Implemented in fb-info-project `src/browser.py` as one shared `scroll(page, roun
 
 - [[Facebook reel comments are hidden behind the comment icon]]
 - [[3 Resources/Web/Scraping/Facebook/Facebook sharev links can resolve to reels — classify after the redirect]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook reel comments are hidden behind the comment icon]]
+- [[Facebook sharev links can resolve to reels — classify after the redirect]]
+- [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
+- [[Facebook shows a See more on Facebook login dialog when the session is logged out]]
+- [[Verify Facebook comment sort switch by re-reading the sort button label]]
+
+%% ai-graph-end %%

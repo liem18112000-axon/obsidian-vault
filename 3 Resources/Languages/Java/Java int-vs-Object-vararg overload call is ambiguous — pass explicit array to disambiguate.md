@@ -1,10 +1,20 @@
 ---
-title: "Java int-vs-Object-vararg overload call is ambiguous — pass explicit array to disambiguate"
+ai_hash: 33d3a4cf66f05c51
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: LUZ-154613 session 2026-06-16
 status: seedling
-source: "LUZ-154613 session 2026-06-16"
-tags: [java, overloading, varargs, gotcha, compile-error]
+tags:
+- java
+- overloading
+- varargs
+- gotcha
+- compile-error
+title: Java int-vs-Object-vararg overload call is ambiguous — pass explicit array
+  to disambiguate
+type: lesson
 ---
 
 # Java int-vs-Object-vararg overload call is ambiguous — pass explicit array to disambiguate
@@ -18,3 +28,14 @@ This forced luz-docs ParallelizeCountException to compile against LocalizedRunti
 ## Related
 
 - [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
+- [[JSON-P createArrayBuilder(Collection) rejects built JsonValues]]
+- [[Java List.of rejects null elements (NPE); use Arrays.asList for null-tolerant varargs]]
+- [[A delegating overload changes less code than widening an existing method signature]]
+- [[Scrambled Java source shows as illegal-start-of-type errors mid-class]]
+
+%% ai-graph-end %%

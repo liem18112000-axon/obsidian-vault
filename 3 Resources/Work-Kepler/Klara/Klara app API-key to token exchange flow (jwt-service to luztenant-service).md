@@ -1,10 +1,19 @@
 ---
-title: "Klara app API-key to token exchange flow (jwt-service to luztenant-service)"
+ai_hash: cb1ead41920a7c73
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-17
-type: concept
+entities: []
+source: session 2026-07-16/17 Klara Widget Store PROD incident
 status: seedling
-source: "session 2026-07-16/17 Klara Widget Store PROD incident"
-tags: [klara, auth, jwt-service, luztenant-service, incident-response]
+tags:
+- klara
+- auth
+- jwt-service
+- luztenant-service
+- incident-response
+title: Klara app API-key to token exchange flow (jwt-service to luztenant-service)
+type: concept
 ---
 
 # Klara app API-key to token exchange flow (jwt-service to luztenant-service)
@@ -27,3 +36,14 @@ Observed 2026-07-16/17 PROD: Widget Store outage, ~37% of `/api-keys/tokens` exc
 
 - [[Per-pod breakdown of rejections separates a bad replica from a global config problem]]
 - [[Klara PROD log access]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-pod breakdown of rejections separates a bad replica from a global config problem]]
+- [[jwt-service token endpoints and replicas (Luz prod)]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+- [[KlaraPay V2 Java classes still call Payrexx API v1.0 on the consumer flow]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+
+%% ai-graph-end %%

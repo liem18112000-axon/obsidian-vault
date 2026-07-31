@@ -1,10 +1,19 @@
 ---
-title: "Full-bleed slide images need ~16:9 aspect or their text renders too small"
+ai_hash: 9930af4ed5e035ca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19 · obsidian-present deck
 status: seedling
-source: "session 2026-06-19 · obsidian-present deck"
-tags: [slides, excalidraw, pptx, design, gotcha]
+tags:
+- slides
+- excalidraw
+- pptx
+- design
+- gotcha
+title: Full-bleed slide images need ~16:9 aspect or their text renders too small
+type: lesson
 ---
 
 # Full-bleed slide images need ~16:9 aspect or their text renders too small
@@ -20,3 +29,12 @@ This is distinct from the [[excalidraw text must fit its box]] rule: text can fi
 ## Related
 
 - [[excalidraw text must fit its box]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+- [[pptxgenjs addImage stretches when wh aspect drifts from the real image — read PNG IHDR size]]
+
+%% ai-graph-end %%

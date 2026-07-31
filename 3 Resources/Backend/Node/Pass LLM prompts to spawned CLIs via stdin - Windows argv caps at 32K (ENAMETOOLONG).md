@@ -1,10 +1,19 @@
 ---
-title: "Pass LLM prompts to spawned CLIs via stdin - Windows argv caps at 32K (ENAMETOOLONG)"
+ai_hash: 0ca4aaccad5d016a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: gotcha
+entities: []
+source: session 2026-07-04, vinnstack approve ENAMETOOLONG
 status: seedling
-source: "session 2026-07-04, vinnstack approve ENAMETOOLONG"
-tags: [nodejs, windows, spawn, claude-cli, vinnstack]
+tags:
+- nodejs
+- windows
+- spawn
+- claude-cli
+- vinnstack
+title: Pass LLM prompts to spawned CLIs via stdin - Windows argv caps at 32K (ENAMETOOLONG)
+type: gotcha
 ---
 
 # Pass LLM prompts to spawned CLIs via stdin - Windows argv caps at 32K (ENAMETOOLONG)
@@ -18,3 +27,14 @@ Related trap in the same code: a "sanitize args" guard that REJECTS oversized ar
 ## Related
 
 - [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+- [[Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+
+%% ai-graph-end %%

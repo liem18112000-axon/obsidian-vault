@@ -1,10 +1,19 @@
 ---
-title: "Snapshot a shared dict on the event-loop thread before asyncio.to_thread"
+ai_hash: 4ca337055cba8af3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: fb-info-project pause/resume, 2026-06-15
 status: seedling
-source: "fb-info-project pause/resume, 2026-06-15"
-tags: [python, asyncio, concurrency, gotcha, threading]
+tags:
+- python
+- asyncio
+- concurrency
+- gotcha
+- threading
+title: Snapshot a shared dict on the event-loop thread before asyncio.to_thread
+type: lesson
 ---
 
 # Snapshot a shared dict on the event-loop thread before asyncio.to_thread
@@ -28,3 +37,14 @@ General rule: the GIL does not protect a multi-statement iteration in another th
 ## Related
 
 - [[A persisted dedup cache doubles as a resume log]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Crash-safe incremental output as_completed + indexed results + stable filename reused for checkpoint and final]]
+- [[asyncio.gather preserves input order in its result list]]
+- [[Mixing sync and async Playwright requires separate threads]]
+- [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
+- [[A persisted dedup cache doubles as a resume log]]
+
+%% ai-graph-end %%

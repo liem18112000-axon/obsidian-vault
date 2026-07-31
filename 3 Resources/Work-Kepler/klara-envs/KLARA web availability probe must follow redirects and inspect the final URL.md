@@ -1,11 +1,21 @@
 ---
-title: "KLARA web availability probe must follow redirects and inspect the final URL"
+ai_hash: 0ce754a8dfbe5510
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- KLARA web availability probe needs curl -L because healthy root answers 302 empty
 created: 2026-07-21
-aliases: ["KLARA web availability probe needs curl -L because healthy root answers 302 empty"]
-type: lesson
+entities: []
+source: perf maintenance watch 2026-07-21
 status: seedling
-source: "perf maintenance watch 2026-07-21"
-tags: [klara, curl, keycloak, gotcha, monitoring]
+tags:
+- klara
+- curl
+- keycloak
+- gotcha
+- monitoring
+title: KLARA web availability probe must follow redirects and inspect the final URL
+type: lesson
 ---
 
 # KLARA web availability probe must follow redirects and inspect the final URL
@@ -21,3 +31,14 @@ Two watcher bugs to avoid: grepping the un-followed root body (302/empty misread
 ## Related
 
 - [[Trace tool folder-drill waits 3min because folder view lacks Documents-Custom counters]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[Per-pod breakdown of rejections separates a bad replica from a global config problem]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+- [[Istio DC response_flag with round latency = caller read timeout]]
+
+%% ai-graph-end %%

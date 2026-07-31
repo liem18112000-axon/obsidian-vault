@@ -1,10 +1,18 @@
 ---
-title: "VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources"
+ai_hash: a6b000e26ec11a0f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-26
-type: howto
+entities: []
+source: session 2026-07-26
 status: seedling
-source: "session 2026-07-26"
-tags: [vngcloud, terraform, postgres, redis]
+tags:
+- vngcloud
+- terraform
+- postgres
+- redis
+title: VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources
+type: howto
 ---
 
 # VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources
@@ -23,3 +31,14 @@ Managed DBs take `public_access` + `allowed_ip_prefix`; set public_access=false 
 ## Related
 
 - [[GreenNode cloud runs on VNG Cloud infrastructure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO swap)]]
+- [[Memorystore Redis is always VPC-internal — no public endpoint]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Arquillian managed WildFly needs startupTimeoutInSeconds raised on slow machines"
+ai_hash: 0f1524698d46af52
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: gotcha
+entities: []
+source: luz-docs test debugging, 2026-06-10
 status: seedling
-source: "luz-docs test debugging, 2026-06-10"
-tags: [arquillian, wildfly, timeout, testing]
+tags:
+- arquillian
+- wildfly
+- timeout
+- testing
+title: Arquillian managed WildFly needs startupTimeoutInSeconds raised on slow machines
+type: gotcha
 ---
 
 # Arquillian managed WildFly needs startupTimeoutInSeconds raised on slow machines
@@ -18,3 +26,11 @@ Related: [[WSL relay processes squat common dev ports on Windows]]
 ## Related
 
 - [[WSL relay processes squat common dev ports on Windows]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[WSL relay processes squat common dev ports on Windows]]
+- [[Windows refuses dead localhost ports slowly — probe 127.0.0.1, expect ~2s]]
+
+%% ai-graph-end %%

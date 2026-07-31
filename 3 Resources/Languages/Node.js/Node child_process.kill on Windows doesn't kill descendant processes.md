@@ -1,10 +1,19 @@
 ---
-title: "Node child_process.kill on Windows doesn't kill descendant processes"
+ai_hash: fe0494646675d595
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: vinnstack BDD Run Tests scenario-timeout bugfix, 2026-07-12
 status: seedling
-source: "vinnstack BDD Run Tests scenario-timeout bugfix, 2026-07-12"
-tags: [nodejs, windows, child-process, gotcha, process-management]
+tags:
+- nodejs
+- windows
+- child-process
+- gotcha
+- process-management
+title: Node child_process.kill on Windows doesn't kill descendant processes
+type: lesson
 ---
 
 # Node child_process.kill on Windows doesn't kill descendant processes
@@ -22,3 +31,14 @@ Found while debugging vinnstack's BDD "Run Tests" feature (lib/bdd/verifyRunner.
 ## Related
 
 - [[3 Resources/Practices/Testing/A stalled-looking test step may just be a long silent poll, not a hang]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A stalled-looking test step may just be a long silent poll, not a hang]]
+- [[Windows child processes survive when only the parent is killed]]
+- [[Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF]]
+- [[Windows claude subprocess is a process tree — taskkill T to reap it]]
+- [[An Electron GUI app can't be smoke-tested from a non-interactive automation session]]
+
+%% ai-graph-end %%

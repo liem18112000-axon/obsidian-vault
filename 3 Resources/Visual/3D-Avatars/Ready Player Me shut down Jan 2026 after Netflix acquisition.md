@@ -1,10 +1,20 @@
 ---
-title: "Ready Player Me shut down Jan 2026 after Netflix acquisition"
+ai_hash: 557aae3d33b08391
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: observation
+entities: []
+source: 'web research 2026-07-11: TechCrunch, Variety, RoadToVR, github.com/met4citizen/TalkingHead/issues/27'
 status: seedling
-source: "web research 2026-07-11: TechCrunch, Variety, RoadToVR, github.com/met4citizen/TalkingHead/issues/27"
-tags: [ready-player-me, netflix, shutdown, glb, avatar, talkinghead]
+tags:
+- ready-player-me
+- netflix
+- shutdown
+- glb
+- avatar
+- talkinghead
+title: Ready Player Me shut down Jan 2026 after Netflix acquisition
+type: observation
 ---
 
 # Ready Player Me shut down Jan 2026 after Netflix acquisition
@@ -18,3 +28,12 @@ Practical implication: any app built on a "paste your Ready Player Me avatar URL
 ## Related
 
 - [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
+- [[madjinvrm-samples repo bundles official VRoid Studio sample avatars with mixed licenses]]
+- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Test module-load env decisions with vi.resetModules plus dynamic import per case"
+ai_hash: a9a013a119771706
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04, vinnstack middleware tests
 status: seedling
-source: "session 2026-07-04, vinnstack middleware tests"
-tags: [vitest, env, modules]
+tags:
+- vitest
+- env
+- modules
+title: Test module-load env decisions with vi.resetModules plus dynamic import per
+  case
+type: howto
 ---
 
 # Test module-load env decisions with vi.resetModules plus dynamic import per case
@@ -16,3 +24,14 @@ Contrast with call-time reads (`const configured = () => !!process.env.X`): thos
 ## Related
 
 - [[vi.mock factory must return every named export the SUT imports]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vi.mock factory must return every named export the SUT imports]]
+- [[vi.clearAllMocks() does not undo a prior mockReturnValue]]
+- [[mockReset does not reliably restore a vi.hoisted factory implementation]]
+- [[vi.mock of a node builtin needs a default export too (Vite CJS interop)]]
+- [[Config read into a module-level const applies only on next process launch]]
+
+%% ai-graph-end %%

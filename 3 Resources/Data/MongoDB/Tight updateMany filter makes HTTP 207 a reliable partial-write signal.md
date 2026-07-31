@@ -1,10 +1,23 @@
 ---
-title: "Tight updateMany filter makes HTTP 207 a reliable partial-write signal"
+ai_hash: d166856838bdf155
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: lesson
+entities: []
+source: 'luz_docs materialize code review, 2026-06-08 (finding #25) / 2026-06-09'
 status: seedling
-source: "luz_docs materialize code review, 2026-06-08 (finding #25) / 2026-06-09"
-tags: [mongodb, jsonstore, idempotency, multi-status, cascade, correctness, design, gotcha, luz-docs]
+tags:
+- mongodb
+- jsonstore
+- idempotency
+- multi-status
+- cascade
+- correctness
+- design
+- gotcha
+- luz-docs
+title: Tight updateMany filter makes HTTP 207 a reliable partial-write signal
+type: lesson
 ---
 
 # Tight updateMany filter makes HTTP 207 a reliable partial-write signal
@@ -28,3 +41,14 @@ tags: [mongodb, jsonstore, idempotency, multi-status, cascade, correctness, desi
 - [[luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic]]
 - [[Materialize code review report - sprint-156 findings index]]
 - [[materialize-code-review]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+- [[luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic]]
+- [[Encode a benign-error decision in a dedicated exception type, not a swallowed catch on a magic status code]]
+- [[luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out]]
+- [[luz-docs updateManyByFilter requires every targeted document to actually change]]
+
+%% ai-graph-end %%

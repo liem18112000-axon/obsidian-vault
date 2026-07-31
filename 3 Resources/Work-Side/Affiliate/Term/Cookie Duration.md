@@ -1,8 +1,19 @@
 ---
-type: term
+ai_hash: d51514444cacfcf1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Cookie Duration
+- Cookie Window
+- Cookie Length
+- Cookie Lifespan
+- Referral Window
 domain: affiliate-marketing
-aliases: [Cookie Duration, Cookie Window, Cookie Length, Cookie Lifespan, Referral Window]
-tags: [affiliate, tracking]
+entities: []
+tags:
+- affiliate
+- tracking
+type: term
 ---
 
 # Cookie Duration
@@ -71,3 +82,14 @@ Longer windows credit more **delayed conversions**, which directly raises your [
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Term]]
+- [[Attribution Model]]
+- [[Cost per Sale]]
+- [[Cost per Action]]
+- [[Earnings per Click]]
+
+%% ai-graph-end %%

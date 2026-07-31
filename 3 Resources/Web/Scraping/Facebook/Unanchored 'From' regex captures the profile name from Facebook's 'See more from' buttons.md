@@ -1,10 +1,19 @@
 ---
-title: "Unanchored 'From' regex captures the profile name from Facebook's 'See more from' buttons"
+ai_hash: 180cc3285b111a62
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-22
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-22
 status: seedling
-source: "fb-info-project session 2026-06-22"
-tags: [facebook, scraping, regex, gotcha]
+tags:
+- facebook
+- scraping
+- regex
+- gotcha
+title: Unanchored 'From' regex captures the profile name from Facebook's 'See more
+  from' buttons
+type: lesson
 ---
 
 # Unanchored 'From' regex captures the profile name from Facebook's 'See more from' buttons
@@ -20,3 +29,14 @@ Context: fb-info-project `src/patterns.py` HOME regex, branch `fix/hometown-see-
 ## Related
 
 - [[3 Resources/Web/Scraping/Facebook/Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify the Quê quán hometown fix by asserting no output row has Quê quán equal to Name]]
+- [[Facebook reply-expander button label variants]]
+- [[Facebook ships comment aria-labels in English even when the UI is Vietnamese]]
+- [[Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Bitbucket Cloud PR comment resolution is presence-of-object, not a boolean"
+ai_hash: e533471a42833589
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: vinnstack BDD Implement PR-comments feature, Bitbucket swagger.json, 2026-07-12
 status: seedling
-source: "vinnstack BDD Implement PR-comments feature, Bitbucket swagger.json, 2026-07-12"
-tags: [bitbucket, rest-api, gotcha, vinnstack]
+tags:
+- bitbucket
+- rest-api
+- gotcha
+- vinnstack
+title: Bitbucket Cloud PR comment resolution is presence-of-object, not a boolean
+type: lesson
 ---
 
 # Bitbucket Cloud PR comment resolution is presence-of-object, not a boolean
@@ -21,3 +29,14 @@ Verified against `https://api.bitbucket.org/swagger.json` (`definitions.pullrequ
 
 - [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
 - [[3 Resources/AI/Agents/patterns/Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
+- [[Bitbucket Cloud pull-request REST API shape]]
+- [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
+- [[Re-triggering GitHub Copilot PR review via API and its quota-limit gotcha]]
+- [[Bitbucket PR merge lags git fetch; don't conclude not-merged from one originmain check]]
+
+%% ai-graph-end %%

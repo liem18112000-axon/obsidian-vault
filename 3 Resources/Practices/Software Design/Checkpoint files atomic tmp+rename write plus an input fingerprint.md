@@ -1,10 +1,19 @@
 ---
-title: "Checkpoint files: atomic tmp+rename write plus an input fingerprint"
+ai_hash: a8e3b677e8694347
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: fb-info-project pause/resume, 2026-06-15
 status: seedling
-source: "fb-info-project pause/resume, 2026-06-15"
-tags: [checkpoint, atomic-write, resilience, file-io, resume]
+tags:
+- checkpoint
+- atomic-write
+- resilience
+- file-io
+- resume
+title: 'Checkpoint files: atomic tmp+rename write plus an input fingerprint'
+type: lesson
 ---
 
 # Checkpoint files: atomic tmp+rename write plus an input fingerprint
@@ -29,3 +38,14 @@ Related: [[A persisted dedup cache doubles as a resume log]], [[A resume must no
 
 - [[A persisted dedup cache doubles as a resume log]]
 - [[A resume must not re-charge one-time accounting]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
+- [[A persisted dedup cache doubles as a resume log]]
+- [[Crash-safe incremental output as_completed + indexed results + stable filename reused for checkpoint and final]]
+- [[A resume must not re-charge one-time accounting]]
+- [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
+
+%% ai-graph-end %%

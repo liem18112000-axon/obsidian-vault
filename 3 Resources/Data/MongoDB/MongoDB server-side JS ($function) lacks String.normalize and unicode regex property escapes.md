@@ -1,10 +1,22 @@
 ---
-title: "MongoDB server-side JS ($function) lacks String.normalize and unicode regex property escapes"
+ai_hash: 6980588cdaf8c676
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: lesson
+entities: []
+source: session 2026-07-16
 status: seedling
-source: "session 2026-07-16"
-tags: [mongodb, server-side-js, $function, mozjs, gotcha, luz-docs, ngram]
+tags:
+- mongodb
+- server-side-js
+- $function
+- mozjs
+- gotcha
+- luz-docs
+- ngram
+title: MongoDB server-side JS ($function) lacks String.normalize and unicode regex
+  property escapes
+type: lesson
 ---
 
 # MongoDB server-side JS ($function) lacks String.normalize and unicode regex property escapes
@@ -26,3 +38,14 @@ Test method (no secret scanning needed): exec into the mongod pod and authentica
 ## Related
 
 - [[luz-docs 800k eArchive performance test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
+- [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
+- [[luz-docs search DSL silently drops raw-mongo query keys]]
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed"
+ai_hash: 3a2d7ccf8cac9474
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-30
-type: gotcha
+entities: []
+source: session 2026-07-30 leo-customer360
 status: seedling
-source: "session 2026-07-30 leo-customer360"
-tags: [atlassian, confluence, mcp, claude-code, gotcha]
+tags:
+- atlassian
+- confluence
+- mcp
+- claude-code
+- gotcha
+title: claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed
+type: gotcha
 ---
 
 # claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed
@@ -22,3 +31,14 @@ See [[Embedding an image in Confluence requires uploading it as an attachment fi
 ## Related
 
 - [[Embedding an image in Confluence requires uploading it as an attachment first]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+- [[Embedding an image in Confluence requires uploading it as an attachment first]]
+- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+- [[Jira issue HTML export view bypasses missing MCP grant]]
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Encode a benign-error decision in a dedicated exception type, not a swallowed catch on a magic status code"
+ai_hash: 6c308e8923002464
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: lesson
+entities: []
+source: luz_docs materialize, 2026-06-08
 status: seedling
-source: "luz_docs materialize, 2026-06-08"
-tags: [java, exceptions, design, fault-tolerance, luz-docs, materialize]
+tags:
+- java
+- exceptions
+- design
+- fault-tolerance
+- luz-docs
+- materialize
+title: Encode a benign-error decision in a dedicated exception type, not a swallowed
+  catch on a magic status code
+type: lesson
 ---
 
 # Encode a benign-error decision in a dedicated exception type, not a swallowed catch on a magic status code
@@ -32,3 +43,14 @@ A jsonstore pipeline `updateMany` that recomputes identical values returns HTTP 
 
 - [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
 - [[materialize-code-review]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+- [[Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
+- [[luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic]]
+- [[A negative cache must be a distinct state from a cache miss, or its TTL is a dead write]]
+- [[Preserve compensation state when rollback itself fails]]
+
+%% ai-graph-end %%

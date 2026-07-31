@@ -1,10 +1,19 @@
 ---
-title: "Materialize gate must require _shard or parallelized count undercounts"
+ai_hash: e9a34fe1c1ccdffe
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19 LUZ-154613
 status: seedling
-source: "session 2026-06-19 LUZ-154613"
-tags: [luz-docs, materialize, mongodb, gotcha, sharding]
+tags:
+- luz-docs
+- materialize
+- mongodb
+- gotcha
+- sharding
+title: Materialize gate must require _shard or parallelized count undercounts
+type: lesson
 ---
 
 # Materialize gate must require _shard or parallelized count undercounts
@@ -20,3 +29,14 @@ Related: [[Fan-out gate and backfill filter must cover the same field set]]
 ## Related
 
 - [[Fan-out gate and backfill filter must cover the same field set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fan-out gate and backfill filter must cover the same field set]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+
+%% ai-graph-end %%

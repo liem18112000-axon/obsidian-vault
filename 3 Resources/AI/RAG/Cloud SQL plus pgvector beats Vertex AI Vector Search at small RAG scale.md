@@ -1,10 +1,19 @@
 ---
-title: "Cloud SQL plus pgvector beats Vertex AI Vector Search at small RAG scale"
+ai_hash: ef543952e0de271f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: deep-research pass, virtual-avatar project, 2026-07-10
 status: evergreen
-source: "deep-research pass, virtual-avatar project, 2026-07-10"
-tags: [rag, pgvector, gcp, vector-search, architecture]
+tags:
+- rag
+- pgvector
+- gcp
+- vector-search
+- architecture
+title: Cloud SQL plus pgvector beats Vertex AI Vector Search at small RAG scale
+type: lesson
 ---
 
 # Cloud SQL plus pgvector beats Vertex AI Vector Search at small RAG scale
@@ -20,3 +29,10 @@ General heuristic worth keeping: don't reach for a dedicated vector-search servi
 ## Related
 
 - [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Since June 2023 code-signing certs must be on HSM — CI needs a cloud signing service, not a .pfx"
+ai_hash: 655fd18e1e193f1c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: session 2026-07-15 vinnstack signing research
 status: seedling
-source: "session 2026-07-15 vinnstack signing research"
-tags: [codesigning, windows, ci, authenticode, electron-builder, smartscreen]
+tags:
+- codesigning
+- windows
+- ci
+- authenticode
+- electron-builder
+- smartscreen
+title: Since June 2023 code-signing certs must be on HSM — CI needs a cloud signing
+  service, not a .pfx
+type: lesson
 ---
 
 # Since June 2023 code-signing certs must be on HSM — CI needs a cloud signing service, not a .pfx
@@ -22,3 +33,14 @@ As of **June 2023** (CA/Browser Forum baseline requirements), every newly issued
 ## Related
 
 - [[3 Resources/Frontend/Electron/Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[electron-updater skips NSIS signature verification when the installed app is unsigned]]
+- [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+- [[Unsigned NSIS install under Defender ~2min of zero files is pre-scan, not a hang]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+
+%% ai-graph-end %%

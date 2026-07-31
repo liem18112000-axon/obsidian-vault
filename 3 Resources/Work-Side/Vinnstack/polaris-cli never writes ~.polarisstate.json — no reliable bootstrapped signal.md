@@ -1,10 +1,18 @@
 ---
-title: "polaris-cli never writes ~/.polaris/state.json — no reliable bootstrapped signal"
+ai_hash: c9023a0d6533751e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: lesson
+entities: []
+source: session 2026-07-02 — Polaris integration
 status: seedling
-source: "session 2026-07-02 — Polaris integration"
-tags: [polaris, vinnstack, gotcha, cli]
+tags:
+- polaris
+- vinnstack
+- gotcha
+- cli
+title: polaris-cli never writes ~/.polaris/state.json — no reliable bootstrapped signal
+type: lesson
 ---
 
 # polaris-cli never writes ~/.polaris/state.json — no reliable bootstrapped signal
@@ -23,3 +31,14 @@ Lesson: before making a file the source of truth for a state check, grep the too
 ## Related
 
 - [[3 Resources/Work-Side/Vinnstack/Vinnstack auth providers two patterns and the rule for adding one]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
+- [[Polaris 3003 MCP server is persistent — TCP probe not equal to polaris tunnel state]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+
+%% ai-graph-end %%

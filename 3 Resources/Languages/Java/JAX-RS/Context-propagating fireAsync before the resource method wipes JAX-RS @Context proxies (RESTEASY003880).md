@@ -1,10 +1,23 @@
 ---
-title: "Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)"
+ai_hash: e6d40a3b74699513
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-13
-type: gotcha
+entities: []
 status: seedling
-tags: [jax-rs, jaxrs, resteasy, cdi, context-propagation, thread-local, java, gotcha, luz-docs]
-entities: [RESTEASY003880, Event.fireAsync, NotificationOptions.ofExecutor, ManagedExecutorService, ContainerRequestFilter, ContainerResponseFilter, UriInfo, Providers, HttpHeaders, ResteasyContext, ContextParameterInjector$GenericDelegatingProxy]
+tags:
+- jax-rs
+- jaxrs
+- resteasy
+- cdi
+- context-propagation
+- thread-local
+- java
+- gotcha
+- luz-docs
+title: Context-propagating fireAsync before the resource method wipes JAX-RS @Context
+  proxies (RESTEASY003880)
+type: gotcha
 ---
 
 # Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)
@@ -32,3 +45,14 @@ Shipped shape in luz_docs: `MaterializeResponseFilter` (not `MaterializeRequestF
 - [[luz-docs RESTEASY003880 UriInfo 500 regression traced to MaterializeRequestFilter firing async CDI events]]
 - [[CDI async events]]
 - [[luz-docs materialize]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs RESTEASY003880 UriInfo 500 regression traced to MaterializeRequestFilter firing async CDI events]]
+- [[ManagedExecutorService.execute loses CDI request context]]
+- [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[Async CDI observers must receive the session token via the event payload]]
+
+%% ai-graph-end %%

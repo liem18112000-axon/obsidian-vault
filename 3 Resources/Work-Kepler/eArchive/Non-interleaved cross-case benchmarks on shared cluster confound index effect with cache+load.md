@@ -1,10 +1,21 @@
 ---
-title: "Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load"
+ai_hash: 33aaec008a1fa7dd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26
 status: seedling
-source: "session 2026-06-26"
-tags: [benchmark, methodology, mongodb, wiredtiger, index, gotcha]
+tags:
+- benchmark
+- methodology
+- mongodb
+- wiredtiger
+- index
+- gotcha
+title: Non-interleaved cross-case benchmarks on shared cluster confound index effect
+  with cache+load
+type: lesson
 ---
 
 # Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load
@@ -16,3 +27,14 @@ Cross-case index benchmarks on the shared dev Mongo cluster (luz-mongodb01) ran 
 ## Related
 
 - [[3 Resources/Work-Kepler/eArchive/eArchive load wall is the materialize security aggregate, not index coverage]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Concurrency-bound single-primary Mongo reads indexes stop helping; recognize by bimodal latency]]
+- [[eArchive load wall is the materialize security aggregate, not index coverage]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[O(N) scan cliffs when working set exceeds DB cache]]
+- [[Don't benchmark a scan-bound query right after a mass delete (WiredTiger cache blowout)]]
+
+%% ai-graph-end %%

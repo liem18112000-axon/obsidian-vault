@@ -1,10 +1,18 @@
 ---
-title: "GitHub Actions Node 20 deprecation warning from v4 actions is harmless noise"
+ai_hash: 24c0bbfb1d53e79c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-21
-type: lesson
+entities: []
+source: session 2026-06-21, fb-info-project
 status: seedling
-source: "session 2026-06-21, fb-info-project"
-tags: [github-actions, ci, gotcha, node]
+tags:
+- github-actions
+- ci
+- gotcha
+- node
+title: GitHub Actions Node 20 deprecation warning from v4 actions is harmless noise
+type: lesson
 ---
 
 # GitHub Actions Node 20 deprecation warning from v4 actions is harmless noise
@@ -24,3 +32,10 @@ Don't confuse this notice with a real failure on the same step — e.g. an artif
 ## Related
 
 - [[GitHub Actions artifact quota is org-wide; Release assets bypass it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Actions artifact quota is org-wide; Release assets bypass it]]
+
+%% ai-graph-end %%

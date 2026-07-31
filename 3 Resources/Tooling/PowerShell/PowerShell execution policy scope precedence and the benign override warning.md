@@ -1,10 +1,18 @@
 ---
-title: "PowerShell execution policy scope precedence and the benign override warning"
+ai_hash: 02a4a4b3b5d7607b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: session 2026-07-03
 status: seedling
-source: "session 2026-07-03"
-tags: [powershell, windows, execution-policy, gotcha]
+tags:
+- powershell
+- windows
+- execution-policy
+- gotcha
+title: PowerShell execution policy scope precedence and the benign override warning
+type: lesson
 ---
 
 # PowerShell execution policy scope precedence and the benign override warning
@@ -25,3 +33,10 @@ Get-ExecutionPolicy -List
 ## Related
 
 - [[Run local unsigned PowerShell scripts under AllSigned via CurrentUser RemoteSigned]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run local unsigned PowerShell scripts under AllSigned via CurrentUser RemoteSigned]]
+
+%% ai-graph-end %%

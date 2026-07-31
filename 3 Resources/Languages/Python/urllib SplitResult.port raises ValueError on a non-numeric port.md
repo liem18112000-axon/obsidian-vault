@@ -1,10 +1,19 @@
 ---
-title: "urllib SplitResult.port raises ValueError on a non-numeric port"
+ai_hash: 603da758f509c736
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: 'session 2026-06-14, Copilot PR #3 review'
 status: seedling
-source: "session 2026-06-14, Copilot PR #3 review"
-tags: [python, urllib, parsing, gotcha, validation]
+tags:
+- python
+- urllib
+- parsing
+- gotcha
+- validation
+title: urllib SplitResult.port raises ValueError on a non-numeric port
+type: lesson
 ---
 
 # urllib SplitResult.port raises ValueError on a non-numeric port
@@ -20,3 +29,10 @@ except ValueError:
 port = explicit_port or DEFAULT_PORTS.get(parts.scheme.lower())
 ```
 (`.hostname` does not raise — only `.port`.) Found by Copilot on the admin panel: a bad `DATABASE_URL`/`REDIS_URL` would 500 the page instead of degrading to 'no host/port'. General rule: anything parsing an externally-supplied connection string should treat a malformed value as a soft failure, not an exception. Relates to [[Password-gate a server-rendered admin panel and show dependency-free store status]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Password-gate a server-rendered admin panel and show dependency-free store status]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Enable Claude Code fast mode in headless -p runs via --settings fastMode"
+ai_hash: f2e5e9acc1b323b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-28
-type: howto
+entities: []
+source: claude-code-guide agent, session 2026-07-28
 status: seedling
-source: "claude-code-guide agent, session 2026-07-28"
-tags: [claude-code, fast-mode, headless, cli, vinnstack]
+tags:
+- claude-code
+- fast-mode
+- headless
+- cli
+- vinnstack
+title: Enable Claude Code fast mode in headless -p runs via --settings fastMode
+type: howto
 ---
 
 # Enable Claude Code fast mode in headless -p runs via --settings fastMode
@@ -25,3 +34,14 @@ Related: [[3 Resources/Languages/Node.js/Config read into a module-level const a
 ## Related
 
 - [[3 Resources/Languages/Node.js/Config read into a module-level const applies only on next process launch]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[--bare forces API-key-only auth in Claude Code]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+
+%% ai-graph-end %%

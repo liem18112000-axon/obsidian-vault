@@ -1,10 +1,20 @@
 ---
-title: "Virtual-thread conversion triage - per-run fanout yes, single-thread and shared pools no"
+ai_hash: 74cf39a0ff80bbe1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: lesson
+entities: []
+source: LEO CDP Wave 3, 2026-06-07
 status: seedling
-source: "LEO CDP Wave 3, 2026-06-07"
-tags: [java, virtual-threads, loom, executors, triage]
+tags:
+- java
+- virtual-threads
+- loom
+- executors
+- triage
+title: Virtual-thread conversion triage - per-run fanout yes, single-thread and shared
+  pools no
+type: lesson
 ---
 
 # Virtual-thread conversion triage - per-run fanout yes, single-thread and shared pools no
@@ -23,3 +33,14 @@ Also: on JDK 24+ (JEP 491) synchronized blocks no longer pin carriers, removing 
 ## Related
 
 - [[3 Resources/Languages/Java/Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter resolution]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter resolution]]
+- [[ManagedExecutorService.execute loses CDI request context]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[CompletableFuture parallel fan-out needs .toList() barrier before joining]]
+
+%% ai-graph-end %%

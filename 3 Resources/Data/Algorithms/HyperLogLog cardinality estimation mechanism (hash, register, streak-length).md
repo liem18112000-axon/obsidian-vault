@@ -1,10 +1,18 @@
 ---
-title: "HyperLogLog cardinality estimation mechanism (hash, register, streak-length)"
+ai_hash: 82c1135d8f39ef91
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: concept
+entities: []
+source: luz_docs docs/count-estimate/HOW-HYPERLOGLOG-WORKS.md, 2026-07-09
 status: seedling
-source: "luz_docs docs/count-estimate/HOW-HYPERLOGLOG-WORKS.md, 2026-07-09"
-tags: [hyperloglog, cardinality-estimation, probabilistic-data-structures, algorithms]
+tags:
+- hyperloglog
+- cardinality-estimation
+- probabilistic-data-structures
+- algorithms
+title: HyperLogLog cardinality estimation mechanism (hash, register, streak-length)
+type: concept
 ---
 
 # HyperLogLog cardinality estimation mechanism (hash, register, streak-length)
@@ -23,3 +31,14 @@ See [[HyperLogLog error in the small-range (linear-counting) regime]] for the er
 
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
 - [[3 Resources/Data/Algorithms/Sketch merge (register-wise max) only answers union queries, never AND]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
+- [[HyperLogLog error in the small-range (linear-counting) regime]]
+- [[Sketch merge (register-wise max) only answers union queries, never AND]]
+- [[Visible-document count as cardinality of a bitmap union]]
+- [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+
+%% ai-graph-end %%

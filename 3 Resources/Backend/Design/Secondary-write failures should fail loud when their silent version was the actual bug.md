@@ -1,10 +1,19 @@
 ---
-title: "Secondary-write failures should fail loud when their silent version was the actual bug"
+ai_hash: 72b9f9314f983f1c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: decision
+entities: []
+source: session 2026-07-04, vinnstack per-account credential mirror
 status: seedling
-source: "session 2026-07-04, vinnstack per-account credential mirror"
-tags: [error-handling, ux, persistence, vinnstack]
+tags:
+- error-handling
+- ux
+- persistence
+- vinnstack
+title: Secondary-write failures should fail loud when their silent version was the
+  actual bug
+type: decision
 ---
 
 # Secondary-write failures should fail loud when their silent version was the actual bug
@@ -18,3 +27,14 @@ Rule of thumb: a secondary write may be non-fatal only if the user has another s
 ## Related
 
 - [[Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+- [[Classify stream failures on the server, not the client]]
+
+%% ai-graph-end %%

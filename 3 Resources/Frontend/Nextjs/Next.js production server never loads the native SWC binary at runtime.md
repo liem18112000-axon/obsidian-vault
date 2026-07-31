@@ -1,10 +1,18 @@
 ---
-title: "Next.js production server never loads the native SWC binary at runtime"
+ai_hash: 1f0f9a703aba7b1f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack build optimization session
 status: seedling
-source: "vinnstack build optimization session"
-tags: [nextjs, swc, cross-platform, ci-cd]
+tags:
+- nextjs
+- swc
+- cross-platform
+- ci-cd
+title: Next.js production server never loads the native SWC binary at runtime
+type: lesson
 ---
 
 # Next.js production server never loads the native SWC binary at runtime
@@ -18,3 +26,14 @@ Related: [[electron-builder asar requires asarUnpack for native .node addons]] â
 ## Related
 
 - [[electron-builder asar requires asarUnpack for native .node addons]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup]]
+- [[electron-builder asar requires asarUnpack for native .node addons]]
+- [[Trim a cross-built Electron exe drop the host-platform native binaries the target never uses (+ maxCompression, one locale)]]
+- [[Next.js .nextcache is a build-time-only cache, never bundle it]]
+- [[Next.js standalone Docker image must copy public and .next static next to server.js]]
+
+%% ai-graph-end %%

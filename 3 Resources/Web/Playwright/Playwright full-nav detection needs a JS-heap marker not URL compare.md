@@ -1,11 +1,20 @@
 ---
-title: "Playwright full-nav detection needs a JS-heap marker, not URL compare"
+ai_hash: a5a9ac72201b56a8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Playwright URL compare before-after click detects SPA vs full navigation
 created: 2026-07-21
-aliases: ["Playwright URL compare before-after click detects SPA vs full navigation"]
-type: howto
+entities: []
+source: session 2026-07-21
 status: seedling
-source: "session 2026-07-21"
-tags: [playwright, technique, spa, gotcha]
+tags:
+- playwright
+- technique
+- spa
+- gotcha
+title: Playwright full-nav detection needs a JS-heap marker, not URL compare
+type: howto
 ---
 
 # Playwright full-nav detection needs a JS-heap marker, not URL compare
@@ -29,3 +38,14 @@ The `.catch(() => true)` treats an evaluate failure mid-navigation as a full nav
 ## Related
 
 - [[Trace tool folder-drill waits 3min because folder view lacks Documents-Custom counters]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Trace tool folder-drill waits 3min because folder view lacks Documents-Custom counters]]
+- [[Measure component render timing with Playwright addInitScript]]
+- [[eArchive page DOM selectors (performance automation)]]
+- [[Timing PrimeFaces dialog opens trusted click + stale-guard the reused dialog node]]
+- [[Playwright click() auto-waits the full timeout on a missing locator; probe with count() first]]
+
+%% ai-graph-end %%

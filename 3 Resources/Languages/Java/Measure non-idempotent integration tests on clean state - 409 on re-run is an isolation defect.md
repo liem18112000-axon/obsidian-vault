@@ -1,10 +1,20 @@
 ---
-title: "Measure non-idempotent integration tests on clean state - 409 on re-run is an isolation defect"
+ai_hash: dc5865a9cef9dd4d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: lesson
+entities: []
+source: LEO CDP test-seeding, 2026-06-08
 status: seedling
-source: "LEO CDP test-seeding, 2026-06-08"
-tags: [testing, integration-tests, idempotency, arangodb, gotcha]
+tags:
+- testing
+- integration-tests
+- idempotency
+- arangodb
+- gotcha
+title: Measure non-idempotent integration tests on clean state - 409 on re-run is
+  an isolation defect
+type: lesson
 ---
 
 # Measure non-idempotent integration tests on clean state - 409 on re-run is an isolation defect
@@ -14,3 +24,14 @@ Non-idempotent integration tests must be measured on a CLEAN DB state, not by re
 ## Related
 
 - [[JUnit5 @BeforeAll must be static - non-static masks every test in the class]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JUnit5 @BeforeAll must be static - non-static masks every test in the class]]
+- [[Wall of NoClassDefFoundError on first test run = static-init IO, split unit from integration]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+- [[LEO CDP SYSTEM_ENV_VARS still requires database-configs.json to exist first]]
+
+%% ai-graph-end %%

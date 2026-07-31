@@ -1,10 +1,20 @@
 ---
-title: "Inline style width beats Tailwind breakpoint width classes"
+ai_hash: b0bcc60895e0fbd7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [css, tailwind, specificity, react, responsive-design, gotcha]
+tags:
+- css
+- tailwind
+- specificity
+- react
+- responsive-design
+- gotcha
+title: Inline style width beats Tailwind breakpoint width classes
+type: lesson
 ---
 
 # Inline style width beats Tailwind breakpoint width classes
@@ -29,3 +39,14 @@ Found and fixed in the vinnstack project (AiFeedback.tsx, PrdComments.tsx commen
 ## Related
 
 - [[3 Resources/Frontend/CSS/Stack a rail-and-content row responsively with flex-col to lgflex-row]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stack a rail-and-content row responsively with flex-col to lgflex-row]]
+- [[Toggle a layout mode with one Tailwind descendant override instead of threading state]]
+- [[Tailwind class-string order doesn't determine cascade override]]
+- [[Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column]]
+- [[Tailwind empty-hidden collapses a layout column whose child renders null]]
+
+%% ai-graph-end %%

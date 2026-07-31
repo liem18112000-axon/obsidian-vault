@@ -1,10 +1,19 @@
 ---
-title: "Black-box exe test suite skips silently when no artifact is present"
+ai_hash: 3607a01e24b14ea8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-05
-type: lesson
+entities: []
+source: fb-info-project session 2026-07-05
 status: seedling
-source: "fb-info-project session 2026-07-05"
-tags: [testing, ci, pytest, gotcha, black-box]
+tags:
+- testing
+- ci
+- pytest
+- gotcha
+- black-box
+title: Black-box exe test suite skips silently when no artifact is present
+type: lesson
 ---
 
 # Black-box exe test suite skips silently when no artifact is present
@@ -20,3 +29,14 @@ Related: [[fb-info-project CI and build workflow split]]
 ## Related
 
 - [[fb-info-project CI and build workflow split]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Black-box artifact E2E drive a committed sample fixture so the only live input is the secret]]
+- [[fb-info-project CI and build workflow split]]
+- [[Black-box E2E test a PyInstaller one-dir app from a temp CWD]]
+- [[Guard tests that need an optional dependency with pytest.importorskip]]
+- [[PyInstaller needs collect_all for packages that ship non-Python payloads]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Regenerate-from-review-feedback pattern: reuse the branch/PR, don't open a new one"
+ai_hash: a9c5622d845252f0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: vinnstack BDD Implement regenerate-from-PR-comments feature, 2026-07-12
 status: seedling
-source: "vinnstack BDD Implement regenerate-from-PR-comments feature, 2026-07-12"
-tags: [ai-agents, code-review, git, design-pattern, vinnstack]
+tags:
+- ai-agents
+- code-review
+- git
+- design-pattern
+- vinnstack
+title: 'Regenerate-from-review-feedback pattern: reuse the branch/PR, don''t open
+  a new one'
+type: lesson
 ---
 
 # Regenerate-from-review-feedback pattern: reuse the branch/PR, don't open a new one
@@ -24,3 +34,14 @@ Related: [[Bitbucket Cloud API pagination returns full URLs in 'next', not relat
 ## Related
 
 - [[3 Resources/Tooling/Bitbucket/Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[A refine regenerate can close open items from evidence the first pass left unexploited]]
+- [[A feedback loop with only its write side wired looks like a broken feature]]
+
+%% ai-graph-end %%

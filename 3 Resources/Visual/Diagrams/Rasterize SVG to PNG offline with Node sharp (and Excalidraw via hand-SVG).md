@@ -1,10 +1,21 @@
 ---
-title: "Rasterize SVG to PNG offline with Node sharp (and Excalidraw via hand-SVG)"
+ai_hash: 2d64bca7a6f80a05
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: howto
+entities: []
+source: appsflyer-data-connector docs, 2026-06-24
 status: seedling
-source: "appsflyer-data-connector docs, 2026-06-24"
-tags: [svg, png, sharp, nodejs, excalidraw, rendering, offline]
+tags:
+- svg
+- png
+- sharp
+- nodejs
+- excalidraw
+- rendering
+- offline
+title: Rasterize SVG to PNG offline with Node sharp (and Excalidraw via hand-SVG)
+type: howto
 ---
 
 # Rasterize SVG to PNG offline with Node sharp (and Excalidraw via hand-SVG)
@@ -24,3 +35,12 @@ See [[3 Resources/Tooling/Windows/Windows 'convert' is NTFS convert.exe, not Ima
 ## Related
 
 - [[3 Resources/Tooling/Windows/Windows 'convert' is NTFS convert.exe, not ImageMagick]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+- [[Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization]]
+
+%% ai-graph-end %%

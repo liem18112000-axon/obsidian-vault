@@ -1,10 +1,23 @@
 ---
-title: "VNG Cloud IaC = Terraform provider (no first-party CLI); vStorage/registry via S3+docker"
+ai_hash: 39b55105abcd7f9f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: reference
+entities: []
+source: appsflyer-data-connector deploy research, 2026-06-24
 status: seedling
-source: "appsflyer-data-connector deploy research, 2026-06-24"
-tags: [vngcloud, terraform, iac, cli, vserver, vks, ci-cd, deployment]
+tags:
+- vngcloud
+- terraform
+- iac
+- cli
+- vserver
+- vks
+- ci-cd
+- deployment
+title: VNG Cloud IaC = Terraform provider (no first-party CLI); vStorage/registry
+  via S3+docker
+type: reference
 ---
 
 # VNG Cloud IaC = Terraform provider (no first-party CLI); vStorage/registry via S3+docker
@@ -27,3 +40,14 @@ See [[VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinI
 ## Related
 
 - [[VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO swap)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO swap)]]
+- [[GreenNode cloud runs on VNG Cloud infrastructure]]
+- [[Split Terraform cluster-provisioning state separate from in-cluster workload state]]
+
+%% ai-graph-end %%

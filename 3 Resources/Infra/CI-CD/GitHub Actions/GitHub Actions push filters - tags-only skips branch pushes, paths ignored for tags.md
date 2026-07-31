@@ -1,10 +1,18 @@
 ---
-title: "GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags"
+ai_hash: 3d4cd37adfe09df3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: fb-info-project build workflow, session 2026-06-10
 status: seedling
-source: "fb-info-project build workflow, session 2026-06-10"
-tags: [github-actions, ci, gotcha]
+tags:
+- github-actions
+- ci
+- gotcha
+title: GitHub Actions push filters - tags-only skips branch pushes, paths ignored
+  for tags
+type: lesson
 ---
 
 # GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags
@@ -20,3 +28,14 @@ Surfaced when a heavy PyInstaller build workflow (see [[Bundle Chromium inside a
 ## Related
 
 - [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish every CI build via a rolling latest pre-release on GitHub]]
+- [[GitHub Actions in a monorepo workflows live at repo root, scope per project with paths filters]]
+- [[workflow_dispatch Run button only appears on the default branch - use gh workflow run --ref to dispatch from a feature branch]]
+- [[GitHub Actions artifact quota is org-wide; Release assets bypass it]]
+- [[CI build Docker image on every run, push only on non-PR]]
+
+%% ai-graph-end %%

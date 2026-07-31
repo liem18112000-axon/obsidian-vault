@@ -1,10 +1,20 @@
 ---
-title: "earchive-data-prepare seeds all-public docs when a tenant has no security classes (CODE_POOL empty)"
+ai_hash: 93af91d534866453
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: session 2026-06-23 eArchive seed
 status: seedling
-source: "session 2026-06-23 eArchive seed"
-tags: [earchive, luz-docs, seeding, security-class, gotcha]
+tags:
+- earchive
+- luz-docs
+- seeding
+- security-class
+- gotcha
+title: earchive-data-prepare seeds all-public docs when a tenant has no security classes
+  (CODE_POOL empty)
+type: lesson
 ---
 
 # earchive-data-prepare seeds all-public docs when a tenant has no security classes (CODE_POOL empty)
@@ -22,3 +32,14 @@ Relates to [[directConnection=true counts read only the connected node and can b
 ## Related
 
 - [[directConnection=true counts read only the connected node and can be stale on a secondary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)]]
+- [[Empty per-folder codes means public, not no-access]]
+- [[Materialize gate must require _shard or parallelized count undercounts]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+- [[Fail-closed defense over a parallel array distinguish present-but-short from absent]]
+
+%% ai-graph-end %%

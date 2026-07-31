@@ -1,10 +1,19 @@
 ---
-title: "Semaphore permit leak when risky code sits between acquire and try"
+ai_hash: 56d67bf9502cabf8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: luz_docs MaterializeMigrationExecutor.java review, 2026-07-10
 status: seedling
-source: "luz_docs MaterializeMigrationExecutor.java review, 2026-07-10"
-tags: [java, concurrency, semaphore, gotcha, luz-docs]
+tags:
+- java
+- concurrency
+- semaphore
+- gotcha
+- luz-docs
+title: Semaphore permit leak when risky code sits between acquire and try
+type: lesson
 ---
 
 # Semaphore permit leak when risky code sits between acquire and try
@@ -31,3 +40,14 @@ A second-order effect: the exception also escaped the inner `catch` (which only 
 
 ## Related
 [[Static shared resources leak state across unrelated call sites]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Semaphore acquire before try leaks permits on static semaphores]]
+- [[Static shared resources leak state across unrelated call sites]]
+- [[Migration campaign status can silently drift from real document state]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Luz gates must inject per-package Allowlist beans not static Campaign isAffectedFor]]
+
+%% ai-graph-end %%

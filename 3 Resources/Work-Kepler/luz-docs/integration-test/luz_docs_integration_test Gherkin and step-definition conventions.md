@@ -1,10 +1,20 @@
 ---
-title: "luz_docs_integration_test Gherkin and step-definition conventions"
+ai_hash: c6ac5039c6c4b31e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: concept
+entities: []
+source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
 status: seedling
-source: "vinnstack session 2026-07-11: building implement-bdd-steps skill"
-tags: [bdd, cucumber, behave, gherkin, conventions, luz-docs-integration-test]
+tags:
+- bdd
+- cucumber
+- behave
+- gherkin
+- conventions
+- luz-docs-integration-test
+title: luz_docs_integration_test Gherkin and step-definition conventions
+type: concept
 ---
 
 # luz_docs_integration_test Gherkin and step-definition conventions
@@ -32,3 +42,14 @@ Related: [[luz_docs_integration_test has its own AI-driven BDD pipeline (generat
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/integration-test/luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+- [[luz_docs_integration_test AI pipeline branch and PR mechanics]]
+- [[JSON-driven Scenario Outline pattern for luz_docs materialize integration tests]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+
+%% ai-graph-end %%

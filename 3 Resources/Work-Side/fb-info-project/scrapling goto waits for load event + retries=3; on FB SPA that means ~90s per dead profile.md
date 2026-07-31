@@ -1,10 +1,20 @@
 ---
-title: "scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile"
+ai_hash: b978aa8ec930f5c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: code trace + live run 2026-06-14
 status: seedling
-source: "code trace + live run 2026-06-14"
-tags: [fb-info-project, scrapling, playwright, performance, gotcha]
+tags:
+- fb-info-project
+- scrapling
+- playwright
+- performance
+- gotcha
+title: scrapling goto waits for load event + retries=3; on FB SPA that means ~90s
+  per dead profile
+type: lesson
 ---
 
 # scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile
@@ -22,3 +32,14 @@ Fix: lower `timeout` (e.g. 15000) and set `retries=1` to fail fast — cuts a de
 ## Related
 
 - [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+- [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+- [[Scrapling AsyncDynamicSession reuses one browser with a max_pages tab pool for concurrent fetching]]
+- [[Playwright click() auto-waits the full timeout on a missing locator; probe with count() first]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+
+%% ai-graph-end %%

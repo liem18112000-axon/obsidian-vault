@@ -1,18 +1,22 @@
 ---
-title: Monetag - MOC
-created: 2026-06-12
-type: moc
-status: seedling
-source: research session 2026-06-12 (promo.monetag.com/vn + third-party reviews)
-tags:
-  - affiliate
-  - monetag
-  - ad-network
-  - monetization
-  - moc
+ai_hash: 7a8f1a50e99f5029
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Monetag index
-  - Monetag research
+- Monetag index
+- Monetag research
+created: 2026-06-12
+entities: []
+source: research session 2026-06-12 (promo.monetag.com/vn + third-party reviews)
+status: seedling
+tags:
+- affiliate
+- monetag
+- ad-network
+- monetization
+- moc
+title: Monetag - MOC
+type: moc
 ---
 
 # Monetag - MOC
@@ -48,3 +52,14 @@ flowchart TD
 
 - [[Ad network vs affiliate network]]
 - [[Monetag SSP API and integration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monetag overview]]
+- [[Monetag SSP API and integration]]
+- [[Ad network vs affiliate network]]
+- [[Monetag ad formats]]
+- [[Monetag referral program]]
+
+%% ai-graph-end %%

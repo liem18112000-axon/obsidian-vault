@@ -1,10 +1,18 @@
 ---
-title: "behave step patterns differing only by quote style are distinct definitions"
+ai_hash: 7307d5111580bcd1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: gotcha
+entities: []
+source: session 2026-06-16
 status: evergreen
-source: "session 2026-06-16"
-tags: [behave, integration-test, gotcha, step-definitions]
+tags:
+- behave
+- integration-test
+- gotcha
+- step-definitions
+title: behave step patterns differing only by quote style are distinct definitions
+type: gotcha
 ---
 
 # behave step patterns differing only by quote style are distinct definitions
@@ -20,3 +28,14 @@ Related: [[luz-docs IT $SCn authorization failures were deterministic resolution
 ## Related
 
 - [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+- [[luz-docs IT before_scenario reads but does not substitute $SCn into step text]]
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+- [[luz-docs IT skips security-class scenarios when the tenant token lacks enough codes]]
+- [[Isolate the same scenarios on both branches to separate regression from flakiness]]
+
+%% ai-graph-end %%

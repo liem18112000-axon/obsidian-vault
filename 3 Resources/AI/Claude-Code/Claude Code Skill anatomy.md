@@ -1,17 +1,21 @@
 ---
-title: Claude Code Skill anatomy
-created: 2026-06-11
-type: concept
-status: seedling
-source: research session 2026-06-11
-tags:
-  - claude-code
-  - skills
-  - concept
+ai_hash: f7004fd25173b53a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - SKILL.md structure
-  - Claude skill frontmatter
-  - What is a Claude skill
+- SKILL.md structure
+- Claude skill frontmatter
+- What is a Claude skill
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- claude-code
+- skills
+- concept
+title: Claude Code Skill anatomy
+type: concept
 ---
 
 # Claude Code Skill anatomy
@@ -72,3 +76,14 @@ A `` !`command` `` line (or a ` ```! ` block) runs **before** Claude sees the sk
 - [[Claude Code hooks event model]]
 - [[Skills vs Hooks vs MCP vs subagents]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Designing an Accesstrade skill for Claude Code]]
+- [[Accesstrade API Integration - MOC]]
+- [[Skills vs Hooks vs MCP vs subagents]]
+- [[Claude Code hooks event model]]
+- [[Use case - bulk tracking link generation]]
+
+%% ai-graph-end %%

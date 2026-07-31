@@ -1,10 +1,18 @@
 ---
-title: "luz_docs materialize passive retry via cascade markers"
+ai_hash: 70cac3a753a6e9fb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: model
+entities: []
+source: session 2026-06-05 LUZ-154804
 status: seedling
-source: "session 2026-06-05 LUZ-154804"
-tags: [luz-docs, materialize, retry, eventual-consistency]
+tags:
+- luz-docs
+- materialize
+- retry
+- eventual-consistency
+title: luz_docs materialize passive retry via cascade markers
+type: model
 ---
 
 # luz_docs materialize passive retry via cascade markers
@@ -24,3 +32,14 @@ Related: [[Absent discriminator field as legacy default in evolving document sch
 ## Related
 
 - [[Absent discriminator field as legacy default in evolving document schemas]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cascade-marker pattern for crash-safe async retry]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]
+- [[luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races]]
+- [[07 Operational Notes]]
+- [[luz_docs bulk folder PATCH runs the materialize cascade once per entry]]
+
+%% ai-graph-end %%

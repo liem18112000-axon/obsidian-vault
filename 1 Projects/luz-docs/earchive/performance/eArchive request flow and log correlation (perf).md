@@ -1,7 +1,54 @@
 ---
-title: eArchive request flow and log correlation (perf)
-tags: [luz, earchive, logs, performance, latency, parallelize]
+ai_hash: c4819a52ea6d6f9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
+entities:
+- eArchive request flow and log correlation (perf)
+- eArchive page
+- JSF/PrimeFaces
+- webclient
+- view-controller
+- luz-docs
+- jsonstore
+- Tenant UUID
+- LiemCompany
+- GA
+- luz-uri
+- access logs
+- luz-mongodb04
+- luz-skill-flow-logs
+- session trace
+- GET /letters/badge-count
+- POST /letters/count
+- POST /documents/search
+- GET /v2/<t>/archives/directories/branded
+- POST /documents/count (luz-docs)
+- GET /documents/{oid}/files/thumbnail128
+- GET /documents/{oid}/files/reference
+- io.undertow.accesslog
+- time-consuming
+- Count cache
+- K fan-out
+- LUZ_DOCS_PARALLELIZE_COUNT_PARTITIONS
+- Mongo
+- _shard
+- collation
+- eArchive page DOM selectors (performance automation)
+- Luz K count-partitions env var
+- Luz performance env cluster topology
+- eArchive 800k bottleneck is view-controller not K
+- 45b05710-b9d4-4d3e-935e-83c4525369fa
+- POST /documents/count (jsonstore)
+- jsonstore documents/aggregate
+tags:
+- luz
+- earchive
+- logs
+- performance
+- latency
+- parallelize
+title: eArchive request flow and log correlation (perf)
 ---
 
 # eArchive request flow and log correlation (perf)
@@ -31,3 +78,54 @@ So `luz-skill-flow-logs 45b05710-... SEVERITY= FRESHNESS=<win>` (no severity fil
 - **jsonstore documents/aggregate** carries `collation="locale":"en","caseFirst":"UPPER"` (en/UPPER-aware sort for folder-name grouping).
 
 Related: [[eArchive page DOM selectors (performance automation)]] · [[Luz K count-partitions env var]] · [[Luz performance env cluster topology]] · [[eArchive 800k bottleneck is view-controller not K]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive 800k bottleneck is view-controller not K]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
+- [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
+- [[eArchive load wall is the materialize security aggregate, not index coverage]]
+
+**Relations:**
+- eArchive page — *IS_IMPLEMENTED_WITH* — JSF/PrimeFaces
+- eArchive page — *USES* — webclient
+- webclient — *CALLS* — view-controller
+- view-controller — *CALLS* — luz-docs
+- luz-docs — *CALLS* — jsonstore
+- Tenant UUID — *FLOWS_THROUGH* — view-controller
+- Tenant UUID — *FLOWS_THROUGH* — luz-docs
+- Tenant UUID — *FLOWS_THROUGH* — jsonstore
+- Tenant UUID — *APPEARS_IN* — luz-uri
+- Tenant UUID — *APPEARS_IN* — access logs
+- LiemCompany — *HAS_TENANT_UUID* — 45b05710-b9d4-4d3e-935e-83c4525369fa
+- 45b05710-b9d4-4d3e-935e-83c4525369fa — *FOUND_VIA* — GA
+- 45b05710-b9d4-4d3e-935e-83c4525369fa — *CONFIRMED_IN* — view-controller
+- 45b05710-b9d4-4d3e-935e-83c4525369fa — *CONFIRMED_IN* — luz-docs
+- 45b05710-b9d4-4d3e-935e-83c4525369fa — *FIRST_HEX_INDICATES* — luz-mongodb04
+- luz-skill-flow-logs — *IS_USED_TO_ISOLATE* — session trace
+- view-controller — *HANDLES_ENDPOINT* — GET /letters/badge-count
+- view-controller — *HANDLES_ENDPOINT* — POST /letters/count
+- view-controller — *HANDLES_ENDPOINT* — POST /documents/search
+- view-controller — *HANDLES_ENDPOINT* — GET /v2/<t>/archives/directories/branded
+- POST /documents/search — *DOWNSTREAM_CALLS* — POST /documents/search (luz-docs)
+- luz-docs — *HANDLES_ENDPOINT* — POST /documents/count (luz-docs)
+- luz-docs — *HANDLES_ENDPOINT* — GET /documents/{oid}/files/thumbnail128
+- luz-docs — *HANDLES_ENDPOINT* — GET /documents/{oid}/files/reference
+- io.undertow.accesslog — *CONTAINS_FIELD* — time-consuming
+- POST /documents/search — *OBSERVED_LATENCY* — 143800 ms
+- Count cache — *AFFECTS* — K fan-out
+- GET /letters/badge-count — *INTERNALLY_FANS_OUT* — POST /documents/count (luz-docs)
+- POST /letters/count — *CALLS_PER* — folder
+- POST /documents/count (luz-docs) — *SPLITS_INTO* — K sub-counts
+- K fan-out — *IS_CONFIGURED_BY* — LUZ_DOCS_PARALLELIZE_COUNT_PARTITIONS
+- POST /documents/count (luz-docs) — *FORWARDS_QUERY_TO* — POST /documents/count (jsonstore)
+- POST /documents/count (jsonstore) — *PERFORMS_OPERATION* — Mongo countDocuments/shard
+- jsonstore documents/aggregate — *CARRIES_PARAMETER* — collation
+- eArchive request flow and log correlation (perf) — *RELATED_TO* — eArchive page DOM selectors (performance automation)
+- eArchive request flow and log correlation (perf) — *RELATED_TO* — Luz K count-partitions env var
+- eArchive request flow and log correlation (perf) — *RELATED_TO* — Luz performance env cluster topology
+- eArchive request flow and log correlation (perf) — *RELATED_TO* — eArchive 800k bottleneck is view-controller not K
+
+%% ai-graph-end %%

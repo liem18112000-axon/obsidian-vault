@@ -1,10 +1,19 @@
 ---
-title: "document_service.recover_document drops an empty folderIds list, so it cannot clear folders"
+ai_hash: 3ea29e45af2bbcc9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: session 2026-06-15
 status: seedling
-source: "session 2026-06-15"
-tags: [luz-docs, integration-test, gotcha, recover]
+tags:
+- luz-docs
+- integration-test
+- gotcha
+- recover
+title: document_service.recover_document drops an empty folderIds list, so it cannot
+  clear folders
+type: lesson
 ---
 
 # document_service.recover_document drops an empty folderIds list, so it cannot clear folders
@@ -20,3 +29,14 @@ Related: [[DocumentService.recoverDocument re-stamps materialized fields via the
 ## Related
 
 - [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]]
+- [[FolderService.recoverFolder is not materialize-aware]]
+- [[luz_docs folder delete shared document handling]]
+- [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
+- [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+
+%% ai-graph-end %%

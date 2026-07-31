@@ -1,10 +1,18 @@
 ---
-title: "Cloud SQL ENTERPRISE_PLUS edition rejects shared-core tiers like db-f1-micro"
+ai_hash: 95d405ba703004cd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: gotcha
+entities: []
+source: session 2026-06-14
 status: seedling
-source: "session 2026-06-14"
-tags: [gcp, cloud-sql, terraform, gotcha]
+tags:
+- gcp
+- cloud-sql
+- terraform
+- gotcha
+title: Cloud SQL ENTERPRISE_PLUS edition rejects shared-core tiers like db-f1-micro
+type: gotcha
 ---
 
 # Cloud SQL ENTERPRISE_PLUS edition rejects shared-core tiers like db-f1-micro
@@ -28,3 +36,11 @@ settings {
 ```
 
 Use ENTERPRISE for nonprod/cost-sensitive instances (shared-core tiers, ~no HA floor); reach for ENTERPRISE_PLUS only when you actually want its perf-optimized tiers and features. Surfaced fixing the accesstrade_integration `deployment/` Terraform (database.tf).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud SQL Postgres point-in-time recovery requires automated backups enabled]]
+- [[Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider]]
+
+%% ai-graph-end %%

@@ -1,8 +1,18 @@
 ---
-type: term
+ai_hash: c1146ddc317550cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- LTV
+- CLV
+- Customer Lifetime Value
+- Lifetime Value
 domain: affiliate-marketing
-aliases: [LTV, CLV, Customer Lifetime Value, Lifetime Value]
-tags: [affiliate, metric]
+entities: []
+tags:
+- affiliate
+- metric
+type: term
 ---
 
 # Lifetime Value
@@ -88,3 +98,14 @@ As an affiliate you don't control these — but you benefit from choosing **merc
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Revenue Share]]
+- [[Term]]
+- [[Average Order Value]]
+- [[Cost per Sale]]
+- [[Cookie Duration]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "transaction_status column stores Java enum names not JSON wire values"
+ai_hash: 0b32e80d24affaab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: lesson
+entities: []
+source: LUZ-157476 session 2026-07-24
 status: seedling
-source: "LUZ-157476 session 2026-07-24"
-tags: [luz-store, jpa, enum, gotcha, sql]
+tags:
+- luz-store
+- jpa
+- enum
+- gotcha
+- sql
+title: transaction_status column stores Java enum names not JSON wire values
+type: lesson
 ---
 
 # transaction_status column stores Java enum names not JSON wire values
@@ -15,3 +24,14 @@ Trap: the PARTIALLY_REFUNED typo is locked into DB data — with EnumType.STRING
 
 ## Related
 - [[luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values]]
+- [[TransactionStatus.from() swallows unknown Payrexx statuses as null]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[DECLINED status falls through invoice charge-failure handling in luz_store]]
+- [[TransactionStatus.from returns null on unknown Payrexx status causing silent NotNull 400]]
+
+%% ai-graph-end %%

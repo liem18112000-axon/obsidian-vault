@@ -1,10 +1,19 @@
 ---
-title: "eArchive dev skills are self-contained copies, not shared helpers"
+ai_hash: bf89b90bf7939457
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: concept
+entities: []
+source: session 2026-06-11 (creating earchive-data-clean)
 status: seedling
-source: "session 2026-06-11 (creating earchive-data-clean)"
-tags: [luz, earchive, mongodb, skills, convention]
+tags:
+- luz
+- earchive
+- mongodb
+- skills
+- convention
+title: eArchive dev skills are self-contained copies, not shared helpers
+type: concept
 ---
 
 # eArchive dev skills are self-contained copies, not shared helpers
@@ -23,3 +32,14 @@ When adding a new skill to the family, copy the loop from an existing sibling, r
 ## Related
 
 - [[Destructive Luz skills use a preview-first CONFIRM gate]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[earchive-seed-stale-27017-portforward-gotcha]]
+- [[Destructive Luz skills use a preview-first CONFIRM gate]]
+- [[deleteMany over kubectl port-forward runs about 5k docs per second]]
+- [[dev-staging tenants live on a separate mongo cluster from dev]]
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+
+%% ai-graph-end %%

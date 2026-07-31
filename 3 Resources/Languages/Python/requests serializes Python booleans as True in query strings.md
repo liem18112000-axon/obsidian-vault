@@ -1,10 +1,18 @@
 ---
-title: "requests serializes Python booleans as True in query strings"
+ai_hash: 56a4be8c844e669e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: session 2026-06-11, accesstrade_integration repo
 status: seedling
-source: "session 2026-06-11, accesstrade_integration repo"
-tags: [python, requests, gotcha, http]
+tags:
+- python
+- requests
+- gotcha
+- http
+title: requests serializes Python booleans as True in query strings
+type: lesson
 ---
 
 # requests serializes Python booleans as True in query strings
@@ -22,3 +30,10 @@ Implemented as `_clean_params()` in `api_services/transport.py`; one place to au
 ## Related
 
 - [[Affiliate API engineering best practices]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Wrap a two-generation API as one shared transport plus one client per generation]]
+
+%% ai-graph-end %%

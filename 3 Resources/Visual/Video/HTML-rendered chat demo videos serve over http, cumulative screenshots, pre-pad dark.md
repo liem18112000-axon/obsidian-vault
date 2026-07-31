@@ -1,10 +1,20 @@
 ---
-title: "HTML-rendered chat demo videos: serve over http, cumulative screenshots, pre-pad dark"
+ai_hash: 79e312ff632a24e2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: howto
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [playwright, html, video, ffmpeg, demo]
+tags:
+- playwright
+- html
+- video
+- ffmpeg
+- demo
+title: 'HTML-rendered chat demo videos: serve over http, cumulative screenshots, pre-pad
+  dark'
+type: howto
 ---
 
 # HTML-rendered chat demo videos: serve over http, cumulative screenshots, pre-pad dark
@@ -21,3 +31,14 @@ Used for the telegram deck's /new /sessions /status /cancel /approvals demo slid
 ## Related
 
 - [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Animate a chat-replay video in PIL cumulative reveal + bottom-anchored scroll tween]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+- [[Timed reveal overlay on a real full-page screenshot]]
+- [[Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)]]
+- [[concept-to-video avatar overlay sits bottom-right — keep callouts clear]]
+
+%% ai-graph-end %%

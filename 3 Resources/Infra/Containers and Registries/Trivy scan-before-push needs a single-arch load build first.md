@@ -1,10 +1,20 @@
 ---
-title: "Trivy scan-before-push needs a single-arch load build first"
+ai_hash: 67d2e568ac2dae9a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-04
-type: lesson
+entities: []
+source: session 2026-06-04, LEO CDP CI pipeline
 status: seedling
-source: "session 2026-06-04, LEO CDP CI pipeline"
-tags: [github-actions, docker, buildx, trivy, security, gotcha]
+tags:
+- github-actions
+- docker
+- buildx
+- trivy
+- security
+- gotcha
+title: Trivy scan-before-push needs a single-arch load build first
+type: lesson
 ---
 
 # Trivy scan-before-push needs a single-arch load build first
@@ -23,3 +33,14 @@ Learned while building the LEO CDP `release.yml`; the two-build-step ordering ex
 ## Related
 
 - [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Running the LEO CDP GHCR image needs mounted configs (image ships JARs only)]]
+- [[Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output]]
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+
+%% ai-graph-end %%

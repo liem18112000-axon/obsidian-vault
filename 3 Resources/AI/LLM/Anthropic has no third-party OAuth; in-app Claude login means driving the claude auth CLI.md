@@ -1,10 +1,22 @@
 ---
-title: "Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI"
+ai_hash: 5d84f6853f7017b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: session 2026-07-01 (Vinnstack provider auth layer)
 status: seedling
-source: "session 2026-07-01 (Vinnstack provider auth layer)"
-tags: [claude, anthropic, oauth, auth, cli, gcloud, vinnstack]
+tags:
+- claude
+- anthropic
+- oauth
+- auth
+- cli
+- gcloud
+- vinnstack
+title: Anthropic has no third-party OAuth; in-app Claude login means driving the claude
+  auth CLI
+type: lesson
 ---
 
 # Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI
@@ -21,3 +33,14 @@ tags: [claude, anthropic, oauth, auth, cli, gcloud, vinnstack]
 **Google Cloud is the same shape:** `gcloud auth login` / `gcloud auth application-default login` (browser), `gcloud auth list --filter=status:ACTIVE --format=value(account)` for status, ADC file at `%APPDATA%\gcloud\application_default_credentials.json`. Gotcha: on Windows `gcloud` is a .cmd wrapper — Node `spawn` without `shell:true` can't run it (ENOENT); `claude` resolves to a real .exe so it doesn't need a shell.
 
 **Design pattern that worked (Vinnstack):** an `AuthProvider` interface (id, kind, status(), login(signal), logout()) with one impl per vendor + a registry; `/api/auth` (list+status) and `/api/auth/[provider]` (POST login|logout). login() spawns the CLI browser flow with a long, abortable timeout; status() is a quick bounded exec. This is how you 'separate the layer' from Claude while supporting only Claude initially.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[Local-app provider sign-in drive the vendor CLI; Vertex is the exception (gcloud ADC + projectregion)]]
+- [[Claude subscription OAuth cannot power a third-party audience-facing app]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Compress-Archive silently drops empty directories"
+ai_hash: 77d051a8a57d715d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: gotcha
+entities: []
+source: fb-info-project build workflow, session 2026-06-10
 status: seedling
-source: "fb-info-project build workflow, session 2026-06-10"
-tags: [powershell, ci, packaging, gotcha]
+tags:
+- powershell
+- ci
+- packaging
+- gotcha
+title: Compress-Archive silently drops empty directories
+type: gotcha
 ---
 
 # Compress-Archive silently drops empty directories
@@ -21,3 +29,10 @@ Same caveat applies to git (doesn't track empty dirs) — the .gitkeep conventio
 ## Related
 
 - [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+
+%% ai-graph-end %%

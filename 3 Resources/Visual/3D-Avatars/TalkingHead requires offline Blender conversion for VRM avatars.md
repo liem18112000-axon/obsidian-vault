@@ -1,10 +1,19 @@
 ---
-title: "TalkingHead requires offline Blender conversion for VRM avatars"
+ai_hash: 3a25f55330ce0795
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar project, 2026-07-11
 status: seedling
-source: "virtual-avatar project, 2026-07-11"
-tags: [talkinghead, vrm, blender, 3d-avatar, threejs]
+tags:
+- talkinghead
+- vrm
+- blender
+- 3d-avatar
+- threejs
+title: TalkingHead requires offline Blender conversion for VRM avatars
+type: lesson
 ---
 
 # TalkingHead requires offline Blender conversion for VRM avatars
@@ -19,3 +28,14 @@ Practical implication: a 'Hips not found' or 'blend shapes not found' error when
 
 - [[Blender headless add-on install via bpy.ops.preferences]]
 - [[VRM Blender add-on ships classic and Extension zip variants]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
+- [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
+- [[madjinvrm-samples repo bundles official VRoid Studio sample avatars with mixed licenses]]
+- [[VRM Blender add-on ships classic and Extension zip variants]]
+- [[TalkingHead speakAudio never decodes a single ArrayBuffer before playback]]
+
+%% ai-graph-end %%

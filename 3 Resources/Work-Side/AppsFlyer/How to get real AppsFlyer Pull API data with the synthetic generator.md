@@ -1,10 +1,19 @@
 ---
-title: "How to get real AppsFlyer Pull API data with the synthetic generator"
+ai_hash: 70c50c4166e11aa2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: howto
+entities: []
+source: session 2026-06-26
 status: seedling
-source: "session 2026-06-26"
-tags: [appsflyer, pull-api, s2s, generator, leo-cdp]
+tags:
+- appsflyer
+- pull-api
+- s2s
+- generator
+- leo-cdp
+title: How to get real AppsFlyer Pull API data with the synthetic generator
+type: howto
 ---
 
 # How to get real AppsFlyer Pull API data with the synthetic generator
@@ -22,3 +31,14 @@ Two caveats that bite even when you do it right:
 ## Related
 
 - [[AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API]]
+- [[AppsFlyer only attributes events to installs recorded under the same app_id]]
+- [[Minimal Android sideload technique for a real AppsFlyer install]]
+- [[AppsFlyer Push API is the inverse of the Pull API]]
+- [[AppsFlyer raw-data Pull API is plan-gated - 400 subscription error]]
+
+%% ai-graph-end %%

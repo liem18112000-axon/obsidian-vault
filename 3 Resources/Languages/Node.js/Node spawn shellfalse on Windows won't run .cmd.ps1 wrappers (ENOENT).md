@@ -1,10 +1,19 @@
 ---
-title: "Node spawn shell:false on Windows won't run .cmd/.ps1 wrappers (ENOENT)"
+ai_hash: 0d064d066def9f97
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-29
-type: gotcha
+entities: []
 status: seedling
-tags: [nodejs, windows, child-process, child_process, gotcha, security]
-entities: [child_process.spawn, execFile, execFileSync, "shell:true", ENOENT, CreateProcess, PATHEXT, "%APPDATA%\\npm"]
+tags:
+- nodejs
+- windows
+- child-process
+- child_process
+- gotcha
+- security
+title: Node spawn shell:false on Windows won't run .cmd/.ps1 wrappers (ENOENT)
+type: gotcha
 ---
 
 # Node spawn shell:false on Windows won't run .cmd/.ps1 wrappers (ENOENT)
@@ -26,3 +35,14 @@ This bites CLIs that ship as batch shims: `gcloud`, `npm`, and every `npm i -g` 
 - [[npm global install layout on Windows]]
 - [[Shell injection via child_process]]
 - [[ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A silent canned fallback masks real failures — surface the underlying error]]
+- [[spawn python ENOENT on Windows — resolve a real interpreter, not the Store alias]]
+- [[ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node]]
+- [[Never cache a negative fallback in the same slot as a resolved value]]
+- [[Pass LLM prompts to spawned CLIs via stdin - Windows argv caps at 32K (ENAMETOOLONG)]]
+
+%% ai-graph-end %%

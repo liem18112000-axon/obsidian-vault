@@ -1,10 +1,19 @@
 ---
-title: "ngram trigram prefilter reads the built mongo query, not the raw payload"
+ai_hash: e3772334f253e702
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-27
-type: concept
+entities: []
+source: session 2026-06-27
 status: seedling
-source: "session 2026-06-27"
-tags: [luz-docs, search, ngram, trigram, mongodb]
+tags:
+- luz-docs
+- search
+- ngram
+- trigram
+- mongodb
+title: ngram trigram prefilter reads the built mongo query, not the raw payload
+type: concept
 ---
 
 # ngram trigram prefilter reads the built mongo query, not the raw payload
@@ -20,3 +29,14 @@ Part of the S2 trigram work; see [[Full-text search report]] equivalent (`projec
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/search/luz-docs search DSL silently drops raw-mongo query keys]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
+- [[luz-docs search DSL silently drops raw-mongo query keys]]
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
+- [[luz-docs DSL regexp value must be wrapped .term. (else HTTP 400)]]
+
+%% ai-graph-end %%

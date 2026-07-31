@@ -1,10 +1,21 @@
 ---
-title: "Auto-versioning generated files into a local git repo: add -A + serialized queue + fire-and-forget"
+ai_hash: c191b70a1fe54372
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: howto
+entities: []
+source: session 2026-07-01 (Vinnstack content repo + PRD iteration)
 status: seedling
-source: "session 2026-07-01 (Vinnstack content repo + PRD iteration)"
-tags: [git, nodejs, nextjs, versioning, vinnstack, pattern]
+tags:
+- git
+- nodejs
+- nextjs
+- versioning
+- vinnstack
+- pattern
+title: 'Auto-versioning generated files into a local git repo: add -A + serialized
+  queue + fire-and-forget'
+type: howto
 ---
 
 # Auto-versioning generated files into a local git repo: add -A + serialized queue + fire-and-forget
@@ -19,3 +30,14 @@ When a Node/Next app must auto-version files it generates (docs, diagrams, JSON 
 - **Its own repo, separate from app source.** Generated content is the user's data, not product code; keep it in its own repo (here: under the vault) so it never mixes with the app tree.
 
 Also: a PRD/artifact 'decline → refine' loop is cleanest when decline just feeds human feedback + the prior artifact back into the same generator as a 'revision request', appends a new revision (keep all versions + the feedback that produced each), and resets status to draft — reusing the generate path rather than adding a separate flow.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[Promise-chain queueTail pattern serializes async jobs with instant enqueue]]
+- [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
+- [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+
+%% ai-graph-end %%

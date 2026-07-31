@@ -1,8 +1,20 @@
 ---
-type: term
+ai_hash: 20e8efe5e5d3d742
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- CPR
+- Cost per Registration
+- Pay per Registration
+- Cost per Signup
+- Cost per Install with registration
 domain: affiliate-marketing
-aliases: [CPR, Cost per Registration, Pay per Registration, Cost per Signup, Cost per Install with registration]
-tags: [affiliate, pricing-model, metric]
+entities: []
+tags:
+- affiliate
+- pricing-model
+- metric
+type: term
 ---
 
 # Cost per Registration
@@ -85,3 +97,14 @@ If the merchant only profits on payment (and tracks it well), [[Cost per Sale]] 
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Action]]
+- [[Cost per Lead]]
+- [[Cost per Sale]]
+- [[Cost per Quality Lead]]
+- [[Term]]
+
+%% ai-graph-end %%

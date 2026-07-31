@@ -1,10 +1,19 @@
 ---
-title: "Async-enriched columns need a lazy backfill for pre-feature rows"
+ai_hash: 48e50cbdce1c869c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [vinnstack, database, llm, backfill, gotcha]
+tags:
+- vinnstack
+- database
+- llm
+- backfill
+- gotcha
+title: Async-enriched columns need a lazy backfill for pre-feature rows
+type: lesson
 ---
 
 # Async-enriched columns need a lazy backfill for pre-feature rows
@@ -23,3 +32,14 @@ General rule: whenever you add write-time async enrichment, ask "what about the 
 ## Related
 
 - [[Vinnstack versioned MD exports]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Version changelogs - generate the explanation at snapshot time, compute the diff on demand]]
+- [[Vinnstack story flows keep only the latest version - history lives in md_exports snapshots]]
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+- [[A feedback loop with only its write side wired looks like a broken feature]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Airflow env-var Variables backend uppercases the key (AIRFLOW_VAR_<KEY>)"
+ai_hash: 00668958727f6a9c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: gotcha
+entities: []
+source: 'appsflyer-data-connector PR #1 review, 2026-06-24'
 status: seedling
-source: "appsflyer-data-connector PR #1 review, 2026-06-24"
-tags: [airflow, variables, secrets-backend, gotcha, jinja-templating]
+tags:
+- airflow
+- variables
+- secrets-backend
+- gotcha
+- jinja-templating
+title: Airflow env-var Variables backend uppercases the key (AIRFLOW_VAR_<KEY>)
+type: gotcha
 ---
 
 # Airflow env-var Variables backend uppercases the key (AIRFLOW_VAR_<KEY>)
@@ -19,3 +28,11 @@ So a lowercase template key and an uppercase env var are the **two matching halv
 **Gotcha / why it matters:** a Copilot PR review flagged "the DAG reads \`var.value.minio_access_key\` (lowercase) but compose sets \`AIRFLOW_VAR_MINIO_ACCESS_KEY\` (uppercase), so creds template empty" — that was a **false positive**, because the backend upper-cases the key during lookup. Knowing this convention saves you from "fixing" working config or chasing phantom empty-Variable bugs.
 
 Source: \`airflow/secrets/environment_variables.py\` → \`get_variable\` does \`os.environ.get(VAR_ENV_PREFIX + key.upper())\`, where \`VAR_ENV_PREFIX = "AIRFLOW_VAR_"\`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MinIO server creds (ROOT_USERPASSWORD) are distinct env vars from the S3 client creds (ACCESS_KEYSECRET_KEY)]]
+- [[Grep-audit env vars against code before pruning .env files]]
+
+%% ai-graph-end %%

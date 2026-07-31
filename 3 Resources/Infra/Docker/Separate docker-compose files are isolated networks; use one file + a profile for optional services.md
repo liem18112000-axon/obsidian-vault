@@ -1,10 +1,20 @@
 ---
-title: "Separate docker-compose files are isolated networks; use one file + a profile for optional services"
+ai_hash: 397485dfc9ced6d8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: lesson
+entities: []
+source: session 2026-07-02; appsflyer unify-compose
 status: seedling
-source: "session 2026-07-02; appsflyer unify-compose"
-tags: [docker-compose, profiles, networking, minio, gotcha]
+tags:
+- docker-compose
+- profiles
+- networking
+- minio
+- gotcha
+title: Separate docker-compose files are isolated networks; use one file + a profile
+  for optional services
+type: lesson
 ---
 
 # Separate docker-compose files are isolated networks; use one file + a profile for optional services
@@ -25,3 +35,14 @@ Gotchas learned:
 ## Related
 
 - [[MinIO server creds (ROOT_USERPASSWORD) are distinct env vars from the S3 client creds (ACCESS_KEYSECRET_KEY)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MinIO server creds (ROOT_USERPASSWORD) are distinct env vars from the S3 client creds (ACCESS_KEYSECRET_KEY)]]
+- [[Two Dockerfiles differing only in entrypoint should be one image plus compose override]]
+- [[Docker hostname for reaching a service depends on where the caller runs]]
+- [[AppsFlyer connector S3 config is vStorage-only - VSTORAGE_ env vars]]
+- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+
+%% ai-graph-end %%

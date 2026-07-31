@@ -1,10 +1,18 @@
 ---
-title: "concept-to-video avatar overlay sits bottom-right — keep callouts clear"
+ai_hash: 3d000c3da6002a43
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-27
-type: lesson
+entities: []
+source: session 2026-06-27 count-fanout deck
 status: seedling
-source: "session 2026-06-27 count-fanout deck"
-tags: [concept-to-video, diagrams, avatar, gotcha]
+tags:
+- concept-to-video
+- diagrams
+- avatar
+- gotcha
+title: concept-to-video avatar overlay sits bottom-right — keep callouts clear
+type: lesson
 ---
 
 # concept-to-video avatar overlay sits bottom-right — keep callouts clear
@@ -20,3 +28,13 @@ Note the avatar video is a *separate* artifact from the clean narrated video, so
 ## Related
 
 - [[concept-to-video reveal-clip truncation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+- [[HTML-rendered chat demo videos serve over http, cumulative screenshots, pre-pad dark]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+
+%% ai-graph-end %%

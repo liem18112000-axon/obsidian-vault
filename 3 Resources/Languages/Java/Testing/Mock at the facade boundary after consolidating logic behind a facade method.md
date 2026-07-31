@@ -1,10 +1,19 @@
 ---
-title: "Mock at the facade boundary after consolidating logic behind a facade method"
+ai_hash: ad6bc4b605154938
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: session 2026-06-01
 status: seedling
-source: "session 2026-06-01"
-tags: [java, testing, mockito, refactoring, facade]
+tags:
+- java
+- testing
+- mockito
+- refactoring
+- facade
+title: Mock at the facade boundary after consolidating logic behind a facade method
+type: lesson
 ---
 
 # Mock at the facade boundary after consolidating logic behind a facade method
@@ -22,3 +31,14 @@ After moving multi-step logic into a single facade method, rewrite the caller's 
 
 ## Related
 [[Parallel-API suffix to add behaviour without breaking existing callers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shape-keyed test mocks break when production query shapes change]]
+- [[New collaborator call NPEs old @InjectMocks tests]]
+- [[A delegating overload changes less code than widening an existing method signature]]
+- [[Visibility downgrade breaks external callers]]
+- [[Parameterize JUnit5 tests across overload variants with Named Function MethodSource]]
+
+%% ai-graph-end %%

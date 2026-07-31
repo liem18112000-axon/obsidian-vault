@@ -1,10 +1,21 @@
 ---
-title: "OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation"
+ai_hash: 4920b1c9e32ef87a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-29
-type: lesson
+entities: []
+source: luz_jsonstore session 2026-07-29
 status: seedling
-source: "luz_jsonstore session 2026-07-29"
-tags: [jax-rs, jakarta-ee, openapi, microprofile, content-negotiation, gotcha]
+tags:
+- jax-rs
+- jakarta-ee
+- openapi
+- microprofile
+- content-negotiation
+- gotcha
+title: OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls
+  content negotiation
+type: lesson
 ---
 
 # OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation
@@ -22,3 +33,14 @@ Related: [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not
 ## Related
 
 - [[3 Resources/Languages/Java/JAX-RS/A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A JAX-RS body param typed org.bson.Document is JSON-deserialized, not a BSON wire format]]
+- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
+- [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
+- [[luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off]]
+- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+
+%% ai-graph-end %%

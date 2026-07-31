@@ -1,18 +1,22 @@
 ---
-title: Affiliate compliance and link hygiene
-created: 2026-06-11
-type: lesson
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - compliance
-  - best-practices
-  - lesson
+ai_hash: 4bcce53006bd13dd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Affiliate disclosure
-  - Link hygiene
-  - Affiliate compliance
+- Affiliate disclosure
+- Link hygiene
+- Affiliate compliance
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- compliance
+- best-practices
+- lesson
+title: Affiliate compliance and link hygiene
+type: lesson
 ---
 
 # Affiliate compliance and link hygiene
@@ -56,3 +60,14 @@ flowchart TD
 - [[Use case - bulk tracking link generation]]
 - [[Secrets handling for affiliate API keys]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Use case - bulk tracking link generation]]
+- [[Accesstrade API Integration - MOC]]
+- [[Claude Code hooks event model]]
+- [[Designing an Accesstrade skill for Claude Code]]
+- [[Affiliate API engineering best practices]]
+
+%% ai-graph-end %%

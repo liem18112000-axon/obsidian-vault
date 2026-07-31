@@ -1,10 +1,22 @@
 ---
-title: "Scrapling AsyncDynamicSession reuses one browser with a max_pages tab pool for concurrent fetching"
+ai_hash: 07d56e0bc1b000fa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: howto
+entities: []
+source: session 2026-06-05
 status: seedling
-source: "session 2026-06-05"
-tags: [python, scrapling, asyncio, playwright, concurrency, scraping, fb-info-project]
+tags:
+- python
+- scrapling
+- asyncio
+- playwright
+- concurrency
+- scraping
+- fb-info-project
+title: Scrapling AsyncDynamicSession reuses one browser with a max_pages tab pool
+  for concurrent fetching
+type: howto
 ---
 
 # Scrapling AsyncDynamicSession reuses one browser with a max_pages tab pool for concurrent fetching
@@ -33,3 +45,13 @@ Trade-off: concurrency means many rapid requests from one logged-in session — 
 ## Related
 
 - [[scrapling[fetchers] extra pins playwright exactly - install deps individually to keep your own pin]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile]]
+- [[Mixing sync and async Playwright requires separate threads]]
+- [[scrapling[fetchers] extra pins playwright exactly - install deps individually to keep your own pin]]
+- [[page.content() serializes the full DOM over CDP]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Widening fan-out threads doesn't help once MongoDB is the count bottleneck"
+ai_hash: 0db79b2ea9a2268e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: observation
+entities: []
+source: luz_docs LUZ-154613 dev sweeps 2026-06-18
 status: seedling
-source: "luz_docs LUZ-154613 dev sweeps 2026-06-18"
-tags: [performance, mongodb, concurrency, scaling, benchmarking, counting, negative-result]
+tags:
+- performance
+- mongodb
+- concurrency
+- scaling
+- benchmarking
+- counting
+- negative-result
+title: Widening fan-out threads doesn't help once MongoDB is the count bottleneck
+type: observation
 ---
 
 # Widening fan-out threads doesn't help once MongoDB is the count bottleneck
@@ -22,3 +33,14 @@ Practical: keep the fan-out at K≈6 (on the floor, least CPU/downstream load); 
 - [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
 - [[BitmapHLL counts supersede fan-out; they don't combine with it]]
 - [[WildFly custom managed-executor-service needs context-service for CDIWeld tasks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization"
+ai_hash: a26596c05643070a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03, vinnstack Mermaid toolbar
 status: seedling
-source: "session 2026-07-03, vinnstack Mermaid toolbar"
-tags: [svg, canvas, clipboard, mermaid]
+tags:
+- svg
+- canvas
+- clipboard
+- mermaid
+title: Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization
+type: howto
 ---
 
 # Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization
@@ -19,3 +27,14 @@ Pipeline to put a rendered SVG (e.g. a Mermaid diagram) on the clipboard as a PN
 Caveats: CSS custom properties in the SVG (font-family: var(...)) don't resolve inside the rasterized image - text falls back to generic fonts; `URL.revokeObjectURL` in a finally.
 
 Same root cause, different symptom: injecting a `width="100%"`-only SVG into a fullscreen overlay/lightbox renders it at **0x0** (an invisible "blank" overlay) - `width:auto` CSS inside a shrink-to-fit container has no intrinsic size to resolve against, even though the identical markup renders fine in normal block flow. The explicit-pixel-size-from-viewBox fix serves both consumers; also strip mermaid's inline `style="max-width: Npx"` so the consumer's own max-w/max-h constraints govern.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SVG foreignObject taints a canvas on drawImage]]
+- [[Mermaid text clipping causes useMaxWidth shrink, narrow wrappingWidth, and web-font race]]
+- [[Rasterize SVG to PNG offline with Node sharp (and Excalidraw via hand-SVG)]]
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+
+%% ai-graph-end %%

@@ -1,5 +1,9 @@
 ---
-title: "Resources"
+ai_hash: 7dabf1702a1f3d2b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+title: Resources
 type: moc
 ---
 
@@ -63,3 +67,14 @@ Reference for the Kepler/Klara work: luz-docs, luz_store, Luz, Klara, klara-envs
 ## Work-Side
 
 Reference for side projects: Accesstrade, Affiliate (+ Terms), Monetag, AppsFlyer, LEO-CDP, fb-info-project, Polaris, Vinnstack, Zalo Bot API.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[index]]
+- [[2 Areas]]
+- [[1 Projects]]
+- [[Axon Ivy project anatomy logic split across processes, data classes, HTML dialogs, and Java]]
+- [[My knowledge ecosystem Claude hooksskills - Obsidian vault - Quartz wiki + vault-graph (Vertex Graph RAG)]]
+
+%% ai-graph-end %%

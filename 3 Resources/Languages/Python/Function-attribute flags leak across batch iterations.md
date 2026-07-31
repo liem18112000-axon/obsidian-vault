@@ -1,10 +1,18 @@
 ---
-title: "Function-attribute flags leak across batch iterations"
+ai_hash: 2289bca80b08ee3c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: code-review session 2026-06-10, fb-info-project
 status: seedling
-source: "code-review session 2026-06-10, fb-info-project"
-tags: [python, state, batch, gotcha]
+tags:
+- python
+- state
+- batch
+- gotcha
+title: Function-attribute flags leak across batch iterations
+type: lesson
 ---
 
 # Function-attribute flags leak across batch iterations
@@ -18,3 +26,10 @@ Found in a scraper where `close_login_popup.seen` from link 1 made link 2's unre
 ## Related
 
 - [[JSON null survives str() as 'None' and corrupts lookup-table normalization]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

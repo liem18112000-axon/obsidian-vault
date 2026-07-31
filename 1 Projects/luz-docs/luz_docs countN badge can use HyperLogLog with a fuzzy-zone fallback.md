@@ -1,10 +1,43 @@
 ---
-title: "luz_docs count>N badge can use HyperLogLog with a fuzzy-zone fallback"
+ai_hash: 387e3a96fbe6fe40
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: observation
+entities:
+- luz_docs
+- Kepler
+- count>N UI badge
+- HyperLogLog
+- fuzzy-zone fallback
+- 500ms target
+- 128k+ docs
+- cosmetic threshold badge
+- precomputed dimensions
+- folder id
+- tag
+- security-class code
+- _isPublic
+- materialize pipeline
+- arbitrary/ad hoc/free-text filter
+- index
+- fuzzy zone
+- exact capped count
+- security-facing visible-document count
+- HyperLogLog error
+- docs/bitmap-count-investigation.md
+- docs/perf-LUZ-154613-count-scaling-findings-and-solution.md
+- HyperLogLog error in the small-range (linear-counting) regime
+- luz_docs documentscount
+source: luz_docs count-estimate research, 2026-07-09, branch kepler/sprint-159/LUZ-154613-shard-adapt-migraiton
 status: seedling
-source: "luz_docs count-estimate research, 2026-07-09, branch kepler/sprint-159/LUZ-154613-shard-adapt-migraiton"
-tags: [luz-docs, hyperloglog, kepler, count-optimization, design-decision]
+tags:
+- luz-docs
+- hyperloglog
+- kepler
+- count-optimization
+- design-decision
+title: luz_docs count>N badge can use HyperLogLog with a fuzzy-zone fallback
+type: observation
 ---
 
 # luz_docs count>N badge can use HyperLogLog with a fuzzy-zone fallback
@@ -23,3 +56,43 @@ This is a narrowing of an existing, already-decided rule in the luz_docs codebas
 
 - [[HyperLogLog error in the small-range (linear-counting) regime]]
 - [[1 Projects/luz-docs/luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+- [[HyperLogLog error in the small-range (linear-counting) regime]]
+- [[Visible-document count as cardinality of a bitmap union]]
+- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
+- [[luz_docs estimated-count POC drops CAS and backfill gate]]
+
+**Relations:**
+- luz_docs — *is also known as* — Kepler
+- count>N UI badge — *is for* — luz_docs
+- count>N UI badge — *can use* — HyperLogLog
+- count>N UI badge — *can use* — fuzzy-zone fallback
+- HyperLogLog — *aims for* — 500ms target
+- HyperLogLog — *scales to* — 128k+ docs
+- count>N UI badge — *is a type of* — cosmetic threshold badge
+- HyperLogLog — *requires* — precomputed dimensions
+- precomputed dimensions — *include* — folder id
+- precomputed dimensions — *include* — tag
+- precomputed dimensions — *include* — security-class code
+- precomputed dimensions — *include* — _isPublic
+- _isPublic — *is updated in* — materialize pipeline
+- HyperLogLog — *cannot handle* — arbitrary/ad hoc/free-text filter
+- arbitrary/ad hoc/free-text filter — *requires* — index
+- fuzzy zone — *is used for* — estimate-vs-N comparison
+- fuzzy zone — *can trigger* — exact capped count
+- HyperLogLog — *has* — HyperLogLog error
+- HyperLogLog error — *is* — ~1-2% error
+- ~1-2% error — *is* — access-leak-shaped
+- HyperLogLog — *is rejected for* — security-facing visible-document count
+- HyperLogLog — *is acceptable for* — cosmetic threshold badge
+- HyperLogLog error — *is detailed in* — HyperLogLog error in the small-range (linear-counting) regime
+- luz_docs — *has related document* — docs/bitmap-count-investigation.md
+- luz_docs — *has related document* — docs/perf-LUZ-154613-count-scaling-findings-and-solution.md
+- luz_docs documentscount — *is related to* — luz_docs
+- luz_docs documentscount — *is* — scan-bound
+
+%% ai-graph-end %%

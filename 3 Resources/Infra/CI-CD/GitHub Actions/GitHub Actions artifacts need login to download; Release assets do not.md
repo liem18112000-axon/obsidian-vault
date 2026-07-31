@@ -1,10 +1,18 @@
 ---
-title: "GitHub Actions artifacts need login to download; Release assets do not"
+ai_hash: ad046f82325d400a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: session 2026-06-17
 status: seedling
-source: "session 2026-06-17"
-tags: [github, actions, artifacts, release]
+tags:
+- github
+- actions
+- artifacts
+- release
+title: GitHub Actions artifacts need login to download; Release assets do not
+type: lesson
 ---
 
 # GitHub Actions artifacts need login to download; Release assets do not
@@ -19,3 +27,14 @@ Two ways to publish a build from GitHub CI, with different access rules:
 ## Related
 
 - [[GitHub Release assets are capped at 2 GiB per file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Actions artifact quota is org-wide; Release assets bypass it]]
+- [[Publish every CI build via a rolling latest pre-release on GitHub]]
+- [[GitHub Release assets are capped at 2 GiB per file]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+
+%% ai-graph-end %%

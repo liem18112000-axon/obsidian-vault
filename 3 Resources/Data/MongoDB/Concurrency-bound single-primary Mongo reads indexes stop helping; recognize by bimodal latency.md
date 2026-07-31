@@ -1,10 +1,22 @@
 ---
-title: "Concurrency-bound single-primary Mongo reads: indexes stop helping; recognize by bimodal latency"
+ai_hash: ad88afe3b10ebcf4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: concept
+entities: []
+source: session 2026-06-26 eArchive concurrency investigation
 status: seedling
-source: "session 2026-06-26 eArchive concurrency investigation"
-tags: [mongodb, concurrency, performance, wiredtiger, index, diagnosis, earchive]
+tags:
+- mongodb
+- concurrency
+- performance
+- wiredtiger
+- index
+- diagnosis
+- earchive
+title: 'Concurrency-bound single-primary Mongo reads: indexes stop helping; recognize
+  by bimodal latency'
+type: concept
 ---
 
 # Concurrency-bound single-primary Mongo reads: indexes stop helping; recognize by bimodal latency
@@ -27,3 +39,14 @@ When a workload is **concurrency-bound on a single Mongo primary**, adding index
 
 - [[3 Resources/Work-Kepler/eArchive/eArchive load wall is the materialize security aggregate, not index coverage]]
 - [[Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[O(N) scan cliffs when working set exceeds DB cache]]
+- [[Don't benchmark a scan-bound query right after a mass delete (WiredTiger cache blowout)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Let developers veto stated assumptions instead of designing details"
+ai_hash: d9b080e9e0dff506
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: model
+entities: []
+source: session 2026-07-21, LUZ-156281 developer feedback
 status: seedling
-source: "session 2026-07-21, LUZ-156281 developer feedback"
-tags: [ai-workflow, review, prompt-design, vinnstack]
+tags:
+- ai-workflow
+- review
+- prompt-design
+- vinnstack
+title: Let developers veto stated assumptions instead of designing details
+type: model
 ---
 
 # Let developers veto stated assumptions instead of designing details
@@ -16,3 +24,14 @@ Introduced in vinnstack `interrogate-technical` v2 after developers reported det
 ## Related
 
 - [[Technical interrogation questions must pass the 2-minute tech-lead test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Technical interrogation questions must pass the 2-minute tech-lead test]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[Keep the release gate deterministic; put AI judgment in upstream signals not the gate]]
+- [[AI as an accelerator with a human review gate]]
+- [[interrogate-qa skill built standalone due to track CHECK constraint]]
+
+%% ai-graph-end %%

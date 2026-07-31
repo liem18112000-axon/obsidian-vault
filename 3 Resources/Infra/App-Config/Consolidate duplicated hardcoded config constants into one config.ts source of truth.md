@@ -1,11 +1,20 @@
 ---
-title: "Consolidate duplicated hardcoded config constants into one config.ts source of truth"
+ai_hash: 6f76aca274a5a939
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-updated: 2026-07-31
-type: lesson
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [nextjs, config, refactoring, env-vars]
+tags:
+- nextjs
+- config
+- refactoring
+- env-vars
+title: Consolidate duplicated hardcoded config constants into one config.ts source
+  of truth
+type: lesson
+updated: 2026-07-31
 ---
 
 # Consolidate duplicated hardcoded config constants into one config.ts source of truth
@@ -25,3 +34,12 @@ Shape of the fix:
 ## Related
 
 - [[Prefill a settings field with the resolved effective value, not blank-with-placeholder]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Config read into a module-level const applies only on next process launch]]
+- [[A hardcoded allowlist becomes a security boundary, not just data, once it gates credentialed access]]
+- [[Mirror form values by the SOURCE's real field keys, not assumed canonical names]]
+
+%% ai-graph-end %%

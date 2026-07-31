@@ -1,10 +1,19 @@
 ---
-title: "jwt-service token path synchronously calls luztenant /security-classes"
+ai_hash: f569cfca99d2b623
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: concept
+entities: []
+source: PROD jwt-service investigation 2026-06-30
 status: seedling
-source: "PROD jwt-service investigation 2026-06-30"
-tags: [luz, jwt-service, luztenant, security-classes, tokens]
+tags:
+- luz
+- jwt-service
+- luztenant
+- security-classes
+- tokens
+title: jwt-service token path synchronously calls luztenant /security-classes
+type: concept
 ---
 
 # jwt-service token path synchronously calls luztenant /security-classes
@@ -23,3 +32,14 @@ Related: [[jwt-service token endpoints and replicas (Luz prod)]], [[Downstream t
 
 - [[jwt-service token endpoints and replicas (Luz prod)]]
 - [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz caller read-timeout settings to jwt-service]]
+- [[jwt-service token endpoints and replicas (Luz prod)]]
+- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+
+%% ai-graph-end %%

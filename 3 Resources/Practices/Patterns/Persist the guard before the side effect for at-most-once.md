@@ -1,7 +1,15 @@
 ---
-title: Persist the guard before the side effect for at-most-once
-tags: [reliability, crash-safety, idempotency, design-decision]
+ai_hash: 3ee45504d9a9f2cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
+entities: []
+tags:
+- reliability
+- crash-safety
+- idempotency
+- design-decision
+title: Persist the guard before the side effect for at-most-once
 ---
 
 # Persist the guard before the side effect for at-most-once
@@ -16,3 +24,14 @@ Pick by which failure is worse. For a **license/quota charge**, double-billing a
 Real example: `fb-info-project` `service.batch` run-commit guard — reordered to `cp.mark_run_committed()` *then* `grant.commit(runs=1)` so a crash leaves the run uncharged rather than charged-but-unmarked (PR #3 review, commit 7363119).
 
 True exactly-once needs the guard + side effect in one atomic transaction; when they live in separate files/stores you can't get it, so you consciously choose at-most-once vs at-least-once.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A resume must not re-charge one-time accounting]]
+- [[Acquire a client-side rate limiter once per call, outside the retry loop]]
+- [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Cache only successful results so failures retry on resume]]
+
+%% ai-graph-end %%

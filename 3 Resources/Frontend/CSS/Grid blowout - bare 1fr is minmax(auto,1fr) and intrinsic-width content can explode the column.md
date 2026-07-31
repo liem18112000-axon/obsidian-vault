@@ -1,10 +1,20 @@
 ---
-title: "Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column"
+ai_hash: 324b0df5e3caba40
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [css, grid, layout, gotcha, vinnstack]
+tags:
+- css
+- grid
+- layout
+- gotcha
+- vinnstack
+title: Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can
+  explode the column
+type: lesson
 ---
 
 # Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column
@@ -18,3 +28,14 @@ Diagnostic signature: an ancestor with `scrollWidth >> clientWidth` whose own ov
 ## Related
 
 - [[Toggle a layout mode with one Tailwind descendant override instead of threading state]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Debug UI overflow by headless reproduction with DOM overflow diagnostics, not blind CSS guesses]]
+- [[Inline style width beats Tailwind breakpoint width classes]]
+- [[Gridflex items default to min-height auto, blocking inner overflow scroll; add min-h-0]]
+- [[Stack a rail-and-content row responsively with flex-col to lgflex-row]]
+- [[Toggle a layout mode with one Tailwind descendant override instead of threading state]]
+
+%% ai-graph-end %%

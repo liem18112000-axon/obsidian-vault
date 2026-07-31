@@ -1,10 +1,18 @@
 ---
-title: "luz-jsonstore find returns 200 empty string, not [], on zero matches"
+ai_hash: 475cebf09aa1d626
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: luz_jsonstore JsonStoreMongoDbResource.java, session 2026-06-11
 status: evergreen
-source: "luz_jsonstore JsonStoreMongoDbResource.java, session 2026-06-11"
-tags: [luz-jsonstore, luz-docs, api-contract, gotcha]
+tags:
+- luz-jsonstore
+- luz-docs
+- api-contract
+- gotcha
+title: luz-jsonstore find returns 200 empty string, not [], on zero matches
+type: lesson
 ---
 
 # luz-jsonstore find returns 200 empty string, not [], on zero matches
@@ -19,3 +27,14 @@ Bitten by `MaterializeMigrationExecutor.getFolders`: documents with **orphaned f
 
 - [[JsonParsingException EOF offset -1 means an empty response body was parsed]]
 - [[luz-jsonstore intermittently returns 200 with empty body on folder finds]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-jsonstore intermittently returns 200 with empty body on folder finds]]
+- [[JsonParsingException EOF offset -1 means an empty response body was parsed]]
+- [[luz-docs getDocumentById returns empty object not null for missing docs]]
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+
+%% ai-graph-end %%

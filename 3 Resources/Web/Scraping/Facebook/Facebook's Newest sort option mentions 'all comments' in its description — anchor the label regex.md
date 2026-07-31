@@ -1,10 +1,19 @@
 ---
-title: "Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex"
+ai_hash: 30b9c37b2bd1f713
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: fb-info-project live debug 2026-06-11
 status: evergreen
-source: "fb-info-project live debug 2026-06-11"
-tags: [facebook, playwright, regex, gotcha]
+tags:
+- facebook
+- playwright
+- regex
+- gotcha
+title: Facebook's Newest sort option mentions 'all comments' in its description —
+  anchor the label regex
+type: lesson
 ---
 
 # Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex
@@ -17,3 +26,14 @@ Fix: anchor the pattern to the start of the element text — `/^\s*(All comments
 
 - [[Verify Facebook comment sort switch by re-reading the sort button label]]
 - [[3 Resources/Practices/Testing/Build test fakes from verbatim production data, decoys included]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify Facebook comment sort switch by re-reading the sort button label]]
+- [[Build test fakes from verbatim production data, decoys included]]
+- [[Facebook post permalinks render the post twice — dialog plus a hidden page copy]]
+- [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
+- [[LLM-picked UI actions can be verified mechanically but not semantically]]
+
+%% ai-graph-end %%

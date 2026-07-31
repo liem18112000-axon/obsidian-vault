@@ -1,8 +1,18 @@
 ---
-type: term
+ai_hash: 3a52c0867d672147
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- CPQL
+- Cost per Qualified Lead
+- Pay per Qualified Lead
 domain: affiliate-marketing
-aliases: [CPQL, Cost per Qualified Lead, Pay per Qualified Lead]
-tags: [affiliate, pricing-model, metric]
+entities: []
+tags:
+- affiliate
+- pricing-model
+- metric
+type: term
 ---
 
 # Cost per Quality Lead
@@ -94,3 +104,14 @@ If your traffic is broad and you can't pre-qualify, plain [[Cost per Lead]] (or 
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Lead]]
+- [[Cost per Action]]
+- [[Term]]
+- [[Cost per Sale]]
+- [[Cost per Registration]]
+
+%% ai-graph-end %%

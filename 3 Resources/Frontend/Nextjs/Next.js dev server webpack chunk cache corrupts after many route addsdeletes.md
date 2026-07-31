@@ -1,10 +1,18 @@
 ---
-title: "Next.js dev server webpack chunk cache corrupts after many route adds/deletes"
+ai_hash: c3950a742cad191c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-07
 status: seedling
-source: "Vinnstack session 2026-07-07"
-tags: [nextjs, webpack, dev-server, gotcha]
+tags:
+- nextjs
+- webpack
+- dev-server
+- gotcha
+title: Next.js dev server webpack chunk cache corrupts after many route adds/deletes
+type: lesson
 ---
 
 # Next.js dev server webpack chunk cache corrupts after many route adds/deletes
@@ -16,3 +24,14 @@ Fix: stop the dev server process entirely (a plain hot-reload will not self-heal
 This came up in the Vinnstack project after one editing session deleted ~6 API routes (`/api/vertex/models`, `/api/nextauth/[...nextauth]`, `/api/auth/google-status`, `/api/account/credentials`, `/api/electron-auth/*`) and added a couple of new ones (`/api/account/activate`) while `next dev` (via `npm run electron:dev`, which wraps it with `concurrently`) was left running throughout. The crash surfaced on an unrelated route (`/api/account/activate`) when the user clicked a button, not on the routes that were actually touched — which is the tell that it is a global webpack-runtime cache issue rather than a bug in that specific route.
 
 General rule of thumb: after a large batch of route/file structural changes (adds, deletes, renames — not just edits), restart the dev server rather than trusting hot-reload to keep up.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+- [[Next.js .nextcache is a build-time-only cache, never bundle it]]
+- [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[NextAuth cannot share apiauth with an existing dynamic route - single segments get shadowed]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "dev-staging tenants live on a separate mongo cluster from dev"
+ai_hash: 9b49647feda0ef19
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: session 2026-06-17
 status: seedling
-source: "session 2026-06-17"
-tags: [luz-docs, mongodb, dev-staging, gotcha]
+tags:
+- luz-docs
+- mongodb
+- dev-staging
+- gotcha
+title: dev-staging tenants live on a separate mongo cluster from dev
+type: lesson
 ---
 
 # dev-staging tenants live on a separate mongo cluster from dev
@@ -23,3 +31,14 @@ Related: [[dev-staging luz-docs IT failures cluster on the materialize read-path
 ## Related
 
 - [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+- [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+- [[earchive-seed-stale-27017-portforward-gotcha]]
+- [[Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char]]
+
+%% ai-graph-end %%

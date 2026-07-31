@@ -1,10 +1,21 @@
 ---
-title: "concept-to-video skill turns a concept into deck, voiceover and narrated avatar video"
+ai_hash: b98e58f22e193876
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: reference
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [skill, claude-code, video, slides, tts, reference]
+tags:
+- skill
+- claude-code
+- video
+- slides
+- tts
+- reference
+title: concept-to-video skill turns a concept into deck, voiceover and narrated avatar
+  video
+type: reference
 ---
 
 # concept-to-video skill turns a concept into deck, voiceover and narrated avatar video
@@ -24,3 +35,14 @@ Per-deck flow: run `setup.sh` once; create `docs/<topic>-present/` with `build,d
 - [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
 - [[3 Resources/Cloud/GCP/Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]
 - [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
+- [[Assemble a narrated slide video pptx to png + per-slide Google TTS + ffmpeg -shortest segments + concat]]
+- [[Narration-synced highlight region-based dimemphasize excalidraw variants + timed xfade]]
+- [[concept-to-video avatar overlay sits bottom-right — keep callouts clear]]
+- [[Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)]]
+
+%% ai-graph-end %%

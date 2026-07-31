@@ -1,10 +1,19 @@
 ---
-title: "Distinguish absent control from missed click when expanding lazy lists"
+ai_hash: 7ff7c9d492837c31
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: fb-info-project --thorough mode, session 2026-06-30
 status: seedling
-source: "fb-info-project --thorough mode, session 2026-06-30"
-tags: [scraping, playwright, facebook, gotcha, completeness]
+tags:
+- scraping
+- playwright
+- facebook
+- gotcha
+- completeness
+title: Distinguish absent control from missed click when expanding lazy lists
+type: lesson
 ---
 
 # Distinguish absent control from missed click when expanding lazy lists
@@ -30,3 +39,14 @@ In fb-info-project these are gated behind a `--thorough` flag (cli → batch →
 ## Related
 
 - [[fb-info-project]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Playwright click() auto-waits the full timeout on a missing locator; probe with count() first]]
+- [[Facebook reply-expander button label variants]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+- [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
+- [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+
+%% ai-graph-end %%

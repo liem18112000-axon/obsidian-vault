@@ -1,10 +1,18 @@
 ---
-title: "How to add a new reference-doc tab to Vinnstack's Introduction overlay"
+ai_hash: edd5d8bd3376be88
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: howto
+entities: []
+source: session 2026-07-12 — adding BDD Pipeline as third IntroView tab
 status: seedling
-source: "session 2026-07-12 — adding BDD Pipeline as third IntroView tab"
-tags: [vinnstack, nextjs, ui, howto]
+tags:
+- vinnstack
+- nextjs
+- ui
+- howto
+title: How to add a new reference-doc tab to Vinnstack's Introduction overlay
+type: howto
 ---
 
 # How to add a new reference-doc tab to Vinnstack's Introduction overlay
@@ -20,3 +28,11 @@ The `?theme=` query param + a MutationObserver on `<html>`'s `.dark` class + `po
 
 ## Related
 [[Vinnstack ai-framework.html is aspirational, not the real code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
+- [[Vinnstack ai-framework.html is aspirational, not the real code]]
+
+%% ai-graph-end %%

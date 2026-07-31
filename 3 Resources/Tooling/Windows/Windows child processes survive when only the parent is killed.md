@@ -1,10 +1,20 @@
 ---
-title: "Windows child processes survive when only the parent is killed"
+ai_hash: 4d92fb56304f7dbf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: vinnstack desktop-packaging 2026-07-07; perf tenant seeding 2026-07-23
 status: seedling
-source: "vinnstack desktop-packaging 2026-07-07; perf tenant seeding 2026-07-23"
-tags: [windows, child-process, process-management, bash, git-bash, gotcha]
+tags:
+- windows
+- child-process
+- process-management
+- bash
+- git-bash
+- gotcha
+title: Windows child processes survive when only the parent is killed
+type: lesson
 ---
 
 # Windows child processes survive when only the parent is killed
@@ -25,3 +35,14 @@ Two real bites:
 
 - [[ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node]]
 - [[Windows holds file handles briefly after taskkill — rmSync EPERMs, so retry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Node child_process.kill on Windows doesn't kill descendant processes]]
+- [[Windows claude subprocess is a process tree — taskkill T to reap it]]
+- [[Windows holds file handles briefly after taskkill — rmSync EPERMs, so retry]]
+- [[An Electron GUI app can't be smoke-tested from a non-interactive automation session]]
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+
+%% ai-graph-end %%

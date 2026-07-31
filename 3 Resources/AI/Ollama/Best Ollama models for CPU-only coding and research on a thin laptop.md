@@ -1,10 +1,18 @@
 ---
-title: "Best Ollama models for CPU-only coding and research on a thin laptop"
+ai_hash: 666d6584f3ede30f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: howto
+entities: []
+source: session 2026-06-30
 status: seedling
-source: "session 2026-06-30"
-tags: [ollama, local-llm, coding, models]
+tags:
+- ollama
+- local-llm
+- coding
+- models
+title: Best Ollama models for CPU-only coding and research on a thin laptop
+type: howto
 ---
 
 # Best Ollama models for CPU-only coding and research on a thin laptop
@@ -24,3 +32,12 @@ Reality check: local CPU models are good for offline/private bounded tasks (summ
 ## Related
 
 - [[Ollama does not accelerate on Intel Iris Xe iGPU (runs CPU-only)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Ollama does not accelerate on Intel Iris Xe iGPU (runs CPU-only)]]
+- [[Continue plugin shares one ~.continueconfig.yaml across all JetBrains IDEs and VS Code]]
+- [[Disable qwen3 thinking mode via Ollama API thinkfalse, not the no_think prompt token]]
+
+%% ai-graph-end %%

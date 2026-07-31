@@ -1,10 +1,18 @@
 ---
-title: "SVG foreignObject taints a canvas on drawImage"
+ai_hash: 2b7cd27623cc0029
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08
 status: seedling
-source: "vinnstack session 2026-07-08"
-tags: [svg, canvas, browser-security, gotcha]
+tags:
+- svg
+- canvas
+- browser-security
+- gotcha
+title: SVG foreignObject taints a canvas on drawImage
+type: lesson
 ---
 
 # SVG foreignObject taints a canvas on drawImage
@@ -20,3 +28,12 @@ Found while debugging why [[Mermaid defaults to foreignObject HTML labels, break
 ## Related
 
 - [[3 Resources/Visual/Mermaid/Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization]]
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+
+%% ai-graph-end %%

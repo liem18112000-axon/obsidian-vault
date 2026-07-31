@@ -1,10 +1,19 @@
 ---
-title: "met4citizen TalkingHead is a free browser-native 3D avatar library"
+ai_hash: 81c02e1e5b598f1e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: term
+entities: []
+source: deep-research pass, virtual-avatar project, 2026-07-10
 status: evergreen
-source: "deep-research pass, virtual-avatar project, 2026-07-10"
-tags: [avatar, three-js, tts, lip-sync, open-source]
+tags:
+- avatar
+- three-js
+- tts
+- lip-sync
+- open-source
+title: met4citizen TalkingHead is a free browser-native 3D avatar library
+type: term
 ---
 
 # met4citizen TalkingHead is a free browser-native 3D avatar library
@@ -20,3 +29,14 @@ This is the go-to free/self-hosted choice for building a talking-avatar web app 
 ## Related
 
 - [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
+- [[TalkingHead requires offline Blender conversion for VRM avatars]]
+- [[Virtual avatar presenter project design plan]]
+- [[TalkingHead speakAudio never decodes a single ArrayBuffer before playback]]
+- [[madjinvrm-samples repo bundles official VRoid Studio sample avatars with mixed licenses]]
+
+%% ai-graph-end %%

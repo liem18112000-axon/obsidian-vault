@@ -1,10 +1,22 @@
 ---
-title: "MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)"
+ai_hash: f4af2af969489f2d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: LUZ-154613 session 2026-06-16
 status: seedling
-source: "LUZ-154613 session 2026-06-16"
-tags: [mongodb, objectid, expr, index, performance, gotcha, luz-docs]
+tags:
+- mongodb
+- objectid
+- expr
+- index
+- performance
+- gotcha
+- luz-docs
+title: MongoDB $expr + $toObjectId for _id range is correct but does not use the _id
+  index (full scan)
+type: lesson
 ---
 
 # MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)
@@ -19,3 +31,14 @@ Consequence for the divide-and-conquer count: through the gateway you can have c
 
 - [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
 - [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+- [[Partition the materialized count on a uniform _countShard int, not _id]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+
+%% ai-graph-end %%

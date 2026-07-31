@@ -1,5 +1,15 @@
 ---
-tags: [nextjs, api-routes, timeout, claude-code, agents, gotcha]
+ai_hash: d60671a5e2e95a46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- nextjs
+- api-routes
+- timeout
+- claude-code
+- agents
+- gotcha
 ---
 
 # Long agentic API routes need the inner run timeout below the route maxDuration
@@ -16,3 +26,14 @@ When a Next.js API route spawns a long headless `claude` run, there are TWO time
 **Notes:** for a locally-run / self-hosted Next server, `maxDuration` isn't hard-enforced like serverless, but keep the ordering anyway for portability. Browsers put no default timeout on a `fetch`, so a client waiting on a 13-min localhost call won't self-abort — a manual cancel needs an explicit `AbortController`. Log the timeout branch (epic, kind, elapsed) so a variable timeout is diagnosable rather than looking like a hang.
 
 Related: [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+- [[Headless claude exit 0 does not mean the operation succeeded]]
+- [[Unattended AI pipeline - auto-advance to the next human gate inside a night-shift window]]
+- [[A globally-bootstrapped MCP server loads into every headless claude spawn]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+
+%% ai-graph-end %%

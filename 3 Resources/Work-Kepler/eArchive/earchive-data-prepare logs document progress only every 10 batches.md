@@ -1,10 +1,18 @@
 ---
-title: "earchive-data-prepare logs document progress only every 10 batches"
+ai_hash: 6cee549d26bc2592
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: session 2026-07-10
 status: seedling
-source: "session 2026-07-10"
-tags: [earchive, mongodb, skill-gotcha, progress-logging]
+tags:
+- earchive
+- mongodb
+- skill-gotcha
+- progress-logging
+title: earchive-data-prepare logs document progress only every 10 batches
+type: lesson
 ---
 
 # earchive-data-prepare logs document progress only every 10 batches
@@ -18,3 +26,14 @@ This compounds with the known throughput bottleneck documented in [[earchive-pre
 ## Related
 
 - [[earchive-prepare-knobs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recount before every reach-a-target retry — crashed runs insert silently]]
+- [[earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)]]
+- [[Resume a partial earchive seed with APPEND instead of re-truncating]]
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+- [[earchive-data-prepare seeds all-public docs when a tenant has no security classes (CODE_POOL empty)]]
+
+%% ai-graph-end %%

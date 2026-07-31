@@ -1,10 +1,18 @@
 ---
-title: "Measure infinite-scroll load-more by baseline count then poll until stable"
+ai_hash: 1b0335d70f3e859e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: howto
+entities: []
+source: session 2026-07-21
 status: seedling
-source: "session 2026-07-21"
-tags: [playwright, performance, infinite-scroll, earchive]
+tags:
+- playwright
+- performance
+- infinite-scroll
+- earchive
+title: Measure infinite-scroll load-more by baseline count then poll until stable
+type: howto
 ---
 
 # Measure infinite-scroll load-more by baseline count then poll until stable
@@ -18,3 +26,14 @@ Companion to [[Resettable MutationObserver harness measures skeleton-to-number a
 ## Related
 
 - [[Resettable MutationObserver harness measures skeleton-to-number appear time on SSR pages]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure component render timing with Playwright addInitScript]]
+- [[Resettable MutationObserver harness measures skeleton-to-number appear time on SSR pages]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+- [[eArchive page DOM selectors (performance automation)]]
+- [[Timing PrimeFaces dialog opens trusted click + stale-guard the reused dialog node]]
+
+%% ai-graph-end %%

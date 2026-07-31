@@ -1,10 +1,18 @@
 ---
-title: "Excalimate camera pan = translateX keyframes at each scene's center X"
+ai_hash: 5f329a2544fe25ac
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: howto
+entities: []
+source: session 2026-06-16 divide-conquer-count overview
 status: seedling
-source: "session 2026-06-16 divide-conquer-count overview"
-tags: [excalimate, excalidraw, animation, camera]
+tags:
+- excalimate
+- excalidraw
+- animation
+- camera
+title: Excalimate camera pan = translateX keyframes at each scene's center X
+type: howto
 ---
 
 # Excalimate camera pan = translateX keyframes at each scene's center X
@@ -18,3 +26,13 @@ Element reveals are timed to start just after the camera arrives (base opacity 0
 ## Related
 
 - [[Export a static .excalidraw from an Excalimate animated scene via get_scene]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Export a static .excalidraw from an Excalimate animated scene via get_scene]]
+- [[Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)]]
+- [[Excalimate cloud share links are CORS-broken — use Connect to MCP server instead]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+
+%% ai-graph-end %%

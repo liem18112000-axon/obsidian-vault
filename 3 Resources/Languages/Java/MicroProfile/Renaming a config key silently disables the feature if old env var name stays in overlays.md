@@ -1,10 +1,20 @@
 ---
-title: "Renaming a config key silently disables the feature if old env var name stays in overlays"
+ai_hash: d78c5f6d932684ea
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: luz-docs LUZ-154613 session 2026-06-23
 status: seedling
-source: "luz-docs LUZ-154613 session 2026-06-23"
-tags: [config, deployment, kubernetes, luz-docs, gotcha]
+tags:
+- config
+- deployment
+- kubernetes
+- luz-docs
+- gotcha
+title: Renaming a config key silently disables the feature if old env var name stays
+  in overlays
+type: lesson
 ---
 
 # Renaming a config key silently disables the feature if old env var name stays in overlays
@@ -24,3 +34,14 @@ See also [[MicroProfile @ConfigProperty int with blank value crashes at boot; om
 ## Related
 
 - [[MicroProfile @ConfigProperty int with blank value crashes at boot; omit the key to use defaultValue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MicroProfile @ConfigProperty int with blank value crashes at boot; omit the key to use defaultValue]]
+- [[Luz K count-partitions env var]]
+- [[Materialize tenant allowlist removed - cascade unconditional]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+
+%% ai-graph-end %%

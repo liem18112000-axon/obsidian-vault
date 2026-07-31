@@ -1,9 +1,76 @@
 ---
-type: project-plan
-domain: affiliate-marketing
+ai_hash: 4e6340b83196de68
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-tags: [affiliate, strategy, music-tech, ai, tools, project]
+domain: affiliate-marketing
+entities:
+- Free Music × Tech (AI) Tools Site
+- AI-powered tools for musicians
+- SE
+- Musician who codes
+- Affiliate offers
+- Monetisation layer
+- Trust
+- Traffic
+- Free tool
+- Paid tool
+- Recurring income
+- CPS affiliate income
+- AI angle
+- AI music SaaS
+- Flywheel
+- Linkable assets
+- Domain authority
+- Money pages
+- Tool portfolio
+- AI music tool directory
+- Vocal remover / stem splitter
+- Lalal.ai
+- Moises
+- LANDR
+- Suno
+- Plugin Boutique
+- Sweetwater
+- Musora
+- Demucs
+- Essentia
+- LLM API
+- Client-side tool
+- Flagship AI tool
+- Heavy AI compute
+- Site architecture
+- Monetisation map
+- Cookie Duration
+- Revenue Share
+- Earnings per Click
+- Dogfood cross-sell
+- Pillar A income
+- Dev-SaaS affiliates
+- Vercel
+- Cloudflare
+- Netlify
+- Astro
+- Next.js
+- Web Audio API
+- WASM
+- Markdown / MDX
+- Affiliate links
+- Traffic & SEO strategy
+- Tool keywords
+- Editorial backlinks
+- Comparison content
+- Roadmap
+- Metrics to watch
 status: draft
+tags:
+- affiliate
+- strategy
+- music-tech
+- ai
+- tools
+- project
+type: project-plan
 ---
 
 # Project Plan — Free Music × Tech (AI) Tools Site
@@ -224,3 +291,79 @@ Researched June 2026 (verify on official affiliate pages — terms change):
 
 - [[2 Areas/Affiliate/Strategy]] — the parent strategy this plan implements.
 - [[3 Resources/Work-Side/Affiliate/Term|Affiliate terms glossary]] — definitions for every model and metric used here.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Strategy]]
+
+**Relations:**
+- Free Music × Tech (AI) Tools Site — *provides* — AI-powered tools for musicians
+- Free Music × Tech (AI) Tools Site — *built by* — SE
+- SE — *is a* — Musician who codes
+- Affiliate offers — *are the* — Monetisation layer
+- AI-powered tools for musicians — *generate* — Traffic
+- AI-powered tools for musicians — *build* — Trust
+- Free tool — *solves a problem* — instantly
+- Free tool — *earns* — Trust
+- Free tool — *earns* — Editorial backlinks
+- Free tool — *funnels user to* — Paid tool
+- Paid tool — *generates* — Recurring income
+- Paid tool — *generates* — CPS affiliate income
+- AI angle — *rides* — highest-search-growth topic in music
+- AI music SaaS — *have* — generous affiliate programs
+- Tools — *are* — Linkable assets
+- Linkable assets — *attract* — Editorial backlinks
+- Editorial backlinks — *increase* — Domain authority
+- Domain authority — *helps rank* — Money pages
+- Tool portfolio — *includes* — AI music tool directory
+- Tool portfolio — *includes* — Vocal remover / stem splitter
+- AI music tool directory — *funnels to* — Lalal.ai
+- AI music tool directory — *funnels to* — Moises
+- AI music tool directory — *funnels to* — LANDR
+- AI music tool directory — *funnels to* — Suno
+- AI music tool directory — *funnels to* — Plugin Boutique
+- AI music tool directory — *funnels to* — Sweetwater
+- AI music tool directory — *funnels to* — Musora
+- Vocal remover / stem splitter — *uses* — Demucs
+- Vocal remover / stem splitter — *funnels to* — Lalal.ai
+- Vocal remover / stem splitter — *funnels to* — Moises
+- Lalal.ai — *offers* — 30% commission
+- Lalal.ai — *offers* — 180-day cookie
+- Lalal.ai — *is a type of* — CPS affiliate income
+- Vocal remover / stem splitter — *is the* — Flagship AI tool
+- Flagship AI tool — *funnels to* — Lalal.ai
+- AI-powered tools — *use* — LLM API
+- AI-powered tools — *use* — open-source models
+- Client-side tool — *avoids* — Heavy AI compute
+- Site architecture — *includes path* — /tools/
+- Site architecture — *includes path* — /ai-tools/
+- Site architecture — *includes path* — /reviews/
+- Site architecture — *includes path* — /vs/
+- Site architecture — *includes path* — /how-i-built-this/
+- Monetisation map — *details* — Paid offer
+- Monetisation map — *details* — affiliate model
+- Revenue Share — *is a type of* — affiliate model
+- CPS affiliate income — *is a type of* — affiliate model
+- Dogfood cross-sell — *generates* — Pillar A income
+- Dogfood cross-sell — *targets* — Dev-SaaS affiliates
+- Vercel — *is a* — Host
+- Vercel — *is a* — Dev-SaaS affiliates
+- Cloudflare — *is a* — Host
+- Cloudflare — *is a* — Dev-SaaS affiliates
+- Netlify — *is a* — Host
+- Netlify — *is a* — Dev-SaaS affiliates
+- Astro — *is a* — Framework
+- Next.js — *is a* — Framework
+- Web Audio API — *is a* — Tools runtime
+- WASM — *is a* — Tools runtime
+- Markdown / MDX — *is for* — Content
+- Affiliate links — *use* — /go/{slug} redirect
+- Traffic & SEO strategy — *uses* — Tool keywords
+- Traffic & SEO strategy — *uses* — Linkable assets
+- Traffic & SEO strategy — *uses* — Comparison content
+- Roadmap — *outlines* — project plan
+- Metrics to watch — *include* — Earnings per Click
+- Metrics to watch — *include* — conversion
+
+%% ai-graph-end %%

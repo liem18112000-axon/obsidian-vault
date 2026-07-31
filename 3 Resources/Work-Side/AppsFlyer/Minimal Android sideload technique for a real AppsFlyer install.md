@@ -1,10 +1,18 @@
 ---
-title: "Minimal Android sideload technique for a real AppsFlyer install"
+ai_hash: 29ca71ac746db0d2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: howto
+entities: []
+source: appsflyer-data-connector project, 2026-07-13
 status: seedling
-source: "appsflyer-data-connector project, 2026-07-13"
-tags: [appsflyer, android, adb, mobile-tracking]
+tags:
+- appsflyer
+- android
+- adb
+- mobile-tracking
+title: Minimal Android sideload technique for a real AppsFlyer install
+type: howto
 ---
 
 # Minimal Android sideload technique for a real AppsFlyer install
@@ -27,3 +35,13 @@ One caveat: this creates roughly one real install per device lifecycle — unins
 ## Related
 
 - [[AppsFlyer only attributes events to installs recorded under the same app_id]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AppsFlyer only attributes events to installs recorded under the same app_id]]
+- [[How to get real AppsFlyer Pull API data with the synthetic generator]]
+- [[AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API]]
+- [[AppsFlyer Push API is the inverse of the Pull API]]
+
+%% ai-graph-end %%

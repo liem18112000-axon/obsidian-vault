@@ -1,10 +1,19 @@
 ---
-title: "Mounting host gcloud ADC into a container to authenticate Vertex AI"
+ai_hash: 37b7a0db60464b2b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: howto
+entities: []
+source: Accesstrade integration, session 2026-06-13
 status: seedling
-source: "Accesstrade integration, session 2026-06-13"
-tags: [vertex-ai, docker, adc, gcp, authentication]
+tags:
+- vertex-ai
+- docker
+- adc
+- gcp
+- authentication
+title: Mounting host gcloud ADC into a container to authenticate Vertex AI
+type: howto
 ---
 
 # Mounting host gcloud ADC into a container to authenticate Vertex AI
@@ -31,3 +40,14 @@ Context: enabling Vertex in the Accesstrade web container. Related: [[google-gen
 ## Related
 
 - [[google-genai Client must be held in a variable during the request or it is GC-closed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+- [[google-genai Client must be held in a variable during the request or it is GC-closed]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+
+%% ai-graph-end %%

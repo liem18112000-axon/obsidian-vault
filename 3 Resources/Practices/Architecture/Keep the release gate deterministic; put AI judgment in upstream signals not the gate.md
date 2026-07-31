@@ -1,10 +1,20 @@
 ---
-title: "Keep the release gate deterministic; put AI judgment in upstream signals not the gate"
+ai_hash: 52482733438afaf1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: argument
+entities: []
+source: Vinnstack QA Cockpit 2026-07-20
 status: seedling
-source: "Vinnstack QA Cockpit 2026-07-20"
-tags: [qa, release-gate, determinism, architecture, vinnstack]
+tags:
+- qa
+- release-gate
+- determinism
+- architecture
+- vinnstack
+title: Keep the release gate deterministic; put AI judgment in upstream signals not
+  the gate
+type: argument
 ---
 
 # Keep the release gate deterministic; put AI judgment in upstream signals not the gate
@@ -23,3 +33,14 @@ Related: [[Find then adversarial-refute verify pass cuts AI reviewer false posit
 
 - [[Append-only QA signal bus with DISTINCT ON latest-per-dimension decouples quality dashboards from raw tables]]
 - [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[AI as an accelerator with a human review gate]]
+- [[Let developers veto stated assumptions instead of designing details]]
+- [[Append-only QA signal bus with DISTINCT ON latest-per-dimension decouples quality dashboards from raw tables]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+
+%% ai-graph-end %%

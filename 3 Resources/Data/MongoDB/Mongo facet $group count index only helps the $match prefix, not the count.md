@@ -1,10 +1,19 @@
 ---
-title: "Mongo facet $group count: index only helps the $match prefix, not the count"
+ai_hash: b16dadf5e5ec1d3b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26 luz-docs searchByFacets analysis
 status: seedling
-source: "session 2026-06-26 luz-docs searchByFacets analysis"
-tags: [mongodb, luz-docs, aggregation, gotcha, performance]
+tags:
+- mongodb
+- luz-docs
+- aggregation
+- gotcha
+- performance
+title: 'Mongo facet $group count: index only helps the $match prefix, not the count'
+type: lesson
 ---
 
 # Mongo facet $group count: index only helps the $match prefix, not the count
@@ -31,3 +40,14 @@ The pipeline runs with `COLLATION_DEFAULT = {locale:"en", caseFirst:"UPPER"}`. A
 ## Related
 
 - [[Mongo collated query needs a same-collation index or it falls back to COLLSCAN]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[Partition the materialized count on a uniform _countShard int, not _id]]
+- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
+
+%% ai-graph-end %%

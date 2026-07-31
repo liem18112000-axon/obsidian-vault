@@ -1,10 +1,20 @@
 ---
-title: "Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF"
+ai_hash: 44cf9da1a154e354
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: session 2026-07-01 (Vinnstack claude auth logout)
 status: seedling
-source: "session 2026-07-01 (Vinnstack claude auth logout)"
-tags: [nodejs, child_process, cli, stdin, gotcha, vinnstack]
+tags:
+- nodejs
+- child_process
+- cli
+- stdin
+- gotcha
+- vinnstack
+title: Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF
+type: lesson
 ---
 
 # Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF
@@ -16,3 +26,14 @@ Spawning a CLI that prompts for confirmation (e.g. `claude auth logout`) from a 
 Symptom in an app: a Logout/anything button that spins ~30s (the exec timeout) then errors, while the same command runs instantly in a real terminal (where a TTY answers the prompt).
 
 Real case: Vinnstack `lib/authProviders.ts` — `claude auth logout` got stuck because the `run()` helper used execFile. Rewrote it to spawn with stdin ignored; login() already used stdin:'ignore' which is why it didn't hang.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[Pass LLM prompts to spawned CLIs via stdin - Windows argv caps at 32K (ENAMETOOLONG)]]
+- [[Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]
+- [[Node child_process.kill on Windows doesn't kill descendant processes]]
+- [[A silent canned fallback masks real failures — surface the underlying error]]
+
+%% ai-graph-end %%

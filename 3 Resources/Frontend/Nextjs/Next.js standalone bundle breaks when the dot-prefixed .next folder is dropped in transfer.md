@@ -1,10 +1,20 @@
 ---
-title: "Next.js standalone bundle breaks when the dot-prefixed .next folder is dropped in transfer"
+ai_hash: 2177297f5bb552a7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: gotcha
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [nextjs, windows, offline-build, gotcha, deployment]
+tags:
+- nextjs
+- windows
+- offline-build
+- gotcha
+- deployment
+title: Next.js standalone bundle breaks when the dot-prefixed .next folder is dropped
+  in transfer
+type: gotcha
 ---
 
 # Next.js standalone bundle breaks when the dot-prefixed .next folder is dropped in transfer
@@ -21,3 +31,14 @@ A Next.js `output: 'standalone'` bundle run on Windows fails at startup with `Er
 The same dot-folder transfer trap applies to any tool that emits dot-prefixed output dirs on Windows.
 
 Project: HoSoBaiGiang frontend-application, `scripts/offline/`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Next.js standalone Docker image must copy public and .next static next to server.js]]
+- [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+- [[Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+- [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable"
+ai_hash: f8ba83a27af4260f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19 monthly->yearly investigation
 status: seedling
-source: "session 2026-06-19 monthly->yearly investigation"
-tags: [luz_store, hibernate, jpa, gotcha, subscriptions]
+tags:
+- luz_store
+- hibernate
+- jpa
+- gotcha
+- subscriptions
+title: luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable
+type: lesson
 ---
 
 # luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable
@@ -19,3 +28,14 @@ Practical implication for incident analysis: if a subscription row appears with 
 
 - [[A luz_store subscription changes billing period only by new-row or direct DB write]]
 - [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A luz_store subscription changes billing period only by new-row or direct DB write]]
+- [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+- [[Attributing a luz_store subscription's origin from created_by, method and updated_by]]
+- [[luz_store product.price_plans is a joined string that constrains a subscription's allowed plans]]
+- [[transaction_status column stores Java enum names not JSON wire values]]
+
+%% ai-graph-end %%

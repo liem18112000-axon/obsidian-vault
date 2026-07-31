@@ -1,10 +1,22 @@
 ---
-title: "Cloud SQL Auth Proxy needs roles/cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED"
+ai_hash: 67791a52c09c4a84
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-06
-type: gotcha
+entities: []
+source: vinnstack connect-cloud-db.ps1 2026-07-06; vinnstack GKE sign-in failure 2026-07-04
 status: seedling
-source: "vinnstack connect-cloud-db.ps1 2026-07-06; vinnstack GKE sign-in failure 2026-07-04"
-tags: [cloud-sql, iam, gcp, auth-proxy, gke, debugging, vinnstack]
+tags:
+- cloud-sql
+- iam
+- gcp
+- auth-proxy
+- gke
+- debugging
+- vinnstack
+title: Cloud SQL Auth Proxy needs roles/cloudsql.client on the connecting identity
+  or it 403s NOT_AUTHORIZED
+type: gotcha
 ---
 
 # Cloud SQL Auth Proxy needs roles/cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED
@@ -29,3 +41,14 @@ Gotchas: the check itself needs `resourcemanager.projects.getIamPolicy`, so a fa
 
 - [[3 Resources/Cloud/GCP/GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
 - [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
+- [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+- [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
+- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+
+%% ai-graph-end %%

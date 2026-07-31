@@ -1,10 +1,19 @@
 ---
-title: "Scope a highlight.js theme override with a wrapper class instead of !important"
+ai_hash: d4ec254bfec92385
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: technique
+entities: []
+source: 'vinnstack session 2026-07-11: IntelliJ-themed Gherkin block'
 status: seedling
-source: "vinnstack session 2026-07-11: IntelliJ-themed Gherkin block"
-tags: [css, highlight.js, specificity, syntax-highlighting, theming]
+tags:
+- css
+- highlight.js
+- specificity
+- syntax-highlighting
+- theming
+title: Scope a highlight.js theme override with a wrapper class instead of !important
+type: technique
 ---
 
 # Scope a highlight.js theme override with a wrapper class instead of !important
@@ -16,3 +25,12 @@ Why this works: a two-class-deep selector (`.gherkin-idea .hljs-keyword`) has hi
 This lets multiple highlight.js "skins" coexist on the same page, each scoped to a different component, while still sharing one global light/dark CSS-variable pattern (`:root` / `html.dark` blocks) for anything common to all of them.
 
 Applied in vinnstack: `components/ui/GherkinCode.tsx` needed an IntelliJ/Darcula-inspired palette for BDD scenario blocks, distinct from the generic github-light/dark theme `Markdown.tsx` uses elsewhere on the same page — solved by adding a `gherkin-idea` class to its `<pre>` and scoping the new token colors under it in `app/globals.css`, leaving the shared `.hljs-*` rules untouched.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Theme shared overlays with CSS-variable-backed Tailwind classes, not hardcoded colors]]
+- [[Theme toggle that overrides prefers-color-scheme via data-theme on root]]
+- [[Inline SVG ignores theme unless shapes use CSS-variable classes, not hardcoded hex]]
+
+%% ai-graph-end %%

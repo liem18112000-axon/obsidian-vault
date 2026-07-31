@@ -1,10 +1,18 @@
 ---
-title: "Gorse LLM reranker is a rerank-API integration, not chat completions"
+ai_hash: d1b25c5210c81958
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: concept
+entities: []
+source: Deep research 2026-07-22 — gorse.io/posts/llm-ranker + config.go RerankerAPIConfig
+  (v0.5.8+)
 status: budding
-source: "Deep research 2026-07-22 — gorse.io/posts/llm-ranker + config.go RerankerAPIConfig (v0.5.8+)"
-tags: [gorse, llm, reranking]
+tags:
+- gorse
+- llm
+- reranking
+title: Gorse LLM reranker is a rerank-API integration, not chat completions
+type: concept
 ---
 
 # Gorse LLM reranker is a rerank-API integration, not chat completions
@@ -16,3 +24,14 @@ The v0.4-era `[openai]` chat integration is gone from current config; a chat-bas
 ## Related
 
 - [[3 Resources/Data/Gorse/Gorse config exposes model family and cadence, never hyperparameters]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gorse precomputes recommendations offline — per-request scoring is impossible inside it]]
+- [[Gorse v0.4 docs describe a defunct config schema — trust the shipped config.toml template]]
+- [[LEO Personalization Engine uses config-first Gorse plus a Python re-rank layer]]
+- [[Gorse config exposes model family and cadence, never hyperparameters]]
+- [[Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions]]
+
+%% ai-graph-end %%

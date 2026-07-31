@@ -1,10 +1,22 @@
 ---
-title: "Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)"
+ai_hash: 6c3fcd4b328f9416
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: howto
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [excalidraw, video, mp4, imageio, ffmpeg, animation, pil]
+tags:
+- excalidraw
+- video
+- mp4
+- imageio
+- ffmpeg
+- animation
+- pil
+title: Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend
+  + imageio-ffmpeg)
+type: howto
 ---
 
 # Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)
@@ -40,3 +52,14 @@ Result: `Hooks-and-Skills-intro.mp4` — 9 stages, ~21.6s, 1920x1080, 1.45 MB. C
 
 - [[Excalidraw text does not auto-wrap or auto-center]]
 - [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+- [[Narration-synced highlight region-based dimemphasize excalidraw variants + timed xfade]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+- [[Export a static .excalidraw from an Excalimate animated scene via get_scene]]
+- [[Assemble a narrated slide video pptx to png + per-slide Google TTS + ffmpeg -shortest segments + concat]]
+
+%% ai-graph-end %%

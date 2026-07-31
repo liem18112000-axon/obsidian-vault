@@ -1,10 +1,98 @@
 ---
-title: "Materialize folder parentFolderIds change cascade (LUZ-154159)"
+ai_hash: 8141b4b644aaee3c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-03
-type: howto
+entities:
+- LUZ-154159
+- Materialize folder parentFolderIds change cascade
+- FolderService.updateFolderMetadata
+- parentFolderIds
+- inheritedSecurityClassCodes
+- Documents
+- _isPublic
+- _effectiveSecurityClassCodes
+- _folderNames
+- _folderSecurityClassCodes
+- eArchive
+- FolderService
+- PUT
+- PATCH
+- Docs-only cascade
+- Sync inline
+- Mongo aggregation updateMany pipeline
+- $lookup
+- '@Retry'
+- '@Fallback'
+- MicroProfile Fault Tolerance
+- FolderException(500)
+- Snapshot
+- CDI self-injection
+- CDI self-invocation bypasses interceptor proxy
+- MaterializeFacade.shouldCascadeFolderParent
+- MaterializeFacade.onFolderParentChange
+- MaterializeFolderParentChangeService
+- MaterializeFolderParentChangeService.onFolderParentChange
+- MaterializeFolderParentChangeService.cascadeWithRetry
+- MaterializeFolderParentChangeService.onCascadeFailed
+- MaterializeRepository.snapshotMaterializeStateForFolders
+- materializeCascadeSnapshot
+- MaterializeRepository.cascadeFolderParentChangeInDocuments
+- MaterializeCascadeException
+- updateMany
+- MaterializeRepository.restoreMaterializeStateFromSnapshot
+- MaterializeRepository.restoreEachDocumentBySnapshotId
+- MaterializeRepository.deleteSnapshot
+- MaterializeQueryBuilder.buildFolderParentChangeFilter
+- MaterializeQueryBuilder.buildFolderParentChangePipeline
+- MaterializeQueryBuilder.buildSnapshotRow
+- MaterializeQueryBuilder.buildSentinelRestoreFields
+- Mongo filter
+- Mongo pipeline
+- $in
+- $addFields
+- $map
+- $arrayElemAt
+- $filter
+- $eq
+- $ifNull
+- $setUnion
+- $reduce
+- $size
+- $and
+- $or
+- $anyElementTrue
+- $unset
+- MaterializeCompute.compute
+- Snapshot row schema
+- ObjectId
+- affectedFolderIds
+- createdAt
+- docs
+- 200 OK
+- 207 multi-status
+- 4xx/5xx other
+- Transient transport
+- ProcessingException
+- SocketTimeoutException
+- NullPointerException
+- IllegalArgumentException
+- '@Retry abortOn'
+- Snapshot for rollback must live outside retry boundary
+- LUZ-154586
+- GET-document-by-id materialise short-circuit
+- MaterializeFolderRenameService
+source: luz_docs branch kepler/sprint-158/LUZ-154159 HEAD a2f600488
 status: seedling
-source: "luz_docs branch kepler/sprint-158/LUZ-154159 HEAD a2f600488"
-tags: [luz-docs, materialize, cascade, parent-folder-change, LUZ-154159, sprint-158]
+tags:
+- luz-docs
+- materialize
+- cascade
+- parent-folder-change
+- LUZ-154159
+- sprint-158
+title: Materialize folder parentFolderIds change cascade (LUZ-154159)
+type: howto
 ---
 
 # Materialize folder parentFolderIds change cascade (LUZ-154159)
@@ -176,3 +264,83 @@ One row per cascade attempt. Captured BEFORE pipeline runs. Read on fallback. De
 
 - [[CDI self-invocation bypasses interceptor proxy]]
 - [[Snapshot for rollback must live outside retry boundary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
+- [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]
+- [[Folder parent-change cascade is a no-op when the security-code union is unchanged]]
+- [[luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic]]
+
+**Relations:**
+- LUZ-154159 — *describes* — Materialize folder parentFolderIds change cascade
+- parentFolderIds — *change affects* — inheritedSecurityClassCodes
+- Documents — *carry* — _isPublic
+- Documents — *carry* — _effectiveSecurityClassCodes
+- Documents — *carry* — _folderNames
+- Documents — *carry* — _folderSecurityClassCodes
+- FolderService.updateFolderMetadata — *triggers* — Materialize folder parentFolderIds change cascade
+- Materialize folder parentFolderIds change cascade — *is triggered by* — PUT
+- Materialize folder parentFolderIds change cascade — *does not support* — PATCH
+- Docs-only cascade — *requires* — FolderService
+- FolderService — *updates* — inheritedSecurityClassCodes
+- Materialize folder parentFolderIds change cascade — *uses* — Sync inline
+- Mongo aggregation updateMany pipeline — *computes* — _isPublic
+- Mongo aggregation updateMany pipeline — *computes* — _effectiveSecurityClassCodes
+- Mongo aggregation updateMany pipeline — *computes* — _folderNames
+- Mongo aggregation updateMany pipeline — *computes* — _folderSecurityClassCodes
+- @Retry — *is part of* — MicroProfile Fault Tolerance
+- @Fallback — *is part of* — MicroProfile Fault Tolerance
+- @Fallback — *throws* — FolderException(500)
+- Snapshot — *is captured for* — rollback
+- CDI self-injection — *routes* — retried method
+- MaterializeFacade.onFolderParentChange — *delegates to* — MaterializeFolderParentChangeService
+- MaterializeFolderParentChangeService.onFolderParentChange — *captures* — Snapshot
+- MaterializeFolderParentChangeService.onFolderParentChange — *calls* — MaterializeFolderParentChangeService.cascadeWithRetry
+- MaterializeFolderParentChangeService.onFolderParentChange — *deletes* — Snapshot
+- MaterializeFolderParentChangeService.cascadeWithRetry — *uses* — @Retry
+- MaterializeFolderParentChangeService.cascadeWithRetry — *uses* — @Fallback
+- MaterializeFolderParentChangeService.cascadeWithRetry — *delegates to* — MaterializeRepository.cascadeFolderParentChangeInDocuments
+- MaterializeFolderParentChangeService.onCascadeFailed — *restores from* — Snapshot
+- MaterializeFolderParentChangeService.onCascadeFailed — *throws* — FolderException(500)
+- MaterializeRepository.snapshotMaterializeStateForFolders — *inserts into* — materializeCascadeSnapshot
+- MaterializeRepository.cascadeFolderParentChangeInDocuments — *uses* — updateMany
+- MaterializeRepository.cascadeFolderParentChangeInDocuments — *uses* — Mongo aggregation updateMany pipeline
+- MaterializeRepository.cascadeFolderParentChangeInDocuments — *throws* — MaterializeCascadeException
+- MaterializeRepository.restoreMaterializeStateFromSnapshot — *restores state from* — Snapshot
+- MaterializeRepository.restoreMaterializeStateFromSnapshot — *calls* — MaterializeRepository.restoreEachDocumentBySnapshotId
+- MaterializeRepository.deleteSnapshot — *cleans up* — Snapshot
+- MaterializeQueryBuilder.buildFolderParentChangeFilter — *builds* — Mongo filter
+- MaterializeQueryBuilder.buildFolderParentChangePipeline — *builds* — Mongo pipeline
+- Mongo pipeline — *uses* — $lookup
+- Mongo pipeline — *uses* — $addFields
+- Mongo pipeline — *uses* — $map
+- Mongo pipeline — *uses* — $arrayElemAt
+- Mongo pipeline — *uses* — $filter
+- Mongo pipeline — *uses* — $eq
+- Mongo pipeline — *uses* — $ifNull
+- Mongo pipeline — *uses* — $setUnion
+- Mongo pipeline — *uses* — $reduce
+- Mongo pipeline — *uses* — $size
+- Mongo pipeline — *uses* — $and
+- Mongo pipeline — *uses* — $or
+- Mongo pipeline — *uses* — $anyElementTrue
+- Mongo pipeline — *uses* — $unset
+- Mongo pipeline — *mirrors* — MaterializeCompute.compute
+- Snapshot row schema — *describes* — materializeCascadeSnapshot
+- MaterializeCascadeException — *is thrown on* — 207 multi-status
+- MaterializeCascadeException — *is thrown on* — 4xx/5xx other
+- MaterializeCascadeException — *is thrown on* — Transient transport
+- @Retry — *handles* — MaterializeCascadeException
+- @Retry — *handles* — ProcessingException
+- @Retry — *handles* — SocketTimeoutException
+- @Retry abortOn — *skips retry for* — NullPointerException
+- @Retry abortOn — *skips retry for* — IllegalArgumentException
+- LUZ-154586 — *is related to* — GET-document-by-id materialise short-circuit
+- MaterializeFolderRenameService — *is a sibling of* — Materialize folder parentFolderIds change cascade
+- CDI self-invocation bypasses interceptor proxy — *explains* — CDI self-injection
+- Snapshot for rollback must live outside retry boundary — *explains* — Snapshot
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "react-markdown without rehype-raw silently drops HTML blocks and swallows following lines"
+ai_hash: ff22d6842023ef77
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: lesson
+entities: []
+source: session 2026-07-14
 status: seedling
-source: "session 2026-07-14"
-tags: [react-markdown, markdown, rendering, gotcha, commonmark]
+tags:
+- react-markdown
+- markdown
+- rendering
+- gotcha
+- commonmark
+title: react-markdown without rehype-raw silently drops HTML blocks and swallows following
+  lines
+type: lesson
 ---
 
 # react-markdown without rehype-raw silently drops HTML blocks and swallows following lines
@@ -16,3 +26,10 @@ Fix used: escape the HTML-block trigger by replacing "<" with "&lt;" OUTSIDE fen
 Alternative (riskier): enable rehype-raw + rehype-sanitize globally — but that widens the XSS surface for any user/LLM-supplied markdown, so prefer the scoped escape when the content is really prompt text, not authored HTML.
 
 Related: [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[react-markdown renders YAML frontmatter as literal text — strip it before rendering]]
+
+%% ai-graph-end %%

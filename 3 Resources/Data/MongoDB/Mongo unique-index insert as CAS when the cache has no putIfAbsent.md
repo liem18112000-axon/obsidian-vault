@@ -1,10 +1,18 @@
 ---
-title: "Mongo unique-index insert as CAS when the cache has no putIfAbsent"
+ai_hash: c4f71920a091b841
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: howto
+entities: []
+source: session 2026-07-23 gate stampede discussion
 status: seedling
-source: "session 2026-07-23 gate stampede discussion"
-tags: [mongodb, distributed-lock, cas, luz-docs]
+tags:
+- mongodb
+- distributed-lock
+- cas
+- luz-docs
+title: Mongo unique-index insert as CAS when the cache has no putIfAbsent
+type: howto
 ---
 
 # Mongo unique-index insert as CAS when the cache has no putIfAbsent
@@ -19,3 +27,14 @@ Gotchas:
 ## Related
 
 - [[3 Resources/Backend/Concurrency/Lock-based stampede control losers hit the cache before the winner fills it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lock-based stampede control losers hit the cache before the winner fills it]]
+- [[Shared aggregate write targets need CAS, not plain $set]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Semaphore acquire before try leaks permits on static semaphores]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+
+%% ai-graph-end %%

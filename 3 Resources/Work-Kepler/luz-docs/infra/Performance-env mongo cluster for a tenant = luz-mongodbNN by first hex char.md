@@ -1,10 +1,19 @@
 ---
-title: "Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char"
+ai_hash: 3de7e02ef66f30c3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: reference
+entities: []
+source: session 2026-07-14 folderIds-facet investigation
 status: seedling
-source: "session 2026-07-14 folderIds-facet investigation"
-tags: [luz-docs, mongodb, performance-env, kubernetes, earchive]
+tags:
+- luz-docs
+- mongodb
+- performance-env
+- kubernetes
+- earchive
+title: Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char
+type: reference
 ---
 
 # Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char
@@ -18,3 +27,14 @@ Observed on that tenant`\s `documents` collection: ~800k docs, ~12.6GB, avgObjSi
 ## Related
 
 - [[luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz performance env cluster topology]]
+- [[Luz eArchive tenant mongo database collection list]]
+- [[eArchive documents collection has 7 materialise-related indexes, not 4]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Canary tenant eArchive folder list trips Mongo code 292 sort-memory-limit]]
+
+%% ai-graph-end %%

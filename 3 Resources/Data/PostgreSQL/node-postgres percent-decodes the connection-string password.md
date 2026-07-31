@@ -1,10 +1,18 @@
 ---
-title: "node-postgres percent-decodes the connection-string password"
+ai_hash: 8e23d94a10c9cc53
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: Vinnstack GKE deploy 2026-07-03
 status: seedling
-source: "Vinnstack GKE deploy 2026-07-03"
-tags: [postgres, node-postgres, url-encoding, gotcha]
+tags:
+- postgres
+- node-postgres
+- url-encoding
+- gotcha
+title: node-postgres percent-decodes the connection-string password
+type: lesson
 ---
 
 # node-postgres percent-decodes the connection-string password
@@ -18,3 +26,10 @@ This applies equally when storing the URL in a Kubernetes Secret consumed as `DA
 ## Related
 
 - [[GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

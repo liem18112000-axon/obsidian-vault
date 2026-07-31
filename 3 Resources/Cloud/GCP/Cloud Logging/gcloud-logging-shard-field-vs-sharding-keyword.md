@@ -1,7 +1,17 @@
 ---
-title: gcloud log filter — "_shard" matches the count-fanout read path, not the migration
-tags: [luz, count-shard, gcloud, logging, gotcha, filter]
+ai_hash: 76348f710ca3a2fb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
+entities: []
+tags:
+- luz
+- count-shard
+- gcloud
+- logging
+- gotcha
+- filter
+title: gcloud log filter — "_shard" matches the count-fanout read path, not the migration
 type: resource
 ---
 
@@ -27,3 +37,14 @@ Filter both by `resource.labels.container_name="luz-docs"`; split batch vs main 
 `resource.labels.pod_name:"luz-docs-batch"` (or `... AND NOT ...:"luz-docs-batch"`).
 
 Related: [[earchive-seed-stale-27017-portforward-gotcha]]; shard-gate-strict-write-path-gap.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[parallelize-old-perdoc-vs-new-oneshot-in-logs]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+
+%% ai-graph-end %%

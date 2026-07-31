@@ -1,10 +1,18 @@
 ---
-title: "Facebook ships comment aria-labels in English even when the UI is Vietnamese"
+ai_hash: 72cc5e0c8e7ea03d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-22
-type: observation
+entities: []
+source: fb-info-project session 2026-06-22
 status: seedling
-source: "fb-info-project session 2026-06-22"
-tags: [facebook, scraping, i18n, gotcha]
+tags:
+- facebook
+- scraping
+- i18n
+- gotcha
+title: Facebook ships comment aria-labels in English even when the UI is Vietnamese
+type: observation
 ---
 
 # Facebook ships comment aria-labels in English even when the UI is Vietnamese
@@ -18,3 +26,14 @@ Surfaced while fixing the reply-to column in fb-info-project. Parent idea: [[Fac
 ## Related
 
 - [[3 Resources/Web/Scraping/Facebook/Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]
+- [[Unanchored 'From' regex captures the profile name from Facebook's 'See more from' buttons]]
+- [[Facebook reply-expander button label variants]]
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+- [[Facebook reel comments are hidden behind the comment icon]]
+
+%% ai-graph-end %%

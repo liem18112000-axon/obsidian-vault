@@ -1,10 +1,17 @@
 ---
-title: "A single draw.io file holds multiple diagrams as diagram pages in one mxfile"
+ai_hash: 7c2020f1a3b80dd5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: concept
+entities: []
+source: session 2026-07-23 leocdp-personalization-engine
 status: seedling
-source: "session 2026-07-23 leocdp-personalization-engine"
-tags: [drawio, diagrams, xml]
+tags:
+- drawio
+- diagrams
+- xml
+title: A single draw.io file holds multiple diagrams as diagram pages in one mxfile
+type: concept
 ---
 
 # A single draw.io file holds multiple diagrams as diagram pages in one mxfile
@@ -38,3 +45,10 @@ Validate well-formedness on Windows with `[xml]$x = Get-Content -Raw file.xml` (
 ## Related
 
 - [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
+
+%% ai-graph-end %%

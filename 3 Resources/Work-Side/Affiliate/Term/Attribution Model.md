@@ -1,8 +1,19 @@
 ---
-type: term
+ai_hash: 10f448bfc19ee87d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Attribution Model
+- Attribution
+- Last-Click
+- First-Click
+- Multi-Touch Attribution
 domain: affiliate-marketing
-aliases: [Attribution Model, Attribution, Last-Click, First-Click, Multi-Touch Attribution]
-tags: [affiliate, tracking]
+entities: []
+tags:
+- affiliate
+- tracking
+type: term
 ---
 
 # Attribution Model
@@ -76,3 +87,14 @@ Same sale, completely different payout depending on the model. This is why coupo
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cookie Duration]]
+- [[Cost per Action]]
+- [[Term]]
+- [[Cost per Sale]]
+- [[Cost per Lead]]
+
+%% ai-graph-end %%

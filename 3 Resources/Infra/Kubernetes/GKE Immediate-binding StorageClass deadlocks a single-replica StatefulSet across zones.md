@@ -1,10 +1,20 @@
 ---
-title: "GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones"
+ai_hash: c99c11edc30b9718
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: Vinnstack GKE deploy 2026-07-03
 status: seedling
-source: "Vinnstack GKE deploy 2026-07-03"
-tags: [kubernetes, gke, storage, statefulset, gotcha]
+tags:
+- kubernetes
+- gke
+- storage
+- statefulset
+- gotcha
+title: GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across
+  zones
+type: lesson
 ---
 
 # GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones
@@ -20,3 +30,13 @@ Diagnose with: `kubectl get pv <pv> -o jsonpath="{.spec.nodeAffinity}"` (disk zo
 ## Related
 
 - [[kubectl rollout status timeout must cover cold image pull time]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[kubectl rollout status timeout must cover cold image pull time]]
+- [[GKE pod stuck Init with MountVolume secret not found means a required Secret is missing]]
+- [[Cloud Build $COMMIT_SHA is the full 40-char git SHA, not the short one]]
+- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
+
+%% ai-graph-end %%

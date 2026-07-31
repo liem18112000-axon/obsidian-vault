@@ -1,10 +1,20 @@
 ---
-title: "luz-docs ngram search: shipped code indexes the OCR body and prefilters fail-open"
+ai_hash: e4c9dc324e9fb057
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-28
-type: reference
+entities: []
+source: session 2026-06-28 ngram code review
 status: seedling
-source: "session 2026-06-28 ngram code review"
-tags: [search, mongodb, trigram, ngram, luz-docs, implementation]
+tags:
+- search
+- mongodb
+- trigram
+- ngram
+- luz-docs
+- implementation
+title: 'luz-docs ngram search: shipped code indexes the OCR body and prefilters fail-open'
+type: reference
 ---
 
 # luz-docs ngram search: shipped code indexes the OCR body and prefilters fail-open
@@ -20,3 +30,14 @@ Two facts about the **shipped** `ch.klara.luz.docs.ngram` package that diverge f
 Other code facts: `TrigramGenerator.normalize` = lowercase(ROOT) → NFD + strip combining marks → collapse whitespace → trim; write-side and query-side share it (the #1 correctness rule). `NgramMigrationExecutor` backfills BATCH_SIZE=300 under Semaphore(3), COMPLETED only if zero docs fail. Gate's untrigrammed count uses `_searchTrigrams $exists:false` (a COLLSCAN, acceptable because cached and returns 0 once done).
 
 Related: [[3 Resources/Backend/Search/Trigram index makes substring search indexable filter by 3-grams, then verify by regex]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
+- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[OCR body text dominates a full-text trigram index]]
+- [[_searchTrigrams intentionally exposed in luz_docs API responses]]
+
+%% ai-graph-end %%

@@ -1,10 +1,63 @@
 ---
-title: "Building Klara/Luz Ivy projects off-VPN by routing Maven through Google Artifact Registry"
+ai_hash: 2af3e15fb74c1ed0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: howto
+entities:
+- Klara/Luz Axon Ivy projects
+- Maven
+- Google Artifact Registry
+- VPN
+- axonivy-prod Bitbucket
+- internal Maven artifacts
+- repo.axongroupio.ch
+- JFrog Artifactory
+- 10.124.0.59
+- quarkus profile
+- ch profile
+- ~/.m2/settings.xml
+- europe-west6-maven.pkg.dev/klara-repo/...
+- <repositories>
+- project poms
+- com.google.cloud.artifactregistry:artifactregistry-maven-wagon extension
+- .mvn/extensions.xml
+- gcloud ADC
+- public internet
+- Maven Central
+- Ivy ch properties
+- ivyVersion=10.0.15
+- engine dir ~/.m2/repository/.cache/ivy/10.0.15
+- axongroupio repositories
+- axongroupio pluginRepositories
+- gcloud auth application-default print-access-token
+- klara_theme
+- luz_components
+- ch.klara.ivy:luz_ivy_common:2.0.01.0
+- snapshot retention
+- internal SNAPSHOTs
+- klara_prototype master
+- klara_theme:1.00.22.00-SNAPSHOT
+- klara_theme:1.00.48.00-SNAPSHOT
+- corporate VPN
+- Ivy 10.0.15
+- Ivy 12
+- Bitbucket repo
+- app password
+- inline credential helper
+source: session 2026-07-27 (Ivy setup)
 status: seedling
-source: "session 2026-07-27 (Ivy setup)"
-tags: [axon-ivy, maven, gcloud, artifact-registry, vpn, klara, luz, howto]
+tags:
+- axon-ivy
+- maven
+- gcloud
+- artifact-registry
+- vpn
+- klara
+- luz
+- howto
+title: Building Klara/Luz Ivy projects off-VPN by routing Maven through Google Artifact
+  Registry
+type: howto
 ---
 
 # Building Klara/Luz Ivy projects off-VPN by routing Maven through Google Artifact Registry
@@ -27,3 +80,57 @@ The Klara/Luz Axon Ivy projects (`axonivy-prod` Bitbucket) resolve internal Mave
 - [[Klara/Luz Axon Ivy projects on master still target Ivy 10.0.15]]
 - [[not 12]]
 - [[Clone a Bitbucket repo with an app password without leaking it (inline credential helper)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+- [[Klara Cloud Build pushes images to klara-repo Artifact Registry with the SA on the trigger]]
+- [[Vinnstack Cloud Build trigger lives in klara-infra, not klara-nonprod]]
+- [[klara-nonprod is the GCP project for non-prod Artifact Registry IAM]]
+
+**Relations:**
+- Klara/Luz Axon Ivy projects — *are built off-VPN by routing* — Maven
+- Maven — *through* — Google Artifact Registry
+- Klara/Luz Axon Ivy projects — *are stored in* — axonivy-prod Bitbucket
+- Klara/Luz Axon Ivy projects — *resolve* — internal Maven artifacts
+- internal Maven artifacts — *are resolved from* — repo.axongroupio.ch
+- internal Maven artifacts — *are resolved from* — Google Artifact Registry
+- repo.axongroupio.ch — *is a type of* — JFrog Artifactory
+- repo.axongroupio.ch — *has private IP* — 10.124.0.59
+- repo.axongroupio.ch — *is* — VPN-only
+- Google Artifact Registry — *is located at* — europe-west6-maven.pkg.dev/klara-repo/...
+- Google Artifact Registry — *is reachable over* — public internet
+- Google Artifact Registry — *uses* — com.google.cloud.artifactregistry:artifactregistry-maven-wagon extension
+- Google Artifact Registry — *uses* — gcloud ADC
+- Maven — *is configured by* — ~/.m2/settings.xml
+- ~/.m2/settings.xml — *injects* — quarkus profile
+- ~/.m2/settings.xml — *injects* — ch profile
+- com.google.cloud.artifactregistry:artifactregistry-maven-wagon extension — *is declared in* — .mvn/extensions.xml
+- Maven — *uses* — project poms
+- project poms — *declare* — <repositories>
+- Maven — *can be run with settings.xml that drops* — axongroupio repositories
+- Maven — *can be run with settings.xml that drops* — axongroupio pluginRepositories
+- Maven — *keeps* — Maven Central
+- Maven — *keeps* — Ivy ch properties
+- Ivy ch properties — *include* — ivyVersion=10.0.15
+- Ivy ch properties — *include* — engine dir ~/.m2/repository/.cache/ivy/10.0.15
+- gcloud ADC — *can be checked with* — gcloud auth application-default print-access-token
+- klara_theme — *is a* — plain jar
+- luz_components — *has parent* — ch.klara.ivy:luz_ivy_common:2.0.01.0
+- ch.klara.ivy:luz_ivy_common:2.0.01.0 — *resolves from* — Google Artifact Registry
+- Google Artifact Registry — *has* — snapshot retention
+- snapshot retention — *is* — short
+- snapshot retention — *purges* — old pinned internal SNAPSHOTs
+- klara_prototype master — *pins* — klara_theme:1.00.22.00-SNAPSHOT
+- klara_theme:1.00.22.00-SNAPSHOT — *no longer exists in* — Google Artifact Registry
+- klara_theme:1.00.48.00-SNAPSHOT — *is current master theme for* — klara_theme
+- JFrog Artifactory — *retains* — more snapshots
+- Klara/Luz Axon Ivy projects — *target* — Ivy 10.0.15
+- Klara/Luz Axon Ivy projects — *do not target* — Ivy 12
+- Bitbucket repo — *can be cloned with* — app password
+- Bitbucket repo — *can be cloned with* — inline credential helper
+- VPN — *is a type of* — corporate VPN
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Payrexx delivers decline code only via webhook, not sync response"
+ai_hash: 1e4e353eb9b13f07
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: observation
+entities: []
+source: LUZ-157476, email from Payrexx (Ugur) 2026-07
 status: seedling
-source: "LUZ-157476, email from Payrexx (Ugur) 2026-07"
-tags: [payrexx, webhook, decline-code, luz-157476, gotcha]
+tags:
+- payrexx
+- webhook
+- decline-code
+- luz-157476
+- gotcha
+title: Payrexx delivers decline code only via webhook, not sync response
+type: observation
 ---
 
 # Payrexx delivers decline code only via webhook, not sync response
@@ -21,3 +30,14 @@ See [[Payrexx decline code lives at transaction.metadata.decline_code]] and [[De
 
 - [[Payrexx decline code lives at transaction.metadata.decline_code]]
 - [[DeclineCodes resolver misses nested metadata.decline_code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Payrexx decline code lives at transaction.metadata.decline_code]]
+- [[DeclineCodes resolver misses nested metadata.decline_code]]
+- [[Payrexx v1.0 charge API returns only status+message on failure — no ISO 8583 code]]
+- [[Payrexx publishes no catalog of API wrapper error messages]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
+
+%% ai-graph-end %%

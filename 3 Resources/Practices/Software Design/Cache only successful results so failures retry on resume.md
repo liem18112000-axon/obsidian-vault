@@ -1,10 +1,18 @@
 ---
-title: "Cache only successful results so failures retry on resume"
+ai_hash: 67a05dabe1681c91
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: fb-info-project pause/resume, 2026-06-15
 status: seedling
-source: "fb-info-project pause/resume, 2026-06-15"
-tags: [resume, caching, error-handling, resilience]
+tags:
+- resume
+- caching
+- error-handling
+- resilience
+title: Cache only successful results so failures retry on resume
+type: lesson
 ---
 
 # Cache only successful results so failures retry on resume
@@ -22,3 +30,14 @@ Related: [[A persisted dedup cache doubles as a resume log]]
 ## Related
 
 - [[A persisted dedup cache doubles as a resume log]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A persisted dedup cache doubles as a resume log]]
+- [[A resume must not re-charge one-time accounting]]
+- [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
+- [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
+- [[An optimization-only cache should fail soft, never raise on backend errors]]
+
+%% ai-graph-end %%

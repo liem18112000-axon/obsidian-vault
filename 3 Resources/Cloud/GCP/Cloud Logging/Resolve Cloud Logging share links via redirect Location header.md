@@ -1,10 +1,20 @@
 ---
-title: "Resolve Cloud Logging share links via redirect Location header"
+ai_hash: 692c830d5b8f2a72
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: howto
+entities: []
+source: sessions 2026-06-11 and 2026-06-12 (luz-docs behave run from a teammate link)
 status: seedling
-source: "sessions 2026-06-11 and 2026-06-12 (luz-docs behave run from a teammate link)"
-tags: [gcp, cloud-logging, gcloud, kubernetes, webfetch, gke]
+tags:
+- gcp
+- cloud-logging
+- gcloud
+- kubernetes
+- webfetch
+- gke
+title: Resolve Cloud Logging share links via redirect Location header
+type: howto
 ---
 
 # Resolve Cloud Logging share links via redirect Location header
@@ -31,3 +41,13 @@ Quoting the resulting filter from PowerShell 5.1 needs care: see [[PowerShell 5.
 
 - [[Cloud Logging share link endTime can truncate a job's logs mid-run]]
 - [[PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Logging share link endTime can truncate a job's logs mid-run]]
+- [[PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud]]
+- [[gcloud-logging-shard-field-vs-sharding-keyword]]
+- [[GKE log FRESHNESS window gets swamped by noise on high-traffic clusters]]
+
+%% ai-graph-end %%

@@ -1,10 +1,17 @@
 ---
-title: "PyInstaller needs collect_all for packages that ship non-Python payloads"
+ai_hash: 8bda668ae7f443f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: fb-info-project build workflow, session 2026-06-10
 status: seedling
-source: "fb-info-project build workflow, session 2026-06-10"
-tags: [pyinstaller, packaging, gotcha]
+tags:
+- pyinstaller
+- packaging
+- gotcha
+title: PyInstaller needs collect_all for packages that ship non-Python payloads
+type: lesson
 ---
 
 # PyInstaller needs collect_all for packages that ship non-Python payloads
@@ -24,3 +31,14 @@ See [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
 ## Related
 
 - [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+- [[PyInstaller spec paths resolve inconsistently - anchor runtime_hooks on SPECPATH]]
+- [[scrapling[fetchers] extra pins playwright exactly - install deps individually to keep your own pin]]
+- [[Black-box E2E test a PyInstaller one-dir app from a temp CWD]]
+- [[Black-box exe test suite skips silently when no artifact is present]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Fail-closed defense over a parallel array: distinguish present-but-short from absent"
+ai_hash: 2a8ae34c91969801
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: luz_docs N2 fix, session 2026-06-10
 status: seedling
-source: "luz_docs N2 fix, session 2026-06-10"
-tags: [fail-closed, security, luz-docs, materialize, gotcha, denormalization]
+tags:
+- fail-closed
+- security
+- luz-docs
+- materialize
+- gotcha
+- denormalization
+title: 'Fail-closed defense over a parallel array: distinguish present-but-short from
+  absent'
+type: lesson
 ---
 
 # Fail-closed defense over a parallel array: distinguish present-but-short from absent
@@ -33,3 +44,14 @@ Context: luz_docs eArchive materialize, branch kepler/sprint-156/earchive-master
 ## Related
 
 - [[luz-docs eArchive materialize]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Missing folder reference produces fail-closed materialize state]]
+- [[Empty per-folder codes means public, not no-access]]
+- [[Materialize code review report - sprint-156 findings index]]
+- [[luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic]]
+- [[Parallel arrays in materialize sentinel preserve folderId order]]
+
+%% ai-graph-end %%

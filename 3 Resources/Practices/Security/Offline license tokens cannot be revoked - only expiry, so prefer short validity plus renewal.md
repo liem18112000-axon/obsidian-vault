@@ -1,10 +1,19 @@
 ---
-title: "Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal"
+ai_hash: 4a875c2aebe5f189
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: concept
+entities: []
+source: session 2026-07-04 fb-info-project licensing discussion
 status: seedling
-source: "session 2026-07-04 fb-info-project licensing discussion"
-tags: [security, licensing, revocation, design-tradeoff]
+tags:
+- security
+- licensing
+- revocation
+- design-tradeoff
+title: Offline license tokens cannot be revoked - only expiry, so prefer short validity
+  plus renewal
+type: concept
 ---
 
 # Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal
@@ -17,3 +26,14 @@ Consequences:
 - If real revocation is a requirement, the scheme needs an online component (activation server, CRL-style denylist fetched periodically) - which trades away the offline property.
 
 Related: [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]], [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline licensing expiry is strong, usage counters only best-effort]]
+- [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+- [[Offline signed-token licensing for distributed binaries]]
+- [[Key-fingerprint license id identifies the signing key, not the individual token]]
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+
+%% ai-graph-end %%

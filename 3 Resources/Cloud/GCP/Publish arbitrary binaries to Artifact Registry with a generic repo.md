@@ -1,10 +1,18 @@
 ---
-title: "Publish arbitrary binaries to Artifact Registry with a generic repo"
+ai_hash: d7b8ad44c6805170
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: howto
+entities: []
+source: vinnstack cloudbuild.yaml setup, 2026-07-07
 status: seedling
-source: "vinnstack cloudbuild.yaml setup, 2026-07-07"
-tags: [gcp, artifact-registry, cloud-build, generic-repo]
+tags:
+- gcp
+- artifact-registry
+- cloud-build
+- generic-repo
+title: Publish arbitrary binaries to Artifact Registry with a generic repo
+type: howto
 ---
 
 # Publish arbitrary binaries to Artifact Registry with a generic repo
@@ -22,3 +30,14 @@ Cloud Build'\''s built-in `$SHORT_SHA` substitution (available automatically on 
 ## Related
 [[Cross-building Electron Windows exe on Linux needs wine]]
 [[Vinnstack Cloud Build trigger lives in klara-infra, not klara-nonprod]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish a single file to GCS from Cloud Build with gcloud storage cp]]
+- [[Vinnstack publishes its exe to a GCS bucket, not Artifact Registry]]
+- [[Vinnstack release push to main triggers Cloud Build which publishes to GCS latest auto-update channel]]
+- [[Klara Cloud Build pushes images to klara-repo Artifact Registry with the SA on the trigger]]
+- [[Wire electron-updater to a public GCS bucket via the generic provider]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Use JDK_JAVA_OPTIONS for JVM flags in container images"
+ai_hash: fff911668f777f42
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: howto
+entities: []
+source: LEO CDP migration Phase 2, 2026-06-06
 status: seedling
-source: "LEO CDP migration Phase 2, 2026-06-06"
-tags: [java, docker, jvm-flags, technique]
+tags:
+- java
+- docker
+- jvm-flags
+- technique
+title: Use JDK_JAVA_OPTIONS for JVM flags in container images
+type: howto
 ---
 
 # Use JDK_JAVA_OPTIONS for JVM flags in container images
@@ -14,3 +22,14 @@ In container images, put JVM compatibility flags in the `JDK_JAVA_OPTIONS` envir
 ## Related
 
 - [[Netty 4.1 on JDK 24+ needs --sun-misc-unsafe-memory-access=allow]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Netty 4.1 on JDK 24+ needs --sun-misc-unsafe-memory-access=allow]]
+- [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+- [[Vert.x 3.8.5 plus Netty 4.1.44 run on JDK 25 with flags only - LEO CDP empirical result]]
+- [[JDK 25 with CompactObjectHeaders beat JDK 11 by 7pct rps in LEO CDP k6 AB]]
+- [[GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH]]
+
+%% ai-graph-end %%

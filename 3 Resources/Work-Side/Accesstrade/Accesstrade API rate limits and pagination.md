@@ -1,18 +1,22 @@
 ---
-title: Accesstrade API rate limits and pagination
-created: 2026-06-11
-type: term
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - rate-limit
-  - gotcha
+ai_hash: e448b2f6c867e0ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade rate limits
-  - Accesstrade pagination
+- Accesstrade rate limits
+- Accesstrade pagination
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- rate-limit
+- gotcha
+title: Accesstrade API rate limits and pagination
+type: term
 ---
 
 # Accesstrade API rate limits and pagination
@@ -55,3 +59,14 @@ flowchart TD
 - [[Affiliate API engineering best practices]]
 - [[Use case - automated daily conversion digest]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade conversion and transaction reporting]]
+- [[Affiliate API engineering best practices]]
+- [[Accesstrade has two API generations]]
+- [[To catch status flips, re-pull a lookback window wider than the report window]]
+- [[Use case - automated daily conversion digest]]
+
+%% ai-graph-end %%

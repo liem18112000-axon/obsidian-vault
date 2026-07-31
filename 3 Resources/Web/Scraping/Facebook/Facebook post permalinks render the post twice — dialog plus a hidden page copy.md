@@ -1,10 +1,19 @@
 ---
-title: "Facebook post permalinks render the post twice — dialog plus a hidden page copy"
+ai_hash: 30ae78fac09e3b0a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: fb-info-project live debug 2026-06-11
 status: evergreen
-source: "fb-info-project live debug 2026-06-11"
-tags: [facebook, playwright, scraping, gotcha]
+tags:
+- facebook
+- playwright
+- scraping
+- gotcha
+title: Facebook post permalinks render the post twice — dialog plus a hidden page
+  copy
+type: lesson
 ---
 
 # Facebook post permalinks render the post twice — dialog plus a hidden page copy
@@ -20,3 +29,14 @@ Consequences for scrapers:
 
 - [[Verify Facebook comment sort switch by re-reading the sort button label]]
 - [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify Facebook comment sort switch by re-reading the sort button label]]
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+- [[Facebook reel comments are hidden behind the comment icon]]
+- [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
+- [[Facebook sharev links can resolve to reels — classify after the redirect]]
+
+%% ai-graph-end %%

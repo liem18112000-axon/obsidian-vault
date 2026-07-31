@@ -1,10 +1,19 @@
 ---
-title: "Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli"
+ai_hash: 769226ed90907e55
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: howto
+entities: []
+source: leo-cdp-framework flow.png re-export 2026-06-06
 status: seedling
-source: "leo-cdp-framework flow.png re-export 2026-06-06"
-tags: [excalidraw, diagrams, playwright, cli, howto]
+tags:
+- excalidraw
+- diagrams
+- playwright
+- cli
+- howto
+title: Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli
+type: howto
 ---
 
 # Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli
@@ -29,3 +38,14 @@ Note: the rendered PNG is a build artifact of the `.excalidraw` source — editi
 
 ## Related
 - [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+- [[Excalimate export is browser-only; headless export needs Playwright + share URL]]
+- [[Export a static .excalidraw from an Excalimate animated scene via get_scene]]
+- [[Rasterize SVG to PNG offline with Node sharp (and Excalidraw via hand-SVG)]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values"
+ai_hash: be9e40b1dea6b877
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: concept
+entities: []
+source: LUZ-157476 investigation 2026-07-23
 status: seedling
-source: "LUZ-157476 investigation 2026-07-23"
-tags: [luz-store, payrexx, invoice-run, klarapay]
+tags:
+- luz-store
+- payrexx
+- invoice-run
+- klarapay
+title: luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only
+  values
+type: concept
 ---
 
 # luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values
@@ -18,3 +27,14 @@ State derivation in the converter: CONFIRMED/REFUNDED/PARTIALLY_REFUNED → SUCC
 ## Related
 - [[DECLINED status falls through invoice charge-failure handling in luz_store]]
 - [[Payrexx ISO 8583 decline code to meaning reference table]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TransactionStatus.from() swallows unknown Payrexx statuses as null]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[DECLINED status falls through invoice charge-failure handling in luz_store]]
+- [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+- [[transaction_status column stores Java enum names not JSON wire values]]
+
+%% ai-graph-end %%

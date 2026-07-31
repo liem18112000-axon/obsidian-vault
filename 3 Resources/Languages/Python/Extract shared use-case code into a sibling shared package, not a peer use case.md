@@ -1,10 +1,20 @@
 ---
-title: "Extract shared use-case code into a sibling shared package, not a peer use case"
+ai_hash: 6b5792f91b93c7cd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-12
-type: lesson
+entities: []
+source: session 2026-06-12, accesstrade_integration use_cases
 status: seedling
-source: "session 2026-06-12, accesstrade_integration use_cases"
-tags: [python, architecture, refactoring, packaging, design-decision]
+tags:
+- python
+- architecture
+- refactoring
+- packaging
+- design-decision
+title: Extract shared use-case code into a sibling shared package, not a peer use
+  case
+type: lesson
 ---
 
 # Extract shared use-case code into a sibling shared package, not a peer use case
@@ -21,3 +31,13 @@ Relates to [[Wrap a two-generation API as one shared transport plus one client p
 
 - [[Wrap a two-generation API as one shared transport plus one client per generation]]
 - [[Affiliate content-brief generator produces the grounded skeleton, not the prose]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Wrap a two-generation API as one shared transport plus one client per generation]]
+- [[Extracting a shared utils package - classify by whether code knows source semantics]]
+- [[Affiliate content-brief generator produces the grounded skeleton, not the prose]]
+- [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+
+%% ai-graph-end %%

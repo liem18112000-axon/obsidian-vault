@@ -1,10 +1,19 @@
 ---
-title: "PRD-parity checklist - what comment-driven regenerate with versions actually requires"
+ai_hash: 73128d15763f50a8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: howto
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [versioning, comments, regenerate, vinnstack]
+tags:
+- versioning
+- comments
+- regenerate
+- vinnstack
+title: PRD-parity checklist - what comment-driven regenerate with versions actually
+  requires
+type: howto
 ---
 
 # PRD-parity checklist - what comment-driven regenerate with versions actually requires
@@ -25,3 +34,14 @@ Related: [[A feedback loop with only its write side wired looks like a broken fe
 ## Related
 
 - [[A feedback loop with only its write side wired looks like a broken feature]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A feedback loop with only its write side wired looks like a broken feature]]
+- [[Version-stamp quality ratings so stale feedback stops driving regeneration]]
+- [[Version changelogs - generate the explanation at snapshot time, compute the diff on demand]]
+- [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
+- [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+
+%% ai-graph-end %%

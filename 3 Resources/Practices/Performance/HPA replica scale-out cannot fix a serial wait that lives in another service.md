@@ -1,10 +1,20 @@
 ---
-title: "HPA replica scale-out cannot fix a serial wait that lives in another service"
+ai_hash: 7fe802d6550dc1f8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: lesson
+entities: []
+source: session 2026-07-16
 status: seedling
-source: "session 2026-07-16"
-tags: [performance, hpa, autoscaling, bottleneck, luz-docs, serial-wait]
+tags:
+- performance
+- hpa
+- autoscaling
+- bottleneck
+- luz-docs
+- serial-wait
+title: HPA replica scale-out cannot fix a serial wait that lives in another service
+type: lesson
 ---
 
 # HPA replica scale-out cannot fix a serial wait that lives in another service
@@ -22,3 +32,14 @@ Diagnostic tell: if CPU is low and the worker/thread pool is near-idle while lat
 ## Related
 
 - [[luz-docs 800k eArchive performance test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive 800k bottleneck is view-controller not K]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Materialize gate cache never latches, hammers campaign service on every count]]
+
+%% ai-graph-end %%

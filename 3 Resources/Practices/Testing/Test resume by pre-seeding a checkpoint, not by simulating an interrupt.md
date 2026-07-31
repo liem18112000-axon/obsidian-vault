@@ -1,10 +1,19 @@
 ---
-title: "Test resume by pre-seeding a checkpoint, not by simulating an interrupt"
+ai_hash: 201ad991162655d6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: fb-info-project pause/resume, 2026-06-15
 status: seedling
-source: "fb-info-project pause/resume, 2026-06-15"
-tags: [testing, resume, determinism, integration-test, checkpoint]
+tags:
+- testing
+- resume
+- determinism
+- integration-test
+- checkpoint
+title: Test resume by pre-seeding a checkpoint, not by simulating an interrupt
+type: lesson
 ---
 
 # Test resume by pre-seeding a checkpoint, not by simulating an interrupt
@@ -23,3 +32,14 @@ Related: [[A persisted dedup cache doubles as a resume log]], [[3 Resources/Prac
 
 - [[A persisted dedup cache doubles as a resume log]]
 - [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A persisted dedup cache doubles as a resume log]]
+- [[Checkpoint files atomic tmp+rename write plus an input fingerprint]]
+- [[A resume must not re-charge one-time accounting]]
+- [[Crash-safe incremental output as_completed + indexed results + stable filename reused for checkpoint and final]]
+- [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
+
+%% ai-graph-end %%

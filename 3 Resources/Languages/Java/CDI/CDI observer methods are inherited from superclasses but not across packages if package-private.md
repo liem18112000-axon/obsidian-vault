@@ -1,10 +1,20 @@
 ---
-title: "CDI observer methods are inherited from superclasses but not across packages if package-private"
+ai_hash: 2703c4d1d94cc295
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: DocumentChangeObserver base-class refactor, session 2026-06-05
 status: budding
-source: "DocumentChangeObserver base-class refactor, session 2026-06-05"
-tags: [java, cdi, events, gotcha, luz-docs]
+tags:
+- java
+- cdi
+- events
+- gotcha
+- luz-docs
+title: CDI observer methods are inherited from superclasses but not across packages
+  if package-private
+type: lesson
 ---
 
 # CDI observer methods are inherited from superclasses but not across packages if package-private
@@ -16,3 +26,14 @@ Gotcha: Java inheritance rules still apply — a **package-private** observer me
 ## Related
 
 - [[luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+- [[Async CDI observers must receive the session token via the event payload]]
+- [[luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard]]
+
+%% ai-graph-end %%

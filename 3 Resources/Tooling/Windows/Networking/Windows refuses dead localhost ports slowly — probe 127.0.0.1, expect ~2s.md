@@ -1,10 +1,19 @@
 ---
-title: "Windows refuses dead localhost ports slowly — probe 127.0.0.1, expect ~2s"
+ai_hash: d3f0eddfc18979e4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: fb-info-project measurement 2026-06-11
 status: evergreen
-source: "fb-info-project measurement 2026-06-11"
-tags: [windows, networking, latency, gotcha, ollama]
+tags:
+- windows
+- networking
+- latency
+- gotcha
+- ollama
+title: Windows refuses dead localhost ports slowly — probe 127.0.0.1, expect ~2s
+type: lesson
 ---
 
 # Windows refuses dead localhost ports slowly — probe 127.0.0.1, expect ~2s
@@ -18,3 +27,10 @@ Practical rules for probing local services (Ollama, dev servers, sidecars):
 ## Related
 
 - [[3 Resources/Web/Scraping/Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Arquillian managed WildFly needs startupTimeoutInSeconds raised on slow machines]]
+
+%% ai-graph-end %%

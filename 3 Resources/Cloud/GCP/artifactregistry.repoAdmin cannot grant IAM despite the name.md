@@ -1,10 +1,18 @@
 ---
-title: "artifactregistry.repoAdmin cannot grant IAM despite the name"
+ai_hash: 731d7a657a301a27
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: vinnstack cloudbuild.yaml setup, 2026-07-07
 status: seedling
-source: "vinnstack cloudbuild.yaml setup, 2026-07-07"
-tags: [gcp, iam, artifact-registry, gotcha]
+tags:
+- gcp
+- iam
+- artifact-registry
+- gotcha
+title: artifactregistry.repoAdmin cannot grant IAM despite the name
+type: lesson
 ---
 
 # artifactregistry.repoAdmin cannot grant IAM despite the name
@@ -18,3 +26,14 @@ The general lesson: a GCP predefined role named "Admin" for a resource type does
 ## Related
 [[Publish arbitrary binaries to Artifact Registry with a generic repo]]
 [[Vinnstack publishes its exe to a GCS bucket, not Artifact Registry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack publishes its exe to a GCS bucket, not Artifact Registry]]
+- [[klara-nonprod is the GCP project for non-prod Artifact Registry IAM]]
+- [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+- [[gcloud add-iam-policy-binding requires --condition=None when policy has conditional bindings]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+
+%% ai-graph-end %%

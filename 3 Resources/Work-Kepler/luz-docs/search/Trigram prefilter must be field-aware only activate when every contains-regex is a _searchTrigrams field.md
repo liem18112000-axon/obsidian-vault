@@ -1,10 +1,20 @@
 ---
-title: "Trigram prefilter must be field-aware: only activate when every contains-regex is a _searchTrigrams field"
+ai_hash: 7ea8cabd0ba228c7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-27
-type: lesson
+entities: []
+source: session 2026-06-27
 status: seedling
-source: "session 2026-06-27"
-tags: [luz-docs, search, ngram, trigram, correctness]
+tags:
+- luz-docs
+- search
+- ngram
+- trigram
+- correctness
+title: 'Trigram prefilter must be field-aware: only activate when every contains-regex
+  is a _searchTrigrams field'
+type: lesson
 ---
 
 # Trigram prefilter must be field-aware: only activate when every contains-regex is a _searchTrigrams field
@@ -21,3 +31,14 @@ General principle: any approximate index prefilter paired with an exact residual
 
 - [[3 Resources/Work-Kepler/luz-docs/search/ngram trigram prefilter reads the built mongo query, not the raw payload]]
 - [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
+- [[luz-docs search DSL silently drops raw-mongo query keys]]
+- [[luz-docs DSL regexp value must be wrapped .term. (else HTTP 400)]]
+
+%% ai-graph-end %%

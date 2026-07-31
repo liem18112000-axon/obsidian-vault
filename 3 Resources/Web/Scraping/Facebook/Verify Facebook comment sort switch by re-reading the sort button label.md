@@ -1,10 +1,18 @@
 ---
-title: "Verify Facebook comment sort switch by re-reading the sort button label"
+ai_hash: 13c641ae9da0849a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-11
 status: seedling
-source: "fb-info-project session 2026-06-11"
-tags: [facebook, playwright, scraping, gotcha]
+tags:
+- facebook
+- playwright
+- scraping
+- gotcha
+title: Verify Facebook comment sort switch by re-reading the sort button label
+type: lesson
 ---
 
 # Verify Facebook comment sort switch by re-reading the sort button label
@@ -21,3 +29,14 @@ Targeting `role=menuitem` matters: a bare text locator can hit a hidden or unrel
 ## Related
 
 - [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+- [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
+- [[Facebook post permalinks render the post twice — dialog plus a hidden page copy]]
+- [[Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
+- [[Facebook reel comments are hidden behind the comment icon]]
+
+%% ai-graph-end %%

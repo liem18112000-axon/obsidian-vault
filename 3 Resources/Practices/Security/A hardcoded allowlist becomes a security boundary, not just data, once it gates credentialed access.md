@@ -1,10 +1,19 @@
 ---
-title: "A hardcoded allowlist becomes a security boundary, not just data, once it gates credentialed access"
+ai_hash: d26a17ccb6681dce
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-07
 status: seedling
-source: "Vinnstack session 2026-07-07"
-tags: [security, allowlist, database, vinnstack]
+tags:
+- security
+- allowlist
+- database
+- vinnstack
+title: A hardcoded allowlist becomes a security boundary, not just data, once it gates
+  credentialed access
+type: lesson
 ---
 
 # A hardcoded allowlist becomes a security boundary, not just data, once it gates credentialed access
@@ -18,3 +27,14 @@ The general lesson: before moving a hardcoded list into a runtime-editable store
 ## Related
 
 - [[Graphify acquires repo source gitless via Bitbucket tarball download]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Graphify acquires repo source gitless via Bitbucket tarball download]]
+- [[Hard-exclude an AI agent from a resource by shrinking its file grant, not by prompting]]
+- [[Do not hardcode a real DB password as a source-code fallback for a packaged desktop app]]
+- [[Per-account credential store should only hold per-identity secrets]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+
+%% ai-graph-end %%

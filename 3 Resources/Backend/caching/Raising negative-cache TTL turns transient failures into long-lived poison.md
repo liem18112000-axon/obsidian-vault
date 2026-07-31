@@ -1,10 +1,18 @@
 ---
-title: "Raising negative-cache TTL turns transient failures into long-lived poison"
+ai_hash: 191b2174382588ee
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23 MaterializeGate stampede panel
 status: seedling
-source: "session 2026-07-23 MaterializeGate stampede panel"
-tags: [cache, ttl, gotcha, distributed-systems]
+tags:
+- cache
+- ttl
+- gotcha
+- distributed-systems
+title: Raising negative-cache TTL turns transient failures into long-lived poison
+type: lesson
 ---
 
 # Raising negative-cache TTL turns transient failures into long-lived poison
@@ -20,3 +28,14 @@ Rule: **condition the TTL on result provenance**, not just the result value — 
 
 - [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
 - [[Per-pod single-flight kills cache stampede without semantic change]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+- [[A negative cache must be a distinct state from a cache miss, or its TTL is a dead write]]
+- [[DualCache L1 write ignores per-call TTL (uses domain default)]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+
+%% ai-graph-end %%

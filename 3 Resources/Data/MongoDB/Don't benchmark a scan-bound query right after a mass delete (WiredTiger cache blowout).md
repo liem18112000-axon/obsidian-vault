@@ -1,10 +1,20 @@
 ---
-title: "Don't benchmark a scan-bound query right after a mass delete (WiredTiger cache blowout)"
+ai_hash: e307b2d7aec18ae4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19 LUZ-154613
 status: seedling
-source: "session 2026-06-19 LUZ-154613"
-tags: [mongodb, performance, benchmarking, gotcha, wiredtiger]
+tags:
+- mongodb
+- performance
+- benchmarking
+- gotcha
+- wiredtiger
+title: Don't benchmark a scan-bound query right after a mass delete (WiredTiger cache
+  blowout)
+type: lesson
 ---
 
 # Don't benchmark a scan-bound query right after a mass delete (WiredTiger cache blowout)
@@ -16,3 +26,14 @@ After a large `deleteMany` (here: trimming a Mongo collection from 960k down to 
 **How to apply:** never benchmark a scan-bound query immediately after a big delete. Either (a) re-warm first — run the query until one returns near the expected time, then start timing, (b) re-seed sequentially instead of deleting down to the target size, or (c) measure against a cache/index path that skips the scan. Also: CPU bursts in `kubectl top` (e.g. 3 cores) prove the scan IS running even when the request times out — distinguish 'genuinely scanning but slow' from 'cold-pod fast-500'.
 
 Related: [[earchive cascade mode]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load]]
+- [[O(N) scan cliffs when working set exceeds DB cache]]
+- [[Concurrency-bound single-primary Mongo reads indexes stop helping; recognize by bimodal latency]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[deleteMany over kubectl port-forward runs about 5k docs per second]]
+
+%% ai-graph-end %%

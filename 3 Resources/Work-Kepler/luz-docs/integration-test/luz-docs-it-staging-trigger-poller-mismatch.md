@@ -1,7 +1,17 @@
 ---
-title: luz-docs IT dev-staging trigger — poller namespace/job mismatch
-tags: [luz, luz-docs-integration-test, kepler, cloud-build, gke, gotcha]
+ai_hash: 480ec8d7a8425415
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
+entities: []
+tags:
+- luz
+- luz-docs-integration-test
+- kepler
+- cloud-build
+- gke
+- gotcha
+title: luz-docs IT dev-staging trigger — poller namespace/job mismatch
 ---
 
 # luz-docs IT `dev-staging` trigger vs. the run_it.sh poller
@@ -51,3 +61,14 @@ Find the exact namespace/job from the build:
   don't mistake `dev-luz-docs-it-*` for your `dev-staging-luz-docs-it-*` job.
 
 Related: [[luz-docs-statistic-get-latest-endpoint]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs-integration-test dev poller derives the GKE job name from the wrong id]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
+- [[luz-docs Cloud Build pushes an image for every branch but only master updates luz_kubernetes]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+
+%% ai-graph-end %%

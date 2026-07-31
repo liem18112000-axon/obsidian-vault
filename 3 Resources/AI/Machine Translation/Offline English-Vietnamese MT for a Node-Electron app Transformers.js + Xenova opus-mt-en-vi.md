@@ -1,10 +1,22 @@
 ---
-title: "Offline English-Vietnamese MT for a Node-Electron app: Transformers.js + Xenova opus-mt-en-vi"
+ai_hash: 3d3aff461241b332
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
-type: reference
+entities: []
+source: Vinnstack session 2026-07-18
 status: seedling
-source: "Vinnstack session 2026-07-18"
-tags: [translation, offline, transformers-js, opus-mt, nllb, vinnstack, electron]
+tags:
+- translation
+- offline
+- transformers-js
+- opus-mt
+- nllb
+- vinnstack
+- electron
+title: 'Offline English-Vietnamese MT for a Node-Electron app: Transformers.js + Xenova
+  opus-mt-en-vi'
+type: reference
 ---
 
 # Offline English-Vietnamese MT for a Node-Electron app: Transformers.js + Xenova opus-mt-en-vi
@@ -28,3 +40,10 @@ Recommendation: OPUS-MT via Transformers.js for translate; keep the LLM path for
 ## Related
 
 - [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+
+%% ai-graph-end %%

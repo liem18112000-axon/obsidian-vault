@@ -1,10 +1,20 @@
 ---
-title: "Vinnstack release: push to main triggers Cloud Build which publishes to GCS latest/ auto-update channel"
+ai_hash: 1bf7bc9e8f8e0b3b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-17
-type: howto
+entities: []
+source: Vinnstack session 2026-07-17
 status: seedling
-source: "Vinnstack session 2026-07-17"
-tags: [vinnstack, release, cloud-build, electron-updater, gcs]
+tags:
+- vinnstack
+- release
+- cloud-build
+- electron-updater
+- gcs
+title: 'Vinnstack release: push to main triggers Cloud Build which publishes to GCS
+  latest/ auto-update channel'
+type: howto
 ---
 
 # Vinnstack release: push to main triggers Cloud Build which publishes to GCS latest/ auto-update channel
@@ -23,3 +33,14 @@ Related: [[Packaged Electron+Next.js API routes must not use process.cwd() for b
 
 - [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
 - [[electron-builder only ships paths listed in build.files whitelist]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Wire electron-updater to a public GCS bucket via the generic provider]]
+- [[Vinnstack publishes its exe to a GCS bucket, not Artifact Registry]]
+- [[Vinnstack Cloud Build trigger lives in klara-infra, not klara-nonprod]]
+- [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
+- [[Testing the packaged Vinnstack exe needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
+
+%% ai-graph-end %%

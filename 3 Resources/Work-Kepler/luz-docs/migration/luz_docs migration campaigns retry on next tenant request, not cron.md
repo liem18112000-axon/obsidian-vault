@@ -1,10 +1,17 @@
 ---
-title: "luz_docs migration campaigns retry on next tenant request, not cron"
+ai_hash: 555ddeb906caab27
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: concept
+entities: []
+source: luz_docs prod migration incident investigation, 2026-07-10
 status: seedling
-source: "luz_docs prod migration incident investigation, 2026-07-10"
-tags: [luz-docs, migration, design-decision]
+tags:
+- luz-docs
+- migration
+- design-decision
+title: luz_docs migration campaigns retry on next tenant request, not cron
+type: concept
 ---
 
 # luz_docs migration campaigns retry on next tenant request, not cron
@@ -20,3 +27,14 @@ Two caches gate how often this can actually happen, so a campaign will not retry
 Net effect: a campaign that failed/partially-failed self-heals automatically within about 24h, as long as the tenant keeps sending requests — no manual re-trigger needed. But don't expect (or alarm on) a retry showing up sooner than the 24h dedup window has elapsed, even while the stored status still reads FAILED/INCOMPLETE.
 
 Related: [[Materialize migration per-doc failures leave no persisted failed-id record]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs migration campaign per-tenant activation flow]]
+- [[Migration campaign status can silently drift from real document state]]
+- [[luz-docs migration runs on a cron window via LUZ_DOCS_MIGRATION_PROCESSING_CRON]]
+- [[Campaign-gate template cache then campaign status L1 then repository L2]]
+- [[Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)]]
+
+%% ai-graph-end %%

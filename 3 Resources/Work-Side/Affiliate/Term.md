@@ -1,8 +1,17 @@
 ---
-type: moc
+ai_hash: 66dfe85ef04fb22c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Affiliate Terms
+- Affiliate Glossary
 domain: affiliate-marketing
-aliases: [Affiliate Terms, Affiliate Glossary]
-tags: [affiliate, moc, glossary]
+entities: []
+tags:
+- affiliate
+- moc
+- glossary
+type: moc
 ---
 
 # Affiliate Terms
@@ -65,3 +74,14 @@ The diagram below is an interactive canvas — every box is a clickable link to 
 4. [[Cookie Duration]] + [[Attribution Model]] — why you do/don't get credited.
 5. [[Reversal]] — why confirmed earnings are lower than pending.
 6. [[Revenue Share]] + [[Lifetime Value]] — the recurring model and the maths behind it.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Action]]
+- [[Cost per Sale]]
+- [[Cost per Lead]]
+- [[Cost per Quality Lead]]
+- [[Lifetime Value]]
+
+%% ai-graph-end %%

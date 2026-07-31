@@ -1,10 +1,18 @@
 ---
-title: "luz_docs delete folder API soft vs permanent state machine"
+ai_hash: b77c744d2b2c2783
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: concept
+entities: []
+source: FolderResource.java / FolderValidation.java, session 2026-06-05
 status: seedling
-source: "FolderResource.java / FolderValidation.java, session 2026-06-05"
-tags: [luz-docs, folders, delete, api]
+tags:
+- luz-docs
+- folders
+- delete
+- api
+title: luz_docs delete folder API soft vs permanent state machine
+type: concept
 ---
 
 # luz_docs delete folder API soft vs permanent state machine
@@ -22,3 +30,14 @@ Gotcha: a folder created before `deletionStatus` existed (no field at all) passe
 
 - [[luz_docs folder delete multi-parent semantics]]
 - [[luz_docs folder delete shared document handling]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs folder delete multi-parent semantics]]
+- [[luz_docs folder delete shared document handling]]
+- [[luz_docs deleteFolder isDetailResponse error contract and non-transactionality]]
+- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
+- [[Folder recovery reuses the parent-change materialize cascade]]
+
+%% ai-graph-end %%

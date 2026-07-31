@@ -1,10 +1,19 @@
 ---
-title: "--max-expand caps comment batches not profile count; profile-visit phase dominates runtime"
+ai_hash: 17f67f2574e60843
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: observation
+entities: []
+source: live run 2026-06-14
 status: seedling
-source: "live run 2026-06-14"
-tags: [fb-info-project, performance, facebook, scraping]
+tags:
+- fb-info-project
+- performance
+- facebook
+- scraping
+title: --max-expand caps comment batches not profile count; profile-visit phase dominates
+  runtime
+type: observation
 ---
 
 # --max-expand caps comment batches not profile count; profile-visit phase dominates runtime
@@ -20,3 +29,14 @@ Note: the fresh-session run DID extract real locations (Hải Phòng, Ho Chi Min
 ## Related
 
 - [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
+- [[scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile]]
+- [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+- [[Switch Facebook comment sort to All comments before any scrolling or expansion]]
+
+%% ai-graph-end %%

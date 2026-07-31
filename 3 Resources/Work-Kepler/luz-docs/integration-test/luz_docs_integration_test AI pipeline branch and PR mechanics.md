@@ -1,10 +1,19 @@
 ---
-title: "luz_docs_integration_test AI pipeline branch and PR mechanics"
+ai_hash: 3c18b606f9d45460
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: concept
+entities: []
+source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
 status: seedling
-source: "vinnstack session 2026-07-11: building implement-bdd-steps skill"
-tags: [bdd, git, bitbucket, branch-naming, luz-docs-integration-test]
+tags:
+- bdd
+- git
+- bitbucket
+- branch-naming
+- luz-docs-integration-test
+title: luz_docs_integration_test AI pipeline branch and PR mechanics
+type: concept
 ---
 
 # luz_docs_integration_test AI pipeline branch and PR mechanics
@@ -23,3 +32,14 @@ Related: [[luz_docs_integration_test has its own AI-driven BDD pipeline (generat
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/integration-test/luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+- [[luz_docs_integration_test Gherkin and step-definition conventions]]
+- [[How luz_docs_integration_test repo location is resolved on disk]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[eArchive PRs in luz_docs target earchive-master integration branch, not master]]
+
+%% ai-graph-end %%

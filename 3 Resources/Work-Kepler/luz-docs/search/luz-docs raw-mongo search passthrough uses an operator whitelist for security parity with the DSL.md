@@ -1,10 +1,20 @@
 ---
-title: "luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL"
+ai_hash: 16a89119c0f23249
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-27
-type: howto
+entities: []
+source: session 2026-06-27
 status: seedling
-source: "session 2026-06-27"
-tags: [luz-docs, search, security, mongodb, ngram]
+tags:
+- luz-docs
+- search
+- security
+- mongodb
+- ngram
+title: luz-docs raw-mongo search passthrough uses an operator whitelist for security
+  parity with the DSL
+type: howto
 ---
 
 # luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL
@@ -23,3 +33,14 @@ Keep the whitelist in sync if the DSL handlers gain new operators.
 
 - [[3 Resources/Work-Kepler/luz-docs/search/luz-docs search DSL silently drops raw-mongo query keys]]
 - [[3 Resources/Work-Kepler/luz-docs/search/ngram trigram prefilter reads the built mongo query, not the raw payload]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs search DSL silently drops raw-mongo query keys]]
+- [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[luz-docs DSL regexp value must be wrapped .term. (else HTTP 400)]]
+- [[search-logic]]
+
+%% ai-graph-end %%

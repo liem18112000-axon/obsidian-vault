@@ -1,10 +1,21 @@
 ---
-title: "Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit"
+ai_hash: 8ad43da0807ad19b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-06
-type: gotcha
+entities: []
+source: vinnstack dev relay 2026-07-06, claude setup-token
 status: seedling
-source: "vinnstack dev relay 2026-07-06, claude setup-token"
-tags: [pty, tty, ink, relay, vinnstack, enter]
+tags:
+- pty
+- tty
+- ink
+- relay
+- vinnstack
+- enter
+title: Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not
+  newline, to submit
+type: gotcha
 ---
 
 # Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit
@@ -18,3 +29,14 @@ Symptom that fingerprints this: the automated flow reaches the prompt fine (e.g.
 ## Related
 
 - [[3 Resources/Backend/CLI/Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing]]
+- [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
+- [[Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF]]
+
+%% ai-graph-end %%

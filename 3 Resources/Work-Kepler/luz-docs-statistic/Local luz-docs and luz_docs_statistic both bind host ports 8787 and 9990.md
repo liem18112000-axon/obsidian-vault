@@ -1,10 +1,18 @@
 ---
-title: "Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990"
+ai_hash: 3b6062b56d639b57
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: session 2026-06-11
 status: seedling
-source: "session 2026-06-11"
-tags: [luz-docs, luz-docs-statistic, docker-compose, gotcha]
+tags:
+- luz-docs
+- luz-docs-statistic
+- docker-compose
+- gotcha
+title: Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990
+type: lesson
 ---
 
 # Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990
@@ -15,3 +23,12 @@ Workarounds: stop the other container, remap debug/management ports for one of t
 
 ## Related
 - [[Run luz_docs_statistic locally with docker-compose]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run luz_docs_statistic locally with docker-compose]]
+- [[luz_online_payment local Docker run pattern (WildFly WAR + GAR base + local Postgres)]]
+- [[WSL relay processes squat common dev ports on Windows]]
+
+%% ai-graph-end %%

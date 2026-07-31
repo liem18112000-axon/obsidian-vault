@@ -1,10 +1,19 @@
 ---
-title: "Guava jre/android variant ambiguity: declare TargetJvmEnvironment standard-jvm"
+ai_hash: 74ac2deceacadf56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework compileTestJava fix 2026-06-06
 status: seedling
-source: "leo-cdp-framework compileTestJava fix 2026-06-06"
-tags: [gradle, guava, dependency-resolution, java, gotcha]
+tags:
+- gradle
+- guava
+- dependency-resolution
+- java
+- gotcha
+title: 'Guava jre/android variant ambiguity: declare TargetJvmEnvironment standard-jvm'
+type: lesson
 ---
 
 # Guava jre/android variant ambiguity: declare TargetJvmEnvironment standard-jvm
@@ -34,3 +43,14 @@ Apply on `configurations.all` so both main and test classpaths resolve consisten
 ## Related
 - [[Fully-qualified class names fail inside Gradle closures with a non-Project delegate]]
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment]]
+- [[Fully-qualified class names fail inside Gradle closures with a non-Project delegate]]
+- [[Gradle 9 forbids attributes() on declarable configurations in configurations.all]]
+- [[junit-platform-launcher needs an explicit version without a junit-bom]]
+- [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
+
+%% ai-graph-end %%

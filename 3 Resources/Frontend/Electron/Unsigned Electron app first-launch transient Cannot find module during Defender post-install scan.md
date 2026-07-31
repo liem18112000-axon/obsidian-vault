@@ -1,10 +1,22 @@
 ---
-title: "Unsigned Electron app first-launch: transient Cannot find module during Defender post-install scan"
+ai_hash: 93c405349c416829
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-15
 status: seedling
-source: "Vinnstack session 2026-07-15"
-tags: [electron, windows-defender, electron-builder, nsis, gotcha, vinnstack, code-signing]
+tags:
+- electron
+- windows-defender
+- electron-builder
+- nsis
+- gotcha
+- vinnstack
+- code-signing
+title: 'Unsigned Electron app first-launch: transient Cannot find module during Defender
+  post-install scan'
+type: lesson
 ---
 
 # Unsigned Electron app first-launch: transient Cannot find module during Defender post-install scan
@@ -23,3 +35,14 @@ Context: Vinnstack Electron app, Electron 32.3.3 / embedded Node 20.18.1, packag
 
 - [[electron-builder --win CLI flag overrides win.target in package.json]]
 - [[Electron]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unsigned NSIS install under Defender ~2min of zero files is pre-scan, not a hang]]
+- [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+- [[electron-updater skips NSIS signature verification when the installed app is unsigned]]
+- [[electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap]]
+- [[Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup]]
+
+%% ai-graph-end %%

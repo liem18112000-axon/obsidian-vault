@@ -1,10 +1,19 @@
 ---
-title: "Removing the union of array values per document is safe because absent values are no-ops"
+ai_hash: 54117e64497518a6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: argument
+entities: []
+source: luz-docs enhance-delete-folder-api, sprint 158 (2026-06-10)
 status: seedling
-source: "luz-docs enhance-delete-folder-api, sprint 158 (2026-06-10)"
-tags: [mongodb, batching, invariant, luz-docs]
+tags:
+- mongodb
+- batching
+- invariant
+- luz-docs
+title: Removing the union of array values per document is safe because absent values
+  are no-ops
+type: argument
 ---
 
 # Removing the union of array values per document is safe because absent values are no-ops
@@ -20,3 +29,14 @@ Related: [[MongoDB updateMany with pipeline $set + $filter is an order-preservin
 ## Related
 
 - [[MongoDB updateMany with pipeline $set + $filter is an order-preserving alternative to $pull]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoDB updateMany with pipeline $set + $filter is an order-preserving alternative to $pull]]
+- [[luz-docs updateManyByFilter requires every targeted document to actually change]]
+- [[Batched folder delete strips folder ids via union updateMany]]
+- [[luz-docs delete-folder batching roadmap - remaining per-item paths]]
+- [[Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
+
+%% ai-graph-end %%

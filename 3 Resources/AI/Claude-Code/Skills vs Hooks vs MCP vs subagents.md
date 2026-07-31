@@ -1,18 +1,22 @@
 ---
-title: Skills vs Hooks vs MCP vs subagents
-created: 2026-06-11
-type: concept
-status: seedling
-source: research session 2026-06-11
-tags:
-  - claude-code
-  - skills
-  - hooks
-  - mcp
-  - decision
+ai_hash: da04b9d5c4f81963
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - When to use a skill vs hook
-  - Claude primitive decision
+- When to use a skill vs hook
+- Claude primitive decision
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- claude-code
+- skills
+- hooks
+- mcp
+- decision
+title: Skills vs Hooks vs MCP vs subagents
+type: concept
 ---
 
 # Skills vs Hooks vs MCP vs subagents
@@ -56,3 +60,14 @@ flowchart TD
 - [[Claude Code hooks event model]]
 - [[Designing an Accesstrade skill for Claude Code]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Designing an Accesstrade skill for Claude Code]]
+- [[Claude Code hooks event model]]
+- [[Claude Code Skill anatomy]]
+- [[Accesstrade API Integration - MOC]]
+- [[Accesstrade postback and S2S conversion tracking]]
+
+%% ai-graph-end %%

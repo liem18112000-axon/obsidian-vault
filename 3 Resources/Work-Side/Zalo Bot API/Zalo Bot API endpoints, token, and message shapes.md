@@ -1,10 +1,19 @@
 ---
-title: "Zalo Bot API endpoints, token, and message shapes"
+ai_hash: dda4baf1987fdbce
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: term
+entities: []
+source: session 2026-06-09 building zalo-hook-installation skill
 status: seedling
-source: "session 2026-06-09 building zalo-hook-installation skill"
-tags: [zalo, bot-api, messaging, claude-code-skills, reference]
+tags:
+- zalo
+- bot-api
+- messaging
+- claude-code-skills
+- reference
+title: Zalo Bot API endpoints, token, and message shapes
+type: term
 ---
 
 # Zalo Bot API endpoints, token, and message shapes
@@ -37,3 +46,12 @@ See [[Zalo Bot API has no getUpdates offset and no reply_to_message]] for the de
 ## Related
 
 - [[Zalo Bot API has no getUpdates offset and no reply_to_message]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Zalo Bot API has no getUpdates offset and no reply_to_message]]
+- [[Zalo OA API is webhook+OAuth and CS messages are rate-limited unlike the Bot API]]
+- [[Zalo dev app and bot creation both require a verified Zalo account]]
+
+%% ai-graph-end %%

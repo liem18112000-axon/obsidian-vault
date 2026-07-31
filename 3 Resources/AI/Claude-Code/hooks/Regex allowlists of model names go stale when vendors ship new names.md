@@ -1,10 +1,19 @@
 ---
-title: "Regex allowlists of model names go stale when vendors ship new names"
+ai_hash: 5d3b509fbfcf0abb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: session 2026-06-10
 status: seedling
-source: "session 2026-06-10"
-tags: [regex, claude-code, hooks, gotcha, git]
+tags:
+- regex
+- claude-code
+- hooks
+- gotcha
+- git
+title: Regex allowlists of model names go stale when vendors ship new names
+type: lesson
 ---
 
 # Regex allowlists of model names go stale when vendors ship new names
@@ -22,3 +31,12 @@ Fixed 2026-06-10 by adding `Fable` to the alternation in `~/.claude/hooks/git/bl
 ## Related
 
 - [[Claude Code hooks]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Block AI commit attribution by anchoring on the email, not the trailer label]]
+- [[Command-scanning git-commit hooks miss flag-separated forms and -F message files]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+
+%% ai-graph-end %%

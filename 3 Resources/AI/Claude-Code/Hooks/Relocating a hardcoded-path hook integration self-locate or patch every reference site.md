@@ -1,10 +1,22 @@
 ---
-title: "Relocating a hardcoded-path hook integration: self-locate or patch every reference site"
+ai_hash: 60792a804f9ec8d0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-02
-type: howto
+entities: []
+source: session 2026-06-02
 status: seedling
-source: "session 2026-06-02"
-tags: [claude-code, hooks, skills, telegram, refactoring, technique, gotcha]
+tags:
+- claude-code
+- hooks
+- skills
+- telegram
+- refactoring
+- technique
+- gotcha
+title: 'Relocating a hardcoded-path hook integration: self-locate or patch every reference
+  site'
+type: howto
 ---
 
 # Relocating a hardcoded-path hook integration: self-locate or patch every reference site
@@ -29,3 +41,14 @@ Checklist: grep the whole `.claude` tree (and the Startup folder) for `hooks/<pr
 
 - [[PSScriptRoot-relative state breaks when a hook moves to a subfolder]]
 - [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PSScriptRoot-relative state breaks when a hook moves to a subfolder]]
+- [[luz-hooks-plugin packages each hook as its own plugin registered in marketplace.json]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Luz plugin repos how skills and hooks are packaged for distribution]]
+- [[Custom Telegram-Claude bridge vs official Claude Code Remote Control]]
+
+%% ai-graph-end %%

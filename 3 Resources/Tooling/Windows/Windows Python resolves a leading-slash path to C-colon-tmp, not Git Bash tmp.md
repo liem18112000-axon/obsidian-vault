@@ -1,10 +1,19 @@
 ---
-title: "Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp"
+ai_hash: d853d11e2338f150
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: gotcha
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [windows, git-bash, python, paths, gotcha]
+tags:
+- windows
+- git-bash
+- python
+- paths
+- gotcha
+title: Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp
+type: gotcha
 ---
 
 # Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp
@@ -24,3 +33,14 @@ Same class of bug applies to any Windows-native tool invoked from Git Bash — t
 ## Related
 
 - [[A charmap UnicodeEncodeError can kill a script before it writes its output file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A charmap UnicodeEncodeError can kill a script before it writes its output file]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target]]
+- [[Git Bash etchosts is not the Windows hosts file ssh reads]]
+- [[Bash [[ -w ]] is unreliable on WindowsMSYS files guarded by ACL]]
+
+%% ai-graph-end %%

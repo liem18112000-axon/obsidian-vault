@@ -1,10 +1,19 @@
 ---
-title: "Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing"
+ai_hash: 392c82ee46354a87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: gotcha
+entities: []
+source: session 2026-07-04, vinnstack auth env rollout
 status: seedling
-source: "session 2026-07-04, vinnstack auth env rollout"
-tags: [kubernetes, kubectl, gitops, env-vars]
+tags:
+- kubernetes
+- kubectl
+- gitops
+- env-vars
+title: Rollout restart uses the LIVE spec - a manifest edited only in git changes
+  nothing
+type: gotcha
 ---
 
 # Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing
@@ -25,3 +34,14 @@ Symptom to recognize: "I added the env var and restarted, but the app behaves as
 - [[DNS before cert]]
 - [[NEG service]]
 - [[FrontendConfig redirect]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GKE managed-cert HTTPS global IP, DNS before cert, NEG service, FrontendConfig redirect]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[kubectl rollout status timeout must cover cold image pull time]]
+- [[Split Terraform cluster-provisioning state separate from in-cluster workload state]]
+- [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
+
+%% ai-graph-end %%

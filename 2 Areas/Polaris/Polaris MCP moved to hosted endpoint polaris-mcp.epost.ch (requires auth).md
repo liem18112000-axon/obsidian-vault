@@ -1,10 +1,18 @@
 ---
-title: "Polaris MCP moved to hosted endpoint polaris-mcp.epost.ch (requires auth)"
+ai_hash: 4807b37f23a009a4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-26
-type: observation
+entities: []
+source: session 2026-07-26
 status: seedling
-source: "session 2026-07-26"
-tags: [polaris, mcp, claude-code, epost]
+tags:
+- polaris
+- mcp
+- claude-code
+- epost
+title: Polaris MCP moved to hosted endpoint polaris-mcp.epost.ch (requires auth)
+type: observation
 ---
 
 # Polaris MCP moved to hosted endpoint polaris-mcp.epost.ch (requires auth)
@@ -20,3 +28,14 @@ Changed on 2026-07-26.
 ## Related
 
 - [[claude mcp list health status can be stale; verify MCP reachability with curl]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[claude mcp list health status can be stale; verify MCP reachability with curl]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
+- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+
+%% ai-graph-end %%

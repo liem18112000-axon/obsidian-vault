@@ -1,10 +1,19 @@
 ---
-title: "Parse bilingual Facebook relative timestamps with a prefix-ordered unit table"
+ai_hash: df8819e18f0eabc0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: howto
+entities: []
+source: fb-info-project session 2026-06-11
 status: seedling
-source: "fb-info-project session 2026-06-11"
-tags: [facebook, parsing, regex, python, vietnamese]
+tags:
+- facebook
+- parsing
+- regex
+- python
+- vietnamese
+title: Parse bilingual Facebook relative timestamps with a prefix-ordered unit table
+type: howto
 ---
 
 # Parse bilingual Facebook relative timestamps with a prefix-ordered unit table
@@ -22,3 +31,10 @@ Return `None` for non-timestamps, and when sorting by age use `key=lambda x: age
 
 - [[Verify Facebook comment sort switch by re-reading the sort button label]]
 - [[asyncio.gather preserves input order in its result list]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

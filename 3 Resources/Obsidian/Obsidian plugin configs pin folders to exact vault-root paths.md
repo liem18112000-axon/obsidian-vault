@@ -1,10 +1,17 @@
 ---
-title: "Obsidian plugin configs pin folders to exact vault-root paths"
+ai_hash: 94a1b38c4cc8838c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: gotcha
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [obsidian, plugins, refactoring]
+tags:
+- obsidian
+- plugins
+- refactoring
+title: Obsidian plugin configs pin folders to exact vault-root paths
+type: gotcha
 ---
 
 # Obsidian plugin configs pin folders to exact vault-root paths
@@ -26,3 +33,13 @@ Note that `app.json` here also sets `"alwaysUpdateLinks": true` — that only re
 
 - [[Resolving a wikilink by basename truncates titles containing a slash]]
 - [[Measure a broken-link baseline before a mass vault refactor]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure a broken-link baseline before a mass vault refactor]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[Roadmap]]
+- [[Precompute and validate a file-level move map before a mass reorganization]]
+
+%% ai-graph-end %%

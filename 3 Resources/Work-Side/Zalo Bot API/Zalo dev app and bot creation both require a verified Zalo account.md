@@ -1,10 +1,19 @@
 ---
-title: "Zalo dev app and bot creation both require a verified Zalo account"
+ai_hash: 3368c12c7fea4fca
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: lesson
+entities: []
+source: session 2026-06-09 — user hit the gate on both bot and app creation
 status: seedling
-source: "session 2026-06-09 — user hit the gate on both bot and app creation"
-tags: [zalo, account-verification, gotcha, blocker, kyc]
+tags:
+- zalo
+- account-verification
+- gotcha
+- blocker
+- kyc
+title: Zalo dev app and bot creation both require a verified Zalo account
+type: lesson
 ---
 
 # Zalo dev app and bot creation both require a verified Zalo account
@@ -23,3 +32,12 @@ Relates to [[Zalo OA API is webhook+OAuth and CS messages are rate-limited unlik
 
 - [[Zalo OA API is webhook+OAuth and CS messages are rate-limited unlike the Bot API]]
 - [[3 Resources/Work-Side/Zalo Bot API/Zalo Bot API endpoints, token, and message shapes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Zalo OA API is webhook+OAuth and CS messages are rate-limited unlike the Bot API]]
+- [[Zalo Bot API endpoints, token, and message shapes]]
+- [[Zalo Bot API has no getUpdates offset and no reply_to_message]]
+
+%% ai-graph-end %%

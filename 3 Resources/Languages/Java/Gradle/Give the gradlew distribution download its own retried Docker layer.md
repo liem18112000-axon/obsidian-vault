@@ -1,10 +1,19 @@
 ---
-title: "Give the gradlew distribution download its own retried Docker layer"
+ai_hash: 0ab587af1b7abd9e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: lesson
+entities: []
+source: LEO CDP consolidation builds, 2026-06-07
 status: seedling
-source: "LEO CDP consolidation builds, 2026-06-07"
-tags: [gradle, docker, wrapper, network, gotcha]
+tags:
+- gradle
+- docker
+- wrapper
+- network
+- gotcha
+title: Give the gradlew distribution download its own retried Docker layer
+type: lesson
 ---
 
 # Give the gradlew distribution download its own retried Docker layer
@@ -22,3 +31,13 @@ RUN ./gradlew AutoBuildForDeployment ...
 - [[gradlew requires xargs - minimal corretto images need findutils installed]]
 
 Refinement 2: the retried download layer must come BEFORE `COPY . .` (copy only gradlew/gradle/ first) - otherwise every source change invalidates the cached distribution layer and you pay the flaky download on every build. Same principle as copying package manifests before source in Node/Maven images. Also raise the wrapper's own fetch timeout in gradle-wrapper.properties: `networkTimeout=60000` (default 10000ms is what fails first on slow paths).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[gradlew requires xargs - minimal corretto images need findutils installed]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[gradlew committed from Windows loses the exec bit - fix with git update-index chmod]]
+- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+
+%% ai-graph-end %%

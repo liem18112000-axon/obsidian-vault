@@ -1,10 +1,20 @@
 ---
-title: "Change a 2nd-gen Cloud Build trigger's branch filter via beta export-edit-import, not update"
+ai_hash: c5551fd9acf6547c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-06
-type: gotcha
+entities: []
+source: vinnstack main-public deploy 2026-07-06
 status: seedling
-source: "vinnstack main-public deploy 2026-07-06"
-tags: [cloud-build, gcp, trigger, ci-cd, vinnstack]
+tags:
+- cloud-build
+- gcp
+- trigger
+- ci-cd
+- vinnstack
+title: Change a 2nd-gen Cloud Build trigger's branch filter via beta export-edit-import,
+  not update
+type: gotcha
 ---
 
 # Change a 2nd-gen Cloud Build trigger's branch filter via beta export-edit-import, not update
@@ -18,3 +28,10 @@ Reliable, type-agnostic recipe:
 Verify: gcloud builds triggers describe <name> --format="value(repositoryEventConfig.push.branch)".
 
 Two gotchas that bite after repointing: (1) region matters — 2nd-gen triggers are region-scoped, so list/describe/export/import all need --region, and a global `triggers list` shows nothing. (2) The trigger only fires on branches that exist ON THE REMOTE; repointing to a branch that's still local-only does nothing until that branch is pushed — and the first push of it will itself fire a build.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

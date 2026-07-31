@@ -1,10 +1,19 @@
 ---
-title: "MicroProfile Fallback is dead in plain Mockito unit tests"
+ai_hash: 131af70e280d2cb7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: lesson
+entities: []
+source: session 2026-07-21 LUZ-156856
 status: seedling
-source: "session 2026-07-21 LUZ-156856"
-tags: [fault-tolerance, mockito, testing, gotcha, luz-docs]
+tags:
+- fault-tolerance
+- mockito
+- testing
+- gotcha
+- luz-docs
+title: MicroProfile Fallback is dead in plain Mockito unit tests
+type: lesson
 ---
 
 # MicroProfile Fallback is dead in plain Mockito unit tests
@@ -24,3 +33,14 @@ Why it differs from production: on WildFly the interceptor DOES fire, even on se
 Follow-on gotcha: adding a test that skips the shared `@BeforeEach` stubs trips strict-stubs (`UnnecessaryStubbingException`) on the whole class — mark the shared stub `lenient().when(...)` instead of duplicating stubs per test.
 
 Final gate shape (LUZ-156856): hybrid belt-and-braces — `@Fallback(L2)` on the L1 check handles service degradation in-container, PLUS an outer catch-all in the gate method that returns false and caches INCOMPLETE when even L2 throws (fail-closed + negative caching preserved). Outer catch also makes the unit-testable no-interceptor path deterministic (throw → false).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[Weld subclass-based interception makes self-invocation intercepted]]
+- [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+
+%% ai-graph-end %%

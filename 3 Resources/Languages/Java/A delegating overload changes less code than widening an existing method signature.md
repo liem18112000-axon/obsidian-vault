@@ -1,10 +1,18 @@
 ---
-title: "A delegating overload changes less code than widening an existing method signature"
+ai_hash: 9bed5f33c78da155
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: luz_docs_statistic minimality audit, session 2026-06-11
 status: seedling
-source: "luz_docs_statistic minimality audit, session 2026-06-11"
-tags: [java, refactoring, code-review, minimal-diff]
+tags:
+- java
+- refactoring
+- code-review
+- minimal-diff
+title: A delegating overload changes less code than widening an existing method signature
+type: lesson
 ---
 
 # A delegating overload changes less code than widening an existing method signature
@@ -19,3 +27,14 @@ Rule of thumb when minimizing a review diff: count the *whole* diff including te
 
 > [!note] Counterpoint (user decision, 2026-06-11)
 > In luz_docs_statistic the user explicitly rejected the delegating `aggregate` overload and asked for ONE explicit 4-arg method, adapting the 2 call sites and 2 test files instead. Rationale: a single method with an explicit `collection` argument is clearer than two near-identical entry points — API clarity beats raw diff size when the ripple is small. Use the overload trick only when the caller/test ripple is genuinely large.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mockito strict stubbing turns removed production calls into UnnecessaryStubbingException test failures]]
+- [[Mock at the facade boundary after consolidating logic behind a facade method]]
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+- [[Mockito helper that stubs must not run inside an outer when().thenReturn() argument]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+
+%% ai-graph-end %%

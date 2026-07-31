@@ -1,10 +1,18 @@
 ---
-title: "Leo CDP admin dashboard is a hash-routed SPA on a separate host from the API"
+ai_hash: f957e6504826dc46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: reference
+entities: []
+source: session 2026-06-30; user-provided admin link
 status: seedling
-source: "session 2026-06-30; user-provided admin link"
-tags: [leo-cdp, dashboard, spa, reference]
+tags:
+- leo-cdp
+- dashboard
+- spa
+- reference
+title: Leo CDP admin dashboard is a hash-routed SPA on a separate host from the API
+type: reference
 ---
 
 # Leo CDP admin dashboard is a hash-routed SPA on a separate host from the API
@@ -28,3 +36,14 @@ Example given for the journey-map view: `leoCdpRouter('Data_Journey_Map','')`. T
 
 - [[1 Projects/appsflyer-connector/Leo CDP save returns 200 but eventlist cannot read it back]]
 - [[Leo CDP public REST API contract]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Leo CDP save returns 200 but eventlist cannot read it back]]
+- [[Leo CDP public REST API contract]]
+- [[Leo CDP profilelist ignores start and limit and embeds event data]]
+- [[Leo CDP event observerId is the pushing tokenkey and eventsave can split from profilesave identity]]
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+
+%% ai-graph-end %%

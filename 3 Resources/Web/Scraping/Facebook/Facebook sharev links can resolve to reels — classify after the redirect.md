@@ -1,10 +1,19 @@
 ---
-title: "Facebook /share/v/ links can resolve to reels — classify after the redirect"
+ai_hash: 2452dbcaebc55a80
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-13
-type: gotcha
+entities: []
+source: session 2026-06-13 fb-info-project share/v misclassification
 status: seedling
-source: "session 2026-06-13 fb-info-project share/v misclassification"
-tags: [facebook, scraping, gotcha, reels, url-redirect]
+tags:
+- facebook
+- scraping
+- gotcha
+- reels
+- url-redirect
+title: Facebook /share/v/ links can resolve to reels — classify after the redirect
+type: gotcha
 ---
 
 # Facebook /share/v/ links can resolve to reels — classify after the redirect
@@ -20,3 +29,14 @@ Related: [[Scroll Facebook reel comments via JS, never mouse.wheel]] — both ar
 ## Related
 
 - [[3 Resources/Web/Playwright/Scroll Facebook reel comments via JS, never mouse.wheel]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook reel comments are hidden behind the comment icon]]
+- [[Scroll Facebook reel comments via JS, never mouse.wheel]]
+- [[Facebook post permalinks render the post twice — dialog plus a hidden page copy]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[FB photofbid= links scrape as post mode; filename id falls back to na]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Maven user settings.xml overrides global same-id profile properties"
+ai_hash: 26b414f7de1f5014
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: lesson
+entities: []
+source: session 2026-07-27 luz_finance setup
 status: seedling
-source: "session 2026-07-27 luz_finance setup"
-tags: [maven, settings, profiles, technique]
+tags:
+- maven
+- settings
+- profiles
+- technique
+title: Maven user settings.xml overrides global same-id profile properties
+type: lesson
 ---
 
 # Maven user settings.xml overrides global same-id profile properties
@@ -18,3 +26,12 @@ Maven merges the **global** settings (`$M2_HOME/conf/settings.xml`) with the **u
 ## Related
 
 - [[Axon Ivy installEngine fails when ivy.engine.directory is stale or unwritable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Axon Ivy installEngine fails when ivy.engine.directory is stale or unwritable]]
+- [[Pre-configure an EclipseIvy Designer workspace by seeding .prefs files]]
+- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Google Cloud TTS timepointing (enable_time_pointing) requires the v1beta1 client"
+ai_hash: 5b4a1c672bc244eb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: virtual-avatar MVP implementation, 2026-07-10
 status: evergreen
-source: "virtual-avatar MVP implementation, 2026-07-10"
-tags: [gcp, text-to-speech, gotcha, python]
+tags:
+- gcp
+- text-to-speech
+- gotcha
+- python
+title: Google Cloud TTS timepointing (enable_time_pointing) requires the v1beta1 client
+type: lesson
 ---
 
 # Google Cloud TTS timepointing (enable_time_pointing) requires the v1beta1 client
@@ -19,3 +27,10 @@ Verified against installed `google-cloud-texttospeech==2.37.0`. Docs summaries d
 
 - [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
 - [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]
+
+%% ai-graph-end %%

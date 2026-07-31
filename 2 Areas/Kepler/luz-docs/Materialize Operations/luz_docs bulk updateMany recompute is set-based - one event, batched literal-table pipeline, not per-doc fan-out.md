@@ -1,10 +1,21 @@
 ---
-title: "luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out"
+ai_hash: f703616c6c5ed7e9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: model
+entities: []
+source: DocBulkMaterializeObserver implementation, session 2026-06-05
 status: budding
-source: "DocBulkMaterializeObserver implementation, session 2026-06-05"
-tags: [luz-docs, materialize, change-tracking, bulk-ops, performance, design-decision]
+tags:
+- luz-docs
+- materialize
+- change-tracking
+- bulk-ops
+- performance
+- design-decision
+title: luz_docs bulk updateMany recompute is set-based - one event, batched literal-table
+  pipeline, not per-doc fan-out
+type: model
 ---
 
 # luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out
@@ -26,3 +37,14 @@ Correctness props: `$range` input is `$ifNull`-guarded so docs without `folderId
 - [[3 Resources/Data/MongoDB/MongoDB forbids $lookup inside update pipeline (WriteError 72)]]
 
 > [!warning] Status 2026-06-05: never merged — removed from the working tree the same day (user decision, "remove modify-many code for now"). The design lives in this note + the session handoff report only.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
+- [[luz-docs updateManyByFilter requires every targeted document to actually change]]
+- [[Materialize bulk PATCH fans out into N serial per-doc PATCH calls]]
+- [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
+- [[MongoDB forbids $lookup inside update pipeline (WriteError 72)]]
+
+%% ai-graph-end %%

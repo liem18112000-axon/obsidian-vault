@@ -1,10 +1,21 @@
 ---
-title: "Local-app OAuth bridges the browser callback to the waiting login via an in-memory state-to-resolver map"
+ai_hash: 78740202c4f28e61
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: howto
+entities: []
+source: session 2026-07-01 (Vinnstack Bitbucket OAuth)
 status: seedling
-source: "session 2026-07-01 (Vinnstack Bitbucket OAuth)"
-tags: [oauth, bitbucket, nextjs, local-app, pattern, vinnstack]
+tags:
+- oauth
+- bitbucket
+- nextjs
+- local-app
+- pattern
+- vinnstack
+title: Local-app OAuth bridges the browser callback to the waiting login via an in-memory
+  state-to-resolver map
+type: howto
 ---
 
 # Local-app OAuth bridges the browser callback to the waiting login via an in-memory state-to-resolver map
@@ -22,3 +33,14 @@ Bitbucket specifics: authorize `https://bitbucket.org/site/oauth2/authorize?clie
 Gotcha: a NEW deeply-nested API route folder added while `next dev` is running may not hot-register (Windows watcher) and 404s until the dev server restarts, even though shallower new routes are picked up.
 
 Real case: Vinnstack Bitbucket provider (`lib/authProviders.ts` + `app/api/auth/callback/bitbucket`).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian Cloud OAuth 3LO specifics JSON token body, rotating refresh, cloudId via accessible-resources]]
+- [[Local-app provider sign-in drive the vendor CLI; Vertex is the exception (gcloud ADC + projectregion)]]
+- [[Vinnstack provider abstraction enables pluggable auth without UIroute changes]]
+- [[Arm a new login gate by env presence so shipping auth cannot lock the operator out]]
+- [[NextAuth cannot share apiauth with an existing dynamic route - single segments get shadowed]]
+
+%% ai-graph-end %%

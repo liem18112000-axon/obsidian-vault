@@ -1,10 +1,18 @@
 ---
-title: "Row-per-event output breaks row-count quota accounting"
+ai_hash: 30b2d494503cf390
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: 'fb-info-project PR #8, session 2026-06-30'
 status: seedling
-source: "fb-info-project PR #8, session 2026-06-30"
-tags: [gotcha, accounting, dedup, fb-info-project]
+tags:
+- gotcha
+- accounting
+- dedup
+- fb-info-project
+title: Row-per-event output breaks row-count quota accounting
+type: lesson
 ---
 
 # Row-per-event output breaks row-count quota accounting
@@ -26,3 +34,14 @@ Charge and cap by distinct key:
 Whenever output cardinality decouples from cost cardinality (dedup, coalescing, caching, fan-out), audit every `len(...)` used for quota/billing/caps — count the cost unit, not the row.
 
 Context: fb-info-project `src/service.py`, PR #8.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Rate-limit a Facebook scraper by profiles-per-day, not lifetime total]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+- [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
+- [[A resume must not re-charge one-time accounting]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+
+%% ai-graph-end %%

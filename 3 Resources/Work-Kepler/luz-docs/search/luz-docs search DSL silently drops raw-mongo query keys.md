@@ -1,10 +1,18 @@
 ---
-title: "luz-docs /search DSL silently drops raw-mongo query keys"
+ai_hash: a204429095fb633b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-27
-type: lesson
+entities: []
+source: session 2026-06-27
 status: seedling
-source: "session 2026-06-27"
-tags: [luz-docs, search, gotcha, mongodb]
+tags:
+- luz-docs
+- search
+- gotcha
+- mongodb
+title: luz-docs /search DSL silently drops raw-mongo query keys
+type: lesson
 ---
 
 # luz-docs /search DSL silently drops raw-mongo query keys
@@ -28,3 +36,14 @@ See [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/search/ngram trigram prefilter reads the built mongo query, not the raw payload]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs DSL regexp value must be wrapped .term. (else HTTP 400)]]
+- [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
+- [[search-logic]]
+
+%% ai-graph-end %%

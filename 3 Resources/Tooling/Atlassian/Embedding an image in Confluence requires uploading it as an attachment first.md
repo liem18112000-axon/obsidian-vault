@@ -1,10 +1,19 @@
 ---
-title: "Embedding an image in Confluence requires uploading it as an attachment first"
+ai_hash: 03e6a3f5b1dea2e8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-30
-type: howto
+entities: []
+source: session 2026-07-30 leo-customer360
 status: seedling
-source: "session 2026-07-30 leo-customer360"
-tags: [atlassian, confluence, mcp, storage-format, howto]
+tags:
+- atlassian
+- confluence
+- mcp
+- storage-format
+- howto
+title: Embedding an image in Confluence requires uploading it as an attachment first
+type: howto
 ---
 
 # Embedding an image in Confluence requires uploading it as an attachment first
@@ -26,3 +35,14 @@ Related access prerequisite: [[claude.ai Atlassian MCP has Jira scopes only — 
 ## Related
 
 - [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
+- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+- [[Rewrite Confluence page prose by element local-id to keep diagrams and structure intact]]
+- [[Centering an embedded image in Obsidian]]
+
+%% ai-graph-end %%

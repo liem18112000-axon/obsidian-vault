@@ -1,10 +1,19 @@
 ---
-title: "Delete-and-reinsert aggregate saves silently cascade-wipe new child tables"
+ai_hash: 3e210574054e726b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: session 2026-07-03, vinnstack PRD inline-comments plan
 status: seedling
-source: "session 2026-07-03, vinnstack PRD inline-comments plan"
-tags: [postgres, foreign-keys, cascade, gotcha, vinnstack]
+tags:
+- postgres
+- foreign-keys
+- cascade
+- gotcha
+- vinnstack
+title: Delete-and-reinsert aggregate saves silently cascade-wipe new child tables
+type: lesson
 ---
 
 # Delete-and-reinsert aggregate saves silently cascade-wipe new child tables
@@ -21,3 +30,14 @@ Before hanging a new child table (e.g. comments) off an existing parent, check h
 3. add a regression test: save the aggregate twice, assert the new child rows survive.
 
 Concrete case: vinnstack's `saveInterrogation` (lib/interrogationStore.ts L347–358) runs `DELETE FROM interrogations WHERE epic=$1` relying on cascade, then re-inserts everything; `recordAnswer`, `finalizeTrack`, `setPrd`, `recordPrdApproval` all funnel through it. A `prd_comments` FK to `prds(epic)` *or* `interrogations(epic)` would be wiped on every answer recorded, unless the save is changed as above.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+- [[Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)]]
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+
+%% ai-graph-end %%

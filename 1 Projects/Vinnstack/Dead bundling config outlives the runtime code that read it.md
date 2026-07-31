@@ -1,10 +1,44 @@
 ---
-title: "Dead bundling config outlives the runtime code that read it"
+ai_hash: 54c869777b706cc9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities:
+- Dead bundling config
+- runtime code
+- bundled resource
+- packaging/bundling config
+- vinnstack commit
+- electron/main.js
+- resolveCloudSqlProxyPath()
+- cloud-sql-proxy
+- PATH
+- gcloud components install cloud-sql-proxy
+- process.resourcesPath
+- repo-root
+- package.json
+- electron-builder
+- build.extraResources block
+- cloud-sql-proxy.exe
+- packaged app
+- CI
+- extraResources entry
+- cloudbuild.yaml
+- webpack
+- Docker COPY
+- phantom build-time requirement
+- Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource
+- Re-check live dependencies right before committing in a shared repo
+- Vinnstack publishes its exe to a GCS bucket, not Artifact Registry
+source: vinnstack cloudbuild.yaml setup, 2026-07-07
 status: seedling
-source: "vinnstack cloudbuild.yaml setup, 2026-07-07"
-tags: [vinnstack, electron-builder, dead-code, packaging]
+tags:
+- vinnstack
+- electron-builder
+- dead-code
+- packaging
+title: Dead bundling config outlives the runtime code that read it
+type: lesson
 ---
 
 # Dead bundling config outlives the runtime code that read it
@@ -19,3 +53,48 @@ General lesson: whenever you remove the last reader of a bundled/packaged resour
 [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
 [[Re-check live dependencies right before committing in a shared repo]]
 [[Vinnstack publishes its exe to a GCS bucket, not Artifact Registry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
+- [[Re-check live dependencies right before committing in a shared repo]]
+- [[Testing the packaged Vinnstack exe needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
+- [[Open-and-degrade beats hard-quit let a desktop app start without its optional DB (Vinnstack clean-Win fix)]]
+- [[gcloud components install fetches the host's own platform binary, not a chosen target]]
+
+**Relations:**
+- Dead bundling config — *outlives* — runtime code
+- runtime code — *reads* — bundled resource
+- packaging/bundling config — *is for* — bundled resource
+- packaging/bundling config — *can survive as* — dead weight
+- vinnstack commit — *changed* — electron/main.js
+- electron/main.js — *contains function* — resolveCloudSqlProxyPath()
+- resolveCloudSqlProxyPath() — *resolves* — cloud-sql-proxy
+- cloud-sql-proxy — *from* — PATH
+- cloud-sql-proxy — *installed via* — gcloud components install cloud-sql-proxy
+- resolveCloudSqlProxyPath() — *removed check of* — process.resourcesPath
+- resolveCloudSqlProxyPath() — *removed check of* — repo-root
+- package.json — *uses* — electron-builder
+- electron-builder — *configures* — build.extraResources block
+- build.extraResources block — *bundles* — cloud-sql-proxy.exe
+- cloud-sql-proxy.exe — *into* — packaged app
+- build.extraResources block — *is* — dead config
+- build.extraResources block — *has no* — reader
+- build.extraResources block — *forced* — CI
+- CI — *to supply* — cloud-sql-proxy.exe
+- Fix — *is to delete* — extraResources entry
+- extraResources entry — *is in* — package.json
+- deletion of extraResources entry — *enabled deletion from* — cloudbuild.yaml
+- cloudbuild.yaml — *contains* — CI step
+- CI step — *downloads* — cloud-sql-proxy.exe
+- dead config — *blocked* — simplification
+- packaging config — *includes* — electron-builder
+- packaging config — *includes* — webpack
+- packaging config — *includes* — Docker COPY
+- packaging config — *persists as* — phantom build-time requirement
+- Dead bundling config outlives the runtime code that read it — *related to* — Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource
+- Dead bundling config outlives the runtime code that read it — *related to* — Re-check live dependencies right before committing in a shared repo
+- Dead bundling config outlives the runtime code that read it — *related to* — Vinnstack publishes its exe to a GCS bucket, not Artifact Registry
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Split Terraform: cluster-provisioning state separate from in-cluster workload state"
+ai_hash: 33166b879d13f5b4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26 feat/appsflyer-push-layer; terraform/push
 status: seedling
-source: "session 2026-06-26 feat/appsflyer-push-layer; terraform/push"
-tags: [terraform, kubernetes, iac, gotcha, vngcloud, leo-cdp]
+tags:
+- terraform
+- kubernetes
+- iac
+- gotcha
+- vngcloud
+- leo-cdp
+title: 'Split Terraform: cluster-provisioning state separate from in-cluster workload
+  state'
+type: lesson
 ---
 
 # Split Terraform: cluster-provisioning state separate from in-cluster workload state
@@ -26,3 +37,14 @@ Context: Leo CDP AppsFlyer push receiver, terraform/push/ on VNGCloud VKS. See [
 ## Related
 
 - [[3 Resources/Infra/Deployment/A webhook receiver deploys as an always-on service, not a scheduled job]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A webhook receiver deploys as an always-on service, not a scheduled job]]
+- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
+- [[Cloud Build GKE deploy get-credentials needs --project for a cross-project cluster]]
+- [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+
+%% ai-graph-end %%

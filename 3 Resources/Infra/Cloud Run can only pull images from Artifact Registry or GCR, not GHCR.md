@@ -1,10 +1,20 @@
 ---
-title: "Cloud Run can only pull images from Artifact Registry or GCR, not GHCR"
+ai_hash: cc569bf69f55f03f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: session 2026-06-15, accesstrade_integration cloud run deploy
 status: seedling
-source: "session 2026-06-15, accesstrade_integration cloud run deploy"
-tags: [gcp, cloud-run, artifact-registry, ghcr, docker, ci-cd]
+tags:
+- gcp
+- cloud-run
+- artifact-registry
+- ghcr
+- docker
+- ci-cd
+title: Cloud Run can only pull images from Artifact Registry or GCR, not GHCR
+type: lesson
 ---
 
 # Cloud Run can only pull images from Artifact Registry or GCR, not GHCR
@@ -16,3 +26,14 @@ Consequence for design: if you build/push to GHCR for general distribution but a
 In this project (accesstrade): docker-publish.yml keeps pushing to GHCR for convenience, and a separate deploy-web workflow pushes the same web image to an Artifact Registry repo (`google_artifact_registry_repository`) that the Cloud Run service pulls from. The CI authenticates Docker to AR with `gcloud auth configure-docker <region>-docker.pkg.dev`.
 
 Related: pushing to AR from GitHub Actions needs the deploy SA to have `roles/artifactregistry.writer` (and the repo must exist). Relates to [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]] and [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+- [[IAM roles a CI service account needs to build and deploy to Cloud Run]]
+- [[Cloud Run v2 service design gotchas]]
+
+%% ai-graph-end %%

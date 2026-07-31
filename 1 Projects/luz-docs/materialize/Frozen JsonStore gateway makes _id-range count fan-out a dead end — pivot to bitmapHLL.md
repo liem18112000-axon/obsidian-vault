@@ -1,10 +1,56 @@
 ---
-title: "Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmap/HLL"
+ai_hash: 27bf01fa66c7d6e2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: argument
+entities:
+- JsonStore gateway
+- _id-range count fan-out
+- bitmap/HLL
+- luz_jsonstore
+- MongoDB
+- _id RANGES
+- ObjectId
+- $in
+- equality
+- $gte
+- $lt
+- $expr
+- $toObjectId
+- K sub-counts
+- Quantile boundaries
+- Roaring bitmap
+- HyperLogLog
+- luz.docs.materialize.count-fanout-partitions
+- amplification
+- bitmap-count-investigation.md
+- _id index
+- Divide-and-Conquer Visible-Document Count
+- performance
+- client
+- index-seeking _id range
+- full-scan
+- scan work
+- gateway change
+- amplified work
+- p99 tail
+- hex _id string
+- union counts
+- MongoDB $expr + $toObjectId
+- amplification-removing approach
+- luz_docs
+source: LUZ-154613 session 2026-06-16
 status: seedling
-source: "LUZ-154613 session 2026-06-16"
-tags: [luz-docs, materialize, mongodb, performance, decision, objectid]
+tags:
+- luz-docs
+- materialize
+- mongodb
+- performance
+- decision
+- objectid
+title: Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to
+  bitmap/HLL
+type: argument
 ---
 
 # Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmap/HLL
@@ -23,3 +69,55 @@ Decision: keep fan-out OFF (luz.docs.materialize.count-fanout-partitions=1, the 
 
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
 - [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
+- [[Partition the materialized count on a uniform _countShard int, not _id]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId]]
+- [[Levers to optimise the visible-document count beyond _shard fan-out]]
+
+**Relations:**
+- JsonStore gateway — *causes* — _id-range count fan-out a dead end
+- _id-range count fan-out — *pivot to* — bitmap/HLL
+- luz_jsonstore — *is a gateway for* — MongoDB
+- luz_jsonstore — *has constraint* — cannot be changed
+- Divide-and-Conquer Visible-Document Count — *partitions on* — _id RANGES
+- Divide-and-Conquer Visible-Document Count — *is a dead end for* — performance
+- JsonStore gateway — *coerces* — hex _id string
+- JsonStore gateway — *coerces to* — ObjectId
+- ObjectId — *is used with* — $in
+- ObjectId — *is used with* — equality
+- ObjectId — *is not used with* — $gte
+- ObjectId — *is not used with* — $lt
+- index-seeking _id range — *cannot be expressed from* — client
+- client-side _id range — *uses* — MongoDB $expr + $toObjectId
+- MongoDB $expr + $toObjectId — *causes* — full-scan
+- MongoDB $expr + $toObjectId — *does not use* — _id index
+- K sub-counts — *cannot be* — correct AND fast
+- Quantile boundaries — *balances* — scan work
+- Quantile boundaries — *does not make* — indexed
+- fan-out — *status* — OFF
+- luz.docs.materialize.count-fanout-partitions — *set to* — 1
+- amplification-removing approach — *includes* — Roaring bitmap
+- amplification-removing approach — *includes* — HyperLogLog
+- amplification-removing approach — *removes* — amplification
+- Roaring bitmap — *is* — exact
+- HyperLogLog — *is* — approximate
+- Roaring bitmap — *provides* — union counts
+- HyperLogLog — *provides* — union counts
+- union counts — *are* — count-side
+- union counts — *requires no* — gateway change
+- Fan-out — *parallelises* — amplified work
+- Fan-out — *never removes* — amplification
+- bitmap-count-investigation.md — *is a document in* — luz_docs
+- MongoDB $expr + $toObjectId — *is for* — _id range
+- MongoDB $expr + $toObjectId — *is* — correct
+- MongoDB $expr + $toObjectId — *does not use* — _id index
+- MongoDB $expr + $toObjectId — *causes* — full-scan
+- Divide-and-Conquer Visible-Document Count — *is a* — project
+- amplification — *affects* — p99 tail
+
+%% ai-graph-end %%

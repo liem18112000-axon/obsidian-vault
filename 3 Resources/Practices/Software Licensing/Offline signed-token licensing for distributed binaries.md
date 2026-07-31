@@ -1,10 +1,19 @@
 ---
-title: "Offline signed-token licensing for distributed binaries"
+ai_hash: 4b2b69a1b6430d29
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: concept
+entities: []
+source: fb-info-project session 2026-06-14
 status: seedling
-source: "fb-info-project session 2026-06-14"
-tags: [licensing, cryptography, ed25519, distribution, security]
+tags:
+- licensing
+- cryptography
+- ed25519
+- distribution
+- security
+title: Offline signed-token licensing for distributed binaries
+type: concept
 ---
 
 # Offline signed-token licensing for distributed binaries
@@ -19,3 +28,14 @@ This is the hub note for the scheme; the load-bearing details live in their own 
 - No revocation exists, so prefer short validity + renewal → [[Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal]]
 - One operator keypair + an auto-appended issuance ledger → [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
 - Verify with a vendored pure-Python impl, not a crypto wheel → [[Vendor pure-Python Ed25519 instead of bundling a crypto wheel]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+- [[Vendor pure-Python Ed25519 instead of bundling a crypto wheel]]
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+- [[Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal]]
+
+%% ai-graph-end %%

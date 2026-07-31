@@ -1,10 +1,22 @@
 ---
-title: "Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter resolution"
+ai_hash: 7c44d24d7150a884
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: lesson
+entities: []
+source: LEO CDP code-modernization planning, 2026-06-07
 status: seedling
-source: "LEO CDP code-modernization planning, 2026-06-07"
-tags: [java, records, gson, arangodb, handlebars, serialization, gotcha]
+tags:
+- java
+- records
+- gson
+- arangodb
+- handlebars
+- serialization
+- gotcha
+title: Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter
+  resolution
+type: lesson
 ---
 
 # Records break Gson pre-2.10, ArangoDB driver 6 VPACK, and handlebars getter resolution
@@ -14,3 +26,14 @@ Blanket 'convert POJOs to records' breaks serialization-heavy Java apps in three
 ## Related
 
 - [[Binary-only vendored jars pin the API level of everything they link]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Virtual-thread conversion triage - per-run fanout yes, single-thread and shared pools no]]
+- [[JSON-P createArrayBuilder(Collection) rejects built JsonValues]]
+- [[Binary-only vendored jars pin the API level of everything they link]]
+- [[Adding a field to a Java record breaks all factory and constructor calls in tests]]
+- [[Vert.x 3.8.5 plus Netty 4.1.44 run on JDK 25 with flags only - LEO CDP empirical result]]
+
+%% ai-graph-end %%

@@ -1,15 +1,23 @@
 ---
-title: "Playwright has no way to merge N trials into one browsable trace.zip"
-created: 2026-07-23
-type: lesson
-status: seedling
-source: "session 2026-07-23, luz-docs earchive-perf-trace tool"
-tags: [playwright, tracing, testing, gotcha]
+ai_hash: 5ac293b71d78e479
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - "Playwright multi-trial trace merging via tracing chunks"
-  - "stopChunk() without a path silently discards that chunk's trace data"
-  - "Manually stopChunk()-ing the last Playwright trace chunk breaks the final tracing.stop({path})"
-  - "Page navigation timeout can corrupt Playwright context tracing state"
+- Playwright multi-trial trace merging via tracing chunks
+- stopChunk() without a path silently discards that chunk's trace data
+- Manually stopChunk()-ing the last Playwright trace chunk breaks the final tracing.stop({path})
+- Page navigation timeout can corrupt Playwright context tracing state
+created: 2026-07-23
+entities: []
+source: session 2026-07-23, luz-docs earchive-perf-trace tool
+status: seedling
+tags:
+- playwright
+- tracing
+- testing
+- gotcha
+title: Playwright has no way to merge N trials into one browsable trace.zip
+type: lesson
 ---
 
 # Playwright has no way to merge N trials into one browsable trace.zip
@@ -40,3 +48,13 @@ Open one at a time: `npx playwright show-trace run3/trace.zip`.
 ## Related
 
 - [[Server-rendered JSF apps never expose their internal API calls to browser network capture]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Server-rendered JSF apps never expose their internal API calls to browser network capture]]
+- [[Playwright full-nav detection needs a JS-heap marker not URL compare]]
+- [[Trace tool folder-drill waits 3min because folder view lacks Documents-Custom counters]]
+- [[Mixing sync and async Playwright requires separate threads]]
+
+%% ai-graph-end %%

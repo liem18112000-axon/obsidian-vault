@@ -1,10 +1,18 @@
 ---
-title: "Rate-limit a Facebook scraper by profiles-per-day, not lifetime total"
+ai_hash: e76b1b811ad0b5a9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-14
 status: seedling
-source: "fb-info-project session 2026-06-14"
-tags: [facebook, scraping, rate-limiting, anti-block]
+tags:
+- facebook
+- scraping
+- rate-limiting
+- anti-block
+title: Rate-limit a Facebook scraper by profiles-per-day, not lifetime total
+type: lesson
 ---
 
 # Rate-limit a Facebook scraper by profiles-per-day, not lifetime total
@@ -20,3 +28,12 @@ Applied in [[Offline signed-token licensing for distributed binaries]] (the lice
 ## Related
 
 - [[Offline signed-token licensing for distributed binaries]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Row-per-event output breaks row-count quota accounting]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+- [[scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile]]
+
+%% ai-graph-end %%

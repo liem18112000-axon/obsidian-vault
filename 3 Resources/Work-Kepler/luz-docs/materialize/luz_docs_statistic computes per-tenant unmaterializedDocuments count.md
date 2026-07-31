@@ -1,10 +1,18 @@
 ---
-title: "luz_docs_statistic computes per-tenant unmaterializedDocuments count"
+ai_hash: acf1300f8c8788e3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: reference
+entities: []
+source: luz_docs materialize-gate reliability research, 2026-07-15
 status: seedling
-source: "luz_docs materialize-gate reliability research, 2026-07-15"
-tags: [luz-docs, microservice, reference, statistics]
+tags:
+- luz-docs
+- microservice
+- reference
+- statistics
+title: luz_docs_statistic computes per-tenant unmaterializedDocuments count
+type: reference
 ---
 
 # luz_docs_statistic computes per-tenant unmaterializedDocuments count
@@ -19,3 +27,14 @@ Caveat found: luz_docs_statistic's unmaterialized filter checks 4 fields (_isPub
 
 - [[Migration campaign status can silently drift from real document state]]
 - [[Fan-out gate and backfill filter must cover the same field set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_statistic unmaterializedDocuments metric counts docs missing any materialize sentinel field]]
+- [[Migration campaign status can silently drift from real document state]]
+- [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
+- [[totalFolders needs a second aggregate because a $facet pipeline is bound to one collection]]
+- [[Stale-materialized detection recomputes MaterializeCompute state via $lookup inside the statistic $facet]]
+
+%% ai-graph-end %%

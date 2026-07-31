@@ -1,10 +1,19 @@
 ---
-title: "tiktoken downloads its BPE vocab on first use"
+ai_hash: f75a96c43098160c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: session 2026-06-17
 status: seedling
-source: "session 2026-06-17"
-tags: [python, tiktoken, offline, llm, gotcha]
+tags:
+- python
+- tiktoken
+- offline
+- llm
+- gotcha
+title: tiktoken downloads its BPE vocab on first use
+type: lesson
 ---
 
 # tiktoken downloads its BPE vocab on first use
@@ -16,3 +25,10 @@ tags: [python, tiktoken, offline, llm, gotcha]
 ## Related
 
 - [[Python embeddable distribution needs import site enabled for pip]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Python embeddable distribution needs import site enabled for pip]]
+
+%% ai-graph-end %%

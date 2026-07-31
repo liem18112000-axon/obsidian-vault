@@ -1,10 +1,21 @@
 ---
-title: "pptxgenjs addImage stretches when w/h aspect drifts from the real image — read PNG IHDR size"
+ai_hash: 20b8e9c5f8367106
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: lesson
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [pptxgenjs, pptx, images, aspect-ratio, gotcha, nodejs]
+tags:
+- pptxgenjs
+- pptx
+- images
+- aspect-ratio
+- gotcha
+- nodejs
+title: pptxgenjs addImage stretches when w/h aspect drifts from the real image — read
+  PNG IHDR size
+type: lesson
 ---
 
 # pptxgenjs addImage stretches when w/h aspect drifts from the real image — read PNG IHDR size
@@ -33,3 +44,14 @@ Found while building the Claude Hooks & Skills deck (`C:\Users\dvtliem\.claude\d
 ## Related
 
 - [[3 Resources/AI/Claude-Code/pptx/QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Full-bleed slide images need ~169 aspect or their text renders too small]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+- [[QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
+- [[LibreOffice headless convert-to leaves soffice.bin locking the source file — silent stale writes]]
+
+%% ai-graph-end %%

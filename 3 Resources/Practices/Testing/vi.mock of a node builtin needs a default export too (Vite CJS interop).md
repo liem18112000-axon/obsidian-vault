@@ -1,10 +1,20 @@
 ---
-title: "vi.mock of a node: builtin needs a default export too (Vite CJS interop)"
+ai_hash: 5d4a06188f661c7b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: lesson
+entities: []
+source: session 2026-07-01 (Vinnstack test setup)
 status: seedling
-source: "session 2026-07-01 (Vinnstack test setup)"
-tags: [vitest, mocking, vite, nodejs, gotcha, testing]
+tags:
+- vitest
+- mocking
+- vite
+- nodejs
+- gotcha
+- testing
+title: 'vi.mock of a node: builtin needs a default export too (Vite CJS interop)'
+type: lesson
 ---
 
 # vi.mock of a node: builtin needs a default export too (Vite CJS interop)
@@ -20,3 +30,14 @@ vi.mock("node:child_process", () => ({ execFile: vi.fn(), default: { execFile: v
 Use `vi.hoisted` for the shared mock object so it exists before the hoisted `vi.mock` factory runs and you can assert on the same fns in tests.
 
 Surfaced setting up Vitest for Vinnstack (mocking node:fs / node:child_process in config.ts tests).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vi.mock factory must return every named export the SUT imports]]
+- [[mockReset does not reliably restore a vi.hoisted factory implementation]]
+- [[vi.clearAllMocks() does not undo a prior mockReturnValue]]
+- [[vi.fn with a zero-arg default locks the mock to a zero-arg signature]]
+- [[Test module-load env decisions with vi.resetModules plus dynamic import per case]]
+
+%% ai-graph-end %%

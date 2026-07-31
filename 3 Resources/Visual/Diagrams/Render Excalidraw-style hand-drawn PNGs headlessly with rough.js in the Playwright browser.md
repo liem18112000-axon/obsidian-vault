@@ -1,10 +1,22 @@
 ---
-title: "Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser"
+ai_hash: 93006f73c660f4db
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-25
-type: howto
+entities: []
+source: session 2026-07-25
 status: seedling
-source: "session 2026-07-25"
-tags: [excalidraw, roughjs, playwright, canvas, png, diagrams, technique]
+tags:
+- excalidraw
+- roughjs
+- playwright
+- canvas
+- png
+- diagrams
+- technique
+title: Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright
+  browser
+type: howto
 ---
 
 # Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser
@@ -24,3 +36,14 @@ Best paired with generating the matching `.drawio` (mxGraph XML) and `.excalidra
 ## Related
 
 - [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+- [[Rasterize SVG to PNG offline with Node sharp (and Excalidraw via hand-SVG)]]
+- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
+- [[Excalimate export is browser-only; headless export needs Playwright + share URL]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+
+%% ai-graph-end %%

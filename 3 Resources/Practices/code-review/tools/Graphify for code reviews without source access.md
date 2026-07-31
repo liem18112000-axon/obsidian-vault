@@ -1,9 +1,17 @@
 ---
-title: "Graphify for code reviews without source access"
+ai_hash: 3db75bb26a8b2b5f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: technique
+entities: []
 status: seedling
-tags: [code-review, graphify, architecture, luz-docs]
+tags:
+- code-review
+- graphify
+- architecture
+- luz-docs
+title: Graphify for code reviews without source access
+type: technique
 ---
 
 # Graphify for code reviews without source access
@@ -25,3 +33,10 @@ Works best for: architecture reviews, coupling assessment, layer integrity check
 
 - [[Code review patterns]]
 - [[Materialize feature architecture]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

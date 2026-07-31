@@ -1,10 +1,19 @@
 ---
-title: "jsdelivr gh CDN can pin to an exact commit SHA, not just tags/branches"
+ai_hash: d9afa3b063c7cd26
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: technique
+entities: []
+source: virtual-avatar session 2026-07-11, static/index.html
 status: seedling
-source: "virtual-avatar session 2026-07-11, static/index.html"
-tags: [jsdelivr, cdn, versioning, github, dependency-management]
+tags:
+- jsdelivr
+- cdn
+- versioning
+- github
+- dependency-management
+title: jsdelivr gh CDN can pin to an exact commit SHA, not just tags/branches
+type: technique
 ---
 
 # jsdelivr gh CDN can pin to an exact commit SHA, not just tags/branches
@@ -19,3 +28,12 @@ Concrete case: `met4citizen/TalkingHead`'s last tagged release (`v1.7.0`, publis
 
 - [[Ready Player Me shut down Jan 2026 after Netflix acquisition]]
 - [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
+- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
+- [[TalkingHead speakAudio never decodes a single ArrayBuffer before playback]]
+
+%% ai-graph-end %%

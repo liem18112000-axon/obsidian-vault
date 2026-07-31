@@ -1,10 +1,19 @@
 ---
-title: "Stimulsoft billingDetail mrt already had the Menge/Quantity column and Calc columns"
+ai_hash: 5a8913751d0776e7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: session 2026-06-23 LUZ Detailnachweis aggregation
 status: seedling
-source: "session 2026-06-23 LUZ Detailnachweis aggregation"
-tags: [stimulsoft, reporting, luz_store, gotcha]
+tags:
+- stimulsoft
+- reporting
+- luz_store
+- gotcha
+title: Stimulsoft billingDetail mrt already had the Menge/Quantity column and Calc
+  columns
+type: lesson
 ---
 
 # Stimulsoft billingDetail mrt already had the Menge/Quantity column and Calc columns
@@ -25,3 +34,12 @@ So the whole change was Java-side (aggregate the billings list); **no .mrt and n
 ## Related
 
 - [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+- [[Aggregation collapses rows only if the key excludes per-record-unique fields]]
+- [[Copy shared model objects before aggregating them for a view]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Producer/consumer overlap only saves min(producer, consumer) time"
+ai_hash: e683a914d5303fcb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: fb-info-project pipeline design 2026-06-14
 status: seedling
-source: "fb-info-project pipeline design 2026-06-14"
-tags: [concurrency, pipeline, performance, design]
+tags:
+- concurrency
+- pipeline
+- performance
+- design
+title: Producer/consumer overlap only saves min(producer, consumer) time
+type: lesson
 ---
 
 # Producer/consumer overlap only saves min(producer, consumer) time
@@ -24,3 +32,13 @@ Concrete case: fb-info-project's scrape (comment-collection ≈70 min vs profile
 ## Related
 
 - [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mixing sync and async Playwright requires separate threads]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+- [[Concurrency-bound single-primary Mongo reads indexes stop helping; recognize by bimodal latency]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+
+%% ai-graph-end %%

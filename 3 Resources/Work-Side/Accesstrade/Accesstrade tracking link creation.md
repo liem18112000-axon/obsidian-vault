@@ -1,19 +1,23 @@
 ---
-title: Accesstrade tracking link creation
-created: 2026-06-11
-type: howto
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - tracking-link
-  - howto
+ai_hash: c351032ef2989f97
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade product_link create
-  - Accesstrade deep link
-  - Accesstrade affiliate link API
+- Accesstrade product_link create
+- Accesstrade deep link
+- Accesstrade affiliate link API
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- tracking-link
+- howto
+title: Accesstrade tracking link creation
+type: howto
 ---
 
 # Accesstrade tracking link creation
@@ -59,3 +63,14 @@ On the global **OBS** generation there is no `product_link/create`; the quicklin
 - [[Use case - bulk tracking link generation]]
 - [[Accesstrade Campaigns API]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade Creative APIs]]
+- [[Use case - bulk tracking link generation]]
+- [[Accesstrade SubID attribution]]
+- [[Accesstrade Campaigns API]]
+- [[Accesstrade classic campaign campaign_id is the numeric id, raw.merchant is the slug]]
+
+%% ai-graph-end %%

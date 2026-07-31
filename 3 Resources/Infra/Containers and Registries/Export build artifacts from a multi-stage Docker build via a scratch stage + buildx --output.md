@@ -1,10 +1,20 @@
 ---
-title: "Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output"
+ai_hash: 36c4c4bbb677d0bd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-04
-type: howto
+entities: []
+source: session 2026-06-04 leo-cdp-framework
 status: seedling
-source: "session 2026-06-04 leo-cdp-framework"
-tags: [docker, buildx, ci, testing, gotcha]
+tags:
+- docker
+- buildx
+- ci
+- testing
+- gotcha
+title: Export build artifacts from a multi-stage Docker build via a scratch stage
+  + buildx --output
+type: howto
 ---
 
 # Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output
@@ -22,3 +32,14 @@ Because the stage is built on `scratch`, `--output type=local` writes ONLY those
 ## Related
 
 - [[GitHub Actions Docker build and publish]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[dorny test-reporter hard-fails when zero report files match]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Trivy scan-before-push needs a single-arch load build first]]
+- [[BuildKit honors a per-Dockerfile .dockerignore]]
+- [[pytest results into a GitHub Actions build via dorny test-reporter]]
+
+%% ai-graph-end %%

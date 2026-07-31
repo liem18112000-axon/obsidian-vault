@@ -1,10 +1,19 @@
 ---
-title: "gcloud add-iam-policy-binding requires --condition=None when policy has conditional bindings"
+ai_hash: aa1bb0bdaf4865c2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: session 2026-07-07
 status: seedling
-source: "session 2026-07-07"
-tags: [gcp, gcloud, iam, gotcha]
+tags:
+- gcp
+- gcloud
+- iam
+- gotcha
+title: gcloud add-iam-policy-binding requires --condition=None when policy has conditional
+  bindings
+type: lesson
 ---
 
 # gcloud add-iam-policy-binding requires --condition=None when policy has conditional bindings
@@ -27,3 +36,13 @@ Applies to any `add-iam-policy-binding` call (projects, folders, orgs) once the 
 ## Related
 
 - [[klara-nonprod is the GCP project for non-prod Artifact Registry IAM]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[klara-nonprod is the GCP project for non-prod Artifact Registry IAM]]
+- [[artifactregistry.repoAdmin cannot grant IAM despite the name]]
+- [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+- [[IAM roles a CI service account needs to build and deploy to Cloud Run]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Vinnstack is local-only by design: spawned-CLI login + local FS state + single-tenant"
+ai_hash: 4cbdc1af862cb12c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: argument
+entities: []
+source: session 2026-07-01 (doc/why-local-only.md)
 status: seedling
-source: "session 2026-07-01 (doc/why-local-only.md)"
-tags: [vinnstack, architecture, deployment, local-first, design-decision]
+tags:
+- vinnstack
+- architecture
+- deployment
+- local-first
+- design-decision
+title: 'Vinnstack is local-only by design: spawned-CLI login + local FS state + single-tenant'
+type: argument
 ---
 
 # Vinnstack is local-only by design: spawned-CLI login + local FS state + single-tenant
@@ -18,3 +27,14 @@ Vinnstack is an "Agentic Operation System" deliberately built as a **single-oper
 5. **Single-tenant** — one operator's creds/vault/login; no multi-tenant isolation.
 
 Web-deployable would be a different product: API-key auth instead of CLI login, per-user datastore for all FS state, multi-tenant secret isolation, async jobs for the long runs, and brokered least-privilege dev tooling. Documented in repo doc/why-local-only.md.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Testing the packaged Vinnstack exe needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
+- [[Vinnstack ai-framework.html is aspirational, not the real code]]
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Attributing a luz_store subscription's origin from created_by, method and updated_by"
+ai_hash: 0d3e96cc79599d41
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-22
-type: howto
+entities: []
+source: session 2026-06-22 monthly->yearly PROD triage
 status: seedling
-source: "session 2026-06-22 monthly->yearly PROD triage"
-tags: [luz_store, subscriptions, incident-analysis, billing]
+tags:
+- luz_store
+- subscriptions
+- incident-analysis
+- billing
+title: Attributing a luz_store subscription's origin from created_by, method and updated_by
+type: howto
 ---
 
 # Attributing a luz_store subscription's origin from created_by, method and updated_by
@@ -24,3 +32,14 @@ Corollary for reconstructing a tenants plan *over time*: use the **`billing` tab
 
 - [[A luz_store subscription changes billing period only by new-row or direct DB write]]
 - [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A luz_store subscription changes billing period only by new-row or direct DB write]]
+- [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+- [[luz_store product.price_plans is a joined string that constrains a subscription's allowed plans]]
+- [[luz_store company_uri format and marketing-code price-plan suffixes]]
+- [[luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable]]
+
+%% ai-graph-end %%
