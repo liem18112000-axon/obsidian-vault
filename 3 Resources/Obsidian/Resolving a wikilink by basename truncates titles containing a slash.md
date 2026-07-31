@@ -9,9 +9,9 @@ tags: [obsidian, wikilinks, tooling, gotcha]
 
 # Resolving a wikilink by basename truncates titles containing a slash
 
-When writing a link checker, the natural fallback for `[[Some Note]]` is "match the last path segment against every note basename". That fallback is wrong whenever the **link target itself contains a slash**, because `os.path.basename()` chops the title at that slash.
+When writing a link checker, the natural fallback for a `[[Some Note]]` target is "match the last path segment against every note basename". That fallback is wrong whenever the **link target itself contains a slash**, because `os.path.basename()` chops the title at that slash.
 
-`[[Facebook /share/v/ links can resolve to reels]]` reduces to `" links can resolve to reels"`, which matches nothing — or worse, matches the wrong note.
+The target `[[Facebook /share/v/ links can resolve to reels]]` reduces to `" links can resolve to reels"`, which matches nothing — or worse, matches the wrong note.
 
 The reason slashes appear inside titles at all: Obsidian (and note-creation scripts) strip `/` and other illegal characters from the **filename**, while the human-written link and the `title:` frontmatter keep them. So the on-disk file is `Facebook sharev links can resolve to reels.md` and the link says `Facebook /share/v/ links...`. They are the same note.
 

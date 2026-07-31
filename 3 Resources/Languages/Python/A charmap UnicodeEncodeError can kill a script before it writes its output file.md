@@ -26,5 +26,4 @@ and **write data files before printing human output**, so a formatting crash can
 
 ## Related
 
-- [[Windows Python resolves a leading-slash path to C-colon-tmp]]
-- [[not Git Bash tmp]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
