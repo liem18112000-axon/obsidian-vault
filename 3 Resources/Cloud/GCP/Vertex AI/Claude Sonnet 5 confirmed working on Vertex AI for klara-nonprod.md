@@ -24,5 +24,4 @@ See [[Vertex AI global endpoint host has no region prefix]] and [[Vertex AI Mode
 ## Related
 
 - [[Vertex AI global endpoint host has no region prefix]]
-- [[Vertex AI Model Garden enablement and quota are separate]]
-- [[per-model steps]]
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]

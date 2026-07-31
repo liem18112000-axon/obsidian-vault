@@ -21,12 +21,10 @@ Effect: the two gates naturally **alternate** across a session, and the deferrin
 
 Concrete instance: `simplify-gate` (minimize code) + `reusable-gate` (DRY/reuse review of newly-added code) at `C:\Users\dvtliem\.claude\hooks\`. `reusable-gate` fires when cumulative files > 2 OR lines > 3, capped at `maxLoops`, and carries an `ignore` substring list (`\node_modules\`, `\.venv\`, `\site-packages\`, `\dist\`, `\build\`, `\target\`, `.min.js`, â€¦) so its review never reaches into dependencies/vendored/generated/build output â€” scope stays on current-project source.
 
-Gotcha when *testing* this: see [[3 Resources/AI Tools/Claude Code/Hooks/Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]] and [[3 Resources/AI Tools/Claude Code/Hooks/PowerShell pipe appends a newline to native-command stdin, shifting any hash]].
+Gotcha when *testing* this: two separate stdin-encoding traps corrupt the payload or the hash.
 
 ## Related
 
-- [[Bash collapses backslashes before PowerShell stdin]]
-- [[breaking Windows-path JSON]]
-- [[PowerShell pipe appends a newline to native-command stdin]]
-- [[shifting any hash]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
 

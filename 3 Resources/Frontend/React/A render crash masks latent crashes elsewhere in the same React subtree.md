@@ -15,8 +15,8 @@ Practical consequence for debugging: a CI/test log that reports a single render 
 
 Real case (vinnstack, 2026-07): the CI log showed only `MdExportControl` crashing at `versions.length`. Fixing it exposed a byte-for-byte identical crash in `VersionChanges` that the log had never mentioned.
 
-See also [[Guard array-typed React state seeded from a fetch with ?? []]].
+See also [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]].
 
 ## Related
 
-- [[Guard array-typed React state seeded from a fetch with ?? []]]
+- [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]

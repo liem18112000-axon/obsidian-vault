@@ -1,24 +1,32 @@
 ---
 title: "vi.mock factory must return every named export the SUT imports"
-created: 2026-07-26
+created: 2026-07-03
+updated: 2026-07-26
 type: lesson
 status: seedling
-source: "vinnstack cloud-build fix, session 2026-07-26"
-tags: [vitest, testing, mocking, gotcha]
+source: "vinnstack 2026-07-03 subject generalization; vinnstack cloud-build fix 2026-07-26"
+tags: [vitest, testing, mocking, typescript, gotcha]
 ---
 
 # vi.mock factory must return every named export the SUT imports
 
-A vitest `vi.mock("@/module", () => ({ ... }))` factory must return EVERY named export that the module-under-test imports from that module — not just the ones your test asserts on. Vitest defines each returned key as a getter; accessing an export the factory omitted throws at access time:
+`vi.mock("@/module", () => ({ ... }))` replaces the **whole** module. Vitest defines each returned key as a getter, so the moment the module-under-test imports an export the factory omitted, it throws at access time:
 
 `Error: [vitest] No "X" export is defined on the "@/module" mock. Did you forget to return it from "vi.mock"?`
 
-This bites when the SUT gains a NEW import over time (e.g. a route starts importing `DEFAULT_EFFORT_BY_KIND`) but the older mock factory is not updated. The failure surfaces only in the code paths that touch the new export.
+Why it bites: the factory is written once while the SUT keeps gaining imports (a new constant like `DEFAULT_EFFORT_BY_KIND`, a tiny pure type-guard). Nothing checks the factory against the SUT's import list, so the failure lands later — either only on the code paths touching the new export, or at **collection** time (file reports 0 tests) with the error pointing at the *production* file's import line.
 
-Key constraint: you cannot fix it by importing the real export into the factory — that loads the real module and defeats the mock. Mirror a representative literal value inline instead (a small subset is fine; the real thing is covered by that module`s own unit test).
+**Fixes, best first**
+- **Partial mock** — `vi.mock("m", async (importOriginal) => ({ ...(await importOriginal()), justTheFn: vi.fn() }))`. Future exports keep working automatically; best for broad modules.
+- **Real (or inline-copied) implementation for pure helpers** — validators, formatters — so validation behavior in the route under test stays honest.
+- **Mirror a representative literal inline** for data constants. Do NOT `import` the real export inside the factory: that loads the real module and defeats the mock. A small subset value is fine; the real thing is covered by that module's own unit test.
 
-See also [[When a merge turns CI red decide test-vs-source fix by reading code intent]].
+Adjacent churn from the same change: adding an optional trailing parameter to a mocked function makes `toHaveBeenCalledWith(a, b, c)` fail because the call site now passes `undefined` as a 4th arg — assert the explicit `undefined`.
+
+Node builtins are a special case: the factory must ALSO return `default` — see [[vi.mock of a node builtin needs a default export too (Vite CJS interop)]].
 
 ## Related
 
+- [[vi.mock of a node builtin needs a default export too (Vite CJS interop)]]
+- [[vi.fn with a zero-arg default locks the mock to a zero-arg signature]]
 - [[When a merge turns CI red decide test-vs-source fix by reading code intent]]

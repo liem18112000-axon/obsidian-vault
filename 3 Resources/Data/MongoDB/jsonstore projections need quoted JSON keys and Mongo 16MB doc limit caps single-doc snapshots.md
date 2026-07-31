@@ -18,4 +18,4 @@ Two constraints for raw jsonstore / Mongo plumbing in luz_docs:
 ## Related
 
 - [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
-- [[Mongo pipeline no-op updates trigger SC_MULTI_STATUS in luz_jsonstore - not retryable]]
+- [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]

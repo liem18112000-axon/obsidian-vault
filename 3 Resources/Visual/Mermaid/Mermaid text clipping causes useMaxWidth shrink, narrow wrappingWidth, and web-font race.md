@@ -19,9 +19,9 @@ Mermaid diagram text that appears cut off or shrunk to unreadable size usually t
 
 4. **Separately: if a custom `fontFamily` in `themeVariables` hasn't finished loading when `mermaid.render()` first runs, Mermaid measures label text against the browser's fallback font to size nodes — then the real (usually wider) font paints after it loads, overflowing the box it was sized for.** Await `document.fonts.ready` before the first render call to eliminate this race.
 
-## Why `htmlLabels: false` matters here at all
-
-`htmlLabels: false` is often chosen NOT for text-wrapping reasons but to fix a completely different bug: an SVG containing `<foreignObject>` (which is how Mermaid's default HTML labels are embedded) permanently taints an HTML `<canvas>` the instant it's drawn onto it — `canvas.toBlob()`/`toDataURL()` then throw, even from a same-origin `blob:` URL. So "copy diagram as PNG" breaks silently on every diagram with a text label if `htmlLabels` is left at its default `true`. If you need both PNG export AND well-wrapped text, you're stuck reconciling causes #1-3 (SVG-text wrapping) rather than reverting to HTML labels.
+Why you'd be on `htmlLabels: false` at all: it is usually set to keep canvas PNG export working (see [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]), not for wrapping reasons. So if you need both PNG export AND well-wrapped text, you must reconcile causes #1–3 rather than reverting to HTML labels.
 
 ## Related
-- [[Decouple internal PK from external ticket ID for draft-before-push records]]
+
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]

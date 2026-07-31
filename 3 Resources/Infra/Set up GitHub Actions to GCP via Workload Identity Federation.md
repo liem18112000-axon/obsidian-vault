@@ -25,4 +25,4 @@ Idempotency: guard each create with a `describe || create`; `add-iam-policy-bind
 
 Key-JSON fallback (discouraged, long-lived): skip WIF, create a SA key, `gh secret set GCP_CREDENTIALS_JSON < key.json`, and the auth step uses `credentials_json` instead. Prefer WIF.
 
-Relates to [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]] (WIF is the 'external CI' answer) and [[Gate a GitHub Actions job on secret presence via a preflight job output]].
+Relates to [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]] (WIF is the 'external CI' answer) and [[secrets context is not available in GitHub Actions if conditions]].

@@ -18,10 +18,7 @@ The compliant path for building something served to your own end users (customer
 Practical implication: before designing any app that assumes "I have a Claude subscription, I'll just use that as the backend," check whether anyone other than the subscriber will be sending requests through it. If yes, that's the forbidden scenario and you need API billing instead. This policy is recent and Anthropic reserves the right to tighten enforcement further without notice, so re-check the live docs page before finalizing any architecture that depends on this.
 
 ## Related
-- [[Claude models are available on GCP Vertex AI Model Garden]]
-- [[Virtual avatar presenter project design plan]]
-
-## Related
 
 - [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
 - [[Virtual avatar presenter project design plan]]

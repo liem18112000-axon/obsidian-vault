@@ -23,4 +23,4 @@ When a Facebook scraping session is logged out or its saved cookies have expired
 ## Related
 
 - [[Facebook reel comments are hidden behind the comment icon]]
-- [[Scrolling a Facebook reel page must target the comment panel, not the video]]
+- [[Scroll Facebook reel comments via JS, never mouse.wheel]]

@@ -17,4 +17,4 @@ Useful companion pattern — a **self-closing reminder issue** for a recurring '
 - When the good state is reached: close that issue with a comment. → the nag is created once, refreshed while relevant, and disappears on its own.
 - Surface a human-readable status via `>> "$GITHUB_STEP_SUMMARY"` and `::warning::` annotations.
 
-Build issue bodies with `echo ... > file` + `gh issue create --body-file`, NOT a heredoc — an indented closing `EOF` inside a YAML `run: |` block won't terminate the heredoc. Relates to [[Gate a GitHub Actions job on secret presence via a preflight job output]].
+Build issue bodies with `echo ... > file` + `gh issue create --body-file`, NOT a heredoc — an indented closing `EOF` inside a YAML `run: |` block won't terminate the heredoc. Relates to [[secrets context is not available in GitHub Actions if conditions]].

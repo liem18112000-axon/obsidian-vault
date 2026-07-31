@@ -15,4 +15,4 @@ Contrast with call-time reads (`const configured = () => !!process.env.X`): thos
 
 ## Related
 
-- [[vi.mock module factories break when prod code imports a new export]]
+- [[vi.mock factory must return every named export the SUT imports]]

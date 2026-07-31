@@ -27,8 +27,8 @@ Takeaways:
 
 Method gotcha: K is a server config (`LUZ_DOCS_MATERIALIZE_COUNT_FANOUT_PARTITIONS`), not a request param — sweeping it means patch configmap + rollout restart per K.
 
-Related: [[Fan-out count is only faster if the shard field is the index trailing key]]
-
 ## Related
 
 - [[Fan-out count is only faster if the shard field is the index trailing key]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]

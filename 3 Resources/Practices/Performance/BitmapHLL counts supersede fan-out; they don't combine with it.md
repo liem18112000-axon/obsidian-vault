@@ -22,10 +22,9 @@ Gotchas:
 - You CANNOT precompute a single per-doc `_isVisible` flag, because visibility depends on the QUERYING users code set, not a fixed property. That per-user union is exactly what bitmaps solve and why index-coverage alone does not remove the amplification for the multi-code `$in`.
 - HLL is mergeable and tiny but APPROXIMATE (+/-1-2%); for a security count an under-count is access-leak-shaped, so HLL is only safe for a cosmetic badge.
 
-Related: [[Shard count fan-out: most of the win is at K=4, diminishing returns after]] · [[Fan-out count is only faster if the shard field is the index trailing key]] · [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
-
 ## Related
 
-- [[Shard count fan-out: most of the win is at K=4]]
-- [[diminishing returns after]]
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[Fan-out count is only faster if the shard field is the index trailing key]]
 - [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]

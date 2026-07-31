@@ -1,45 +1,50 @@
 ---
 title: "CDI self-invocation bypasses interceptor proxy"
 created: 2026-06-03
-type: lesson
+type: gotcha
 status: seedling
-source: "luz_docs session 2026-06-03 LUZ-154159"
-tags: [java, cdi, microprofile-fault-tolerance, quarkus, spring, gotcha, luz-docs]
+tags: [java, cdi, microprofile, microprofile-fault-tolerance, fault-tolerance, quarkus, spring, code-review, gotcha, luz-docs]
+entities: ["@Retry", "@Fallback", "@CircuitBreaker", "@Timeout", "@Transactional", "@CacheResult", "@Inject self", AopContext.currentProxy]
 ---
 
 # CDI self-invocation bypasses interceptor proxy
 
-In CDI (Weld, OpenWebBeans, Quarkus ArC), method-level interceptor bindings such as `@Retry`, `@Fallback`, `@CircuitBreaker`, `@Timeout`, and `@Transactional` only fire when the call goes through the beans **CDI proxy**. A direct `this.foo(...)` call inside the same class is a plain Java invocation — it never touches the proxy, so none of the interceptors run.
+Method-level interceptor bindings — MicroProfile Fault Tolerance `@Retry`, `@Fallback`, `@Timeout`, `@CircuitBreaker`, plus `@Transactional`, `@CacheResult`, and any custom interceptor — only fire when the call goes through the bean's **CDI client proxy**. A bare `this.foo(...)` (or implicit `foo(...)`) call from a sibling method of the same bean is a plain Java invocation: the interceptor never runs.
 
-**Symptom — silent failure.** The code compiles, looks correct, and works on the happy path. Under transient failure, the retry / fallback / circuit-breaker simply does not activate. Bugs only surface in production-shape error scenarios.
+**Symptom — silent inertness.** Annotation present, code compiles, happy path fine, tests pass. Under failure the retry/fallback/circuit-breaker simply never activates; nothing in the logs. Plain Mockito unit tests can't catch it either (no container = no interceptor either way).
 
-**Fix — inject self.** Inject the bean into itself and call the decorated method through the injected reference:
+**Fix — inject self and call through the proxy:**
 
 ```java
 @ApplicationScoped
 class MyService {
-    @Inject
-    private MyService self; // CDI hands back the proxy
+    @Inject private MyService self;              // CDI hands back the proxy
 
     void publicEntry(...) {
-        self.retriedMethod(...); // goes through proxy → @Retry applies
+        self.retriedMethod(...);                 // → @Retry/@Fallback apply
     }
 
     @Retry(retryOn = SomeException.class)
     @Fallback(fallbackMethod = "fallback")
     Result retriedMethod(...) { ... }
-
-    Result fallback(...) { ... }
 }
 ```
 
-**When this matters.** Any time the decorated method needs to be called from a sibling method of the same `@ApplicationScoped` / `@RequestScoped` / `@Dependent` bean. Cross-bean calls (Facade → Service) already go through the proxy and do not need self-injection.
+Alternatives: move the annotated method to another bean, or hand-roll the logic — see [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]. Cross-bean calls (Facade → Service) already go through the proxy and need nothing.
 
-**Discovered while** wiring snapshot + retry + rollback into `MaterializeFolderParentChangeService.onFolderParentChange` → `cascadeWithRetry` on the luz_docs LUZ-154159 branch. The first attempt placed `@Retry` + `@Fallback` on `cascadeWithRetry` and called it via `this`; the fallback never fired in failure tests until the `@Inject self` was added.
+**Review smell:** an `@Retry`/`@Fallback`/`@Async`/`@Transactional` method whose only callers are in the same class. Grep for intra-class calls to annotated methods.
 
-**Same trap exists in Spring.** `@Transactional`, `@Cacheable`, `@Async`, `@Retryable` (Spring Retry) use AOP proxies — same self-invocation gotcha, same workaround (inject self via `@Lazy` self-reference or call through `AopContext.currentProxy()`).
+**Caveat — Weld is the exception.** WildFly's Weld uses *subclass-based* interception, so self-invocation IS intercepted there; the proxy rule is the portable/spec guarantee. See [[Weld subclass-based interception makes self-invocation intercepted]].
+
+**Same trap in Spring AOP** — `@Transactional`, `@Cacheable`, `@Async`, `@Retryable` (Spring Retry); same workaround (`@Lazy` self-reference or `AopContext.currentProxy()`).
+
+Hit repeatedly in luz_docs: LUZ-154159 `MaterializeFolderParentChangeService.onFolderParentChange` (fallback dead until `@Inject self`; also `getSnapshot(...)` still called via `this` on the next line, killing its `@Retry` *and* its `@Fallback` 500-mapping), LUZ-154804 `MaterializeCascadeService.rematerializeDocument` (annotations deleted as inert), LUZ-156856 `MaterializeGate`/`ParallelizeGate` `@Fallback(fallbackMethod = "isCompletedCheckL2")` on `isCompletedCheckL1`.
 
 ## Related
 
+- [[Weld subclass-based interception makes self-invocation intercepted]]
+- [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]
+- [[MicroProfile Fallback is dead in plain Mockito unit tests]]
 - [[MicroProfile Fault Tolerance]]
 - [[luz-docs materialize cascade]]
+- [[luz_docs materialize passive retry via cascade markers]]

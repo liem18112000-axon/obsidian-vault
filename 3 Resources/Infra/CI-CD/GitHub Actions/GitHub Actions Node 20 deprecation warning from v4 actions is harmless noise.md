@@ -23,4 +23,4 @@ Don't confuse this notice with a real failure on the same step — e.g. an artif
 
 ## Related
 
-- [[GitHub Actions artifact storage quota: use short retention-days on handoff artifacts]]
+- [[GitHub Actions artifact quota is org-wide; Release assets bypass it]]

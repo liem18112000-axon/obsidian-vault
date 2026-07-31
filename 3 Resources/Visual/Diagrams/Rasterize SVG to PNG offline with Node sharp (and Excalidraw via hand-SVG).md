@@ -23,5 +23,4 @@ See [[Windows convert is NTFS convert.exe, not ImageMagick]].
 
 ## Related
 
-- [[Windows convert is NTFS convert.exe]]
-- [[not ImageMagick]]
+- [[Windows convert is NTFS convert.exe, not ImageMagick]]

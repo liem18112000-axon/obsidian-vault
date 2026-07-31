@@ -17,4 +17,4 @@ State derivation in the converter: CONFIRMED/REFUNDED/PARTIALLY_REFUNED → SUCC
 
 ## Related
 - [[DECLINED status falls through invoice charge-failure handling in luz_store]]
-- [[Payrexx decline codes are ISO 8583 issuer codes from the card-issuing bank]]
+- [[Payrexx ISO 8583 decline code to meaning reference table]]

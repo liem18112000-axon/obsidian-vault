@@ -13,9 +13,9 @@ A Claude Code hook receives only session metadata on stdin (`session_id`, `trans
 
 **Workaround:** read the file at `transcript_path` (JSONL). Each assistant entry has `message.usage` with `input_tokens`, `cache_read_input_tokens`, and `cache_creation_input_tokens`; their sum is the live context size. Detect the window from the model id (a `1m`/`[1m]` tag means the 1M window, else 200K) and compute the percentage yourself. Walk only the tail (e.g. last 300 lines) for the most recent usage entry to stay cheap.
 
-**How to apply:** this is how `handoff-context-check.ps1` decides when to prompt for a /session-handoff. See [[3 Resources/AI Tools/Claude Code/Hooks/Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]].
+**How to apply:** this is how `handoff-context-check.ps1` decides when to prompt for a /session-handoff. See [[Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]].
 
 ## Related
 
-- [[3 Resources/AI Tools/Claude Code/Hooks/Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]]
+- [[Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]]
 

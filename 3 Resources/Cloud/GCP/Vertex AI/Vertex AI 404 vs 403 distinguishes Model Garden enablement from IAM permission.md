@@ -20,5 +20,4 @@ Confirmed by cross-testing the identical model+region combo across two GCP proje
 ## Related
 
 - [[consumerprocurement.entitlementManager grants Marketplace entitlement acceptance]]
-- [[Vertex AI Model Garden enablement and quota are separate]]
-- [[per-model steps]]
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]

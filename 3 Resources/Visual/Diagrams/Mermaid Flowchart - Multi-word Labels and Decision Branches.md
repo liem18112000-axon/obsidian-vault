@@ -1,19 +1,41 @@
 ---
 title: "Mermaid Flowchart - Multi-word Labels and Decision Branches"
 created: 2026-07-08
+updated: 2026-07-31
 type: howto
 status: seedling
-tags: [mermaid, diagram, flowchart, syntax]
+source: "session 2026-07-08"
+tags: [mermaid, diagram, diagrams, flowchart, syntax]
 ---
 
 # Mermaid Flowchart - Multi-word Labels and Decision Branches
 
-Mermaid flowchart nodes support multi-word labels natively — no escaping needed. Use square brackets for rectangular nodes and curly braces for diamond decision nodes. Edge labels go between pipes.
+Mermaid flowchart node labels support multi-word text natively — spaces inside the bracket delimiters need no escaping or quoting. Branch logic is expressed purely by edge syntax, so a whole decision tree needs no extra directives.
 
-Key syntax reference:
-- [Label text] — rectangle node (process step)
-- {Decision text} — diamond node (branch point)
-- -->|Edge label| — labeled directed edge
-- flowchart TD — top-down layout; use LR for left-to-right
+## Syntax
 
-Decisions loop back by reusing a node ID (e.g. D --> B sends the unauthenticated path back to a previous check node).
+| Element | Syntax | Use |
+|---|---|---|
+| Rectangle | `[Multi word label]` | Process / step |
+| Diamond | `{Is user authenticated?}` | Decision / branch |
+| Rounded | `(Label)` | Start / end |
+| Labeled edge | `A -->\|Yes\| B` | Branch condition (label between pipes) |
+| Direction | `flowchart TD` | Top-down (default); also `LR`, `BT`, `RL` |
+
+## Branching rules
+
+- Multiple outgoing edges from one node = branches.
+- Multiple incoming edges to one node = converging paths; valid with no special syntax.
+- Back-edges (reusing an earlier node ID, e.g. `D --> B`) are valid retries/loops; Mermaid renders them as curved arrows.
+
+```mermaid
+flowchart TD
+    A[Receive incoming request] --> B{Is user authenticated?}
+    B -->|Yes| C{Has sufficient permissions?}
+    B -->|No| D[Redirect to login page]
+    C -->|Yes| E[Process the request]
+    C -->|No| F[Show access denied error]
+    E --> G[Return successful response]
+    D --> B
+    F --> G
+```

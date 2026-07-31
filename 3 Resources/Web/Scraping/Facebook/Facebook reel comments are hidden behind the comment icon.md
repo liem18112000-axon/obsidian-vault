@@ -18,7 +18,7 @@ Once the panel is open, comments use the exact same DOM as on posts (`div[role="
 **Gotchas:**
 - The comment button is found by aria-label, which is locale-dependent (`Comment` EN / `Bình luận` VI) **and the label may carry a trailing count** — match by prefix, not equality: Playwright `get_by_label(re.compile(r"^(comment|bình luận)", re.I))`, or CSS contains `div[role="button"][aria-label*="omment" i]`.
 - If no button is found, the panel may already be open — check for `div[role="article"]` first and treat the click as best-effort, not fatal.
-- Scrolling the opened panel has its own trap — see [[Scrolling a Facebook reel page must target the comment panel, not the video]].
+- Scrolling the opened panel has its own trap — see [[Scroll Facebook reel comments via JS, never mouse.wheel]].
 
 **Design decision (fb-info-project `scraper.py`):** reel mode = post mode + an `open_reel_comments()` pre-step before the shared `collect()` flow, rather than a separate reel collector. Keeps one comment-expansion/extraction code path.
 

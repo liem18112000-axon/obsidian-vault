@@ -1,24 +1,39 @@
 ---
 title: "pytest results into a GitHub Actions build via dorny test-reporter"
-created: 2026-07-26
-type: lesson
+created: 2026-06-14
+updated: 2026-07-31
+type: howto
 status: seedling
-source: "session 2026-07-26"
-tags: [github-actions, pytest, testing, ci-cd]
+source: "fb-info-project build-exe.yml 2026-06-14; session 2026-07-26"
+tags: [github-actions, pytest, testing, ci, ci-cd]
 ---
 
 # pytest results into a GitHub Actions build via dorny test-reporter
 
-To surface pytest results inside a GitHub Actions run: pytest emits standard JUnit XML with `--junitxml=test-results/junit.xml`, then publish it with `dorny/test-reporter@v1` using `reporter: java-junit` (pytest's JUnit is compatible with the java-junit parser). This creates a Checks-tab report annotated on the build.
+Surface pytest results as a rendered **Checks-tab report** (not buried log lines): have pytest emit JUnit XML, then publish it with `dorny/test-reporter@v1` using `reporter: java-junit` — pytest's `--junitxml` output parses under the java-junit parser (there is no `pytest` reporter).
 
-Key patterns:
-- Put the publish step behind `if: always()` so the report appears even when tests FAIL (the test step already exited non-zero).
-- Set the reporter's `fail-on-error: false` and let pytest's own exit code drive job pass/fail — this also avoids hard failures on fork PRs where GITHUB_TOKEN is read-only and the reporter can't write a check.
-- The job/workflow needs `permissions: checks: write`.
+```yaml
+- name: Run tests
+  run: python -m pytest test -ra --junitxml=test-results/junit.xml
 
-Related gotcha: a workflow secret cannot be referenced in a job/step `if:` condition. To gate a job on whether a secret is configured, hoist it into `env:` first (env CAN read secrets), then branch on the env var in a run step.
+- name: Publish test report
+  uses: dorny/test-reporter@v1
+  if: always()              # publish even when the test step exited non-zero
+  with:
+    name: pytest results
+    path: test-results/junit.xml
+    reporter: java-junit
+    fail-on-error: false    # let pytest's exit code drive job pass/fail
+```
+
+Key points:
+- Needs `permissions: checks: write` at workflow/job level — the action creates a Check run.
+- `fail-on-error: false` also avoids a hard failure on **fork PRs**, where `GITHUB_TOKEN` is read-only and the reporter cannot write the check.
+- dorny/test-reporter is pure JS, so it runs on `windows-latest` — unlike `EnricoMi/publish-unit-test-result-action` (Docker/Linux-only).
+- Also `actions/upload-artifact` the XML so raw results stay downloadable.
 
 ## Related
 
-- [[GitHub Actions in a monorepo: workflows live at repo root]]
-- [[scope per project with paths filters]]
+- [[dorny test-reporter hard-fails when zero report files match]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[GitHub Actions in a monorepo workflows live at repo root, scope per project with paths filters]]

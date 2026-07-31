@@ -7,29 +7,38 @@ source: research session 2026-06-11
 tags:
   - claude-code
   - hooks
+  - accesstrade
+  - automation
   - concept
 aliases:
   - Claude hooks
   - Claude Code hook events
   - PreToolUse PostToolUse
+  - Affiliate automation hook patterns
+  - Affiliate hooks
+  - Accesstrade hook patterns
 ---
 
 # Claude Code hooks event model
 
 **Hooks are shell/HTTP commands Claude Code runs *deterministically* at defined lifecycle events — they fire whether or not the model "decides" to, which is exactly what you want for guardrails and automation that must always happen.** Where a skill is advisory (the model may or may not use it), a hook is enforced.
 
-## The events you'll actually use for affiliate work
+## Events, and the affiliate job each one does
+
+The high-value hooks fall into three jobs: **ground** Claude in fresh data, **guard** money-moving actions, **capture** outcomes.
 
 | Event | Fires when… | Affiliate use |
 |---|---|---|
+| `SessionStart` | session begins/resumes | preload campaign list; inject an earnings snapshot via `hookSpecificOutput.additionalContext` |
 | `UserPromptSubmit` | you submit a prompt | inject today's earnings snapshot as context |
-| `PreToolUse` | before a tool runs (can block) | block a link-mint to a non-`RUNNING` campaign |
-| `PostToolUse` | after a tool succeeds | log every minted link to a ledger |
-| `Stop` | Claude finishes responding | append a session summary / send digest |
-| `Notification` | Claude sends a notification | forward to Slack/Telegram |
-| `SessionStart` | session begins/resumes | preload campaign list |
+| `PreToolUse` | before a tool runs (can block) | deny `product_link/create` against a campaign that isn't `RUNNING` or that you aren't approved on — the most common cause of *unpaid* clicks |
+| `PostToolUse` | after a tool succeeds | append every minted `aff_link` + `sub1` to a CSV ledger |
+| `Stop` | Claude finishes responding | one-line session summary / trigger the daily digest skill |
+| `Notification` | Claude sends a notification | forward to Slack/Telegram/Zalo (installers for all three live in this vault) |
 
 (There are many more — `SubagentStop`, `PreCompact`, `SessionEnd`, etc.)
+
+An `http`-type handler can also act as a **postback sink**: point Accesstrade's [[Accesstrade postback and S2S conversion tracking|postback URL]] at it to enrich SubID -> content mappings and notify in real time.
 
 ## Configuration shape (`settings.json`)
 
@@ -69,10 +78,15 @@ flowchart TD
 - **Exit 2** → hard block; stderr is shown to Claude.
 - `PreToolUse` uses `hookSpecificOutput.permissionDecision` = `allow` / `deny` / `ask`.
 
+## Scheduling caveat
+
+Hooks fire on *Claude's* lifecycle, not the clock. For time-based jobs (a daily pull) use the OS scheduler or the `schedule`/`loop` skills to launch a session, and let `SessionStart`/`Stop` hooks do the wiring.
+
 ## Related
 
-- [[Affiliate automation hook patterns]]
 - [[Claude Code Skill anatomy]]
 - [[Skills vs Hooks vs MCP vs subagents]]
 - [[Accesstrade postback and S2S conversion tracking]]
+- [[Secrets handling for affiliate API keys]]
+- [[Use case - automated daily conversion digest]]
 - [[Accesstrade API Integration - MOC]]

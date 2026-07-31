@@ -26,5 +26,5 @@ Related: [[Shard count fan-out: most of the win is at K=4, diminishing returns a
 
 ## Related
 
-- [[Shard count fan-out: most of the win is at K=4]]
-- [[diminishing returns after]]
+- [[Shard count fan-out: most of the win is at K=4, diminishing returns after]]
+- [[ManagedExecutorService.execute loses CDI request context]]

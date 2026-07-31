@@ -18,6 +18,6 @@ So, two ways to 'work with Google without that error':
 2. **If you must auth from GitHub Actions** (external): provide exactly ONE of —
    - Workload Identity Federation: `workload_identity_provider` + `service_account` (job needs `permissions: id-token: write`); one-time GCP setup binds a WIF pool/provider to the repo. No long-lived key.
    - a service-account key JSON in `credentials_json`.
-   The error = BOTH were empty (unset secrets). Also: secrets are NOT passed to fork/Dependabot PRs, so those runs see empty creds — gate/skip them (see [[Gate a GitHub Actions job on secret presence via a preflight job output]]).
+   The error = BOTH were empty (unset secrets). Also: secrets are NOT passed to fork/Dependabot PRs, so those runs see empty creds — gate/skip them (see [[secrets context is not available in GitHub Actions if conditions]]).
 
 Rule of thumb: pick the runner to match the cloud. GCP work → run it in GCP (free ADC). Only reach for WIF/keys when the runner lives outside GCP. Relates to [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]] (the GHCR analogue: GITHUB_TOKEN is the ambient identity inside GitHub Actions).

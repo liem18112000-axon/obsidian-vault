@@ -15,4 +15,4 @@ The important side effect buried in that list is **"keychain reads"**: `--bare` 
 
 So for any process that spawns headless `claude -p` calls relying on the users existing Claude Code OAuth login (no `ANTHROPIC_API_KEY` env var, by design — e.g. to avoid accidentally billing through a stray system API key), adding `--bare` to "fix" hook interference will instead break authentication outright, since there is no API key to fall back to.
 
-If the goal is only to skip the users personal hooks (not LSP/memory/etc.), use `--setting-sources project,local` instead — see [[Headless claude -p inherits personal ~/.claude/settings.json hooks]].
+If the goal is only to skip the users personal hooks (not LSP/memory/etc.), use `--setting-sources project,local` instead — see [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]].

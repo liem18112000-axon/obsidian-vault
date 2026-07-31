@@ -3,21 +3,19 @@ title: "Client-side generation queue lets independent items run without blocking
 created: 2026-07-07
 type: howto
 status: seedling
-source: "Vinnstack session 2026-07-07"
+source: "Vinnstack session 2026-07-07 (components/InterrogationView.tsx, components/StoryFlowView.tsx)"
 tags: [react, queue, async, ux, vinnstack]
 ---
 
 # Client-side generation queue lets independent items run without blocking each other
 
-A UI that lets a user kick off several long-running background jobs (AI generations, builds, scans) doesn't need real parallelism to feel non-blocking — a single client-side FIFO queue is enough, as long as "in progress" state is tracked per-target (which item/action) instead of as one global boolean.
+A UI that kicks off several long-running background jobs (AI generations, builds, scans) does not need real parallelism to feel non-blocking. One client-side FIFO queue is enough — **provided "in progress" is tracked per target, not as a global boolean**.
 
-The shape: keep one array of pending tasks, where element 0 is the one actually running (its request has been sent) and the rest are waiting. A small effect watches the array and, whenever its head changes to a task that hasn't been started yet, fires the real work (e.g. a fetch call) and removes that task from the array when it settles — which naturally promotes the next task to head and re-triggers the effect. This is the same shape as `lib/graphifyRunner.ts`'s server-side `jobs` Map + `queueTail` promise chain (see [[Promise-chain queueTail pattern serializes async jobs with instant enqueue]]), just re-implemented with React state instead of a bare module-level promise, because the UI needs to re-render on every phase change.
+**Queue shape.** One array of pending tasks; element 0 is the running one (request already sent), the rest wait. An effect watches the array: when the head changes to a not-yet-started task it fires the real work and removes the task when it settles, which promotes the next head and re-triggers the effect. Same shape as the server-side `jobs` Map + [[Promise-chain queueTail pattern serializes async jobs with instant enqueue]], re-expressed in React state so the UI re-renders on each phase change.
 
-The part that actually matters for UX is replacing a single global `busy` boolean with a `taskStatus(kind, target)` lookup: every button asks "is MY exact target running or queued?" rather than "is anything running anywhere?". That's what lets submitting work for Epic B stay fully clickable while Epic A's generation is in flight — the old global flag would have disabled every button in the whole view, not just the one for the busy item, even though the two operations have nothing to do with each other.
+**The bit that carries the UX.** Replace the global `busy` flag with a `taskStatus(kind, target)` lookup so every button asks "is MY target running or queued?". Epic B's controls stay clickable while Epic A generates; a global flag would disable the whole view.
 
-One correctness detail worth calling out: when a queued job finishes, it must NOT unconditionally update whatever the user is currently looking at — only apply its result if the user is still viewing that same item, otherwise a background job completing yanks the view away from wherever the user navigated to in the meantime. Track "what am I currently looking at" in a ref (kept in sync via an effect) so the async completion handler can read the live value without a stale closure.
-
-Implemented for Vinnstack's Interrogation Room + Process Flow generation (`components/InterrogationView.tsx`, `components/StoryFlowView.tsx`), 2026-07-07.
+**Correctness detail.** A finishing job must apply its result only if the user is still viewing that item — otherwise a background completion yanks the view. Keep "what am I looking at" in a ref (synced by an effect) so the completion handler reads the live value, not a stale closure.
 
 ## Related
 

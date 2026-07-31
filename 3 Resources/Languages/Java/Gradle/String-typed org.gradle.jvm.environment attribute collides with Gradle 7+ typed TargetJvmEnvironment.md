@@ -26,7 +26,6 @@ Found while stepping LEO CDP 6.9.4 → 7.6.4: this was the FIRST failure of the 
 
 ## Related
 
-- [[Java 25 requires Gradle 9.1.0 or later]]
-- [[not Gradle 9.0.0]]
-- [[Gradle copy{} inside a task body runs at configuration time]]
-- [[not execution]]
+- [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+- [[Gradle copy{} inside a task body runs at configuration time, not execution]]
+- [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]

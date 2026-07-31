@@ -20,5 +20,4 @@ Used for the telegram deck's /new /sessions /status /cancel /approvals demo slid
 
 ## Related
 
-- [[concept-to-video skill turns a concept into deck]]
-- [[voiceover and narrated avatar video]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]

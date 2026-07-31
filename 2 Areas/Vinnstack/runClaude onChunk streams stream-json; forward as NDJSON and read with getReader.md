@@ -25,5 +25,5 @@ Gotcha: converting a buffered JSON route to a stream breaks every test/caller do
 
 ## Related
 
-- [[Integrate a third-party skill's instruction]]
-- [[do not run its curl-bash installer]]
+- [[Integrate a third-party skill's instruction, do not run its curl-bash installer]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]

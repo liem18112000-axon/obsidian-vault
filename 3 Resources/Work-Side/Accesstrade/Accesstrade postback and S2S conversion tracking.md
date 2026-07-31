@@ -25,12 +25,10 @@ aliases:
 | | API pull (report) | Postback / S2S push |
 |---|---|---|
 | Direction | you poll Accesstrade | Accesstrade calls your URL |
-| Latency | minutes–hours (you schedule it) | near real-time, per conversion |
-| Data richness | **rich**: advertiser, siteId, SubID, commission breakdown, status | **lean**: the fields you templated into the URL |
+| Latency | you schedule it | near real-time, per conversion |
+| Data richness | **rich** — see [[Accesstrade conversion and transaction reporting]] | **lean**: only the fields you templated into the URL |
 | Best for | dashboards, digests, reconciliation | instant alerts, feeding other systems |
 | Claude primitive | a **scheduled skill** / cron | a **hook / webhook endpoint** |
-
-(Trackers like wecantrack recommend the **API** path precisely because it carries SubID + commission breakdown the bare postback doesn't.)
 
 ## How postback flows into a hook
 
@@ -52,7 +50,7 @@ The postback URL is configured in the Accesstrade dashboard with placeholders (o
 
 - Need **reconciled, status-aware earnings** → **API pull** on a schedule ([[Use case - automated daily conversion digest]]).
 - Need a **ping the instant a sale lands** → **postback** into a webhook/hook.
-- Most serious setups run **both**: postback for immediacy, API for the source of truth.
+- Most serious setups run **both**: postback for immediacy, API for the source of truth — a postback fires once at conversion time and never tells you about a later PENDING→APPROVED flip.
 
 ## Related
 

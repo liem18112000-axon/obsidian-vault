@@ -25,3 +25,7 @@ btn.addEventListener("click", () => {
 });
 ```
 Any reload-based theme toggle MUST persist to localStorage (or a cookie) or the state is lost on the reload it triggers.
+
+## Related
+
+- [[Theme toggle that overrides prefers-color-scheme via data-theme on :root]] — the CSS layering this toggle drives

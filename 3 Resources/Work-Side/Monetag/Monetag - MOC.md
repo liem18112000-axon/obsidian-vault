@@ -17,7 +17,7 @@ aliases:
 
 # Monetag - MOC
 
-Map of content from researching **Monetag** (the platform behind `promo.monetag.com/vn`). Monetag is a **publisher-side ad-monetization network (SSP)** — you install its ad tag and get paid by advertisers for impressions/clicks. It is the *inverse* of an affiliate/CPS network like Accesstrade.
+Index for the **Monetag** research cluster (`promo.monetag.com/vn`). What Monetag *is* → [[Monetag overview]].
 
 > [!info] Source & freshness
 > Figures (CPM, payout thresholds, publisher counts) come from the Vietnam landing page and third-party reviews captured **June 2026**, plus the official API/help docs. Verify current terms on `monetag.com` before relying on numbers.

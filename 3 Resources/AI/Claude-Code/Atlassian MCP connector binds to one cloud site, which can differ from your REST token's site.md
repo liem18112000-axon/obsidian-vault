@@ -1,18 +1,27 @@
 ---
+title: "Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site"
+created: 2026-07-23
+type: lesson
+status: seedling
+source: "sessions 2026-07-23 (Kepler / LUZ tickets)"
 tags: [claude-code, atlassian, jira, mcp, gotcha, kepler]
+aliases:
+  - Atlassian MCP grant is per-site - axonivy.atlassian.net not covered
 ---
 
 # Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site
 
-The `claude.ai Atlassian` MCP connector authenticates to **one Atlassian cloud instance** (the account you linked). `getAccessibleAtlassianResources` returns only that site's cloudId. If your app ALSO talks to Jira via a REST API token (email + token) pointed at a *different* org, then:
+The `claude.ai Atlassian` MCP connector is granted **per Atlassian cloud site, not per account**. `getAccessibleAtlassianResources` returns only the granted site's cloudId; any other site fails even though its URL resolves. In this environment only `leocdp.atlassian.net` is granted, so `getJiraIssue` on `axonivy.atlassian.net` (where LUZ-* tickets live) returns *"Cloud id … isn't explicitly granted by the user"*.
 
-- **Reads via REST** hit org A (e.g. `axonivy.atlassian.net`).
-- **Writes via the MCP connector** hit org B (e.g. `leocdp.atlassian.net`).
+The nastier variant is a **silent split** when the app also talks to Jira via a REST API token (email + token) pointed at a different org: reads via REST hit org A, writes via the connector hit org B. A connector write-back against an org-A issue key fails with *"Issue does not exist or you do not have permission to see it"*, and a well-behaved agent then reports it created nothing (no error, just `commented:false, stories:[]`) - so it looks like the tool was "unavailable" rather than pointed at the wrong site.
 
-They silently target different Jira sites. A write-back (create issue / comment) run through the connector against org B will fail on an org-A issue key with *"Issue does not exist or you do not have permission to see it"* — and a well-behaved agent then reports it created nothing (no error, just `commented:false, stories:[]`), so it looks like the tool was "unavailable" when it was actually pointed at the wrong site.
+**Diagnosis:** a cheap read-only headless probe - `claude -p --permission-mode dontAsk --allowedTools mcp__claude_ai_Atlassian__getJiraIssue … "fetch <KEY>, or state the exact error"`. An API error naming a site means a site mismatch, not a permissions/timeout problem (~5 turns vs a 6-min full write attempt).
 
-**Diagnosis trick:** run a cheap, read-only headless probe — `claude -p --permission-mode dontAsk --allowedTools mcp__claude_ai_Atlassian__getJiraIssue ... "fetch <KEY>, or state the exact error"`. If it returns an API error naming a site (`leocdp.atlassian.net`) rather than a permission block, you've found a site mismatch, not a permissions/timeout problem. This ran in ~5 turns vs a 6-min full write attempt.
+**Fixes:** (a) re-authenticate the Atlassian connector in claude.ai settings and grant the missing site; or (b) do the write-back via Jira REST with the same token used for reads, so reads and writes always hit one site (you must then build createmeta-aware field payloads yourself).
 
-**Fixes:** (a) re-authorize the claude.ai Atlassian connector for the correct org, or (b) do the write-back via Jira REST with the same token used for reads, so reads and writes always hit the same site (provider-independent, but you must build the createmeta-aware field payloads yourself).
+**Workarounds that do NOT work:** unauthenticated WebFetch (SPA shell / login wall) and Playwright MCP (fresh browser profile, redirected to `id.atlassian.com` login) - unless you log in manually in the open Playwright window. See [[Jira issue HTML export view bypasses missing MCP grant]] for the export route that does work.
 
-Related: [[Long agentic API routes need the inner run timeout below the route maxDuration]].
+## Related
+
+- [[Jira issue HTML export view bypasses missing MCP grant]]
+- [[Long agentic API routes need the inner run timeout below the route maxDuration]]

@@ -20,7 +20,6 @@ Gotchas: [[MCP servers load only at Claude Code startup; skills hot-reload]] and
 
 ## Related
 
-- [[Excalimate is AI skills plus an optional MCP server]]
-- [[not one app]]
+- [[Excalimate is AI skills plus an optional MCP server, not one app]]
 - [[MCP servers load only at Claude Code startup; skills hot-reload]]
 - [[A 406 from curl on an MCP /mcp endpoint is normal]]

@@ -19,4 +19,4 @@ Trap observed: the method-not-found error is NON-terminating for the surrounding
 
 ## Related
 
-- [[PS 5.1 mangles embedded double quotes in args to native exes]]
+- [[PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud]]

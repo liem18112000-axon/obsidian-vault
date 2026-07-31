@@ -19,5 +19,4 @@ Related: [[luz-docs IT $SCn authorization failures were deterministic resolution
 
 ## Related
 
-- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions]]
-- [[not membership]]
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]

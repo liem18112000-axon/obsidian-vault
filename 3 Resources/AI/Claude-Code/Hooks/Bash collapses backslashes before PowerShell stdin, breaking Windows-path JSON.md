@@ -1,25 +1,27 @@
-﻿---
+---
 title: "Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON"
-created: 2026-06-02
+created: 2026-06-01
 type: lesson
 status: seedling
-source: "session 2026-06-02"
-tags: [powershell, bash, windows, json, gotcha, testing]
+source: "sessions 2026-06-01 / 2026-06-02 (obsidian-capture tuning, hook claim-file testing)"
+tags: [powershell, bash, windows, json, claude-code, hooks, testing, gotcha]
 ---
 
 # Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON
 
-When feeding a JSON payload that contains Windows paths to a PowerShell stdin hook from the Bash tool, a literal `\` (escaped backslash) in a single-quoted bash string gets collapsed to a single `\` before it reaches PowerShell â€” while `\n` survives untouched. So `"C:\proj\app"` arrives as `"C:\proj\app"`, which is **invalid JSON** (`\p` is an unrecognized escape).
+Feeding a JSON payload containing Windows paths to a PowerShell (`.ps1`) stdin hook **from a hand-written bash string** silently corrupts it. Two layers of backslash interpretation compound: JSON needs `C:\\work\\foo.py`, but bash single-quotes + `echo`/`printf '%s'` collapse `\\` back to `\` before the bytes reach PowerShell (`\n` survives untouched). The hook receives `C:\work\foo.py`, where `\w` is an unrecognized escape and the payload is **invalid JSON**.
 
-`ConvertFrom-Json` then throws. If the hook has `trap { exit 0 }` (the standard safety wrapper), the failure is swallowed silently â€” the hook produces no output and *looks like it simply chose not to fire*, masking the real cause. This cost real debugging time.
+`ConvertFrom-Json` then throws. Because the standard safety wrapper is `trap { exit 0 }` / `try/catch` + `exit 0`, the failure is swallowed: the hook emits nothing and *looks like it simply chose not to fire*. The bug is in the test harness, not the hook - this masks the real cause and costs real debugging time.
 
-Workaround: do not build the payload as a bash string at all. Write it to a file with exact bytes (e.g. via an editor/Write tool) and pipe it with `Get-Content "<file>" -Raw | powershell ... hook.ps1`. The file content is delivered verbatim, so the JSON stays valid.
+**Fix - never build the payload as a bash string.** Either:
+- generate it with Python: `python3 -c "import json,sys;sys.stdout.write(json.dumps({...}))" > payload.json`, then feed it with `< payload.json`; or
+- write the file with exact bytes (editor/Write tool) and pipe it: `Get-Content "<file>" -Raw | powershell ... hook.ps1`.
 
-Related: [[3 Resources/AI Tools/Claude Code/Hooks/PowerShell pipe appends a newline to native-command stdin, shifting any hash]], [[3 Resources/AI Tools/Claude Code/Hooks/Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]].
+`json.dumps` emits correctly-escaped backslashes that survive intact. Verify the bytes actually contain `\\` (e.g. `cat payload.json`) before trusting a negative result.
+
+Adjacent Windows constraints: PowerShell 5.1 also needs pure-ASCII `.ps1` files and reads stdin as cp1252.
 
 ## Related
 
-- [[PowerShell pipe appends a newline to native-command stdin]]
-- [[shifting any hash]]
-- [[3 Resources/AI Tools/Claude Code/Hooks/Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
-
+- [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
+- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]

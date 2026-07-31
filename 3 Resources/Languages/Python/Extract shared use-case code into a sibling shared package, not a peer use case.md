@@ -20,5 +20,4 @@ Relates to [[Wrap a two-generation API as one shared transport plus one client p
 ## Related
 
 - [[Wrap a two-generation API as one shared transport plus one client per generation]]
-- [[Affiliate content-brief generator produces the grounded skeleton]]
-- [[not the prose]]
+- [[Affiliate content-brief generator produces the grounded skeleton, not the prose]]

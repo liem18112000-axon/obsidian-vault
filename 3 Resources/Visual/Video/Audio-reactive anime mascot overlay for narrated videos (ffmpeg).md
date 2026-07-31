@@ -1,18 +1,19 @@
 ---
 title: "Audio-reactive anime mascot overlay for narrated videos (ffmpeg)"
-created: 2026-06-19
+created: 2026-06-18
+updated: 2026-07-31
 type: howto
 status: seedling
-source: "session 2026-06-19"
-tags: [ffmpeg, video, avatar, narration, presentation]
+source: "sessions 2026-06-18 / 2026-06-19"
+tags: [ffmpeg, video, avatar, narration, presentation, vtuber, showwaves, vertex-ai, imagen, tts]
 ---
 
 # Audio-reactive anime mascot overlay for narrated videos (ffmpeg)
 
-To make a static anime mascot look like it is "presenting" a narrated slide video — without real lip-sync — composite two things in the bottom corner with ffmpeg:
+Make a static anime mascot read as "presenting" a narrated video with **no lip-sync and no GPU** (Wav2Lip/SadTalker are impractical without one; Hedra/DomoAI are browser-only and paid). Composite two things into a bottom corner with one ffmpeg pass:
 
-1. **A rounded, bordered avatar card** built once in PIL: resize the portrait to card width, crop to head+shoulders, apply a rounded-rectangle alpha mask, and draw a few concentric rounded rectangles for a colored border ring. Save as RGBA PNG.
-2. **An audio-reactive soundwave** generated from the narration track and a **gentle breathing bob** on both, via one filter_complex:
+1. **A rounded, bordered avatar card**, built once in PIL: resize the portrait to card width, crop to head+shoulders, apply a `rounded_rectangle` alpha mask, draw a few concentric rounded rectangles as a colored border ring. Save RGBA PNG.
+2. **An audio-reactive soundwave from the narration track**, plus a **breathing bob** on both:
 
 ```
 [0:a]showwaves=s=270x64:mode=cline:rate=30:colors=0x22D3EE,format=rgba,colorkey=0x000000:0.30:0.10[eq];
@@ -20,8 +21,16 @@ To make a static anime mascot look like it is "presenting" a narrated slide vide
 [v1][eq]overlay=W-270-44:H-40-64+8*sin(2*PI*t/3)[v]
 ```
 
-Key tricks: `showwaves mode=cline` + `colorkey` on black makes the waveform a transparent overlay that visibly reacts to speech (reads as "talking"); the `+8*sin(2*PI*t/3)` term on the overlay Y gives a slow 3-second breathing bob; keep audio with `-c:a copy`. Tried true lip-sync via Hedra but the free tier blocks it, so the audio-reactive mascot is the practical substitute. Per-deck, parameterize by swapping the avatar PNG (e.g. avatar-base-2 vs base-1) to give each deck a different presenter while keeping the same code. Relates to [[Full-bleed slide images need ~16:9 aspect or their text renders too small]].
+Why each piece: `showwaves mode=cline` + `colorkey` on black turns the waveform into a transparent overlay that visibly reacts to speech (this is what reads as "talking"); `+8*sin(2*PI*t/3)` on the overlay Y is a slow 3-second breathing bob; `-c:a copy` keeps the original narration so only video re-encodes. Parameterize per deck by swapping the avatar PNG (`avatar-base-1` vs `-2`) — same code, different presenter.
+
+**Generating the base image (Vertex AI Imagen, REST).** Needs `aiplatform.googleapis.com` enabled. Token via `gcloud auth print-access-token` (fetch it in bash and pass to Python via env var — the `gcloud.cmd` shim isn't runnable from a Python subprocess on Windows). POST `https://us-central1-aiplatform.googleapis.com/v1/projects/<PROJ>/locations/us-central1/publishers/google/models/imagen-3.0-generate-002:predict` with header `x-goog-user-project: <PROJ>` and body `{"instances":[{"prompt":"..."}],"parameters":{"sampleCount":3,"aspectRatio":"3:4","personGeneration":"allow_adult"}}`. Images return as `predictions[i].bytesBase64Encoded`. `personGeneration: allow_adult` is what lets stylized anime characters through; prompt a plain/solid background so the corner cut-out is clean.
+
+**Upgrade path to real lip-sync:** feed the base image + full narration mp3 to Hedra/DomoAI in the browser, download the clip, chromakey it into the same corner slot.
+
+Context: `C:\Users\dvtliem\.claude\docs\hook-present\build\add-avatar.py` + `avatar/`.
 
 ## Related
 
 - [[Full-bleed slide images need ~16:9 aspect or their text renders too small]]
+- [[Hedra talking-avatar flow + gotcha: video generation is paid-only (free tier blocks Generate)]]
+- [[concept-to-video avatar overlay sits bottom-right — keep callouts clear]]

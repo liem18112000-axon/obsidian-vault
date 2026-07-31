@@ -13,9 +13,9 @@ Claude Code hooks communicate only through stdout, stderr, and exit codes. They 
 
 **Consequence for automation:** a hook can only ASK the model to do something. To "auto-handoff then clear at a context threshold", the hook injects an instruction; the model then asks the user for permission and runs the handoff skill - but **the model cannot run /clear either** (it is a built-in CLI command, excluded from the Skill tool), so the user must type /clear themselves.
 
-**Note:** `PreCompact` (matcher `auto`|`manual`) fires before compaction and can block it with exit 2, but has no documented `additionalContext`, so it cannot instruct the model. See [[3 Resources/AI Tools/Claude Code/Hooks/Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]].
+**Note:** `PreCompact` (matcher `auto`|`manual`) fires before compaction and can block it with exit 2, but has no documented `additionalContext`, so it cannot instruct the model. See [[Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]].
 
 ## Related
 
-- [[3 Resources/AI Tools/Claude Code/Hooks/Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
+- [[Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
 

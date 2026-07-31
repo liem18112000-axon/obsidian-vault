@@ -29,8 +29,5 @@ The failure mode isn't that AI is wrong often — it's that it's *confidently wr
 Context: my own Java / Jakarta REST / MongoDB work; used as the core narrative for SDET/QA interviews.
 
 ## Related
-[[NVIDIA Vietnam SDET Interview Prep]]
-
-## Related
 
 - [[NVIDIA Vietnam SDET Interview Prep]]

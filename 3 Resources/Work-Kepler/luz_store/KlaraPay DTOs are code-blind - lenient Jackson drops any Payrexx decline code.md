@@ -15,4 +15,4 @@ Lesson: lenient deserialization (ignore-unknown) hides available upstream data â
 
 ## Related
 - [[Prod card declines reach luz_store as ERROR plus Payrexx prose, not DECLINED]]
-- [[Payrexx decline codes are ISO 8583 issuer codes from the card-issuing bank]]
+- [[Payrexx ISO 8583 decline code to meaning reference table]]

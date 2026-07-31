@@ -9,19 +9,15 @@ tags: [bitbucket, rest-api, gotcha, vinnstack]
 
 # Bitbucket Cloud PR comment resolution is presence-of-object, not a boolean
 
-In Bitbucket Cloud's REST API, a `pullrequest_comment` object represents "resolved" as the PRESENCE of a nested `resolution` object (`{type, user, created_on}`), not a boolean flag. An unresolved comment simply omits the `resolution` key entirely. So the correct check in code is `!!comment.resolution` (or `"resolution" in comment`), not something like `comment.resolved === true` (that field doesn't exist).
+A Bitbucket Cloud `pullrequest_comment` marks "resolved" by the **presence of a nested `resolution` object** (`{type, user, created_on}`); an unresolved comment omits the key entirely. Check `!!comment.resolution` (or `"resolution" in comment`) — there is no `comment.resolved` field.
 
-A separate, easily-confused field: `pending` (a plain boolean) marks a comment that belongs to an unsubmitted/draft code review — Bitbucket's equivalent of GitHub's "pending review comments." A `pending: true` comment isn't real feedback yet (the reviewer hasn't submitted their review), so it should usually be excluded from anything that reacts to "reviewer feedback," same as a `deleted: true` comment.
+Adjacent fields worth filtering on:
+- `pending` (plain boolean) — the comment belongs to an unsubmitted draft review (Bitbucket's "pending review comments"). Not real feedback yet; exclude it like `deleted: true`.
+- `pullrequest.comment_count` — a denormalized counter on the PR resource, **not** derived from `/pullrequests/{id}/comments`. It can lag a real comment even after refresh, so compute any displayed count from the `/comments` list endpoint instead.
 
-Verified directly against Bitbucket's own OpenAPI/swagger definition (`https://api.bitbucket.org/swagger.json`, `definitions.pullrequest_comment` / `definitions.comment_resolution`) rather than inferred from docs prose — the rendered developer.atlassian.com docs page is a JS-rendered SPA that doesn't expose the raw schema to a simple fetch, but the swagger.json is a static, complete, directly-curlable source of truth for exact field shapes.
-
-Separately: the `pullrequest` object's own `comment_count` field is a DIFFERENT thing — a denormalized summary counter on the PR resource itself, not derived from the live `/pullrequests/{id}/comments` list. In vinnstack's BDD Implement tab, this counter was being shown as the operator-facing "N comments" figure, but a real comment sometimes wasn't reflected in it even after a manual refresh. The fix was to stop trusting that summary field and instead compute the displayed count from the same authoritative `/comments` list endpoint already used to feed comments into the "regenerate from PR feedback" flow — same data, so what's displayed always matches what would actually be consumed.
-
-Related: [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]], [[Regenerate-from-review-feedback pattern: reuse the branch/PR, don't open a new one]].
+Verified against `https://api.bitbucket.org/swagger.json` (`definitions.pullrequest_comment` / `definitions.comment_resolution`) — the rendered developer.atlassian.com docs are a JS SPA a plain fetch can't read, but the swagger.json is static and directly curlable. Good default for exact field shapes on any Atlassian API.
 
 ## Related
 
-- [[Bitbucket Cloud API pagination returns full URLs in 'next']]
-- [[not relative paths]]
-- [[Regenerate-from-review-feedback pattern: reuse the branch/PR]]
-- [[don't open a new one]]
+- [[Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths]]
+- [[Regenerate-from-review-feedback pattern: reuse the branch/PR, don't open a new one]]

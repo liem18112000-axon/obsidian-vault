@@ -21,5 +21,4 @@ See [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]
 
 ## Related
 
-- [[LUZ-157476 decline-code flow: luz-online-payment forwards]]
-- [[luz_store maps]]
+- [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]]

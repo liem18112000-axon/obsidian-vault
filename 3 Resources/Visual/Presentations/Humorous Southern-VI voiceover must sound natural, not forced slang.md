@@ -17,5 +17,4 @@ How to apply: read every VI block aloud (mentally) before rendering; prefer plai
 
 ## Related
 
-- [[concept-to-video skill turns a concept into deck]]
-- [[voiceover and narrated avatar video]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]

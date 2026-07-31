@@ -3,18 +3,19 @@ title: "MongoDB forbids $lookup inside update pipeline (WriteError 72)"
 created: 2026-06-09
 type: lesson
 status: seedling
-source: "luz-docs materialize code review 2026-06-09"
-tags: [mongodb, aggregation, update-pipeline, gotcha, lookup]
+source: "luz-docs materialize code review 2026-06-09; luz-docs parent-change cascade 2026-06-05"
+tags: [mongodb, aggregation, update-pipeline, gotcha, lookup, luz-docs]
 ---
 
 # MongoDB forbids $lookup inside update pipeline (WriteError 72)
 
-MongoDB **does not allow `$lookup` inside an update-with-aggregation-pipeline** (`db.coll.updateMany(filter, [ ...pipeline... ])`). The server rejects it with **WriteError code 72** (InvalidOptions / pipeline stage not allowed). Only a subset of agg stages are legal in an update pipeline (`$set`/`$addFields`, `$unset`, `$replaceRoot`/`$replaceWith`, `$project`).
+An update-with-aggregation-pipeline (`updateMany(filter, [stages])`) accepts only a restricted stage set — `$set`/`$addFields`, `$unset`, `$replaceRoot`/`$replaceWith`, `$project`. `$lookup` is rejected at runtime (not parse/test time) with **WriteError 72**.
 
-**Workaround:** prefetch the joined data in application code, then **inline it into the pipeline as literal arrays** and index into them per element. Pattern: build two parallel literals — `[id0, id1, ...]` and `[[codes0], [codes1], ...]` — then inside a `$map` over the doc's own array use `$indexOfArray` to find the position and `$arrayElemAt` to pull the matching joined value.
+**Workaround — join in application code, inline the result as literal arrays.** Prefetch the rows, then pass **two parallel literal arrays** into the pipeline: a key table `[k0, k1, …]` and a value table `[v0, v1, …]`. Resolve per element (inside a `$map` over the doc's own array) with `{$indexOfArray: [<keys>, <docKey>]}` → `{$arrayElemAt: [<values>, "$$j"]}`, falling back to the existing value when the index is `-1`.
 
-**Trade-off:** the command body grows with the size of the prefetched data. On large joins the inlined literals can push the command document toward the **16MB command-size limit**, and every retry resends the same oversized command. Bound the prefetch (or chunk the updateMany) when the joined set is large.
+**Trade-off:** the literal tables travel inside the command document, so the command grows with the prefetch size and every retry resends it. The 16 MB BSON/command cap is the ceiling — fine for bounded sets (an affected-folder subtree), wrong for unbounded joins; bound the prefetch or chunk the `updateMany`.
 
 ## Related
 
 - [[Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]

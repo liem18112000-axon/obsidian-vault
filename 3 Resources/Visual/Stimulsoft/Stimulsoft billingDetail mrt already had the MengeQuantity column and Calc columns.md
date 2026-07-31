@@ -23,8 +23,5 @@ So the whole change was Java-side (aggregate the billings list); **no .mrt and n
 **Gotcha:** a `.mrt` is JSON text — you can grep it. Fields the template binds that aren't on the Java model are usually Stimulsoft `Ident: Calc` columns with an `Expression`, derived from the real serialized fields. Verify the template before assuming it needs editing.
 
 ## Related
-[[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
-
-## Related
 
 - [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]

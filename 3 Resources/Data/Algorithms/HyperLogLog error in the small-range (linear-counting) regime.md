@@ -9,14 +9,14 @@ tags: [hyperloglog, cardinality-estimation, probabilistic-data-structures, algor
 
 # HyperLogLog error in the small-range (linear-counting) regime
 
-HyperLogLog's well-known error bound (relative error ~= 1.04/sqrt(m)) is an asymptotic figure that only holds when the true cardinality n is large relative to the register count m. When n << m, HLL switches to a **linear-counting** estimator instead: E = -m * ln(V/m), where V is the number of registers still at zero.
+HLL's textbook error bound (relative error ≈ `1.04/√m`) is asymptotic — it holds only once true cardinality `n` is comparable to or larger than the register count `m`. When `n ≪ m`, HLL switches to the **linear-counting** estimator `E = -m·ln(V/m)` (V = registers still at zero), and the error there is **absolute**: `σ ≈ n/√(2m)`.
 
-In that small-range regime the absolute error follows a different formula: sigma ~= n / sqrt(2m). This is *smaller* in absolute terms than the large-n formula would suggest, but it still sets a real floor: to get a target absolute error of delta at cardinality n, you need m >= n^2 / (2*delta^2). For a fixed small delta (say, 1-2 units), that m grows with the *square* of n, so tightening the error band toward exact eventually requires a register count approaching n itself.
+**Why it matters.** A "count > 999" badge with `m = 16384` (2^14, ~12 KB) sits deep in the small-range regime: σ ≈ 5.5, so the 95% CI is ≈ 999 ± 11 documents — a real, calculable boundary error, not rounding noise. Tightening it costs quadratically: hitting absolute error δ at cardinality n needs `m ≥ n²/(2δ²)`, so m approaches n itself and the fixed-size sketch loses its point.
 
-Practical implication: HLL is well suited to answering "about n" or "over/under a threshold with some margin" for a fixed n, but the closer you need to pin down a specific boundary crossing (e.g. is the true count exactly above or below 999), the more register memory you burn chasing precision that never actually reaches exact. The right fix for a boundary decision isn't a bigger m — it's a fuzzy zone around the threshold that falls back to an exact check, rather than trusting the point estimate near the boundary.
-
-Worked example: n=999, m=16384 (2^14, ~12KB) gives sigma ~= 5.5, so a 95% CI is roughly 999 +/- 11 documents.
+**Fix for a boundary decision:** don't grow m. Put a **fuzzy zone** around the threshold (e.g. ±5%) and fall back to an exact check when the estimate lands inside it; trust the point estimate only outside the band. HLL is a legitimate fit for "about N" or clearly-over/under, never for "exactly at the boundary".
 
 ## Related
 
+- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[luz_docs count>N badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[luz_docs estimated-count POC drops CAS and backfill gate]]

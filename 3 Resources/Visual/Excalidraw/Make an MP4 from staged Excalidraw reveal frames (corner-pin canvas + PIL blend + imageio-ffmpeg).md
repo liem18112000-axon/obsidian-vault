@@ -38,4 +38,5 @@ Result: `Hooks-and-Skills-intro.mp4` — 9 stages, ~21.6s, 1920x1080, 1.45 MB. C
 
 ## Related
 
-- [[Excalidraw centers text vertically only when it is BOUND to a container]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]

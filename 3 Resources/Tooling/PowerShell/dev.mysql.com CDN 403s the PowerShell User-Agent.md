@@ -17,5 +17,4 @@ The nasty part: `Invoke-WebRequest -OutFile` **silently saves the HTML error pag
 
 ## Related
 
-- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI]]
-- [[breaking on em-dashes]]
+- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]

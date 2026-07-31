@@ -21,10 +21,6 @@ Key implementation details (lib/ultracode/ultracodeRunner.ts, lib/interrogation/
 This is a legitimate pattern **only** because vinnstack is a single-operator tool — the same person runs their own agentic tasks through their own subscription login. See [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]] for why this pattern does NOT transfer to an app that serves other people's requests, regardless of transport (network API vs. local CLI spawn).
 
 ## Related
-- [[Claude subscription OAuth cannot power a third-party audience-facing app]]
-- [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
-
-## Related
 
 - [[Claude subscription OAuth cannot power a third-party audience-facing app]]
 - [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]

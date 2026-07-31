@@ -19,4 +19,4 @@ Miss any one and you get redirect_uri_mismatch or a session that never loads. Sy
 
 ## Related
 
-- [[Next.js route.ts files reject non-handler exports - shared helpers must live in lib]]
+- [[Next.js App Router route.ts files can only export recognized handler names]]

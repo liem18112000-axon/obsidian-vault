@@ -17,6 +17,6 @@ The fix applied: stop the run immediately once its `pre:` line reveals a higher-
 
 ## Related
 
-- [[Recover an earchive-data-prepare ECONNRESET mid-seed with APPEND + reach-a-target]]
+- [[Resume a partial earchive seed with APPEND instead of re-truncating]]
 - [[earchive-data-prepare logs document progress only every 10 batches]]
 - [[earchive-prepare-knobs]]

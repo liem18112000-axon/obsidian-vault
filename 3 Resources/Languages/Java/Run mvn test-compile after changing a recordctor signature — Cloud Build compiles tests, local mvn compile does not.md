@@ -17,5 +17,4 @@ Adjacent: when a record gains a field that is random/non-deterministic (_shard),
 
 ## Related
 
-- [[Partition the materialized count on a uniform _shard int]]
-- [[not _id]]
+- [[Partition the materialized count on a uniform _shard int, not _id]]

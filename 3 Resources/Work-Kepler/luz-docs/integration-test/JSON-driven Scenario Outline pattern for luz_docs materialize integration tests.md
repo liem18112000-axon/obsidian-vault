@@ -21,9 +21,9 @@ Two load-bearing technique choices:
 
 Resolve `$SCn` placeholders across the whole loaded case at once with `security_class_util.resolve(context.access_token, raw)`.
 
-Related: [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]], [[luz_docs IT: $SCn security-class placeholders resolve against the tenant token claim]]
+Related: [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]], [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
 
 ## Related
 
 - [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]]
-- [[luz_docs IT: $SCn security-class placeholders resolve against the tenant token claim]]
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]

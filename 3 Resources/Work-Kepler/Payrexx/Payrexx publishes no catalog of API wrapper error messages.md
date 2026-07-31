@@ -16,5 +16,5 @@ To enumerate wrapper messages: ask Payrexx support directly (LUZ-157476 Phase 0.
 Unverified hypothesis worth checking: Payrexx pre-authorizations expire after ~5 days (issuer-dependent, per their preauthorization docs) — the dominant 'Charge of pre-authorization failed.' message (192x in dev) is plausibly mostly expired pre-auths, which would merit its own taxonomy category ('authorization expired — re-register card') instead of generic other.
 
 ## Related
-- [[Payrexx decline codes are ISO 8583 issuer codes from the card-issuing bank]]
+- [[Payrexx ISO 8583 decline code to meaning reference table]]
 - [[Observed Payrexx prose vocabulary in dev is only three messages]]

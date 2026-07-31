@@ -1,14 +1,17 @@
 ---
 title: "Next.js App Router route.ts files can only export recognized handler names"
+aliases: ["Next.js route.ts files reject non-handler exports - shared helpers must live in lib"]
 created: 2026-07-09
 type: lesson
+status: seedling
+source: "sessions 2026-07-03 / 2026-07-09, vinnstack"
 tags: [nextjs, typescript, app-router, gotcha]
 ---
 
 # Next.js App Router route.ts files can only export recognized handler names
 
-A Next.js App Router `route.ts` file can ONLY export the recognized route-handler names (`GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `HEAD`, plus config exports like `runtime`/`dynamic`/`revalidate`) — exporting any OTHER named constant (a helper object, a shared type, a utility function) fails typecheck, not at the route file itself but in a generated `.next/types/app/.../route.ts` file Next.js writes, with a confusing error like `Property X is incompatible with index signature` / `does not satisfy the constraint {[x: string]: never}`.
+A `route.ts` file may export ONLY the recognized handler names (`GET`, `POST`, `PUT`, `DELETE`, `PATCH`, `HEAD`) plus route-config exports (`runtime`, `dynamic`, `revalidate`). Any other named export — a helper function, shared constant, type — fails the build's route typecheck, and not in your file: the error comes from the generated `.next/types/app/.../route.ts`, worded confusingly as `Property X is incompatible with index signature` / `does not satisfy the constraint {[x: string]: never}`.
 
-This only surfaces when you actually run `tsc --noEmit` (or `next build`) AFTER Next has generated its route type-checking file — a plain read of the route source gives no hint anything is wrong.
+It only surfaces on `next build` / `tsc --noEmit` **after** Next has generated its route type file — reading the route source gives no hint.
 
-Fix: keep any extra constant/helper a route needs internal to the file (drop the `export` keyword) if nothing outside the route actually imports it, or move it to a separate `lib/` module and import it into the route if it genuinely needs to be shared.
+Fix: drop the `export` keyword if nothing outside needs it; otherwise move the helper to a `lib/` module and import it. This is the structural reason two routes that share a helper (e.g. a `safeUploadName` sanitizer and upload size limits) need a shared `lib/` module instead of route-to-route imports.

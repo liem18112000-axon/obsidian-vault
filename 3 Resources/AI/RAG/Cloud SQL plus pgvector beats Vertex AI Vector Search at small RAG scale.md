@@ -18,8 +18,5 @@ AlloyDB (with AlloyDB AI) is the natural middle upgrade step if Cloud SQL's perf
 General heuristic worth keeping: don't reach for a dedicated vector-search service (Vertex AI Vector Search, Pinecone, etc.) until plain Postgres+pgvector has actually been shown to fall short — most solo-developer or small-team RAG use cases never hit that ceiling.
 
 ## Related
-- [[Virtual avatar presenter project design plan]]
-
-## Related
 
 - [[Virtual avatar presenter project design plan]]

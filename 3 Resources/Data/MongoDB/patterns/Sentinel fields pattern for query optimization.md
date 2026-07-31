@@ -8,28 +8,19 @@ tags: [denormalization, query-optimization, mongodb, materialize]
 
 # Sentinel fields pattern for query optimization
 
-Denormalize frequently-accessed read-path data into the document to eliminate runtime lookups, cross-collection joins, and permission checks at query time.
+Stamp the read path's answer onto the document itself (an underscore-prefixed **sentinel field**) so the query needs no `$lookup`, no security-context evaluation, and no N+1 fetch. The cost moves to the write side, which must cascade the field whenever its source changes.
 
-**Trade-off:** Simpler, faster reads vs. complex write-time cascade logic. The write side becomes responsible for keeping denormalized fields in sync whenever the source data changes.
+eArchive materialize sentinels on `documents`:
+- `_isPublic` (bool) — replaces security-context evaluation
+- `_effectiveSecurityClassCodes` (array) — replaces runtime access-control checks
+- `_folderNames` (array) — replaces the per-doc `$lookup` on folders
 
-**Real example — eArchive materialize:**
-- _isPublic: boolean, eliminates security context evaluation
-- _effectiveSecurityClassCodes: array of codes, avoids runtime access control checks
-- _folderNames: denormalized path, skips N+1 folder lookups
+**Use it when** reads dominate writes, the field is small and cheaply computable (not an aggregation), and brief staleness is tolerable.
 
-**When this pattern works:**
-- Reads are much more frequent than writes (or writes can absorb the cost).
-- The denormalized field is small and computable (not a complex aggregation).
-- Cascade/sync logic can be batched (use markers, retry queues, eventual consistency).
-- You can tolerate brief staleness (eventual consistency is acceptable).
-
-**Implementation considerations:**
-- Decide: synchronous (update during write) or eventual (job-based sync)? Sync adds latency to writes; eventual means brief inconsistency.
-- Index the denormalized fields; they're now query filters.
-- Mark cascade state (pending/in-progress/failed) so operators can detect/repair stale data.
-- Test at scale—what works for 1K docs may cascade poorly at 10M docs.
+**Non-negotiables:** index every sentinel (they are now the query filters); track cascade state (pending/in-progress/failed) so operators can detect and repair stale docs — see [[Cascade marker pattern for bulk update resilience]]; decide synchronous-on-write (write latency) vs job-based (window of inconsistency) explicitly.
 
 ## Related
 
 - [[Cascade marker pattern for bulk update resilience]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[Materialize feature architecture]]

@@ -28,8 +28,8 @@ var complete = attempt(() -> checkL1(...), "L1 failed, fallback to L2")
 
 Each layer returns `Optional.empty()` only on **exception** (with a WARNING log), so a legitimate `false` from L1 is a final answer — it does NOT fall through to L2. `Optional.or()` chains any number of layers; `orElse(false)` is the fail-closed default when every layer throws.
 
-Used in luz_docs Materialize/Parallelize gates (L1 = migration-campaign status read, L2 = repository sentinel-field check) after `@Fallback` proved dead on self-invocation — see [[MicroProfile @Fallback never fires on self-invocation]].
+Used in luz_docs Materialize/Parallelize gates (L1 = migration-campaign status read, L2 = repository sentinel-field check) after `@Fallback` proved dead on self-invocation — see [[CDI self-invocation bypasses interceptor proxy]].
 
 ## Related
 
-- [[MicroProfile @Fallback never fires on self-invocation]]
+- [[CDI self-invocation bypasses interceptor proxy]]

@@ -15,11 +15,8 @@ This bites when verifying any stdin-hash protocol externally. Example: testing t
 
 Workaround: don't recompute the hash externally. Let the process emit/persist its *own* hash on a first run (e.g. the claim file it writes), then reuse that true value for the test. Same stdin piped the same way is deterministic, so a second identical run matches.
 
-Related: [[3 Resources/AI Tools/Claude Code/Hooks/Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]], [[3 Resources/AI Tools/Claude Code/Hooks/Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]].
-
 ## Related
 
-- [[Bash collapses backslashes before PowerShell stdin]]
-- [[breaking Windows-path JSON]]
-- [[3 Resources/AI Tools/Claude Code/Hooks/Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
 

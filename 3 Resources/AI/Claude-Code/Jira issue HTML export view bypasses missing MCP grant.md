@@ -14,4 +14,4 @@ When the Atlassian MCP connector lacks a grant for a Jira site, a ticket can sti
 Used for LUZ-157476: MCP grant covered only leocdp.atlassian.net, WebFetch and Playwright hit the login wall, but the user exported the issue-html view as PDF into the repo docs folder and the full ticket (description, AC, sub-tasks, even an attached UI screenshot) was readable.
 
 ## Related
-- [[Atlassian MCP grant is per-site - axonivy.atlassian.net not covered]]
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]

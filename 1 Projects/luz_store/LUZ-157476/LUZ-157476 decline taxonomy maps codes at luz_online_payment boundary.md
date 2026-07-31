@@ -1,23 +1,33 @@
 ---
 title: "LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary"
+aliases:
+  - "Map decline codes to failureCategory at the KlaraPay boundary, not by prose-parsing in luz_store"
 created: 2026-07-23
-type: model
+type: argument
 status: seedling
-source: "LUZ-157476 ticket + investigation 2026-07-23"
-tags: [luz-store, payrexx, invoice-run, taxonomy, design-decision]
+source: "LUZ-157476 ticket + investigation 2026-07-23/24 (§6 recommendation)"
+tags: [luz-store, luz-online-payment, payrexx, invoice-run, taxonomy, design-decision, LUZ-157476]
 ---
 
 # LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary
 
-LUZ-157476 AC: Payrexx decline codes must map to five customer-friendly categories — insufficient-funds, card-expired, blocked-by-issuer, invalid-details, other (fallback, keeps taxonomy extensible). Raw provider codes never shown; the category is routed into both the failure email and the in-app message; display strings localized per category.
+**AC (LUZ-157476):** Payrexx decline codes map to five customer-friendly categories — insufficient-funds, card-expired, blocked-by-issuer, invalid-details, other (fallback, keeps the taxonomy extensible). Raw provider codes are never shown; the category is routed into both the failure email and the in-app message, with display strings localized per category.
 
-Design decision (draft, investigation report §6): do the code→category mapping inside **luz_online_payment**, where the raw Payrexx/ISO 8583 code is visible, and ship a category enum in the KlaraTransactionRequest response. luz_store then only does category→localized string. Parsing prose message strings in luz_store would be brittle — last resort only.
+**Recommendation (investigation report §6):** do the code→category mapping inside **luz_online_payment**, where the raw Payrexx/ISO 8583 data is still visible, not by parsing prose in luz_store. Concretely: add a `failureCategory` enum field to `KlaraTransactionRequest` (the response contract to luz_store) and populate it in `KlaraTransactionRequestConverter.convertToKlaraTransactionRequest` **and** at the `TransactionTask` catch block (the ERROR/prose path). luz_store then only maps `failureCategory` → localized string.
 
-Evidence for why: production failure messages observed in the invoice-run UI are English prose ('An error occurred: Your card has expired.', 'Charge of pre-authorization failed.') — Payrexx's raw codes are already consumed upstream and never reach luz_store.
+**Why here:** luz_online_payment is the last place the raw Payrexx transaction data exists before it is flattened into a free-text `message`. Message-string parsing in luz_store is brittle and explicitly the last resort — production failure messages are English prose ("An error occurred: Your card has expired.", "Charge of pre-authorization failed.") because the raw codes are consumed upstream and never reach luz_store.
 
-Open question: does Payrexx deliver the ISO code as a structured field to luz_online_payment, or only prose? Must confirm with processor (task 2.1) before freezing the mapping.
+**Open question at the time:** does Payrexx deliver the ISO code as a structured field at all (task 2.1)? Must be confirmed before freezing the mapping.
+
+> [!warning] Superseded
+> Scope was later reversed — see [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]], and the final split in [[LUZ-157476 decline-code flow: luz-online-payment forwards, luz_store maps]].
+
+Ticket: LUZ-157476 / LUZ-157809, epic LUZ-156281 (credit-card-only billing).
 
 ## Related
+
 - [[DECLINED status falls through invoice charge-failure handling in luz_store]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
 - [[Payrexx decline codes are ISO 8583 issuer codes from the card-issuing bank]]
 - [[luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values]]

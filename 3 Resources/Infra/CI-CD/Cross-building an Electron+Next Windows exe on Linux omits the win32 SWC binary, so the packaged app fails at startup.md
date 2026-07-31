@@ -1,22 +1,30 @@
 ---
 title: "Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup"
 created: 2026-07-15
+updated: 2026-07-31
 type: lesson
 status: seedling
-source: "session 2026-07-14"
+source: "session 2026-07-14 (Vinnstack release exe)"
 tags: [electron, nextjs, swc, cross-build, cloud-build, native-deps, gotcha]
 ---
 
 # Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup
 
-Root cause (Vinnstack release exe didn't work, 2026-07-14): the Windows portable exe is CROSS-BUILT on Linux (Cloud Build node:20 + wine for electron-builder --win). `npm ci` on Linux installs only the Linux platform-specific @next/swc-* native binary (swc-linux-x64-gnu / -musl). electron-builder then packaged THOSE into the Windows app (visible under resources/app.asar.unpacked/node_modules/@next/). There was NO @next/swc-win32-x64-msvc in the package. At runtime on Windows, next({dev:false}).prepare() can't load a usable SWC binary → throws → electron/main.js startNextServer() fails → app shows its error dialog and quits. Symptom seen: splash opens + cloud-sql-proxy sidecar starts (both before startNextServer), then nothing ever listens on the pinned port.
+**Claim:** platform-specific native optional deps resolve for the BUILD host's OS/arch. `npm ci` on a Linux CI image installs only `@next/swc-linux-x64-gnu`/`-musl`; electron-builder then packages *those* into the Windows app, with no `@next/swc-win32-x64-msvc`. On Windows, `next({dev:false}).prepare()` cannot load a usable SWC binary → throws → `startNextServer()` in `electron/main.js` fails and the app quits. Symptom: splash + cloud-sql-proxy sidecar start (both run before `startNextServer`), then nothing ever listens on the pinned port.
 
-Why it hid: `next start` and programmatic next({dev:false}).prepare() BOTH work on the Windows dev machine (it has the win32 swc). A green Cloud Build (tests + next build + package + upload) does NOT catch it either — build succeeds on Linux with the linux swc; the mismatch only bites at runtime on the target OS.
+**Why it hides:** the Windows dev machine has the win32 swc, so `next start` and the programmatic path both work locally; and Cloud Build stays green because the Linux build genuinely succeeds. The mismatch only bites at runtime on the target OS.
 
-Fix: after `npm ci` in CI, force-install the matching win32 swc so it's bundled — 
-`NEXT_VER=$(node -p "require('next/package.json').version"); npm install --no-save --force "@next/swc-win32-x64-msvc@${NEXT_VER}"`. 
---force bypasses the EBADPLATFORM check on Linux; --no-save keeps the lockfile valid for `npm ci`; version pinned to next's own version so it can't drift. The build's asarUnpack `node_modules/@next/swc-*/**/*` glob then unpacks it (native .node can't live inside asar).
+**Fix — force-install the target-OS binary after `npm ci` in CI:**
 
-General lesson: any platform-specific native optional dependency (@next/swc, esbuild, sharp, @swc/core, better-sqlite3, etc.) is resolved for the BUILD host's OS/arch. Cross-building a desktop app for another OS must explicitly add the target-OS native package, or build on the target OS. Verify by listing the packaged artifact for the expected platform binary (e.g. grep the app for swc-win32) — don't trust a green build.
+```bash
+NEXT_VER=$(node -p "require('next/package.json').version")
+npm install --no-save --force "@next/swc-win32-x64-msvc@${NEXT_VER}"
+```
 
-How it was found: extracted the release exe with 7za and listed resources/app.asar.unpacked → saw only linux swc; grep for "swc-win32" returned 0.
+`--force` bypasses the `EBADPLATFORM` check on Linux; `--no-save` keeps the lockfile valid for `npm ci`; pinning to next's own version prevents drift. The `asarUnpack` glob `node_modules/@next/swc-*/**/*` then unpacks it (a native `.node` cannot live inside asar).
+
+**Generalise:** same for `esbuild`, `sharp`, `@swc/core`, `better-sqlite3`. Either add the target-OS native package explicitly or build on the target OS — and **verify the artifact, not the build**: extract the exe (`7za`) and grep `resources/app.asar.unpacked` for the expected platform binary (e.g. `swc-win32`).
+
+## Related
+
+- [[Cross-building Electron Windows exe on Linux needs wine]]

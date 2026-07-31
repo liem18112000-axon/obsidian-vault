@@ -1,19 +1,31 @@
 ---
-title: "Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED"
+title: "Cloud SQL Auth Proxy needs roles/cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED"
 created: 2026-07-06
 type: gotcha
 status: seedling
-source: "vinnstack connect-cloud-db.ps1, 2026-07-06"
-tags: [cloud-sql, iam, gcp, auth-proxy, vinnstack]
+source: "vinnstack connect-cloud-db.ps1 2026-07-06; vinnstack GKE sign-in failure 2026-07-04"
+tags: [cloud-sql, iam, gcp, auth-proxy, gke, debugging, vinnstack]
 ---
 
-# Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED
+# Cloud SQL Auth Proxy needs roles/cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED
 
-To connect through the Cloud SQL Auth Proxy, the identity the proxy authenticates as (your gcloud Application Default Credentials, or the GSA on a pod) needs the role roles/cloudsql.client on the instance's PROJECT. It grants cloudsql.instances.connect + cloudsql.instances.get. Missing it → the proxy starts but the connection fails with 403 NOT_AUTHORIZED (surfaces app-side as ECONNRESET / "cannot connect"). The DB user/password is separate and unrelated — this is purely IAM to reach the instance, not to log into Postgres.
+The identity the Cloud SQL Auth Proxy authenticates as (your gcloud ADC locally, or the GSA / Workload-Identity-bound KSA on a pod) needs **`roles/cloudsql.client`** on the instance's **project** — it grants `cloudsql.instances.connect` + `cloudsql.instances.get`. Without it the proxy still starts and still accepts the local TCP connection ("Accepted connection from 127.0.0.1"), then fails the upstream cert refresh with `Error 403 NOT_AUTHORIZED: missing permission cloudsql.instances.get on instances/<db>`. This is purely IAM to reach the instance — the Postgres user/password is separate and unrelated.
 
-Check a member's roles on a project:
-  gcloud projects get-iam-policy PROJECT --flatten="bindings[].members" --filter="bindings.members:EMAIL" --format="value(bindings.role)"
-Grant it (single command; pick user: or serviceAccount: by whether the email ends in .gserviceaccount.com):
-  gcloud projects add-iam-policy-binding PROJECT --member="user:EMAIL" --role="roles/cloudsql.client"
+**The app-side symptom is misleading:** connections reset rather than never open, so the application logs only `read ECONNRESET` on DB queries with no detail. The cause lives in the **sidecar**, not the app. Diagnosis path:
+1. Pivot from app logs to the proxy container's logs.
+2. The proxy runs with `--structured-logs`, so grep `jsonPayload`/`message:` — a plain-text filter finds nothing.
+3. Identify the proxy's identity: `kubectl get secret <gsa-key> -o jsonpath='{.data.key\.json}' | base64 -d | grep client_email`.
+4. Check and grant:
+   ```bash
+   gcloud projects get-iam-policy PROJECT --flatten="bindings[].members" \
+     --filter="bindings.members:EMAIL" --format="value(bindings.role)"
+   gcloud projects add-iam-policy-binding PROJECT --member="user:EMAIL" --role="roles/cloudsql.client"
+   ```
+   Use `serviceAccount:` when the email ends in `.gserviceaccount.com`. The proxy retries its metadata refresh on a loop and recovers within ~1–2 min — no pod restart needed.
 
-Gotchas: (1) the check needs resourcemanager.projects.getIamPolicy yourself, else it errors — treat a failed check as inconclusive, not "missing"; (2) the role can be inherited via a group, so a direct-binding check can false-negative — keep such checks a WARNING, never a hard block; (3) IAM policy binding changes on GCP typically require a human with the right admin role — an automated agent usually can't self-grant.
+Gotchas: the check itself needs `resourcemanager.projects.getIamPolicy`, so a failed check is *inconclusive*, not "missing"; the role can be inherited via a group, so a direct-binding check false-negatives — keep such checks a WARNING, never a hard block; and granting IAM usually needs a human admin, an agent can't self-grant. Meta-lesson: a manifest comment saying "the GSA needs role X" is documentation, not enforcement — verify the binding exists.
+
+## Related
+
+- [[GCP Cloud SQL IAM role cheat-sheet: which role grants cloudsql.instances.get]]
+- [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]

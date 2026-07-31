@@ -23,4 +23,8 @@ REJECTED: Bergamot (Firefox WASM offline MT) -- no Vietnamese pair.
 
 INTEGRATION GOTCHAS (Electron/Next): onnxruntime-node ships platform-specific native binaries (win32-x64) -- electron-builder must bundle them and Next must treat them as external (serverExternalPackages), not webpack-bundle them. Bundle the ~40-80MB model with the app for true offline + no first-run download. Verify model license (OPUS-MT usually CC-BY-4.0) before bundling.
 
-Recommendation: OPUS-MT via Transformers.js for translate; keep the LLM path for "explain". Related: [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]].
+Recommendation: OPUS-MT via Transformers.js for translate; keep the LLM path for "explain".
+
+## Related
+
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]

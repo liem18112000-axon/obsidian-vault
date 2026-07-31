@@ -16,10 +16,7 @@ This matters whenever a project's cloud platform is GCP-only but the LLM needed 
 Always spot-check the live Vertex rate card for the exact model before finalizing a cost estimate — pricing summaries from web search can lag the actual current SKU pricing.
 
 ## Related
-- [[Claude subscription OAuth cannot power a third-party audience-facing app]]
-- [[Virtual avatar presenter project design plan]]
-
-## Related
 
 - [[Claude subscription OAuth cannot power a third-party audience-facing app]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
 - [[Virtual avatar presenter project design plan]]

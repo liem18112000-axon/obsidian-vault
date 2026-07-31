@@ -18,8 +18,5 @@ The same author (met4citizen) also ships a companion project, HeadTTS (github.co
 This is the go-to free/self-hosted choice for building a talking-avatar web app on a budget. Paid alternatives worth knowing about if higher-fidelity full-face (not just mouth) animation is needed later: Simli (~$0.05/min, sub-500ms latency, easy web SDK, $10 free signup credit) and HeyGen Streaming/Interactive Avatar API (~$0.05/sec at 720p — notably pricier than Simli).
 
 ## Related
-- [[Virtual avatar presenter project design plan]]
-
-## Related
 
 - [[Virtual avatar presenter project design plan]]

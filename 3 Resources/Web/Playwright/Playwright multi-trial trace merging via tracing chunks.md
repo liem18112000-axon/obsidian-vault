@@ -4,33 +4,39 @@ created: 2026-07-23
 type: lesson
 status: seedling
 source: "session 2026-07-23, luz-docs earchive-perf-trace tool"
-tags: [playwright, tracing, testing]
-aliases: ["Playwright multi-trial trace merging via tracing chunks"]
+tags: [playwright, tracing, testing, gotcha]
+aliases:
+  - "Playwright multi-trial trace merging via tracing chunks"
+  - "stopChunk() without a path silently discards that chunk's trace data"
+  - "Manually stopChunk()-ing the last Playwright trace chunk breaks the final tracing.stop({path})"
+  - "Page navigation timeout can corrupt Playwright context tracing state"
 ---
 
 # Playwright has no way to merge N trials into one browsable trace.zip
 
-**Corrects an earlier wrong assumption in this same note.** I originally believed `context.tracing.startChunk()`/`stopChunk()` (no path) + a final `context.tracing.stop({path})` would bundle every trial's chunk into one trace.zip that the viewer shows as multiple tabs. Verified false by reading Playwright's own source (`node_modules/playwright-core/lib/coreBundle.js`):
+`context.tracing.startChunk()` / `stopChunk()` (no path) + a final `context.tracing.stop({path})` does **not** bundle every trial into one multi-tab trace.zip. Verified against Playwright source (`node_modules/playwright-core/lib/coreBundle.js`):
 
-- `stopChunk()` called **without** a path discards that chunk's recorded trace data outright (`if (!filePath) { tracingStopChunk({mode:'discard'}); return }`) — it does not buffer it for a later combined save. Only the chunk that's still open when you finally call `context.tracing.stop({path})` gets saved (confirmed empirically: a "combined" trace.zip built this way only ever contained the LAST trial's `context-options` marker, not all of them).
-- The `show-trace` CLI command's positional argument is `[trace]` — commander.js parses it as a single optional value, not variadic. There is no way to pass several trace files and have them open together as tabs/sources.
-- Pointing `show-trace` at a directory only works for one **unzipped** trace's loose `.trace`/`.network`/`resources/` files (`traceDescriptor()` just lists that one directory's contents) — not a folder of several separate `trace.zip` archives.
+- **`stopChunk()` without a `path` discards that chunk outright** — `if (!filePath) { tracingStopChunk({mode:'discard'}); return }`. It does not buffer for a later combined save, and each `startChunk()` allocates a fresh trace file (`_allocateNewTraceFile`), so the data is simply gone. Only the chunk still open when `stop({path})` runs is saved (empirically: the "combined" zip held only the LAST trial's `context-options` marker).
+- `show-trace`'s positional arg is `[trace]` — commander.js parses one optional value, not variadic. You cannot open several traces as tabs.
+- Pointing `show-trace` at a directory works only for ONE **unzipped** trace's loose `.trace`/`.network`/`resources/` files (`traceDescriptor()` lists that one directory) — not a folder of `trace.zip` archives.
 
-**What tracing chunks are actually for**: multiple recordings on ONE shared `BrowserContext` (e.g. Playwright Test's own per-retry trace), where you explicitly want either (a) to discard a chunk (`stopChunk()`, no path) or (b) save that one chunk as its own trace.zip (`stopChunk({path})`) before starting the next. Chunks give you a shared context (cheaper than relaunching a browser per trial) and a readable per-chunk `title` — they don't give you a merged view.
+**Related failure mode:** `stop({path})` internally does `_doStopChunk(path)` on whichever chunk is *currently open*; if you already manually stopped the last chunk, nothing is open and it throws `Must start tracing before stopping`. The tempting "fix" — leave the last chunk open for `stop({path})` — stops the crash but silently yields a trace.zip containing only that one trial. (A `page.goto()` timeout in the loop is a red herring; reproduced with zero navigation errors.)
 
-**Correct pattern for "N trials, keep every trace"**: reuse one context, but call `stopChunk({path: 'runN/trace.zip'})` for every trial including the last (uniformly, no special-casing) — each is a fully valid, independently-openable trace:
+**What chunks are actually for:** several recordings on ONE shared `BrowserContext` (cheaper than relaunching per trial) with a readable per-chunk `title` — either discard a chunk or save it as its own zip. Not a merge unit.
+
+**Correct pattern — N trials, keep every trace:** save every chunk with its own path, uniformly, no last-iteration special case:
 ```js
 for (let i = 1; i <= N; i++) {
-  await context.tracing.startChunk({ title: `run${i}` })   // just a readable title, not a merge unit
+  await context.tracing.startChunk({ title: `run${i}` })
   try { /* run trial i on a fresh context.newPage() */ }
   finally { await context.tracing.stopChunk({ path: `run${i}/trace.zip` }) }
 }
-await context.tracing.stop()   // no path — every trial already saved its own; this just tears down cleanly
+await context.tracing.stop()   // no path — every trial already saved; this just tears down
 ```
 Open one at a time: `npx playwright show-trace run3/trace.zip`.
 
-See [[stopChunk() without a path silently discards that chunk's trace data]] for the specific discard-mode fact this correction turned on.
+**Debugging takeaway:** when an internal API state check fails only in a *specific call sequence*, trace the call sequence — don't blame the unrelated flaky thing (a real env timeout) that happened to co-occur; the correlation looked causal across two sessions before a clean run ruled it out.
 
 ## Related
 
-- [[stopChunk() without a path silently discards that chunk's trace data]]
+- [[Server-rendered JSF apps never expose their internal API calls to browser network capture]]

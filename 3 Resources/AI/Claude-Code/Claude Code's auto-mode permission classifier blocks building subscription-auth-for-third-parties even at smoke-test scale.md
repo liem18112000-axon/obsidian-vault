@@ -16,11 +16,6 @@ Concretely: attempting `claude -p --permission-mode dontAsk --output-format json
 Why this matters: this is a second, independent enforcement layer beyond the ToS docs themselves ([[Claude subscription OAuth cannot power a third-party audience-facing app]]) — Anthropic isn't just relying on written policy, the tooling itself is designed to catch and block this exact pattern at build-time, before the app is ever deployed. Practical implication: don't bother trying creative workarounds (different flags, different transport, "just a test") for this class of request — treat a denial like this as a hard design constraint to route around architecturally (e.g. switch the audience-facing path to Vertex AI / a real API key), not a prompt-engineering problem to solve.
 
 ## Related
-- [[Claude subscription OAuth cannot power a third-party audience-facing app]]
-- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
-- [[Virtual avatar presenter project design plan]]
-
-## Related
 
 - [[Claude subscription OAuth cannot power a third-party audience-facing app]]
 - [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]

@@ -43,15 +43,14 @@ curl -X POST "https://api.accesstrade.vn/v1/product_link/create" \
 
 There is also a **TikTok Shop** variant: `POST /v2/tiktokshop_product_feeds/create_link` (`product_url`, `product_id`, `utm_*`, `sub_1-4`, `minify`).
 
-## Global OBS — Creative quick link / custom creative
-
-On OBS you get a ready link via the **Creative APIs** instead: `GET .../creatives/quicklink` returns an `affiliateLink`, and `POST .../creatives/custom` builds a branded link for a validated `landingUrl` with `subIds`. See [[Accesstrade Creative APIs]].
+On the global **OBS** generation there is no `product_link/create`; the quicklink / custom-creative endpoints play this role — see [[Accesstrade Creative APIs]].
 
 ## Best practices
 
 - **Batch** multiple `urls` in one call rather than one request per URL.
 - Always set a meaningful `sub1` (e.g. the content slug) so revenue is traceable back to the exact post.
-- Cache the `aff_link` keyed by `(campaign_id, origin_url, subs)` — the same inputs always yield the same attributed link, so don't re-mint on every run.
+- Don't re-mint on every run — cache by content hash of the inputs: [[Idempotent link minting with content-hash cache keys]].
+- Pass the **numeric** `campaign_id`, not the merchant slug — [[Accesstrade classic campaign campaign_id is the numeric id, raw.merchant is the slug]].
 
 ## Related
 

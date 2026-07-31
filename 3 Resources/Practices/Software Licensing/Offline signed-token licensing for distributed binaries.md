@@ -4,21 +4,18 @@ created: 2026-06-14
 type: concept
 status: seedling
 source: "fb-info-project session 2026-06-14"
-tags: [licensing, cryptography, ed25519, distribution]
+tags: [licensing, cryptography, ed25519, distribution, security]
 ---
 
 # Offline signed-token licensing for distributed binaries
 
-Software that runs on the end user's machine with no server (e.g. a PyInstaller exe) can still enforce access control with an **Ed25519-signed token**. The operator keeps the PRIVATE key and signs a tiny payload (`{user, expires, limits}`); the binary embeds only the PUBLIC key and verifies the token **offline**. A user cannot forge a token or extend its expiry without the private key, which never leaves the operator.
+Software running on the end user's machine with no server (e.g. a PyInstaller exe) can still enforce access control with an **Ed25519-signed token**. The operator holds the PRIVATE key and signs a tiny payload (`{user, expires, limits}`); the binary embeds only the PUBLIC key and verifies **offline**. Without the private key a user can neither forge a token nor extend its expiry.
 
-**Gotcha that makes or breaks it:** embed the public key as a *compiled constant* in the binary, NOT as an environment variable or config-file value. An env-overridable key lets the user point the binary at their own key and self-sign an unlimited token, defeating the whole scheme.
+Token shape that works well: `base64url(payload_json) + "." + base64url(signature)` — one line in a file dropped next to the app.
 
-Token shape that works well: `base64url(payload_json) + "." + base64url(signature)`, one line in a file the user drops next to the app.
-
-See [[Offline licensing: expiry is strong, usage counters only best-effort]] for what this can and cannot guarantee.
-
-## Related
-
-- [[Offline licensing: expiry is strong]]
-- [[usage counters only best-effort]]
-- [[Vendor pure-Python Ed25519 instead of bundling a crypto wheel]]
+This is the hub note for the scheme; the load-bearing details live in their own notes:
+- Trust anchor must be a compiled-in constant, never env/config overridable → [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+- Expiry is enforceable, usage counters are not → [[Offline licensing expiry is strong, usage counters only best-effort]]
+- No revocation exists, so prefer short validity + renewal → [[Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal]]
+- One operator keypair + an auto-appended issuance ledger → [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+- Verify with a vendored pure-Python impl, not a crypto wheel → [[Vendor pure-Python Ed25519 instead of bundling a crypto wheel]]
