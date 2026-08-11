@@ -1,10 +1,18 @@
 ---
-title: "GreenNode cloud runs on VNG Cloud infrastructure"
+ai_hash: ecd0fc4bd8d429bd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-26
-type: concept
+entities: []
+source: session 2026-07-26
 status: seedling
-source: "session 2026-07-26"
-tags: [vngcloud, greennode, cloud, terraform]
+tags:
+- vngcloud
+- greennode
+- cloud
+- terraform
+title: GreenNode cloud runs on VNG Cloud infrastructure
+type: concept
 ---
 
 # GreenNode cloud runs on VNG Cloud infrastructure
@@ -18,3 +26,11 @@ Note: this is distinct from Viettel IDC cloud, which is OpenStack- or vCloud-bas
 ## Related
 
 - [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+
+%% ai-graph-end %%

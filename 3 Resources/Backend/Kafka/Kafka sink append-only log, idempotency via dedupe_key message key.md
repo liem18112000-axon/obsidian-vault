@@ -1,10 +1,20 @@
 ---
-title: "Kafka sink: append-only log, idempotency via dedupe_key message key"
+ai_hash: 7694677c096b1395
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26 feat/appsflyer-pull-kafka-sink
 status: seedling
-source: "session 2026-06-26 feat/appsflyer-pull-kafka-sink"
-tags: [kafka, idempotency, cdp, connector, leo-cdp, python]
+tags:
+- kafka
+- idempotency
+- cdp
+- connector
+- leo-cdp
+- python
+title: 'Kafka sink: append-only log, idempotency via dedupe_key message key'
+type: lesson
 ---
 
 # Kafka sink: append-only log, idempotency via dedupe_key message key
@@ -25,3 +35,14 @@ For the Leo CDP AppsFlyer connector this let BOTH the push receiver and the pull
 
 - [[3 Resources/Infra/Deployment/A webhook receiver deploys as an always-on service, not a scheduled job]]
 - [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+- [[Composite fan-out sink materialize once, best-effort, idempotent retries]]
+- [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+- [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
+- [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
+
+%% ai-graph-end %%

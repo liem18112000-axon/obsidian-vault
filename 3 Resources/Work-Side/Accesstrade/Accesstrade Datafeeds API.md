@@ -1,18 +1,22 @@
 ---
-title: Accesstrade Datafeeds API
-created: 2026-06-11
-type: term
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - datafeed
-  - products
+ai_hash: 841e3f580c81d023
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade datafeeds
-  - Accesstrade product catalog
+- Accesstrade datafeeds
+- Accesstrade product catalog
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- datafeed
+- products
+title: Accesstrade Datafeeds API
+type: term
 ---
 
 # Accesstrade Datafeeds API
@@ -57,3 +61,14 @@ flowchart TD
 - [[Accesstrade Promotions and Top Products APIs]]
 - [[Use case - campaign discovery and datafeed content briefs]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Use case - campaign discovery and datafeed content briefs]]
+- [[Accesstrade Promotions and Top Products APIs]]
+- [[Accesstrade Campaigns API]]
+- [[Accesstrade API Integration - MOC]]
+- [[Use case - bulk tracking link generation]]
+
+%% ai-graph-end %%

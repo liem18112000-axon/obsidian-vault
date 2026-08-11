@@ -1,10 +1,20 @@
 ---
-title: "A process-global active account leaks identity across concurrent requests in a single-process server"
+ai_hash: d1aefec7a094a4a4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-06
-type: gotcha
+entities: []
+source: vinnstack multi-account review 2026-07-06
 status: seedling
-source: "vinnstack multi-account review 2026-07-06"
-tags: [multi-tenancy, concurrency, async-local-storage, identity, vinnstack]
+tags:
+- multi-tenancy
+- concurrency
+- async-local-storage
+- identity
+- vinnstack
+title: A process-global active account leaks identity across concurrent requests in
+  a single-process server
+type: gotcha
 ---
 
 # A process-global active account leaks identity across concurrent requests in a single-process server
@@ -20,3 +30,14 @@ Fix: make the identity REQUEST-SCOPED. In Node, AsyncLocalStorage is the low-chu
 ## Related
 
 - [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-account credential store should only hold per-identity secrets]]
+- [[Config read into a module-level const applies only on next process launch]]
+- [[Per-account CLI sessions inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint]]
+- [[Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected]]
+- [[Vinnstack is local-only by design spawned-CLI login + local FS state + single-tenant]]
+
+%% ai-graph-end %%

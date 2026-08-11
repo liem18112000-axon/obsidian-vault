@@ -1,10 +1,18 @@
 ---
-title: "When a merge turns CI red decide test-vs-source fix by reading code intent"
+ai_hash: 4295582daa03bd44
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-26
-type: lesson
+entities: []
+source: vinnstack cloud-build fix, session 2026-07-26
 status: seedling
-source: "vinnstack cloud-build fix, session 2026-07-26"
-tags: [testing, ci, debugging, decision]
+tags:
+- testing
+- ci
+- debugging
+- decision
+title: When a merge turns CI red decide test-vs-source fix by reading code intent
+type: lesson
 ---
 
 # When a merge turns CI red decide test-vs-source fix by reading code intent
@@ -25,3 +33,14 @@ Reproduce locally and re-run rather than trusting the CI log alone — see [[A r
 
 - [[Guard array-typed React state seeded from a fetch with ?? []]]
 - [[A render crash masks latent crashes elsewhere in the same React subtree]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A render crash masks latent crashes elsewhere in the same React subtree]]
+- [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Run the full affected test package locally, not a hand-picked subset]]
+- [[A refactor that removes a method must grep tests for its name before merging]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Unit-test a non-package CLI script by loading it with importlib and capturing its stdout"
+ai_hash: b01f9ab797fa6e7d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04 fb-info-project test_license_admin_unit.py
 status: seedling
-source: "session 2026-07-04 fb-info-project test_license_admin_unit.py"
-tags: [python, pytest, testing, argparse]
+tags:
+- python
+- pytest
+- testing
+- argparse
+title: Unit-test a non-package CLI script by loading it with importlib and capturing
+  its stdout
+type: howto
 ---
 
 # Unit-test a non-package CLI script by loading it with importlib and capturing its stdout
@@ -22,3 +31,13 @@ Then call its internal functions directly, passing a hand-built `argparse.Namesp
 Applied in fb-info-project to test tools/license_admin.py: build a Namespace with key/user/tier, call `admin.sign(args)`, grab the last stdout line as the minted token, and feed it to the client verifier - an end-to-end operator->client check.
 
 Related: [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+- [[fb-info-project CI and build workflow split]]
+- [[Black-box E2E test a PyInstaller one-dir app from a temp CWD]]
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+
+%% ai-graph-end %%

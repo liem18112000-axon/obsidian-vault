@@ -1,10 +1,20 @@
 ---
-title: "Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)"
+ai_hash: 3927580b15dafe2d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: howto
+entities: []
+source: session 2026-07-02 — Polaris in Vinnstack
 status: seedling
-source: "session 2026-07-02 — Polaris in Vinnstack"
-tags: [vinnstack, polaris, mcp, claude-code, permissions]
+tags:
+- vinnstack
+- polaris
+- mcp
+- claude-code
+- permissions
+title: Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery
+  + allowlist)
+type: howto
 ---
 
 # Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)
@@ -27,3 +37,14 @@ Runtime checklist to use it: `polaris up` (tunnel on) → global bootstrap done 
 - [[status]]
 - [[up]]
 - [[agents)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+- [[Polaris MCP moved to hosted endpoint polaris-mcp.epost.ch (requires auth)]]
+
+%% ai-graph-end %%

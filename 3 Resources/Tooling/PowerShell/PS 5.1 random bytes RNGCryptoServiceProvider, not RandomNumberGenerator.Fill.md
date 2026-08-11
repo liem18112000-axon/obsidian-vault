@@ -1,10 +1,17 @@
 ---
-title: "PS 5.1 random bytes: RNGCryptoServiceProvider, not RandomNumberGenerator.Fill"
+ai_hash: c9625a4960372d7b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04, vinnstack NEXTAUTH_SECRET
 status: seedling
-source: "session 2026-07-04, vinnstack NEXTAUTH_SECRET"
-tags: [powershell, crypto, secrets]
+tags:
+- powershell
+- crypto
+- secrets
+title: 'PS 5.1 random bytes: RNGCryptoServiceProvider, not RandomNumberGenerator.Fill'
+type: howto
 ---
 
 # PS 5.1 random bytes: RNGCryptoServiceProvider, not RandomNumberGenerator.Fill
@@ -20,3 +27,10 @@ Trap observed: the method-not-found error is NON-terminating for the surrounding
 ## Related
 
 - [[PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

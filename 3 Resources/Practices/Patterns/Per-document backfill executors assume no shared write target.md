@@ -1,10 +1,18 @@
 ---
-title: "Per-document backfill executors assume no shared write target"
+ai_hash: 519d4f4002972bbc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: luz_docs foldercount HLL badge implementation plan, 2026-07-09
 status: seedling
-source: "luz_docs foldercount HLL badge implementation plan, 2026-07-09"
-tags: [concurrency, batch-processing, migration, architecture]
+tags:
+- concurrency
+- batch-processing
+- migration
+- architecture
+title: Per-document backfill executors assume no shared write target
+type: lesson
 ---
 
 # Per-document backfill executors assume no shared write target
@@ -22,3 +30,14 @@ See [[Shared aggregate write targets need CAS, not plain $set]] for the live-wri
 ## Related
 
 - [[3 Resources/Practices/Patterns/Shared aggregate write targets need CAS, not plain $set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Shared aggregate write targets need CAS, not plain $set]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[Fan-out gate and backfill filter must cover the same field set]]
+
+%% ai-graph-end %%

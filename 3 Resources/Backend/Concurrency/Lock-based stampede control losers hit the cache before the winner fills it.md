@@ -1,10 +1,19 @@
 ---
-title: "Lock-based stampede control: losers hit the cache before the winner fills it"
+ai_hash: dd2833676c3c55e1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23 gate stampede discussion
 status: seedling
-source: "session 2026-07-23 gate stampede discussion"
-tags: [concurrency, distributed-lock, cache, stampede]
+tags:
+- concurrency
+- distributed-lock
+- cache
+- stampede
+title: 'Lock-based stampede control: losers hit the cache before the winner fills
+  it'
+type: lesson
 ---
 
 # Lock-based stampede control: losers hit the cache before the winner fills it
@@ -24,3 +33,14 @@ Rule of thumb: at 2-3 pods, per-pod single-flight ([[Per-pod single-flight kills
 
 - [[Per-pod single-flight kills cache stampede without semantic change]]
 - [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+
+%% ai-graph-end %%

@@ -1,8 +1,19 @@
 ---
-type: term
+ai_hash: 56582cf24bb1247d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- Reversal
+- Clawback
+- Chargeback
+- Scrubbing
+- Reversed Commission
 domain: affiliate-marketing
-aliases: [Reversal, Clawback, Chargeback, Scrubbing, Reversed Commission]
-tags: [affiliate, payout]
+entities: []
+tags:
+- affiliate
+- payout
+type: term
 ---
 
 # Reversal
@@ -76,3 +87,14 @@ If you'd budgeted ad spend against the $500 pending, you'd have over-spent.
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Term]]
+- [[Cost per Sale]]
+- [[Cost per Lead]]
+- [[Revenue Share]]
+- [[Cost per Action]]
+
+%% ai-graph-end %%

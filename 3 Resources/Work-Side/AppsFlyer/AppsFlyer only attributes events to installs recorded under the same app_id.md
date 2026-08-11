@@ -1,10 +1,18 @@
 ---
-title: "AppsFlyer only attributes events to installs recorded under the same app_id"
+ai_hash: 65a04046bb266351
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: lesson
+entities: []
+source: appsflyer-data-connector project, 2026-07-13
 status: seedling
-source: "appsflyer-data-connector project, 2026-07-13"
-tags: [appsflyer, attribution, mobile-tracking, gotcha]
+tags:
+- appsflyer
+- attribution
+- mobile-tracking
+- gotcha
+title: AppsFlyer only attributes events to installs recorded under the same app_id
+type: lesson
 ---
 
 # AppsFlyer only attributes events to installs recorded under the same app_id
@@ -21,3 +29,14 @@ This is why a fabricated/random `appsflyer_id` never produces real data, and why
 ## Related
 
 - [[Minimal Android sideload technique for a real AppsFlyer install]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Minimal Android sideload technique for a real AppsFlyer install]]
+- [[AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API]]
+- [[How to get real AppsFlyer Pull API data with the synthetic generator]]
+- [[AppsFlyer Push API is the inverse of the Pull API]]
+- [[AppsFlyer raw-data Pull API is plan-gated - 400 subscription error]]
+
+%% ai-graph-end %%

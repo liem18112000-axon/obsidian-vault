@@ -1,10 +1,19 @@
 ---
-title: "Count _shard docs per tenant via in-pod Percona mongo shell on dev"
+ai_hash: 48cdb239c51a7cc0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: howto
+entities: []
+source: session 2026-07-15
 status: seedling
-source: "session 2026-07-15"
-tags: [mongodb, luz-docs, kubectl, percona, sharding]
+tags:
+- mongodb
+- luz-docs
+- kubectl
+- percona
+- sharding
+title: Count _shard docs per tenant via in-pod Percona mongo shell on dev
+type: howto
 ---
 
 # Count _shard docs per tenant via in-pod Percona mongo shell on dev
@@ -32,3 +41,14 @@ Observed 2026-07-15: tenant c1085cf9 had 6 / 200006 docs with _shard — PARALLE
 ## Related
 
 - [[luz-docs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[dev-staging tenants live on a separate mongo cluster from dev]]
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[Luz performance env cluster topology]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+
+%% ai-graph-end %%

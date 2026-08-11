@@ -1,10 +1,19 @@
 ---
-title: "obsidian-quartz publishes via a content submodule pointer bump"
+ai_hash: 220abb1aeda2c875
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: concept
+entities: []
+source: session 2026-07-31 quartz vault sync
 status: seedling
-source: "session 2026-07-31 quartz vault sync"
-tags: [quartz, obsidian, git-submodule, github-pages, publishing]
+tags:
+- quartz
+- obsidian
+- git-submodule
+- github-pages
+- publishing
+title: obsidian-quartz publishes via a content submodule pointer bump
+type: concept
 ---
 
 # obsidian-quartz publishes via a content submodule pointer bump
@@ -30,3 +39,14 @@ The published site at `obsidian-quartz` (Quartz static-site generator) does **no
 
 - [[git submodule update --remote can clobber unpushed submodule HEAD]]
 - [[Classify local vs upstream with git merge-base to pick ff or rebase]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Publish]]
+- [[git submodule update --remote can clobber unpushed submodule HEAD]]
+- [[Classify local vs upstream with git merge-base to pick ff or rebase]]
+- [[Auto-versioning generated files into a local git repo add -A + serialized queue + fire-and-forget]]
+- [[My knowledge ecosystem Claude hooksskills - Obsidian vault - Quartz wiki + vault-graph (Vertex Graph RAG)]]
+
+%% ai-graph-end %%

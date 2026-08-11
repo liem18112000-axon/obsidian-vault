@@ -1,10 +1,20 @@
 ---
-title: "Claude subscription OAuth cannot power a third-party audience-facing app"
+ai_hash: f02e15c83683797d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: deep-research pass, virtual-avatar project, 2026-07-10
 status: evergreen
-source: "deep-research pass, virtual-avatar project, 2026-07-10"
-tags: [claude, anthropic, tos, licensing, claude-code, agent-sdk]
+tags:
+- claude
+- anthropic
+- tos
+- licensing
+- claude-code
+- agent-sdk
+title: Claude subscription OAuth cannot power a third-party audience-facing app
+type: lesson
 ---
 
 # Claude subscription OAuth cannot power a third-party audience-facing app
@@ -22,3 +32,14 @@ Practical implication: before designing any app that assumes "I have a Claude su
 - [[Claude models are available on GCP Vertex AI Model Garden]]
 - [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
 - [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+
+%% ai-graph-end %%

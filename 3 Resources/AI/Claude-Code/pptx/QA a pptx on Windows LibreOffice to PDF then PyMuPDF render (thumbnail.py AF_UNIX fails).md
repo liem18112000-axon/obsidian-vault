@@ -1,10 +1,21 @@
 ---
-title: "QA a pptx on Windows: LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)"
+ai_hash: eefa359be4e05586
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: lesson
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [pptx, libreoffice, pymupdf, windows, gotcha, claude-code]
+tags:
+- pptx
+- libreoffice
+- pymupdf
+- windows
+- gotcha
+- claude-code
+title: 'QA a pptx on Windows: LibreOffice to PDF then PyMuPDF render (thumbnail.py
+  AF_UNIX fails)'
+type: lesson
 ---
 
 # QA a pptx on Windows: LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)
@@ -32,3 +43,11 @@ On Windows, the Anthropic **pptx** skill'\''s `scripts/thumbnail.py` (visual QA 
 - The `MuPDF error: No common ancestor in structure tree` warnings during `get_pixmap` are **non-fatal**; the PNGs still write.
 
 Discovered while building image-driven slide decks under `C:\Users\dvtliem\.claude\docs\hook-present` (the Claude Hooks & Skills talk).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LibreOffice headless convert-to leaves soffice.bin locking the source file — silent stale writes]]
+- [[pptxgenjs addImage stretches when wh aspect drifts from the real image — read PNG IHDR size]]
+
+%% ai-graph-end %%

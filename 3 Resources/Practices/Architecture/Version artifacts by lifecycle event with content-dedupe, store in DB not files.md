@@ -1,10 +1,18 @@
 ---
-title: "Version artifacts by lifecycle event with content-dedupe, store in DB not files"
+ai_hash: a17687cc79062c9d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: model
+entities: []
+source: session 2026-07-22
 status: seedling
-source: "session 2026-07-22"
-tags: [versioning, export, postgres, vinnstack]
+tags:
+- versioning
+- export
+- postgres
+- vinnstack
+title: Version artifacts by lifecycle event with content-dedupe, store in DB not files
+type: model
 ---
 
 # Version artifacts by lifecycle event with content-dedupe, store in DB not files
@@ -20,3 +28,14 @@ Why it works:
 ## Related
 
 - [[Kepler index]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Version changelogs - generate the explanation at snapshot time, compute the diff on demand]]
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[Vinnstack story flows keep only the latest version - history lives in md_exports snapshots]]
+- [[Async-enriched columns need a lazy backfill for pre-feature rows]]
+
+%% ai-graph-end %%

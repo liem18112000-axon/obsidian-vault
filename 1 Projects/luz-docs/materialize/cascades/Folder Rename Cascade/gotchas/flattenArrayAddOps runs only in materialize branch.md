@@ -1,15 +1,48 @@
 ---
-title: flattenArrayAddOps runs only in materialize branch
+ai_hash: 40701ccfda180a97
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-02
-type: lesson
-status: seedling
+entities:
+- flattenArrayAddOps
+- materialize branch
+- JSON-Patch ops
+- RFC 6902
+- add operation
+- array index
+- MaterializeCascadeService.stampMaterializeOnPatch
+- non-materialize jsonstore-bulk path
+- executeUpdatingManyDocumentByPatch
+- updateManyDocumentMetadataByPatch
+- tenant materialize state
+- materialize ON
+- materialize OFF
+- folderIds
+- flat folderIds
+- nested folderIds
+- MaterializeCompute
+- loadFoldersById
+- folder names
+- bulk-service level
+- validateAndNormalizeSecurityClassCodes
+- removeDuplicatedFolderIds
+- single-doc PATCH endpoint
+- nested-array bug
+- Materialize bulk PATCH fans out into N serial per-doc PATCH calls
+- securityClassCodes scalar string breaks materialize sentinels
+- Missing folder reference produces fail-closed materialize state
+- Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields
+- 01 Overview - Folder Rename Cascade
 source: code review of MaterializeCascadeService.stampMaterializeOnPatch + JsonObjectUtil.flattenArrayAddOps
+status: seedling
 tags:
-  - luz-docs
-  - materialize
-  - json-patch
-  - rfc-6902
-  - gotcha
+- luz-docs
+- materialize
+- json-patch
+- rfc-6902
+- gotcha
+title: flattenArrayAddOps runs only in materialize branch
+type: lesson
 ---
 
 # flattenArrayAddOps runs only in materialize branch
@@ -67,3 +100,46 @@ Inspect `documents.<docId>.folderIds` on a non-materialized tenant -- expect the
 - [[Missing folder reference produces fail-closed materialize state]]
 - [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
 - [[01 Overview - Folder Rename Cascade]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[RFC-6902 replace at array index expects a scalar element not an array]]
+- [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+- [[JSON-Patch remove-to-replace[] conversion skipped folderIds when another field's remove came first]]
+- [[Materialize bulk PATCH fans out into N serial per-doc PATCH calls]]
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+
+**Relations:**
+- flattenArrayAddOps — *runs only in* — materialize branch
+- flattenArrayAddOps — *rewrites* — JSON-Patch ops
+- RFC 6902 — *describes behavior of* — add operation
+- add operation — *at* — array index
+- add operation — *inserts entire array value at* — array index
+- add operation — *produces* — nested folderIds
+- flattenArrayAddOps — *prevents* — nested folderIds
+- flattenArrayAddOps — *is invoked by* — MaterializeCascadeService.stampMaterializeOnPatch
+- non-materialize jsonstore-bulk path — *is* — executeUpdatingManyDocumentByPatch
+- executeUpdatingManyDocumentByPatch — *is a branch of* — updateManyDocumentMetadataByPatch
+- non-materialize jsonstore-bulk path — *does not invoke* — flattenArrayAddOps
+- folderIds — *shape depends on* — tenant materialize state
+- materialize ON — *produces* — flat folderIds
+- materialize OFF — *produces* — nested folderIds
+- flattenArrayAddOps — *was introduced for* — MaterializeCompute
+- MaterializeCompute — *reads* — folderIds
+- MaterializeCompute — *expects* — flat folderIds
+- nested folderIds — *would crash* — loadFoldersById
+- nested folderIds — *would mis-resolve* — folder names
+- flattenArrayAddOps — *should be moved to* — bulk-service level
+- bulk-service level — *contains* — validateAndNormalizeSecurityClassCodes
+- bulk-service level — *contains* — removeDuplicatedFolderIds
+- flattenArrayAddOps — *should apply to* — single-doc PATCH endpoint
+- non-materialized tenant — *exhibits* — nested-array bug
+- nested-array bug — *affects* — folderIds
+- flattenArrayAddOps — *is related to* — Materialize bulk PATCH fans out into N serial per-doc PATCH calls
+- flattenArrayAddOps — *is related to* — securityClassCodes scalar string breaks materialize sentinels
+- flattenArrayAddOps — *is related to* — Missing folder reference produces fail-closed materialize state
+- flattenArrayAddOps — *is related to* — Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields
+- flattenArrayAddOps — *is related to* — 01 Overview - Folder Rename Cascade
+
+%% ai-graph-end %%

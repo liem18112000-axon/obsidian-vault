@@ -1,10 +1,19 @@
 ---
-title: "MicroProfile and WildFly have no HyperLogLog or cardinality-sketch utility"
+ai_hash: f3288e4240653310
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: observation
+entities: []
+source: luz_docs docs/count-estimate/microprofile-wildfly-hyperloglog-libs.md, 2026-07-09
 status: seedling
-source: "luz_docs docs/count-estimate/microprofile-wildfly-hyperloglog-libs.md, 2026-07-09"
-tags: [microprofile, wildfly, infinispan, hyperloglog, java]
+tags:
+- microprofile
+- wildfly
+- infinispan
+- hyperloglog
+- java
+title: MicroProfile and WildFly have no HyperLogLog or cardinality-sketch utility
+type: observation
 ---
 
 # MicroProfile and WildFly have no HyperLogLog or cardinality-sketch utility
@@ -18,3 +27,13 @@ Practical implication: if a WildFly/MicroProfile app needs cardinality estimatio
 ## Related
 
 - [[3 Resources/Data/Algorithms/HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs runs non-clustered WildFly pods, so pod-local sketchcounter state is broken]]
+- [[Apache DataSketches datasketches-memory breaks on JDK 21 with NoClassDefFoundError]]
+- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
+- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
+
+%% ai-graph-end %%

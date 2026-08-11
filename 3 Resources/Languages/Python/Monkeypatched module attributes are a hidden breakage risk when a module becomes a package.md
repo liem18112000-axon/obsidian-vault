@@ -1,10 +1,19 @@
 ---
-title: "Monkeypatched module attributes are a hidden breakage risk when a module becomes a package"
+ai_hash: 2cb027f43ff404c5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: session 2026-07-03 appsflyer-data-connector
 status: seedling
-source: "session 2026-07-03 appsflyer-data-connector"
-tags: [python, testing, monkeypatch, gotcha]
+tags:
+- python
+- testing
+- monkeypatch
+- gotcha
+title: Monkeypatched module attributes are a hidden breakage risk when a module becomes
+  a package
+type: lesson
 ---
 
 # Monkeypatched module attributes are a hidden breakage risk when a module becomes a package
@@ -30,3 +39,13 @@ Companion recipe: [[Convert a Python module to a package without breaking import
 **Refinement (same repo, next day):** importing `_private` names from the owning submodule silences nothing — linters flag \*any\* cross-module access to a protected member (`Access to a protected member _is_retryable of a module`). The underscore was the bug, not the import path: if code in another package needs a helper, it is de facto public API — drop the underscore (`_backoff` → `backoff`, etc.), re-export it from the package `__init__`, and keep private only what stays inside its own module (`_expo`). Rule of thumb: a leading underscore is a promise that only this module uses it; the first external importer breaks the promise, so rename rather than import around it.
 
 **Worst-case variant (hit on push.py → push/ split):** when the patched name is a *collaborator the code-under-test calls to avoid a side effect*, the miss does not error — it silently runs the real thing. `monkeypatch.setattr(push, "serve", fake)` patched the package attribute, but `push.cli.main` resolves `serve` from `push.cli`'s namespace → the REAL `ThreadingHTTPServer.serve_forever()` started and the test suite hung forever (no failure, no traceback — just a timeout). A hanging suite after a module→package split should immediately suggest: find every test that patches a *blocking* or *networked* collaborator through the old module namespace and repoint it to the submodule the caller actually imports from (`push.cli.serve`, `push.server.ThreadingHTTPServer`).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+- [[Extracting a shared utils package - classify by whether code knows source semantics]]
+- [[AppsFlyer package layout package-per-concern with no loose modules]]
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+
+%% ai-graph-end %%

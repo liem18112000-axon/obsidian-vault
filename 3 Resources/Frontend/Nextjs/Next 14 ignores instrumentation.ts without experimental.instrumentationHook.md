@@ -1,10 +1,18 @@
 ---
-title: "Next 14 ignores instrumentation.ts without experimental.instrumentationHook"
+ai_hash: 1d03ffd0d6383f88
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: gotcha
+entities: []
+source: session 2026-07-24, Claude Routine build
 status: seedling
-source: "session 2026-07-24, Claude Routine build"
-tags: [nextjs, instrumentation, startup, gotcha]
+tags:
+- nextjs
+- instrumentation
+- startup
+- gotcha
+title: Next 14 ignores instrumentation.ts without experimental.instrumentationHook
+type: gotcha
 ---
 
 # Next 14 ignores instrumentation.ts without experimental.instrumentationHook
@@ -23,3 +31,14 @@ Pattern for a server-only startup side-effect:
 ## Related
 
 - [[Vinnstack Claude Routine architecture (night-shift scheduler)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[instrumentation.ts with a Node-only dep breaks the edge build - externalize it]]
+- [[Vinnstack Claude Routine architecture (night-shift scheduler)]]
+- [[Config read into a module-level const applies only on next process launch]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+
+%% ai-graph-end %%

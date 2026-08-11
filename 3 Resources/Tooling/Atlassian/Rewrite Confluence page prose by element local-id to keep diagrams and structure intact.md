@@ -1,10 +1,19 @@
 ---
-title: "Rewrite Confluence page prose by element local-id to keep diagrams and structure intact"
+ai_hash: 0e9b9e75e5fdb3a5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-25
-type: lesson
+entities: []
+source: session 2026-07-25
 status: seedling
-source: "session 2026-07-25"
-tags: [confluence, storage-format, safe-edit, technique]
+tags:
+- confluence
+- storage-format
+- safe-edit
+- technique
+title: Rewrite Confluence page prose by element local-id to keep diagrams and structure
+  intact
+type: lesson
 ---
 
 # Rewrite Confluence page prose by element local-id to keep diagrams and structure intact
@@ -25,3 +34,13 @@ Parent technique: [[Edit Confluence Cloud via authenticated Playwright browser w
 ## Related
 
 - [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+- [[TextQuoteSelector anchoring survives document regeneration]]
+- [[Embedding an image in Confluence requires uploading it as an attachment first]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+
+%% ai-graph-end %%

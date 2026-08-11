@@ -1,11 +1,22 @@
 ---
-title: "Verify kubectl context before GKE rollout - _context file can disagree"
+ai_hash: d5d745305087c501
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-updated: 2026-07-31
-type: lesson
+entities: []
+source: session 2026-07-21 dev ship; session 2026-07-24 port-forward
 status: seedling
-source: "session 2026-07-21 dev ship; session 2026-07-24 port-forward"
-tags: [gke, kubectl, rollout, port-forward, gotcha, klara, luz-docs]
+tags:
+- gke
+- kubectl
+- rollout
+- port-forward
+- gotcha
+- klara
+- luz-docs
+title: Verify kubectl context before GKE rollout - _context file can disagree
+type: lesson
+updated: 2026-07-31
 ---
 
 # Verify kubectl context before GKE rollout - _context file can disagree
@@ -26,3 +37,14 @@ Prefer a one-off `--context` flag over `use-context` so you do not clobber the s
 - [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
 - [[Materialize tenant allowlist removed - cascade unconditional]]
 - [[3 Resources/AI/Claude-Code/Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[luz-person is a Deployment not a StatefulSet in klara dev]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[Luz performance env cluster topology]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+
+%% ai-graph-end %%

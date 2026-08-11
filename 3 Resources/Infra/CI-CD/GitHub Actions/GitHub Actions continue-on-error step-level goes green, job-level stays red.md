@@ -1,10 +1,18 @@
 ---
-title: "GitHub Actions continue-on-error: step-level goes green, job-level stays red"
+ai_hash: bcd59a8bb2df5448
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml work 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml work 2026-06-06"
-tags: [github-actions, ci, continue-on-error, gotcha]
+tags:
+- github-actions
+- ci
+- continue-on-error
+- gotcha
+title: 'GitHub Actions continue-on-error: step-level goes green, job-level stays red'
+type: lesson
 ---
 
 # GitHub Actions continue-on-error: step-level goes green, job-level stays red
@@ -26,3 +34,14 @@ Concretely: for an advisory `run-gemini-cli` step that errors on `TerminalQuotaE
 
 - [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 - [[secrets context is not available in GitHub Actions if conditions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Copilot code review is a native PR reviewer, not a workflow job]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Job-level defaults.run.working-directory breaks Initialize containers (pre-checkout)]]
+- [[gemini-cli-yolo-approval-mode-ci]]
+
+%% ai-graph-end %%

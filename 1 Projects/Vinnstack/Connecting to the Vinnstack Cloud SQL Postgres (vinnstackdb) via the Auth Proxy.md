@@ -1,10 +1,44 @@
 ---
-title: "Connecting to the Vinnstack Cloud SQL Postgres (vinnstackdb) via the Auth Proxy"
+ai_hash: 43fd237fb10a149d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: howto
+entities:
+- Vinnstack Cloud SQL Postgres
+- vinnstackdb
+- Cloud SQL for PostgreSQL 18
+- Interrogation Room persistence work
+- klara-nonprod:europe-west6:vinnstackdb
+- klara-nonprod
+- europe-west6
+- postgres (database)
+- vinnstack (database)
+- postgres (user)
+- Public IP 34.65.246.52
+- Cloud SQL Auth Proxy (v2)
+- gcloud ADC
+- roles/cloudsql.client
+- Windows
+- curl.exe
+- cloud-sql-proxy.exe
+- 127.0.0.1:15432
+- DATABASE_URL
+- psql
+- Cloud SQL Studio
+- Installed Client
+- Node `pg` script
+- gcloud ACTIVE account
+- Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)
+source: session 2026-07-02
 status: seedling
-source: "session 2026-07-02"
-tags: [vinnstack, cloud-sql, postgres, gcp, proxy]
+tags:
+- vinnstack
+- cloud-sql
+- postgres
+- gcp
+- proxy
+title: Connecting to the Vinnstack Cloud SQL Postgres (vinnstackdb) via the Auth Proxy
+type: howto
 ---
 
 # Connecting to the Vinnstack Cloud SQL Postgres (vinnstackdb) via the Auth Proxy
@@ -25,3 +59,44 @@ Gotchas: the proxy exe is ~32 MB — gitignore it. `psql` is NOT installed on th
 ## Related
 
 - [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+- [[Vinnstack Cloud Build trigger lives in klara-infra, not klara-nonprod]]
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+- [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
+
+**Relations:**
+- Vinnstack Cloud SQL Postgres — *is also known as* — vinnstackdb
+- Vinnstack Cloud SQL Postgres — *is an instance of* — Cloud SQL for PostgreSQL 18
+- Cloud SQL for PostgreSQL 18 — *backs* — Interrogation Room persistence work
+- klara-nonprod:europe-west6:vinnstackdb — *is instance name for* — Vinnstack Cloud SQL Postgres
+- klara-nonprod:europe-west6:vinnstackdb — *is in project* — klara-nonprod
+- klara-nonprod:europe-west6:vinnstackdb — *is in region* — europe-west6
+- Vinnstack Cloud SQL Postgres — *has database* — postgres (database)
+- Vinnstack Cloud SQL Postgres — *has database* — vinnstack (database)
+- postgres (database) — *is* — default
+- vinnstack (database) — *is* — app target
+- Vinnstack Cloud SQL Postgres — *has user* — postgres (user)
+- postgres (user) — *uses authentication method* — password auth
+- Public IP 34.65.246.52 — *is enabled for* — Vinnstack Cloud SQL Postgres
+- Cloud SQL Auth Proxy (v2) — *is recommended connection method for* — Vinnstack Cloud SQL Postgres
+- Cloud SQL Auth Proxy (v2) — *authenticates with* — gcloud ADC
+- gcloud ADC — *needs role* — roles/cloudsql.client
+- roles/cloudsql.client — *applies to project* — klara-nonprod
+- curl.exe — *downloads* — cloud-sql-proxy.exe
+- cloud-sql-proxy.exe — *listens on* — 127.0.0.1:15432
+- cloud-sql-proxy.exe — *tunnels to* — klara-nonprod:europe-west6:vinnstackdb
+- DATABASE_URL — *connects to* — 127.0.0.1:15432
+- psql — *is not installed on* — Windows
+- Cloud SQL Studio — *can apply schema* — Vinnstack Cloud SQL Postgres
+- Installed Client — *can apply schema* — Vinnstack Cloud SQL Postgres
+- Node `pg` script — *can apply schema* — Vinnstack Cloud SQL Postgres
+- Cloud SQL Auth Proxy (v2) — *uses* — gcloud ACTIVE account
+- Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design) — *is related to* — Vinnstack Cloud SQL Postgres
+- Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design) — *is related to* — Interrogation Room persistence work
+
+%% ai-graph-end %%

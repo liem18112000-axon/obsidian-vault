@@ -1,10 +1,19 @@
 ---
-title: "Downstream timeout must sit well below caller timeout (fail-fast ladder)"
+ai_hash: 8e5ad157fa921cd2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: PROD jwt-service investigation 2026-06-30
 status: seedling
-source: "PROD jwt-service investigation 2026-06-30"
-tags: [timeout, resilience, circuit-breaker, microservices, klara]
+tags:
+- timeout
+- resilience
+- circuit-breaker
+- microservices
+- klara
+title: Downstream timeout must sit well below caller timeout (fail-fast ladder)
+type: lesson
 ---
 
 # Downstream timeout must sit well below caller timeout (fail-fast ladder)
@@ -19,3 +28,14 @@ Rule of thumb: caller_timeout > service_handler_budget > Σ(downstream_timeouts)
 
 - [[3 Resources/Infra/Observability/Cascading DC follow the timeout chain one layer down]]
 - [[Luz caller read-timeout settings to jwt-service]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cascading DC follow the timeout chain one layer down]]
+- [[Luz caller read-timeout settings to jwt-service]]
+- [[Istio DC response_flag with round latency = caller read timeout]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable"
+ai_hash: 3a8585d44f345d8a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: concept
+entities: []
+source: session 2026-07-04 fb-info-project src/config.py
 status: seedling
-source: "session 2026-07-04 fb-info-project src/config.py"
-tags: [security, licensing, ed25519, design-decision]
+tags:
+- security
+- licensing
+- ed25519
+- design-decision
+title: Offline license verification - the trust anchor must be baked into the binary,
+  never runtime-configurable
+type: concept
 ---
 
 # Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable
@@ -16,3 +25,14 @@ Concrete instance: fb-info-project pins `LICENSE_PUBKEY` as a hardcoded string i
 (The user can still patch the binary itself, of course - this raises the bar from "set an env var" to "reverse-engineer the executable", which is the realistic goal of offline licensing.)
 
 Related: [[Dual-mode CMD wrapper - args pass through, no args opens an interactive menu]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline signed-token licensing for distributed binaries]]
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+- [[Operator-only config can be externalized to a data file with no client rebuild]]
+- [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+- [[Key-fingerprint license id identifies the signing key, not the individual token]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "luz-docs delete detail-response field for removed links is removedLinkParents not removedLink"
+ai_hash: 55499935f8fccd71
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26, IT run
 status: seedling
-source: "session 2026-06-26, IT run"
-tags: [luz-docs, api, testing, gotcha, folder-delete]
+tags:
+- luz-docs
+- api
+- testing
+- gotcha
+- folder-delete
+title: luz-docs delete detail-response field for removed links is removedLinkParents
+  not removedLink
+type: lesson
 ---
 
 # luz-docs delete detail-response field for removed links is removedLinkParents not removedLink
@@ -21,3 +31,14 @@ Related: [[Batched folder delete strips folder ids via union updateMany]], [[Bul
 
 - [[Batched folder delete strips folder ids via union updateMany]]
 - [[Bulk write paths in folder delete only engage with more than one document]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bulk write paths in folder delete only engage with more than one document]]
+- [[luz_docs folder delete multi-parent semantics]]
+- [[Batched folder delete strips folder ids via union updateMany]]
+- [[luz_docs deleteFolder isDetailResponse error contract and non-transactionality]]
+- [[luz_docs FolderDeletingServiceIT coverage gaps]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "luz-docs IT before_scenario reads but does not substitute $SCn into step text"
+ai_hash: 39f86530be44c383
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: gotcha
+entities: []
+source: session 2026-06-16
 status: evergreen
-source: "session 2026-06-16"
-tags: [luz-docs, integration-test, behave, security-class, gotcha]
+tags:
+- luz-docs
+- integration-test
+- behave
+- security-class
+- gotcha
+title: luz-docs IT before_scenario reads but does not substitute $SCn into step text
+type: gotcha
 ---
 
 # luz-docs IT before_scenario reads but does not substitute $SCn into step text
@@ -18,3 +27,14 @@ Related: [[luz-docs IT $SCn authorization failures were deterministic resolution
 ## Related
 
 - [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+- [[luz-docs IT skips security-class scenarios when the tenant token lacks enough codes]]
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+- [[behave step patterns differing only by quote style are distinct definitions]]
+- [[JSON-driven Scenario Outline pattern for luz_docs materialize integration tests]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "luz-docs IT skips security-class scenarios when the tenant token lacks enough codes"
+ai_hash: f859519231a0d41f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: howto
+entities: []
+source: session 2026-06-15
 status: seedling
-source: "session 2026-06-15"
-tags: [luz-docs, integration-test, behave, security-class, skip]
+tags:
+- luz-docs
+- integration-test
+- behave
+- security-class
+- skip
+title: luz-docs IT skips security-class scenarios when the tenant token lacks enough
+  codes
+type: howto
 ---
 
 # luz-docs IT skips security-class scenarios when the tenant token lacks enough codes
@@ -24,3 +34,14 @@ If `available < required` → `scenario.skip("requires N security classes but te
 ## Related
 
 - [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs IT before_scenario reads but does not substitute $SCn into step text]]
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+- [[JSON-driven Scenario Outline pattern for luz_docs materialize integration tests]]
+- [[behave step patterns differing only by quote style are distinct definitions]]
+
+%% ai-graph-end %%

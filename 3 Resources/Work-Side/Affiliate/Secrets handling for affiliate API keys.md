@@ -1,18 +1,22 @@
 ---
-title: Secrets handling for affiliate API keys
-created: 2026-06-11
-type: lesson
-status: seedling
-source: research session 2026-06-11
-tags:
-  - security
-  - secrets
-  - accesstrade
-  - claude-code
-  - lesson
+ai_hash: 355d7e448ad9264e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Affiliate API key security
-  - Storing Accesstrade token
+- Affiliate API key security
+- Storing Accesstrade token
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- security
+- secrets
+- accesstrade
+- claude-code
+- lesson
+title: Secrets handling for affiliate API keys
+type: lesson
 ---
 
 # Secrets handling for affiliate API keys
@@ -45,3 +49,14 @@ This vault runs an **aggressive knowledge-capture directive** and several messag
 - [[Designing an Accesstrade skill for Claude Code]]
 - [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Designing an Accesstrade skill for Claude Code]]
+- [[Accesstrade Publisher API authentication]]
+- [[Accesstrade API Integration - MOC]]
+- [[Affiliate API engineering best practices]]
+- [[Claude Code Skill anatomy]]
+
+%% ai-graph-end %%

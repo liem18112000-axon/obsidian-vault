@@ -1,15 +1,50 @@
 ---
-title: Missing folder reference produces fail-closed materialize state
+ai_hash: fc0d5036a269538f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-02
-type: lesson
-status: seedling
+entities:
+- MaterializeCompute.compute
+- foldersById
+- folder entry
+- 'null'
+- _folderNames
+- empty string ""
+- anyPublicFolder
+- _isPublic
+- docOwnCodes
+- document
+- public queries
+- code-filtered queries
+- direct id lookup
+- admin scan
+- fail-closed
+- log line
+- cascade marker
+- materialize stats
+- _effectiveSecurityClassCodes
+- WARNING log
+- partial-cascade worker
+- folder delete
+- folderIds
+- Missing folder reference
+- materialize state
+- Materialize bulk PATCH fans out into N serial per-doc PATCH calls
+- securityClassCodes scalar string breaks materialize sentinels
+- flattenArrayAddOps runs only in materialize branch
+- Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields
+- 01 Overview - Folder Rename Cascade
+- 04 Marker State Machine
 source: code review of MaterializeCompute.compute lines 34-47
+status: seedling
 tags:
-  - luz-docs
-  - materialize
-  - folder-cascade
-  - visibility
-  - gotcha
+- luz-docs
+- materialize
+- folder-cascade
+- visibility
+- gotcha
+title: Missing folder reference produces fail-closed materialize state
+type: lesson
 ---
 
 # Missing folder reference produces fail-closed materialize state
@@ -53,3 +88,51 @@ Fail-closed is defensible (we'd rather hide than over-share). But it's silent �
 - [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
 - [[01 Overview - Folder Rename Cascade]]
 - [[04 Marker State Machine]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Empty per-folder codes means public, not no-access]]
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+- [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+- [[Materialize bulk PATCH fans out into N serial per-doc PATCH calls]]
+- [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
+
+**Relations:**
+- MaterializeCompute.compute — *iterates* — foldersById
+- folder entry — *resolves to* — null
+- Missing folder reference — *causes* — fail-closed
+- Missing folder reference — *affects* — materialize state
+- null — *leads to* — _folderNames
+- _folderNames — *receives* — empty string ""
+- null — *does not update* — anyPublicFolder
+- _isPublic — *calculated from* — docOwnCodes
+- _isPublic — *calculated from* — anyPublicFolder
+- _isPublic — *calculated from* — foldersById
+- document — *has* — foldersById
+- document — *has* — anyPublicFolder
+- document — *has* — _effectiveSecurityClassCodes
+- document — *has* — _isPublic
+- document — *is invisible to* — public queries
+- document — *is invisible to* — code-filtered queries
+- document — *is reachable by* — direct id lookup
+- document — *is reachable by* — admin scan
+- fail-closed — *is* — silent
+- silent — *implies no* — log line
+- silent — *implies no* — cascade marker
+- materialize stats — *cannot detect* — fail-closed
+- WARNING log — *is a mitigation* — fail-closed
+- cascade marker — *is a mitigation* — fail-closed
+- partial-cascade worker — *uses* — cascade marker
+- Treat all-folders-missing as _isPublic = true — *is a mitigation* — fail-closed
+- Compensate at write time — *is a mitigation* — fail-closed
+- folder delete — *triggers* — Compensate at write time
+- Compensate at write time — *scrubs* — folderIds
+- Missing folder reference — *is related to* — Materialize bulk PATCH fans out into N serial per-doc PATCH calls
+- Missing folder reference — *is related to* — securityClassCodes scalar string breaks materialize sentinels
+- Missing folder reference — *is related to* — flattenArrayAddOps runs only in materialize branch
+- Missing folder reference — *is related to* — Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields
+- Missing folder reference — *is related to* — 01 Overview - Folder Rename Cascade
+- Missing folder reference — *is related to* — 04 Marker State Machine
+
+%% ai-graph-end %%

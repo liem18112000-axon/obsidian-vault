@@ -1,10 +1,19 @@
 ---
-title: "New ID formats silently break regex validators elsewhere that assumed the old shape"
+ai_hash: 8025988ffac44cf1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [data-modeling, regex, gotcha, validation]
+tags:
+- data-modeling
+- regex
+- gotcha
+- validation
+title: New ID formats silently break regex validators elsewhere that assumed the old
+  shape
+type: lesson
 ---
 
 # New ID formats silently break regex validators elsewhere that assumed the old shape
@@ -21,3 +30,12 @@ The validator lives in a completely different file/module than the one that intr
 
 ## Related
 - [[Decouple internal PK from external ticket ID for draft-before-push records]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Decouple internal PK from external ticket ID for draft-before-push records]]
+- [[Vinnstack story flows keep only the latest version - history lives in md_exports snapshots]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+
+%% ai-graph-end %%

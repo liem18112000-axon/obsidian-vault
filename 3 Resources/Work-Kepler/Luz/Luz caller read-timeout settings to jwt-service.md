@@ -1,10 +1,18 @@
 ---
-title: "Luz caller read-timeout settings to jwt-service"
+ai_hash: 8b1be21ab695755e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: observation
+entities: []
+source: PROD jwt-service investigation 2026-06-30
 status: seedling
-source: "PROD jwt-service investigation 2026-06-30"
-tags: [luz, jwt-service, timeout, prod]
+tags:
+- luz
+- jwt-service
+- timeout
+- prod
+title: Luz caller read-timeout settings to jwt-service
+type: observation
 ---
 
 # Luz caller read-timeout settings to jwt-service
@@ -25,3 +33,14 @@ Other services seen taking read timeouts against jwt-service during a slowdown: 
 
 - [[jwt-service token endpoints and replicas (Luz prod)]]
 - [[Istio DC response_flag with round latency = caller read timeout]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+- [[jwt-service token endpoints and replicas (Luz prod)]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+- [[Istio DC response_flag with round latency = caller read timeout]]
+- [[Cascading DC follow the timeout chain one layer down]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Excalidraw data line charts need roundness null, not spline"
+ai_hash: 20bde252a2d7a45b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-20
-type: lesson
+entities: []
+source: session 2026-06-20 LUZ-154613
 status: seedling
-source: "session 2026-06-20 LUZ-154613"
-tags: [excalidraw, charts, gotcha, dataviz]
+tags:
+- excalidraw
+- charts
+- gotcha
+- dataviz
+title: Excalidraw data line charts need roundness null, not spline
+type: lesson
 ---
 
 # Excalidraw data line charts need roundness null, not spline
@@ -22,3 +30,10 @@ See [[excalidraw-diagram skill]].
 ## Related
 
 - [[excalidraw-diagram skill]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

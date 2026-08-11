@@ -1,6 +1,15 @@
 ---
-tags: [technique, dataviz, playwright, performance, html]
+ai_hash: 4a1c1b29fe6e93e1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
+entities: []
+tags:
+- technique
+- dataviz
+- playwright
+- performance
+- html
 ---
 
 # Timed reveal overlay on a real full-page screenshot
@@ -24,3 +33,14 @@ To replay real render timings *on the actual UI* (not synthetic mock cards): cap
 Applied in `luz_docs/docs/performance-test-800k/end-to-end-video/journey-report.html`.
 
 Related: [[Measure component render timing with Playwright addInitScript]] · [[Perf 800k tenant eArchive reload timing]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure component render timing with Playwright addInitScript]]
+- [[Perf 800k tenant eArchive reload timing]]
+- [[Resettable MutationObserver harness measures skeleton-to-number appear time on SSR pages]]
+- [[eArchive perf test plan 5 scenarios, all automated by trace tool]]
+- [[eArchive page DOM selectors (performance automation)]]
+
+%% ai-graph-end %%

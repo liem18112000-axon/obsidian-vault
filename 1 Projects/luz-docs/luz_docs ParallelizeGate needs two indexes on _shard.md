@@ -1,10 +1,42 @@
 ---
-title: "luz_docs ParallelizeGate needs two indexes on _shard"
+ai_hash: 4b5187e76a23caee
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: lesson
+entities:
+- luz_docs
+- ParallelizeGate
+- _shard
+- ch.klara.luz.docs.parallelize
+- ParallelizeQueryBuilder.missingField(SHARD)
+- ParallelizeGate.isShardingComplete()
+- ParallelizeMigrationExecutor.execute()
+- COLLSCAN
+- O(N)
+- ParallelizeCount
+- partial index
+- MongoDB
+- IXSCAN
+- O(M)
+- MongoDB partial index shrinks with a completing backfill
+- Shard gate strict + write-path gap
+- docs/count-chunk/shard-index-optimization-report.md
+- index
+- query
+- tenant
+- backfill
+- write path
+- collection size
+source: luz_docs session 2026-07-13
 status: seedling
-source: "luz_docs session 2026-07-13"
-tags: [luz-docs, mongodb, parallelize, performance, indexing]
+tags:
+- luz-docs
+- mongodb
+- parallelize
+- performance
+- indexing
+title: luz_docs ParallelizeGate needs two indexes on _shard
+type: lesson
 ---
 
 # luz_docs ParallelizeGate needs two indexes on _shard
@@ -32,3 +64,44 @@ Full writeup + before/after Excalidraw diagram: `docs/count-chunk/shard-index-op
 
 - [[MongoDB partial index shrinks with a completing backfill]]
 - [[Shard gate strict + write-path gap]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoDB partial index shrinks with a completing backfill]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+
+**Relations:**
+- luz_docs — *CONTAINS_PACKAGE* — ch.klara.luz.docs.parallelize
+- ch.klara.luz.docs.parallelize — *CONTAINS_CLASS* — ParallelizeGate
+- ParallelizeGate — *REQUIRES* — index
+- index — *ON_FIELD* — _shard
+- _shard — *LACKS* — index
+- ParallelizeGate.isShardingComplete() — *ISSUES* — ParallelizeQueryBuilder.missingField(SHARD)
+- ParallelizeMigrationExecutor.execute() — *ISSUES* — ParallelizeQueryBuilder.missingField(SHARD)
+- ParallelizeQueryBuilder.missingField(SHARD) — *TARGETS_FIELD* — _shard
+- ParallelizeQueryBuilder.missingField(SHARD) — *IS_A* — query
+- query — *WITHOUT_INDEX_CAUSES* — COLLSCAN
+- COLLSCAN — *SCALES_AS* — O(N)
+- O(N) — *DEPENDS_ON* — collection size
+- ParallelizeGate — *RE_RUNS* — query
+- ParallelizeCount — *QUERIES* — _shard
+- partial index — *IS_A* — Fix
+- partial index — *APPLIES_TO* — _shard
+- partial index — *OPTIMIZES* — query
+- partial index — *HAS_FILTER_EXPRESSION* — { _shard: { $exists: false } }
+- partial index — *CONVERTS* — COLLSCAN
+- COLLSCAN — *TO* — IXSCAN
+- IXSCAN — *SCALES_AS* — O(M)
+- MongoDB partial index shrinks with a completing backfill — *EXPLAINS* — partial index
+- docs/count-chunk/shard-index-optimization-report.md — *IS_A* — Full writeup
+- docs/count-chunk/shard-index-optimization-report.md — *IS_LOCATED_IN* — luz_docs
+- Shard gate strict + write-path gap — *IS_RELATED_TO* — ParallelizeGate
+- write path — *FAILED_TO_STAMP* — _shard
+- backfill — *COMPLETES_FOR* — tenant
+- MongoDB — *SUPPORTS* — partial index
+
+%% ai-graph-end %%

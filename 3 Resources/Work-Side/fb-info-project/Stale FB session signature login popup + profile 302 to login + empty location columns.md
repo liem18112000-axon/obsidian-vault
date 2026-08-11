@@ -1,10 +1,19 @@
 ---
-title: "Stale FB session signature: login popup + profile 302 to /login + empty location columns"
+ai_hash: 0aa01a791b6a7cab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: live run 2026-06-14
 status: seedling
-source: "live run 2026-06-14"
-tags: [fb-info-project, facebook, session, debugging]
+tags:
+- fb-info-project
+- facebook
+- session
+- debugging
+title: 'Stale FB session signature: login popup + profile 302 to /login + empty location
+  columns'
+type: lesson
 ---
 
 # Stale FB session signature: login popup + profile 302 to /login + empty location columns
@@ -21,3 +30,14 @@ Symptom cluster that means the saved Facebook session in `session/fb_session.jso
 ## Related
 
 - [[3 Resources/Work-Side/fb-info-project/FB photofbid= links scrape as post mode; filename id falls back to na]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook shows a See more on Facebook login dialog when the session is logged out]]
+- [[FB photofbid= links scrape as post mode; filename id falls back to na]]
+- [[Facebook page userID is the viewer not the profile owner]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+- [[SameSite=None cookies require Secure or Chromium drops them]]
+
+%% ai-graph-end %%

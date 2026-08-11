@@ -1,10 +1,19 @@
 ---
-title: "AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run"
+ai_hash: ed1ce7356a25ff10
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: model
+entities: []
+source: session 2026-07-03, vinnstack AI critic
 status: seedling
-source: "session 2026-07-03, vinnstack AI critic"
-tags: [llm, self-critique, feedback-loop, vinnstack]
+tags:
+- llm
+- self-critique
+- feedback-loop
+- vinnstack
+title: AI self-critique loop - a post-generation critic pass rates the artifact and
+  feeds the next run
+type: model
 ---
 
 # AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run
@@ -21,3 +30,14 @@ Design points that matter:
 
 - [[Version-stamp quality ratings so stale feedback stops driving regeneration]]
 - [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Version-stamp quality ratings so stale feedback stops driving regeneration]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[LLM-implementable plan exports must bundle unresolved review state with precedence rules]]
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+
+%% ai-graph-end %%

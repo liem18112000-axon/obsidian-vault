@@ -1,10 +1,20 @@
 ---
-title: "Vertex models.list() shows the catalog, not what the project can invoke; Gemini 3 needs the global endpoint"
+ai_hash: 615abd0e606e4846
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: Accesstrade integration, session 2026-06-14
 status: seedling
-source: "Accesstrade integration, session 2026-06-14"
-tags: [vertex-ai, google-genai, gemini-3, gotcha, model-availability]
+tags:
+- vertex-ai
+- google-genai
+- gemini-3
+- gotcha
+- model-availability
+title: Vertex models.list() shows the catalog, not what the project can invoke; Gemini
+  3 needs the global endpoint
+type: lesson
 ---
 
 # Vertex models.list() shows the catalog, not what the project can invoke; Gemini 3 needs the global endpoint
@@ -23,3 +33,14 @@ Related: [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
 
 - [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
 - [[google-genai Client must be held in a variable during the request or it is GC-closed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vertex AI global endpoint host has no region prefix]]
+- [[Vertex AI 404 vs 403 distinguishes Model Garden enablement from IAM permission]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[google-genai Client must be held in a variable during the request or it is GC-closed]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+
+%% ai-graph-end %%

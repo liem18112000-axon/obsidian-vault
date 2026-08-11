@@ -1,10 +1,19 @@
 ---
-title: "Vinnstack's Jira client avoids the Atlassian MCP connector"
+ai_hash: 8136757befe4a066
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html
 status: seedling
-source: "session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html"
-tags: [vinnstack, jira, mcp, integration, gotcha]
+tags:
+- vinnstack
+- jira
+- mcp
+- integration
+- gotcha
+title: Vinnstack's Jira client avoids the Atlassian MCP connector
+type: lesson
 ---
 
 # Vinnstack's Jira client avoids the Atlassian MCP connector
@@ -15,3 +24,14 @@ This is a concrete example of rejecting a seemingly-convenient MCP integration i
 
 ## Related
 [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Headless claude exit 0 does not mean the operation succeeded]]
+- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+
+%% ai-graph-end %%

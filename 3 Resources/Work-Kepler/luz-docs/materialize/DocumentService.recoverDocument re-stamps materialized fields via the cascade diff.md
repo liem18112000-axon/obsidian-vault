@@ -1,10 +1,18 @@
 ---
-title: "DocumentService.recoverDocument re-stamps materialized fields via the cascade diff"
+ai_hash: 9314f608f86eab8c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: concept
+entities: []
+source: session 2026-06-15
 status: seedling
-source: "session 2026-06-15"
-tags: [luz-docs, materialize, recover]
+tags:
+- luz-docs
+- materialize
+- recover
+title: DocumentService.recoverDocument re-stamps materialized fields via the cascade
+  diff
+type: concept
 ---
 
 # DocumentService.recoverDocument re-stamps materialized fields via the cascade diff
@@ -28,3 +36,14 @@ Related: [[JSON-driven Scenario Outline pattern for luz_docs materialize integra
 
 - [[JSON-driven Scenario Outline pattern for luz_docs materialize integration tests]]
 - [[3 Resources/Work-Kepler/luz-docs/integration-test/document_service.recover_document drops an empty folderIds list, so it cannot clear folders]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[FolderService.recoverFolder is not materialize-aware]]
+- [[document_service.recover_document drops an empty folderIds list, so it cannot clear folders]]
+- [[Folder recovery reuses the parent-change materialize cascade]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]
+- [[document-put-cascade]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Poll a library's public boolean state flags with a grace period when there is no completion callback"
+ai_hash: 031a671a3a62fbf2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: technique
+entities: []
+source: virtual-avatar session 2026-07-11, static/app.js waitForSpeechEnd
 status: seedling
-source: "virtual-avatar session 2026-07-11, static/app.js waitForSpeechEnd"
-tags: [javascript, async, polling, talkinghead, gotcha]
+tags:
+- javascript
+- async
+- polling
+- talkinghead
+- gotcha
+title: Poll a library's public boolean state flags with a grace period when there
+  is no completion callback
+type: technique
 ---
 
 # Poll a library's public boolean state flags with a grace period when there is no completion callback
@@ -29,3 +39,13 @@ Used in the virtual-avatar project (`static/app.js`, `waitForSpeechEnd()`) to se
 ## Related
 
 - [[Unguarded top-level await in a module script blocks every statement after it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[State machines must catch expected-failure operations or they get stuck forever]]
+- [[Unguarded top-level await in a module script blocks every statement after it]]
+- [[TalkingHead speakAudio never decodes a single ArrayBuffer before playback]]
+- [[Hand-rolled RMS energy voice activity detection with self-calibrating noise floor]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Order-independent prefills: fold precedence into the functional updater, not effect order"
+ai_hash: c12c68b7e08d476d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04, vinnstack operator profile seeding
 status: seedling
-source: "session 2026-07-04, vinnstack operator profile seeding"
-tags: [react, effects, state, prefill]
+tags:
+- react
+- effects
+- state
+- prefill
+title: 'Order-independent prefills: fold precedence into the functional updater, not
+  effect order'
+type: lesson
 ---
 
 # Order-independent prefills: fold precedence into the functional updater, not effect order
@@ -20,3 +29,12 @@ Make each seeding effect ORDER-INDEPENDENT by expressing the full precedence cha
 ## Related
 
 - [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]
+- [[Diff-based write tracking dies silently if the write runs before the pre-read]]
+- [[Mirror form values by the SOURCE's real field keys, not assumed canonical names]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Black-box test missing-_shard count correctness with a delta test"
+ai_hash: 75bfd45d7f5ba18a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: howto
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [luz-docs, integration-test, behave, testing-technique]
+tags:
+- luz-docs
+- integration-test
+- behave
+- testing-technique
+title: Black-box test missing-_shard count correctness with a delta test
+type: howto
 ---
 
 # Black-box test missing-_shard count correctness with a delta test
@@ -25,3 +33,14 @@ Related: [[luz-docs parallelized count undercounts documents missing _shard]]
 ## Related
 
 - [[luz-docs parallelized count undercounts documents missing _shard]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[luz_jsonstore silently drops _shard on $set updates (HTTP 200, no persist)]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Fan-out gate and backfill filter must cover the same field set]]
+
+%% ai-graph-end %%

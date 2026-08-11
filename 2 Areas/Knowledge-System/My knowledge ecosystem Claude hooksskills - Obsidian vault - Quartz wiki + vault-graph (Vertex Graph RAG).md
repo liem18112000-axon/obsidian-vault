@@ -1,10 +1,22 @@
 ---
-title: "My knowledge ecosystem: Claude hooks/skills -> Obsidian vault -> Quartz wiki + vault-graph (Vertex Graph RAG)"
+ai_hash: 82b0fbc1caba0b47
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: reference
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [obsidian, quartz, vault-graph, vertex-ai, graph-rag, knowledge-management, para]
+tags:
+- obsidian
+- quartz
+- vault-graph
+- vertex-ai
+- graph-rag
+- knowledge-management
+- para
+title: 'My knowledge ecosystem: Claude hooks/skills -> Obsidian vault -> Quartz wiki
+  + vault-graph (Vertex Graph RAG)'
+type: reference
 ---
 
 # My knowledge ecosystem: Claude hooks/skills -> Obsidian vault -> Quartz wiki + vault-graph (Vertex Graph RAG)
@@ -30,3 +42,14 @@ Vault attached as a git submodule at ./vault.
 Because /ask exists, Claude can query the Graph RAG back → the knowledge it captured compounds into better answers. Capture → store → publish/index → retrieve → capture.
 
 Presentation built at C:\Users\dvtliem\.claude\docs\obsidian-present (diagram + 1-slide pptx + 01-ecosystem-explained.md).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stage 6 — Advanced Automation]]
+- [[Publish]]
+- [[Luz plugin repos how skills and hooks are packaged for distribution]]
+- [[3 Resources]]
+- [[index]]
+
+%% ai-graph-end %%

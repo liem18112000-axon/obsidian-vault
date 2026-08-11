@@ -1,10 +1,20 @@
 ---
-title: "Per-account CLI sessions: inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint"
+ai_hash: d41596f7eeff752e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04, vinnstack per-account CLI homes
 status: seedling
-source: "session 2026-07-04, vinnstack per-account CLI homes"
-tags: [cli, multi-account, claude, gcloud, vinnstack]
+tags:
+- cli
+- multi-account
+- claude
+- gcloud
+- vinnstack
+title: 'Per-account CLI sessions: inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at
+  the spawn-env chokepoint'
+type: howto
 ---
 
 # Per-account CLI sessions: inject CLAUDE_CONFIG_DIR and CLOUDSDK_CONFIG at the spawn-env chokepoint
@@ -23,3 +33,14 @@ Each account performs the interactive browser login ONCE; the session persists i
 ## Related
 
 - [[Arm a new login gate by env presence so shipping auth cannot lock the operator out]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[Per-account credential store should only hold per-identity secrets]]
+- [[Local-app provider sign-in drive the vendor CLI; Vertex is the exception (gcloud ADC + projectregion)]]
+
+%% ai-graph-end %%

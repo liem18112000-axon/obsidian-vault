@@ -1,10 +1,19 @@
 ---
-title: "AppsFlyer Push API is the inverse of the Pull API"
+ai_hash: f38d06335112207f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: concept
+entities: []
+source: session 2026-06-26; AppsFlyer help-centre + integration guides
 status: seedling
-source: "session 2026-06-26; AppsFlyer help-centre + integration guides"
-tags: [appsflyer, push-api, webhook, leo-cdp, connector]
+tags:
+- appsflyer
+- push-api
+- webhook
+- leo-cdp
+- connector
+title: AppsFlyer Push API is the inverse of the Pull API
+type: concept
 ---
 
 # AppsFlyer Push API is the inverse of the Pull API
@@ -25,3 +34,14 @@ The official support article (207034356) blocks scraping (HTTP 403); these facts
 ## Related
 
 - [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API]]
+- [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+- [[How to get real AppsFlyer Pull API data with the synthetic generator]]
+- [[AppsFlyer only attributes events to installs recorded under the same app_id]]
+- [[AppsFlyer raw-data Pull API is plan-gated - 400 subscription error]]
+
+%% ai-graph-end %%

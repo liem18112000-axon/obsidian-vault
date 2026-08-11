@@ -1,10 +1,18 @@
 ---
-title: "Normalize headers, beautify, and strip CR before judging minifier-upgrade diffs"
+ai_hash: e7d5c28215b1fc10
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: howto
+entities: []
+source: LEO CDP migration R6, 2026-06-07
 status: seedling
-source: "LEO CDP migration R6, 2026-06-07"
-tags: [minification, closure-compiler, diff, technique]
+tags:
+- minification
+- closure-compiler
+- diff
+- technique
+title: Normalize headers, beautify, and strip CR before judging minifier-upgrade diffs
+type: howto
 ---
 
 # Normalize headers, beautify, and strip CR before judging minifier-upgrade diffs
@@ -14,3 +22,12 @@ When a minifier upgrade changes artifact checksums, judge the diff in three norm
 ## Related
 
 - [[Baseline-diff gates must compare post-build to post-build when artifacts are committed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Baseline-diff gates must compare post-build to post-build when artifacts are committed]]
+- [[LEO CDP AutoBuildForDeployment minifies admin JS only - observer tracker needs explicit task]]
+- [[Curate OpenRewrite UpgradeToJava25 - composite includes instance-main and wrapper bumps]]
+
+%% ai-graph-end %%

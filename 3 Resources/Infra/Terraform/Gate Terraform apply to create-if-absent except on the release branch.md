@@ -1,10 +1,19 @@
 ---
-title: "Gate Terraform apply to create-if-absent except on the release branch"
+ai_hash: f304b515d6acd9ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: howto
+entities: []
+source: accesstrade provision.yml, 2026-06-14
 status: seedling
-source: "accesstrade provision.yml, 2026-06-14"
-tags: [terraform, github-actions, ci-cd, gcp, idempotency]
+tags:
+- terraform
+- github-actions
+- ci-cd
+- gcp
+- idempotency
+title: Gate Terraform apply to create-if-absent except on the release branch
+type: howto
 ---
 
 # Gate Terraform apply to create-if-absent except on the release branch
@@ -34,3 +43,14 @@ From the accesstrade_integration `.github/workflows/provision.yml` (Cloud SQL + 
 
 - [[Memorystore Redis is always VPC-internal — no public endpoint]]
 - [[Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gate Terraformdeploy CI to push-on-main, not pull_request (secrets fail PRs)]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Set up GitHub Actions to GCP via Workload Identity Federation]]
+
+%% ai-graph-end %%

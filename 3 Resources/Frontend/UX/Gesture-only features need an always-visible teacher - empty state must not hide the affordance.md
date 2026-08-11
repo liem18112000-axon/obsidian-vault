@@ -1,10 +1,19 @@
 ---
-title: "Gesture-only features need an always-visible teacher - empty state must not hide the affordance"
+ai_hash: 8b6b643d28632c46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [ux, discoverability, empty-state, vinnstack]
+tags:
+- ux
+- discoverability
+- empty-state
+- vinnstack
+title: Gesture-only features need an always-visible teacher - empty state must not
+  hide the affordance
+type: lesson
 ---
 
 # Gesture-only features need an always-visible teacher - empty state must not hide the affordance
@@ -23,3 +32,13 @@ Related: [[A feedback loop with only its write side wired looks like a broken fe
 ## Related
 
 - [[A feedback loop with only its write side wired looks like a broken feature]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A feedback loop with only its write side wired looks like a broken feature]]
+- [[Merge competing selection popovers into one toolbar via a target registry]]
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[Event-bus overlay components silently no-op where the singleton is not mounted]]
+
+%% ai-graph-end %%

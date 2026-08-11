@@ -1,10 +1,19 @@
 ---
-title: "Facebook Comet comment DOM does not expose the commenter's numeric UID"
+ai_hash: 49caf1114ddbe3da
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-26
-type: observation
+entities: []
+source: fb-info-project live probe 2026-07-26
 status: seedling
-source: "fb-info-project live probe 2026-07-26"
-tags: [facebook, osint, scraping, uid, fb-info-project]
+tags:
+- facebook
+- osint
+- scraping
+- uid
+- fb-info-project
+title: Facebook Comet comment DOM does not expose the commenter's numeric UID
+type: observation
 ---
 
 # Facebook Comet comment DOM does not expose the commenter's numeric UID
@@ -24,3 +33,14 @@ Verified with a read-only probe of 30 real comment/reply articles on a live post
 **Consequence (how to actually get a vanity commenter's UID):** visit the profile page and read the `fb://profile/<id>` app-link meta (`al:android:url` / `al:ios:url`). That meta describes the page's *subject* (the owner). Do **not** trust `"userID"` in page JSON — that is the logged-in *viewer's* id, identical on every page. The `mbasic.facebook.com` `lst=<viewer>:<owner>:<ts>` token (middle value = owner) is a fallback, but mbasic is being sunset by Facebook.
 
 **Free win:** the `/people/<name>/<digits>/` URL form gives the UID with no fetch — parse it from the URL exactly like `profile.php?id=`. In fb-info-project this is done by `src/urls.py::uid_from_url`, which `extract_uid` and `profiles.py` both use to skip fetching page HTML / the mbasic fallback.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook page userID is the viewer not the profile owner]]
+- [[Facebook UID from a vanity handle via the mbasic lst token]]
+- [[Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]
+- [[FB photofbid= links scrape as post mode; filename id falls back to na]]
+- [[Stale FB session signature login popup + profile 302 to login + empty location columns]]
+
+%% ai-graph-end %%

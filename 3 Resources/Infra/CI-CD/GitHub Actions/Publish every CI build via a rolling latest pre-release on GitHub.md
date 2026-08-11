@@ -1,10 +1,17 @@
 ---
-title: "Publish every CI build via a rolling latest pre-release on GitHub"
+ai_hash: 6615ab9752bb63a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: howto
+entities: []
+source: fb-info-project build workflow, session 2026-06-10
 status: seedling
-source: "fb-info-project build workflow, session 2026-06-10"
-tags: [github-actions, ci, release]
+tags:
+- github-actions
+- ci
+- release
+title: Publish every CI build via a rolling latest pre-release on GitHub
+type: howto
 ---
 
 # Publish every CI build via a rolling latest pre-release on GitHub
@@ -28,3 +35,14 @@ Related: [[GitHub Actions push filters - tags-only skips branch pushes, paths ig
 ## Related
 
 - [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Actions artifacts need login to download; Release assets do not]]
+- [[GitHub Actions push filters - tags-only skips branch pushes, paths ignored for tags]]
+- [[GitHub Actions artifact quota is org-wide; Release assets bypass it]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+
+%% ai-graph-end %%

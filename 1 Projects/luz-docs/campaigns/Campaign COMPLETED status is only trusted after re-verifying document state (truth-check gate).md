@@ -1,10 +1,69 @@
 ---
-title: "Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)"
+ai_hash: 2d22f3f5bc78a17d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: model
+entities:
+- Campaign COMPLETED status
+- truth-check gate
+- migration campaign
+- MongoDB document state
+- MaterializeRepository.isMaterialized
+- ParallelizeRepository.isSharded
+- INCOMPLETE status
+- daily cycle
+- LUZ-157705
+- ContainerResponseFilter
+- MaterializeRequestFilter
+- ParallelizeRequestFilter
+- CDI event
+- fireAsync
+- NotificationOptions.ofExecutor
+- tenantId
+- token
+- '*CampaignCheckService'
+- DualCache
+- '*_campaign_check marker key'
+- TTL constant (3600s)
+- campaign read
+- Mongo count
+- updateStatus(INCOMPLETE) operation
+- marker
+- TTL (86400s)
+- MigrationEventTrigger
+- Orchestrator cycle
+- commit 70d97676f
+- MaterializeGate
+- ParallelizeGate
+- hot read path
+- async filter+event pair
+- async checker
+- Async CDI observers
+- session token
+- event payload
+- luz-docs migration campaign framework
+- Async CDI observers must receive the session token via the event payload (note)
+- check
+- flip
+- check order
+- non-COMPLETED campaign
+- violation
+- healthy path
+- not-COMPLETED path
+- Rejected earlier shape
+source: session 2026-07-21, LUZ-157705
 status: seedling
-source: "session 2026-07-21, LUZ-157705"
-tags: [luz-docs, migration-campaign, materialize, parallelize, self-healing, cache, cdi-events]
+tags:
+- luz-docs
+- migration-campaign
+- materialize
+- parallelize
+- self-healing
+- cache
+- cdi-events
+title: Campaign COMPLETED status is only trusted after re-verifying document state
+  (truth-check gate)
+type: model
 ---
 
 # Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)
@@ -28,3 +87,59 @@ A migration campaign's COMPLETED status must not be trusted blindly: the actual 
 
 - [[luz-docs migration campaign framework]]
 - [[Async CDI observers must receive the session token via the event payload]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Async CDI observers must receive the session token via the event payload]]
+- [[Migration campaign status can silently drift from real document state]]
+- [[Campaign-gate template cache then campaign status L1 then repository L2]]
+- [[luz-docs migration campaign per-tenant activation flow]]
+- [[Campaign flag now guards materialize write path (isAllowedTenant)]]
+
+**Relations:**
+- Campaign COMPLETED status — *is trusted after* — truth-check gate
+- truth-check gate — *re-verifies* — MongoDB document state
+- migration campaign — *has* — Campaign COMPLETED status
+- MongoDB document state — *is checked by* — MaterializeRepository.isMaterialized
+- MongoDB document state — *is checked by* — ParallelizeRepository.isSharded
+- migration campaign — *is flipped to* — INCOMPLETE status
+- INCOMPLETE status — *is healed by* — daily cycle
+- LUZ-157705 — *defines* — Final shape
+- ContainerResponseFilter — *fires* — CDI event
+- ContainerResponseFilter — *uses* — fireAsync
+- ContainerResponseFilter — *uses* — NotificationOptions.ofExecutor
+- MaterializeRequestFilter — *is a type of* — ContainerResponseFilter
+- ParallelizeRequestFilter — *is a type of* — ContainerResponseFilter
+- CDI event — *carries* — tenantId
+- CDI event — *carries* — token
+- *CampaignCheckService — *observes* — CDI event
+- *CampaignCheckService — *is gated by* — DualCache
+- DualCache — *uses* — *_campaign_check marker key
+- *_campaign_check marker key — *has* — TTL constant (3600s)
+- check order — *starts with* — campaign read
+- check order — *continues with* — Mongo count
+- non-COMPLETED campaign — *skips* — Mongo count
+- updateStatus(INCOMPLETE) operation — *is triggered on* — violation
+- marker — *is written with* — TTL (86400s)
+- flipped tenant — *is healed by* — MigrationEventTrigger
+- MigrationEventTrigger — *triggers* — Orchestrator cycle
+- commit 70d97676f — *defines* — final semantics for marker
+- healthy path — *does not write* — marker
+- not-COMPLETED path — *does not write* — marker
+- check — *retries on failure on* — next request
+- flip — *retries on failure on* — next request
+- Rejected earlier shape — *involved* — MaterializeGate
+- Rejected earlier shape — *involved* — ParallelizeGate
+- Rejected earlier shape — *put* — Mongo count
+- Mongo count — *was in* — hot read path
+- async filter+event pair — *keeps* — hot read path untouched
+- MaterializeGate — *trusts* — Campaign COMPLETED status
+- ParallelizeGate — *trusts* — Campaign COMPLETED status
+- async checker — *invalidates* — Campaign COMPLETED status
+- Async CDI observers — *must receive* — session token
+- session token — *is received via* — event payload
+- luz-docs migration campaign framework — *is related to* — migration campaign
+- Async CDI observers must receive the session token via the event payload (note) — *explains why* — token
+
+%% ai-graph-end %%

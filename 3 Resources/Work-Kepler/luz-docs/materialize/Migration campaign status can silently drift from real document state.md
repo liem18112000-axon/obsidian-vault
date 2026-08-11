@@ -1,10 +1,18 @@
 ---
-title: "Migration campaign status can silently drift from real document state"
+ai_hash: 21edaa64da841c42
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: luz_docs materialize-gate reliability research, 2026-07-15
 status: seedling
-source: "luz_docs materialize-gate reliability research, 2026-07-15"
-tags: [luz-docs, reliability, gotcha, distributed-systems]
+tags:
+- luz-docs
+- reliability
+- gotcha
+- distributed-systems
+title: Migration campaign status can silently drift from real document state
+type: lesson
 ---
 
 # Migration campaign status can silently drift from real document state
@@ -23,3 +31,14 @@ Concrete case: ch.klara.luz.docs.migration's campaign status (Campaign.Status: I
 - [[DualCache L1 write ignores per-call TTL (uses domain default)]]
 - [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
 - [[Fan-out gate and backfill filter must cover the same field set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)]]
+- [[DualCache L1 write ignores per-call TTL (uses domain default)]]
+- [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
+- [[luz_docs migration campaigns retry on next tenant request, not cron]]
+- [[Fan-out gate and backfill filter must cover the same field set]]
+
+%% ai-graph-end %%

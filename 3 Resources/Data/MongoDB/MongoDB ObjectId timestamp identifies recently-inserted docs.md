@@ -1,10 +1,18 @@
 ---
-title: "MongoDB ObjectId timestamp identifies recently-inserted docs"
+ai_hash: 34ff7e571f7a3e32
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: howto
+entities: []
+source: session 2026-06-23 eArchive seed
 status: seedling
-source: "session 2026-06-23 eArchive seed"
-tags: [mongodb, objectid, technique, earchive]
+tags:
+- mongodb
+- objectid
+- technique
+- earchive
+title: MongoDB ObjectId timestamp identifies recently-inserted docs
+type: howto
 ---
 
 # MongoDB ObjectId timestamp identifies recently-inserted docs
@@ -20,3 +28,11 @@ Relates to [[directConnection=true counts read only the connected node and can b
 ## Related
 
 - [[directConnection=true counts read only the connected node and can be stale on a secondary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[directConnection=true counts read only the connected node and can be stale on a secondary]]
+- [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
+
+%% ai-graph-end %%

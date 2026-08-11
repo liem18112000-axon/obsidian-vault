@@ -1,10 +1,18 @@
 ---
-title: "MongoDB partial index shrinks with a completing backfill"
+ai_hash: 21af66727974b962
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: lesson
+entities: []
+source: luz_docs session 2026-07-13
 status: seedling
-source: "luz_docs session 2026-07-13"
-tags: [mongodb, partial-index, backfill, performance]
+tags:
+- mongodb
+- partial-index
+- backfill
+- performance
+title: MongoDB partial index shrinks with a completing backfill
+type: lesson
 ---
 
 # MongoDB partial index shrinks with a completing backfill
@@ -30,3 +38,14 @@ Found while investigating a linear-with-N slowdown in [[luz_docs ParallelizeGate
 
 - [[luz_docs ParallelizeGate needs two indexes on _shard]]
 - [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs ParallelizeGate needs two indexes on _shard]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+
+%% ai-graph-end %%

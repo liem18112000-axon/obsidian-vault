@@ -1,10 +1,18 @@
 ---
-title: "Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN"
+ai_hash: 082d8ac5a9219027
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: howto
+entities: []
+source: session 2026-06-14, accesstrade_integration
 status: seedling
-source: "session 2026-06-14, accesstrade_integration"
-tags: [github-actions, ghcr, docker, ci-cd]
+tags:
+- github-actions
+- ghcr
+- docker
+- ci-cd
+title: Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN
+type: howto
 ---
 
 # Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN
@@ -27,3 +35,14 @@ Key points / gotchas:
 - `cache-from/to: type=gha` gives free layer caching across runs.
 - Gate the build behind a `test` job (`needs: test`) so broken images never publish.
 - Validating the workflow locally with PyYAML throws `KeyError: 'on'` because YAML 1.1 parses the `on:` key as boolean `True` — harmless, GitHub Actions reads it correctly.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+
+%% ai-graph-end %%

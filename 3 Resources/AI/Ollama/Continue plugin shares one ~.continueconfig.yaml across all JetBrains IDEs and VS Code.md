@@ -1,10 +1,21 @@
 ---
-title: "Continue plugin shares one ~/.continue/config.yaml across all JetBrains IDEs and VS Code"
+ai_hash: e69d92d3985518d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: howto
+entities: []
+source: session 2026-07-01
 status: seedling
-source: "session 2026-07-01"
-tags: [continue, ollama, jetbrains, intellij, pycharm, ide]
+tags:
+- continue
+- ollama
+- jetbrains
+- intellij
+- pycharm
+- ide
+title: Continue plugin shares one ~/.continue/config.yaml across all JetBrains IDEs
+  and VS Code
+type: howto
 ---
 
 # Continue plugin shares one ~/.continue/config.yaml across all JetBrains IDEs and VS Code
@@ -18,3 +29,10 @@ See [[Best Ollama models for CPU-only coding and research on a thin laptop]].
 ## Related
 
 - [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+
+%% ai-graph-end %%

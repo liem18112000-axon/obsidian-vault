@@ -1,10 +1,18 @@
 ---
-title: "Version-stamp quality ratings so stale feedback stops driving regeneration"
+ai_hash: d44911154ebac130
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: model
+entities: []
+source: session 2026-07-03, vinnstack artifact feedback
 status: seedling
-source: "session 2026-07-03, vinnstack artifact feedback"
-tags: [llm, feedback-loop, regeneration, vinnstack]
+tags:
+- llm
+- feedback-loop
+- regeneration
+- vinnstack
+title: Version-stamp quality ratings so stale feedback stops driving regeneration
+type: model
 ---
 
 # Version-stamp quality ratings so stale feedback stops driving regeneration
@@ -18,3 +26,14 @@ This is the ratings-counterpart of the comment lifecycle rule (orphan, never aut
 ## Related
 
 - [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[LLM-implementable plan exports must bundle unresolved review state with precedence rules]]
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[TextQuoteSelector anchoring survives document regeneration]]
+
+%% ai-graph-end %%

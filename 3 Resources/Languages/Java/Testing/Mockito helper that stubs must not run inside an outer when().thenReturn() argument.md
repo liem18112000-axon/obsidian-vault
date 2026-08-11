@@ -1,10 +1,19 @@
 ---
-title: "Mockito helper that stubs must not run inside an outer when().thenReturn() argument"
+ai_hash: d2ef8f05c126d86e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: session 2026-06-05 luz_docs change-tracking
 status: seedling
-source: "session 2026-06-05 luz_docs change-tracking"
-tags: [mockito, java, testing, gotcha]
+tags:
+- mockito
+- java
+- testing
+- gotcha
+title: Mockito helper that stubs must not run inside an outer when().thenReturn()
+  argument
+type: lesson
 ---
 
 # Mockito helper that stubs must not run inside an outer when().thenReturn() argument
@@ -22,3 +31,14 @@ when(client.updateOne(...)).thenReturn(ok);
 ```
 
 Bit me in TrackingJsonStoreClientTest (luz_docs) — 8 errors at once, all the same root cause.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+- [[Mockito strict stubbing turns removed production calls into UnnecessaryStubbingException test failures]]
+- [[Mockito @InjectMocks by type stale @Mock after @RestClient swap leaves real field null]]
+- [[Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
+- [[New collaborator call NPEs old @InjectMocks tests]]
+
+%% ai-graph-end %%

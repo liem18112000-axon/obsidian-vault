@@ -1,10 +1,19 @@
 ---
-title: "Payrexx declines travel in-band on HTTP 2xx in the luz charge flow"
+ai_hash: 849b681c7e2ecb02
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: LUZ-157476 investigation 2026-07-23
 status: seedling
-source: "LUZ-157476 investigation 2026-07-23"
-tags: [luz-store, payrexx, http, rest-client, gotcha]
+tags:
+- luz-store
+- payrexx
+- http
+- rest-client
+- gotcha
+title: Payrexx declines travel in-band on HTTP 2xx in the luz charge flow
+type: lesson
 ---
 
 # Payrexx declines travel in-band on HTTP 2xx in the luz charge flow
@@ -18,3 +27,14 @@ Implication for failure taxonomy: HTTP-level failures can only ever map to the '
 ## Related
 - [[luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values]]
 - [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
+- [[DECLINED status falls through invoice charge-failure handling in luz_store]]
+- [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+- [[KlaraPay V2 Java classes still call Payrexx API v1.0 on the consumer flow]]
+
+%% ai-graph-end %%

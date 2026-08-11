@@ -1,10 +1,19 @@
 ---
-title: "luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels"
+ai_hash: 47f0826a0bff89ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: model
+entities: []
+source: MaterializeComputeBuilder.java, session 2026-06-05
 status: budding
-source: "MaterializeComputeBuilder.java, session 2026-06-05"
-tags: [luz-docs, materialize, mongodb, aggregation]
+tags:
+- luz-docs
+- materialize
+- mongodb
+- aggregation
+title: luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes
+  positionally then re-derives the sentinels
+type: model
 ---
 
 # luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels
@@ -24,3 +33,14 @@ Every array access is `$ifNull`-guarded to `[]`, so short/missing parallel array
 - [[3 Resources/Data/MongoDB/MongoDB forbids $lookup inside update pipeline (WriteError 72)]]
 - [[luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races]]
 - [[luz_docs has two materialize cascade delivery mechanisms]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Materialize folder parentFolderIds change cascade (LUZ-154159)]]
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
+- [[luz_docs bulk folder PATCH runs the materialize cascade once per entry]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]
+- [[_folderNames is parent-chain-independent — depends only on each folder's own name]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Shim legacy docker-compose v1 to docker compose v2 on GitHub runners"
+ai_hash: 0db2abc4c75ff914
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml work 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml work 2026-06-06"
-tags: [github-actions, docker, docker-compose, ci, gotcha]
+tags:
+- github-actions
+- docker
+- docker-compose
+- ci
+- gotcha
+title: Shim legacy docker-compose v1 to docker compose v2 on GitHub runners
+type: lesson
 ---
 
 # Shim legacy docker-compose v1 to docker compose v2 on GitHub runners
@@ -25,3 +34,14 @@ This keeps the original script byte-for-byte while making its `docker-compose ..
 ## Related
 
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Running the LEO CDP GHCR image needs mounted configs (image ships JARs only)]]
+- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+- [[GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH]]
+
+%% ai-graph-end %%

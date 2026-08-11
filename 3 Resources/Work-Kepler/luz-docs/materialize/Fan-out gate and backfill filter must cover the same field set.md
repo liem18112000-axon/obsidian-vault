@@ -1,10 +1,18 @@
 ---
-title: "Fan-out gate and backfill filter must cover the same field set"
+ai_hash: 02906108d9f3631a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19 LUZ-154613
 status: seedling
-source: "session 2026-06-19 LUZ-154613"
-tags: [luz-docs, materialize, design, gotcha]
+tags:
+- luz-docs
+- materialize
+- design
+- gotcha
+title: Fan-out gate and backfill filter must cover the same field set
+type: lesson
 ---
 
 # Fan-out gate and backfill filter must cover the same field set
@@ -21,3 +29,14 @@ Related: [[Materialize gate must require _shard or parallelized count undercount
 
 - [[Materialize gate must require _shard or parallelized count undercounts]]
 - [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[Materialize gate must require _shard or parallelized count undercounts]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+
+%% ai-graph-end %%

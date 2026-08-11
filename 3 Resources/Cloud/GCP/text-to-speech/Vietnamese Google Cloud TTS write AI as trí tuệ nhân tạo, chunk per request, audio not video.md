@@ -1,10 +1,22 @@
 ---
-title: "Vietnamese Google Cloud TTS: write AI as trí tuệ nhân tạo, chunk per request, audio not video"
+ai_hash: a0c5f0920d89bbdd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: lesson
+entities: []
+source: sessions 2026-06-18 / 2026-06-19
 status: seedling
-source: "sessions 2026-06-18 / 2026-06-19"
-tags: [google-cloud, gcp, tts, text-to-speech, vietnamese, ssml, gotcha]
+tags:
+- google-cloud
+- gcp
+- tts
+- text-to-speech
+- vietnamese
+- ssml
+- gotcha
+title: 'Vietnamese Google Cloud TTS: write AI as trí tuệ nhân tạo, chunk per request,
+  audio not video'
+type: lesson
 ---
 
 # Vietnamese Google Cloud TTS: write AI as trí tuệ nhân tạo, chunk per request, audio not video
@@ -24,3 +36,14 @@ Context: Claude Hooks & Skills talk; `voiceover-vi.md` in `C:\Users\dvtliem\.cla
 ## Related
 
 - [[3 Resources/Cloud/GCP/Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Assemble a narrated slide video pptx to png + per-slide Google TTS + ffmpeg -shortest segments + concat]]
+- [[Humorous Southern-VI voiceover must sound natural, not forced slang]]
+- [[Google Cloud TTS from Windows fetch the token in bash, pass via env to Python]]
+- [[Virtual avatar presenter project design plan]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Classify local vs upstream with git merge-base to pick ff or rebase"
+ai_hash: 12548034c8d27630
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: howto
+entities: []
+source: session 2026-07-31 quartz vault sync
 status: seedling
-source: "session 2026-07-31 quartz vault sync"
-tags: [git, scripting, merge-base, sync]
+tags:
+- git
+- scripting
+- merge-base
+- sync
+title: Classify local vs upstream with git merge-base to pick ff or rebase
+type: howto
 ---
 
 # Classify local vs upstream with git merge-base to pick ff or rebase
@@ -32,3 +40,14 @@ Related: [[git submodule update --remote can clobber unpushed submodule HEAD]], 
 
 - [[git submodule update --remote can clobber unpushed submodule HEAD]]
 - [[obsidian-quartz publishes via a content submodule pointer bump]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[git submodule update --remote can clobber unpushed submodule HEAD]]
+- [[obsidian-quartz publishes via a content submodule pointer bump]]
+- [[Publish]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[FETCH_HEAD is volatile when an IDE auto-fetches]]
+
+%% ai-graph-end %%

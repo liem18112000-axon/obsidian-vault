@@ -1,10 +1,18 @@
 ---
-title: "electron-builder asar requires asarUnpack for native .node addons"
+ai_hash: e204d70c2e515104
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack build optimization session
 status: seedling
-source: "vinnstack build optimization session"
-tags: [electron-builder, electron, asar, native-modules]
+tags:
+- electron-builder
+- electron
+- asar
+- native-modules
+title: electron-builder asar requires asarUnpack for native .node addons
+type: lesson
 ---
 
 # electron-builder asar requires asarUnpack for native .node addons
@@ -18,3 +26,14 @@ Practical way to find every native addon that actually needs unpacking, instead 
 ## Related
 
 - [[electron-builder files node_modules glob disables devDependency pruning]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[electron-builder files node_modules glob disables devDependency pruning]]
+- [[Next.js production server never loads the native SWC binary at runtime]]
+- [[Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup]]
+- [[Trim a cross-built Electron exe drop the host-platform native binaries the target never uses (+ maxCompression, one locale)]]
+- [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+
+%% ai-graph-end %%

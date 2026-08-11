@@ -1,10 +1,19 @@
 ---
-title: "GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH"
+ai_hash: 3f6c0d92aa73537d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml work 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml work 2026-06-06"
-tags: [github-actions, java, gradle, ci, gotcha]
+tags:
+- github-actions
+- java
+- gradle
+- ci
+- gotcha
+title: GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH
+type: lesson
 ---
 
 # GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH
@@ -27,3 +36,14 @@ The `ls` glob is the deterministic primary; the `readlink -f $(command -v javac)
 ## Related
 
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[Use JDK_JAVA_OPTIONS for JVM flags in container images]]
+- [[Shim legacy docker-compose v1 to docker compose v2 on GitHub runners]]
+- [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
+
+%% ai-graph-end %%

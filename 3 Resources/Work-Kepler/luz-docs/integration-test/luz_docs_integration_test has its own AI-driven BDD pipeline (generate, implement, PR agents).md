@@ -1,10 +1,20 @@
 ---
-title: "luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)"
+ai_hash: 6a725d2972ac728e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: concept
+entities: []
+source: 'vinnstack session 2026-07-11: building implement-bdd-steps skill'
 status: seedling
-source: "vinnstack session 2026-07-11: building implement-bdd-steps skill"
-tags: [bdd, cucumber, behave, ai-pipeline, luz-docs-integration-test]
+tags:
+- bdd
+- cucumber
+- behave
+- ai-pipeline
+- luz-docs-integration-test
+title: luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement,
+  PR agents)
+type: concept
 ---
 
 # luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)
@@ -28,3 +38,14 @@ Related: [[luz_docs_integration_test AI pipeline branch and PR mechanics]], [[lu
 - [[luz_docs_integration_test Gherkin and step-definition conventions]]
 - [[vinnstack BDD pipeline stops at Jira/Xray]]
 - [[never writes files into a cloned repo]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[luz_docs_integration_test AI pipeline branch and PR mechanics]]
+- [[luz_docs_integration_test Gherkin and step-definition conventions]]
+- [[Vinnstack ai-framework.html is aspirational, not the real code]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+
+%% ai-graph-end %%

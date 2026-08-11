@@ -1,10 +1,18 @@
 ---
-title: "A feedback loop with only its write side wired looks like a broken feature"
+ai_hash: e479e10e0a4acee5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: lesson
+entities: []
+source: session 2026-07-22
 status: seedling
-source: "session 2026-07-22"
-tags: [feedback-loop, prompt, vinnstack, gotcha]
+tags:
+- feedback-loop
+- prompt
+- vinnstack
+- gotcha
+title: A feedback loop with only its write side wired looks like a broken feature
+type: lesson
 ---
 
 # A feedback loop with only its write side wired looks like a broken feature
@@ -18,3 +26,14 @@ Fix shape: inject `buildInlineCommentsBlock(comments, dir, docLabel)` into the t
 ## Related
 
 - [[3 Resources/AI/Engineering/Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gesture-only features need an always-visible teacher - empty state must not hide the affordance]]
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
+- [[Async-enriched columns need a lazy backfill for pre-feature rows]]
+
+%% ai-graph-end %%

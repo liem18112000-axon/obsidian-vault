@@ -1,10 +1,23 @@
 ---
-title: "Assemble a narrated slide video: pptx to png + per-slide Google TTS + ffmpeg -shortest segments + concat"
+ai_hash: 9a12742abedbb51a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: howto
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [ffmpeg, video, tts, google-cloud, pymupdf, libreoffice, pptx, slideshow]
+tags:
+- ffmpeg
+- video
+- tts
+- google-cloud
+- pymupdf
+- libreoffice
+- pptx
+- slideshow
+title: 'Assemble a narrated slide video: pptx to png + per-slide Google TTS + ffmpeg
+  -shortest segments + concat'
+type: howto
 ---
 
 # Assemble a narrated slide video: pptx to png + per-slide Google TTS + ffmpeg -shortest segments + concat
@@ -34,3 +47,14 @@ Context / script: `C:\Users\dvtliem\.claude\docs\hook-present\build\make-narrate
 - Get each segment's duration from the narration WAV with Python's `wave` module (`getnframes()/getframerate()`) — no ffprobe needed — and pass it as `-t`.
 - Cost: motion makes frames change, so the file is larger / higher bitrate than a static slideshow (here ~108 MB / ~990 kb/s vs ~37 MB for the static cut) — expected, and the quality is better.
 - Vietnamese voice note: Google `vi-VN` voices are **Northern accent** only (Chirp3-HD `Leda` = lively female used here); a humorous *Southern* feel comes from word choice in the script, not the voice. True Saigon accent needs FPT.AI / Zalo / VBee TTS. See [[3 Resources/Cloud/GCP/text-to-speech/Vietnamese Google Cloud TTS write AI as trí tuệ nhân tạo, chunk per request, audio not video]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
+- [[Narration-synced highlight region-based dimemphasize excalidraw variants + timed xfade]]
+- [[Vietnamese Google Cloud TTS write AI as trí tuệ nhân tạo, chunk per request, audio not video]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+- [[Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)]]
+
+%% ai-graph-end %%

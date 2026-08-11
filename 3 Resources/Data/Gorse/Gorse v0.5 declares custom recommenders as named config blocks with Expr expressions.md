@@ -1,10 +1,18 @@
 ---
-title: "Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions"
+ai_hash: 7c2f7d3e3ffcdb35
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: howto
+entities: []
+source: Deep research 2026-07-22 — gorse.io v0.5 release post + gitrec config.toml
 status: budding
-source: "Deep research 2026-07-22 — gorse.io v0.5 release post + gitrec config.toml"
-tags: [gorse, config, expr, recommender-systems]
+tags:
+- gorse
+- config
+- expr
+- recommender-systems
+title: Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions
+type: howto
 ---
 
 # Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions
@@ -21,3 +29,14 @@ Named instances are then referenced as `non-personalized/trending_weekly`, `item
 
 - [[Gorse external recommenders run QuickJS scripts but can only return known item IDs]]
 - [[Gorse precomputes recommendations offline — per-request scoring is impossible inside it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gorse external recommenders run QuickJS scripts but can only return known item IDs]]
+- [[Gorse precomputes recommendations offline — per-request scoring is impossible inside it]]
+- [[LEO Personalization Engine uses config-first Gorse plus a Python re-rank layer]]
+- [[Gorse v0.4 docs describe a defunct config schema — trust the shipped config.toml template]]
+- [[Gorse config exposes model family and cadence, never hyperparameters]]
+
+%% ai-graph-end %%

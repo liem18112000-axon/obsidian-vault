@@ -1,10 +1,20 @@
 ---
-title: "A negative cache must be a distinct state from a cache miss, or its TTL is a dead write"
+ai_hash: 4dfdecbd42db8251
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: lesson
+entities: []
+source: 'luz_docs materialize review #11, 2026-06-08'
 status: seedling
-source: "luz_docs materialize review #11, 2026-06-08"
-tags: [caching, performance, luz-docs, materialize, gotcha]
+tags:
+- caching
+- performance
+- luz-docs
+- materialize
+- gotcha
+title: A negative cache must be a distinct state from a cache miss, or its TTL is
+  a dead write
+type: lesson
 ---
 
 # A negative cache must be a distinct state from a cache miss, or its TTL is a dead write
@@ -24,3 +34,14 @@ Make the cache read return a tri-state. Map the stored negative value to its own
 
 - [[materialize-code-review]]
 - [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[DualCache L1 write ignores per-call TTL (uses domain default)]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+- [[Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+
+%% ai-graph-end %%

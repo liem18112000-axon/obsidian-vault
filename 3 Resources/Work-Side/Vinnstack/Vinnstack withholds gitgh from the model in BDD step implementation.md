@@ -1,10 +1,18 @@
 ---
-title: "Vinnstack withholds git/gh from the model in BDD step implementation"
+ai_hash: 62ce860c76b6a965
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html
 status: seedling
-source: "session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html"
-tags: [vinnstack, architecture, ai-safety, design-pattern]
+tags:
+- vinnstack
+- architecture
+- ai-safety
+- design-pattern
+title: Vinnstack withholds git/gh from the model in BDD step implementation
+type: lesson
 ---
 
 # Vinnstack withholds git/gh from the model in BDD step implementation
@@ -15,3 +23,14 @@ This is a deliberate architecture boundary: the model is trusted to author and v
 
 ## Related
 [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[Vinnstack ai-framework.html is aspirational, not the real code]]
+- [[luz_docs_integration_test has its own AI-driven BDD pipeline (generate, implement, PR agents)]]
+- [[Vinnstack vinnstack-data-model.html predates the BDD workspace]]
+
+%% ai-graph-end %%

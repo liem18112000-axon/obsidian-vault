@@ -1,10 +1,19 @@
 ---
-title: "State machines must catch expected-failure operations or they get stuck forever"
+ai_hash: 76b01c882bdb7f4b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar session 2026-07-11, static/app.js interruptAndAnswer
 status: seedling
-source: "virtual-avatar session 2026-07-11, static/app.js interruptAndAnswer"
-tags: [javascript, error-handling, state-machine, async-await, gotcha]
+tags:
+- javascript
+- error-handling
+- state-machine
+- async-await
+- gotcha
+title: State machines must catch expected-failure operations or they get stuck forever
+type: lesson
 ---
 
 # State machines must catch expected-failure operations or they get stuck forever
@@ -20,3 +29,14 @@ This is the same root lesson as [[Unguarded top-level await in a module script b
 ## Related
 
 - [[Unguarded top-level await in a module script blocks every statement after it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unguarded top-level await in a module script blocks every statement after it]]
+- [[Poll a library's public boolean state flags with a grace period when there is no completion callback]]
+- [[Classify stream failures on the server, not the client]]
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+- [[Keep errorfailure text out of LLM-summarized durable memory]]
+
+%% ai-graph-end %%

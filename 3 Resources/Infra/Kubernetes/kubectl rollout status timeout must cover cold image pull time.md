@@ -1,10 +1,18 @@
 ---
-title: "kubectl rollout status timeout must cover cold image pull time"
+ai_hash: 1a9ebef6e4217ed2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: Vinnstack GKE deploy 2026-07-03
 status: seedling
-source: "Vinnstack GKE deploy 2026-07-03"
-tags: [kubernetes, gke, rollout, gotcha]
+tags:
+- kubernetes
+- gke
+- rollout
+- gotcha
+title: kubectl rollout status timeout must cover cold image pull time
+type: lesson
 ---
 
 # kubectl rollout status timeout must cover cold image pull time
@@ -18,3 +26,14 @@ Warm re-deploys to the same node (image cached) finish in seconds, which is why 
 ## Related
 
 - [[GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones]]
+- [[Cloud Build $COMMIT_SHA is the full 40-char git SHA, not the short one]]
+- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
+- [[GKE pod stuck Init with MountVolume secret not found means a required Secret is missing]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-end %%

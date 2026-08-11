@@ -1,10 +1,18 @@
 ---
-title: "Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones"
+ai_hash: 5a2d3e3b997fa9ae
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08
 status: seedling
-source: "vinnstack session 2026-07-08"
-tags: [mermaid, configuration, gotcha]
+tags:
+- mermaid
+- configuration
+- gotcha
+title: Mermaid's global htmlLabels option overrides the deprecated per-diagram-type
+  ones
+type: lesson
 ---
 
 # Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones
@@ -20,3 +28,14 @@ Related: [[Mermaid defaults to foreignObject HTML labels, breaking canvas export
 ## Related
 
 - [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[Mermaid text clipping causes useMaxWidth shrink, narrow wrappingWidth, and web-font race]]
+- [[SVG foreignObject taints a canvas on drawImage]]
+- [[Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering]]
+- [[Mermaid Flowchart - Multi-word Labels and Decision Branches]]
+
+%% ai-graph-end %%

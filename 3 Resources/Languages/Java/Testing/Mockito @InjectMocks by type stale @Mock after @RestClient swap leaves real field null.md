@@ -1,10 +1,20 @@
 ---
-title: "Mockito @InjectMocks by type: stale @Mock after @RestClient swap leaves real field null"
+ai_hash: dcc67856db868b28
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: session 2026-07-15 LUZ-156856
 status: seedling
-source: "session 2026-07-15 LUZ-156856"
-tags: [mockito, java, gotcha, luz-docs, testing]
+tags:
+- mockito
+- java
+- gotcha
+- luz-docs
+- testing
+title: 'Mockito @InjectMocks by type: stale @Mock after @RestClient swap leaves real
+  field null'
+type: lesson
 ---
 
 # Mockito @InjectMocks by type: stale @Mock after @RestClient swap leaves real field null
@@ -31,3 +41,14 @@ Context: luz_docs `ParallelizeMigrationExecutorTest`, LUZ-156856 — test broke 
 ## Related
 
 - [[luz-docs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[New collaborator call NPEs old @InjectMocks tests]]
+- [[A merged-in test breaks when the target branch's service gained a new injected dependency]]
+- [[Mockito helper that stubs must not run inside an outer when().thenReturn() argument]]
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+- [[Mockito strict stubbing turns removed production calls into UnnecessaryStubbingException test failures]]
+
+%% ai-graph-end %%

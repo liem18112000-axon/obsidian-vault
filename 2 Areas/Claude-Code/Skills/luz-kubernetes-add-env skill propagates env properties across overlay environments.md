@@ -1,10 +1,45 @@
 ---
-title: "luz-kubernetes-add-env skill propagates env properties across overlay environments"
+ai_hash: c3f5f2ac9f47a896
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: howto
+entities:
+- luz-kubernetes-add-env skill
+- env properties
+- overlay environments
+- system.properties
+- luz_kubernetes overlay layout system.properties per env-envservice
+- add-env.sh
+- KEY=VALUE properties
+- APPLY=1
+- SERVICE=luz-docs
+- ENVS=dev,dev-vn,dev-staging,performance,test,swissdec,prod
+- master/main branch
+- custom branch
+- BRANCH=<name>
+- ALLOW_COMMIT_ON_BRANCH=1
+- PUSH=1
+- LUZ_KUBERNETES_ROOT
+- locate-repo.sh
+- luz-kubernetes-root.config
+- Key normalization
+- property-style names
+- env-var form
+- tr 'a-z.-' 'A-Z__'
+- git diff
+- current HEAD
+- luz-env-config-reminder hook nudges overlay propagation for new env reads in luz
+  repos
+source: session 2026-06-10
 status: seedling
-source: "session 2026-06-10"
-tags: [claude-code, skill, luz, kubernetes, config]
+tags:
+- claude-code
+- skill
+- luz
+- kubernetes
+- config
+title: luz-kubernetes-add-env skill propagates env properties across overlay environments
+type: howto
 ---
 
 # luz-kubernetes-add-env skill propagates env properties across overlay environments
@@ -27,3 +62,44 @@ Gotcha: `BRANCH=<name>` creates the new branch **from the current HEAD**, not fr
 
 - [[2 Areas/Kepler/luz_kubernetes overlay layout system.properties per env-envservice]]
 - [[luz-env-config-reminder hook nudges overlay propagation for new env reads in luz repos]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-env-config-reminder hook nudges overlay propagation for new env reads in luz repos]]
+- [[luz_kubernetes overlay layout system.properties per env-envservice]]
+- [[Luz plugin repos how skills and hooks are packaged for distribution]]
+- [[luz-skills-plugin packages skills by category directory listed in plugin.json]]
+- [[Destructive Luz skills use a preview-first CONFIRM gate]]
+
+**Relations:**
+- luz-kubernetes-add-env skill — *propagates* — env properties
+- luz-kubernetes-add-env skill — *adds or updates* — KEY=VALUE properties
+- KEY=VALUE properties — *are stored in* — system.properties
+- system.properties — *across* — overlay environments
+- luz-kubernetes-add-env skill — *references* — luz_kubernetes overlay layout system.properties per env-envservice
+- add-env.sh — *is part of* — luz-kubernetes-add-env skill
+- add-env.sh — *processes* — KEY=VALUE properties
+- add-env.sh — *is* — preview-first
+- add-env.sh — *requires* — APPLY=1 for writing
+- add-env.sh — *has default service* — SERVICE=luz-docs
+- add-env.sh — *has default environments* — ENVS=dev,dev-vn,dev-staging,performance,test,swissdec,prod
+- add-env.sh — *handles* — missing env/service dirs as warnings
+- add-env.sh — *auto-creates branch on* — master/main branch
+- add-env.sh — *commits* — touched files
+- add-env.sh — *refuses commit on* — custom branch
+- custom branch — *requires* — ALLOW_COMMIT_ON_BRANCH=1 for commit
+- add-env.sh — *pushes changes with* — PUSH=1
+- Repo root — *is configurable via* — LUZ_KUBERNETES_ROOT
+- Repo root — *is auto-located by* — locate-repo.sh
+- locate-repo.sh — *uses cache file* — luz-kubernetes-root.config
+- luz-kubernetes-add-env skill — *includes* — Key normalization
+- Key normalization — *converts* — property-style names
+- property-style names — *to* — env-var form
+- Key normalization — *is implemented with* — tr 'a-z.-' 'A-Z__'
+- APPLY=1 — *enables* — idempotent commit-only passes
+- staging — *is computed from* — git diff
+- BRANCH=<name> — *creates branch from* — current HEAD
+- luz-kubernetes-add-env skill — *is related to* — luz-env-config-reminder hook nudges overlay propagation for new env reads in luz repos
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)"
+ai_hash: 5fb82ebe0a4bbf90
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: howto
+entities: []
+source: session 2026-07-02 — ran Polaris end-to-end
 status: seedling
-source: "session 2026-07-02 — ran Polaris end-to-end"
-tags: [polaris, cli, gotcha, mcp, vinnstack]
+tags:
+- polaris
+- cli
+- gotcha
+- mcp
+- vinnstack
+title: polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)
+type: howto
 ---
 
 # polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)
@@ -28,3 +37,14 @@ To actually USE Polaris: bootstrap + `polaris up`, then reload the editor (Claud
 ## Related
 
 - [[3 Resources/Work-Side/Vinnstack/polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+- [[Polaris 3003 MCP server is persistent — TCP probe not equal to polaris tunnel state]]
+- [[polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]
+
+%% ai-graph-end %%

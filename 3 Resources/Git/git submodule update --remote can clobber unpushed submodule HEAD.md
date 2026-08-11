@@ -1,10 +1,17 @@
 ---
-title: "git submodule update --remote can clobber unpushed submodule HEAD"
+ai_hash: 414fd405f8220f41
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: lesson
+entities: []
+source: session 2026-07-31 quartz vault sync
 status: seedling
-source: "session 2026-07-31 quartz vault sync"
-tags: [git, submodule, gotcha]
+tags:
+- git
+- submodule
+- gotcha
+title: git submodule update --remote can clobber unpushed submodule HEAD
+type: lesson
 ---
 
 # git submodule update --remote can clobber unpushed submodule HEAD
@@ -21,3 +28,14 @@ This bit the `obsidian-quartz` publish flow — see [[obsidian-quartz publishes 
 
 - [[obsidian-quartz publishes via a content submodule pointer bump]]
 - [[Classify local vs upstream with git merge-base to pick ff or rebase]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Classify local vs upstream with git merge-base to pick ff or rebase]]
+- [[obsidian-quartz publishes via a content submodule pointer bump]]
+- [[FETCH_HEAD is volatile when an IDE auto-fetches]]
+- [[Publish]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Client-side generation queue lets independent items run without blocking each other"
+ai_hash: 168a9500a07f7a50
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: howto
+entities: []
+source: Vinnstack session 2026-07-07 (components/InterrogationView.tsx, components/StoryFlowView.tsx)
 status: seedling
-source: "Vinnstack session 2026-07-07 (components/InterrogationView.tsx, components/StoryFlowView.tsx)"
-tags: [react, queue, async, ux, vinnstack]
+tags:
+- react
+- queue
+- async
+- ux
+- vinnstack
+title: Client-side generation queue lets independent items run without blocking each
+  other
+type: howto
 ---
 
 # Client-side generation queue lets independent items run without blocking each other
@@ -20,3 +30,13 @@ A UI that kicks off several long-running background jobs (AI generations, builds
 ## Related
 
 - [[Promise-chain queueTail pattern serializes async jobs with instant enqueue]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Promise-chain queueTail pattern serializes async jobs with instant enqueue]]
+- [[Non-blocking usage capture fire-and-forget async writes + a serialized promise queue for race-safe RMW]]
+- [[Honest progress UI for un-streamable long LLM runs - elapsed time plus stage hints]]
+- [[Parallelize independent async startup steps in an Electron main process]]
+
+%% ai-graph-end %%

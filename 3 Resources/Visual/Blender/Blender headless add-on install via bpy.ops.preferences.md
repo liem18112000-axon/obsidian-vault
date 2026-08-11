@@ -1,10 +1,19 @@
 ---
-title: "Blender headless add-on install via bpy.ops.preferences"
+ai_hash: 7db7408b735f8353
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: howto
+entities: []
+source: virtual-avatar project, 2026-07-11
 status: seedling
-source: "virtual-avatar project, 2026-07-11"
-tags: [blender, automation, headless, bpy, cli]
+tags:
+- blender
+- automation
+- headless
+- bpy
+- cli
+title: Blender headless add-on install via bpy.ops.preferences
+type: howto
 ---
 
 # Blender headless add-on install via bpy.ops.preferences
@@ -19,3 +28,12 @@ Many of the operator classes an add-on defines (things you'd normally click as b
 
 - [[Blender Windows portable builds are plain zips]]
 - [[TalkingHead requires offline Blender conversion for VRM avatars]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[VRM Blender add-on ships classic and Extension zip variants]]
+- [[Blender release-zip addon module name may not match the source package name]]
+- [[Blender Windows portable builds are plain zips]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "curl_cffi stream=True resolves redirects without downloading the body"
+ai_hash: cbd6a3aecd05d5b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: howto
+entities: []
+source: code-review session 2026-06-10, fb-info-project
 status: seedling
-source: "code-review session 2026-06-10, fb-info-project"
-tags: [curl-cffi, http, redirects, efficiency]
+tags:
+- curl-cffi
+- http
+- redirects
+- efficiency
+title: curl_cffi stream=True resolves redirects without downloading the body
+type: howto
 ---
 
 # curl_cffi stream=True resolves redirects without downloading the body
@@ -16,3 +24,11 @@ When only the final URL of a redirect chain matters (resolving share links, bare
 ## Related
 
 - [[SameSite=None cookies require Secure or Chromium drops them]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[page.content() serializes the full DOM over CDP]]
+- [[Facebook sharev links can resolve to reels — classify after the redirect]]
+
+%% ai-graph-end %%

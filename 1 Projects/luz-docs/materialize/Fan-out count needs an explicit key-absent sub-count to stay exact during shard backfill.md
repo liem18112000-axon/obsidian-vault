@@ -1,10 +1,41 @@
 ---
-title: "Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill"
+ai_hash: 36932933cadfdef4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities:
+- Fan-out count
+- key-absent sub-count
+- shard backfill
+- count
+- fan-out partitioning
+- _shard field
+- documents
+- range sub-counts
+- exists:false bucket
+- luz-docs
+- LUZ-154613
+- migration
+- _countShard field
+- lazily-populated key
+- explicit 'key-absent' partition
+- K+1 buckets
+- sum
+- field RENAME
+- Partition the materialized count on a uniform _shard int
+- not _id
+source: LUZ-154613 session 2026-06-16
 status: seedling
-source: "LUZ-154613 session 2026-06-16"
-tags: [luz-docs, materialize, mongodb, sharding, backfill, gotcha]
+tags:
+- luz-docs
+- materialize
+- mongodb
+- sharding
+- backfill
+- gotcha
+title: Fan-out count needs an explicit key-absent sub-count to stay exact during shard
+  backfill
+type: lesson
 ---
 
 # Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill
@@ -19,3 +50,41 @@ Bonus: this also made the count robust to a field RENAME (_countShard → _shard
 
 - [[Partition the materialized count on a uniform _shard int]]
 - [[not _id]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[No existing luz-docs field works as a fan-out count partition key — survey]]
+- [[Fan-out gate and backfill filter must cover the same field set]]
+- [[Random shard key gives balanced fan-out partitions (equal-width = equal-work only if uniform)]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+
+**Relations:**
+- Fan-out count — *needs* — key-absent sub-count
+- Fan-out count — *stays exact during* — shard backfill
+- count — *is fan-out-partitioned on* — _shard field
+- _shard field — *is backfilled during* — shard backfill
+- documents — *are undercounted without* — key-absent sub-count
+- key-absent sub-count — *represents condition* — {_shard:{$exists:false}}
+- key-absent sub-count — *is alongside* — range sub-counts
+- exists:false bucket — *is a type of* — key-absent sub-count
+- K+1 buckets — *comprise* — exists:false bucket
+- K+1 buckets — *comprise* — range sub-counts
+- K+1 buckets — *are* — disjoint
+- K+1 buckets — *cover* — documents
+- sum — *of K+1 buckets stays exact during* — shard backfill
+- solution — *proven on* — luz-docs
+- luz-docs — *has issue* — LUZ-154613
+- LUZ-154613 — *involves* — documents
+- migration — *stamps* — _shard field
+- documents — *move from* — exists:false bucket
+- documents — *move to* — range sub-counts
+- key-absent sub-count — *provides robustness for* — field RENAME
+- field RENAME — *changes* — _countShard field
+- _countShard field — *to* — _shard field
+- lazily-populated key — *requires* — explicit 'key-absent' partition
+- Fan-out count — *is related to* — Partition the materialized count on a uniform _shard int
+- Fan-out count — *is related to* — not _id
+
+%% ai-graph-end %%

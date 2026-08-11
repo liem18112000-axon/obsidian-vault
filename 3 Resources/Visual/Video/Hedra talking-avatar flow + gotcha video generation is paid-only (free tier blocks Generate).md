@@ -1,10 +1,22 @@
 ---
-title: "Hedra talking-avatar flow + gotcha: video generation is paid-only (free tier blocks Generate)"
+ai_hash: 21617b1f3c381b41
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: lesson
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [hedra, lip-sync, avatar, tts, video, gotcha, playwright]
+tags:
+- hedra
+- lip-sync
+- avatar
+- tts
+- video
+- gotcha
+- playwright
+title: 'Hedra talking-avatar flow + gotcha: video generation is paid-only (free tier
+  blocks Generate)'
+type: lesson
 ---
 
 # Hedra talking-avatar flow + gotcha: video generation is paid-only (free tier blocks Generate)
@@ -25,3 +37,10 @@ Even with 100 free credits and an affordable cost shown, clicking **Generate** p
 True lip-sync via Hedra needs a paid plan. Headless-automatable alternatives: a **Replicate API token** (hosted SadTalker/Wav2Lip/video-retalking, pay-per-use) — fully scriptable. Other browser tools with freer tiers: D-ID (~5 min/mo free), lipsync.video (free no-signup), HeyGen free lip-sync. Or skip lip-sync and keep an audio-reactive mascot (PIL card + ffmpeg showwaves).
 
 Context: Claude Hooks & Skills avatar; `C:\Users\dvtliem\.claude\docs\hook-present\avatar`.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
+
+%% ai-graph-end %%

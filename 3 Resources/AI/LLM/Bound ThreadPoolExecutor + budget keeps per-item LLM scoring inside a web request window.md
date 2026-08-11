@@ -1,10 +1,21 @@
 ---
-title: "Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request window"
+ai_hash: ec0ff6271eea3cd5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: Accesstrade integration, session 2026-06-13
 status: seedling
-source: "Accesstrade integration, session 2026-06-13"
-tags: [concurrency, threadpool, llm, python, performance, web]
+tags:
+- concurrency
+- threadpool
+- llm
+- python
+- performance
+- web
+title: Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request
+  window
+type: lesson
 ---
 
 # Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request window
@@ -30,3 +41,12 @@ Context: `StrategyRecommender.recommend` in the Accesstrade toolkit (Vertex ~13s
 ## Related
 
 - [[google-genai Client must be held in a variable during the request or it is GC-closed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Acquire a client-side rate limiter once per call, outside the retry loop]]
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+- [[Client-side min-interval rate limiting via slot reservation]]
+
+%% ai-graph-end %%

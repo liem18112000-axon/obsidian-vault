@@ -1,10 +1,18 @@
 ---
-title: "Absolutely-positioned list bullets slide under a floated sidebar"
+ai_hash: 300f9ef66aeb3dc8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: lesson
+entities: []
+source: session 2026-07-20
 status: seedling
-source: "session 2026-07-20"
-tags: [css, float, print, gotcha]
+tags:
+- css
+- float
+- print
+- gotcha
+title: Absolutely-positioned list bullets slide under a floated sidebar
+type: lesson
 ---
 
 # Absolutely-positioned list bullets slide under a floated sidebar
@@ -23,3 +31,11 @@ The inline `::before` flows in the (float-displaced) line box, so it always sits
 ## Related
 
 - [[Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PDF page count cannot prove a fixed-height page fits when overflow is hidden]]
+- [[Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge]]
+
+%% ai-graph-end %%

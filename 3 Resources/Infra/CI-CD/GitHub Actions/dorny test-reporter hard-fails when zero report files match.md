@@ -1,10 +1,19 @@
 ---
-title: "dorny test-reporter hard-fails when zero report files match"
+ai_hash: e107c11eb01949b3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml debugging 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml debugging 2026-06-06"
-tags: [github-actions, testing, junit, ci, gotcha]
+tags:
+- github-actions
+- testing
+- junit
+- ci
+- gotcha
+title: dorny test-reporter hard-fails when zero report files match
+type: lesson
 ---
 
 # dorny test-reporter hard-fails when zero report files match
@@ -31,3 +40,14 @@ then `if: always() && steps.tests.outputs.found == "true"` on the reporter.
 ## Related
 
 - [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[pytest results into a GitHub Actions build via dorny test-reporter]]
+- [[Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output]]
+- [[Verify test files still exist on disk before trusting prior green test runs]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
+
+%% ai-graph-end %%

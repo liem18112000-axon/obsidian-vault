@@ -1,10 +1,18 @@
 ---
-title: "klara-nonprod is the GCP project for non-prod Artifact Registry IAM"
+ai_hash: 3567867926c1aefa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: observation
+entities: []
+source: session 2026-07-07
 status: seedling
-source: "session 2026-07-07"
-tags: [gcp, iam, artifact-registry, klara]
+tags:
+- gcp
+- iam
+- artifact-registry
+- klara
+title: klara-nonprod is the GCP project for non-prod Artifact Registry IAM
+type: observation
 ---
 
 # klara-nonprod is the GCP project for non-prod Artifact Registry IAM
@@ -16,3 +24,14 @@ For this org, the GCP project used for non-prod Artifact Registry repos and thei
 ## Related
 
 - [[gcloud add-iam-policy-binding requires --condition=None when policy has conditional bindings]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[gcloud add-iam-policy-binding requires --condition=None when policy has conditional bindings]]
+- [[Klara Cloud Build pushes images to klara-repo Artifact Registry with the SA on the trigger]]
+- [[Vinnstack Cloud Build trigger lives in klara-infra, not klara-nonprod]]
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[artifactregistry.repoAdmin cannot grant IAM despite the name]]
+
+%% ai-graph-end %%

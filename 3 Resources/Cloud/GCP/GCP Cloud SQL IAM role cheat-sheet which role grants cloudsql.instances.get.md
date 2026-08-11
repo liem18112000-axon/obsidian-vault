@@ -1,10 +1,18 @@
 ---
-title: "GCP Cloud SQL IAM role cheat-sheet: which role grants cloudsql.instances.get"
+ai_hash: f5ca45fcebb96ccd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-26
-type: howto
+entities: []
+source: session 2026-07-26
 status: seedling
-source: "session 2026-07-26"
-tags: [gcp, iam, cloudsql, gcloud]
+tags:
+- gcp
+- iam
+- cloudsql
+- gcloud
+title: 'GCP Cloud SQL IAM role cheat-sheet: which role grants cloudsql.instances.get'
+type: howto
 ---
 
 # GCP Cloud SQL IAM role cheat-sheet: which role grants cloudsql.instances.get
@@ -30,3 +38,13 @@ Revoke by mirroring with `remove-iam-policy-binding`. Setting IAM needs `resourc
 ## Related
 
 - [[Skill google-skill-grant-cloudsql-access grants Cloud SQL role by email (preview-first)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+- [[Skill google-skill-grant-cloudsql-access grants Cloud SQL role by email (preview-first)]]
+- [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+- [[Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider]]
+
+%% ai-graph-end %%

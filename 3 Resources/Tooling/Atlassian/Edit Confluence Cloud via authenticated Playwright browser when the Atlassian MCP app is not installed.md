@@ -1,10 +1,21 @@
 ---
-title: "Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed"
+ai_hash: ffa3e7e66ed8137c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-25
-type: howto
+entities: []
+source: session 2026-07-25
 status: seedling
-source: "session 2026-07-25"
-tags: [confluence, atlassian, playwright, mcp, rest-api, gotcha]
+tags:
+- confluence
+- atlassian
+- playwright
+- mcp
+- rest-api
+- gotcha
+title: Edit Confluence Cloud via authenticated Playwright browser when the Atlassian
+  MCP app is not installed
+type: howto
 ---
 
 # Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed
@@ -24,3 +35,14 @@ See [[Rewrite Confluence page prose by element local-id to keep diagrams and str
 
 - [[Rewrite Confluence page prose by element local-id to keep diagrams and structure intact]]
 - [[Playwright MCP Browser is already in use lock kill only ms-playwright-mcp chrome to free it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
+- [[Playwright MCP Browser is already in use lock kill only ms-playwright-mcp chrome to free it]]
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+- [[Rewrite Confluence page prose by element local-id to keep diagrams and structure intact]]
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+
+%% ai-graph-end %%

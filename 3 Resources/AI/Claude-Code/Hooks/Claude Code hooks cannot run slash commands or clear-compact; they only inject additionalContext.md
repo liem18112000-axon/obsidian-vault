@@ -1,3 +1,10 @@
+---
+ai_hash: 59ec676502f05dc3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+---
+
 ﻿---
 title: "Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext"
 created: 2026-06-02
@@ -19,3 +26,13 @@ Claude Code hooks communicate only through stdout, stderr, and exit codes. They 
 
 - [[Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
+- [[Claude Code hooks event model]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Remote permission approval via a blocking PreToolUse hook]]
+- [[Claude Code Skill anatomy]]
+
+%% ai-graph-end %%

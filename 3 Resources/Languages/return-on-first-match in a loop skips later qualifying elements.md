@@ -1,10 +1,17 @@
 ---
-title: "return-on-first-match in a loop skips later qualifying elements"
+ai_hash: 630064359cad890b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: session 2026-06-17
 status: seedling
-source: "session 2026-06-17"
-tags: [gotcha, control-flow, code-review]
+tags:
+- gotcha
+- control-flow
+- code-review
+title: return-on-first-match in a loop skips later qualifying elements
+type: lesson
 ---
 
 # return-on-first-match in a loop skips later qualifying elements
@@ -18,3 +25,14 @@ Example: loop returns on the first op with \`operator == REMOVE\`, but whether t
 ## Related
 
 - [[JSON-Patch remove-to-replace[] conversion skipped folderIds when another field's remove came first]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JSON-Patch remove-to-replace[] conversion skipped folderIds when another field's remove came first]]
+- [[RFC-6902 replace at array index expects a scalar element not an array]]
+- [[json-patch-independent-translation-breaks-reset-then-append]]
+- [[flattenArrayAddOps runs only in materialize branch]]
+- [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+
+%% ai-graph-end %%

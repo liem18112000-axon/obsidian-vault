@@ -1,10 +1,21 @@
 ---
-title: "eArchive load wall is the materialize security aggregate, not index coverage"
+ai_hash: f10ada33f27b766f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: observation
+entities: []
+source: session 2026-06-26 index A/B benchmark
 status: seedling
-source: "session 2026-06-26 index A/B benchmark"
-tags: [klara, earchive, mongodb, index, benchmark, materialize, performance]
+tags:
+- klara
+- earchive
+- mongodb
+- index
+- benchmark
+- materialize
+- performance
+title: eArchive load wall is the materialize security aggregate, not index coverage
+type: observation
 ---
 
 # eArchive load wall is the materialize security aggregate, not index coverage
@@ -25,3 +36,14 @@ Reports: `luz_docs/docs/index-earchive/benchmark/{no_index,a_vu,liem,comparison}
 
 - [[JSF LetterStorageDetail instance URL dies mid-benchmark; remint via eArchive menu]]
 - [[reference_mongo_collation_index]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive 800k bottleneck is view-controller not K]]
+- [[eArchive request flow and log correlation (perf)]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[eArchive documents collection has 7 materialise-related indexes, not 4]]
+- [[Non-interleaved cross-case benchmarks on shared cluster confound index effect with cache+load]]
+
+%% ai-graph-end %%

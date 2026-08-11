@@ -1,19 +1,23 @@
 ---
-title: Accesstrade conversion and transaction reporting
-created: 2026-06-11
-type: term
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - reporting
-  - conversions
+ai_hash: 4c6c84e7fa10c06f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade conversion report
-  - Accesstrade transactions endpoint
-  - Accesstrade order-list
+- Accesstrade conversion report
+- Accesstrade transactions endpoint
+- Accesstrade order-list
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- reporting
+- conversions
+title: Accesstrade conversion and transaction reporting
+type: term
 ---
 
 # Accesstrade conversion and transaction reporting
@@ -61,3 +65,14 @@ stateDiagram-v2
 - [[Accesstrade postback and S2S conversion tracking]]
 - [[Use case - automated daily conversion digest]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade API rate limits and pagination]]
+- [[Accesstrade Campaigns API]]
+- [[Accesstrade postback and S2S conversion tracking]]
+- [[Accesstrade has two API generations]]
+- [[Accesstrade affiliate network overview]]
+
+%% ai-graph-end %%

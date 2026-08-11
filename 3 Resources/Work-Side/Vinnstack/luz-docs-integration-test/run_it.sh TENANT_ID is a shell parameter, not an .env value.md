@@ -1,10 +1,20 @@
 ---
-title: "run_it.sh TENANT_ID is a shell parameter, not an .env value"
+ai_hash: d372c51cd6f8f8ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: vinnstack BDD Run Tests TENANT_ID override bugfix, 2026-07-12
 status: seedling
-source: "vinnstack BDD Run Tests TENANT_ID override bugfix, 2026-07-12"
-tags: [bash, env-vars, precedence, gotcha, vinnstack, luz-docs]
+tags:
+- bash
+- env-vars
+- precedence
+- gotcha
+- vinnstack
+- luz-docs
+title: run_it.sh TENANT_ID is a shell parameter, not an .env value
+type: lesson
 ---
 
 # run_it.sh TENANT_ID is a shell parameter, not an .env value
@@ -24,3 +34,14 @@ Related: [[Tailwind class-string order does not determine cascade override]] —
 ## Related
 
 - [[Tailwind class-string order doesn't determine cascade override]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bash unquoted variable expansion re-splits on whitespace, breaking quoted args]]
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[Windows setx does not update already-running processes' environment]]
+- [[luz-docs IT skips security-class scenarios when the tenant token lacks enough codes]]
+
+%% ai-graph-end %%

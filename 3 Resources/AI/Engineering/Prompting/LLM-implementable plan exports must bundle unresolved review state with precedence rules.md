@@ -1,10 +1,19 @@
 ---
-title: "LLM-implementable plan exports must bundle unresolved review state with precedence rules"
+ai_hash: a8cc7f2028d762bf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: model
+entities: []
+source: session 2026-07-04, vinnstack flow exporter
 status: seedling
-source: "session 2026-07-04, vinnstack flow exporter"
-tags: [llm, handoff, export, vinnstack]
+tags:
+- llm
+- handoff
+- export
+- vinnstack
+title: LLM-implementable plan exports must bundle unresolved review state with precedence
+  rules
+type: model
 ---
 
 # LLM-implementable plan exports must bundle unresolved review state with precedence rules
@@ -21,3 +30,14 @@ Write the export where agents already have access (the vault exposed via --add-d
 ## Related
 
 - [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[AI self-critique loop - a post-generation critic pass rates the artifact and feeds the next run]]
+- [[Version-stamp quality ratings so stale feedback stops driving regeneration]]
+- [[PRD-parity checklist - what comment-driven regenerate with versions actually requires]]
+- [[TextQuoteSelector anchoring survives document regeneration]]
+
+%% ai-graph-end %%

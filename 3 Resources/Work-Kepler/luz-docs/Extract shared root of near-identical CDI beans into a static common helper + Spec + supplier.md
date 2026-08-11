@@ -1,10 +1,21 @@
 ---
-title: "Extract shared root of near-identical CDI beans into a static common helper + Spec + supplier"
+ai_hash: d539df70fc17cb41
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: howto
+entities: []
+source: session 2026-07-31
 status: seedling
-source: "session 2026-07-31"
-tags: [luz-docs, java, cdi, refactoring, mockito, dry]
+tags:
+- luz-docs
+- java
+- cdi
+- refactoring
+- mockito
+- dry
+title: Extract shared root of near-identical CDI beans into a static common helper
+  + Spec + supplier
+type: howto
 ---
 
 # Extract shared root of near-identical CDI beans into a static common helper + Spec + supplier
@@ -28,3 +39,14 @@ Related: [[DualCache namespace only selects the L1 bucket]].
 ## Related
 
 - [[DualCache namespace only selects the L1 bucket]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[DualCache namespace only selects the L1 bucket]]
+- [[Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)]]
+- [[Luz gates must inject per-package Allowlist beans not static Campaign isAffectedFor]]
+- [[luz_docs safeCache is a deliberate per-class private copy]]
+- [[Campaign-gate template cache then campaign status L1 then repository L2]]
+
+%% ai-graph-end %%

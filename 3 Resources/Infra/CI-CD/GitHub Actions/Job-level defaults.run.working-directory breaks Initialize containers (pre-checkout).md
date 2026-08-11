@@ -1,10 +1,19 @@
 ---
-title: "Job-level defaults.run.working-directory breaks Initialize containers (pre-checkout)"
+ai_hash: 4b2e18d439a55029
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml debugging 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml debugging 2026-06-06"
-tags: [github-actions, services, containers, ci, gotcha]
+tags:
+- github-actions
+- services
+- containers
+- ci
+- gotcha
+title: Job-level defaults.run.working-directory breaks Initialize containers (pre-checkout)
+type: lesson
 ---
 
 # Job-level defaults.run.working-directory breaks Initialize containers (pre-checkout)
@@ -26,3 +35,14 @@ One or more containers failed to start.
 ## Related
 
 - [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+- [[Running the LEO CDP GHCR image needs mounted configs (image ships JARs only)]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
+
+%% ai-graph-end %%

@@ -1,8 +1,17 @@
 ---
-type: term
+ai_hash: 5edb68364879504e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- AOV
+- Average Order Value
+- Average Basket Value
 domain: affiliate-marketing
-aliases: [AOV, Average Order Value, Average Basket Value]
-tags: [affiliate, metric]
+entities: []
+tags:
+- affiliate
+- metric
+type: term
 ---
 
 # Average Order Value
@@ -84,3 +93,14 @@ Brand B's lower rate wins because its AOV is 3.6× higher. Without AOV in the co
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Sale]]
+- [[Earnings per Click]]
+- [[Lifetime Value]]
+- [[Term]]
+- [[Cookie Duration]]
+
+%% ai-graph-end %%

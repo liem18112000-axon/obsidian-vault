@@ -1,10 +1,20 @@
 ---
-title: "Non-WI GKE Google API auth: mount a GSA key at the well-known ADC path"
+ai_hash: 94c8ace7005dd291
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: Vinnstack GKE deploy 2026-07-03
 status: seedling
-source: "Vinnstack GKE deploy 2026-07-03"
-tags: [gke, gcp, adc, cloud-sql-proxy, vertex, auth]
+tags:
+- gke
+- gcp
+- adc
+- cloud-sql-proxy
+- vertex
+- auth
+title: 'Non-WI GKE Google API auth: mount a GSA key at the well-known ADC path'
+type: howto
 ---
 
 # Non-WI GKE Google API auth: mount a GSA key at the well-known ADC path
@@ -23,3 +33,14 @@ When you cannot use Workload Identity but a GKE pod must call Google APIs (Cloud
 ## Related
 
 - [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
+- [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+- [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
+- [[Set up GitHub Actions to GCP via Workload Identity Federation]]
+
+%% ai-graph-end %%

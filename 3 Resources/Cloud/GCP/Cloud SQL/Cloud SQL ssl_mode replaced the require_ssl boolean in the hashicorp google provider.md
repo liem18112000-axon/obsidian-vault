@@ -1,10 +1,20 @@
 ---
-title: "Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider"
+ai_hash: f10552394740f953
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: accesstrade deployment/ Terraform, 2026-06-14
 status: seedling
-source: "accesstrade deployment/ Terraform, 2026-06-14"
-tags: [gcp, cloud-sql, terraform, security, gotcha]
+tags:
+- gcp
+- cloud-sql
+- terraform
+- security
+- gotcha
+title: Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google
+  provider
+type: lesson
 ---
 
 # Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider
@@ -27,3 +37,14 @@ Seen provisioning the accesstrade_integration `deployment/` Terraform.
 
 - [[Memorystore Redis is always VPC-internal — no public endpoint]]
 - [[Cloud SQL Postgres point-in-time recovery requires automated backups enabled]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Memorystore Redis is always VPC-internal — no public endpoint]]
+- [[Cloud SQL Postgres point-in-time recovery requires automated backups enabled]]
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+- [[GCP Cloud SQL IAM role cheat-sheet which role grants cloudsql.instances.get]]
+- [[Gate Terraform apply to create-if-absent except on the release branch]]
+
+%% ai-graph-end %%

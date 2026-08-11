@@ -1,10 +1,19 @@
 ---
-title: "luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)"
+ai_hash: 073c198e39a1c1f2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: lesson
+entities: []
+source: session 2026-07-14 folderIds-facet investigation
 status: seedling
-source: "session 2026-07-14 folderIds-facet investigation"
-tags: [luz-docs, mongodb, gotcha, facet, earchive]
+tags:
+- luz-docs
+- mongodb
+- gotcha
+- facet
+- earchive
+title: luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)
+type: lesson
 ---
 
 # luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)
@@ -21,3 +30,14 @@ Top fix: set `allowDiskUse(true)` (ideally behind an explicit flag). Companion f
 
 - [[3 Resources/Work-Kepler/luz-docs/search/luz-docs facet $unwind branch keys off client-supplied typearray, not schema]]
 - [[3 Resources/Data/MongoDB/Mongo $group is blocking so time-to-error is scan-bound, not timeout-bound]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mongo $group is blocking so time-to-error is scan-bound, not timeout-bound]]
+- [[luz-docs facet $unwind branch keys off client-supplied typearray, not schema]]
+- [[Canary tenant eArchive folder list trips Mongo code 292 sort-memory-limit]]
+- [[Real luz_docsluz_jsonstore source lives under Kepler, not epost_knowledge_base]]
+- [[Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Mermaid text clipping causes: useMaxWidth shrink, narrow wrappingWidth, and web-font race"
+ai_hash: 1ad0f7f6e6d4e5e8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08
 status: seedling
-source: "vinnstack session 2026-07-08"
-tags: [mermaid, svg, rendering, frontend, gotcha]
+tags:
+- mermaid
+- svg
+- rendering
+- frontend
+- gotcha
+title: 'Mermaid text clipping causes: useMaxWidth shrink, narrow wrappingWidth, and
+  web-font race'
+type: lesson
 ---
 
 # Mermaid text clipping causes: useMaxWidth shrink, narrow wrappingWidth, and web-font race
@@ -25,3 +35,14 @@ Why you'd be on `htmlLabels: false` at all: it is usually set to keep canvas PNG
 
 - [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
 - [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[Copy an SVG diagram to the clipboard as PNG - viewBox-sized canvas rasterization]]
+- [[Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+
+%% ai-graph-end %%

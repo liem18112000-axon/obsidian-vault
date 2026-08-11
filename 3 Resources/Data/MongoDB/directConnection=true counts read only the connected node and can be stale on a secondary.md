@@ -1,10 +1,20 @@
 ---
-title: "directConnection=true counts read only the connected node and can be stale on a secondary"
+ai_hash: 7cb75ba956b924c1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: session 2026-06-23 eArchive seed
 status: seedling
-source: "session 2026-06-23 eArchive seed"
-tags: [mongodb, replica-set, gotcha, kubectl, earchive]
+tags:
+- mongodb
+- replica-set
+- gotcha
+- kubectl
+- earchive
+title: directConnection=true counts read only the connected node and can be stale
+  on a secondary
+type: lesson
 ---
 
 # directConnection=true counts read only the connected node and can be stale on a secondary
@@ -22,3 +32,14 @@ Relates to [[MongoDB ObjectId timestamp identifies recently-inserted docs]].
 ## Related
 
 - [[MongoDB ObjectId timestamp identifies recently-inserted docs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[NotWritablePrimary via port-forward means forward targets a secondary]]
+- [[MongoDB ObjectId timestamp identifies recently-inserted docs]]
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)]]
+
+%% ai-graph-end %%

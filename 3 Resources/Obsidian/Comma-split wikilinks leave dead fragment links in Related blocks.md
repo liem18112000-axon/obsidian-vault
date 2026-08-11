@@ -1,10 +1,18 @@
 ---
-title: "Comma-split wikilinks leave dead fragment links in Related blocks"
+ai_hash: a85b134233d83c99
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: gotcha
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [obsidian, wikilinks, automation, gotcha]
+tags:
+- obsidian
+- wikilinks
+- automation
+- gotcha
+title: Comma-split wikilinks leave dead fragment links in Related blocks
+type: gotcha
 ---
 
 # Comma-split wikilinks leave dead fragment links in Related blocks
@@ -31,3 +39,12 @@ Related failure mode: [[Resolving a wikilink by basename truncates titles contai
 
 - [[Resolving a wikilink by basename truncates titles containing a slash]]
 - [[Measure a broken-link baseline before a mass vault refactor]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[create_note.py splits --link on commas, breaking comma-titled wikilinks]]
+- [[Measure a broken-link baseline before a mass vault refactor]]
+
+%% ai-graph-end %%

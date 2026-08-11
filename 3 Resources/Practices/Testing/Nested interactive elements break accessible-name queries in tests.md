@@ -1,10 +1,19 @@
 ---
-title: "Nested interactive elements break accessible-name queries in tests"
+ai_hash: b4497ac28d864596
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08
 status: seedling
-source: "vinnstack session 2026-07-08"
-tags: [accessibility, react, testing-library, html, gotcha]
+tags:
+- accessibility
+- react
+- testing-library
+- html
+- gotcha
+title: Nested interactive elements break accessible-name queries in tests
+type: lesson
 ---
 
 # Nested interactive elements break accessible-name queries in tests
@@ -21,3 +30,10 @@ Don't nest interactive elements. Restructure as siblings: a wrapping non-interac
 
 ## Related
 - [[Decouple internal PK from external ticket ID for draft-before-push records]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

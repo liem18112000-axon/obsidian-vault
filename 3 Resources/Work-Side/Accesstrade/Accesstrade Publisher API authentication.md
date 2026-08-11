@@ -1,18 +1,22 @@
 ---
-title: Accesstrade Publisher API authentication
-created: 2026-06-11
-type: howto
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - auth
-  - howto
+ai_hash: 8d83087a3d4b89df
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade Token header
-  - Accesstrade API key
+- Accesstrade Token header
+- Accesstrade API key
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- auth
+- howto
+title: Accesstrade Publisher API authentication
+type: howto
 ---
 
 # Accesstrade Publisher API authentication
@@ -50,3 +54,14 @@ curl -H "Authorization: Token $AT_KEY" \
 - [[Accesstrade has two API generations]]
 - [[Designing an Accesstrade skill for Claude Code]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade has two API generations]]
+- [[Accesstrade API Integration - MOC]]
+- [[Secrets handling for affiliate API keys]]
+- [[Accesstrade tracking link creation]]
+- [[Accesstrade affiliate network overview]]
+
+%% ai-graph-end %%

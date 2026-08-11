@@ -1,10 +1,21 @@
 ---
-title: "WildFly custom managed-executor-service needs context-service for CDI/Weld tasks"
+ai_hash: ffa897b0e799945f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: lesson
+entities: []
+source: luz_docs LUZ-154613 2026-06-18
 status: seedling
-source: "luz_docs LUZ-154613 2026-06-18"
-tags: [wildfly, jakarta-ee, cdi, weld, concurrency, gotcha]
+tags:
+- wildfly
+- jakarta-ee
+- cdi
+- weld
+- concurrency
+- gotcha
+title: WildFly custom managed-executor-service needs context-service for CDI/Weld
+  tasks
+type: lesson
 ---
 
 # WildFly custom managed-executor-service needs context-service for CDI/Weld tasks
@@ -28,3 +39,14 @@ Related: [[3 Resources/Practices/Performance/Shard count fan-out most of the win
 
 - [[3 Resources/Practices/Performance/Shard count fan-out most of the win is at K=4, diminishing returns after]]
 - [[ManagedExecutorService.execute loses CDI request context]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ManagedExecutorService.execute loses CDI request context]]
+- [[ManagedExecutorService needs @Resource not @Inject in WildFlyWeld]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+
+%% ai-graph-end %%

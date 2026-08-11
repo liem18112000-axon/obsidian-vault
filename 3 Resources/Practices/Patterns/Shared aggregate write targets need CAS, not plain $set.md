@@ -1,10 +1,20 @@
 ---
-title: "Shared aggregate write targets need CAS, not plain $set"
+ai_hash: 23144135a72d1f25
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: luz_docs foldercount HLL badge implementation plan, 2026-07-09 — grounded
+  in GroupService.alterGroup precedent
 status: seedling
-source: "luz_docs foldercount HLL badge implementation plan, 2026-07-09 — grounded in GroupService.alterGroup precedent"
-tags: [concurrency, mongodb, cas, optimistic-locking, architecture]
+tags:
+- concurrency
+- mongodb
+- cas
+- optimistic-locking
+- architecture
+title: Shared aggregate write targets need CAS, not plain $set
+type: lesson
 ---
 
 # Shared aggregate write targets need CAS, not plain $set
@@ -22,3 +32,14 @@ See [[Per-document backfill executors assume no shared write target]] for the re
 ## Related
 
 - [[Per-document backfill executors assume no shared write target]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-document backfill executors assume no shared write target]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out]]
+- [[luz_docs estimated-count POC drops CAS and backfill gate]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+
+%% ai-graph-end %%

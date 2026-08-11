@@ -1,10 +1,18 @@
 ---
-title: "JSON null survives str() as 'None' and corrupts lookup-table normalization"
+ai_hash: 9a5e8082ff5dbfe4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: code-review session 2026-06-10, fb-info-project
 status: seedling
-source: "code-review session 2026-06-10, fb-info-project"
-tags: [python, gotcha, json, normalization]
+tags:
+- python
+- gotcha
+- json
+- normalization
+title: JSON null survives str() as 'None' and corrupts lookup-table normalization
+type: lesson
 ---
 
 # JSON null survives str() as 'None' and corrupts lookup-table normalization
@@ -18,3 +26,10 @@ Found while reviewing a cookie-normalization function that accepted browser-exte
 ## Related
 
 - [[SameSite=None cookies require Secure or Chromium drops them]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[SameSite=None cookies require Secure or Chromium drops them]]
+
+%% ai-graph-end %%

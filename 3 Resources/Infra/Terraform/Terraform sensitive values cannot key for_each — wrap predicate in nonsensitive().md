@@ -1,7 +1,14 @@
 ---
-title: "Terraform sensitive values cannot key for_each — wrap predicate in nonsensitive()"
+ai_hash: 3bf279ce0b2d3f7e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-tags: [terraform, gotcha, secrets]
+entities: []
+tags:
+- terraform
+- gotcha
+- secrets
+title: Terraform sensitive values cannot key for_each — wrap predicate in nonsensitive()
 ---
 
 # Terraform sensitive values cannot key for_each — wrap predicate in nonsensitive()
@@ -35,3 +42,10 @@ resource "google_secret_manager_secret_version" "v" {
 ```
 
 Key idea: keep the **map/set keys non-sensitive** (use names as keys, look the sensitive value up by key), and only `nonsensitive()` the small boolean/emptiness check — never the secret payload. Same pattern works for a `dynamic` block whose `for_each` is built with a sensitive-derived condition.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[secrets context is not available in GitHub Actions if conditions]]
+
+%% ai-graph-end %%

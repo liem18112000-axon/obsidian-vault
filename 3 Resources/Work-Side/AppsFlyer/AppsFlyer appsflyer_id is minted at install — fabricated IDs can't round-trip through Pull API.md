@@ -1,10 +1,20 @@
 ---
-title: "AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API"
+ai_hash: 71b05f79abbc159a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26
 status: seedling
-source: "session 2026-06-26"
-tags: [appsflyer, pull-api, s2s, gotcha, leo-cdp]
+tags:
+- appsflyer
+- pull-api
+- s2s
+- gotcha
+- leo-cdp
+title: AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip
+  through Pull API
+type: lesson
 ---
 
 # AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API
@@ -20,3 +30,14 @@ See [[How to get real AppsFlyer Pull API data with the synthetic generator]] for
 ## Related
 
 - [[How to get real AppsFlyer Pull API data with the synthetic generator]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[How to get real AppsFlyer Pull API data with the synthetic generator]]
+- [[AppsFlyer only attributes events to installs recorded under the same app_id]]
+- [[AppsFlyer Push API is the inverse of the Pull API]]
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+- [[AppsFlyer raw-data Pull API is plan-gated - 400 subscription error]]
+
+%% ai-graph-end %%

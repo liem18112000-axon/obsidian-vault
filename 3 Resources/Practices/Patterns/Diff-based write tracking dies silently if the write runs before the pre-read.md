@@ -1,10 +1,18 @@
 ---
-title: "Diff-based write tracking dies silently if the write runs before the pre-read"
+ai_hash: f7979ed5a6f70b45
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: TrackingJsonStoreClient tracked() review, session 2026-06-05
 status: budding
-source: "TrackingJsonStoreClient tracked() review, session 2026-06-05"
-tags: [change-tracking, ordering, gotcha, luz-docs]
+tags:
+- change-tracking
+- ordering
+- gotcha
+- luz-docs
+title: Diff-based write tracking dies silently if the write runs before the pre-read
+type: lesson
 ---
 
 # Diff-based write tracking dies silently if the write runs before the pre-read
@@ -21,3 +29,14 @@ Live instance: luz_docs `TrackingJsonStoreClient.tracked()` as committed in 701c
 ## Related
 
 - [[luz_docs tracked-write template folds the four single-doc ops into one gate-preread-write-fire method]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
+- [[luz_docs tracked-write template folds the four single-doc ops into one gate-preread-write-fire method]]
+- [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
+- [[luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "empty-object-not-null sentinel defeats Optional.ofNullable null-guards"
+ai_hash: 4dbbacc8a10a197f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: lesson
+entities: []
+source: session 2026-06-09 luz-docs MaterializeRepository fix
 status: seedling
-source: "session 2026-06-09 luz-docs MaterializeRepository fix"
-tags: [java, gotcha, null-handling, deserialization]
+tags:
+- java
+- gotcha
+- null-handling
+- deserialization
+title: empty-object-not-null sentinel defeats Optional.ofNullable null-guards
+type: lesson
 ---
 
 # empty-object-not-null sentinel defeats Optional.ofNullable null-guards
@@ -20,3 +28,14 @@ See [[luz-docs getDocumentById returns empty object not null for missing docs]] 
 ## Related
 
 - [[luz-docs getDocumentById returns empty object not null for missing docs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs getDocumentById returns empty object not null for missing docs]]
+- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+- [[javax.json single-arg getString throws NPE on missing key]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[JsonUtil.buildJsonObjectWithConditions for optional Mongo query fields (luz-docs)]]
+
+%% ai-graph-end %%

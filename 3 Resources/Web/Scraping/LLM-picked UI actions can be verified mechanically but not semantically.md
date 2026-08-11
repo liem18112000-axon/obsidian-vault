@@ -1,10 +1,19 @@
 ---
-title: "LLM-picked UI actions can be verified mechanically but not semantically"
+ai_hash: 55fa20b44a3c2abd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-11
 status: evergreen
-source: "fb-info-project session 2026-06-11"
-tags: [llm, verification, scraping, testing, design]
+tags:
+- llm
+- verification
+- scraping
+- testing
+- design
+title: LLM-picked UI actions can be verified mechanically but not semantically
+type: lesson
 ---
 
 # LLM-picked UI actions can be verified mechanically but not semantically
@@ -21,3 +30,14 @@ A test that asserted 'verification rejects a semantically wrong pick' failed and
 
 - [[3 Resources/Web/Scraping/Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
 - [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Self-healing scraper selectors — LLM fallback only on verified failure, then cache]]
+- [[Build test fakes from verbatim production data, decoys included]]
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+- [[Verify Facebook comment sort switch by re-reading the sort button label]]
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Crash-safe incremental output: as_completed + indexed results + stable filename reused for checkpoint and final"
+ai_hash: c51ea02b5fb1830e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: howto
+entities: []
+source: fb-info-project fix D, 2026-06-14
 status: seedling
-source: "fb-info-project fix D, 2026-06-14"
-tags: [python, asyncio, resilience, pattern, fb-info-project]
+tags:
+- python
+- asyncio
+- resilience
+- pattern
+- fb-info-project
+title: 'Crash-safe incremental output: as_completed + indexed results + stable filename
+  reused for checkpoint and final'
+type: howto
 ---
 
 # Crash-safe incremental output: as_completed + indexed results + stable filename reused for checkpoint and final
@@ -26,3 +36,14 @@ Verified the checkpoint→final overwrite contract offline: same path, final wri
 ## Related
 
 - [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[fb-scraper writes output per link only at the end; killing mid-run loses the whole link]]
+- [[Checkpoint files atomic tmp+rename write plus an input fingerprint]]
+- [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
+- [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
+- [[A persisted dedup cache doubles as a resume log]]
+
+%% ai-graph-end %%

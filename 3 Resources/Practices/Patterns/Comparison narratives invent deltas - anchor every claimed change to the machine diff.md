@@ -1,10 +1,20 @@
 ---
-title: "Comparison narratives invent deltas - anchor every claimed change to the machine diff"
+ai_hash: 6d109b0cd6117f5c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23, S1 flow comparison verify pass
 status: seedling
-source: "session 2026-07-23, S1 flow comparison verify pass"
-tags: [llm, verification, diff, writing, gotcha]
+tags:
+- llm
+- verification
+- diff
+- writing
+- gotcha
+title: Comparison narratives invent deltas - anchor every claimed change to the machine
+  diff
+type: lesson
 ---
 
 # Comparison narratives invent deltas - anchor every claimed change to the machine diff
@@ -20,3 +30,13 @@ Rule: in a diff report, calibrate the verb to the diff line type — 'unchanged'
 ## Related
 
 - [[A refine regenerate can close open items from evidence the first pass left unexploited]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Find then adversarial-refute verify pass cuts AI reviewer false positives]]
+- [[Version changelogs - generate the explanation at snapshot time, compute the diff on demand]]
+- [[Re-verify file state before trusting findings on long-running reviews]]
+- [[AI as an accelerator with a human review gate]]
+
+%% ai-graph-end %%

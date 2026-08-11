@@ -1,10 +1,39 @@
 ---
-title: "luz_docs stamps _shard on create to keep sharding gate stable"
+ai_hash: 0062e1d9c5e50a92
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities:
+- luz_docs
+- _shard field
+- sharding gate
+- cached gate
+- invariant
+- write path
+- read-side cache
+- TTL
+- count-fan-out optimization
+- ParallelizeGate.isShardingComplete
+- backfill migration
+- document-creation path
+- undercounted results
+- ParallelizeFacade.stampShardOnCreate
+- materializeFacade.stampMaterializeOnCreate
+- Two-tier cache must propagate caller TTL to every tier
+- temporary staleness
+- write-side guarantee
+- performance knob
+- document-creation entry points
+source: luz_docs commit ee4bf5cad, code review 2026-07-09/10
 status: seedling
-source: "luz_docs commit ee4bf5cad, code review 2026-07-09/10"
-tags: [luz-docs, parallelize, design-decision, write-path, cache-invariant]
+tags:
+- luz-docs
+- parallelize
+- design-decision
+- write-path
+- cache-invariant
+title: luz_docs stamps _shard on create to keep sharding gate stable
+type: lesson
 ---
 
 # luz_docs stamps _shard on create to keep sharding gate stable
@@ -20,3 +49,35 @@ The fix: add `ParallelizeFacade.stampShardOnCreate(metadata)`, called from both 
 ## Related
 
 - [[Two-tier cache must propagate caller TTL to every tier]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fan-out gate and backfill filter must cover the same field set]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[luz_docs ParallelizeGate needs two indexes on _shard]]
+
+**Relations:**
+- luz_docs — *stamps* — _shard field
+- _shard field — *stabilizes* — sharding gate
+- cached gate — *asserts* — invariant
+- write path — *maintains* — invariant
+- read-side cache — *uses* — TTL
+- read-side cache — *bounds* — temporary staleness
+- read-side cache — *cannot substitute for* — write-side guarantee
+- count-fan-out optimization — *requires* — _shard field
+- ParallelizeGate.isShardingComplete — *checks for* — _shard field
+- backfill migration — *stamped* — _shard field
+- document-creation path — *failed to stamp* — _shard field
+- missing _shard field — *caused* — undercounted results
+- ParallelizeFacade.stampShardOnCreate — *adds* — _shard field
+- document-creation entry points — *call* — ParallelizeFacade.stampShardOnCreate
+- ParallelizeFacade.stampShardOnCreate — *mirrors* — materializeFacade.stampMaterializeOnCreate
+- write path — *guarantees* — _shard field
+- cache TTL — *becomes* — performance knob
+- cached gate — *requires validation by* — write path
+- luz_docs — *is related to* — Two-tier cache must propagate caller TTL to every tier
+
+%% ai-graph-end %%

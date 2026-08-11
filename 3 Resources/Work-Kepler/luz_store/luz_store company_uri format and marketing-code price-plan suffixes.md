@@ -1,10 +1,17 @@
 ---
-title: "luz_store company_uri format and marketing-code price-plan suffixes"
+ai_hash: 1959a457c2a9f9cf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: term
+entities: []
+source: session 2026-06-19 monthly->yearly investigation
 status: seedling
-source: "session 2026-06-19 monthly->yearly investigation"
-tags: [luz_store, subscriptions, reference]
+tags:
+- luz_store
+- subscriptions
+- reference
+title: luz_store company_uri format and marketing-code price-plan suffixes
+type: term
 ---
 
 # luz_store company_uri format and marketing-code price-plan suffixes
@@ -20,3 +27,14 @@ Marketing codes (`MarketingCodeResolver`, pattern `K-NN-NNNN-NN-X`) encode the p
 ## Related
 
 - [[A luz_store subscription changes billing period only by new-row or direct DB write]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_store product.price_plans is a joined string that constrains a subscription's allowed plans]]
+- [[Attributing a luz_store subscription's origin from created_by, method and updated_by]]
+- [[A luz_store subscription changes billing period only by new-row or direct DB write]]
+- [[Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan]]
+- [[luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable]]
+
+%% ai-graph-end %%

@@ -1,10 +1,17 @@
 ---
-title: "Luz eArchive tenant mongo database collection list"
+ai_hash: a7b9eaef4bbb6522
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: observation
+entities: []
+source: eArchive ops session 2026-07-13, tenant 45b05710 performance env
 status: seedling
-source: "eArchive ops session 2026-07-13, tenant 45b05710 performance env"
-tags: [mongodb, luz-docs, earchive]
+tags:
+- mongodb
+- luz-docs
+- earchive
+title: Luz eArchive tenant mongo database collection list
+type: observation
 ---
 
 # Luz eArchive tenant mongo database collection list
@@ -18,3 +25,14 @@ In a freshly-seeded tenant, only `documents` carries secondary indexes ([[eArchi
 ## Related
 
 - [[eArchive documents collection has 7 materialise-related indexes, not 4]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive documents collection has 7 materialise-related indexes, not 4]]
+- [[Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char]]
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+- [[Canary tenant eArchive folder list trips Mongo code 292 sort-memory-limit]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+
+%% ai-graph-end %%

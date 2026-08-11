@@ -1,10 +1,20 @@
 ---
-title: "Gate Terraform/deploy CI to push-on-main, not pull_request (secrets fail PRs)"
+ai_hash: ae3240a3d6d12cef
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: gotcha
+entities: []
+source: appsflyer-data-connector infra.yml, 2026-06-24
 status: seedling
-source: "appsflyer-data-connector infra.yml, 2026-06-24"
-tags: [github-actions, terraform, ci-cd, secrets, gotcha, deployment]
+tags:
+- github-actions
+- terraform
+- ci-cd
+- secrets
+- gotcha
+- deployment
+title: Gate Terraform/deploy CI to push-on-main, not pull_request (secrets fail PRs)
+type: gotcha
 ---
 
 # Gate Terraform/deploy CI to push-on-main, not pull_request (secrets fail PRs)
@@ -27,3 +37,14 @@ See [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry 
 ## Related
 
 - [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gate Terraform apply to create-if-absent except on the release branch]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+- [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Stack a rail-and-content row responsively with flex-col to lg:flex-row"
+ai_hash: ad35840232f4859e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: howto
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [css, tailwind, flexbox, responsive-design]
+tags:
+- css
+- tailwind
+- flexbox
+- responsive-design
+title: Stack a rail-and-content row responsively with flex-col to lg:flex-row
+type: howto
 ---
 
 # Stack a rail-and-content row responsively with flex-col to lg:flex-row
@@ -20,3 +28,14 @@ Pairs with [[Inline style width beats Tailwind breakpoint width classes]] — th
 ## Related
 
 - [[Inline style width beats Tailwind breakpoint width classes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Inline style width beats Tailwind breakpoint width classes]]
+- [[Toggle a layout mode with one Tailwind descendant override instead of threading state]]
+- [[Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column]]
+- [[Tailwind empty-hidden collapses a layout column whose child renders null]]
+- [[Tailwind class-string order doesn't determine cascade override]]
+
+%% ai-graph-end %%

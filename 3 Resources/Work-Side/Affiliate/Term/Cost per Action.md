@@ -1,8 +1,19 @@
 ---
-type: term
+ai_hash: 8d94734e854e729b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- CPA
+- Cost per Acquisition
+- Pay per Action
+- PPA
 domain: affiliate-marketing
-aliases: [CPA, Cost per Acquisition, Pay per Action, PPA]
-tags: [affiliate, pricing-model, metric]
+entities: []
+tags:
+- affiliate
+- pricing-model
+- metric
+type: term
 ---
 
 # Cost per Action
@@ -93,3 +104,14 @@ If your traffic is top-of-funnel and curiosity-driven, CPC or display (CPM) may 
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Sale]]
+- [[Cost per Lead]]
+- [[Term]]
+- [[Cost per Registration]]
+- [[Cost per Quality Lead]]
+
+%% ai-graph-end %%

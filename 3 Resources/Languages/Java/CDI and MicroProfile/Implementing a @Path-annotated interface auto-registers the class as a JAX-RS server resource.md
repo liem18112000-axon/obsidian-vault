@@ -1,10 +1,19 @@
 ---
-title: "Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource"
+ai_hash: ae1447b0a39d4ff7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: session 2026-06-05 luz_docs change-tracking design
 status: seedling
-source: "session 2026-06-05 luz_docs change-tracking design"
-tags: [jaxrs, resteasy, gotcha, luz-docs]
+tags:
+- jaxrs
+- resteasy
+- gotcha
+- luz-docs
+title: Implementing a @Path-annotated interface auto-registers the class as a JAX-RS
+  server resource
+type: lesson
 ---
 
 # Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource
@@ -19,3 +28,14 @@ Hit in luz_docs: `JsonStoreMongoClient` has `@Path("/{tenant-id}/{collection}")`
 
 - [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
 - [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+- [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+- [[OpenAPI @RequestBody mediaType is documentation-only; JAX-RS @Consumes controls content negotiation]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+
+%% ai-graph-end %%

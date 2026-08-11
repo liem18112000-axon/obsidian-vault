@@ -1,10 +1,22 @@
 ---
-title: "ManagedExecutorService.execute loses CDI request context"
+ai_hash: bb9cd326e89ead0f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: gotcha
+entities: []
 status: seedling
-tags: [java, cdi, weld, java-ee, requestscoped, concurrency, async, gotcha, luz-docs]
-entities: [ManagedExecutorService, ContextNotActiveException, WELD-001303, "@RequestScoped", Event.fireAsync, NotificationOptions.ofExecutor, "@ObservesAsync", RequestContextController, ManagedExecutor, ThreadContext, CompletableFuture.supplyAsync]
+tags:
+- java
+- cdi
+- weld
+- java-ee
+- requestscoped
+- concurrency
+- async
+- gotcha
+- luz-docs
+title: ManagedExecutorService.execute loses CDI request context
+type: gotcha
 ---
 
 # ManagedExecutorService.execute loses CDI request context
@@ -36,3 +48,14 @@ Fully `@ApplicationScoped` bean chains work off-thread, so tests exercising only
 - [[CompletableFuture parallel fan-out needs .toList() barrier before joining]]
 - [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
 - [[Per-pod single-flight kills cache stampede without semantic change]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[WildFly custom managed-executor-service needs context-service for CDIWeld tasks]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+- [[ManagedExecutorService needs @Resource not @Inject in WildFlyWeld]]
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[luz-docs RESTEASY003880 UriInfo 500 regression traced to MaterializeRequestFilter firing async CDI events]]
+
+%% ai-graph-end %%

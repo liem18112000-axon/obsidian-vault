@@ -1,10 +1,18 @@
 ---
-title: "Batched folder delete strips folder ids via union updateMany"
+ai_hash: 1d4d60de07bb49bf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26, commit 0361009
 status: seedling
-source: "session 2026-06-26, commit 0361009"
-tags: [luz-docs, mongodb, batch, folder-delete]
+tags:
+- luz-docs
+- mongodb
+- batch
+- folder-delete
+title: Batched folder delete strips folder ids via union updateMany
+type: lesson
 ---
 
 # Batched folder delete strips folder ids via union updateMany
@@ -20,3 +28,14 @@ Related: [[Bulk write paths in folder delete only engage with more than one docu
 ## Related
 
 - [[Bulk write paths in folder delete only engage with more than one document]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bulk write paths in folder delete only engage with more than one document]]
+- [[luz_docs folder delete shared document handling]]
+- [[Removing the union of array values per document is safe because absent values are no-ops]]
+- [[luz-docs delete-folder batching roadmap - remaining per-item paths]]
+- [[luz-docs folder delete filter double-fetched every subfolder]]
+
+%% ai-graph-end %%

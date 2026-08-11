@@ -1,10 +1,18 @@
 ---
-title: "Path(__file__).parent breaks when a module is moved to a deeper directory"
+ai_hash: 2e9ba2a59eb2a54f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: gotcha
+entities: []
+source: vault-graph refactor 2026-06-01
 status: seedling
-source: "vault-graph refactor 2026-06-01"
-tags: [python, paths, refactor, gotcha]
+tags:
+- python
+- paths
+- refactor
+- gotcha
+title: Path(__file__).parent breaks when a module is moved to a deeper directory
+type: gotcha
 ---
 
 # Path(__file__).parent breaks when a module is moved to a deeper directory
@@ -24,3 +32,13 @@ load_dotenv(_HERE.parent / ".env")           # after:  add one .parent to climb 
 ## Related
 
 - [[Flat-import Python modules can be relocated together without rewriting imports]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Flat-import Python modules can be relocated together without rewriting imports]]
+- [[Dataclass field defaults reading env vars are evaluated at import time, not instantiation]]
+- [[Docker Compose path resolution env_file vs build context vs dockerfile]]
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+
+%% ai-graph-end %%

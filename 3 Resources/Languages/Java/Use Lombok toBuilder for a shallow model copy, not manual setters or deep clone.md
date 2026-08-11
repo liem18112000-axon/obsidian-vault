@@ -1,10 +1,18 @@
 ---
-title: "Use Lombok toBuilder for a shallow model copy, not manual setters or deep clone"
+ai_hash: d432f413d7997530
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: lesson
+entities: []
+source: session 2026-06-24 copyBilling -> toBuilder
 status: seedling
-source: "session 2026-06-24 copyBilling -> toBuilder"
-tags: [java, lombok, copy, gotcha]
+tags:
+- java
+- lombok
+- copy
+- gotcha
+title: Use Lombok toBuilder for a shallow model copy, not manual setters or deep clone
+type: lesson
 ---
 
 # Use Lombok toBuilder for a shallow model copy, not manual setters or deep clone
@@ -24,3 +32,13 @@ When you need an independent copy of a Lombok `@Builder` model to mutate a few f
 ## Related
 
 - [[Copy shared model objects before aggregating them for a view]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Copy shared model objects before aggregating them for a view]]
+- [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+- [[Capture an unknown-named JSON field with Jackson @JsonAnySetter]]
+- [[javax.json JsonObject is immutable so aliasing replaces defensive deep copies]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Gorse external recommenders run QuickJS scripts but can only return known item IDs"
+ai_hash: 82c5e29db55a31db
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: howto
+entities: []
+source: Deep research 2026-07-22 — gorse.io external-recommender docs + gitrec
 status: budding
-source: "Deep research 2026-07-22 — gorse.io external-recommender docs + gitrec"
-tags: [gorse, quickjs, gotcha, config]
+tags:
+- gorse
+- quickjs
+- gotcha
+- config
+title: Gorse external recommenders run QuickJS scripts but can only return known item
+  IDs
+type: howto
 ---
 
 # Gorse external recommenders run QuickJS scripts but can only return known item IDs
@@ -16,3 +25,14 @@ tags: [gorse, quickjs, gotcha, config]
 ## Related
 
 - [[Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions]]
+- [[Gorse precomputes recommendations offline — per-request scoring is impossible inside it]]
+- [[Gorse LLM reranker is a rerank-API integration, not chat completions]]
+- [[LEO Personalization Engine uses config-first Gorse plus a Python re-rank layer]]
+- [[Gorse v0.4 docs describe a defunct config schema — trust the shipped config.toml template]]
+
+%% ai-graph-end %%

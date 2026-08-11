@@ -1,18 +1,22 @@
 ---
-title: Accesstrade SubID attribution
-created: 2026-06-11
-type: concept
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - tracking
-  - attribution
+ai_hash: fcd1365938092b80
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade sub1 sub2 sub3 sub4
-  - Accesstrade SubID
-  - SubID tracking
+- Accesstrade sub1 sub2 sub3 sub4
+- Accesstrade SubID
+- SubID tracking
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- tracking
+- attribution
+title: Accesstrade SubID attribution
+type: concept
 ---
 
 # Accesstrade SubID attribution
@@ -52,3 +56,14 @@ sequenceDiagram
 - [[Accesstrade conversion and transaction reporting]]
 - [[Accesstrade postback and S2S conversion tracking]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade tracking link creation]]
+- [[Use case - bulk tracking link generation]]
+- [[Accesstrade postback and S2S conversion tracking]]
+- [[Accesstrade API Integration - MOC]]
+- [[Accesstrade affiliate network overview]]
+
+%% ai-graph-end %%

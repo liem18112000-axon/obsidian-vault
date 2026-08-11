@@ -1,10 +1,20 @@
 ---
-title: "NotWritablePrimary via port-forward means forward targets a secondary"
+ai_hash: 9d62ceba94b7c004
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: lesson
+entities: []
+source: session 2026-07-22; canary tenant unset 2026-07-22
 status: seedling
-source: "session 2026-07-22; canary tenant unset 2026-07-22"
-tags: [mongodb, kubernetes, kubectl, port-forward, luz, gotcha]
+tags:
+- mongodb
+- kubernetes
+- kubectl
+- port-forward
+- luz
+- gotcha
+title: NotWritablePrimary via port-forward means forward targets a secondary
+type: lesson
 ---
 
 # NotWritablePrimary via port-forward means forward targets a secondary
@@ -26,3 +36,14 @@ The primary moves on failover — always re-probe, never hardcode a pod (as of 2
 - [[directConnection=true counts read only the connected node and can be stale on a secondary]]
 - [[Dev mongod pods have legacy mongo shell only, no mongosh]]
 - [[3 Resources/Infra/Kubernetes/Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[earchive-seed-stale-27017-portforward-gotcha]]
+- [[Dev mongod pods have legacy mongo shell only, no mongosh]]
+- [[Reuse an existing kubectl port-forward for ad-hoc mongo scripts]]
+- [[directConnection=true counts read only the connected node and can be stale on a secondary]]
+
+%% ai-graph-end %%

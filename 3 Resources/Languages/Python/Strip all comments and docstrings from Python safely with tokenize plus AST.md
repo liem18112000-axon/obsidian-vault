@@ -1,10 +1,18 @@
 ---
-title: "Strip all comments and docstrings from Python safely with tokenize plus AST"
+ai_hash: d763cc9703b3a13c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03 appsflyer-data-connector
 status: seedling
-source: "session 2026-07-03 appsflyer-data-connector"
-tags: [python, refactoring, tokenize, ast]
+tags:
+- python
+- refactoring
+- tokenize
+- ast
+title: Strip all comments and docstrings from Python safely with tokenize plus AST
+type: howto
 ---
 
 # Strip all comments and docstrings from Python safely with tokenize plus AST
@@ -20,3 +28,10 @@ Then collapse blank-line runs (2 before column-0 statements, 1 inside blocks). T
 ## Related
 
 - [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+
+%% ai-graph-end %%

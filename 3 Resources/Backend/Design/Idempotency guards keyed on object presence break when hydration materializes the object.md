@@ -1,10 +1,19 @@
 ---
-title: "Idempotency guards keyed on object presence break when hydration materializes the object"
+ai_hash: 56baff83ba98d18b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04, vinnstack silent approve no-op
 status: seedling
-source: "session 2026-07-04, vinnstack silent approve no-op"
-tags: [idempotency, persistence, migration, vinnstack]
+tags:
+- idempotency
+- persistence
+- migration
+- vinnstack
+title: Idempotency guards keyed on object presence break when hydration materializes
+  the object
+type: lesson
 ---
 
 # Idempotency guards keyed on object presence break when hydration materializes the object
@@ -19,3 +28,14 @@ Rules:
 ## Related
 
 - [[CREATE TABLE IF NOT EXISTS never upgrades existing tables - pair new columns with ALTER IF NOT EXISTS]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A server-side action rejection is a stale-view signal - resync on error]]
+- [[Mirror form values by the SOURCE's real field keys, not assumed canonical names]]
+- [[Per-feature migration scripts leave new tables silently missing until run]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+- [[Secondary-write failures should fail loud when their silent version was the actual bug]]
+
+%% ai-graph-end %%

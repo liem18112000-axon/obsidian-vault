@@ -1,10 +1,17 @@
 ---
-title: "Moderation taxonomies split violence into subtypes"
+ai_hash: 0db2b110b896a4c9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: concept
+entities: []
+source: web research session 2026-07-20
 status: seedling
-source: "web research session 2026-07-20"
-tags: [content-moderation, taxonomy, llm-safety]
+tags:
+- content-moderation
+- taxonomy
+- llm-safety
+title: Moderation taxonomies split violence into subtypes
+type: concept
 ---
 
 # Moderation taxonomies split violence into subtypes
@@ -16,3 +23,12 @@ When building a detector, mirror this: report per-subtype scores (e.g. general v
 ## Related
 
 - [[3 Resources/AI/Safety/Violence detection needs a trained classifier, not keyword lists]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Violence detection needs a trained classifier, not keyword lists]]
+- [[Model options for detecting violent text by weight class]]
+- [[Property damage falls outside person-directed violence taxonomies]]
+
+%% ai-graph-end %%

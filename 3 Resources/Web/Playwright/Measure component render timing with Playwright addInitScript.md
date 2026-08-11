@@ -1,10 +1,19 @@
 ---
-title: "Measure component render timing with Playwright addInitScript"
+ai_hash: 5df85ebb5512438e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
-type: technique
+entities: []
+source: session 2026-07-18, KLARA eArchive perf
 status: seedling
-source: "session 2026-07-18, KLARA eArchive perf"
-tags: [playwright, mcp, performance, technique, klara]
+tags:
+- playwright
+- mcp
+- performance
+- technique
+- klara
+title: Measure component render timing with Playwright addInitScript
+type: technique
 ---
 
 # Measure component render timing with Playwright addInitScript
@@ -34,3 +43,14 @@ Also pull `performance.getEntriesByType('navigation')` + `'paint'` for FCP / dom
 
 - [[Playwright browser_wait_for time is a hard sleep]]
 - [[3 Resources/Web/Playwright/Playwright full-nav detection needs a JS-heap marker not URL compare]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resettable MutationObserver harness measures skeleton-to-number appear time on SSR pages]]
+- [[Timed reveal overlay on a real full-page screenshot]]
+- [[eArchive page DOM selectors (performance automation)]]
+- [[Perf 800k tenant eArchive reload timing]]
+- [[Playwright full-nav detection needs a JS-heap marker not URL compare]]
+
+%% ai-graph-end %%

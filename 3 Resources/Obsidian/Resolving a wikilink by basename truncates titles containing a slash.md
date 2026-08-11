@@ -1,10 +1,18 @@
 ---
-title: "Resolving a wikilink by basename truncates titles containing a slash"
+ai_hash: 5a034fbdab09c335
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: gotcha
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [obsidian, wikilinks, tooling, gotcha]
+tags:
+- obsidian
+- wikilinks
+- tooling
+- gotcha
+title: Resolving a wikilink by basename truncates titles containing a slash
+type: gotcha
 ---
 
 # Resolving a wikilink by basename truncates titles containing a slash
@@ -27,3 +35,14 @@ Only accept a normalized hit when it is unique. This one change repaired 122 lin
 
 - [[Comma-split wikilinks leave dead fragment links in Related blocks]]
 - [[Obsidian plugin configs pin folders to exact vault-root paths]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Comma-split wikilinks leave dead fragment links in Related blocks]]
+- [[Measure a broken-link baseline before a mass vault refactor]]
+- [[create_note.py splits --link on commas, breaking comma-titled wikilinks]]
+- [[Obsidian plugin configs pin folders to exact vault-root paths]]
+- [[Facebook sharev links can resolve to reels — classify after the redirect]]
+
+%% ai-graph-end %%

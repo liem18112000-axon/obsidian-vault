@@ -1,10 +1,20 @@
 ---
-title: "Keep audit updatedBy a role token, not a user identity, when it feeds commit messages or mirrors"
+ai_hash: 99c29b944c240372
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-05
-type: gotcha
+entities: []
+source: vinnstack code review 2026-07-05, approveStoryFlow
 status: seedling
-source: "vinnstack code review 2026-07-05, approveStoryFlow"
-tags: [audit, pii, git, convention, vinnstack]
+tags:
+- audit
+- pii
+- git
+- convention
+- vinnstack
+title: Keep audit updatedBy a role token, not a user identity, when it feeds commit
+  messages or mirrors
+type: gotcha
 ---
 
 # Keep audit updatedBy a role token, not a user identity, when it feeds commit messages or mirrors
@@ -19,3 +29,13 @@ Capture the person's identity in a STRUCTURED column meant for it (approved_by, 
 ## Related
 
 - [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+- [[Mirror form values by the SOURCE's real field keys, not assumed canonical names]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Block AI commit attribution by anchoring on the email, not the trailer label]]
+
+%% ai-graph-end %%

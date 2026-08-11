@@ -1,10 +1,19 @@
 ---
-title: "Unquoted YAML frontmatter description breaks on colon-space in SKILL.md"
+ai_hash: bc554956504d50e7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: session 2026-06-10
 status: seedling
-source: "session 2026-06-10"
-tags: [yaml, gotcha, claude-code, skill, frontmatter]
+tags:
+- yaml
+- gotcha
+- claude-code
+- skill
+- frontmatter
+title: Unquoted YAML frontmatter description breaks on colon-space in SKILL.md
+type: lesson
 ---
 
 # Unquoted YAML frontmatter description breaks on colon-space in SKILL.md
@@ -22,3 +31,13 @@ Applies to [[2 Areas/Claude-Code/Luz plugin repos how skills and hooks are packa
 ## Related
 
 - [[2 Areas/Claude-Code/Luz plugin repos how skills and hooks are packaged for distribution]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-skills-plugin packages skills by category directory listed in plugin.json]]
+- [[Luz plugin repos how skills and hooks are packaged for distribution]]
+- [[luz-hooks-plugin packages each hook as its own plugin registered in marketplace.json]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+
+%% ai-graph-end %%

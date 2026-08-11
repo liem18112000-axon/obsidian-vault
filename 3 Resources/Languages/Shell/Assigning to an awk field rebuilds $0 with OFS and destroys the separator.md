@@ -1,10 +1,18 @@
 ---
-title: "Assigning to an awk field rebuilds $0 with OFS and destroys the separator"
+ai_hash: e799e764c48b0b6f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: gotcha
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [awk, shell, text-processing, gotcha]
+tags:
+- awk
+- shell
+- text-processing
+- gotcha
+title: Assigning to an awk field rebuilds $0 with OFS and destroys the separator
+type: gotcha
 ---
 
 # Assigning to an awk field rebuilds $0 with OFS and destroys the separator
@@ -31,3 +39,10 @@ The same trap applies to `sub()`, `gsub()`, and any `$1 = ...`. If you only need
 ## Related
 
 - [[Precompute and validate a file-level move map before a mass reorganization]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Precompute and validate a file-level move map before a mass reorganization]]
+
+%% ai-graph-end %%

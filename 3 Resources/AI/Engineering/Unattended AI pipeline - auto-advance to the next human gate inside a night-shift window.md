@@ -1,10 +1,20 @@
 ---
-title: "Unattended AI pipeline - auto-advance to the next human gate inside a night-shift window"
+ai_hash: 070eba1f66b477c3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: model
+entities: []
+source: session 2026-07-22
 status: seedling
-source: "session 2026-07-22"
-tags: [scheduling, automation, llm, pipeline, vinnstack]
+tags:
+- scheduling
+- automation
+- llm
+- pipeline
+- vinnstack
+title: Unattended AI pipeline - auto-advance to the next human gate inside a night-shift
+  window
+type: model
 ---
 
 # Unattended AI pipeline - auto-advance to the next human gate inside a night-shift window
@@ -17,3 +27,14 @@ Design for scheduled/unattended LLM generation (Vinnstack "Claude Routine", plan
 - Cheap infra: in-process tick loop started from Next instrumentation.ts (no OS cron), direct server-side runner calls (not HTTP self-calls) so existing snapshot/critique/signal/usage wiring fires unchanged, pg_advisory_lock so two app instances don't both tick, Electron powerSaveBlocker for the window.
 
 Related: [[Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]], [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack Claude Routine architecture (night-shift scheduler)]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Long agentic API routes need the inner run timeout below the route maxDuration]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Tier LLM effort per pipeline stage - pay where quality compounds, cut where the task is bounded]]
+
+%% ai-graph-end %%

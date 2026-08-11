@@ -1,10 +1,18 @@
 ---
-title: "Use Playwright evaluate_all to batch-read element properties in one round-trip"
+ai_hash: b3b3600683df0d56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: howto
+entities: []
+source: fb-info-project Phase 2 / B2, 2026-06-15
 status: seedling
-source: "fb-info-project Phase 2 / B2, 2026-06-15"
-tags: [playwright, scraping, performance, dom]
+tags:
+- playwright
+- scraping
+- performance
+- dom
+title: Use Playwright evaluate_all to batch-read element properties in one round-trip
+type: howto
 ---
 
 # Use Playwright evaluate_all to batch-read element properties in one round-trip
@@ -27,3 +35,14 @@ Concrete use: fb-info-project's comment harvest — see `docs/phase2-grouppost-s
 ## Related
 
 - [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[innerText forces layout and can hang Playwright scans on huge DOMs; prefer textContent]]
+- [[Playwright click() auto-waits the full timeout on a missing locator; probe with count() first]]
+- [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+- [[page.content() serializes the full DOM over CDP]]
+- [[eArchive page DOM selectors (performance automation)]]
+
+%% ai-graph-end %%

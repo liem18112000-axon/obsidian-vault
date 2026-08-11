@@ -1,10 +1,19 @@
 ---
-title: "A persisted dedup cache doubles as a resume log"
+ai_hash: df2dbe59106caef6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: fb-info-project pause/resume, 2026-06-15
 status: seedling
-source: "fb-info-project pause/resume, 2026-06-15"
-tags: [resume, caching, resilience, batch-processing, design-pattern]
+tags:
+- resume
+- caching
+- resilience
+- batch-processing
+- design-pattern
+title: A persisted dedup cache doubles as a resume log
+type: lesson
 ---
 
 # A persisted dedup cache doubles as a resume log
@@ -26,3 +35,14 @@ Related: [[A resume must not re-charge one-time accounting]], [[3 Resources/Prac
 - [[Cache only successful results so failures retry on resume]]
 - [[A resume must not re-charge one-time accounting]]
 - [[3 Resources/Practices/Software Design/Checkpoint files atomic tmp+rename write plus an input fingerprint]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Test resume by pre-seeding a checkpoint, not by simulating an interrupt]]
+- [[Cache only successful results so failures retry on resume]]
+- [[Checkpoint files atomic tmp+rename write plus an input fingerprint]]
+- [[A resume must not re-charge one-time accounting]]
+- [[Reconstitute done items from the run cache when rewriting an aggregated output file on resume]]
+
+%% ai-graph-end %%

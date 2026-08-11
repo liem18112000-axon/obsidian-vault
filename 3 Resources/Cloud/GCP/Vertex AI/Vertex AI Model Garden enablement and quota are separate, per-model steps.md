@@ -1,10 +1,19 @@
 ---
-title: "Vertex AI Model Garden enablement and quota are separate, per-model steps"
+ai_hash: 1fb4b6a4c6b9ebcf
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: session 2026-07-11, klara-nonprod Claude on Vertex setup
 status: seedling
-source: "session 2026-07-11, klara-nonprod Claude on Vertex setup"
-tags: [gcp, vertex-ai, quota, model-garden, gotcha]
+tags:
+- gcp
+- vertex-ai
+- quota
+- model-garden
+- gotcha
+title: Vertex AI Model Garden enablement and quota are separate, per-model steps
+type: lesson
 ---
 
 # Vertex AI Model Garden enablement and quota are separate, per-model steps
@@ -19,3 +28,14 @@ Separately, immediately after enabling `claude-sonnet-5`, the very first `rawPre
 
 - [[consumerprocurement.entitlementManager grants Marketplace entitlement acceptance]]
 - [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Vertex AI 404 vs 403 distinguishes Model Garden enablement from IAM permission]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[Vertex AI global endpoint host has no region prefix]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Run local unsigned PowerShell scripts under AllSigned via CurrentUser RemoteSigned"
+ai_hash: 86e2b7403aa0d5a3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03
 status: seedling
-source: "session 2026-07-03"
-tags: [powershell, windows, execution-policy, gotcha]
+tags:
+- powershell
+- windows
+- execution-policy
+- gotcha
+title: Run local unsigned PowerShell scripts under AllSigned via CurrentUser RemoteSigned
+type: howto
 ---
 
 # Run local unsigned PowerShell scripts under AllSigned via CurrentUser RemoteSigned
@@ -31,3 +39,10 @@ Discovered running Vinnstack repo scripts (`scripts/connect-cloud-db.ps1`, `scri
 ## Related
 
 - [[PowerShell execution policy scope precedence and the benign override warning]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PowerShell execution policy scope precedence and the benign override warning]]
+
+%% ai-graph-end %%

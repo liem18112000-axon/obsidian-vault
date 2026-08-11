@@ -1,10 +1,18 @@
 ---
-title: "Shard count fan-out: most of the win is at K=4, diminishing returns after"
+ai_hash: bf1a2efe804cff87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: observation
+entities: []
+source: luz_docs LUZ-154613 DEV sweep 2026-06-17
 status: seedling
-source: "luz_docs LUZ-154613 DEV sweep 2026-06-17"
-tags: [performance, mongodb, luz-docs, benchmarking]
+tags:
+- performance
+- mongodb
+- luz-docs
+- benchmarking
+title: 'Shard count fan-out: most of the win is at K=4, diminishing returns after'
+type: observation
 ---
 
 # Shard count fan-out: most of the win is at K=4, diminishing returns after
@@ -32,3 +40,14 @@ Method gotcha: K is a server config (`LUZ_DOCS_MATERIALIZE_COUNT_FANOUT_PARTITIO
 - [[3 Resources/Data/MongoDB/Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
 - [[BitmapHLL counts supersede fan-out; they don't combine with it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
+- [[Levers to optimise the visible-document count beyond _shard fan-out]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Measure a broken-link baseline before a mass vault refactor"
+ai_hash: 95db66d30005aec1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: lesson
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [refactoring, verification, obsidian, git]
+tags:
+- refactoring
+- verification
+- obsidian
+- git
+title: Measure a broken-link baseline before a mass vault refactor
+type: lesson
 ---
 
 # Measure a broken-link baseline before a mass vault refactor
@@ -27,3 +35,14 @@ The set difference is also the fix list — the "newly broken" targets are preci
 
 - [[Precompute and validate a file-level move map before a mass reorganization]]
 - [[Obsidian plugin configs pin folders to exact vault-root paths]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Precompute and validate a file-level move map before a mass reorganization]]
+- [[Obsidian plugin configs pin folders to exact vault-root paths]]
+- [[Comma-split wikilinks leave dead fragment links in Related blocks]]
+- [[Resolving a wikilink by basename truncates titles containing a slash]]
+- [[Classify local vs upstream with git merge-base to pick ff or rebase]]
+
+%% ai-graph-end %%

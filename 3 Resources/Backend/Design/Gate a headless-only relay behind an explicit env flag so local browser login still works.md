@@ -1,10 +1,20 @@
 ---
-title: "Gate a headless-only relay behind an explicit env flag so local browser login still works"
+ai_hash: d883eb33971e89b7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04, vinnstack relay broke local login
 status: seedling
-source: "session 2026-07-04, vinnstack relay broke local login"
-tags: [relay, headless, cli, ux, vinnstack]
+tags:
+- relay
+- headless
+- cli
+- ux
+- vinnstack
+title: Gate a headless-only relay behind an explicit env flag so local browser login
+  still works
+type: lesson
 ---
 
 # Gate a headless-only relay behind an explicit env flag so local browser login still works
@@ -18,3 +28,14 @@ Symptom that points here: "Sign in shows a spinner then stops, nothing else" in 
 ## Related
 
 - [[3 Resources/Backend/Node/Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
+- [[Arm a new login gate by env presence so shipping auth cannot lock the operator out]]
+- [[Vinnstack desktop app dropped Google OAuth for a typed-email operator identity]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+
+%% ai-graph-end %%

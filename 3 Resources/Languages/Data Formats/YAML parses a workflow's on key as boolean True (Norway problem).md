@@ -1,10 +1,18 @@
 ---
-title: "YAML parses a workflow's on: key as boolean True (Norway problem)"
+ai_hash: fd542c29138bd780
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml 2026-06-06"
-tags: [yaml, github-actions, parsing, gotcha]
+tags:
+- yaml
+- github-actions
+- parsing
+- gotcha
+title: 'YAML parses a workflow''s on: key as boolean True (Norway problem)'
+type: lesson
 ---
 
 # YAML parses a workflow's on: key as boolean True (Norway problem)
@@ -21,3 +29,10 @@ Same trap bites unquoted values: a country code `NO`, a port `ON`, or `version: 
 ## Related
 
 - [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Copilot code review is a native PR reviewer, not a workflow job]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

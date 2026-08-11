@@ -1,10 +1,19 @@
 ---
-title: "Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering"
+ai_hash: c8d11fd5506d747e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-19
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-19
 status: seedling
-source: "Vinnstack session 2026-07-19"
-tags: [mermaid, frontend, gotcha, vinnstack]
+tags:
+- mermaid
+- frontend
+- gotcha
+- vinnstack
+title: Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw;
+  fix with suppressErrorRendering
+type: lesson
 ---
 
 # Mermaid render() leaks its error-bomb SVG into the DOM past a caught throw; fix with suppressErrorRendering
@@ -22,3 +31,14 @@ Related: [[Streaming LLM mermaid needs a parse-gate before render]] — the same
 ## Related
 
 - [[Streaming LLM mermaid needs a parse-gate before render]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cached-rejected lazy import silently breaks a feature for the whole session]]
+- [[Mermaid defaults to foreignObject HTML labels, breaking canvas export]]
+- [[LLM-generated mermaid sequenceDiagrams die on semicolons and reserved-word aliases]]
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+- [[Mermaid text clipping causes useMaxWidth shrink, narrow wrappingWidth, and web-font race]]
+
+%% ai-graph-end %%

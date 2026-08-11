@@ -1,10 +1,20 @@
 ---
-title: "Random shard key gives balanced fan-out partitions (equal-width = equal-work only if uniform)"
+ai_hash: 3b067e0516e87602
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-28
-type: lesson
+entities: []
+source: session 2026-06-28 count-fanout deck
 status: seedling
-source: "session 2026-06-28 count-fanout deck"
-tags: [parallelism, sharding, load-balancing, mongodb, luz-docs]
+tags:
+- parallelism
+- sharding
+- load-balancing
+- mongodb
+- luz-docs
+title: Random shard key gives balanced fan-out partitions (equal-width = equal-work
+  only if uniform)
+type: lesson
 ---
 
 # Random shard key gives balanced fan-out partitions (equal-width = equal-work only if uniform)
@@ -18,3 +28,14 @@ The fix used in luz-docs count fan-out: stamp each document with a **uniformly r
 Note: this is about balancing WORK (performance). Correctness of the summed count comes separately from the ranges tiling the whole space with no gap/overlap — that holds for any key. Random shard = balanced; tiling = exact. Two independent properties.
 
 Related: [[concept-to-video avatar overlay sits bottom-right — keep callouts clear]] (same project's deck).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[No existing luz-docs field works as a fan-out count partition key — survey]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+
+%% ai-graph-end %%

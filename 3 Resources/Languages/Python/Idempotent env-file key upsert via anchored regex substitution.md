@@ -1,10 +1,19 @@
 ---
-title: "Idempotent env-file key upsert via anchored regex substitution"
+ai_hash: d77a4af01edd68bc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: technique
+entities: []
+source: virtual-avatar session 2026-07-11, scripts/set_dev_session_token.py
 status: seedling
-source: "virtual-avatar session 2026-07-11, scripts/set_dev_session_token.py"
-tags: [python, regex, dotenv, env-file, idempotent]
+tags:
+- python
+- regex
+- dotenv
+- env-file
+- idempotent
+title: Idempotent env-file key upsert via anchored regex substitution
+type: technique
 ---
 
 # Idempotent env-file key upsert via anchored regex substitution
@@ -27,3 +36,11 @@ This is safer than blindly overwriting the whole file (which would wipe other re
 ## Related
 
 - [[3 Resources/Languages/Python/Dataclass field defaults reading env vars are evaluated at import time, not instantiation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Grep-audit env vars against code before pruning .env files]]
+- [[Dataclass field defaults reading env vars are evaluated at import time, not instantiation]]
+
+%% ai-graph-end %%

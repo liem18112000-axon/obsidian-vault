@@ -1,19 +1,23 @@
 ---
-title: Accesstrade postback and S2S conversion tracking
-created: 2026-06-11
-type: concept
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - tracking
-  - postback
-  - s2s
+ai_hash: f9a113d81960592e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade postback URL
-  - Server-to-server tracking
-  - S2S conversion
+- Accesstrade postback URL
+- Server-to-server tracking
+- S2S conversion
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- tracking
+- postback
+- s2s
+title: Accesstrade postback and S2S conversion tracking
+type: concept
 ---
 
 # Accesstrade postback and S2S conversion tracking
@@ -58,3 +62,14 @@ The postback URL is configured in the Accesstrade dashboard with placeholders (o
 - [[Accesstrade SubID attribution]]
 - [[3 Resources/AI/Claude-Code/Hooks/Claude Code hooks event model]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code hooks event model]]
+- [[Use case - automated daily conversion digest]]
+- [[Accesstrade API Integration - MOC]]
+- [[Accesstrade SubID attribution]]
+- [[Accesstrade conversion and transaction reporting]]
+
+%% ai-graph-end %%

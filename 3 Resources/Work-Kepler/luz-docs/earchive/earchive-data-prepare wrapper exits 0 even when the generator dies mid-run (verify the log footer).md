@@ -1,10 +1,21 @@
 ---
-title: "earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)"
+ai_hash: 6ff3036265f86797
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: session 2026-06-23 eArchive seed
 status: seedling
-source: "session 2026-06-23 eArchive seed"
-tags: [earchive, luz-docs, seeding, gotcha, kubectl, port-forward]
+tags:
+- earchive
+- luz-docs
+- seeding
+- gotcha
+- kubectl
+- port-forward
+title: earchive-data-prepare wrapper exits 0 even when the generator dies mid-run
+  (verify the log footer)
+type: lesson
 ---
 
 # earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)
@@ -22,3 +33,14 @@ Relates to [[directConnection=true counts read only the connected node and can b
 ## Related
 
 - [[directConnection=true counts read only the connected node and can be stale on a secondary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Recount before every reach-a-target retry — crashed runs insert silently]]
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+- [[Resume a partial earchive seed with APPEND instead of re-truncating]]
+- [[earchive-data-prepare logs document progress only every 10 batches]]
+- [[earchive-data-prepare seeds all-public docs when a tenant has no security classes (CODE_POOL empty)]]
+
+%% ai-graph-end %%

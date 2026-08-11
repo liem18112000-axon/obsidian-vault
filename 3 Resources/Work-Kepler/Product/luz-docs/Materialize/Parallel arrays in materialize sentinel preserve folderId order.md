@@ -1,10 +1,18 @@
 ---
-title: "Parallel arrays in materialize sentinel preserve folderId order"
+ai_hash: 6a703bdca69660af
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: concept
+entities: []
+source: session 2026-06-01
 status: seedling
-source: "session 2026-06-01"
-tags: [luz-docs, materialize, mongo, design-decision]
+tags:
+- luz-docs
+- materialize
+- mongo
+- design-decision
+title: Parallel arrays in materialize sentinel preserve folderId order
+type: concept
 ---
 
 # Parallel arrays in materialize sentinel preserve folderId order
@@ -23,3 +31,14 @@ In `MaterializeCompute.compute`, three sentinel arrays — `_folderIds`, `_folde
 ## Related
 [[MaterializeState]]
 [[Adding a field to a Java record breaks all factory and constructor calls in tests]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Empty per-folder codes means public, not no-access]]
+- [[flattenArrayAddOps runs only in materialize branch]]
+- [[_folderNames is parent-chain-independent — depends only on each folder's own name]]
+- [[Missing folder reference produces fail-closed materialize state]]
+- [[Fail-closed defense over a parallel array distinguish present-but-short from absent]]
+
+%% ai-graph-end %%

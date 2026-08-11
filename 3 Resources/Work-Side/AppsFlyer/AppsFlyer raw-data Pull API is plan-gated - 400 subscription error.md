@@ -1,10 +1,18 @@
 ---
-title: "AppsFlyer raw-data Pull API is plan-gated - 400 subscription error"
+ai_hash: 61368db2503ca92b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: gotcha
+entities: []
+source: session 2026-07-03
 status: seedling
-source: "session 2026-07-03"
-tags: [appsflyer, pull-api, subscription, http-400]
+tags:
+- appsflyer
+- pull-api
+- subscription
+- http-400
+title: AppsFlyer raw-data Pull API is plan-gated - 400 subscription error
+type: gotcha
 ---
 
 # AppsFlyer raw-data Pull API is plan-gated - 400 subscription error
@@ -16,3 +24,14 @@ Related: [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
 ## Related
 
 - [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[AppsFlyer Push API is the inverse of the Pull API]]
+- [[AppsFlyer appsflyer_id is minted at install — fabricated IDs can't round-trip through Pull API]]
+- [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
+- [[How to get real AppsFlyer Pull API data with the synthetic generator]]
+- [[AppsFlyer only attributes events to installs recorded under the same app_id]]
+
+%% ai-graph-end %%

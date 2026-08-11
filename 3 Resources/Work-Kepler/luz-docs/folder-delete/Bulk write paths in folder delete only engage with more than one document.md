@@ -1,10 +1,18 @@
 ---
-title: "Bulk write paths in folder delete only engage with more than one document"
+ai_hash: 05143078e025e228
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26
 status: seedling
-source: "session 2026-06-26"
-tags: [luz-docs, testing, integration-test, batch]
+tags:
+- luz-docs
+- testing
+- integration-test
+- batch
+title: Bulk write paths in folder delete only engage with more than one document
+type: lesson
 ---
 
 # Bulk write paths in folder delete only engage with more than one document
@@ -25,3 +33,14 @@ Related: [[Batched folder delete strips folder ids via union updateMany]], [[Min
 
 - [[Batched folder delete strips folder ids via union updateMany]]
 - [[Minimal meaningful test fixture size is bounded by the real page size]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Batched folder delete strips folder ids via union updateMany]]
+- [[Minimal meaningful test fixture size is bounded by the real page size]]
+- [[luz-docs delete detail-response field for removed links is removedLinkParents not removedLink]]
+- [[luz-docs delete-folder batching roadmap - remaining per-item paths]]
+- [[luz_docs folder delete shared document handling]]
+
+%% ai-graph-end %%

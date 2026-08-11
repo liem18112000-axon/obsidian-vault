@@ -1,10 +1,20 @@
 ---
-title: "Packaged Electron+Next.js API routes must not use process.cwd() for bundled files"
+ai_hash: 7ba1683664bf8e5d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-17
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-17
 status: seedling
-source: "Vinnstack session 2026-07-17"
-tags: [electron, nextjs, vinnstack, gotcha, packaging]
+tags:
+- electron
+- nextjs
+- vinnstack
+- gotcha
+- packaging
+title: Packaged Electron+Next.js API routes must not use process.cwd() for bundled
+  files
+type: lesson
 ---
 
 # Packaged Electron+Next.js API routes must not use process.cwd() for bundled files
@@ -20,3 +30,14 @@ Pairs with the packaging gotcha: the files must also be *included* in the build.
 ## Related
 
 - [[electron-builder only ships paths listed in build.files whitelist]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[electron-builder only ships paths listed in build.files whitelist]]
+- [[Surface Electron app version to an in-process Next server via process.env before prepare()]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Testing the packaged Vinnstack exe needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+
+%% ai-graph-end %%

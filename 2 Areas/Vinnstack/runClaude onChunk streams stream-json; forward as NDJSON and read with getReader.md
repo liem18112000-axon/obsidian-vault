@@ -1,10 +1,20 @@
 ---
-title: "runClaude onChunk streams stream-json; forward as NDJSON and read with getReader"
+ai_hash: 77512775ac8a1005
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
-type: howto
+entities: []
+source: Vinnstack session 2026-07-18
 status: seedling
-source: "Vinnstack session 2026-07-18"
-tags: [vinnstack, streaming, claude-cli, nextjs, ndjson, interrogation]
+tags:
+- vinnstack
+- streaming
+- claude-cli
+- nextjs
+- ndjson
+- interrogation
+title: runClaude onChunk streams stream-json; forward as NDJSON and read with getReader
+type: howto
 ---
 
 # runClaude onChunk streams stream-json; forward as NDJSON and read with getReader
@@ -27,3 +37,14 @@ Gotcha: converting a buffered JSON route to a stream breaks every test/caller do
 
 - [[Integrate a third-party skill's instruction, do not run its curl-bash installer]]
 - [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+- [[Parse structured tool_use blocks in a stream-json transcript, never substring-scan raw text]]
+
+%% ai-graph-end %%

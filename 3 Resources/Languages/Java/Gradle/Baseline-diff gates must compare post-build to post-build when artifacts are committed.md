@@ -1,10 +1,20 @@
 ---
-title: "Baseline-diff gates must compare post-build to post-build when artifacts are committed"
+ai_hash: cee4a0e265e09e7a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: LEO CDP migration Phase 0, 2026-06-06
 status: seedling
-source: "LEO CDP migration Phase 0, 2026-06-06"
-tags: [migration, build, baseline, gotcha, leo-cdp]
+tags:
+- migration
+- build
+- baseline
+- gotcha
+- leo-cdp
+title: Baseline-diff gates must compare post-build to post-build when artifacts are
+  committed
+type: lesson
 ---
 
 # Baseline-diff gates must compare post-build to post-build when artifacts are committed
@@ -18,3 +28,14 @@ Practical recipe: build on old toolchain → checksum artifacts (excluding volat
 ## Related
 
 - [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Normalize headers, beautify, and strip CR before judging minifier-upgrade diffs]]
+- [[LEO CDP AutoBuildForDeployment minifies admin JS only - observer tracker needs explicit task]]
+- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+- [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+
+%% ai-graph-end %%

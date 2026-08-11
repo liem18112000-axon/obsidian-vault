@@ -1,10 +1,18 @@
 ---
-title: "Recount before every reach-a-target retry — crashed runs insert silently"
+ai_hash: de4890ef5fd841b5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: session 2026-07-10
 status: seedling
-source: "session 2026-07-10"
-tags: [earchive, mongodb, skill-gotcha, recovery]
+tags:
+- earchive
+- mongodb
+- skill-gotcha
+- recovery
+title: Recount before every reach-a-target retry — crashed runs insert silently
+type: lesson
 ---
 
 # Recount before every reach-a-target retry — crashed runs insert silently
@@ -20,3 +28,14 @@ The fix applied: stop the run immediately once its `pre:` line reveals a higher-
 - [[Resume a partial earchive seed with APPEND instead of re-truncating]]
 - [[earchive-data-prepare logs document progress only every 10 batches]]
 - [[earchive-prepare-knobs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resume a partial earchive seed with APPEND instead of re-truncating]]
+- [[earchive-data-prepare wrapper exits 0 even when the generator dies mid-run (verify the log footer)]]
+- [[Long real-API seed aborts on socket hang up unless port-forward reconnects]]
+- [[earchive-data-prepare logs document progress only every 10 batches]]
+- [[Materialize gate must require _shard or parallelized count undercounts]]
+
+%% ai-graph-end %%

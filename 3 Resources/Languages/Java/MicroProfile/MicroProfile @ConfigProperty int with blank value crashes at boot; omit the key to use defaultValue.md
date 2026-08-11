@@ -1,10 +1,20 @@
 ---
-title: "MicroProfile @ConfigProperty int with blank value crashes at boot; omit the key to use defaultValue"
+ai_hash: dce0665a192fd618
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: gotcha
+entities: []
+source: luz-docs LUZ-154613 session 2026-06-23
 status: seedling
-source: "luz-docs LUZ-154613 session 2026-06-23"
-tags: [microprofile, config, luz-docs, gotcha, wildfly]
+tags:
+- microprofile
+- config
+- luz-docs
+- gotcha
+- wildfly
+title: MicroProfile @ConfigProperty int with blank value crashes at boot; omit the
+  key to use defaultValue
+type: gotcha
 ---
 
 # MicroProfile @ConfigProperty int with blank value crashes at boot; omit the key to use defaultValue
@@ -20,3 +30,14 @@ See also [[Renaming a config key silently disables the feature if old env var na
 ## Related
 
 - [[Renaming a config key silently disables the feature if old env var name stays in overlays]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Renaming a config key silently disables the feature if old env var name stays in overlays]]
+- [[JAX-RS DefaultValue does not apply when a bean param is constructed in code]]
+- [[Luz K count-partitions env var]]
+- [[MicroProfile Fallback is dead in plain Mockito unit tests]]
+- [[luz_docs runs non-clustered WildFly pods, so pod-local sketchcounter state is broken]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "HyperLogLog error in the small-range (linear-counting) regime"
+ai_hash: b79d80c74eb5bba5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: concept
+entities: []
+source: luz_docs count-estimate research, 2026-07-09
 status: seedling
-source: "luz_docs count-estimate research, 2026-07-09"
-tags: [hyperloglog, cardinality-estimation, probabilistic-data-structures, algorithms]
+tags:
+- hyperloglog
+- cardinality-estimation
+- probabilistic-data-structures
+- algorithms
+title: HyperLogLog error in the small-range (linear-counting) regime
+type: concept
 ---
 
 # HyperLogLog error in the small-range (linear-counting) regime
@@ -20,3 +28,14 @@ HLL's textbook error bound (relative error ≈ `1.04/√m`) is asymptotic — it
 - [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[1 Projects/luz-docs/luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
 - [[luz_docs estimated-count POC drops CAS and backfill gate]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs countN badge can use HyperLogLog with a fuzzy-zone fallback]]
+- [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+- [[HyperLogLog estimates distinct count in constant memory and is mergeable]]
+- [[HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
+- [[Sketch merge (register-wise max) only answers union queries, never AND]]
+
+%% ai-graph-end %%

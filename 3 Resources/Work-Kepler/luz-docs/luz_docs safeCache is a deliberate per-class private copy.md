@@ -1,10 +1,18 @@
 ---
-title: "luz_docs safeCache is a deliberate per-class private copy"
+ai_hash: bb09608d317b9baa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: lesson
+entities: []
+source: session 2026-07-20 LUZ-156314
 status: seedling
-source: "session 2026-07-20 LUZ-156314"
-tags: [luz-docs, cache, convention, duplication]
+tags:
+- luz-docs
+- cache
+- convention
+- duplication
+title: luz_docs safeCache is a deliberate per-class private copy
+type: lesson
 ---
 
 # luz_docs safeCache is a deliberate per-class private copy
@@ -22,3 +30,14 @@ Related: [[1 Projects/luz-docs/search/Campaign-gate template cache then campaign
 ## Related
 
 - [[1 Projects/luz-docs/search/Campaign-gate template cache then campaign status L1 then repository L2]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Campaign-gate template cache then campaign status L1 then repository L2]]
+- [[Extract shared root of near-identical CDI beans into a static common helper + Spec + supplier]]
+- [[DualCache L1 write ignores per-call TTL (uses domain default)]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+
+%% ai-graph-end %%

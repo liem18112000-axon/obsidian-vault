@@ -1,10 +1,18 @@
 ---
-title: "TextQuoteSelector anchoring survives document regeneration"
+ai_hash: 805c8337bb8b2782
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: concept
+entities: []
+source: session 2026-07-03, vinnstack PRD inline-comments plan
 status: seedling
-source: "session 2026-07-03, vinnstack PRD inline-comments plan"
-tags: [annotation, anchoring, comments, vinnstack]
+tags:
+- annotation
+- anchoring
+- comments
+- vinnstack
+title: TextQuoteSelector anchoring survives document regeneration
+type: concept
 ---
 
 # TextQuoteSelector anchoring survives document regeneration
@@ -18,3 +26,14 @@ Resolution order: `prefix+quote+suffix` exact → `quote` by nth occurrence → 
 ## Related
 
 - [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[Map a DOM selection to plain-text offsets with a pre-range]]
+- [[Version-stamp quality ratings so stale feedback stops driving regeneration]]
+- [[Whitespace-normalize with an index map to fuzzy-match yet return original offsets]]
+- [[CSS Custom Highlight API paints text ranges without DOM mutation]]
+
+%% ai-graph-end %%

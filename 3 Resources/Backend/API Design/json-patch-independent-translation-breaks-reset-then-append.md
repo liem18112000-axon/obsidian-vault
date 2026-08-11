@@ -1,7 +1,16 @@
 ---
-title: JSON-Patch independent translation breaks reset-then-append on the same array
-tags: [json-patch, rfc6902, mongodb, luz-docs, gotcha]
+ai_hash: 3c7558032f917a17
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
+entities: []
+tags:
+- json-patch
+- rfc6902
+- mongodb
+- luz-docs
+- gotcha
+title: JSON-Patch independent translation breaks reset-then-append on the same array
 ---
 
 # JSON-Patch independent translation breaks reset-then-append on the same array
@@ -22,3 +31,14 @@ Expected `["DEV"]`, got `[]`.
 **Fix pattern:** Pre-normalize the patch — fold index/tail appends (`/X/-`, `/X/<idx>`) whose array `/X` was assigned an array value earlier in the *same* patch back into that assignment, computing the final array in Java and emitting one op. Leaves appends to pre-existing (not-reassigned) arrays untouched so the existing `$push` path is preserved.
 
 Related: [[01 Overview - Folder Rename Cascade]] (same materialize/patch subsystem).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[RFC-6902 replace at array index expects a scalar element not an array]]
+- [[Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields]]
+- [[JSON-Patch remove-to-replace[] conversion skipped folderIds when another field's remove came first]]
+- [[flattenArrayAddOps runs only in materialize branch]]
+- [[luz-docs updateManyByFilter requires every targeted document to actually change]]
+
+%% ai-graph-end %%

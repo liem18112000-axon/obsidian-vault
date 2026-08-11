@@ -1,8 +1,16 @@
 ---
-title: "Polaris / Vinnstack action points (running log)"
-type: log
+ai_hash: 057c007583425710
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
 status: active
-tags: [polaris, vinnstack, meeting, action-points]
+tags:
+- polaris
+- vinnstack
+- meeting
+- action-points
+title: Polaris / Vinnstack action points (running log)
+type: log
 ---
 
 # Polaris / Vinnstack action points
@@ -83,3 +91,14 @@ Running dated log. Newest at the bottom.
 ## 24/07/2026
 
 - Decide how to handle TECHNICAL-ERROR — proposal: one general technical error message.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+- [[vinnstack BDD pipeline stops at JiraXray, never writes files into a cloned repo]]
+- [[Technical interrogation questions must pass the 2-minute tech-lead test]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
+- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+
+%% ai-graph-end %%

@@ -1,19 +1,23 @@
 ---
-title: Accesstrade Promotions and Top Products APIs
-created: 2026-06-11
-type: term
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - promotions
-  - discovery
+ai_hash: 6c2cd54a5b120a71
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade offers_informations
-  - Accesstrade coupons API
-  - Accesstrade top_products
+- Accesstrade offers_informations
+- Accesstrade coupons API
+- Accesstrade top_products
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- promotions
+- discovery
+title: Accesstrade Promotions and Top Products APIs
+type: term
 ---
 
 # Accesstrade Promotions and Top Products APIs
@@ -56,3 +60,14 @@ flowchart TD
 - [[Accesstrade tracking link creation]]
 - [[Use case - campaign discovery and datafeed content briefs]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade Datafeeds API]]
+- [[Use case - campaign discovery and datafeed content briefs]]
+- [[Accesstrade Campaigns API]]
+- [[Accesstrade API Integration - MOC]]
+- [[Affiliate content-brief generator produces the grounded skeleton, not the prose]]
+
+%% ai-graph-end %%

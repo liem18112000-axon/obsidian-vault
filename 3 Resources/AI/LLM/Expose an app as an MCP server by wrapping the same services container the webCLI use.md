@@ -1,10 +1,21 @@
 ---
-title: "Expose an app as an MCP server by wrapping the same services container the web/CLI use"
+ai_hash: 9008f4956c42c4e5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-12
-type: howto
+entities: []
+source: session 2026-06-12, accesstrade_integration mcp_server
 status: seedling
-source: "session 2026-06-12, accesstrade_integration mcp_server"
-tags: [mcp, llm, architecture, fastmcp, python, adapter]
+tags:
+- mcp
+- llm
+- architecture
+- fastmcp
+- python
+- adapter
+title: Expose an app as an MCP server by wrapping the same services container the
+  web/CLI use
+type: howto
 ---
 
 # Expose an app as an MCP server by wrapping the same services container the web/CLI use
@@ -25,3 +36,14 @@ Relates to [[Wrap a two-generation API as one shared transport plus one client p
 ## Related
 
 - [[Wrap a two-generation API as one shared transport plus one client per generation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Skills vs Hooks vs MCP vs subagents]]
+- [[MCP servers load only at Claude Code startup; skills hot-reload]]
+- [[Wrap a two-generation API as one shared transport plus one client per generation]]
+- [[pip install does not bundle templatesstatic referenced relative to a package]]
+- [[Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]]
+
+%% ai-graph-end %%

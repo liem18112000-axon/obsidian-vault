@@ -1,10 +1,18 @@
 ---
-title: "Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime"
+ai_hash: c052ff2a562836db
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: concept
+entities: []
+source: session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html
 status: seedling
-source: "session 2026-07-12 — writing doc/vinnstack-bdd-pipeline.html"
-tags: [vinnstack, architecture, claude-code, cli]
+tags:
+- vinnstack
+- architecture
+- claude-code
+- cli
+title: Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime
+type: concept
 ---
 
 # Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime
@@ -18,3 +26,14 @@ Net effect: the architecture is plain CLI orchestration (stateless subprocess ca
 ## Related
 [[Vinnstack ai-framework.html is aspirational, not the real code]]
 [[3 Resources/Work-Side/Vinnstack/Vinnstack withholds gitgh from the model in BDD step implementation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack ai-framework.html is aspirational, not the real code]]
+- [[Vinnstack withholds gitgh from the model in BDD step implementation]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Vinnstack is local-only by design spawned-CLI login + local FS state + single-tenant]]
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+
+%% ai-graph-end %%

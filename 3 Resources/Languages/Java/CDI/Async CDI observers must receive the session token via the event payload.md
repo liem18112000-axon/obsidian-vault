@@ -1,10 +1,20 @@
 ---
-title: "Async CDI observers must receive the session token via the event payload"
+ai_hash: 9f40236c425126e0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: lesson
+entities: []
+source: session 2026-07-21, LUZ-157705
 status: seedling
-source: "session 2026-07-21, LUZ-157705"
-tags: [java, cdi, async, jakarta-ee, luz-docs, gotcha]
+tags:
+- java
+- cdi
+- async
+- jakarta-ee
+- luz-docs
+- gotcha
+title: Async CDI observers must receive the session token via the event payload
+type: lesson
 ---
 
 # Async CDI observers must receive the session token via the event payload
@@ -18,3 +28,14 @@ Fire with an explicit executor — `fireAsync(event, NotificationOptions.ofExecu
 ## Related
 
 - [[Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Campaign COMPLETED status is only trusted after re-verifying document state (truth-check gate)]]
+- [[luz-docs migration campaign per-tenant activation flow]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+- [[ManagedExecutorService.execute loses CDI request context]]
+- [[CDI observer methods are inherited from superclasses but not across packages if package-private]]
+
+%% ai-graph-end %%

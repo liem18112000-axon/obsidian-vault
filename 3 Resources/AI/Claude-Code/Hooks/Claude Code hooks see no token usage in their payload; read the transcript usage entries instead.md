@@ -1,3 +1,10 @@
+---
+ai_hash: 1dda2b8167cecbf5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+---
+
 ﻿---
 title: "Claude Code hooks see no token usage in their payload; read the transcript usage entries instead"
 created: 2026-06-02
@@ -19,3 +26,13 @@ A Claude Code hook receives only session metadata on stdin (`session_id`, `trans
 
 - [[Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]]
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code hooks cannot run slash commands or clear-compact; they only inject additionalContext]]
+- [[Parse structured tool_use blocks in a stream-json transcript, never substring-scan raw text]]
+- [[Claude Code hooks event model]]
+- [[ccusage — CLI tool for Claude Code token usage inspection]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+
+%% ai-graph-end %%

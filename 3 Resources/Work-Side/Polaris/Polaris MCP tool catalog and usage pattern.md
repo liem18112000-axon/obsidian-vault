@@ -1,12 +1,22 @@
 ---
-title: "Polaris MCP tool catalog and usage pattern"
-created: 2026-07-05
-type: reference
-status: seedling
-source: "sessions 2026-07-05 / 2026-07-07"
-tags: [polaris, mcp, tools, catalog, agents, skills]
+ai_hash: f1f460fff0a88122
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Polaris MCP Tools Inventory
+- Polaris MCP Tools Inventory
+created: 2026-07-05
+entities: []
+source: sessions 2026-07-05 / 2026-07-07
+status: seedling
+tags:
+- polaris
+- mcp
+- tools
+- catalog
+- agents
+- skills
+title: Polaris MCP tool catalog and usage pattern
+type: reference
 ---
 
 # Polaris MCP tool catalog and usage pattern
@@ -43,3 +53,14 @@ The **agent brief** orchestrates which skills to pull — you don't call skills 
 - [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel|Polaris 0.2.0 serves agents/skills/rules over an MCP tunnel]]
 - [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
 - [[Polaris load_file paths are catalog-rooted, not skill-relative]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Polaris MCP is search-only 5 tools, no list-all, driven over HTTP JSON-RPC not the CLI]]
+- [[Polaris load_file paths are catalog-rooted, not skill-relative]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
+- [[Making Polaris MCP tools reachable by Vinnstack's spawned agent (discovery + allowlist)]]
+
+%% ai-graph-end %%

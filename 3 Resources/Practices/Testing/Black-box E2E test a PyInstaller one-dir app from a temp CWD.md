@@ -1,10 +1,19 @@
 ---
-title: "Black-box E2E test a PyInstaller one-dir app from a temp CWD"
+ai_hash: aed4fd87f29624dd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: howto
+entities: []
+source: session 2026-06-10, fb-info-project test/
 status: seedling
-source: "session 2026-06-10, fb-info-project test/"
-tags: [pytest, pyinstaller, e2e, packaging, isolation]
+tags:
+- pytest
+- pyinstaller
+- e2e
+- packaging
+- isolation
+title: Black-box E2E test a PyInstaller one-dir app from a temp CWD
+type: howto
 ---
 
 # Black-box E2E test a PyInstaller one-dir app from a temp CWD
@@ -21,3 +30,14 @@ Decode the exe's captured stdout/stderr as UTF-8-with-replace if it reconfigures
 ## Related
 
 - [[page.content() serializes the full DOM over CDP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Black-box exe test suite skips silently when no artifact is present]]
+- [[Black-box artifact E2E drive a committed sample fixture so the only live input is the secret]]
+- [[Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0]]
+- [[PyInstaller spec paths resolve inconsistently - anchor runtime_hooks on SPECPATH]]
+- [[PyInstaller needs collect_all for packages that ship non-Python payloads]]
+
+%% ai-graph-end %%

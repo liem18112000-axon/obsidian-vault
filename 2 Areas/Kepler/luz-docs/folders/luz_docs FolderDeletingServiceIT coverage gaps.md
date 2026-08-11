@@ -1,10 +1,19 @@
 ---
-title: "luz_docs FolderDeletingServiceIT coverage gaps"
+ai_hash: 97d759a496f4046a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: observation
+entities: []
+source: FolderDeletingServiceIT.java review, session 2026-06-05
 status: seedling
-source: "FolderDeletingServiceIT.java review, session 2026-06-05"
-tags: [luz-docs, folders, delete, testing, coverage]
+tags:
+- luz-docs
+- folders
+- delete
+- testing
+- coverage
+title: luz_docs FolderDeletingServiceIT coverage gaps
+type: observation
 ---
 
 # luz_docs FolderDeletingServiceIT coverage gaps
@@ -27,3 +36,14 @@ Full case matrix exported locally to `delete-folder-api-critical-cases.md` in th
 
 - [[luz_docs delete folder API soft vs permanent state machine]]
 - [[luz_docs deleteFolder isDetailResponse error contract and non-transactionality]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs deleteFolder isDetailResponse error contract and non-transactionality]]
+- [[Folder-deletion batching lost to materialise cascade in sprint-158 merge]]
+- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
+- [[Bulk write paths in folder delete only engage with more than one document]]
+- [[luz-docs delete-folder batching roadmap - remaining per-item paths]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "AppsFlyer Push layer appends per-event while Pull replaces the day"
+ai_hash: 3673cffb56294e46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26 feat/appsflyer-push-layer
 status: seedling
-source: "session 2026-06-26 feat/appsflyer-push-layer"
-tags: [appsflyer, leo-cdp, idempotency, streaming, connector]
+tags:
+- appsflyer
+- leo-cdp
+- idempotency
+- streaming
+- connector
+title: AppsFlyer Push layer appends per-event while Pull replaces the day
+type: lesson
 ---
 
 # AppsFlyer Push layer appends per-event while Pull replaces the day
@@ -23,3 +32,14 @@ Everything after mapping is shared (`normalize_row → row_to_cdp_event → CdpS
 ## Related
 
 - [[AppsFlyer Push API is the inverse of the Pull API]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Identity-keyed CDP API breaks content-hash idempotency]]
+- [[Kafka sink append-only log, idempotency via dedupe_key message key]]
+- [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
+- [[AppsFlyer connector reduced to a single JSONL file-S3 sink]]
+- [[AppsFlyer Push API is the inverse of the Pull API]]
+
+%% ai-graph-end %%

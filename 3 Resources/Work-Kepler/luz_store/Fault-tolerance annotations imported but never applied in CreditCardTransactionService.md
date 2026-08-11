@@ -1,10 +1,18 @@
 ---
-title: "Fault-tolerance annotations imported but never applied in CreditCardTransactionService"
+ai_hash: 0393c79926e45fde
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: observation
+entities: []
+source: LUZ-157476 investigation 2026-07-23
 status: seedling
-source: "LUZ-157476 investigation 2026-07-23"
-tags: [luz-store, microprofile, fault-tolerance, gotcha]
+tags:
+- luz-store
+- microprofile
+- fault-tolerance
+- gotcha
+title: Fault-tolerance annotations imported but never applied in CreditCardTransactionService
+type: observation
 ---
 
 # Fault-tolerance annotations imported but never applied in CreditCardTransactionService
@@ -15,3 +23,14 @@ Lesson: unused fault-tolerance imports are worse than none — they make reviewe
 
 ## Related
 - [[Payrexx declines travel in-band on HTTP 2xx in the luz charge flow]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TECHNICAL_ERROR is not retried in-flight but is retry-eligible on invoice-item rerun]]
+- [[Payrexx declines travel in-band on HTTP 2xx in the luz charge flow]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[Payrexx notify webhook dispatches to two consumers, neither forwards decline code]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
+
+%% ai-graph-end %%

@@ -1,5 +1,12 @@
 ---
-tags: [java, refactoring, gotcha]
+ai_hash: 561ab429b6432749
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- java
+- refactoring
+- gotcha
 ---
 
 # Visibility downgrade breaks external callers
@@ -27,3 +34,14 @@ Only narrow if zero external call sites. IDE "find usages" works too — relying
 ## Related
 
 - [[CDI self-invocation bypasses interceptor proxy]] — another visibility/access-shape gotcha
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mock at the facade boundary after consolidating logic behind a facade method]]
+- [[Verify wildcard-to-explicit import cleanup by compiling]]
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[Curate OpenRewrite UpgradeToJava25 - composite includes instance-main and wrapper bumps]]
+- [[Materialize code review report - sprint-156 findings index]]
+
+%% ai-graph-end %%

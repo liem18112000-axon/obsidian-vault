@@ -1,7 +1,14 @@
 ---
-title: "Cloud Run v2 service design gotchas"
+ai_hash: 3f80e44e2bfcab97
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-tags: [gcp, cloud-run, terraform]
+entities: []
+tags:
+- gcp
+- cloud-run
+- terraform
+title: Cloud Run v2 service design gotchas
 ---
 
 # Cloud Run v2 service design gotchas
@@ -34,3 +41,14 @@ A gen2 service is private by default; grant `roles/run.invoker` to `allUsers` (s
 
 ## Related
 - [[Terraform sensitive values cannot key for_each — wrap predicate in nonsensitive()]] — bit when wiring the optional secret env vars on this service.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[Memorystore Redis is always VPC-internal — no public endpoint]]
+- [[IAM roles a CI service account needs to build and deploy to Cloud Run]]
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+
+%% ai-graph-end %%

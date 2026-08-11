@@ -1,10 +1,18 @@
 ---
-title: "Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON"
+ai_hash: 99e3c84226504fbc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: howto
+entities: []
+source: session 2026-07-23 leocdp-personalization-engine
 status: seedling
-source: "session 2026-07-23 leocdp-personalization-engine"
-tags: [drawio, excalidraw, diagrams, conversion]
+tags:
+- drawio
+- excalidraw
+- diagrams
+- conversion
+title: Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON
+type: howto
 ---
 
 # Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON
@@ -31,3 +39,14 @@ Applied to merge 4 diagrams from `leocdp-personalization-engine/docs` into one `
 ## Related
 
 - [[A single draw.io file holds multiple diagrams as diagram pages in one mxfile]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A single draw.io file holds multiple diagrams as diagram pages in one mxfile]]
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+- [[Embed brand SVG icons in an Excalidraw diagram (image element + files dataURL; Simple Icons CDN)]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+
+%% ai-graph-end %%

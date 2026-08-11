@@ -1,5 +1,13 @@
 ---
-tags: [claude-code, vertex-ai, gcp, llm-backend]
+ai_hash: fbabf475112c3850
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- claude-code
+- vertex-ai
+- gcp
+- llm-backend
 ---
 
 # Claude Code runs on Vertex AI via three env vars with gcloud ADC
@@ -19,3 +27,14 @@ Auth is **gcloud application-default credentials (ADC)** — *not* an API key. S
 - Because a system-wide `CLAUDE_CODE_USE_VERTEX` env var will silently force Vertex, when you want the direct login you must actively **delete** those three vars from the child env.
 
 Related: [[Mounting host gcloud ADC into a container to authenticate Vertex AI]], [[Vertex models.list() shows the catalog, not what the project can invoke; Gemini 3 needs the global endpoint]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+
+%% ai-graph-end %%

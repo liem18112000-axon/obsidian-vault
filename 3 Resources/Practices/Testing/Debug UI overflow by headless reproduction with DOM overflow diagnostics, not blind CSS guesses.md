@@ -1,10 +1,19 @@
 ---
-title: "Debug UI overflow by headless reproduction with DOM overflow diagnostics, not blind CSS guesses"
+ai_hash: 110d437c520546bd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: howto
+entities: []
+source: session 2026-07-23
 status: seedling
-source: "session 2026-07-23"
-tags: [playwright, debugging, css, ui]
+tags:
+- playwright
+- debugging
+- css
+- ui
+title: Debug UI overflow by headless reproduction with DOM overflow diagnostics, not
+  blind CSS guesses
+type: howto
 ---
 
 # Debug UI overflow by headless reproduction with DOM overflow diagnostics, not blind CSS guesses
@@ -22,3 +31,14 @@ Caveat: rect-past-viewport alone is NOT proof of visible overflow — content in
 ## Related
 
 - [[3 Resources/Frontend/CSS/Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Grid blowout - bare 1fr is minmax(auto,1fr) and intrinsic-width content can explode the column]]
+- [[Toggle a layout mode with one Tailwind descendant override instead of threading state]]
+- [[Inline style width beats Tailwind breakpoint width classes]]
+- [[Gridflex items default to min-height auto, blocking inner overflow scroll; add min-h-0]]
+- [[Async-rendered content (Mermaid) causes layout shift that misdirects form clicks]]
+
+%% ai-graph-end %%

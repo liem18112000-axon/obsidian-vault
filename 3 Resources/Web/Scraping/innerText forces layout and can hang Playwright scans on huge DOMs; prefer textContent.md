@@ -1,10 +1,20 @@
 ---
-title: "innerText forces layout and can hang Playwright scans on huge DOMs; prefer textContent"
+ai_hash: cfbbd2cbc1003f20
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: fb-info-project thorough-mode live run, session 2026-06-30
 status: seedling
-source: "fb-info-project thorough-mode live run, session 2026-06-30"
-tags: [playwright, performance, dom, gotcha, facebook]
+tags:
+- playwright
+- performance
+- dom
+- gotcha
+- facebook
+title: innerText forces layout and can hang Playwright scans on huge DOMs; prefer
+  textContent
+type: lesson
 ---
 
 # innerText forces layout and can hang Playwright scans on huge DOMs; prefer textContent
@@ -24,3 +34,14 @@ Tradeoff: innerText respects visibility (hidden nodes return "") and normalizes 
 ## Related
 
 - [[Distinguish absent control from missed click when expanding lazy lists]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Playwright click() auto-waits the full timeout on a missing locator; probe with count() first]]
+- [[Use Playwright evaluate_all to batch-read element properties in one round-trip]]
+- [[Large FB group posts expand huge but article-scan yields almost no profiles]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+
+%% ai-graph-end %%

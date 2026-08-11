@@ -1,10 +1,21 @@
 ---
-title: "electron-updater skips NSIS signature verification when the installed app is unsigned"
+ai_hash: 9c2006554c10a770
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-15 (research)
 status: seedling
-source: "Vinnstack session 2026-07-15 (research)"
-tags: [electron-updater, electron, code-signing, nsis, auto-update, vinnstack]
+tags:
+- electron-updater
+- electron
+- code-signing
+- nsis
+- auto-update
+- vinnstack
+title: electron-updater skips NSIS signature verification when the installed app is
+  unsigned
+type: lesson
 ---
 
 # electron-updater skips NSIS signature verification when the installed app is unsigned
@@ -21,3 +32,14 @@ Source: electron-updater `packages/electron-updater/src/NsisUpdater.ts`. Context
 
 - [[3 Resources/Frontend/Electron/Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
 - [[Electron]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Unsigned NSIS install under Defender ~2min of zero files is pre-scan, not a hang]]
+- [[Wire electron-updater to a public GCS bucket via the generic provider]]
+- [[Since June 2023 code-signing certs must be on HSM — CI needs a cloud signing service, not a .pfx]]
+- [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+
+%% ai-graph-end %%

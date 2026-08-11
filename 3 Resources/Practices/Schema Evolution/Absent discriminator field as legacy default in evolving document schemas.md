@@ -1,10 +1,17 @@
 ---
-title: "Absent discriminator field as legacy default in evolving document schemas"
+ai_hash: 61355d67a8772ec0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: session 2026-06-05 LUZ-154804
 status: seedling
-source: "session 2026-06-05 LUZ-154804"
-tags: [schema-evolution, mongodb, design-decision]
+tags:
+- schema-evolution
+- mongodb
+- design-decision
+title: Absent discriminator field as legacy default in evolving document schemas
+type: lesson
 ---
 
 # Absent discriminator field as legacy default in evolving document schemas
@@ -20,3 +27,14 @@ Related: [[luz_docs materialize passive retry via cascade markers]]
 ## Related
 
 - [[luz_docs materialize passive retry via cascade markers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs materialize passive retry via cascade markers]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[Cascade-marker pattern for crash-safe async retry]]
+- [[Migration campaign status can silently drift from real document state]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]
+
+%% ai-graph-end %%

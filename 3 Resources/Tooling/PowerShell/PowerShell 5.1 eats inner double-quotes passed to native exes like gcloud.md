@@ -1,10 +1,21 @@
 ---
-title: "PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud"
+ai_hash: a08a72705256c34d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-12
-type: gotcha
+entities: []
+source: sessions 2026-06-12 (gcloud logging read) and 2026-07-03 (vinnstack git commit
+  failure)
 status: seedling
-source: "sessions 2026-06-12 (gcloud logging read) and 2026-07-03 (vinnstack git commit failure)"
-tags: [powershell, windows, gcloud, git, quoting, gotcha]
+tags:
+- powershell
+- windows
+- gcloud
+- git
+- quoting
+- gotcha
+title: PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud
+type: gotcha
 ---
 
 # PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud
@@ -28,3 +39,14 @@ When a native command rejects a value that looks correctly quoted in your script
 ## Related
 
 - [[Resolve Cloud Logging share links via redirect Location header]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Resolve Cloud Logging share links via redirect Location header]]
+- [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]
+- [[Cloud Build treats $VAR in step args as its own substitution; escape shell $ as $$]]
+
+%% ai-graph-end %%

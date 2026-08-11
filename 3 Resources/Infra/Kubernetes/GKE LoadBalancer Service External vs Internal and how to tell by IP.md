@@ -1,10 +1,18 @@
 ---
-title: "GKE LoadBalancer Service: External vs Internal and how to tell by IP"
+ai_hash: ca1f9328ca70843e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: Vinnstack GKE deploy 2026-07-03
 status: seedling
-source: "Vinnstack GKE deploy 2026-07-03"
-tags: [kubernetes, gke, loadbalancer, networking]
+tags:
+- kubernetes
+- gke
+- loadbalancer
+- networking
+title: 'GKE LoadBalancer Service: External vs Internal and how to tell by IP'
+type: lesson
 ---
 
 # GKE LoadBalancer Service: External vs Internal and how to tell by IP
@@ -20,3 +28,12 @@ Provisioning is fast (~25s for the IP), but the LB health check can take another
 ## Related
 
 - [[GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GKE managed-cert HTTPS global IP, DNS before cert, NEG service, FrontendConfig redirect]]
+- [[Free built-in GCP domain Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP]]
+- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
+
+%% ai-graph-end %%

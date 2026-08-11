@@ -1,10 +1,18 @@
 ---
-title: "Delete-then-stale-put race bounds cache invalidation freshness at full TTL"
+ai_hash: c1da9697e8cb1fa6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23 MaterializeGate stampede panel
 status: seedling
-source: "session 2026-07-23 MaterializeGate stampede panel"
-tags: [cache, invalidation, race-condition, distributed-systems]
+tags:
+- cache
+- invalidation
+- race-condition
+- distributed-systems
+title: Delete-then-stale-put race bounds cache invalidation freshness at full TTL
+type: lesson
 ---
 
 # Delete-then-stale-put race bounds cache invalidation freshness at full TTL
@@ -22,3 +30,14 @@ Also: hook **every** state-transition writer, not just the happy path — a forg
 ## Related
 
 - [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[Two-tier cache must propagate caller TTL to every tier]]
+- [[Lock-based stampede control losers hit the cache before the winner fills it]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+
+%% ai-graph-end %%

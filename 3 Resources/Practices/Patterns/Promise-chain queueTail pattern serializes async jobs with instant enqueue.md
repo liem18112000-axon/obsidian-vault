@@ -1,10 +1,19 @@
 ---
-title: "Promise-chain queueTail pattern serializes async jobs with instant enqueue"
+ai_hash: 6dd1ba8255312ddd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: howto
+entities: []
+source: Vinnstack session 2026-07-07
 status: seedling
-source: "Vinnstack session 2026-07-07"
-tags: [nodejs, async, queue, concurrency, pattern]
+tags:
+- nodejs
+- async
+- queue
+- concurrency
+- pattern
+title: Promise-chain queueTail pattern serializes async jobs with instant enqueue
+type: howto
 ---
 
 # Promise-chain queueTail pattern serializes async jobs with instant enqueue
@@ -18,3 +27,14 @@ This is exactly the shape needed whenever you want "let the user queue up N requ
 ## Related
 
 - [[Graphify acquires repo source gitless via Bitbucket tarball download]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Client-side generation queue lets independent items run without blocking each other]]
+- [[Non-blocking usage capture fire-and-forget async writes + a serialized promise queue for race-safe RMW]]
+- [[Auto-versioning generated files into a local git repo add -A + serialized queue + fire-and-forget]]
+- [[Parallelize independent async startup steps in an Electron main process]]
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+
+%% ai-graph-end %%

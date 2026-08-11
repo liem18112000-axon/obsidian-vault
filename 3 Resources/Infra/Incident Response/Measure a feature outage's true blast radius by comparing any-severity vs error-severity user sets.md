@@ -1,10 +1,19 @@
 ---
-title: "Measure a feature outage's true blast radius by comparing any-severity vs error-severity user sets"
+ai_hash: 6789f53e89dfbcc8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: howto
+entities: []
+source: session 2026-07-16 Klara Widget Store PROD incident
 status: seedling
-source: "session 2026-07-16 Klara Widget Store PROD incident"
-tags: [incident-response, observability, logging, triage]
+tags:
+- incident-response
+- observability
+- logging
+- triage
+title: Measure a feature outage's true blast radius by comparing any-severity vs error-severity
+  user sets
+type: howto
 ---
 
 # Measure a feature outage's true blast radius by comparing any-severity vs error-severity user sets
@@ -26,3 +35,10 @@ Gotcha: the window is rolling, so "right now" shifts on re-run; and the count is
 
 - [[Per-pod breakdown of rejections separates a bad replica from a global config problem]]
 - [[Klara PROD log access]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-pod breakdown of rejections separates a bad replica from a global config problem]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Pass fetched objects down recursion instead of IDs to avoid N+1 re-fetch"
+ai_hash: 81e5e4301bedead2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: howto
+entities: []
+source: session 2026-06-10
 status: seedling
-source: "session 2026-06-10"
-tags: [performance, n-plus-one, recursion, api-design]
+tags:
+- performance
+- n-plus-one
+- recursion
+- api-design
+title: Pass fetched objects down recursion instead of IDs to avoid N+1 re-fetch
+type: howto
 ---
 
 # Pass fetched objects down recursion instead of IDs to avoid N+1 re-fetch
@@ -20,3 +28,14 @@ Seen concretely in [[luz-docs folder delete filter double-fetched every subfolde
 ## Related
 
 - [[luz-docs folder delete filter double-fetched every subfolder]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs folder delete filter double-fetched every subfolder]]
+- [[Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
+- [[Validate with a count query for violators instead of loading all documents]]
+- [[luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races]]
+- [[Batched folder delete strips folder ids via union updateMany]]
+
+%% ai-graph-end %%

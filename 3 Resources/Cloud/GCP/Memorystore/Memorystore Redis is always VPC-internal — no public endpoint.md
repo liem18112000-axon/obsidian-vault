@@ -1,10 +1,20 @@
 ---
-title: "Memorystore Redis is always VPC-internal — no public endpoint"
+ai_hash: c0dcd66ee619b19e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: accesstrade deployment/ Terraform, 2026-06-14
 status: seedling
-source: "accesstrade deployment/ Terraform, 2026-06-14"
-tags: [gcp, memorystore, redis, terraform, networking, gotcha]
+tags:
+- gcp
+- memorystore
+- redis
+- terraform
+- networking
+- gotcha
+title: Memorystore Redis is always VPC-internal — no public endpoint
+type: lesson
 ---
 
 # Memorystore Redis is always VPC-internal — no public endpoint
@@ -23,3 +33,14 @@ Seen while writing the `deployment/` Terraform for accesstrade_integration (proj
 
 - [[Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider]]
 - [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud SQL ssl_mode replaced the require_ssl boolean in the hashicorp google provider]]
+- [[Cloud Run v2 service design gotchas]]
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+- [[Cloud SQL Postgres point-in-time recovery requires automated backups enabled]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+
+%% ai-graph-end %%

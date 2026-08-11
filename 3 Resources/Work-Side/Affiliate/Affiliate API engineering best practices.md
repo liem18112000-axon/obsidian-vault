@@ -1,18 +1,22 @@
 ---
-title: Affiliate API engineering best practices
-created: 2026-06-11
-type: moc
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - best-practices
-  - moc
+ai_hash: d62e5650771af9ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade API best practices
-  - Caching backoff idempotency affiliate
+- Accesstrade API best practices
+- Caching backoff idempotency affiliate
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- best-practices
+- moc
+title: Affiliate API engineering best practices
+type: moc
 ---
 
 # Affiliate API engineering best practices
@@ -39,3 +43,14 @@ aliases:
 ## Related
 
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Idempotent link minting with content-hash cache keys]]
+- [[To catch status flips, re-pull a lookback window wider than the report window]]
+- [[Accesstrade API rate limits and pagination]]
+- [[Accesstrade API Integration - MOC]]
+- [[Secrets handling for affiliate API keys]]
+
+%% ai-graph-end %%

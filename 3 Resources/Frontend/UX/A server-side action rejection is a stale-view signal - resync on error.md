@@ -1,10 +1,18 @@
 ---
-title: "A server-side action rejection is a stale-view signal - resync on error"
+ai_hash: 0529023c8a3f4f01
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04, vinnstack stale approved PRD
 status: seedling
-source: "session 2026-07-04, vinnstack stale approved PRD"
-tags: [react, state-sync, error-handling, vinnstack]
+tags:
+- react
+- state-sync
+- error-handling
+- vinnstack
+title: A server-side action rejection is a stale-view signal - resync on error
+type: lesson
 ---
 
 # A server-side action rejection is a stale-view signal - resync on error
@@ -18,3 +26,14 @@ Sibling symptom from the same incident: gating tabs computed from a slow-loading
 ## Related
 
 - [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+- [[Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+- [[Secondary-write failures should fail loud when their silent version was the actual bug]]
+- [[Classify stream failures on the server, not the client]]
+
+%% ai-graph-end %%

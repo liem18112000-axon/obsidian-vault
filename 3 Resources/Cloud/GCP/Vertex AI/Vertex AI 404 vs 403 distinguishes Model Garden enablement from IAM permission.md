@@ -1,10 +1,18 @@
 ---
-title: "Vertex AI 404 vs 403 distinguishes Model Garden enablement from IAM permission"
+ai_hash: d2feb81449c07832
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: session 2026-07-11, klara-nonprod Claude on Vertex setup
 status: seedling
-source: "session 2026-07-11, klara-nonprod Claude on Vertex setup"
-tags: [gcp, vertex-ai, iam, troubleshooting]
+tags:
+- gcp
+- vertex-ai
+- iam
+- troubleshooting
+title: Vertex AI 404 vs 403 distinguishes Model Garden enablement from IAM permission
+type: lesson
 ---
 
 # Vertex AI 404 vs 403 distinguishes Model Garden enablement from IAM permission
@@ -21,3 +29,14 @@ Confirmed by cross-testing the identical model+region combo across two GCP proje
 
 - [[consumerprocurement.entitlementManager grants Marketplace entitlement acceptance]]
 - [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[consumerprocurement.entitlementManager grants Marketplace entitlement acceptance]]
+- [[Vertex models.list() shows the catalog, not what the project can invoke; Gemini 3 needs the global endpoint]]
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+- [[Vertex AI global endpoint host has no region prefix]]
+- [[GCP APIs must be enabled individually per project]]
+
+%% ai-graph-end %%

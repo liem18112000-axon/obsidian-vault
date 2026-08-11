@@ -1,10 +1,17 @@
 ---
-title: "Violence detection needs a trained classifier, not keyword lists"
+ai_hash: 655a245d3738861b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: lesson
+entities: []
+source: web research session 2026-07-20
 status: seedling
-source: "web research session 2026-07-20"
-tags: [content-moderation, llm-safety, classification]
+tags:
+- content-moderation
+- llm-safety
+- classification
+title: Violence detection needs a trained classifier, not keyword lists
+type: lesson
 ---
 
 # Violence detection needs a trained classifier, not keyword lists
@@ -17,3 +24,12 @@ A lexicon is acceptable only as a cheap pre-filter or as a last-resort fallback 
 
 - [[Moderation taxonomies split violence into subtypes]]
 - [[Model options for detecting violent text by weight class]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Moderation taxonomies split violence into subtypes]]
+- [[Model options for detecting violent text by weight class]]
+- [[Property damage falls outside person-directed violence taxonomies]]
+
+%% ai-graph-end %%

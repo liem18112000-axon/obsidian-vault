@@ -1,10 +1,21 @@
 ---
-title: "Wall of NoClassDefFoundError on first test run = static-init I/O, split unit from integration"
+ai_hash: ab3f50f6698c26c8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: lesson
+entities: []
+source: LEO CDP CI test diagnosis, 2026-06-08
 status: seedling
-source: "LEO CDP CI test diagnosis, 2026-06-08"
-tags: [java, testing, static-initializer, integration-tests, migration, gotcha]
+tags:
+- java
+- testing
+- static-initializer
+- integration-tests
+- migration
+- gotcha
+title: Wall of NoClassDefFoundError on first test run = static-init I/O, split unit
+  from integration
+type: lesson
 ---
 
 # Wall of NoClassDefFoundError on first test run = static-init I/O, split unit from integration
@@ -14,3 +25,14 @@ Pattern when a Java migration suddenly makes a long-passing test suite fail with
 ## Related
 
 - [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JUnit5 @BeforeAll must be static - non-static masks every test in the class]]
+- [[LEO CDP SYSTEM_ENV_VARS still requires database-configs.json to exist first]]
+- [[Gradle 9 failOnNoDiscoveredTests exposes never-configured JUnit platform]]
+- [[Measure non-idempotent integration tests on clean state - 409 on re-run is an isolation defect]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+
+%% ai-graph-end %%

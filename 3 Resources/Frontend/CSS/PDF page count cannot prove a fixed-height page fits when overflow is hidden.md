@@ -1,10 +1,19 @@
 ---
-title: "PDF page count cannot prove a fixed-height page fits when overflow is hidden"
+ai_hash: 06a9e4349e67cc9a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: lesson
+entities: []
+source: session 2026-07-20
 status: seedling
-source: "session 2026-07-20"
-tags: [css, print, pdf, headless-chrome, gotcha]
+tags:
+- css
+- print
+- pdf
+- headless-chrome
+- gotcha
+title: PDF page count cannot prove a fixed-height page fits when overflow is hidden
+type: lesson
 ---
 
 # PDF page count cannot prove a fixed-height page fits when overflow is hidden
@@ -15,3 +24,12 @@ When forcing a print layout onto one page with a fixed-height container (`height
 
 - [[Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge]]
 - [[Absolutely-positioned list bullets slide under a floated sidebar]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Absolutely-positioned list bullets slide under a floated sidebar]]
+- [[Update a designed PDF without its source by rebuilding as HTML and printing with headless Edge]]
+- [[Debug UI overflow by headless reproduction with DOM overflow diagnostics, not blind CSS guesses]]
+
+%% ai-graph-end %%

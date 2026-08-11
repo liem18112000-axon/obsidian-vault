@@ -1,12 +1,23 @@
 ---
-title: "Claude Code hooks fire for any spawned claude process, not just interactive sessions"
-created: 2026-07-11
-type: lesson
-status: seedling
-source: "Vinnstack BDD implement-stage debugging, 2026-07-11"
-tags: [claude-code, hooks, headless, architecture, gotcha, vinnstack]
+ai_hash: 4380c16302e96efb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Headless claude -p inherits personal ~/.claude/settings.json hooks
+- Headless claude -p inherits personal ~/.claude/settings.json hooks
+created: 2026-07-11
+entities: []
+source: Vinnstack BDD implement-stage debugging, 2026-07-11
+status: seedling
+tags:
+- claude-code
+- hooks
+- headless
+- architecture
+- gotcha
+- vinnstack
+title: Claude Code hooks fire for any spawned claude process, not just interactive
+  sessions
+type: lesson
 ---
 
 # Claude Code hooks fire for any spawned claude process, not just interactive sessions
@@ -25,3 +36,14 @@ Incident: `lib/ai/claudeRun.ts`'s `runClaude()` in Vinnstack kept dying with "Im
 
 - [[--bare forces API-key-only auth in Claude Code]]
 - [[A globally-bootstrapped MCP server loads into every headless claude spawn]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[--bare forces API-key-only auth in Claude Code]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale]]
+- [[Headless claude exit 0 does not mean the operation succeeded]]
+
+%% ai-graph-end %%

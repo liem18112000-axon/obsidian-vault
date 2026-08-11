@@ -1,3 +1,10 @@
+---
+ai_hash: 03e4dce5c6aac110
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+---
+
 ﻿---
 title: "A merged-in test breaks when the target branch's service gained a new injected dependency"
 created: 2026-06-04
@@ -19,3 +26,13 @@ Concrete case (luz_docs, 2026-06-04): `FolderServiceRecoverFolderTest` from the 
 - [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
 - [[3 Resources/Languages/Java/Testing/Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[New collaborator call NPEs old @InjectMocks tests]]
+- [[Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
+- [[Mockito @InjectMocks by type stale @Mock after @RestClient swap leaves real field null]]
+- [[Unit-testing FolderService recoverFolder requires per-collection stubs because process objects call back into the real service]]
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+
+%% ai-graph-end %%

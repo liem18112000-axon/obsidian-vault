@@ -1,10 +1,18 @@
 ---
-title: "Precompute and validate a file-level move map before a mass reorganization"
+ai_hash: cad2e9cc4a172f60
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: lesson
+entities: []
+source: vault PARA reorganization 2026-07-31
 status: seedling
-source: "vault PARA reorganization 2026-07-31"
-tags: [refactoring, filesystem, git, safety]
+tags:
+- refactoring
+- filesystem
+- git
+- safety
+title: Precompute and validate a file-level move map before a mass reorganization
+type: lesson
 ---
 
 # Precompute and validate a file-level move map before a mass reorganization
@@ -28,3 +36,12 @@ This caught real problems: on a 1100-file vault reorganization the validation pa
 
 - [[Measure a broken-link baseline before a mass vault refactor]]
 - [[Assigning to an awk field rebuilds $0 with OFS and destroys the separator]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure a broken-link baseline before a mass vault refactor]]
+- [[Assigning to an awk field rebuilds $0 with OFS and destroys the separator]]
+- [[Obsidian plugin configs pin folders to exact vault-root paths]]
+
+%% ai-graph-end %%

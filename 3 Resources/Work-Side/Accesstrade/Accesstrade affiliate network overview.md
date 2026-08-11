@@ -1,17 +1,21 @@
 ---
-title: Accesstrade affiliate network overview
-created: 2026-06-11
-type: concept
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - concept
+ai_hash: 8f798b26c25ed6c0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade
-  - AccessTrade
-  - What is Accesstrade
+- Accesstrade
+- AccessTrade
+- What is Accesstrade
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- concept
+title: Accesstrade affiliate network overview
+type: concept
 ---
 
 # Accesstrade affiliate network overview
@@ -50,3 +54,14 @@ flowchart TD
 - [[Accesstrade Campaigns API]]
 - [[Accesstrade conversion and transaction reporting]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade API Integration - MOC]]
+- [[Accesstrade Campaigns API]]
+- [[Ad network vs affiliate network]]
+- [[Accesstrade Datafeeds API]]
+- [[Accesstrade conversion and transaction reporting]]
+
+%% ai-graph-end %%

@@ -1,10 +1,22 @@
 ---
-title: "Local-app provider sign-in: drive the vendor CLI; Vertex is the exception (gcloud ADC + project/region)"
+ai_hash: a31aee8eccaec9ed
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: lesson
+entities: []
+source: session 2026-07-02
 status: seedling
-source: "session 2026-07-02"
-tags: [oauth, cli, gh, gcloud, vertex, providers, vinnstack]
+tags:
+- oauth
+- cli
+- gh
+- gcloud
+- vertex
+- providers
+- vinnstack
+title: 'Local-app provider sign-in: drive the vendor CLI; Vertex is the exception
+  (gcloud ADC + project/region)'
+type: lesson
 ---
 
 # Local-app provider sign-in: drive the vendor CLI; Vertex is the exception (gcloud ADC + project/region)
@@ -18,3 +30,14 @@ Each: login() spawns the CLI browser flow; status() is a quick probe; the app st
 Vertex AI (Claude on GCP) is the exception with NO dedicated login: it authenticates via gcloud application-default credentials (the same ADC as the Google Cloud sign-in) plus a GCP project + region. So a "Vertex" connection is config-only (project + region, persisted) whose status just checks ADC presence (the application_default_credentials.json file) — there is no vertex-specific token to obtain.
 
 Design pattern that made this cheap: a provider registry where each provider is either browserLogin (drives a CLI) or credentialFields (typed + verified + persisted). A generic Connections UI renders both, so adding a provider is one object in the registry — no UI change. Real case: Vinnstack lib/authProviders.ts (claude, google-cloud, vertex, bitbucket, atlassian, github).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
+- [[Vinnstack provider abstraction enables pluggable auth without UIroute changes]]
+- [[Vinnstack desktop app dropped Google OAuth for a typed-email operator identity]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+
+%% ai-graph-end %%

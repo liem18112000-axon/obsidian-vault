@@ -1,10 +1,22 @@
 ---
-title: "luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership"
+ai_hash: eeb713a7be506ad0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: sessions 2026-06-15 / 2026-06-16, dev tenant b260a45a
 status: evergreen
-source: "sessions 2026-06-15 / 2026-06-16, dev tenant b260a45a"
-tags: [luz-docs, integration-test, behave, security-class, regression, authorization, gotcha]
+tags:
+- luz-docs
+- integration-test
+- behave
+- security-class
+- regression
+- authorization
+- gotcha
+title: luz-docs IT $SCn authorization failures were deterministic resolution regressions,
+  not membership
+type: lesson
 ---
 
 # luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership
@@ -29,3 +41,14 @@ Verified: all 6 pass 2/2 in isolation after both fixes, no read-after-write wait
 - [[luz-docs IT before_scenario reads but does not substitute $SCn into step text]]
 - [[behave step patterns differing only by quote style are distinct definitions]]
 - [[scalar add to securityClassCodes tail is a known luz-docs IT pre-existing failure]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+- [[luz-docs IT before_scenario reads but does not substitute $SCn into step text]]
+- [[scalar add to securityClassCodes tail is a known luz-docs IT pre-existing failure]]
+- [[behave step patterns differing only by quote style are distinct definitions]]
+- [[luz-docs IT skips security-class scenarios when the tenant token lacks enough codes]]
+
+%% ai-graph-end %%

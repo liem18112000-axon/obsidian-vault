@@ -1,8 +1,17 @@
 ---
-type: term
+ai_hash: 9c4784bdecaf4b62
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- EPC
+- Earnings per Click
+- Earnings per 100 Clicks
 domain: affiliate-marketing
-aliases: [EPC, Earnings per Click, Earnings per 100 Clicks]
-tags: [affiliate, metric]
+entities: []
+tags:
+- affiliate
+- metric
+type: term
 ---
 
 # Earnings per Click
@@ -79,3 +88,14 @@ If a rival offer in the same niche shows your EPC of $0.70, switch the links —
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Action]]
+- [[Term]]
+- [[Cost per Sale]]
+- [[Average Order Value]]
+- [[Cookie Duration]]
+
+%% ai-graph-end %%

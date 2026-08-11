@@ -1,10 +1,19 @@
 ---
-title: "gradlew requires xargs - minimal corretto images need findutils installed"
+ai_hash: 5e8fc87e9f0172da
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: lesson
+entities: []
+source: LEO CDP migration R6/G2 local, 2026-06-07
 status: seedling
-source: "LEO CDP migration R6/G2 local, 2026-06-07"
-tags: [gradle, docker, corretto, gotcha, al2023]
+tags:
+- gradle
+- docker
+- corretto
+- gotcha
+- al2023
+title: gradlew requires xargs - minimal corretto images need findutils installed
+type: lesson
 ---
 
 # gradlew requires xargs - minimal corretto images need findutils installed
@@ -14,3 +23,13 @@ The `gradlew` launcher script (Gradle 7+) ends by exec-ing java through `xargs` 
 ## Related
 
 - [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Give the gradlew distribution download its own retried Docker layer]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[gradlew committed from Windows loses the exec bit - fix with git update-index chmod]]
+- [[GitHub Actions runners pick JDK from inherited JAVA_HOME, not PATH]]
+
+%% ai-graph-end %%

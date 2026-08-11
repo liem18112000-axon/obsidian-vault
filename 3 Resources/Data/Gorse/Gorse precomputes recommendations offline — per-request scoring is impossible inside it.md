@@ -1,10 +1,18 @@
 ---
-title: "Gorse precomputes recommendations offline — per-request scoring is impossible inside it"
+ai_hash: 21c4d328790bf761
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: concept
+entities: []
+source: Deep research 2026-07-22 — gorse.io docs + gorse-io/gorse v0.5.11 source
 status: budding
-source: "Deep research 2026-07-22 — gorse.io docs + gorse-io/gorse v0.5.11 source"
-tags: [gorse, recommender-systems, architecture]
+tags:
+- gorse
+- recommender-systems
+- architecture
+title: Gorse precomputes recommendations offline — per-request scoring is impossible
+  inside it
+type: concept
 ---
 
 # Gorse precomputes recommendations offline — per-request scoring is impossible inside it
@@ -19,3 +27,14 @@ Code evidence: `worker/worker.go` (ticker loop calling `Recommend()`), `server/r
 
 - [[Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions]]
 - [[LEO Personalization Engine uses config-first Gorse plus a Python re-rank layer]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LEO Personalization Engine uses config-first Gorse plus a Python re-rank layer]]
+- [[Gorse v0.5 declares custom recommenders as named config blocks with Expr expressions]]
+- [[Gorse LLM reranker is a rerank-API integration, not chat completions]]
+- [[Gorse external recommenders run QuickJS scripts but can only return known item IDs]]
+- [[Gorse config exposes model family and cadence, never hyperparameters]]
+
+%% ai-graph-end %%

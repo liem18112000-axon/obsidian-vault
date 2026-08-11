@@ -1,10 +1,18 @@
 ---
-title: "luz-person is a Deployment not a StatefulSet in klara dev"
+ai_hash: ecca3a8305713a68
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-22
-type: observation
+entities: []
+source: session 2026-06-22
 status: seedling
-source: "session 2026-06-22"
-tags: [kubernetes, gke, luz-person, gotcha]
+tags:
+- kubernetes
+- gke
+- luz-person
+- gotcha
+title: luz-person is a Deployment not a StatefulSet in klara dev
+type: observation
 ---
 
 # luz-person is a Deployment not a StatefulSet in klara dev
@@ -18,3 +26,14 @@ See [[rollout-latest skill auto-detects StatefulSet vs Deployment]].
 ## Related
 
 - [[rollout-latest skill auto-detects StatefulSet vs Deployment]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[rollout-latest skill auto-detects StatefulSet vs Deployment]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[Luz performance env cluster topology]]
+
+%% ai-graph-end %%

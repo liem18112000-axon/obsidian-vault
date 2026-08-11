@@ -1,10 +1,19 @@
 ---
-title: "WSL relay processes squat common dev ports on Windows"
+ai_hash: 44ac0a0a1b0f0764
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: gotcha
+entities: []
+source: luz-docs test debugging, 2026-06-10
 status: seedling
-source: "luz-docs test debugging, 2026-06-10"
-tags: [wsl, windows, ports, arquillian, wildfly]
+tags:
+- wsl
+- windows
+- ports
+- arquillian
+- wildfly
+title: WSL relay processes squat common dev ports on Windows
+type: gotcha
 ---
 
 # WSL relay processes squat common dev ports on Windows
@@ -18,3 +27,11 @@ Related: [[Arquillian managed WildFly needs startupTimeoutInSeconds raised on sl
 ## Related
 
 - [[Arquillian managed WildFly needs startupTimeoutInSeconds raised on slow machines]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Arquillian managed WildFly needs startupTimeoutInSeconds raised on slow machines]]
+- [[Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Facebook reply-expander button label variants"
+ai_hash: 0490f79a269c7fee
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-21
-type: lesson
+entities: []
+source: session 2026-06-21
 status: seedling
-source: "session 2026-06-21"
-tags: [facebook, scraping, gotcha, regex, fb-info-project]
+tags:
+- facebook
+- scraping
+- gotcha
+- regex
+- fb-info-project
+title: Facebook reply-expander button label variants
+type: lesson
 ---
 
 # Facebook reply-expander button label variants
@@ -27,3 +36,14 @@ In `fb-info-project` this is `patterns.REPLY` + collector pass 2.
 ## Related
 
 - [[Facebook UID from a vanity handle via the mbasic lst token]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unanchored 'From' regex captures the profile name from Facebook's 'See more from' buttons]]
+- [[Facebook ships comment aria-labels in English even when the UI is Vietnamese]]
+- [[Facebook reply hierarchy lives in the article aria-label, not DOM nesting]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+- [[--max-expand caps comment batches not profile count; profile-visit phase dominates runtime]]
+
+%% ai-graph-end %%

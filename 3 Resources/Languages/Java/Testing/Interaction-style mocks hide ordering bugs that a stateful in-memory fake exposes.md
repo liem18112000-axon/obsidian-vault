@@ -1,10 +1,18 @@
 ---
-title: "Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes"
+ai_hash: 32777b981a9496b6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-04
-type: lesson
+entities: []
+source: session 2026-06-04, FolderServiceRecoverFolderTest
 status: seedling
-source: "session 2026-06-04, FolderServiceRecoverFolderTest"
-tags: [testing, mockito, fakes, ordering-bugs]
+tags:
+- testing
+- mockito
+- fakes
+- ordering-bugs
+title: Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes
+type: lesson
 ---
 
 # Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes
@@ -17,3 +25,14 @@ The fix at test level: back the mocks with a small **stateful in-memory fake** (
 
 ## Related
 - [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unit-testing FolderService recoverFolder requires per-collection stubs because process objects call back into the real service]]
+- [[A merged-in test breaks when the target branch's service gained a new injected dependency]]
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+- [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
+- [[Mockito helper that stubs must not run inside an outer when().thenReturn() argument]]
+
+%% ai-graph-end %%

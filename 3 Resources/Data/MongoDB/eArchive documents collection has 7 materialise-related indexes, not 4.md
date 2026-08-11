@@ -1,10 +1,18 @@
 ---
-title: "eArchive documents collection has 7 materialise-related indexes, not 4"
+ai_hash: 3799a473d3151ad8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-13
-type: observation
+entities: []
+source: eArchive ops session 2026-07-13, tenant 45b05710 performance env
 status: seedling
-source: "eArchive ops session 2026-07-13, tenant 45b05710 performance env"
-tags: [mongodb, luz-docs, earchive, indexes]
+tags:
+- mongodb
+- luz-docs
+- earchive
+- indexes
+title: eArchive documents collection has 7 materialise-related indexes, not 4
+type: observation
 ---
 
 # eArchive documents collection has 7 materialise-related indexes, not 4
@@ -27,3 +35,14 @@ So three extra shard-fanout compound indexes and one search-trigram index exist 
 ## Related
 
 - [[Luz eArchive tenant mongo database collection list]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz eArchive tenant mongo database collection list]]
+- [[eArchive load wall is the materialize security aggregate, not index coverage]]
+- [[Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+
+%% ai-graph-end %%

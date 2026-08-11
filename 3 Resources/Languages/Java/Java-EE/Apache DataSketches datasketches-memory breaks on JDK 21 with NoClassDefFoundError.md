@@ -1,10 +1,20 @@
 ---
-title: "Apache DataSketches datasketches-memory breaks on JDK 21 with NoClassDefFoundError"
+ai_hash: 644f7634da2be2a9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: luz_docs foldercount HLL implementation, 2026-07-09 — hit at runtime on JDK
+  21.0.9, fixed by hand-rolling HLL instead
 status: seedling
-source: "luz_docs foldercount HLL implementation, 2026-07-09 — hit at runtime on JDK 21.0.9, fixed by hand-rolling HLL instead"
-tags: [datasketches, hyperloglog, jdk-compatibility, gotcha, java]
+tags:
+- datasketches
+- hyperloglog
+- jdk-compatibility
+- gotcha
+- java
+title: Apache DataSketches datasketches-memory breaks on JDK 21 with NoClassDefFoundError
+type: lesson
 ---
 
 # Apache DataSketches datasketches-memory breaks on JDK 21 with NoClassDefFoundError
@@ -23,3 +33,11 @@ Practical takeaway: before depending on datasketches-java in a project, verify t
 - [[3 Resources/Data/Algorithms/HyperLogLog cardinality estimation mechanism (hash, register, streak-length)]]
 - [[luz_docs runs non-clustered WildFly pods]]
 - [[so pod-local sketch/counter state is broken]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs runs non-clustered WildFly pods, so pod-local sketchcounter state is broken]]
+- [[MicroProfile and WildFly have no HyperLogLog or cardinality-sketch utility]]
+
+%% ai-graph-end %%

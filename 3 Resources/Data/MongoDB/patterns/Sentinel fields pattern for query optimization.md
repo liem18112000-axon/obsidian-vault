@@ -1,9 +1,17 @@
 ---
-title: "Sentinel fields pattern for query optimization"
+ai_hash: 060faf7a2890dfda
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: pattern
+entities: []
 status: seedling
-tags: [denormalization, query-optimization, mongodb, materialize]
+tags:
+- denormalization
+- query-optimization
+- mongodb
+- materialize
+title: Sentinel fields pattern for query optimization
+type: pattern
 ---
 
 # Sentinel fields pattern for query optimization
@@ -24,3 +32,14 @@ eArchive materialize sentinels on `documents`:
 - [[Cascade marker pattern for bulk update resilience]]
 - [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[Materialize feature architecture]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[Cascade marker pattern for bulk update resilience]]
+- [[Parallel arrays in materialize sentinel preserve folderId order]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[Materialize gate must require _shard or parallelized count undercounts]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Map a DOM selection to plain-text offsets with a pre-range"
+ai_hash: 1fa1c392f52d5c54
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03, vinnstack PrdComments.tsx
 status: seedling
-source: "session 2026-07-03, vinnstack PrdComments.tsx"
-tags: [dom, selection, range, text-anchoring]
+tags:
+- dom
+- selection
+- range
+- text-anchoring
+title: Map a DOM selection to plain-text offsets with a pre-range
+type: howto
 ---
 
 # Map a DOM selection to plain-text offsets with a pre-range
@@ -19,3 +27,12 @@ Together these two mappings let you store text-quote anchors (position-independe
 
 - [[CSS Custom Highlight API paints text ranges without DOM mutation]]
 - [[TextQuoteSelector anchoring survives document regeneration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CSS Custom Highlight API paints text ranges without DOM mutation]]
+- [[TextQuoteSelector anchoring survives document regeneration]]
+- [[Whitespace-normalize with an index map to fuzzy-match yet return original offsets]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "JSON-driven Scenario Outline pattern for luz_docs materialize integration tests"
+ai_hash: fe11c051afba8202
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: howto
+entities: []
+source: session 2026-06-15
 status: seedling
-source: "session 2026-06-15"
-tags: [luz-docs, integration-test, materialize, behave]
+tags:
+- luz-docs
+- integration-test
+- materialize
+- behave
+title: JSON-driven Scenario Outline pattern for luz_docs materialize integration tests
+type: howto
 ---
 
 # JSON-driven Scenario Outline pattern for luz_docs materialize integration tests
@@ -27,3 +35,14 @@ Related: [[DocumentService.recoverDocument re-stamps materialized fields via the
 
 - [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]]
 - [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs IT $SCn security-class placeholders resolve against the token claim]]
+- [[DocumentService.recoverDocument re-stamps materialized fields via the cascade diff]]
+- [[Unit-testing FolderService recoverFolder requires per-collection stubs because process objects call back into the real service]]
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Same-repo branch push fires both push and pull_request events (duplicate CI runs)"
+ai_hash: 98fd30f8b1426751
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml 2026-06-06"
-tags: [github-actions, ci, pull-request, duplicate-runs, gotcha]
+tags:
+- github-actions
+- ci
+- pull-request
+- duplicate-runs
+- gotcha
+title: Same-repo branch push fires both push and pull_request events (duplicate CI
+  runs)
+type: lesson
 ---
 
 # Same-repo branch push fires both push and pull_request events (duplicate CI runs)
@@ -29,3 +39,14 @@ When a branch in the SAME repo has an open PR, pushing a commit fires **two** Gi
 
 - [[3 Resources/Infra/CI-CD/GitHub Actions/CI build Docker image on every run, push only on non-PR]]
 - [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[Gate Terraformdeploy CI to push-on-main, not pull_request (secrets fail PRs)]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+- [[GitHub Copilot code review is a native PR reviewer, not a workflow job]]
+
+%% ai-graph-end %%

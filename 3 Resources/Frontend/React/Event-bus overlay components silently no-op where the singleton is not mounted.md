@@ -1,10 +1,18 @@
 ---
-title: "Event-bus overlay components silently no-op where the singleton is not mounted"
+ai_hash: 196ef1149ddc1f62
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: session 2026-07-03, vinnstack Lightbox fix
 status: seedling
-source: "session 2026-07-03, vinnstack Lightbox fix"
-tags: [react, events, overlay, vinnstack]
+tags:
+- react
+- events
+- overlay
+- vinnstack
+title: Event-bus overlay components silently no-op where the singleton is not mounted
+type: lesson
 ---
 
 # Event-bus overlay components silently no-op where the singleton is not mounted
@@ -14,3 +22,11 @@ The "dispatch a CustomEvent, one mounted singleton renders it" overlay pattern (
 Rule: an event-bus overlay singleton belongs at the ROOT layout (app/layout.tsx body), mounted exactly once app-wide - never inside the feature that first needed it. Two mounts are also a bug (both react to the event -> stacked overlays), so move, don't copy.
 
 Symptom to recognize: "clicking X does nothing" for a control that demonstrably works elsewhere in the app.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Merge competing selection popovers into one toolbar via a target registry]]
+- [[Gesture-only features need an always-visible teacher - empty state must not hide the affordance]]
+
+%% ai-graph-end %%

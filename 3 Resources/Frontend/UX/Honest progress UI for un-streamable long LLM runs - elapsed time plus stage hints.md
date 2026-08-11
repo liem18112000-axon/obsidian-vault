@@ -1,10 +1,19 @@
 ---
-title: "Honest progress UI for un-streamable long LLM runs - elapsed time plus stage hints"
+ai_hash: 48f811a9fb9f86c1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: model
+entities: []
+source: session 2026-07-03, vinnstack CreatingEpicPanel
 status: seedling
-source: "session 2026-07-03, vinnstack CreatingEpicPanel"
-tags: [ux, loading, llm, react]
+tags:
+- ux
+- loading
+- llm
+- react
+title: Honest progress UI for un-streamable long LLM runs - elapsed time plus stage
+  hints
+type: model
 ---
 
 # Honest progress UI for un-streamable long LLM runs - elapsed time plus stage hints
@@ -21,3 +30,13 @@ Also reflect the pending item where it will eventually live (a spinner card in t
 ## Related
 
 - [[Acknowledgment checkboxes must reset every time their dialog reopens]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Client-side generation queue lets independent items run without blocking each other]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+- [[Measure infinite-scroll load-more by baseline count then poll until stable]]
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+
+%% ai-graph-end %%

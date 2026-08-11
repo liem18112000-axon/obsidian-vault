@@ -1,10 +1,23 @@
 ---
-title: "CDI self-invocation bypasses interceptor proxy"
+ai_hash: c48b7159ee1f3793
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-03
-type: gotcha
+entities: []
 status: seedling
-tags: [java, cdi, microprofile, microprofile-fault-tolerance, fault-tolerance, quarkus, spring, code-review, gotcha, luz-docs]
-entities: ["@Retry", "@Fallback", "@CircuitBreaker", "@Timeout", "@Transactional", "@CacheResult", "@Inject self", AopContext.currentProxy]
+tags:
+- java
+- cdi
+- microprofile
+- microprofile-fault-tolerance
+- fault-tolerance
+- quarkus
+- spring
+- code-review
+- gotcha
+- luz-docs
+title: CDI self-invocation bypasses interceptor proxy
+type: gotcha
 ---
 
 # CDI self-invocation bypasses interceptor proxy
@@ -48,3 +61,14 @@ Hit repeatedly in luz_docs: LUZ-154159 `MaterializeFolderParentChangeService.onF
 - [[MicroProfile Fault Tolerance]]
 - [[luz-docs materialize cascade]]
 - [[luz_docs materialize passive retry via cascade markers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Weld subclass-based interception makes self-invocation intercepted]]
+- [[MicroProfile Fallback is dead in plain Mockito unit tests]]
+- [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]
+- [[Snapshot for rollback must live outside retry boundary]]
+- [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
+
+%% ai-graph-end %%

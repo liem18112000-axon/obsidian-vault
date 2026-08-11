@@ -1,10 +1,45 @@
 ---
-title: "totalFolders needs a second aggregate because a $facet pipeline is bound to one collection"
+ai_hash: 9a09b75b9542899b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities:
+- totalFolders
+- $facet
+- luz_docs_statistic
+- documents collection
+- folders collection
+- averageFoldersPerDocument
+- $avg
+- $size
+- $ifNull
+- folderIds
+- $group
+- $sum
+- DocumentStatisticUtils.extractCount
+- MongoDBService.aggregate
+- EJB timer
+- PubSub
+- Kepler
+- Luz
+- tenant token
+- collection-parameterized overload
+- 3-arg method
+- per-tenant folder count
+- job
+- counts
+- non-being-created documents
+source: session 2026-06-11
 status: seedling
-source: "session 2026-06-11"
-tags: [luz, luz-docs-statistic, mongodb, aggregation, facet]
+tags:
+- luz
+- luz-docs-statistic
+- mongodb
+- aggregation
+- facet
+title: totalFolders needs a second aggregate because a $facet pipeline is bound to
+  one collection
+type: lesson
 ---
 
 # totalFolders needs a second aggregate because a $facet pipeline is bound to one collection
@@ -20,3 +55,45 @@ Related: [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stat
 ## Related
 
 - [[2 Areas/Kepler/Luz/luz-docs-statistic/luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs_statistic updates stats via 1-minute EJB timer over PubSub and $facet aggregation]]
+- [[luz_docs_statistic computes per-tenant unmaterializedDocuments count]]
+- [[luz_docs_statistic unmaterializedDocuments metric counts docs missing any materialize sentinel field]]
+- [[luz_docs_statistic two-token model service-tenant vs per-tenant cache token]]
+- [[Stale-materialized detection recomputes MaterializeCompute state via $lookup inside the statistic $facet]]
+
+**Relations:**
+- totalFolders — *needs* — second aggregate
+- $facet — *pipeline is bound to* — one collection
+- totalFolders — *added to* — luz_docs_statistic
+- totalFolders — *could not join* — documents $facet
+- $facet — *sub-pipelines run over* — same input collection
+- per-tenant folder count — *requires* — separate aggregate call
+- separate aggregate call — *against* — folders collection
+- job — *runs* — two aggregates per tenant
+- two aggregates — *use* — same cached tenant token
+- documents $facet — *calculates* — counts
+- documents $facet — *calculates* — averageFoldersPerDocument
+- averageFoldersPerDocument — *calculated via* — $avg
+- $avg — *of* — $size
+- $size — *of* — $ifNull(folderIds,[])
+- second aggregate — *is* — minimal $group on folders
+- minimal $group on folders — *uses* — $group
+- $group — *uses* — $sum
+- second aggregate — *extracted by* — DocumentStatisticUtils.extractCount
+- DocumentStatisticUtils.extractCount — *treats null result as* — 0
+- MongoDBService.aggregate — *previously hardcoded* — documents collection
+- MongoDBService.aggregate — *now has* — collection-parameterized overload
+- 3-arg method — *delegates to* — collection-parameterized overload
+- averageFoldersPerDocument — *averages over* — non-being-created documents
+- averageFoldersPerDocument — *counts* — missing folderIds as 0 folders
+- luz_docs_statistic — *updates stats via* — 1-minute EJB timer
+- luz_docs_statistic — *updates stats via* — PubSub
+- luz_docs_statistic — *updates stats via* — $facet aggregation
+- luz_docs_statistic — *is part of* — Kepler
+- luz_docs_statistic — *is part of* — Luz
+
+%% ai-graph-end %%

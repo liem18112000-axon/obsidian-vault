@@ -1,7 +1,17 @@
 ---
-title: Don't sed-mask a token in the same command that saves it — downstream reads the mask
-tags: [gotcha, shell, tokens, benchmarking, luz]
+ai_hash: 7a119c1f034d5e1b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-17
+entities: []
+tags:
+- gotcha
+- shell
+- tokens
+- benchmarking
+- luz
+title: Don't sed-mask a token in the same command that saves it — downstream reads
+  the mask
 type: resource
 ---
 
@@ -24,3 +34,14 @@ Separate **capture** from **display**:
 Undertow's plain `<html>…Unauthorized…</html>` 401 = rejected at the security filter (bad/short token), before JAX-RS. A later, valid token flipped the same endpoint to 503 (a real app/downstream condition) — proving auth was the earlier issue.
 
 Related: `luz-skill-get-token` needs an admin tenant id as 1st arg (e.g. `00a04daf-f2b3-41d5-8c12-2d1b4c48a36a`), type=all-tenant.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Deliver a CI-minted credential via a masked short-retention artifact, not the run log]]
+- [[jwt-service token path synchronously calls luztenant security-classes]]
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+- [[Klara app API-key to token exchange flow (jwt-service to luztenant-service)]]
+
+%% ai-graph-end %%

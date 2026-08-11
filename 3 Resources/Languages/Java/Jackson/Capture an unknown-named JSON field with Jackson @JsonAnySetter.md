@@ -1,10 +1,19 @@
 ---
-title: "Capture an unknown-named JSON field with Jackson @JsonAnySetter"
+ai_hash: 8d9a204e070a2042
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-29
-type: lesson
+entities: []
+source: session 2026-07-29 luz_online_payment LUZ-157476
 status: seedling
-source: "session 2026-07-29 luz_online_payment LUZ-157476"
-tags: [java, jackson, lombok, deserialization, gotcha]
+tags:
+- java
+- jackson
+- lombok
+- deserialization
+- gotcha
+title: Capture an unknown-named JSON field with Jackson @JsonAnySetter
+type: lesson
 ---
 
 # Capture an unknown-named JSON field with Jackson @JsonAnySetter
@@ -20,3 +29,14 @@ See [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-pa
 ## Related
 
 - [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off]]
+- [[Add response fields tolerant-reader-first when producer and consumer deploy separately]]
+- [[DeclineCodes resolver misses nested metadata.decline_code]]
+- [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
+- [[TransactionStatus.from returns null on unknown Payrexx status causing silent NotNull 400]]
+
+%% ai-graph-end %%

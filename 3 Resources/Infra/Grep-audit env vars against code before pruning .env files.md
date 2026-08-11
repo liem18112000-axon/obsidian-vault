@@ -1,10 +1,19 @@
 ---
-title: "Grep-audit env vars against code before pruning .env files"
+ai_hash: 376ba24ee995f310
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03, appsflyer-data-connector
 status: seedling
-source: "session 2026-07-03, appsflyer-data-connector"
-tags: [dotenv, env-vars, technique, audit, docker-compose]
+tags:
+- dotenv
+- env-vars
+- technique
+- audit
+- docker-compose
+title: Grep-audit env vars against code before pruning .env files
+type: howto
 ---
 
 # Grep-audit env vars against code before pruning .env files
@@ -24,3 +33,14 @@ Related: keep comments on their own lines in `.env` — inline `# ...` after a v
 
 
 Also prune vars that merely **restate the code default** (e.g. `FOO_STORE=local` when the code does `os.environ.get("FOO_STORE", "local")`) — they add noise and drift risk. Keep them only as commented flip-hints (`# FOO_STORE=s3`).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Module-level load_dotenv lets unit tests hit real cloud credentials]]
+- [[MinIO server creds (ROOT_USERPASSWORD) are distinct env vars from the S3 client creds (ACCESS_KEYSECRET_KEY)]]
+- [[AppsFlyer connector S3 config is vStorage-only - VSTORAGE_ env vars]]
+- [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
+- [[Airflow env-var Variables backend uppercases the key (AIRFLOW_VAR_KEY)]]
+
+%% ai-graph-end %%

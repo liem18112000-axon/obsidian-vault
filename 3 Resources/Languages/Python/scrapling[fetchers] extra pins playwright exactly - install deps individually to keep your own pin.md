@@ -1,10 +1,21 @@
 ---
-title: "scrapling[fetchers] extra pins playwright exactly - install deps individually to keep your own pin"
+ai_hash: 05c676e6125dc1b2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: session 2026-06-05
 status: seedling
-source: "session 2026-06-05"
-tags: [python, pip, scrapling, playwright, gotcha, fb-info-project]
+tags:
+- python
+- pip
+- scrapling
+- playwright
+- gotcha
+- fb-info-project
+title: scrapling[fetchers] extra pins playwright exactly - install deps individually
+  to keep your own pin
+type: lesson
 ---
 
 # scrapling[fetchers] extra pins playwright exactly - install deps individually to keep your own pin
@@ -28,3 +39,13 @@ md = metadata('scrapling'); md.get_all('Provides-Extra'); md.get_all('Requires-D
 ## Related
 
 - [[fb-info-project duplicates FB-fragile selectors across get_locations.py and scrapling_test.py]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[fb-info-project duplicates FB-fragile selectors across get_locations.py and scrapling_test.py]]
+- [[PyInstaller needs collect_all for packages that ship non-Python payloads]]
+- [[Scrapling AsyncDynamicSession reuses one browser with a max_pages tab pool for concurrent fetching]]
+- [[scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile]]
+
+%% ai-graph-end %%

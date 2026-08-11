@@ -1,10 +1,20 @@
 ---
-title: "Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER"
+ai_hash: 4cf83c9b813485aa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-19
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-19
 status: seedling
-source: "Vinnstack session 2026-07-19"
-tags: [concurrency, postgres, migration, vinnstack, store-pattern]
+tags:
+- concurrency
+- postgres
+- migration
+- vinnstack
+- store-pattern
+title: Per-key write lock for parallel aggregate writes; self-migrating column via
+  idempotent ALTER
+type: lesson
 ---
 
 # Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER
@@ -16,3 +26,14 @@ Two store patterns from adding parallel process-flow generation + a new column t
 **2. Self-migrating column.** Vinnstack applies db/schema.sql only via manual migrate scripts, so adding a column to a live DB normally needs an ops step. To avoid that: a memoized `ensureSchemaExtensions()` in the store runs `ALTER TABLE ... ADD COLUMN IF NOT EXISTS ...` once per process (idempotent), awaited at the top of getInterrogation/saveInterrogation. The column also goes in schema.sql (CREATE TABLE + the same idempotent ALTER) for fresh DBs. Net: an existing DB gains the column on first access, no separate migration run.
 
 Related: [[2 Areas/Vinnstack/Vinnstack release push to main triggers Cloud Build which publishes to GCS latest auto-update channel]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+- [[Async-enriched columns need a lazy backfill for pre-feature rows]]
+- [[Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)]]
+- [[Vinnstack story flows keep only the latest version - history lives in md_exports snapshots]]
+
+%% ai-graph-end %%

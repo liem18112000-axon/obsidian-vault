@@ -1,10 +1,20 @@
 ---
-title: "Facebook shows a See more on Facebook login dialog when the session is logged out"
+ai_hash: 039ca814b52033ef
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: fb-info-project session 2026-06-06
 status: seedling
-source: "fb-info-project session 2026-06-06"
-tags: [facebook, scraping, playwright, gotcha, fb-info-project]
+tags:
+- facebook
+- scraping
+- playwright
+- gotcha
+- fb-info-project
+title: Facebook shows a See more on Facebook login dialog when the session is logged
+  out
+type: lesson
 ---
 
 # Facebook shows a See more on Facebook login dialog when the session is logged out
@@ -24,3 +34,14 @@ When a Facebook scraping session is logged out or its saved cookies have expired
 
 - [[Facebook reel comments are hidden behind the comment icon]]
 - [[Scroll Facebook reel comments via JS, never mouse.wheel]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook reel comments are hidden behind the comment icon]]
+- [[Stale FB session signature login popup + profile 302 to login + empty location columns]]
+- [[Distinguish absent control from missed click when expanding lazy lists]]
+- [[Scroll Facebook reel comments via JS, never mouse.wheel]]
+- [[Facebook post permalinks render the post twice — dialog plus a hidden page copy]]
+
+%% ai-graph-end %%

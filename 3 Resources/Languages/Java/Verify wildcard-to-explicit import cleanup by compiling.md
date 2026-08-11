@@ -1,10 +1,18 @@
 ---
-title: "Verify wildcard-to-explicit import cleanup by compiling"
+ai_hash: ca8f40612f0ca87f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: session 2026-06-11
 status: seedling
-source: "session 2026-06-11"
-tags: [java, imports, gotcha, luz-docs]
+tags:
+- java
+- imports
+- gotcha
+- luz-docs
+title: Verify wildcard-to-explicit import cleanup by compiling
+type: lesson
 ---
 
 # Verify wildcard-to-explicit import cleanup by compiling
@@ -18,3 +26,14 @@ Rule: after any import rewrite, compile before moving on; grep the file body for
 ## Related
 
 - [[Scrambled Java source shows as illegal-start-of-type errors mid-class]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Scrambled Java source shows as illegal-start-of-type errors mid-class]]
+- [[Lombok one bad symbol cascades into hundreds of phantom missing-method errors]]
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[luz_docs parent-change cascade recovers forward, not via snapshot rollback]]
+- [[Run mvn test-compile after changing a recordctor signature — Cloud Build compiles tests, local mvn compile does not]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard"
+ai_hash: dc1a77a0f5451050
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-18
 status: seedling
-source: "Vinnstack session 2026-07-18"
-tags: [claude-cli, prompt-injection, vinnstack, streaming, gotcha]
+tags:
+- claude-cli
+- prompt-injection
+- vinnstack
+- streaming
+- gotcha
+title: Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI
+  transforms with delimiters + data-guard
+type: lesson
 ---
 
 # Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard
@@ -24,3 +34,14 @@ Related: [[runClaude onChunk streams stream-json; forward as NDJSON and read wit
 ## Related
 
 - [[runClaude onChunk streams stream-json; forward as NDJSON and read with getReader]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[runClaude onChunk streams stream-json; forward as NDJSON and read with getReader]]
+- [[A globally-bootstrapped MCP server loads into every headless claude spawn]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Vinnstack per-request claude CLI spawn has a ~12s cold-start floor, model-independent]]
+
+%% ai-graph-end %%

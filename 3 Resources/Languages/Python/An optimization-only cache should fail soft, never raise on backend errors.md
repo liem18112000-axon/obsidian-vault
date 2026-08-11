@@ -1,10 +1,20 @@
 ---
-title: "An optimization-only cache should fail soft, never raise on backend errors"
+ai_hash: 39f3e7ca8c290621
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: session 2026-06-14, accesstrade_integration RedisLinkCache
 status: seedling
-source: "session 2026-06-14, accesstrade_integration RedisLinkCache"
-tags: [caching, redis, resilience, protocol, optional-dependency, python]
+tags:
+- caching
+- redis
+- resilience
+- protocol
+- optional-dependency
+- python
+title: An optimization-only cache should fail soft, never raise on backend errors
+type: lesson
 ---
 
 # An optimization-only cache should fail soft, never raise on backend errors
@@ -31,3 +41,14 @@ Supporting patterns that made it clean:
 - **Test with an injected fake client** (a tiny object with get/set) — no real server, no fakeredis dep; add one `_BrokenRedis` that raises to prove fail-soft.
 
 Relates to [[Idempotent link minting with content-hash cache keys]] and [[Docker hostname for reaching a service depends on where the caller runs]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Guard tests that need an optional dependency with pytest.importorskip]]
+- [[Cache only successful results so failures retry on resume]]
+- [[Idempotent link minting with content-hash cache keys]]
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "CDI decorators and interceptors never fire on MicroProfile REST client proxies"
+ai_hash: 828d35fdbc1ef33e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: lesson
+entities: []
+source: session 2026-06-05 luz_docs change-tracking design
 status: seedling
-source: "session 2026-06-05 luz_docs change-tracking design"
-tags: [cdi, microprofile, rest-client, gotcha, luz-docs]
+tags:
+- cdi
+- microprofile
+- rest-client
+- gotcha
+- luz-docs
+title: CDI decorators and interceptors never fire on MicroProfile REST client proxies
+type: lesson
 ---
 
 # CDI decorators and interceptors never fire on MicroProfile REST client proxies
@@ -19,3 +28,14 @@ Related gotcha when building that wrapper: [[Implementing a @Path-annotated inte
 
 - [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
 - [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass]]
+- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[Context-propagating fireAsync before the resource method wipes JAX-RS @Context proxies (RESTEASY003880)]]
+
+%% ai-graph-end %%

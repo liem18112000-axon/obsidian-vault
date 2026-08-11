@@ -1,10 +1,17 @@
 ---
-title: "Gorse gotcha - CF and hyperparameter search are disabled by code defaults"
+ai_hash: b7872c3b67798063
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: lesson
+entities: []
+source: Deep research 2026-07-22 — gorse.io docs vs gorse-io/gorse v0.5.11 code
 status: budding
-source: "Deep research 2026-07-22 — gorse.io docs vs gorse-io/gorse v0.5.11 code"
-tags: [gorse, gotcha, config]
+tags:
+- gorse
+- gotcha
+- config
+title: Gorse gotcha - CF and hyperparameter search are disabled by code defaults
+type: lesson
 ---
 
 # Gorse gotcha - CF and hyperparameter search are disabled by code defaults
@@ -21,3 +28,14 @@ Lesson: set all three explicitly, and treat the shipped `config.toml` template a
 
 - [[3 Resources/Data/Gorse/Gorse config exposes model family and cadence, never hyperparameters]]
 - [[Gorse v0.4 docs describe a defunct config schema — trust the shipped config.toml template]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Gorse v0.4 docs describe a defunct config schema — trust the shipped config.toml template]]
+- [[Gorse config exposes model family and cadence, never hyperparameters]]
+- [[Gorse precomputes recommendations offline — per-request scoring is impossible inside it]]
+- [[LEO Personalization Engine uses config-first Gorse plus a Python re-rank layer]]
+- [[Gorse LLM reranker is a rerank-API integration, not chat completions]]
+
+%% ai-graph-end %%

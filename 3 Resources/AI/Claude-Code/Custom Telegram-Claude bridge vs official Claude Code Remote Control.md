@@ -1,10 +1,18 @@
 ---
-title: "Custom Telegram-Claude bridge vs official Claude Code Remote Control"
+ai_hash: 9c52491a1ea2c9b6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: concept
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [claude-code, telegram, remote-control, reference]
+tags:
+- claude-code
+- telegram
+- remote-control
+- reference
+title: Custom Telegram-Claude bridge vs official Claude Code Remote Control
+type: concept
 ---
 
 # Custom Telegram-Claude bridge vs official Claude Code Remote Control
@@ -28,3 +36,14 @@ Reference points: official docs `code.claude.com/docs/en/remote-control`; commun
 
 - [[Remote permission approval via a blocking PreToolUse hook]]
 - [[3 Resources/AI/Claude-Code/Windows claude subprocess is a process tree — taskkill T to reap it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code official remote-control surfaces (web, Remote Control, Dispatch)]]
+- [[Remote permission approval via a blocking PreToolUse hook]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Windows claude subprocess is a process tree — taskkill T to reap it]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+
+%% ai-graph-end %%

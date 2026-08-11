@@ -1,18 +1,22 @@
 ---
-title: Avoiding edge-through-node overlaps in Obsidian Canvas
-created: 2026-06-11
-type: lesson
-status: seedling
-source: session 2026-06-11
-tags:
-  - obsidian
-  - canvas
-  - json-canvas
-  - layout
-  - gotcha
+ai_hash: f423b0780dc88f28
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Canvas edge overlap
-  - Canvas pierces node
+- Canvas edge overlap
+- Canvas pierces node
+created: 2026-06-11
+entities: []
+source: session 2026-06-11
+status: seedling
+tags:
+- obsidian
+- canvas
+- json-canvas
+- layout
+- gotcha
+title: Avoiding edge-through-node overlaps in Obsidian Canvas
+type: lesson
 ---
 
 # Avoiding edge-through-node overlaps in Obsidian Canvas
@@ -35,3 +39,11 @@ aliases:
 
 - [[Centering an embedded image in Obsidian]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Centering an embedded image in Obsidian]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+
+%% ai-graph-end %%

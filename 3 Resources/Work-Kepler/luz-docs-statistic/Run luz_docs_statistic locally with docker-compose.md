@@ -1,10 +1,18 @@
 ---
-title: "Run luz_docs_statistic locally with docker-compose"
+ai_hash: 67c4b6c32d0109e9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: howto
+entities: []
+source: session 2026-06-11
 status: seedling
-source: "session 2026-06-11"
-tags: [luz-docs-statistic, docker-compose, local-dev, wildfly]
+tags:
+- luz-docs-statistic
+- docker-compose
+- local-dev
+- wildfly
+title: Run luz_docs_statistic locally with docker-compose
+type: howto
 ---
 
 # Run luz_docs_statistic locally with docker-compose
@@ -21,3 +29,14 @@ Smoke test (no auth needed): `GET http://localhost:8199/luz_docs_statistic/api/v
 
 ## Related
 - [[Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990]]
+- [[luz_online_payment local Docker run pattern (WildFly WAR + GAR base + local Postgres)]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[luz-docs performance JVM thread metrics endpoint]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+
+%% ai-graph-end %%

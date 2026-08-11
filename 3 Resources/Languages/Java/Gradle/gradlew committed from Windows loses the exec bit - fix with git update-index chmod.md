@@ -1,10 +1,21 @@
 ---
-title: "gradlew committed from Windows loses the exec bit - fix with git update-index chmod"
+ai_hash: a7663ab3cdd71401
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: lesson
+entities: []
+source: LEO CDP CI failure diagnosis, 2026-06-07
 status: seedling
-source: "LEO CDP CI failure diagnosis, 2026-06-07"
-tags: [git, gradle, windows, ci, docker, gotcha]
+tags:
+- git
+- gradle
+- windows
+- ci
+- docker
+- gotcha
+title: gradlew committed from Windows loses the exec bit - fix with git update-index
+  chmod
+type: lesson
 ---
 
 # gradlew committed from Windows loses the exec bit - fix with git update-index chmod
@@ -14,3 +25,12 @@ Committing a Gradle wrapper from Windows records `gradlew` as git mode **100644*
 ## Related
 
 - [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+- [[Give the gradlew distribution download its own retried Docker layer]]
+- [[gradlew requires xargs - minimal corretto images need findutils installed]]
+
+%% ai-graph-end %%

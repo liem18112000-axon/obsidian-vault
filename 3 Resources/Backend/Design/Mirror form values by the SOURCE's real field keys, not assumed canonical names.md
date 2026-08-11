@@ -1,10 +1,18 @@
 ---
-title: "Mirror form values by the SOURCE's real field keys, not assumed canonical names"
+ai_hash: b006d05143cc41cc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: gotcha
+entities: []
+source: session 2026-07-04, vinnstack credential mirror
 status: seedling
-source: "session 2026-07-04, vinnstack credential mirror"
-tags: [forms, mapping, silent-bug, vinnstack]
+tags:
+- forms
+- mapping
+- silent-bug
+- vinnstack
+title: Mirror form values by the SOURCE's real field keys, not assumed canonical names
+type: gotcha
 ---
 
 # Mirror form values by the SOURCE's real field keys, not assumed canonical names
@@ -16,3 +24,14 @@ Fix: branch the mapping on the source identity (`provider === "atlassian" ? {jir
 ## Related
 
 - [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Secondary-write failures should fail loud when their silent version was the actual bug]]
+- [[Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected]]
+- [[Keep audit updatedBy a role token, not a user identity, when it feeds commit messages or mirrors]]
+- [[Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Run OpenRewrite via Gradle init script without touching build.gradle"
+ai_hash: c8cc42d6d37bb4a2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-07
-type: howto
+entities: []
+source: LEO CDP Wave 1, 2026-06-07
 status: seedling
-source: "LEO CDP Wave 1, 2026-06-07"
-tags: [openrewrite, gradle, init-script, migration, technique]
+tags:
+- openrewrite
+- gradle
+- init-script
+- migration
+- technique
+title: Run OpenRewrite via Gradle init script without touching build.gradle
+type: howto
 ---
 
 # Run OpenRewrite via Gradle init script without touching build.gradle
@@ -28,3 +37,14 @@ Then: `./gradlew --init-script rewrite-init.gradle rewriteDryRun` -> reviewable 
 ## Related
 
 - [[3 Resources/Languages/Java/Gradle/Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Curate OpenRewrite UpgradeToJava25 - composite includes instance-main and wrapper bumps]]
+- [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+- [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+
+%% ai-graph-end %%

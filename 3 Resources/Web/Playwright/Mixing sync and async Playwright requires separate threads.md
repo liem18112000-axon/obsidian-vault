@@ -1,10 +1,18 @@
 ---
-title: "Mixing sync and async Playwright requires separate threads"
+ai_hash: da6dae1a7dcece52
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-15
-type: lesson
+entities: []
+source: fb-info-project Phase 3, 2026-06-15
 status: seedling
-source: "fb-info-project Phase 3, 2026-06-15"
-tags: [playwright, asyncio, threading, gotcha]
+tags:
+- playwright
+- asyncio
+- threading
+- gotcha
+title: Mixing sync and async Playwright requires separate threads
+type: lesson
 ---
 
 # Mixing sync and async Playwright requires separate threads
@@ -24,3 +32,14 @@ Each launches its own browser process, so two Chromes are alive at once (more RA
 
 - [[3 Resources/Practices/Software Design/Producerconsumer overlap only saves min(producer, consumer) time]]
 - [[Use Playwright evaluate_all to batch-read element properties in one round-trip]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Scrapling AsyncDynamicSession reuses one browser with a max_pages tab pool for concurrent fetching]]
+- [[Producerconsumer overlap only saves min(producer, consumer) time]]
+- [[scrapling goto waits for load event + retries=3; on FB SPA that means ~90s per dead profile]]
+- [[Snapshot a shared dict on the event-loop thread before asyncio.to_thread]]
+- [[Playwright multi-trial trace merging via tracing chunks]]
+
+%% ai-graph-end %%

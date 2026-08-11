@@ -1,10 +1,18 @@
 ---
-title: "luz-docs facet $unwind branch keys off client-supplied type:array, not schema"
+ai_hash: c179a3595a038dc7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: gotcha
+entities: []
+source: session 2026-07-14 folderIds-facet investigation
 status: seedling
-source: "session 2026-07-14 folderIds-facet investigation"
-tags: [luz-docs, mongodb, facet, gotcha]
+tags:
+- luz-docs
+- mongodb
+- facet
+- gotcha
+title: luz-docs facet $unwind branch keys off client-supplied type:array, not schema
+type: gotcha
 ---
 
 # luz-docs facet $unwind branch keys off client-supplied type:array, not schema
@@ -23,3 +31,14 @@ Lesson: caller-declared field type is load-bearing and untrusted here. A robust 
 ## Related
 
 - [[luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs folderIds facet 500 is a Mongo $group memory-limit abort (error 292)]]
+- [[Mongo $group is blocking so time-to-error is scan-bound, not timeout-bound]]
+- [[Canary tenant eArchive folder list trips Mongo code 292 sort-memory-limit]]
+- [[Real luz_docsluz_jsonstore source lives under Kepler, not epost_knowledge_base]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+
+%% ai-graph-end %%

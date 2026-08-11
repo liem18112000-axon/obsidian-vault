@@ -1,10 +1,18 @@
 ---
-title: "Decouple runtime JDK from bytecode target when migrating Java versions"
+ai_hash: ba9a0b926757d698
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: model
+entities: []
+source: LEO CDP migration planning, session 2026-06-06
 status: seedling
-source: "LEO CDP migration planning, session 2026-06-06"
-tags: [java, migration, rollback, strategy]
+tags:
+- java
+- migration
+- rollback
+- strategy
+title: Decouple runtime JDK from bytecode target when migrating Java versions
+type: model
 ---
 
 # Decouple runtime JDK from bytecode target when migrating Java versions
@@ -22,3 +30,14 @@ Forward class-file compatibility makes this work: ancient vendored jars (major 5
 
 - [[3 Resources/Languages/Java/Gradle/Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
 - [[Netty 4.1 on JDK 24+ needs --sun-misc-unsafe-memory-access=allow]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0]]
+- [[Netty 4.1 on JDK 24+ needs --sun-misc-unsafe-memory-access=allow]]
+- [[Raising bytecode target to 25 on same JVM swept k6 rounds - free-to-positive]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[Use JDK_JAVA_OPTIONS for JVM flags in container images]]
+
+%% ai-graph-end %%

@@ -1,11 +1,20 @@
 ---
-title: "Mermaid Flowchart - Multi-word Labels and Decision Branches"
+ai_hash: cc8acaf757c2338d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-updated: 2026-07-31
-type: howto
+entities: []
+source: session 2026-07-08
 status: seedling
-source: "session 2026-07-08"
-tags: [mermaid, diagram, diagrams, flowchart, syntax]
+tags:
+- mermaid
+- diagram
+- diagrams
+- flowchart
+- syntax
+title: Mermaid Flowchart - Multi-word Labels and Decision Branches
+type: howto
+updated: 2026-07-31
 ---
 
 # Mermaid Flowchart - Multi-word Labels and Decision Branches
@@ -39,3 +48,12 @@ flowchart TD
     D --> B
     F --> G
 ```
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LLM-generated mermaid sequenceDiagrams die on semicolons and reserved-word aliases]]
+- [[Mermaid text clipping causes useMaxWidth shrink, narrow wrappingWidth, and web-font race]]
+- [[Mermaid's global htmlLabels option overrides the deprecated per-diagram-type ones]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected"
+ai_hash: 6d4922108cda4ed9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: gotcha
+entities: []
+source: session 2026-07-04, vinnstack account_credentials empty
 status: seedling
-source: "session 2026-07-04, vinnstack account_credentials empty"
-tags: [persistence, seeding, ux, vinnstack]
+tags:
+- persistence
+- seeding
+- ux
+- vinnstack
+title: Seed-in-memory-but-persist-on-save leaves no row when a prior layer already
+  shows connected
+type: gotcha
 ---
 
 # Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected
@@ -18,3 +27,14 @@ Fix: on first read with no row, if the fallback layer has real data, PERSIST the
 ## Related
 
 - [[3 Resources/Backend/Design/Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+- [[Secondary-write failures should fail loud when their silent version was the actual bug]]
+- [[Per-account credential store should only hold per-identity secrets]]
+- [[Separate read-check from create in a first-run onboarding gate]]
+- [[Decouple internal PK from external ticket ID for draft-before-push records]]
+
+%% ai-graph-end %%

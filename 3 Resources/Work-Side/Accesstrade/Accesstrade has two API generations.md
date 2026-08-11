@@ -1,17 +1,21 @@
 ---
-title: Accesstrade has two API generations
-created: 2026-06-11
-type: concept
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - gotcha
+ai_hash: a1083b03259307f0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade classic vs OBS API
-  - Accesstrade API versions
+- Accesstrade classic vs OBS API
+- Accesstrade API versions
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- gotcha
+title: Accesstrade has two API generations
+type: concept
 ---
 
 # Accesstrade has two API generations
@@ -44,3 +48,14 @@ Pick **one** generation per integration and don't mix paths. When you read a cod
 - [[Accesstrade Campaigns API]]
 - [[Accesstrade API rate limits and pagination]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade Publisher API authentication]]
+- [[Accesstrade API Integration - MOC]]
+- [[Wrap a two-generation API as one shared transport plus one client per generation]]
+- [[Accesstrade conversion and transaction reporting]]
+- [[Accesstrade Creative APIs]]
+
+%% ai-graph-end %%

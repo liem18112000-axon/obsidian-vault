@@ -1,10 +1,23 @@
 ---
-title: "Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON"
+ai_hash: bf560f59ef18b979
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: sessions 2026-06-01 / 2026-06-02 (obsidian-capture tuning, hook claim-file
+  testing)
 status: seedling
-source: "sessions 2026-06-01 / 2026-06-02 (obsidian-capture tuning, hook claim-file testing)"
-tags: [powershell, bash, windows, json, claude-code, hooks, testing, gotcha]
+tags:
+- powershell
+- bash
+- windows
+- json
+- claude-code
+- hooks
+- testing
+- gotcha
+title: Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON
+type: lesson
 ---
 
 # Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON
@@ -25,3 +38,14 @@ Adjacent Windows constraints: PowerShell 5.1 also needs pure-ASCII `.ps1` files 
 
 - [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
 - [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Cooperating PostToolUse hooks via a shared per-event SHA1 claim file]]
+- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]
+- [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
+
+%% ai-graph-end %%

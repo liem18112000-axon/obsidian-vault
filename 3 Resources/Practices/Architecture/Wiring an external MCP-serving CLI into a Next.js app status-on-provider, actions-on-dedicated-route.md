@@ -1,10 +1,21 @@
 ---
-title: "Wiring an external MCP-serving CLI into a Next.js app: status-on-provider, actions-on-dedicated-route"
+ai_hash: 79aa273576d3223d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: lesson
+entities: []
+source: session 2026-07-14
 status: seedling
-source: "session 2026-07-14"
-tags: [architecture, mcp, nextjs, integration, polaris, vinnstack]
+tags:
+- architecture
+- mcp
+- nextjs
+- integration
+- polaris
+- vinnstack
+title: 'Wiring an external MCP-serving CLI into a Next.js app: status-on-provider,
+  actions-on-dedicated-route'
+type: lesson
 ---
 
 # Wiring an external MCP-serving CLI into a Next.js app: status-on-provider, actions-on-dedicated-route
@@ -23,3 +34,14 @@ Why: keeps the integration additive and reversible, avoids a second parallel sta
 
 - [[Vinnstack Polaris integration is three passive touchpoints]]
 - [[3 Resources/Work-Side/Polaris/Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+- [[Verify-after-mutate re-probe external state before reporting a CLI toggle succeeded]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
+- [[Polaris 3003 MCP server is persistent — TCP probe not equal to polaris tunnel state]]
+- [[Polaris 0.2.0 serves agentsskillsrules over an MCP tunnel]]
+
+%% ai-graph-end %%

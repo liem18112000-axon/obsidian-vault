@@ -1,10 +1,21 @@
 ---
-title: "Trigram index makes substring search indexable: filter by 3-grams, then verify by regex"
+ai_hash: 15ba69a3065b10b6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-28
-type: lesson
+entities: []
+source: session 2026-06-28 fulltext-ngram deck
 status: seedling
-source: "session 2026-06-28 fulltext-ngram deck"
-tags: [search, mongodb, trigram, ngram, indexing, luz-docs]
+tags:
+- search
+- mongodb
+- trigram
+- ngram
+- indexing
+- luz-docs
+title: 'Trigram index makes substring search indexable: filter by 3-grams, then verify
+  by regex'
+type: lesson
 ---
 
 # Trigram index makes substring search indexable: filter by 3-grams, then verify by regex
@@ -24,3 +35,14 @@ Net: COLLSCAN → index seek + cheap residual verify. Tens–low-hundreds of ms 
 - Same idea as PostgreSQL `pg_trgm` / Atlas Search nGram, hand-rolled on a plain multikey index — stays inside MongoDB, no external search engine.
 
 Related: [[Random shard key gives balanced fan-out partitions (equal-width = equal-work only if uniform)]] (same luz-docs search/perf work).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs ngram search shipped code indexes the OCR body and prefilters fail-open]]
+- [[ngram trigram prefilter reads the built mongo query, not the raw payload]]
+- [[Bounded bucketed hashing caps trigram index entries per document]]
+- [[Trigram prefilter must be field-aware only activate when every contains-regex is a _searchTrigrams field]]
+- [[Larger n-grams make a substring ngram index bigger, not smaller]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Animated background under backdrop-blur forces per-frame re-blur, tanking Electron apps with GPU disabled"
+ai_hash: 30059327d0f80bf8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-18
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-18
 status: seedling
-source: "Vinnstack session 2026-07-18"
-tags: [electron, performance, backdrop-blur, rendering, gpu, vinnstack]
+tags:
+- electron
+- performance
+- backdrop-blur
+- rendering
+- gpu
+- vinnstack
+title: Animated background under backdrop-blur forces per-frame re-blur, tanking Electron
+  apps with GPU disabled
+type: lesson
 ---
 
 # Animated background under backdrop-blur forces per-frame re-blur, tanking Electron apps with GPU disabled
@@ -22,3 +33,10 @@ Related: [[Packaged Electron+Next.js API routes must not use process.cwd() for b
 ## Related
 
 - [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Electron GPU process launch failure is fatal; disable hardware acceleration to avoid it]]
+
+%% ai-graph-end %%

@@ -1,19 +1,23 @@
 ---
-title: Accesstrade Creative APIs
-created: 2026-06-11
-type: term
-status: seedling
-source: research session 2026-06-11
-tags:
-  - affiliate
-  - accesstrade
-  - api
-  - creatives
-  - obs
+ai_hash: 6b9a86388ae37c87
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Accesstrade creatives
-  - Accesstrade quicklink
-  - Accesstrade custom creative
+- Accesstrade creatives
+- Accesstrade quicklink
+- Accesstrade custom creative
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- affiliate
+- accesstrade
+- api
+- creatives
+- obs
+title: Accesstrade Creative APIs
+type: term
 ---
 
 # Accesstrade Creative APIs
@@ -53,3 +57,14 @@ On the classic `.vn` API you mint links directly with [[Accesstrade tracking lin
 - [[Accesstrade has two API generations]]
 - [[Affiliate compliance and link hygiene]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Accesstrade tracking link creation]]
+- [[Accesstrade API Integration - MOC]]
+- [[Accesstrade has two API generations]]
+- [[Accesstrade Campaigns API]]
+- [[Affiliate compliance and link hygiene]]
+
+%% ai-graph-end %%

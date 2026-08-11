@@ -1,10 +1,17 @@
 ---
-title: "Operator-only config can be externalized to a data file with no client rebuild"
+ai_hash: 8d143dc6c00be3c7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: concept
+entities: []
+source: session 2026-07-04 fb-info-project tiers.json
 status: seedling
-source: "session 2026-07-04 fb-info-project tiers.json"
-tags: [design, configuration, licensing]
+tags:
+- design
+- configuration
+- licensing
+title: Operator-only config can be externalized to a data file with no client rebuild
+type: concept
 ---
 
 # Operator-only config can be externalized to a data file with no client rebuild
@@ -16,3 +23,14 @@ The test for "is this safe to externalize?": does the value cross the interface 
 Caveat: a parallel hardcoded list elsewhere does not auto-follow the file - here the GitHub `workflow_dispatch` tier dropdown is a separate literal that still needs a manual edit when a tier is added.
 
 Related: [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+- [[Offline signed-token licensing for distributed binaries]]
+- [[fb-info-project CI and build workflow split]]
+- [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+- [[Offline licensing expiry is strong, usage counters only best-effort]]
+
+%% ai-graph-end %%

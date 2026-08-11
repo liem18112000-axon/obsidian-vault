@@ -1,10 +1,18 @@
 ---
-title: "CSS Custom Highlight API paints text ranges without DOM mutation"
+ai_hash: 5ffaa72c83a757f4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03, vinnstack PRD inline-comments plan
 status: seedling
-source: "session 2026-07-03, vinnstack PRD inline-comments plan"
-tags: [css, react, highlighting, selection]
+tags:
+- css
+- react
+- highlighting
+- selection
+title: CSS Custom Highlight API paints text ranges without DOM mutation
+type: howto
 ---
 
 # CSS Custom Highlight API paints text ranges without DOM mutation
@@ -21,3 +29,11 @@ Fallback plan if the runtime is older: skip inline painting entirely (sidebar-on
 ## Related
 
 - [[TextQuoteSelector anchoring survives document regeneration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Map a DOM selection to plain-text offsets with a pre-range]]
+- [[TextQuoteSelector anchoring survives document regeneration]]
+
+%% ai-graph-end %%

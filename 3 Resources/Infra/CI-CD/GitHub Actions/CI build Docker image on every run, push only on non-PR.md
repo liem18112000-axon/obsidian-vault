@@ -1,10 +1,19 @@
 ---
-title: "CI: build Docker image on every run, push only on non-PR"
+ai_hash: bf4bb42c2f88f2a2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml 2026-06-06
 status: seedling
-source: "leo-cdp-framework ci-cd.yml 2026-06-06"
-tags: [github-actions, docker, ci, pull-request, pattern]
+tags:
+- github-actions
+- docker
+- ci
+- pull-request
+- pattern
+title: 'CI: build Docker image on every run, push only on non-PR'
+type: lesson
 ---
 
 # CI: build Docker image on every run, push only on non-PR
@@ -35,3 +44,14 @@ A Docker build step gated `if: github.event_name != pull_request` does NOT run o
 
 - [[1 Projects/leo-cdp/framework/LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
 - [[3 Resources/Infra/CI-CD/GitHub Actions/GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]]
+- [[Trivy scan-before-push needs a single-arch load build first]]
+- [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
+
+%% ai-graph-end %%

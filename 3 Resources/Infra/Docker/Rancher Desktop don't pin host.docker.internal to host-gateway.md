@@ -1,10 +1,20 @@
 ---
-title: "Rancher Desktop: don't pin host.docker.internal to host-gateway"
+ai_hash: 3acf40229e046d82
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-13
-type: lesson
+entities: []
+source: session 2026-06-13 accesstrade_integration
 status: seedling
-source: "session 2026-06-13 accesstrade_integration"
-tags: [docker, rancher-desktop, networking, host-docker-internal, gotcha, ollama]
+tags:
+- docker
+- rancher-desktop
+- networking
+- host-docker-internal
+- gotcha
+- ollama
+title: 'Rancher Desktop: don''t pin host.docker.internal to host-gateway'
+type: lesson
 ---
 
 # Rancher Desktop: don't pin host.docker.internal to host-gateway
@@ -23,3 +33,13 @@ Found while a Dockerized FastAPI app couldn't reach the host's Ollama for an LLM
 
 - [[3 Resources/Infra/Docker/Docker Compose path resolution env_file vs build context vs dockerfile]]
 - [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Docker hostname for reaching a service depends on where the caller runs]]
+- [[Docker Compose path resolution env_file vs build context vs dockerfile]]
+- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+- [[Separate docker-compose files are isolated networks; use one file + a profile for optional services]]
+
+%% ai-graph-end %%

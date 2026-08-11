@@ -1,10 +1,18 @@
 ---
-title: "ccusage — CLI tool for Claude Code token usage inspection"
+ai_hash: 4145b3ee769bb133
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-29
-type: howto
+entities: []
+source: session 2026-06-29
 status: seedling
-source: "session 2026-06-29"
-tags: [claude-code, ccusage, token-usage, tooling]
+tags:
+- claude-code
+- ccusage
+- token-usage
+- tooling
+title: ccusage — CLI tool for Claude Code token usage inspection
+type: howto
 ---
 
 # ccusage — CLI tool for Claude Code token usage inspection
@@ -30,3 +38,10 @@ ccusage blocks --live  # remaining capacity in the current 5-hour rate-limit win
 - [[Claude Code Max/Pro subscription reports API-rate equivalent cost]]
 - [[not actual billing]]
 - [[High cache-read ratio in Claude Code signals healthy prompt caching]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Unrestricted directory mounts for LLM tools risk multi-megabyte single-tool-call reads"
+ai_hash: 7f605ad410a9955c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [llm, cost-optimization, tool-use, gotcha]
+tags:
+- llm
+- cost-optimization
+- tool-use
+- gotcha
+title: Unrestricted directory mounts for LLM tools risk multi-megabyte single-tool-call
+  reads
+type: lesson
 ---
 
 # Unrestricted directory mounts for LLM tools risk multi-megabyte single-tool-call reads
@@ -25,3 +34,14 @@ Before granting broad file/directory access to an agentic LLM call, check the ac
 
 ## Related
 - [[Route tool-less LLM passes to a cheaper model tier]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Hard-exclude an AI agent from a resource by shrinking its file grant, not by prompting]]
+- [[Route tool-less LLM passes to a cheaper model tier]]
+- [[Vinnstack skill-usage counter missed reads past a 4MB stdout cap]]
+- [[Set HTTPserverless maxDuration above the internal LLM-run timeout, not below]]
+- [[Parse structured tool_use blocks in a stream-json transcript, never substring-scan raw text]]
+
+%% ai-graph-end %%

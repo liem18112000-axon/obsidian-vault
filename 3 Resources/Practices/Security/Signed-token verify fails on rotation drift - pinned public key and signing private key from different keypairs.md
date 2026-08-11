@@ -1,10 +1,19 @@
 ---
-title: "Signed-token verify fails on rotation drift - pinned public key and signing private key from different keypairs"
+ai_hash: feee2c01c541de7d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04 fb-info-project run 28699948285
 status: seedling
-source: "session 2026-07-04 fb-info-project run 28699948285"
-tags: [cryptography, keypair, licensing, debugging]
+tags:
+- cryptography
+- keypair
+- licensing
+- debugging
+title: Signed-token verify fails on rotation drift - pinned public key and signing
+  private key from different keypairs
+type: lesson
 ---
 
 # Signed-token verify fails on rotation drift - pinned public key and signing private key from different keypairs
@@ -16,3 +25,14 @@ Cause: someone ran keygen more than once and mixed the outputs - e.g. stored the
 Fix = make them match: either update the pinned public key to the private key's true public half, or set the secret to the private key whose public half is already pinned. Cleanest when a key has leaked: rotate - one fresh keygen, pin its public half, store its private half, discard the old pair.
 
 Related: [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]], [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CI token-signing workflow - verify the secret private key matches the pinned public key before signing]]
+- [[Key-fingerprint license id identifies the signing key, not the individual token]]
+- [[Offline token licensing - one operator keypair, tokens tracked in an auto-appended issuance ledger]]
+- [[Offline license verification - the trust anchor must be baked into the binary, never runtime-configurable]]
+- [[Offline license tokens cannot be revoked - only expiry, so prefer short validity plus renewal]]
+
+%% ai-graph-end %%

@@ -1,16 +1,56 @@
 ---
-title: Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields
+ai_hash: bd4a931b40aa9919
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-02
-status_fixed: 2026-06-02
-type: lesson
-status: resolved
+entities:
+- Materialize appendAsPatchOps
+- RFC-6902
+- replace
+- sentinel fields
+- MaterializeState.appendAsPatchOps
+- wire patch query
+- stampMaterializeOnPatch
+- _isPublic
+- _effectiveSecurityClassCodes
+- _folderNames
+- strict RFC 6902 semantics
+- Backfill window risk
+- materialize rollout
+- old documents
+- tenant
+- PATCH
+- shouldUseMaterialized(tenantId)
+- storage layer
+- jsonStoreMongoService.updatePatchMetadata
+- Mongo
+- $set
+- JSON-Patch pre-check
+- application side
+- simulatePatchedDocument
+- MaterializeCascadeService
+- luz_jsonstore repo
+- add
+- addOp()
+- MaterializeStateTest.appendAsPatchOps_on_empty_patch_returns_three_add_ops
+- MaterializeCascadeServiceTest.stampMaterializeOnPatch_appended_ops_use_add_operator_and_correct_paths
+- Materialize bulk PATCH fans out into N serial per-doc PATCH calls
+- securityClassCodes scalar string breaks materialize sentinels
+- Missing folder reference produces fail-closed materialize state
+- flattenArrayAddOps runs only in materialize branch
+- 01 Overview - Folder Rename Cascade
+- 05 Retry Flow
 source: code review of MaterializeState.appendAsPatchOps + MaterializeCascadeService.stampMaterializeOnPatch
+status: resolved
+status_fixed: 2026-06-02
 tags:
-  - luz-docs
-  - materialize
-  - rfc-6902
-  - backfill
-  - gotcha
+- luz-docs
+- materialize
+- rfc-6902
+- backfill
+- gotcha
+title: Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields
+type: lesson
 ---
 
 # Materialize appendAsPatchOps uses RFC-6902 replace for sentinel fields
@@ -62,3 +102,59 @@ private static JsonObject addOp(String path, JsonValue value) {
 - [[flattenArrayAddOps runs only in materialize branch]]
 - [[01 Overview - Folder Rename Cascade]]
 - [[05 Retry Flow]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[flattenArrayAddOps runs only in materialize branch]]
+- [[RFC-6902 replace at array index expects a scalar element not an array]]
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+- [[Materialize bulk PATCH fans out into N serial per-doc PATCH calls]]
+- [[Missing folder reference produces fail-closed materialize state]]
+
+**Relations:**
+- Materialize appendAsPatchOps — *uses* — RFC-6902
+- Materialize appendAsPatchOps — *uses* — replace
+- replace — *targets* — sentinel fields
+- MaterializeState.appendAsPatchOps — *appends ops to* — wire patch query
+- wire patch query — *produced by* — stampMaterializeOnPatch
+- appended ops — *include* — _isPublic
+- appended ops — *include* — _effectiveSecurityClassCodes
+- appended ops — *include* — _folderNames
+- _isPublic — *is a* — sentinel field
+- _effectiveSecurityClassCodes — *is a* — sentinel field
+- _folderNames — *is a* — sentinel field
+- replace — *requires existence under* — strict RFC 6902 semantics
+- Backfill window risk — *occurs during* — materialize rollout
+- old documents — *lack* — sentinel fields
+- PATCH — *against* — old documents
+- PATCH — *routes through* — stampMaterializeOnPatch
+- stampMaterializeOnPatch — *appends* — replace
+- replace — *ops target* — non-existent fields
+- patch fails — *if* — storage layer is strict
+- jsonStoreMongoService.updatePatchMetadata — *translates* — replace
+- jsonStoreMongoService.updatePatchMetadata — *translates to* — Mongo $set
+- Mongo $set — *is* — upsert-friendly
+- JSON-Patch pre-check — *occurs on* — application side
+- simulatePatchedDocument — *performs* — JSON-Patch pre-check
+- jsonStoreMongoService.updatePatchMetadata — *is in* — luz_jsonstore repo
+- MaterializeState.appendAsPatchOps — *switched from* — replace
+- MaterializeState.appendAsPatchOps — *switched to* — add
+- add — *is* — idempotent for object members
+- add — *is safer than* — replace
+- MaterializeState.appendAsPatchOps — *emits* — add
+- add — *ops created by* — addOp()
+- addOp() — *uses* — Constants.PATCH_OPERATOR
+- addOp() — *uses* — Operation.ADD.getValue()
+- addOp() — *uses* — Constants.PATCH_PATH
+- addOp() — *uses* — Constants.PATCH_VALUE
+- MaterializeState.appendAsPatchOps — *is backed by* — MaterializeStateTest.appendAsPatchOps_on_empty_patch_returns_three_add_ops
+- MaterializeState.appendAsPatchOps — *is backed by* — MaterializeCascadeServiceTest.stampMaterializeOnPatch_appended_ops_use_add_operator_and_correct_paths
+- Materialize appendAsPatchOps — *is related to* — Materialize bulk PATCH fans out into N serial per-doc PATCH calls
+- Materialize appendAsPatchOps — *is related to* — securityClassCodes scalar string breaks materialize sentinels
+- Materialize appendAsPatchOps — *is related to* — Missing folder reference produces fail-closed materialize state
+- Materialize appendAsPatchOps — *is related to* — flattenArrayAddOps runs only in materialize branch
+- Materialize appendAsPatchOps — *is related to* — 01 Overview - Folder Rename Cascade
+- Materialize appendAsPatchOps — *is related to* — 05 Retry Flow
+
+%% ai-graph-end %%

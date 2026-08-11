@@ -1,10 +1,20 @@
 ---
-title: "JsonParsingException EOF offset -1 means an empty response body was parsed"
+ai_hash: ed8a754f31c683e8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: session 2026-06-11
 status: seedling
-source: "session 2026-06-11"
-tags: [java, jax-rs, microprofile, json, gotcha, luz-docs]
+tags:
+- java
+- jax-rs
+- microprofile
+- json
+- gotcha
+- luz-docs
+title: JsonParsingException EOF offset -1 means an empty response body was parsed
+type: lesson
 ---
 
 # JsonParsingException EOF offset -1 means an empty response body was parsed
@@ -18,3 +28,14 @@ Seen in luz_docs `MaterializeMigrationExecutor` (lines ~73/80): both jsonstore `
 ## Related
 
 - [[luz-docs migration runs on a cron window via LUZ_DOCS_MIGRATION_PROCESSING_CRON]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-jsonstore intermittently returns 200 with empty body on folder finds]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[luz-docs getDocumentById returns empty object not null for missing docs]]
+- [[Mockito @InjectMocks by type stale @Mock after @RestClient swap leaves real field null]]
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+
+%% ai-graph-end %%

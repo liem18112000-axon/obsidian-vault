@@ -1,10 +1,18 @@
 ---
-title: "deleteMany over kubectl port-forward runs about 5k docs per second"
+ai_hash: b459c362bd832a40
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: observation
+entities: []
+source: session 2026-06-11 (first earchive-data-clean run)
 status: seedling
-source: "session 2026-06-11 (first earchive-data-clean run)"
-tags: [luz, mongodb, performance, earchive]
+tags:
+- luz
+- mongodb
+- performance
+- earchive
+title: deleteMany over kubectl port-forward runs about 5k docs per second
+type: observation
 ---
 
 # deleteMany over kubectl port-forward runs about 5k docs per second
@@ -17,3 +25,14 @@ So a full canary-sized wipe is ~25 s end to end; budget minutes only for multi-m
 
 - [[Destructive Luz skills use a preview-first CONFIRM gate]]
 - [[3 Resources/Work-Kepler/luz-docs/skills/eArchive dev skills are self-contained copies, not shared helpers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+- [[Destructive Luz skills use a preview-first CONFIRM gate]]
+- [[eArchive count baseline latency on dev ~80s for 128k docs (fan-out off)]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Dev benchmark _shard count fan-out ~1.8x, diminishing past K=12; local port-forward hid the gain]]
+
+%% ai-graph-end %%

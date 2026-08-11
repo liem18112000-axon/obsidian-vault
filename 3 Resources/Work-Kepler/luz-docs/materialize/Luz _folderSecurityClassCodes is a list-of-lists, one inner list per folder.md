@@ -1,10 +1,18 @@
 ---
-title: "Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder"
+ai_hash: cfdd7cb7988933b8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: concept
+entities: []
+source: session 2026-06-08 LUZ-154157
 status: seedling
-source: "session 2026-06-08 LUZ-154157"
-tags: [luz-docs, materialize, security-class, gotcha]
+tags:
+- luz-docs
+- materialize
+- security-class
+- gotcha
+title: Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder
+type: concept
 ---
 
 # Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder
@@ -29,3 +37,14 @@ Discovered while writing folder-delete materialize cascade tests (LUZ-154157) in
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/materialize/Comparing _folderSecurityClassCodes in tests needs a multiset-of-sets, not a flat set]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Comparing _folderSecurityClassCodes in tests needs a multiset-of-sets, not a flat set]]
+- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
+- [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
+- [[securityClassCodes scalar string breaks materialize sentinels]]
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
+
+%% ai-graph-end %%

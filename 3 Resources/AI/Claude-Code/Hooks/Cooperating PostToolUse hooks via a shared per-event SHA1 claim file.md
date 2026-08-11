@@ -1,3 +1,10 @@
+---
+ai_hash: bc015d37378dee76
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+---
+
 ﻿---
 title: "Cooperating PostToolUse hooks via a shared per-event SHA1 claim file"
 created: 2026-06-02
@@ -28,3 +35,13 @@ Gotcha when *testing* this: two separate stdin-encoding traps corrupt the payloa
 - [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
 - [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
 
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PowerShell pipe appends a newline to native-command stdin, shifting any hash]]
+- [[PSScriptRoot-relative state breaks when a hook moves to a subfolder]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Command-scanning git-commit hooks miss flag-separated forms and -F message files]]
+- [[Claude Code hooks event model]]
+
+%% ai-graph-end %%

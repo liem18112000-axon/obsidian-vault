@@ -1,10 +1,19 @@
 ---
-title: "Google ships an official Gemini CLI GitHub Action for PR review and mentions"
+ai_hash: ce463a0e274a101f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: howto
+entities: []
+source: session 2026-06-05 leo-agentic-notebook
 status: seedling
-source: "session 2026-06-05 leo-agentic-notebook"
-tags: [github-actions, gemini, google-ai, ci, migration]
+tags:
+- github-actions
+- gemini
+- google-ai
+- ci
+- migration
+title: Google ships an official Gemini CLI GitHub Action for PR review and mentions
+type: howto
 ---
 
 # Google ships an official Gemini CLI GitHub Action for PR review and mentions
@@ -36,3 +45,14 @@ Related: [[Run GitHub Copilot CLI in a GitHub Actions workflow]].
 ## Related
 
 - [[Run GitHub Copilot CLI in a GitHub Actions workflow]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Copilot code review is a native PR reviewer, not a workflow job]]
+- [[Run GitHub Copilot CLI in a GitHub Actions workflow]]
+- [[gemini-cli-yolo-approval-mode-ci]]
+- [[GitHub Actions default GITHUB_TOKEN does not grant Copilot CLI access]]
+- [[Re-triggering GitHub Copilot PR review via API and its quota-limit gotcha]]
+
+%% ai-graph-end %%

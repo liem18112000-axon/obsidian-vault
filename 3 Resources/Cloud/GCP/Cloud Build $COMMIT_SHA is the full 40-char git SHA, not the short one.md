@@ -1,10 +1,18 @@
 ---
-title: "Cloud Build $COMMIT_SHA is the full 40-char git SHA, not the short one"
+ai_hash: f93cb33f46afd949
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: Vinnstack GKE deploy 2026-07-03
 status: seedling
-source: "Vinnstack GKE deploy 2026-07-03"
-tags: [gcp, cloud-build, ci-cd, gotcha]
+tags:
+- gcp
+- cloud-build
+- ci-cd
+- gotcha
+title: Cloud Build $COMMIT_SHA is the full 40-char git SHA, not the short one
+type: lesson
 ---
 
 # Cloud Build $COMMIT_SHA is the full 40-char git SHA, not the short one
@@ -18,3 +26,14 @@ Verify what actually exists with `gcloud artifacts docker tags list <repo-path>`
 ## Related
 
 - [[GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[kubectl rollout status timeout must cover cold image pull time]]
+- [[Cloud Build treats $VAR in step args as its own substitution; escape shell $ as $$]]
+- [[GKE Immediate-binding StorageClass deadlocks a single-replica StatefulSet across zones]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
+
+%% ai-graph-end %%

@@ -1,10 +1,22 @@
 ---
-title: "GCP auth: ambient ADC in GCP-hosted runners vs explicit creds in external CI"
+ai_hash: 3f4c2179370c5dbb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: session 2026-06-14, luz_docs_integration_test analysis
 status: seedling
-source: "session 2026-06-14, luz_docs_integration_test analysis"
-tags: [gcp, authentication, adc, cloud-build, github-actions, workload-identity, ci-cd]
+tags:
+- gcp
+- authentication
+- adc
+- cloud-build
+- github-actions
+- workload-identity
+- ci-cd
+title: 'GCP auth: ambient ADC in GCP-hosted runners vs explicit creds in external
+  CI'
+type: lesson
 ---
 
 # GCP auth: ambient ADC in GCP-hosted runners vs explicit creds in external CI
@@ -21,3 +33,14 @@ So, two ways to 'work with Google without that error':
    The error = BOTH were empty (unset secrets). Also: secrets are NOT passed to fork/Dependabot PRs, so those runs see empty creds — gate/skip them (see [[secrets context is not available in GitHub Actions if conditions]]).
 
 Rule of thumb: pick the runner to match the cloud. GCP work → run it in GCP (free ADC). Only reach for WIF/keys when the runner lives outside GCP. Relates to [[Publish a Docker image to GHCR from GitHub Actions with GITHUB_TOKEN]] (the GHCR analogue: GITHUB_TOKEN is the ambient identity inside GitHub Actions).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Set up GitHub Actions to GCP via Workload Identity Federation]]
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+
+%% ai-graph-end %%

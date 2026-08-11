@@ -1,10 +1,21 @@
 ---
-title: "electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap"
+ai_hash: 6f68c17171563075
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: session 2026-07-15 vinnstack startup UX
 status: seedling
-source: "session 2026-07-15 vinnstack startup UX"
-tags: [electron, electron-builder, portable, startup, splash, windows]
+tags:
+- electron
+- electron-builder
+- portable
+- startup
+- splash
+- windows
+title: electron-builder portable self-extracts on launch — use portable.splashImage
+  for that UI-less gap
+type: lesson
 ---
 
 # electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap
@@ -26,3 +37,14 @@ Config (path is relative to project root; put the bmp somewhere NOT gitignored �
 
 - [[Vinnstack EXE release]]
 - [[3 Resources/Tooling/Windows/Windows holds file handles briefly after taskkill — rmSync EPERMs, so retry]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Testing the packaged Vinnstack exe needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
+- [[Unsigned NSIS install under Defender ~2min of zero files is pre-scan, not a hang]]
+- [[Trim a cross-built Electron exe drop the host-platform native binaries the target never uses (+ maxCompression, one locale)]]
+
+%% ai-graph-end %%

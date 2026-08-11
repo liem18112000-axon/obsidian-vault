@@ -1,10 +1,19 @@
 ---
-title: "Fully-qualified class names fail inside Gradle closures with a non-Project delegate"
+ai_hash: ecf497bab813a242
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: leo-cdp-framework build.gradle fix 2026-06-06
 status: seedling
-source: "leo-cdp-framework build.gradle fix 2026-06-06"
-tags: [gradle, groovy, closure-delegate, gotcha]
+tags:
+- gradle
+- groovy
+- closure-delegate
+- gotcha
+title: Fully-qualified class names fail inside Gradle closures with a non-Project
+  delegate
+type: lesson
 ---
 
 # Fully-qualified class names fail inside Gradle closures with a non-Project delegate
@@ -37,3 +46,14 @@ Lesson learned the hard way: verify build-script edits in the real toolchain (he
 ## Related
 - [[3 Resources/Languages/Java/Gradle/Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
+- [[String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment]]
+- [[Gradle 9 forbids attributes() on declarable configurations in configurations.all]]
+- [[Check git check-ignore -v when adding a Gradle wrapper to a legacy repo]]
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+
+%% ai-graph-end %%

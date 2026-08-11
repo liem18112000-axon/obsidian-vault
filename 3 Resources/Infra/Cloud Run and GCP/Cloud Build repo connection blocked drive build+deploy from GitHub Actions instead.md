@@ -1,10 +1,21 @@
 ---
-title: "Cloud Build repo connection blocked: drive build+deploy from GitHub Actions instead"
+ai_hash: 46b5b443d4433bcc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: session 2026-06-01, vault-graph
 status: seedling
-source: "session 2026-06-01, vault-graph"
-tags: [gcp, cloud-build, github-actions, cloud-run, cicd, gotcha]
+tags:
+- gcp
+- cloud-build
+- github-actions
+- cloud-run
+- cicd
+- gotcha
+title: 'Cloud Build repo connection blocked: drive build+deploy from GitHub Actions
+  instead'
+type: lesson
 ---
 
 # Cloud Build repo connection blocked: drive build+deploy from GitHub Actions instead
@@ -28,3 +39,14 @@ Context discovered: vault-graph project, Cloud Run, `klara-nonprod`. The same re
 ## Related
 
 - [[IAM roles a CI service account needs to build and deploy to Cloud Run]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[IAM roles a CI service account needs to build and deploy to Cloud Run]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[Set up GitHub Actions to GCP via Workload Identity Federation]]
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+
+%% ai-graph-end %%

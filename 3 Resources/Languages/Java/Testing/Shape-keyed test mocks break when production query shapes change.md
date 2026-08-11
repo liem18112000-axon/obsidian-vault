@@ -1,10 +1,18 @@
 ---
-title: "Shape-keyed test mocks break when production query shapes change"
+ai_hash: d9822e9c08f6bd5d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: luz-docs enhance-delete-folder-api, 2026-06-10
 status: seedling
-source: "luz-docs enhance-delete-folder-api, 2026-06-10"
-tags: [testing, mocks, mongodb, luz-docs]
+tags:
+- testing
+- mocks
+- mongodb
+- luz-docs
+title: Shape-keyed test mocks break when production query shapes change
+type: lesson
 ---
 
 # Shape-keyed test mocks break when production query shapes change
@@ -18,3 +26,14 @@ Related: [[Split bulk scans on folderIds.1 exists to separate single-array-eleme
 ## Related
 
 - [[Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Interaction-style mocks hide ordering bugs that a stateful in-memory fake exposes]]
+- [[Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
+- [[Mock at the facade boundary after consolidating logic behind a facade method]]
+- [[Parallel arrays in materialize sentinel preserve folderId order]]
+- [[Verify a response-shape regression by tracing the downstream consumer, not the shape diff]]
+
+%% ai-graph-end %%

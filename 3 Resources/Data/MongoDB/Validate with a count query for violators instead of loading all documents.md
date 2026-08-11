@@ -1,10 +1,18 @@
 ---
-title: "Validate with a count query for violators instead of loading all documents"
+ai_hash: 1e3b3b1d8d5b0787
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: luz-docs enhance-delete-folder-api, sprint 158 (2026-06-10)
 status: seedling
-source: "luz-docs enhance-delete-folder-api, sprint 158 (2026-06-10)"
-tags: [mongodb, fail-fast, performance, luz-docs]
+tags:
+- mongodb
+- fail-fast
+- performance
+- luz-docs
+title: Validate with a count query for violators instead of loading all documents
+type: lesson
 ---
 
 # Validate with a count query for violators instead of loading all documents
@@ -20,3 +28,14 @@ Related: [[Split bulk scans on folderIds.1 exists to separate single-array-eleme
 ## Related
 
 - [[Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+- [[Split bulk scans on folderIds.1 exists to separate single-array-element fast path]]
+- [[Don't share one predicate between a read-path gate and a backfill selector]]
+- [[luz-docs documentscount is ~130s on an 800k tenant — the 16-shard fan-out, not counting, is the bottleneck]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+
+%% ai-graph-end %%

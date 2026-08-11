@@ -1,10 +1,19 @@
 ---
-title: "A concurrent session's git stash can silently revert your in-progress edits"
+ai_hash: 2e6839298aee0629
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [git, concurrency, claude-code, multi-agent, gotcha]
+tags:
+- git
+- concurrency
+- claude-code
+- multi-agent
+- gotcha
+title: A concurrent session's git stash can silently revert your in-progress edits
+type: lesson
 ---
 
 # A concurrent session's git stash can silently revert your in-progress edits
@@ -22,3 +31,14 @@ tags: [git, concurrency, claude-code, multi-agent, gotcha]
 
 - [[Consolidate duplicated hardcoded config constants into one config.ts source of truth]]
 - [[Pre-staged files silently merge selective commit batches - check the index first]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pre-staged files silently merge selective commit batches - check the index first]]
+- [[FETCH_HEAD is volatile when an IDE auto-fetches]]
+- [[git reset --hard overwrites local-only edits to tracked files; back them up first]]
+- [[Re-check live dependencies right before committing in a shared repo]]
+- [[Split intermixed single-file changes into two commits via backup and intermediate edit]]
+
+%% ai-graph-end %%

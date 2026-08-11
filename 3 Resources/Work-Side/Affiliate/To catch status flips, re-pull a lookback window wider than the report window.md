@@ -1,10 +1,19 @@
 ---
-title: "To catch status flips, re-pull a lookback window wider than the report window"
+ai_hash: f42c81b94768319d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-12
-type: lesson
+entities: []
+source: session 2026-06-12, accesstrade_integration code-review fixes
 status: seedling
-source: "session 2026-06-12, accesstrade_integration code-review fixes"
-tags: [api, eventual-consistency, reporting, accesstrade, gotcha]
+tags:
+- api
+- eventual-consistency
+- reporting
+- accesstrade
+- gotcha
+title: To catch status flips, re-pull a lookback window wider than the report window
+type: lesson
 ---
 
 # To catch status flips, re-pull a lookback window wider than the report window
@@ -27,3 +36,13 @@ The lookback width is a function of how long records stay mutable (here, how lon
 
 - [[Idempotent link minting with content-hash cache keys]]
 - [[Affiliate API engineering best practices]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Affiliate API engineering best practices]]
+- [[Accesstrade API rate limits and pagination]]
+- [[Idempotent link minting with content-hash cache keys]]
+- [[Accesstrade conversion and transaction reporting]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Dual-mode CMD wrapper - args pass through, no args opens an interactive menu"
+ai_hash: 4894aed8f52995ba
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04 fb-info-project license_admin.cmd
 status: seedling
-source: "session 2026-07-04 fb-info-project license_admin.cmd"
-tags: [cmd, batch, windows, operator-tooling]
+tags:
+- cmd
+- batch
+- windows
+- operator-tooling
+title: Dual-mode CMD wrapper - args pass through, no args opens an interactive menu
+type: howto
 ---
 
 # Dual-mode CMD wrapper - args pass through, no args opens an interactive menu
@@ -28,3 +36,10 @@ if errorlevel 2 goto sign
 Useful for operator tooling handed to non-technical users while keeping full CLI flexibility for yourself. Example: tools\license_admin.cmd in fb-info-project wrapping an Ed25519 license keygen/sign script.
 
 Related: [[3 Resources/Tooling/Windows/CMD set p keeps the existing value on empty Enter - preset the default]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CMD set p keeps the existing value on empty Enter - preset the default]]
+
+%% ai-graph-end %%

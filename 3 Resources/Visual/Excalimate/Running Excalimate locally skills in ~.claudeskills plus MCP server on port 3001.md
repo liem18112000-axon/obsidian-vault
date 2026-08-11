@@ -1,10 +1,19 @@
 ---
-title: "Running Excalimate locally: skills in ~/.claude/skills plus MCP server on port 3001"
+ai_hash: cb3a40078285240c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: howto
+entities: []
+source: session 2026-06-16
 status: seedling
-source: "session 2026-06-16"
-tags: [excalimate, mcp, setup, skills]
+tags:
+- excalimate
+- mcp
+- setup
+- skills
+title: 'Running Excalimate locally: skills in ~/.claude/skills plus MCP server on
+  port 3001'
+type: howto
 ---
 
 # Running Excalimate locally: skills in ~/.claude/skills plus MCP server on port 3001
@@ -23,3 +32,14 @@ Gotchas: [[MCP servers load only at Claude Code startup; skills hot-reload]] and
 - [[Excalimate is AI skills plus an optional MCP server, not one app]]
 - [[MCP servers load only at Claude Code startup; skills hot-reload]]
 - [[3 Resources/AI/MCP/A 406 from curl on an MCP mcp endpoint is normal]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalimate is AI skills plus an optional MCP server, not one app]]
+- [[A 406 from curl on an MCP mcp endpoint is normal]]
+- [[Excalimate export is browser-only; headless export needs Playwright + share URL]]
+- [[MCP servers load only at Claude Code startup; skills hot-reload]]
+- [[Excalimate cloud share links are CORS-broken — use Connect to MCP server instead]]
+
+%% ai-graph-end %%

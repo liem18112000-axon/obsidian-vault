@@ -1,11 +1,23 @@
 ---
-title: "O(N) scan cliffs when working set exceeds DB cache"
+ai_hash: e0ff08038df9a890
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- cache-miss cliff
+- working set exceeds cache
 created: 2026-06-20
-aliases: ["cache-miss cliff", "working set exceeds cache"]
-type: concept
+entities: []
+source: session 2026-06-20 LUZ-154613
 status: seedling
-source: "session 2026-06-20 LUZ-154613"
-tags: [database, performance, mongodb, wiredtiger, caching, scaling]
+tags:
+- database
+- performance
+- mongodb
+- wiredtiger
+- caching
+- scaling
+title: O(N) scan cliffs when working set exceeds DB cache
+type: concept
 ---
 
 # O(N) scan cliffs when working set exceeds DB cache
@@ -23,3 +35,14 @@ Observed concretely in LUZ-154613 count benchmark: 720k docs = 11.5 s (~16 µs/d
 ## Related
 
 - [[3 Resources/Visual/Excalidraw/Excalidraw data line charts need roundness null, not spline]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs documentscount is scan-bound and cannot reach sub-second at 128k]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+- [[MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN]]
+
+%% ai-graph-end %%

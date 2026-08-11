@@ -1,11 +1,20 @@
 ---
-title: "pytest results into a GitHub Actions build via dorny test-reporter"
+ai_hash: be99031299c71999
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-updated: 2026-07-31
-type: howto
+entities: []
+source: fb-info-project build-exe.yml 2026-06-14; session 2026-07-26
 status: seedling
-source: "fb-info-project build-exe.yml 2026-06-14; session 2026-07-26"
-tags: [github-actions, pytest, testing, ci, ci-cd]
+tags:
+- github-actions
+- pytest
+- testing
+- ci
+- ci-cd
+title: pytest results into a GitHub Actions build via dorny test-reporter
+type: howto
+updated: 2026-07-31
 ---
 
 # pytest results into a GitHub Actions build via dorny test-reporter
@@ -37,3 +46,13 @@ Key points:
 - [[dorny test-reporter hard-fails when zero report files match]]
 - [[secrets context is not available in GitHub Actions if conditions]]
 - [[GitHub Actions in a monorepo workflows live at repo root, scope per project with paths filters]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[dorny test-reporter hard-fails when zero report files match]]
+- [[GitHub Actions in a monorepo workflows live at repo root, scope per project with paths filters]]
+- [[Export build artifacts from a multi-stage Docker build via a scratch stage + buildx --output]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+
+%% ai-graph-end %%

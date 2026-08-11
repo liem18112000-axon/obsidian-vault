@@ -1,10 +1,47 @@
 ---
-title: "DeclineCodes resolver misses nested metadata.decline_code"
+ai_hash: 725a5467536236b3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: lesson
+entities:
+- DeclineCodes resolver
+- metadata.decline_code
+- luz_online_payment
+- Transaction.resolveDeclineCode()
+- DeclineCodes.resolve()
+- declineCode
+- additionalProperties
+- metadata
+- Jackson
+- Payrexx
+- webhook path
+- Transaction.metadata
+- LinkedHashMap
+- Metadata.java
+- paypalBillingAgreementId
+- LUZ-157476 commit
+- synchronous path
+- TransactionTask
+- ConsumerServiceClientErrorException
+- NotifiedTransactionService
+- luz_store
+- Content-Type
+- MerchantService.java
+- PayrexxNotifyTransactionResource
+- APPLICATION_JSON
+- form-urlencoded
+- Payrexx delivers decline code only via webhook, not sync response
+- Payrexx decline code lives at transaction.metadata.decline_code
+source: LUZ-157476 code review 2026-07
 status: seedling
-source: "LUZ-157476 code review 2026-07"
-tags: [payrexx, luz-157476, decline-code, luz-online-payment, gotcha]
+tags:
+- payrexx
+- luz-157476
+- decline-code
+- luz-online-payment
+- gotcha
+title: DeclineCodes resolver misses nested metadata.decline_code
+type: lesson
 ---
 
 # DeclineCodes resolver misses nested metadata.decline_code
@@ -21,3 +58,46 @@ Background: [[Payrexx delivers decline code only via webhook, not sync response]
 
 - [[3 Resources/Work-Kepler/Payrexx/Payrexx delivers decline code only via webhook, not sync response]]
 - [[Payrexx decline code lives at transaction.metadata.decline_code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Payrexx notify webhook dispatches to two consumers, neither forwards decline code]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
+- [[luz_online_payment notify webhook silently 400-rejects ~43% of Payrexx webhooks on dev]]
+- [[Payrexx delivers decline code only via webhook, not sync response]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+
+**Relations:**
+- DeclineCodes resolver — *misses* — metadata.decline_code
+- Transaction.resolveDeclineCode() — *delegates_to* — DeclineCodes.resolve()
+- DeclineCodes.resolve() — *inspects* — declineCode
+- DeclineCodes.resolve() — *inspects* — additionalProperties
+- Jackson — *binds* — metadata
+- metadata — *is_typed_as* — Object
+- metadata — *deserializes_to* — LinkedHashMap
+- Payrexx — *provides_code_at* — metadata.decline_code
+- DeclineCodes resolver — *misses_on_path* — webhook path
+- Metadata.java — *models* — paypalBillingAgreementId
+- Metadata.java — *is_not_suitable_for* — declineCode
+- LUZ-157476 commit — *wired* — declineCode
+- LUZ-157476 commit — *wired_to* — synchronous path
+- synchronous path — *does_not_carry* — declineCode
+- plumbing — *should_move_to* — webhook path
+- webhook path — *forwards_to* — luz_store
+- MerchantService.java — *registers_type* — APPLICATION_JSON
+- PayrexxNotifyTransactionResource — *consumes* — APPLICATION_JSON
+- sample — *was* — form-urlencoded
+- form-urlencoded — *is_incompatible_with* — APPLICATION_JSON
+- Payrexx delivers decline code only via webhook, not sync response — *is_background_for* — DeclineCodes resolver
+- Payrexx decline code lives at transaction.metadata.decline_code — *is_background_for* — DeclineCodes resolver
+- luz_online_payment — *contains* — Transaction.resolveDeclineCode()
+- luz_online_payment — *contains* — DeclineCodes.resolve()
+- synchronous path — *involves* — TransactionTask
+- synchronous path — *involves* — ConsumerServiceClientErrorException
+- webhook path — *involves* — NotifiedTransactionService
+- Payrexx — *delivers* — declineCode
+- Payrexx — *delivers_via* — webhook path
+- Payrexx — *does_not_deliver_via* — synchronous path
+
+%% ai-graph-end %%

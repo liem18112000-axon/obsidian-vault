@@ -1,10 +1,19 @@
 ---
-title: "Hand-rolled Optional.or fallback chain replaces CDI @Fallback"
+ai_hash: 78080b8db6e1b26f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-type: howto
+entities: []
+source: session 2026-07-21 LUZ-156856 gate rework
 status: seedling
-source: "session 2026-07-21 LUZ-156856 gate rework"
-tags: [java, optional, fault-tolerance, pattern, luz-docs]
+tags:
+- java
+- optional
+- fault-tolerance
+- pattern
+- luz-docs
+title: Hand-rolled Optional.or fallback chain replaces CDI @Fallback
+type: howto
 ---
 
 # Hand-rolled Optional.or fallback chain replaces CDI @Fallback
@@ -33,3 +42,14 @@ Used in luz_docs Materialize/Parallelize gates (L1 = migration-campaign status r
 ## Related
 
 - [[CDI self-invocation bypasses interceptor proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CDI self-invocation bypasses interceptor proxy]]
+- [[MicroProfile Fallback is dead in plain Mockito unit tests]]
+- [[Weld subclass-based interception makes self-invocation intercepted]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Snapshot for rollback must live outside retry boundary]]
+
+%% ai-graph-end %%

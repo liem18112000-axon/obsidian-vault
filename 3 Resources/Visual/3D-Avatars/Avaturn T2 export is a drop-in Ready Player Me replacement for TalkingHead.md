@@ -1,10 +1,19 @@
 ---
-title: "Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead"
+ai_hash: 92d23097f37a3d38
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: github.com/met4citizen/TalkingHead/issues/27, session 2026-07-11
 status: seedling
-source: "github.com/met4citizen/TalkingHead/issues/27, session 2026-07-11"
-tags: [avaturn, talkinghead, glb, blend-shapes, avatar]
+tags:
+- avaturn
+- talkinghead
+- glb
+- blend-shapes
+- avatar
+title: Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead
+type: lesson
 ---
 
 # Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead
@@ -19,3 +28,14 @@ Practical notes from the community (github.com/met4citizen/TalkingHead#27):
 ## Related
 
 - [[Ready Player Me shut down Jan 2026 after Netflix acquisition]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Ready Player Me shut down Jan 2026 after Netflix acquisition]]
+- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
+- [[TalkingHead requires offline Blender conversion for VRM avatars]]
+- [[madjinvrm-samples repo bundles official VRoid Studio sample avatars with mixed licenses]]
+- [[jsdelivr gh CDN can pin to an exact commit SHA, not just tagsbranches]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Verify-after-mutate: re-probe external state before reporting a CLI toggle succeeded"
+ai_hash: 325273b01d5daa8b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: lesson
+entities: []
+source: session 2026-07-14
 status: seedling
-source: "session 2026-07-14"
-tags: [cli, integration, reliability, polaris, pattern]
+tags:
+- cli
+- integration
+- reliability
+- polaris
+- pattern
+title: 'Verify-after-mutate: re-probe external state before reporting a CLI toggle
+  succeeded'
+type: lesson
 ---
 
 # Verify-after-mutate: re-probe external state before reporting a CLI toggle succeeded
@@ -16,3 +26,14 @@ Why: gives the UI an honest green state and avoids the 'said on, actually off' c
 ## Related
 
 - [[3 Resources/Practices/Architecture/Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]]
+- [[Polaris 3003 MCP server is persistent — TCP probe not equal to polaris tunnel state]]
+- [[polaris-cli 0.2.0 operational gotchas (bootstrap scope, status, up, agents)]]
+- [[polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]
+- [[Vinnstack auth providers two patterns and the rule for adding one]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "javax.json single-arg getString throws NPE on missing key"
+ai_hash: 0cc4a0c1e96a1deb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-09
-type: gotcha
+entities: []
 status: seedling
-tags: [java, javax-json, json-p, jakarta, gotcha, npe, luz-docs]
-entities: [JsonObject.getString, getInt, getBoolean, getJsonObject, getJsonArray, Optional.ofNullable]
+tags:
+- java
+- javax-json
+- json-p
+- jakarta
+- gotcha
+- npe
+- luz-docs
+title: javax.json single-arg getString throws NPE on missing key
+type: gotcha
 ---
 
 # javax.json single-arg getString throws NPE on missing key
@@ -29,3 +39,14 @@ Optional.ofNullable(metadata.getString(Constants.ORIGIN, null)).map(...)
 ## Related
 
 - [[Java]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs getDocumentById returns empty object not null for missing docs]]
+- [[empty-object-not-null sentinel defeats Optional.ofNullable null-guards]]
+- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[JsonParsingException EOF offset -1 means an empty response body was parsed]]
+
+%% ai-graph-end %%

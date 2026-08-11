@@ -1,10 +1,20 @@
 ---
-title: "IAM roles a CI service account needs to build and deploy to Cloud Run"
+ai_hash: 9191955029d62f4e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: concept
+entities: []
+source: session 2026-06-01, vault-graph
 status: seedling
-source: "session 2026-06-01, vault-graph"
-tags: [gcp, iam, cloud-run, artifact-registry, service-account, cicd]
+tags:
+- gcp
+- iam
+- cloud-run
+- artifact-registry
+- service-account
+- cicd
+title: IAM roles a CI service account needs to build and deploy to Cloud Run
+type: concept
 ---
 
 # IAM roles a CI service account needs to build and deploy to Cloud Run
@@ -27,3 +37,14 @@ Used by the GitHub-Actions deploy pattern in [[Cloud Build repo connection block
 ## Related
 
 - [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+- [[Cloud Run can only pull images from Artifact Registry or GCR, not GHCR]]
+- [[Klara Cloud Build pushes images to klara-repo Artifact Registry with the SA on the trigger]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+- [[klara-nonprod is the GCP project for non-prod Artifact Registry IAM]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code"
+ai_hash: 611745667cda12f9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-06
-type: gotcha
+entities: []
+source: vinnstack dev relay 2026-07-06, claude setup-token
 status: seedling
-source: "vinnstack dev relay 2026-07-06, claude setup-token"
-tags: [oauth, claude-cli, setup-token, relay, vinnstack]
+tags:
+- oauth
+- claude-cli
+- setup-token
+- relay
+- vinnstack
+title: Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization
+  code
+type: gotcha
 ---
 
 # Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code
@@ -18,3 +28,14 @@ When automating this (e.g. a web relay that feeds the paste value to setup-token
 ## Related
 
 - [[3 Resources/Backend/CLI/Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+
+%% ai-graph-end %%

@@ -1,6 +1,14 @@
 ---
-tags: [junit5, parameterized-tests, java, test-design]
+ai_hash: 1e7dfe7cfe919733
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-02
+entities: []
+tags:
+- junit5
+- parameterized-tests
+- java
+- test-design
 ---
 
 # Parameterize JUnit5 tests across overload variants with `Named<Function>` `@MethodSource`
@@ -38,3 +46,14 @@ Without `Named.of(...)`, JUnit prints lambda class names (`Cls$$Lambda$42/0x...`
 - Stack traces point at the parameterized body, not a unique `@Test` method — slightly harder to bisect failures by method name alone, but the `Named` label disambiguates.
 
 Related: [[Mock at the facade boundary after consolidating logic behind a facade method]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mock at the facade boundary after consolidating logic behind a facade method]]
+- [[A delegating overload changes less code than widening an existing method signature]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+- [[Mockito strict stubs flag mismatched-arg calls on a stubbed method as failures]]
+- [[JUnit5 @BeforeAll must be static - non-static masks every test in the class]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "gcloud components install fetches the host's own platform binary, not a chosen target"
+ai_hash: 152c7718921de2b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: vinnstack cloudbuild.yaml setup, 2026-07-07
 status: seedling
-source: "vinnstack cloudbuild.yaml setup, 2026-07-07"
-tags: [gcp, gcloud, ci, cross-platform, gotcha]
+tags:
+- gcp
+- gcloud
+- ci
+- cross-platform
+- gotcha
+title: gcloud components install fetches the host's own platform binary, not a chosen
+  target
+type: lesson
 ---
 
 # gcloud components install fetches the host's own platform binary, not a chosen target
@@ -16,3 +26,14 @@ This matters for CI pipelines that cross-compile for a different OS than the CI 
 ## Related
 [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
 [[Cross-building Electron Windows exe on Linux needs wine]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cross-building Electron Windows exe on Linux needs wine]]
+- [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
+- [[Dead bundling config outlives the runtime code that read it]]
+- [[Cross-building an Electron+Next Windows exe on Linux omits the win32 SWC binary, so the packaged app fails at startup]]
+- [[Publish a single file to GCS from Cloud Build with gcloud storage cp]]
+
+%% ai-graph-end %%

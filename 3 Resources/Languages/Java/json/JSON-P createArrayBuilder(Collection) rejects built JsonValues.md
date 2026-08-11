@@ -1,10 +1,21 @@
 ---
-title: "JSON-P createArrayBuilder(Collection) rejects built JsonValues"
+ai_hash: daa851812b5112d5
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: gotcha
+entities: []
 status: seedling
-tags: [java, json-p, jsonp, jakarta-json, javax-json, glassfish, gotcha, luz-docs]
-entities: [Json.createArrayBuilder, Json.createObjectBuilder, MapUtil.handle, JsonArrayBuilder.add, JsonCollectors.toJsonArray, org.glassfish.json, JsonStringImpl, JsonNumberImpl$JsonLongNumber, JsonUtil.toJsonArray, JsonUtil.getJSAB, JsonUtil.singletonJsonArray]
+tags:
+- java
+- json-p
+- jsonp
+- jakarta-json
+- javax-json
+- glassfish
+- gotcha
+- luz-docs
+title: JSON-P createArrayBuilder(Collection) rejects built JsonValues
+type: gotcha
 ---
 
 # JSON-P `createArrayBuilder(Collection)` rejects already-built JsonValues
@@ -48,3 +59,14 @@ Side gotcha: when this throws *before* a stubbed collaborator call, Mockito stri
 - [[luz-materialize-parallel-search]]
 - [[parallelize-old-perdoc-vs-new-oneshot-in-logs]]
 - [[luz-docs raw-mongo search passthrough uses an operator whitelist for security parity with the DSL]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mockito @InjectMocks by type stale @Mock after @RestClient swap leaves real field null]]
+- [[json-patch-independent-translation-breaks-reset-then-append]]
+- [[javax.json JsonObject is immutable so aliasing replaces defensive deep copies]]
+- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+
+%% ai-graph-end %%

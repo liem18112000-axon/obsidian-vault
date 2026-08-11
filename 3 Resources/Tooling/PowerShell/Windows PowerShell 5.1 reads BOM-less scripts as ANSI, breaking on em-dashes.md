@@ -1,10 +1,18 @@
 ---
-title: "Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes"
+ai_hash: 7f23fe1e63d833ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: sessions 2026-06-17 and 2026-07-07 (vinnstack scripts/build-exe.ps1)
 status: seedling
-source: "sessions 2026-06-17 and 2026-07-07 (vinnstack scripts/build-exe.ps1)"
-tags: [powershell, windows, encoding, gotcha]
+tags:
+- powershell
+- windows
+- encoding
+- gotcha
+title: Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes
+type: lesson
 ---
 
 # Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes
@@ -23,3 +31,14 @@ tags: [powershell, windows, encoding, gotcha]
 
 - [[dev.mysql.com CDN 403s the PowerShell User-Agent]]
 - [[PowerShell scripting conventions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PowerShell here-string @'...'@ silently corrupts git commit messages in the Bash tool]]
+- [[Bash collapses backslashes before PowerShell stdin, breaking Windows-path JSON]]
+- [[Windows cp1252 console crashes on non-ASCII Python prints; force UTF-8]]
+- [[PowerShell 5.1 eats inner double-quotes passed to native exes like gcloud]]
+- [[dev.mysql.com CDN 403s the PowerShell User-Agent]]
+
+%% ai-graph-end %%

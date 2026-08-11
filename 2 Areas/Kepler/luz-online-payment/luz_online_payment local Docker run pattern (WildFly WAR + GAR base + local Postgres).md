@@ -1,10 +1,21 @@
 ---
-title: "luz_online_payment local Docker run pattern (WildFly WAR + GAR base + local Postgres)"
+ai_hash: 23c8ee7f8eb7a824
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-29
-type: howto
+entities: []
+source: session 2026-07-29; docs/LOCAL-RUN.md
 status: seedling
-source: "session 2026-07-29; docs/LOCAL-RUN.md"
-tags: [luz, docker, wildfly, local-run, postgres, flyway]
+tags:
+- luz
+- docker
+- wildfly
+- local-run
+- postgres
+- flyway
+title: luz_online_payment local Docker run pattern (WildFly WAR + GAR base + local
+  Postgres)
+type: howto
 ---
 
 # luz_online_payment local Docker run pattern (WildFly WAR + GAR base + local Postgres)
@@ -22,3 +33,14 @@ See [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-pa
 ## Related
 
 - [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Run luz_docs_statistic locally with docker-compose]]
+- [[Local luz-docs and luz_docs_statistic both bind host ports 8787 and 9990]]
+- [[Luz performance env cluster topology]]
+- [[Shipping luz_docs_statistic trigger is docs-statistic-service and dev runs a Deployment, not a StatefulSet]]
+- [[Running the LEO CDP GHCR image needs mounted configs (image ships JARs only)]]
+
+%% ai-graph-end %%

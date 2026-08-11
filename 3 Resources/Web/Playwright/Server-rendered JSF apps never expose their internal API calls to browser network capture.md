@@ -1,10 +1,19 @@
 ---
-title: "Server-rendered JSF apps never expose their internal API calls to browser network capture"
+ai_hash: bccda0a4796d2c75
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: session 2026-07-23, luz-docs earchive-perf-trace tool
 status: seedling
-source: "session 2026-07-23, luz-docs earchive-perf-trace tool"
-tags: [playwright, jsf, testing, gotcha]
+tags:
+- playwright
+- jsf
+- testing
+- gotcha
+title: Server-rendered JSF apps never expose their internal API calls to browser network
+  capture
+type: lesson
 ---
 
 # Server-rendered JSF apps never expose their internal API calls to browser network capture
@@ -18,3 +27,14 @@ Fix/pattern: for a JSF-style app, get context you need (tenant id, request id, e
 ## Related
 
 - [[Playwright has no way to merge N trials into one browsable trace.zip]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
+- [[JSF LetterStorageDetail instance URL dies mid-benchmark; remint via eArchive menu]]
+- [[eArchive perf test plan 5 scenarios, all automated by trace tool]]
+- [[Timing PrimeFaces dialog opens trusted click + stale-guard the reused dialog node]]
+- [[Playwright multi-trial trace merging via tracing chunks]]
+
+%% ai-graph-end %%

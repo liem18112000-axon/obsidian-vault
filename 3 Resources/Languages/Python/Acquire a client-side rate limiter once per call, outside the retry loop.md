@@ -1,10 +1,19 @@
 ---
-title: "Acquire a client-side rate limiter once per call, outside the retry loop"
+ai_hash: 0b95216cdac23dc0
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-12
-type: lesson
+entities: []
+source: session 2026-06-12, accesstrade_integration code review
 status: seedling
-source: "session 2026-06-12, accesstrade_integration code review"
-tags: [python, rate-limit, retry, gotcha, http]
+tags:
+- python
+- rate-limit
+- retry
+- gotcha
+- http
+title: Acquire a client-side rate limiter once per call, outside the retry loop
+type: lesson
 ---
 
 # Acquire a client-side rate limiter once per call, outside the retry loop
@@ -30,3 +39,14 @@ This is the kind of bug tests with a fake clock won't catch unless they assert t
 
 - [[Client-side min-interval rate limiting via slot reservation]]
 - [[Affiliate API engineering best practices]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Client-side min-interval rate limiting via slot reservation]]
+- [[Affiliate API engineering best practices]]
+- [[Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request window]]
+- [[Persist the guard before the side effect for at-most-once]]
+- [[An optimization-only cache should fail soft, never raise on backend errors]]
+
+%% ai-graph-end %%

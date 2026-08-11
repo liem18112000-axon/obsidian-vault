@@ -1,10 +1,21 @@
 ---
-title: "Reconstruct request waterfall from undertow accesslog: start = timestamp minus time-consuming"
+ai_hash: b21db52c369bb522
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: howto
+entities: []
+source: session 2026-07-16
 status: seedling
-source: "session 2026-07-16"
-tags: [undertow, accesslog, waterfall, latency, chartjs, luz-docs]
+tags:
+- undertow
+- accesslog
+- waterfall
+- latency
+- chartjs
+- luz-docs
+title: 'Reconstruct request waterfall from undertow accesslog: start = timestamp minus
+  time-consuming'
+type: howto
 ---
 
 # Reconstruct request waterfall from undertow accesslog: start = timestamp minus time-consuming
@@ -27,3 +38,14 @@ Applied in the luz-docs 800k eArchive perf report (`docs/performance-test-800k/e
 ## Related
 
 - [[luz-docs 800k eArchive performance test]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive request flow and log correlation (perf)]]
+- [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
+- [[HPA replica scale-out cannot fix a serial wait that lives in another service]]
+- [[Perf 800k tenant eArchive reload timing]]
+- [[eArchive 800k bottleneck is view-controller not K]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Clone a Bitbucket repo with an app password without leaking it (inline credential helper)"
+ai_hash: 89f420d4b3371815
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: howto
+entities: []
+source: session 2026-07-27 (Ivy setup)
 status: seedling
-source: "session 2026-07-27 (Ivy setup)"
-tags: [git, bitbucket, credentials, app-password, security, howto]
+tags:
+- git
+- bitbucket
+- credentials
+- app-password
+- security
+- howto
+title: Clone a Bitbucket repo with an app password without leaking it (inline credential
+  helper)
+type: howto
 ---
 
 # Clone a Bitbucket repo with an app password without leaking it (inline credential helper)
@@ -33,3 +44,14 @@ Contrast with embedding creds in the URL (`https://user:pass@host/...`), which l
 
 - [[Read a private Confluence page via REST API with ATLASSIAN API token]]
 - [[Resources index]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Automate GitHub read-only deploy key for a server via gh + dedicated SSH key]]
+- [[Bitbucket Cloud pull-request REST API shape]]
+- [[Read a private Confluence page via REST API with ATLASSIAN API token]]
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+- [[gh CLI is GitHub-only, not Bitbucket-aware]]
+
+%% ai-graph-end %%

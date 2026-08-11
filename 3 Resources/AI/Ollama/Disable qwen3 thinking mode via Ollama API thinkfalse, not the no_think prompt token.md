@@ -1,10 +1,19 @@
 ---
-title: "Disable qwen3 thinking mode via Ollama API think:false, not the /no_think prompt token"
+ai_hash: 48c7269615e026c6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: session 2026-06-30
 status: seedling
-source: "session 2026-06-30"
-tags: [ollama, qwen3, api, gotcha]
+tags:
+- ollama
+- qwen3
+- api
+- gotcha
+title: Disable qwen3 thinking mode via Ollama API think:false, not the /no_think prompt
+  token
+type: lesson
 ---
 
 # Disable qwen3 thinking mode via Ollama API think:false, not the /no_think prompt token
@@ -18,3 +27,10 @@ Leave `think` unset (or true) for research/analysis where the reasoning pass hel
 ## Related
 
 - [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Best Ollama models for CPU-only coding and research on a thin laptop]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths"
+ai_hash: 5cbbd3d6d0483764
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: vinnstack BDD Implement PR-comments feature, 2026-07-12
 status: seedling
-source: "vinnstack BDD Implement PR-comments feature, 2026-07-12"
-tags: [bitbucket, rest-api, pagination, gotcha, vinnstack]
+tags:
+- bitbucket
+- rest-api
+- pagination
+- gotcha
+- vinnstack
+title: Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths
+type: lesson
 ---
 
 # Bitbucket Cloud API pagination returns full URLs in 'next', not relative paths
@@ -16,3 +25,14 @@ This matters if you have a thin request wrapper that always prefixes a fixed bas
 Applied in vinnstack's `lib/bdd/prComments.ts` (`fetchPrComments`), which follows `next` links in a loop (capped at 20 pages as a sane bound) to collect every comment on a PR before feeding them to an LLM as review feedback.
 
 General lesson: before looping over a paginated REST API's "next" field, check whether it's a full URL or a relative path/cursor — assuming one when the API actually gives the other silently breaks pagination past page 1.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Bitbucket Cloud PR comment resolution is presence-of-object, not a boolean]]
+- [[Bitbucket Cloud pull-request REST API shape]]
+- [[Regenerate-from-review-feedback pattern reuse the branchPR, don't open a new one]]
+- [[gh CLI is GitHub-only, not Bitbucket-aware]]
+- [[Local-app OAuth bridges the browser callback to the waiting login via an in-memory state-to-resolver map]]
+
+%% ai-graph-end %%

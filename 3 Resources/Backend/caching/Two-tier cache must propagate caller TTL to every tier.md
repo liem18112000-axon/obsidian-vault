@@ -1,10 +1,20 @@
 ---
-title: "Two-tier cache must propagate caller TTL to every tier"
+ai_hash: 94d9a3cdfe764026
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: luz_docs parallelize code review, 2026-07-09/10
 status: seedling
-source: "luz_docs parallelize code review, 2026-07-09/10"
-tags: [caching, ttl, two-tier-cache, dualcache, gotcha, code-review]
+tags:
+- caching
+- ttl
+- two-tier-cache
+- dualcache
+- gotcha
+- code-review
+title: Two-tier cache must propagate caller TTL to every tier
+type: lesson
 ---
 
 # Two-tier cache must propagate caller TTL to every tier
@@ -24,3 +34,14 @@ Found in `ch.klara.luz.docs.cache.DualCache`, used by a sharding-completion gate
 
 - [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
 - [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[DualCache L1 write ignores per-call TTL (uses domain default)]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-end %%

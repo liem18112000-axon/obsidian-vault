@@ -1,10 +1,22 @@
 ---
-title: "Password-gate a server-rendered admin panel and show dependency-free store status"
+ai_hash: ed2a2cf96cfc21ad
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: howto
+entities: []
+source: session 2026-06-14, accesstrade_integration admin panel
 status: seedling
-source: "session 2026-06-14, accesstrade_integration admin panel"
-tags: [fastapi, htmx, admin, security, hmac, redis, postgres]
+tags:
+- fastapi
+- htmx
+- admin
+- security
+- hmac
+- redis
+- postgres
+title: Password-gate a server-rendered admin panel and show dependency-free store
+  status
+type: howto
 ---
 
 # Password-gate a server-rendered admin panel and show dependency-free store status
@@ -19,3 +31,12 @@ Pieces (Accesstrade Console System page):
 - Default ports: fill missing port from the scheme (postgres→5432, redis→6379) so the probe still works when the URL omits it.
 
 Testing tip: point the probe at `127.0.0.1:1` (closed) so the reachability check fails FAST (ECONNREFUSED) instead of hanging on a DNS/timeout in unit tests. Relates to [[Secrets handling for affiliate API keys]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Arm a new login gate by env presence so shipping auth cannot lock the operator out]]
+- [[Docker hostname for reaching a service depends on where the caller runs]]
+- [[urllib SplitResult.port raises ValueError on a non-numeric port]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Axon Ivy installEngine fails when ivy.engine.directory is stale or unwritable"
+ai_hash: 462d80c2aaf62e06
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: lesson
+entities: []
+source: session 2026-07-27 luz_finance setup
 status: seedling
-source: "session 2026-07-27 luz_finance setup"
-tags: [axon-ivy, maven, build, gotcha, klara-luz]
+tags:
+- axon-ivy
+- maven
+- build
+- gotcha
+- klara-luz
+title: Axon Ivy installEngine fails when ivy.engine.directory is stale or unwritable
+type: lesson
 ---
 
 # Axon Ivy installEngine fails when ivy.engine.directory is stale or unwritable
@@ -22,3 +31,13 @@ The Axon Ivy `com.axonivy.ivy.ci:project-build-plugin` binds an **installEngine*
 - [[data classes]]
 - [[HTML dialogs]]
 - [[and Java]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Maven user settings.xml overrides global same-id profile properties]]
+- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+- [[Building KlaraLuz Ivy projects off-VPN by routing Maven through Google Artifact Registry]]
+- [[Pre-configure an EclipseIvy Designer workspace by seeding .prefs files]]
+
+%% ai-graph-end %%

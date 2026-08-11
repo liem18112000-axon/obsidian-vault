@@ -1,10 +1,20 @@
 ---
-title: "Bounded bucketed hashing caps trigram index entries per document"
+ai_hash: af938005b0e3c646
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: technique
+entities: []
+source: luz_docs S2-index-size-options.md, 2026-06-30
 status: seedling
-source: "luz_docs S2-index-size-options.md, 2026-06-30"
-tags: [trigram, ngram, hashing, index, search, luz-docs]
+tags:
+- trigram
+- ngram
+- hashing
+- index
+- search
+- luz-docs
+title: Bounded bucketed hashing caps trigram index entries per document
+type: technique
 ---
 
 # Bounded bucketed hashing caps trigram index entries per document
@@ -23,3 +33,14 @@ From luz_docs S2-index-size-options.md, Option C (Kepler eArchive).
 
 - [[3 Resources/Data/MongoDB/indexing/Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
 - [[OCR body text dominates a full-text trigram index]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[OCR body text dominates a full-text trigram index]]
+- [[Multikey ngram index size is driven by distinct-entry count, not bytes per entry]]
+- [[Larger n-grams make a substring ngram index bigger, not smaller]]
+- [[Trigram index makes substring search indexable filter by 3-grams, then verify by regex]]
+- [[A large secondary index hurts via working-set vs cache, not disk bytes]]
+
+%% ai-graph-end %%

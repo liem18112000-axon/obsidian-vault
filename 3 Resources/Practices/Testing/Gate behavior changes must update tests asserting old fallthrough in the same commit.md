@@ -1,11 +1,23 @@
 ---
-title: "Gate behavior changes must update tests asserting old fallthrough in the same commit"
+ai_hash: 120b4665f82e1f5e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-21
-updated: 2026-07-22
-type: lesson
+entities: []
+source: 'luz-docs commits 3a83b5e82 / e2819386f (2026-07-22); luz_docs PR #1363 LUZ-156856
+  master build 72bfc3d7 (2026-07-21)'
 status: seedling
-source: "luz-docs commits 3a83b5e82 / e2819386f (2026-07-22); luz_docs PR #1363 LUZ-156856 master build 72bfc3d7 (2026-07-21)"
-tags: [testing, ci, mockito, gate-pattern, luz-docs, gotcha]
+tags:
+- testing
+- ci
+- mockito
+- gate-pattern
+- luz-docs
+- gotcha
+title: Gate behavior changes must update tests asserting old fallthrough in the same
+  commit
+type: lesson
+updated: 2026-07-22
 ---
 
 # Gate behavior changes must update tests asserting old fallthrough in the same commit
@@ -24,3 +36,14 @@ Any change that invalidates an existing test — a reshaped/renamed/deleted meth
 - [[Run the full affected test package locally, not a hand-picked subset]]
 - [[Hand-rolled Optional.or fallback chain replaces CDI @Fallback]]
 - [[3 Resources/Languages/Java/CDI and MicroProfile/CDI self-invocation bypasses interceptor proxy]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[MaterializeGate migration check falls through to repo on missing campaign]]
+- [[Luz gates must inject per-package Allowlist beans not static Campaign isAffectedFor]]
+- [[Run the full affected test package locally, not a hand-picked subset]]
+- [[Migration campaign status can silently drift from real document state]]
+
+%% ai-graph-end %%

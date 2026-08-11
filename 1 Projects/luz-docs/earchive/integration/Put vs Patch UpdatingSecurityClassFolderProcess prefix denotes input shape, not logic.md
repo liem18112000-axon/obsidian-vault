@@ -1,12 +1,44 @@
 ---
-title: "Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic"
+ai_hash: c1c8fabd79628f59
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - "Choose Put vs Patch UpdatingSecurityClassFolderProcess by input shape not endpoint verb"
+- Choose Put vs Patch UpdatingSecurityClassFolderProcess by input shape not endpoint
+  verb
 created: 2026-06-04
-type: concept
+entities:
+- Put
+- Patch
+- UpdatingSecurityClassFolderProcess
+- input shape
+- calling endpoint
+- recompute logic
+- subtree security-class recompute
+- parent class
+- metadata JsonObjects
+- isChangingArrayValue
+- parentFolderIds
+- JSON-Patch op array
+- adapter
+- folderService.getFolderById
+- Folder recovery
+- LUZ-155136
+- FolderService
+- PATCH endpoint
+- inheritedSecurityClassCode
+- PUT path
+source: session 2026-06-04, FolderService.java
 status: seedling
-source: "session 2026-06-04, FolderService.java"
-tags: [luz-docs, security-class, design-decision, design-rationale, folder-recovery, LUZ-155136]
+tags:
+- luz-docs
+- security-class
+- design-decision
+- design-rationale
+- folder-recovery
+- LUZ-155136
+title: Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape,
+  not logic
+type: concept
 ---
 
 # Put vs Patch UpdatingSecurityClassFolderProcess prefix denotes input shape, not logic
@@ -21,3 +53,39 @@ In luz_docs the `Put`/`Patch` prefixes on `UpdatingSecurityClassFolderProcess` s
 ## Related
 
 - [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
+- [[Folder recovery re-parenting must recompute inheritedSecurityClassCode like the PUT path]]
+- [[Folder recovery must recompute inherited security after deletion statuses are cleared]]
+- [[luz_docs bulk folder PATCH runs the materialize cascade once per entry]]
+- [[Folder recovery reuses the parent-change materialize cascade]]
+
+**Relations:**
+- Put — *is_prefix_on* — UpdatingSecurityClassFolderProcess
+- Patch — *is_prefix_on* — UpdatingSecurityClassFolderProcess
+- Put — *describes* — input shape
+- Patch — *describes* — input shape
+- Put — *does_not_describe* — calling endpoint
+- Patch — *does_not_describe* — calling endpoint
+- Put — *does_not_describe* — recompute logic
+- Patch — *does_not_describe* — recompute logic
+- UpdatingSecurityClassFolderProcess — *shares* — subtree security-class recompute
+- subtree security-class recompute — *is_in* — parent class
+- Put — *takes* — metadata JsonObjects
+- Put — *gates_on* — isChangingArrayValue
+- isChangingArrayValue — *uses* — parentFolderIds
+- Patch — *takes* — JSON-Patch op array
+- Patch — *is_a* — adapter
+- Patch — *re-fetches_via* — folderService.getFolderById
+- Patch — *delegates_to* — Put
+- Folder recovery — *is_a* — PUT
+- Folder recovery — *is_a_fix_for* — LUZ-155136
+- Folder recovery — *is_in* — FolderService
+- Patch — *exists_for* — PATCH endpoint
+- Folder recovery — *must_recompute* — inheritedSecurityClassCode
+- Folder recovery — *is_like* — PUT path
+
+%% ai-graph-end %%

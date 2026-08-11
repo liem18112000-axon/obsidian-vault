@@ -1,10 +1,18 @@
 ---
-title: "Unbounded provider prose justifies fallback-first mapper plus vendor list request"
+ai_hash: 04316c7fc127affe
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-24
-type: lesson
+entities: []
+source: LUZ-157476 session 2026-07-24
 status: seedling
-source: "LUZ-157476 session 2026-07-24"
-tags: [communication, taxonomy, vendor, design-decision]
+tags:
+- communication
+- taxonomy
+- vendor
+- design-decision
+title: Unbounded provider prose justifies fallback-first mapper plus vendor list request
+type: lesson
 ---
 
 # Unbounded provider prose justifies fallback-first mapper plus vendor list request
@@ -16,3 +24,14 @@ The two sentences that pre-empt management pushback: 'anything unrecognized fall
 ## Related
 - [[Payrexx publishes no catalog of API wrapper error messages]]
 - [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LUZ-157476 maps failure categories in luz_store only, overriding the boundary recommendation]]
+- [[Observed Payrexx prose vocabulary in dev is only three messages]]
+- [[LUZ-157476 proposes seven failure categories with per-channel customer copy]]
+- [[Persist payment failure category at charge time, never derive from prose]]
+- [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+
+%% ai-graph-end %%

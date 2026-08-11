@@ -1,10 +1,23 @@
 ---
-title: "klara-prod is a separate GCP project, not a namespace"
+ai_hash: 5ae45d279af82c63
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: PROD jwt-service investigation 2026-06-30; luz_docs prod migration incident
+  2026-07-10
 status: seedling
-source: "PROD jwt-service investigation 2026-06-30; luz_docs prod migration incident 2026-07-10"
-tags: [klara, gcp, gke, gcloud, logging, prod, access, gotcha]
+tags:
+- klara
+- gcp
+- gke
+- gcloud
+- logging
+- prod
+- access
+- gotcha
+title: klara-prod is a separate GCP project, not a namespace
+type: lesson
 ---
 
 # klara-prod is a separate GCP project, not a namespace
@@ -25,3 +38,14 @@ Confirmed 2026-07-10: an exact log line found nothing on klara-nonprod and match
 
 - [[Istio DC response_flag with round latency = caller read timeout]]
 - [[Klara app API-key to token exchange flow (jwt-service to luztenant-service)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Verify kubectl context before GKE rollout - _context file can disagree]]
+- [[Luz performance env cluster topology]]
+- [[klara-nonprod is the GCP project for non-prod Artifact Registry IAM]]
+- [[luz-person is a Deployment not a StatefulSet in klara dev]]
+- [[Cloud Build GKE deploy get-credentials needs --project for a cross-project cluster]]
+
+%% ai-graph-end %%

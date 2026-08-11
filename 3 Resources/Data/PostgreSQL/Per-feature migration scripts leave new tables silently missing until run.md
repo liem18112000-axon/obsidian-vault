@@ -1,10 +1,18 @@
 ---
-title: "Per-feature migration scripts leave new tables silently missing until run"
+ai_hash: 32482949a852c228
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: session 2026-07-03, vinnstack prd_comments 500
 status: seedling
-source: "session 2026-07-03, vinnstack prd_comments 500"
-tags: [postgres, migrations, vinnstack, deployment]
+tags:
+- postgres
+- migrations
+- vinnstack
+- deployment
+title: Per-feature migration scripts leave new tables silently missing until run
+type: lesson
 ---
 
 # Per-feature migration scripts leave new tables silently missing until run
@@ -18,3 +26,14 @@ Mitigations, cheapest first: (1) make "run the migration" an explicit rollout st
 ## Related
 
 - [[Delete-and-reinsert aggregate saves silently cascade-wipe new child tables]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CREATE TABLE IF NOT EXISTS never upgrades existing tables - pair new columns with ALTER IF NOT EXISTS]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+- [[Delete-and-reinsert aggregate saves silently cascade-wipe new child tables]]
+- [[Secondary-write failures should fail loud when their silent version was the actual bug]]
+- [[Whole-aggregate read-modify-write for a per-child toggle causes lost updates under concurrent sibling writes]]
+
+%% ai-graph-end %%

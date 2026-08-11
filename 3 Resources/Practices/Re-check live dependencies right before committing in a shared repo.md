@@ -1,10 +1,18 @@
 ---
-title: "Re-check live dependencies right before committing in a shared repo"
+ai_hash: be16cfdbb0a6993f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-07
-type: lesson
+entities: []
+source: vinnstack cloudbuild.yaml setup, 2026-07-07
 status: seedling
-source: "vinnstack cloudbuild.yaml setup, 2026-07-07"
-tags: [git, collaboration, ci, process]
+tags:
+- git
+- collaboration
+- ci
+- process
+title: Re-check live dependencies right before committing in a shared repo
+type: lesson
 ---
 
 # Re-check live dependencies right before committing in a shared repo
@@ -17,3 +25,14 @@ Lesson: before finalizing any change that depends on how another part of a live,
 
 ## Related
 [[Dead bundling config outlives the runtime code that read it]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Dead bundling config outlives the runtime code that read it]]
+- [[Re-verify file state before trusting findings on long-running reviews]]
+- [[A concurrent session's git stash can silently revert your in-progress edits]]
+- [[Vinnstack bundles cloud-sql-proxy.exe as a gitignored extraResource]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+
+%% ai-graph-end %%

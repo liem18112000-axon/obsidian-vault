@@ -1,10 +1,20 @@
 ---
-title: "Bitbucket Pipelines: the default pipeline runs on every commit; anchor steps to dedupe"
+ai_hash: 8e1083bb7788fc38
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-01
-type: howto
+entities: []
+source: session 2026-07-01 (Vinnstack CI)
 status: seedling
-source: "session 2026-07-01 (Vinnstack CI)"
-tags: [bitbucket, ci, pipelines, yaml, vinnstack]
+tags:
+- bitbucket
+- ci
+- pipelines
+- yaml
+- vinnstack
+title: 'Bitbucket Pipelines: the default pipeline runs on every commit; anchor steps
+  to dedupe'
+type: howto
 ---
 
 # Bitbucket Pipelines: the default pipeline runs on every commit; anchor steps to dedupe
@@ -28,3 +38,14 @@ pipelines:
     "**": [ { step: *test } ]
 ```
 Notes: cache `~/.npm` (not node_modules) and use `npm ci` for reproducible installs. `pull-requests` runs only when a PR exists; `default` already covers plain branch pushes, so listing both makes the same gate show as a required PR check. Pick a Node image matching the app (node:22 for Next 14).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CI build Docker image on every run, push only on non-PR]]
+- [[Auto-versioning generated files into a local git repo add -A + serialized queue + fire-and-forget]]
+- [[Same-repo branch push fires both push and pull_request events (duplicate CI runs)]]
+- [[luz_docs_integration_test AI pipeline branch and PR mechanics]]
+- [[node slim CI images have no git — git-driven tests fail with spawnSync git ENOENT]]
+
+%% ai-graph-end %%

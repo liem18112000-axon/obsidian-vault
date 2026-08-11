@@ -1,10 +1,19 @@
 ---
-title: "Re-verify file state before trusting findings on long-running reviews"
+ai_hash: 39716fd8d0844ae8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: luz_docs parallelize code review, 2026-07-09/10
 status: seedling
-source: "luz_docs parallelize code review, 2026-07-09/10"
-tags: [code-review, agents, workflow, git, gotcha]
+tags:
+- code-review
+- agents
+- workflow
+- git
+- gotcha
+title: Re-verify file state before trusting findings on long-running reviews
+type: lesson
 ---
 
 # Re-verify file state before trusting findings on long-running reviews
@@ -18,3 +27,14 @@ Concretely: after reading a file's full contents at the start of a review, a muc
 ## Related
 
 - [[luz_docs stamps _shard on create to keep sharding gate stable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[Re-check live dependencies right before committing in a shared repo]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[A concurrent session's git stash can silently revert your in-progress edits]]
+
+%% ai-graph-end %%

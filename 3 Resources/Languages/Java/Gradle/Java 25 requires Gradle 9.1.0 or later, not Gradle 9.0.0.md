@@ -1,10 +1,18 @@
 ---
-title: "Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0"
+ai_hash: cb426f05a79ff694
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-type: lesson
+entities: []
+source: LEO CDP migration planning, session 2026-06-06
 status: seedling
-source: "LEO CDP migration planning, session 2026-06-06"
-tags: [gradle, java25, compatibility, leo-cdp]
+tags:
+- gradle
+- java25
+- compatibility
+- leo-cdp
+title: Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0
+type: lesson
 ---
 
 # Java 25 requires Gradle 9.1.0 or later, not Gradle 9.0.0
@@ -18,3 +26,14 @@ Source: Gradle compatibility matrix + Gradle 9.1.0 release notes (verified 2026-
 ## Related
 
 - [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[gradlew wrapper upgrades run under the OLD Gradle version - pick the JDK accordingly]]
+- [[Decouple runtime JDK from bytecode target when migrating Java versions]]
+- [[Run OpenRewrite via Gradle init script without touching build.gradle]]
+- [[String-typed org.gradle.jvm.environment attribute collides with Gradle 7+ typed TargetJvmEnvironment]]
+- [[Guava jreandroid variant ambiguity declare TargetJvmEnvironment standard-jvm]]
+
+%% ai-graph-end %%

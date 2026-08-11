@@ -1,10 +1,18 @@
 ---
-title: "CREATE TABLE IF NOT EXISTS never upgrades existing tables - pair new columns with ALTER IF NOT EXISTS"
+ai_hash: eb4124c9f7bd3573
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: session 2026-07-03, vinnstack subject column
 status: seedling
-source: "session 2026-07-03, vinnstack subject column"
-tags: [postgres, schema-migration, ddl]
+tags:
+- postgres
+- schema-migration
+- ddl
+title: CREATE TABLE IF NOT EXISTS never upgrades existing tables - pair new columns
+  with ALTER IF NOT EXISTS
+type: lesson
 ---
 
 # CREATE TABLE IF NOT EXISTS never upgrades existing tables - pair new columns with ALTER IF NOT EXISTS
@@ -16,3 +24,11 @@ Rule: every column added after a table first shipped needs a paired, equally ide
     ALTER TABLE t ADD COLUMN IF NOT EXISTS subject TEXT NOT NULL DEFAULT 'prd';
 
 Both statements stay in schema.sql forever; re-running the file is then a no-op on any database state. Same applies to `CREATE INDEX IF NOT EXISTS` for new indexes (those are standalone statements, so they already behave).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-feature migration scripts leave new tables silently missing until run]]
+- [[Idempotency guards keyed on object presence break when hydration materializes the object]]
+
+%% ai-graph-end %%

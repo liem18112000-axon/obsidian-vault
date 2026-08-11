@@ -1,10 +1,20 @@
 ---
-title: "Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing"
+ai_hash: 358edb4605eb4a6e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: gotcha
+entities: []
+source: session 2026-07-04, vinnstack claude setup-token relay
 status: seedling
-source: "session 2026-07-04, vinnstack claude setup-token relay"
-tags: [pty, subprocess, relay, vinnstack, timeout]
+tags:
+- pty
+- subprocess
+- relay
+- vinnstack
+- timeout
+title: Harvest CLI output on stream-match, not on process close, when the CLI lingers
+  after printing
+type: gotcha
 ---
 
 # Harvest CLI output on stream-match, not on process close, when the CLI lingers after printing
@@ -18,3 +28,14 @@ Fix pattern: attach a data listener that re-tests the capture regex on every chu
 ## Related
 
 - [[Seed-in-memory-but-persist-on-save leaves no row when a prior layer already shows connected]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Driving a raw-mode or ink TTY prompt through a PTY needs carriage return, not newline, to submit]]
+- [[Prefer pasting a token minted once over scraping it from a PTY relay]]
+- [[Interactive OAuth CLIs need a PTY - wrap in script(1), force wide cols, strip ANSI to parse the URL]]
+- [[Relay a headless CLI paste-back OAuth through a web UI with a two-request child registry]]
+- [[Claude CLI OAuth paste-back expects CODE#STATE, not the bare authorization code]]
+
+%% ai-graph-end %%

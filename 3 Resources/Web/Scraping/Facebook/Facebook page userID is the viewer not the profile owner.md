@@ -1,10 +1,19 @@
 ---
-title: "Facebook page userID is the viewer not the profile owner"
+ai_hash: dfbcb0f3858e25c7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-21
-type: lesson
+entities: []
+source: session 2026-06-21
 status: seedling
-source: "session 2026-06-21"
-tags: [facebook, scraping, gotcha, uid, fb-info-project]
+tags:
+- facebook
+- scraping
+- gotcha
+- uid
+- fb-info-project
+title: Facebook page userID is the viewer not the profile owner
+type: lesson
 ---
 
 # Facebook page userID is the viewer not the profile owner
@@ -23,3 +32,14 @@ Related: [[Facebook UID from a vanity handle via the mbasic lst token]].
 ## Related
 
 - [[Facebook UID from a vanity handle via the mbasic lst token]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook UID from a vanity handle via the mbasic lst token]]
+- [[Facebook Comet comment DOM does not expose the commenter's numeric UID]]
+- [[FB photofbid= links scrape as post mode; filename id falls back to na]]
+- [[Stale FB session signature login popup + profile 302 to login + empty location columns]]
+- [[Unanchored 'From' regex captures the profile name from Facebook's 'See more from' buttons]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "GKE managed-cert HTTPS: global IP, DNS before cert, NEG service, FrontendConfig redirect"
+ai_hash: 15d0373a767a502f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04, vinnstack HTTPS
 status: seedling
-source: "session 2026-07-04, vinnstack HTTPS"
-tags: [gke, https, ingress, managed-certificate]
+tags:
+- gke
+- https
+- ingress
+- managed-certificate
+title: 'GKE managed-cert HTTPS: global IP, DNS before cert, NEG service, FrontendConfig
+  redirect'
+type: howto
 ---
 
 # GKE managed-cert HTTPS: global IP, DNS before cert, NEG service, FrontendConfig redirect
@@ -24,3 +33,14 @@ Gotcha chain to expect: cert stuck Provisioning = DNS not resolving or resolving
 ## Related
 
 - [[3 Resources/Cloud/GCP/Free built-in GCP domain Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Free built-in GCP domain Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP]]
+- [[GKE LoadBalancer Service External vs Internal and how to tell by IP]]
+- [[Rollout restart uses the LIVE spec - a manifest edited only in git changes nothing]]
+- [[Creating the GSA a KSA annotation references activates WI routing and can break a pod]]
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+
+%% ai-graph-end %%

@@ -1,7 +1,16 @@
 ---
-title: luz-docs performance JVM thread metrics endpoint
-tags: [luz-docs, performance, metrics, prometheus, wildfly]
+ai_hash: 079acf3eefdbb0ef
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
+entities: []
+tags:
+- luz-docs
+- performance
+- metrics
+- prometheus
+- wildfly
+title: luz-docs performance JVM thread metrics endpoint
 ---
 
 # luz-docs performance JVM thread metrics endpoint
@@ -26,3 +35,14 @@ curl -s localhost:19090/metrics | grep -E '^base_thread|worker_thread_usage'
 ```
 
 ~408 metric lines total. luz-docs StatefulSet = 5 replicas on performance. view-controller/webclient are Deployments (no metrics-proxy sidecar — thread metrics may be absent there).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz performance env cluster topology]]
+- [[Read JVMprocess thread count via procpidstatus, no app auth needed]]
+- [[Run luz_docs_statistic locally with docker-compose]]
+- [[luz-docs API request bodies are only observable as downstream luz-jsonstore queries]]
+- [[HPA replica scale-out cannot fix a serial wait that lives in another service]]
+
+%% ai-graph-end %%

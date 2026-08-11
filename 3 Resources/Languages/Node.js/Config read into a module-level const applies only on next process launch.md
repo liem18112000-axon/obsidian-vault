@@ -1,10 +1,20 @@
 ---
-title: "Config read into a module-level const applies only on next process launch"
+ai_hash: fc931e09e063f236
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-02
-type: gotcha
+entities: []
 status: seedling
-tags: [nodejs, config, module-load, module-cache, nextjs, gotcha, vinnstack]
-entities: [getConfig, reloadConfig, "window.location.reload()", sys.modules-equivalent, CLAUDE_MODEL, INTERROGATION_DIR, CONTENT_DIR]
+tags:
+- nodejs
+- config
+- module-load
+- module-cache
+- nextjs
+- gotcha
+- vinnstack
+title: Config read into a module-level const applies only on next process launch
+type: gotcha
 ---
 
 # Config read into a module-level const applies only on next process launch
@@ -28,3 +38,14 @@ Persisting a new value at runtime updates the config file and `reloadConfig()`'s
 
 - [[Guard array-typed React state seeded from a fetch with ?? []]]
 - [[Enable Claude Code fast mode in headless -p runs via --settings fastMode]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows setx does not update already-running processes' environment]]
+- [[A process-global active account leaks identity across concurrent requests in a single-process server]]
+- [[Never cache a negative fallback in the same slot as a resolved value]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Open-and-degrade beats hard-quit let a desktop app start without its optional DB (Vinnstack clean-Win fix)]]
+
+%% ai-graph-end %%

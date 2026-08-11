@@ -1,10 +1,18 @@
 ---
-title: "Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0"
+ai_hash: 1c47b89be21ee72e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: howto
+entities: []
+source: fb-info-project build workflow, session 2026-06-10
 status: seedling
-source: "fb-info-project build workflow, session 2026-06-10"
-tags: [pyinstaller, playwright, packaging, windows]
+tags:
+- pyinstaller
+- playwright
+- packaging
+- windows
+title: Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0
+type: howto
 ---
 
 # Bundle Chromium inside a PyInstaller exe with PLAYWRIGHT_BROWSERS_PATH=0
@@ -24,3 +32,13 @@ Use **onedir, not onefile**: the Node driver + Chromium don't survive onefile's 
 ## Related
 
 - [[PyInstaller needs collect_all for packages that ship non-Python payloads]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[PyInstaller spec paths resolve inconsistently - anchor runtime_hooks on SPECPATH]]
+- [[PyInstaller needs collect_all for packages that ship non-Python payloads]]
+- [[Black-box E2E test a PyInstaller one-dir app from a temp CWD]]
+- [[Compress-Archive silently drops empty directories]]
+
+%% ai-graph-end %%

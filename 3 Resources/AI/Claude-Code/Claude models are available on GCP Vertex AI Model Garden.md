@@ -1,10 +1,19 @@
 ---
-title: "Claude models are available on GCP Vertex AI Model Garden"
+ai_hash: 218ba3139b62d56e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: term
+entities: []
+source: deep-research pass, virtual-avatar project, 2026-07-10
 status: evergreen
-source: "deep-research pass, virtual-avatar project, 2026-07-10"
-tags: [claude, anthropic, gcp, vertex-ai, pricing]
+tags:
+- claude
+- anthropic
+- gcp
+- vertex-ai
+- pricing
+title: Claude models are available on GCP Vertex AI Model Garden
+type: term
 ---
 
 # Claude models are available on GCP Vertex AI Model Garden
@@ -20,3 +29,14 @@ Always spot-check the live Vertex rate card for the exact model before finalizin
 - [[Claude subscription OAuth cannot power a third-party audience-facing app]]
 - [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
 - [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Claude subscription OAuth cannot power a third-party audience-facing app]]
+- [[Vertex AI global endpoint host has no region prefix]]
+
+%% ai-graph-end %%

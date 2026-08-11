@@ -1,10 +1,21 @@
 ---
-title: "Non-blocking usage capture: fire-and-forget async writes + a serialized promise queue for race-safe RMW"
+ai_hash: 5b6c497446ea5e9d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: lesson
+entities: []
+source: session 2026-07-14
 status: seedling
-source: "session 2026-07-14"
-tags: [async, non-blocking, nodejs, concurrency, pattern, vinnstack]
+tags:
+- async
+- non-blocking
+- nodejs
+- concurrency
+- pattern
+- vinnstack
+title: 'Non-blocking usage capture: fire-and-forget async writes + a serialized promise
+  queue for race-safe RMW'
+type: lesson
 ---
 
 # Non-blocking usage capture: fire-and-forget async writes + a serialized promise queue for race-safe RMW
@@ -18,3 +29,14 @@ Two patterns:
 Biggest gotcha found: skillUsage.recordSkillRead ran on the STREAMING hot path (once per Read tool_use) and did a synchronous readdirSync+statSync scan of 3 dirs + read + write — blocking the event loop mid-stream. Keep the cheap sync early-out (regex on the filename) BEFORE the queue, then do all fs work async inside the queued step.
 
 Also: place the capture call AFTER the response is finalized (e.g. after safeClose() in the stream) so even the sync prep isn't in the critical path. Read/aggregate paths (readUsage, summarizeUsage, getUsage) can stay sync — they run in their OWN GET request, not the main action.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+- [[Promise-chain queueTail pattern serializes async jobs with instant enqueue]]
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Client-side generation queue lets independent items run without blocking each other]]
+- [[Vinnstack skill-usage counter missed reads past a 4MB stdout cap]]
+
+%% ai-graph-end %%

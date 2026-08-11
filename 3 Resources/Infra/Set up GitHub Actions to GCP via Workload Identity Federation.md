@@ -1,10 +1,21 @@
 ---
-title: "Set up GitHub Actions to GCP via Workload Identity Federation"
+ai_hash: 10176f36c3c5704c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: howto
+entities: []
+source: session 2026-06-14, accesstrade_integration deployment
 status: seedling
-source: "session 2026-06-14, accesstrade_integration deployment"
-tags: [gcp, workload-identity, github-actions, oidc, iam, ci-cd, security]
+tags:
+- gcp
+- workload-identity
+- github-actions
+- oidc
+- iam
+- ci-cd
+- security
+title: Set up GitHub Actions to GCP via Workload Identity Federation
+type: howto
 ---
 
 # Set up GitHub Actions to GCP via Workload Identity Federation
@@ -26,3 +37,14 @@ Idempotency: guard each create with a `describe || create`; `add-iam-policy-bind
 Key-JSON fallback (discouraged, long-lived): skip WIF, create a SA key, `gh secret set GCP_CREDENTIALS_JSON < key.json`, and the auth step uses `credentials_json` instead. Prefer WIF.
 
 Relates to [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]] (WIF is the 'external CI' answer) and [[secrets context is not available in GitHub Actions if conditions]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pipe a GCP service-account key straight into a GitHub secret without leaking it]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+- [[secrets context is not available in GitHub Actions if conditions]]
+- [[Cloud Build repo connection blocked drive build+deploy from GitHub Actions instead]]
+- [[Rotate credentials by verifying the new one before deleting the old]]
+
+%% ai-graph-end %%

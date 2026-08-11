@@ -1,11 +1,23 @@
 ---
-title: "secrets context is not available in GitHub Actions if conditions"
+ai_hash: 5785ebaf9ba9a183
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-06
-updated: 2026-07-31
-type: lesson
+entities: []
+source: leo-cdp-framework ci-cd.yml 2026-06-06; fb-info-project build-exe.yml 2026-06-14;
+  accesstrade_integration provision workflow 2026-06-14
 status: seedling
-source: "leo-cdp-framework ci-cd.yml 2026-06-06; fb-info-project build-exe.yml 2026-06-14; accesstrade_integration provision workflow 2026-06-14"
-tags: [github-actions, secrets, ci, ci-cd, gcp, workload-identity, gotcha]
+tags:
+- github-actions
+- secrets
+- ci
+- ci-cd
+- gcp
+- workload-identity
+- gotcha
+title: secrets context is not available in GitHub Actions if conditions
+type: lesson
+updated: 2026-07-31
 ---
 
 # secrets context is not available in GitHub Actions if conditions
@@ -65,3 +77,14 @@ Adjacent trick: you *can* compare secrets inside `with:` — `credentials_json: 
 - [[pytest results into a GitHub Actions build via dorny test-reporter]]
 - [[GitHub Actions continue-on-error step-level goes green, job-level stays red]]
 - [[LEO CDP CI provisions deps CI-natively, pinned to devops-script versions for parity]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GitHub Actions 'secret is not set' usually means a name mismatch - verify with gh secret list]]
+- [[Set up GitHub Actions to GCP via Workload Identity Federation]]
+- [[GCP auth ambient ADC in GCP-hosted runners vs explicit creds in external CI]]
+- [[GHCR-always plus Docker Hub-optional GitHub Actions publishing pattern]]
+- [[Scheduled GitHub Actions only run on the default branch; self-closing reminder issue pattern]]
+
+%% ai-graph-end %%

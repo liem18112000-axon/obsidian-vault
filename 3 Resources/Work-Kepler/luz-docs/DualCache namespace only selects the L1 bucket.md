@@ -1,10 +1,18 @@
 ---
-title: "DualCache namespace only selects the L1 bucket"
+ai_hash: 7824b0c5840bf40b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: lesson
+entities: []
+source: session 2026-07-31
 status: seedling
-source: "session 2026-07-31"
-tags: [luz-docs, java, caching, gotcha]
+tags:
+- luz-docs
+- java
+- caching
+- gotcha
+title: DualCache namespace only selects the L1 bucket
+type: lesson
 ---
 
 # DualCache namespace only selects the L1 bucket
@@ -21,3 +29,14 @@ File: `ch.klara.luz.docs.cache.DualCache`. Related: [[Extract shared root of nea
 ## Related
 
 - [[Extract shared root of near-identical CDI beans into a static common helper + Spec + supplier]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Extract shared root of near-identical CDI beans into a static common helper + Spec + supplier]]
+- [[DualCache L1 write ignores per-call TTL (uses domain default)]]
+- [[Two-tier cache must propagate caller TTL to every tier]]
+- [[luz_docs safeCache is a deliberate per-class private copy]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+
+%% ai-graph-end %%

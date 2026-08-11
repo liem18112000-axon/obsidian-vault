@@ -1,10 +1,20 @@
 ---
-title: "Comparing _folderSecurityClassCodes in tests needs a multiset-of-sets, not a flat set"
+ai_hash: ab31b08144d9ec01
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: lesson
+entities: []
+source: session 2026-06-08 LUZ-154157
 status: seedling
-source: "session 2026-06-08 LUZ-154157"
-tags: [luz-docs, materialize, testing, python, gotcha]
+tags:
+- luz-docs
+- materialize
+- testing
+- python
+- gotcha
+title: Comparing _folderSecurityClassCodes in tests needs a multiset-of-sets, not
+  a flat set
+type: lesson
 ---
 
 # Comparing _folderSecurityClassCodes in tests needs a multiset-of-sets, not a flat set
@@ -28,3 +38,14 @@ def _norm_nested(value):
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/materialize/Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz _folderSecurityClassCodes is a list-of-lists, one inner list per folder]]
+- [[Luz delete-folder tests can only delete public folders, not ones carrying a security class]]
+- [[userSecurityClassCodes param must be JSON array text not comma-separated]]
+- [[luz-docs folder delete verifies document security classes with one limit-1 Mongo query per folder]]
+- [[Fail-closed defense over a parallel array distinguish present-but-short from absent]]
+
+%% ai-graph-end %%

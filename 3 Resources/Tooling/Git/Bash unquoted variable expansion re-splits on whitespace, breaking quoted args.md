@@ -1,10 +1,18 @@
 ---
-title: "Bash unquoted variable expansion re-splits on whitespace, breaking quoted args"
+ai_hash: 29951a5542ba571a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-12
-type: lesson
+entities: []
+source: Vinnstack BDD verify-stage work, 2026-07-12
 status: seedling
-source: "Vinnstack BDD verify-stage work, 2026-07-12"
-tags: [bash, shell-scripting, gotcha, word-splitting]
+tags:
+- bash
+- shell-scripting
+- gotcha
+- word-splitting
+title: Bash unquoted variable expansion re-splits on whitespace, breaking quoted args
+type: lesson
 ---
 
 # Bash unquoted variable expansion re-splits on whitespace, breaking quoted args
@@ -16,3 +24,11 @@ In bash, once a variable holding a shell-command-like string is expanded UNQUOTE
 - Or `eval` the string to force a second round of shell parsing — but this reintroduces injection risk if any part of the string is not fully trusted, so prefer the array approach.
 
 Found this auditing a pre-existing bash IT-runner script (`run_it.sh`, luz-docs-integration-test skill) that built its final behave invocation via `"$PY" -m behave $behave_args` — worked fine for simple flag-only CMD strings, but would silently mangle any attempt to target one scenario by `--name "<title with spaces>"`. Fixed in a Vinnstack-local fork by appending scenario/feature-path targeting as separate array elements instead of concatenating into the CMD string.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[behave step patterns differing only by quote style are distinct definitions]]
+- [[run_it.sh TENANT_ID is a shell parameter, not an .env value]]
+
+%% ai-graph-end %%

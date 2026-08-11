@@ -1,10 +1,19 @@
 ---
-title: "Validate a hand-rolled chart palette against a real app surface, not the tool's default"
+ai_hash: e181b564e14b7390
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-09
 status: seedling
-source: "vinnstack session 2026-07-09"
-tags: [dataviz, color, accessibility, charts]
+tags:
+- dataviz
+- color
+- accessibility
+- charts
+title: Validate a hand-rolled chart palette against a real app surface, not the tool's
+  default
+type: lesson
 ---
 
 # Validate a hand-rolled chart palette against a real app surface, not the tool's default
@@ -24,3 +33,10 @@ Per-feature accent colors (e.g. one color for a "PRD" feature, another for "Proc
 
 ## Related
 - [[Decouple internal PK from external ticket ID for draft-before-push records]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

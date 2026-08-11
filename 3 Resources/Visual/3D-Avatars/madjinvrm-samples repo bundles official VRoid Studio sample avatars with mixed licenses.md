@@ -1,10 +1,20 @@
 ---
-title: "madjin/vrm-samples repo bundles official VRoid Studio sample avatars with mixed licenses"
+ai_hash: 3e6771f0ad5313f2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: observation
+entities: []
+source: github.com/madjin/vrm-samples, session 2026-07-11
 status: seedling
-source: "github.com/madjin/vrm-samples, session 2026-07-11"
-tags: [vroid, vrm, license, avatar, github]
+tags:
+- vroid
+- vrm
+- license
+- avatar
+- github
+title: madjin/vrm-samples repo bundles official VRoid Studio sample avatars with mixed
+  licenses
+type: observation
 ---
 
 # madjin/vrm-samples repo bundles official VRoid Studio sample avatars with mixed licenses
@@ -23,3 +33,13 @@ All of these are VRM format, so none work directly with the `TalkingHead` JS lib
 
 - [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
 - [[Ready Player Me shut down Jan 2026 after Netflix acquisition]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TalkingHead requires offline Blender conversion for VRM avatars]]
+- [[Avaturn T2 export is a drop-in Ready Player Me replacement for TalkingHead]]
+- [[Ready Player Me shut down Jan 2026 after Netflix acquisition]]
+- [[met4citizen TalkingHead is a free browser-native 3D avatar library]]
+
+%% ai-graph-end %%

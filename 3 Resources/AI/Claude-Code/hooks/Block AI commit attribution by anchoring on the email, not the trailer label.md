@@ -1,10 +1,18 @@
 ---
-title: "Block AI commit attribution by anchoring on the email, not the trailer label"
+ai_hash: cd3c353ad6711613
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: howto
+entities: []
+source: session 2026-06-05
 status: seedling
-source: "session 2026-06-05"
-tags: [claude-code, hooks, git, regex]
+tags:
+- claude-code
+- hooks
+- git
+- regex
+title: Block AI commit attribution by anchoring on the email, not the trailer label
+type: howto
 ---
 
 # Block AI commit attribution by anchoring on the email, not the trailer label
@@ -26,3 +34,14 @@ Applied in `~/.claude/hooks/git/block-coauthor.ps1` (2026-06-05).
 ## Related
 
 - [[Command-scanning git-commit hooks miss flag-separated forms and -F message files]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Command-scanning git-commit hooks miss flag-separated forms and -F message files]]
+- [[Regex allowlists of model names go stale when vendors ship new names]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Hard-exclude an AI agent from a resource by shrinking its file grant, not by prompting]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+
+%% ai-graph-end %%

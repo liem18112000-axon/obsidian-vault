@@ -1,10 +1,22 @@
 ---
-title: "Narration-synced highlight: region-based dim/emphasize excalidraw variants + timed xfade"
+ai_hash: bfc784a904a0de56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: howto
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [ffmpeg, excalidraw, video, xfade, highlight, tts, gotcha]
+tags:
+- ffmpeg
+- excalidraw
+- video
+- xfade
+- highlight
+- tts
+- gotcha
+title: 'Narration-synced highlight: region-based dim/emphasize excalidraw variants
+  + timed xfade'
+type: howto
 ---
 
 # Narration-synced highlight: region-based dim/emphasize excalidraw variants + timed xfade
@@ -23,3 +35,14 @@ How to make on-screen content highlight in sync with what an AI voiceover is say
 Keep emphasis PNGs, slides, and embedded clips language-agnostic; parameterize only the voiceover file + TTS voice + narration cache dir + output name by a LANG_CODE. The same `en-US-Chirp3-HD-<Name>` / `vi-VN-Chirp3-HD-<Name>` voice name exists across locales, so you keep the same 'presenter' across languages.
 
 Context: `C:\Users\dvtliem\.claude\docs\hook-present\build` (emphasize.js + make-narrated-video.py).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Make an MP4 from staged Excalidraw reveal frames (corner-pin canvas + PIL blend + imageio-ffmpeg)]]
+- [[Assemble a narrated slide video pptx to png + per-slide Google TTS + ffmpeg -shortest segments + concat]]
+- [[Make one diagram generator double as a reveal-video frame source with STAGE() markers]]
+- [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+- [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
+
+%% ai-graph-end %%

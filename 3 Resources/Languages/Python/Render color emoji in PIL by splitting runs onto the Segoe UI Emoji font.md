@@ -1,10 +1,19 @@
 ---
-title: "Render color emoji in PIL by splitting runs onto the Segoe UI Emoji font"
+ai_hash: 84d4bdf5eeab1fcc
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: howto
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [pil, pillow, emoji, python, rendering]
+tags:
+- pil
+- pillow
+- emoji
+- python
+- rendering
+title: Render color emoji in PIL by splitting runs onto the Segoe UI Emoji font
+type: howto
 ---
 
 # Render color emoji in PIL by splitting runs onto the Segoe UI Emoji font
@@ -26,3 +35,10 @@ Gotchas: emoji runs need `embedded_color=True` (Segoe UI Emoji is a color/COLR f
 ## Related
 
 - [[Audio-reactive anime mascot overlay for narrated videos (ffmpeg)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Animate a chat-replay video in PIL cumulative reveal + bottom-anchored scroll tween]]
+
+%% ai-graph-end %%

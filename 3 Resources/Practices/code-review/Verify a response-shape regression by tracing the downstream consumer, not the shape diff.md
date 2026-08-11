@@ -1,10 +1,20 @@
 ---
-title: "Verify a response-shape regression by tracing the downstream consumer, not the shape diff"
+ai_hash: 84c475ac2c7b9a59
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: lesson
+entities: []
+source: 'luz_docs materialize review #15, 2026-06-08'
 status: seedling
-source: "luz_docs materialize review #15, 2026-06-08"
-tags: [code-review, json-api, jackson, gotcha, luz-docs]
+tags:
+- code-review
+- json-api
+- jackson
+- gotcha
+- luz-docs
+title: Verify a response-shape regression by tracing the downstream consumer, not
+  the shape diff
+type: lesson
 ---
 
 # Verify a response-shape regression by tracing the downstream consumer, not the shape diff
@@ -28,3 +38,14 @@ luz_docs materialize review finding #15: `MaterializeResponseBuilder.pair()` nar
 ## Related
 
 - [[materialize-code-review]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fail-closed defense over a parallel array distinguish present-but-short from absent]]
+- [[Materialize code review report - sprint-156 findings index]]
+- [[luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic]]
+- [[Shape-keyed test mocks break when production query shapes change]]
+- [[Run the full affected test package locally, not a hand-picked subset]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Claude Code holds an open handle on every skills folder under ~/.claude"
+ai_hash: f190b156dc01e0f7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: session 2026-06-16
 status: seedling
-source: "session 2026-06-16"
-tags: [claude-code, gotcha, windows, file-lock]
+tags:
+- claude-code
+- gotcha
+- windows
+- file-lock
+title: Claude Code holds an open handle on every skills folder under ~/.claude
+type: lesson
 ---
 
 # Claude Code holds an open handle on every skills folder under ~/.claude
@@ -18,3 +26,12 @@ Related: [[MCP servers load only at Claude Code startup; skills hot-reload]].
 ## Related
 
 - [[MCP servers load only at Claude Code startup; skills hot-reload]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MCP servers load only at Claude Code startup; skills hot-reload]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Windows claude subprocess is a process tree — taskkill T to reap it]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "JAX-RS DefaultValue does not apply when a bean param is constructed in code"
+ai_hash: 69b7f731b29f9330
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-10
-type: lesson
+entities: []
+source: session 2026-06-10, PagingBeanParam
 status: seedling
-source: "session 2026-06-10, PagingBeanParam"
-tags: [java, jax-rs, gotcha, paging, luz-docs]
+tags:
+- java
+- jax-rs
+- gotcha
+- paging
+- luz-docs
+title: JAX-RS DefaultValue does not apply when a bean param is constructed in code
+type: lesson
 ---
 
 # JAX-RS DefaultValue does not apply when a bean param is constructed in code
@@ -20,3 +29,14 @@ Related: [[luz-docs folder delete filter double-fetched every subfolder]]
 ## Related
 
 - [[luz-docs folder delete filter double-fetched every subfolder]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Offset-paging loop with while(offset % pageSize == 0) infinite-loops on exact-multiple counts]]
+- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+- [[Minimal meaningful test fixture size is bounded by the real page size]]
+- [[luz-docs RESTEASY003880 UriInfo 500 regression traced to MaterializeRequestFilter firing async CDI events]]
+- [[luz-docs folder delete filter double-fetched every subfolder]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Destructive Luz skills use a preview-first CONFIRM gate"
+ai_hash: 261ccab5d294091f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: lesson
+entities: []
+source: session 2026-06-11 (creating earchive-data-clean)
 status: seedling
-source: "session 2026-06-11 (creating earchive-data-clean)"
-tags: [luz, skills, convention, safety]
+tags:
+- luz
+- skills
+- convention
+- safety
+title: Destructive Luz skills use a preview-first CONFIRM gate
+type: lesson
 ---
 
 # Destructive Luz skills use a preview-first CONFIRM gate
@@ -21,3 +29,14 @@ Two supporting choices: deletion is `deleteMany({})` rather than `drop()`, so in
 ## Related
 
 - [[3 Resources/Work-Kepler/luz-docs/skills/eArchive dev skills are self-contained copies, not shared helpers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+- [[deleteMany over kubectl port-forward runs about 5k docs per second]]
+- [[luz-kubernetes-add-env skill propagates env properties across overlay environments]]
+- [[luz-env-config-reminder hook nudges overlay propagation for new env reads in luz repos]]
+- [[Evicting gate campaign-check keys from luz-cache clears L2 only]]
+
+%% ai-graph-end %%

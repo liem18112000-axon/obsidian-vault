@@ -1,10 +1,38 @@
 ---
-title: "Aggregation collapses rows only if the key excludes per-record-unique fields"
+ai_hash: 8592b94dd3ee2410
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: lesson
+entities:
+- Aggregation
+- Grouping Key
+- Per-record-unique fields
+- MediData Detailnachweis
+- AggregatedBilling
+- cost_center
+- EPOSTAPI_LETTER billing record
+- PROD data
+- Invoice detail PDF
+- SAP booking
+- product
+- unit_price
+- vat
+- consumption_date
+- PO decision
+- Code decision
+- Luz Detailnachweis PDF
+- High-cardinality differentiator
+- High-volume single product
+source: session 2026-06-24 MediData EPOST cost_center finding
 status: seedling
-source: "session 2026-06-24 MediData EPOST cost_center finding"
-tags: [luz_store, invoicing, aggregation, gotcha, sql]
+tags:
+- luz_store
+- invoicing
+- aggregation
+- gotcha
+- sql
+title: Aggregation collapses rows only if the key excludes per-record-unique fields
+type: lesson
 ---
 
 # Aggregation collapses rows only if the key excludes per-record-unique fields
@@ -23,3 +51,40 @@ Reuse-the-precedent (`AggregatedBilling`) was the right instinct, but the preced
 ## Related
 
 - [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz Detailnachweis PDF aggregates billings by product reusing the AggregatedBilling key]]
+- [[Stimulsoft billingDetail mrt already had the MengeQuantity column and Calc columns]]
+- [[Copy shared model objects before aggregating them for a view]]
+
+**Relations:**
+- Aggregation — *collapses rows if key excludes* — Per-record-unique fields
+- Grouping Key — *excludes* — Per-record-unique fields
+- Grouping Key — *reduces* — row count
+- MediData Detailnachweis — *had* — page-explosion
+- Key — *for* — Invoice detail PDF
+- Key — *mirrored* — AggregatedBilling
+- Key — *included* — cost_center
+- EPOSTAPI_LETTER billing record — *has distinct* — cost_center
+- EPOSTAPI_LETTER billing record — *in* — PROD data
+- Grouping by key — *collapses* — nothing
+- Aggregation key — *requires checking* — cardinality
+- Key — *is useful for collapsing if* — High-cardinality differentiator
+- High-cardinality differentiator — *is left out from* — Key
+- Collapsing EPOST letters — *requires dropping* — cost_center
+- Collapsing EPOST letters — *requires dropping* — consumption_date
+- Aggregated line — *cannot display* — per-record cost center
+- Detail on Detailnachweis — *is* — PO decision
+- Detail on Detailnachweis — *is not* — Code decision
+- AggregatedBilling key — *was built for* — SAP booking
+- SAP booking — *uses* — cost_center
+- Records — *share* — cost_center
+- Records — *in* — SAP booking
+- High-volume single product — *has* — cost_center
+- cost_center — *as* — unique id
+- Luz Detailnachweis PDF — *aggregates billings by* — product
+- Luz Detailnachweis PDF — *reuses* — AggregatedBilling key
+
+%% ai-graph-end %%

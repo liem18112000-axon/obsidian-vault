@@ -1,10 +1,17 @@
 ---
-title: "Whitespace-normalize with an index map to fuzzy-match yet return original offsets"
+ai_hash: 287c0416f1322150
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: session 2026-07-03, vinnstack lib/textAnchor.ts
 status: seedling
-source: "session 2026-07-03, vinnstack lib/textAnchor.ts"
-tags: [text-matching, anchoring, typescript]
+tags:
+- text-matching
+- anchoring
+- typescript
+title: Whitespace-normalize with an index map to fuzzy-match yet return original offsets
+type: howto
 ---
 
 # Whitespace-normalize with an index map to fuzzy-match yet return original offsets
@@ -18,3 +25,12 @@ Details that matter: drop *leading* whitespace during normalization (guard `norm
 ## Related
 
 - [[TextQuoteSelector anchoring survives document regeneration]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[TextQuoteSelector anchoring survives document regeneration]]
+- [[Map a DOM selection to plain-text offsets with a pre-range]]
+- [[Inject anchored inline comments into LLM regeneration prompts as quoted passages]]
+
+%% ai-graph-end %%

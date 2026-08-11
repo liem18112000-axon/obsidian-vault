@@ -1,10 +1,17 @@
 ---
-title: "luz_docs change tracking phase 1 is scoped to the documents collection only"
+ai_hash: 8ea7b5515b4b44d9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: observation
+entities: []
+source: TrackedFields scoping, session 2026-06-05
 status: budding
-source: "TrackedFields scoping, session 2026-06-05"
-tags: [luz-docs, change-tracking, design-decision]
+tags:
+- luz-docs
+- change-tracking
+- design-decision
+title: luz_docs change tracking phase 1 is scoped to the documents collection only
+type: observation
 ---
 
 # luz_docs change tracking phase 1 is scoped to the documents collection only
@@ -17,3 +24,14 @@ Why: the only event consumer is `DocMaterializeObserver`, which recomputes per-d
 
 - [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
 - [[luz_docs has two materialize cascade delivery mechanisms]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+- [[luz_docs bulk updateMany recompute is set-based - one event, batched literal-table pipeline, not per-doc fan-out]]
+- [[luz_docs parent-change cascade pipeline rebuilds _folderSecurityClassCodes positionally then re-derives the sentinels]]
+- [[luz_docs folder security-class changes have 3 entry points but only PUT cascades]]
+
+%% ai-graph-end %%

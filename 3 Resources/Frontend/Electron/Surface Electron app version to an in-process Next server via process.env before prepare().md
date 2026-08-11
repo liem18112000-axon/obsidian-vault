@@ -1,10 +1,20 @@
 ---
-title: "Surface Electron app version to an in-process Next server via process.env before prepare()"
+ai_hash: 2a0b0c85c51f7618
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: howto
+entities: []
+source: Vinnstack session 2026-07-15
 status: seedling
-source: "Vinnstack session 2026-07-15"
-tags: [electron, nextjs, ipc, architecture, vinnstack]
+tags:
+- electron
+- nextjs
+- ipc
+- architecture
+- vinnstack
+title: Surface Electron app version to an in-process Next server via process.env before
+  prepare()
+type: howto
 ---
 
 # Surface Electron app version to an in-process Next server via process.env before prepare()
@@ -22,3 +32,14 @@ Context: Vinnstack, Electron 32 + Next 14, no preload.
 ## Related
 
 - [[Electron]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Packaged Electron+Next.js API routes must not use process.cwd() for bundled files]]
+- [[Testing the packaged Vinnstack exe needs databaseUrl in config.json, pins port 3001, portable stub doesn't inherit ad-hoc env]]
+- [[ELECTRON_RUN_AS_NODE silently makes electron.exe behave as plain Node]]
+- [[Parallelize independent async startup steps in an Electron main process]]
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+
+%% ai-graph-end %%

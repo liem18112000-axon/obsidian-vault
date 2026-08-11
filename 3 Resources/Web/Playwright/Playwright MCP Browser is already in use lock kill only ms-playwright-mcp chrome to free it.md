@@ -1,10 +1,20 @@
 ---
-title: "Playwright MCP Browser is already in use lock kill only ms-playwright-mcp chrome to free it"
+ai_hash: 91986b6886a4102a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-25
-type: lesson
+entities: []
+source: session 2026-07-25
 status: seedling
-source: "session 2026-07-25"
-tags: [playwright, mcp, windows, gotcha, chrome]
+tags:
+- playwright
+- mcp
+- windows
+- gotcha
+- chrome
+title: Playwright MCP Browser is already in use lock kill only ms-playwright-mcp chrome
+  to free it
+type: lesson
 ---
 
 # Playwright MCP Browser is already in use lock kill only ms-playwright-mcp chrome to free it
@@ -26,3 +36,10 @@ Related: [[Edit Confluence Cloud via authenticated Playwright browser when the A
 ## Related
 
 - [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+
+%% ai-graph-end %%

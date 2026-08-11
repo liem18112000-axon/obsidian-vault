@@ -1,10 +1,18 @@
 ---
-title: "HTMX hx-trigger=load auto-runs a form's default search on page load"
+ai_hash: 15d26c8170dfe591
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: howto
+entities: []
+source: Accesstrade integration, session 2026-06-14
 status: seedling
-source: "Accesstrade integration, session 2026-06-14"
-tags: [htmx, frontend, web, pattern]
+tags:
+- htmx
+- frontend
+- web
+- pattern
+title: HTMX hx-trigger=load auto-runs a form's default search on page load
+type: howto
 ---
 
 # HTMX hx-trigger=load auto-runs a form's default search on page load
@@ -22,3 +30,10 @@ Key points:
 - Beware auto-firing endpoints that hit a rate-limited or paid external API / background job on every page visit — that cost now happens on each load.
 
 Related: [[Bound ThreadPoolExecutor + budget keeps per-item LLM scoring inside a web request window]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

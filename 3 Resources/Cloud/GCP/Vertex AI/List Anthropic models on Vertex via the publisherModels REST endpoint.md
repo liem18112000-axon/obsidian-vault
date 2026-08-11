@@ -1,5 +1,14 @@
 ---
-tags: [vertex-ai, anthropic, gcp, rest-api, model-discovery]
+ai_hash: 60c2f94485f1b31d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- vertex-ai
+- anthropic
+- gcp
+- rest-api
+- model-discovery
 ---
 
 # List Anthropic models on Vertex via the publisherModels REST endpoint
@@ -23,3 +32,14 @@ x-goog-user-project: <your-gcp-project>     # REQUIRED with user ADC — the quo
 - `global`/unset region has no `{region}-` host; list against a real region like `us-east5` (where the Claude models are offered).
 
 Used in Vinnstack at `app/api/vertex/models/route.ts`. Related: [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod]]
+- [[Vertex models.list() shows the catalog, not what the project can invoke; Gemini 3 needs the global endpoint]]
+- [[Vertex AI global endpoint host has no region prefix]]
+
+%% ai-graph-end %%

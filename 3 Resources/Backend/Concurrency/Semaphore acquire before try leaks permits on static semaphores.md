@@ -1,10 +1,20 @@
 ---
-title: "Semaphore acquire before try leaks permits on static semaphores"
+ai_hash: 1b722fbbb1ab05d8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-10
-type: lesson
+entities: []
+source: luz_docs parallelize code review, 2026-07-09/10
 status: seedling
-source: "luz_docs parallelize code review, 2026-07-09/10"
-tags: [java, concurrency, semaphore, resource-leak, gotcha, code-review]
+tags:
+- java
+- concurrency
+- semaphore
+- resource-leak
+- gotcha
+- code-review
+title: Semaphore acquire before try leaks permits on static semaphores
+type: lesson
 ---
 
 # Semaphore acquire before try leaks permits on static semaphores
@@ -22,3 +32,14 @@ Found in luz_docs' `ParallelizeMigrationExecutor`: `BURST.acquireUninterruptibly
 ## Related
 
 - [[jsonstore $in vs $nin ObjectId conversion gap]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Semaphore permit leak when risky code sits between acquire and try]]
+- [[Static shared resources leak state across unrelated call sites]]
+- [[Mongo unique-index insert as CAS when the cache has no putIfAbsent]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+
+%% ai-graph-end %%

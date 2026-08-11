@@ -1,10 +1,18 @@
 ---
-title: "DualCache L1 write ignores per-call TTL (uses domain default)"
+ai_hash: 723dda68d7ab76d4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-15
-type: lesson
+entities: []
+source: luz_docs materialize-gate reliability research, 2026-07-15
 status: seedling
-source: "luz_docs materialize-gate reliability research, 2026-07-15"
-tags: [luz-docs, caching, gotcha, ttl]
+tags:
+- luz-docs
+- caching
+- gotcha
+- ttl
+title: DualCache L1 write ignores per-call TTL (uses domain default)
+type: lesson
 ---
 
 # DualCache L1 write ignores per-call TTL (uses domain default)
@@ -20,3 +28,14 @@ Fix for a short/negative-cache TTL case: don't try to add per-entry TTL support 
 ## Related
 
 - [[Migration campaign status can silently drift from real document state]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Two-tier cache must propagate caller TTL to every tier]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[Migration campaign status can silently drift from real document state]]
+- [[A negative cache must be a distinct state from a cache miss, or its TTL is a dead write]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-end %%

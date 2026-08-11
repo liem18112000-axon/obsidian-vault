@@ -1,10 +1,18 @@
 ---
-title: "MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN"
+ai_hash: 65e1c00ec7c092c3
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: luz_docs LUZ-154613 2026-06-17
 status: seedling
-source: "luz_docs LUZ-154613 2026-06-17"
-tags: [mongodb, performance, aggregation, indexing]
+tags:
+- mongodb
+- performance
+- aggregation
+- indexing
+title: MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN
+type: lesson
 ---
 
 # MongoDB $facet buckets add no parallelism and defeat COUNT_SCAN
@@ -26,3 +34,14 @@ Related: [[Count fan-out _shard index must put _shard LAST in the compound key (
 
 - [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[3 Resources/Practices/Performance/Shard count fan-out most of the win is at K=4, diminishing returns after]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mongo facet $group count index only helps the $match prefix, not the count]]
+- [[BitmapHLL counts supersede fan-out; they don't combine with it]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Shard count fan-out most of the win is at K=4, diminishing returns after]]
+
+%% ai-graph-end %%

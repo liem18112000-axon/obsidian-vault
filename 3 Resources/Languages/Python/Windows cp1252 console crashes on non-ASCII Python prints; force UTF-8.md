@@ -1,10 +1,19 @@
 ---
-title: "Windows cp1252 console crashes on non-ASCII Python prints; force UTF-8"
+ai_hash: 6f2825827127dfef
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: gotcha
+entities: []
 status: seedling
-tags: [python, windows, encoding, cp1252, argparse, gotcha]
-entities: [UnicodeEncodeError, charmap, PYTHONUTF8, PYTHONIOENCODING, sys.stdout.reconfigure, "json.dumps(ensure_ascii=False)", model_dump_json, argparse]
+tags:
+- python
+- windows
+- encoding
+- cp1252
+- argparse
+- gotcha
+title: Windows cp1252 console crashes on non-ASCII Python prints; force UTF-8
+type: gotcha
 ---
 
 # Windows cp1252 console crashes on non-ASCII Python prints; force UTF-8
@@ -27,3 +36,11 @@ Seen in ai-trip-planner (`backend/tests/test_full_fb_crawler.py`, `Quận 6`) an
 ## Related
 
 - [[Grep-audit env vars against code before pruning .env files]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A charmap UnicodeEncodeError can kill a script before it writes its output file]]
+- [[Windows PowerShell 5.1 reads BOM-less scripts as ANSI, breaking on em-dashes]]
+
+%% ai-graph-end %%

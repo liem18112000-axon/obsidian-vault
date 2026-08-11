@@ -1,10 +1,17 @@
 ---
-title: "Inferred union returns grow optional-undefined members - annotate to keep in-narrowing"
+ai_hash: 3c4742601864e63d
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: lesson
+entities: []
+source: session 2026-07-04, vinnstack requireSession helper
 status: seedling
-source: "session 2026-07-04, vinnstack requireSession helper"
-tags: [typescript, narrowing, unions]
+tags:
+- typescript
+- narrowing
+- unions
+title: Inferred union returns grow optional-undefined members - annotate to keep in-narrowing
+type: lesson
 ---
 
 # Inferred union returns grow optional-undefined members - annotate to keep in-narrowing
@@ -18,3 +25,11 @@ Debug technique that found it: force explicit return annotations on the CALLERS 
 ## Related
 
 - [[Array.every on an empty array is true - gate on existence before completeness]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]
+- [[vi.fn with a zero-arg default locks the mock to a zero-arg signature]]
+
+%% ai-graph-end %%

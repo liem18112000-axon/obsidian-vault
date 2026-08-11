@@ -1,10 +1,19 @@
 ---
-title: "High-degree facade as a coupling risk"
+ai_hash: a9dd06262cbc96c4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-14
-type: observation
+entities: []
+source: luz_docs MaterializeFacade graph review 2026-07-14
 status: seedling
-source: "luz_docs MaterializeFacade graph review 2026-07-14"
-tags: [architecture, coupling, facade, code-review, luz-docs]
+tags:
+- architecture
+- coupling
+- facade
+- code-review
+- luz-docs
+title: High-degree facade as a coupling risk
+type: observation
 ---
 
 # High-degree facade as a coupling risk
@@ -25,3 +34,10 @@ Instance: luz_docs `MaterializeFacade` — 49 edges from `DocumentService`, `Fol
 ## Related
 
 - [[Graphify for code reviews without source access]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Mock at the facade boundary after consolidating logic behind a facade method]]
+
+%% ai-graph-end %%

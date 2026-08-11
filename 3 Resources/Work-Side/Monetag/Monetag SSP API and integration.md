@@ -1,19 +1,23 @@
 ---
-title: Monetag SSP API and integration
-created: 2026-06-12
-type: howto
-status: seedling
-source: research session 2026-06-12 (api.monetag.com/v5/docs, docs.monetag.com, help.monetag.com)
-tags:
-  - monetag
-  - api
-  - integration
-  - automation
-  - claude-code
+ai_hash: ca5b3049ed7c6288
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Monetag API
-  - Monetag SSP API v5
-  - Monetag MultiTag Zones
+- Monetag API
+- Monetag SSP API v5
+- Monetag MultiTag Zones
+created: 2026-06-12
+entities: []
+source: research session 2026-06-12 (api.monetag.com/v5/docs, docs.monetag.com, help.monetag.com)
+status: seedling
+tags:
+- monetag
+- api
+- integration
+- automation
+- claude-code
+title: Monetag SSP API and integration
+type: howto
 ---
 
 # Monetag SSP API and integration
@@ -59,3 +63,14 @@ This mirrors [[Designing an Accesstrade skill for Claude Code]]: wrap the API in
 - [[Secrets handling for affiliate API keys]]
 - [[Ad network vs affiliate network]]
 - [[Monetag - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Monetag - MOC]]
+- [[Monetag overview]]
+- [[Ad network vs affiliate network]]
+- [[Monetag ad formats]]
+- [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-end %%

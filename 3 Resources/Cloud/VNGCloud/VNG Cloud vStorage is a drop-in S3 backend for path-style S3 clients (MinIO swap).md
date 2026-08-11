@@ -1,10 +1,23 @@
 ---
-title: "VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO swap)"
+ai_hash: ab2c41d43c4a2276
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-24
-type: howto
+entities: []
+source: appsflyer-data-connector VNG deployment report, 2026-06-24
 status: seedling
-source: "appsflyer-data-connector VNG deployment report, 2026-06-24"
-tags: [vngcloud, vstorage, s3, minio, object-storage, deployment, airflow, vks]
+tags:
+- vngcloud
+- vstorage
+- s3
+- minio
+- object-storage
+- deployment
+- airflow
+- vks
+title: VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO
+  swap)
+type: howto
 ---
 
 # VNG Cloud vStorage is a drop-in S3 backend for path-style S3 clients (MinIO swap)
@@ -22,3 +35,14 @@ See [[Airflow env-var Variables backend uppercases the key (AIRFLOW_VAR_KEY)]].
 ## Related
 
 - [[Airflow env-var Variables backend uppercases the key (AIRFLOW_VAR_KEY)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Terraform S3 backend on a non-AWS store (vStorageMinIO) needs skip-checks + path-style]]
+- [[VNG Cloud IaC = Terraform provider (no first-party CLI); vStorageregistry via S3+docker]]
+- [[AppsFlyer connector S3 config is vStorage-only - VSTORAGE_ env vars]]
+- [[MinIO server creds (ROOT_USERPASSWORD) are distinct env vars from the S3 client creds (ACCESS_KEYSECRET_KEY)]]
+- [[VNG Cloud Terraform provider maps managed Postgres and Redis to vdb resources]]
+
+%% ai-graph-end %%

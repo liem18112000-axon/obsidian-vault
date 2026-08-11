@@ -1,17 +1,21 @@
 ---
-title: Centering an embedded image in Obsidian
-created: 2026-06-11
-type: howto
-status: seedling
-source: session 2026-06-11
-tags:
-  - obsidian
-  - markdown
-  - formatting
-  - gotcha
+ai_hash: b361449d3a570ac4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Center image Obsidian
-  - Obsidian center embed
+- Center image Obsidian
+- Obsidian center embed
+created: 2026-06-11
+entities: []
+source: session 2026-06-11
+status: seedling
+tags:
+- obsidian
+- markdown
+- formatting
+- gotcha
+title: Centering an embedded image in Obsidian
+type: howto
 ---
 
 # Centering an embedded image in Obsidian
@@ -40,3 +44,12 @@ Obsidian only re-processes Markdown/Obsidian syntax (like `![[...]]` embeds) *in
 ## Related
 
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Embed brand SVG icons in an Excalidraw diagram (image element + files dataURL; Simple Icons CDN)]]
+- [[Avoiding edge-through-node overlaps in Obsidian Canvas]]
+- [[Embedding an image in Confluence requires uploading it as an attachment first]]
+
+%% ai-graph-end %%

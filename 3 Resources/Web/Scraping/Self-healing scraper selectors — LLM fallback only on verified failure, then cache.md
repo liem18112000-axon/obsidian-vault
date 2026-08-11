@@ -1,10 +1,20 @@
 ---
-title: "Self-healing scraper selectors — LLM fallback only on verified failure, then cache"
+ai_hash: 53c0b440b8ba8acb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-11
-type: model
+entities: []
+source: fb-info-project design discussion 2026-06-11
 status: seedling
-source: "fb-info-project design discussion 2026-06-11"
-tags: [scraping, llm, ollama, architecture, resilience]
+tags:
+- scraping
+- llm
+- ollama
+- architecture
+- resilience
+title: Self-healing scraper selectors — LLM fallback only on verified failure, then
+  cache
+type: model
 ---
 
 # Self-healing scraper selectors — LLM fallback only on verified failure, then cache
@@ -23,3 +33,14 @@ Works because the hard part of selector breakage is *semantic relabeling* (wordi
 
 - [[Verify Facebook comment sort switch by re-reading the sort button label]]
 - [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[LLM-picked UI actions can be verified mechanically but not semantically]]
+- [[Verify Facebook comment sort switch by re-reading the sort button label]]
+- [[Build test fakes from verbatim production data, decoys included]]
+- [[fb-info-project duplicates FB-fragile selectors across get_locations.py and scrapling_test.py]]
+- [[Facebook's Newest sort option mentions 'all comments' in its description — anchor the label regex]]
+
+%% ai-graph-end %%

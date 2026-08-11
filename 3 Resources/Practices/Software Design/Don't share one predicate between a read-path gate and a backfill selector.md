@@ -1,10 +1,18 @@
 ---
-title: "Don't share one predicate between a read-path gate and a backfill selector"
+ai_hash: e5e112a0160f670e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-17
-type: lesson
+entities: []
+source: luz_docs LUZ-154613 review 2026-06-17
 status: seedling
-source: "luz_docs LUZ-154613 review 2026-06-17"
-tags: [code-review, migrations, materialized-view, gotcha]
+tags:
+- code-review
+- migrations
+- materialized-view
+- gotcha
+title: Don't share one predicate between a read-path gate and a backfill selector
+type: lesson
 ---
 
 # Don't share one predicate between a read-path gate and a backfill selector
@@ -26,3 +34,14 @@ Related: [[3 Resources/Data/MongoDB/Count fan-out _shard index must put _shard L
 ## Related
 
 - [[3 Resources/Data/MongoDB/Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Fan-out gate and backfill filter must cover the same field set]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
+- [[Materialize gate must require _shard or parallelized count undercounts]]
+
+%% ai-graph-end %%

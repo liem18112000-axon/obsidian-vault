@@ -1,10 +1,19 @@
 ---
-title: "luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard"
+ai_hash: b378aa53e6e26eba
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: observation
+entities: []
+source: JsonStoreChangeEvent refactor, session 2026-06-05
 status: budding
-source: "JsonStoreChangeEvent refactor, session 2026-06-05"
-tags: [luz-docs, change-tracking, design-decision, cdi-events]
+tags:
+- luz-docs
+- change-tracking
+- design-decision
+- cdi-events
+title: luz_docs change tracking dropped the ChangeOrigin event marker - thread-local
+  suppression is the loop guard
+type: observation
 ---
 
 # luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard
@@ -17,3 +26,14 @@ General lesson: when a loop guard ends up implemented as ambient context (thread
 
 - [[luz_docs has two materialize cascade delivery mechanisms]]
 - [[luz_docs materialize passive retry via cascade markers]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs change tracking covers updateMany-deleteMany via projected before-after snapshots keyed by id]]
+- [[luz_docs DocumentChangeObserver base owns the reload-recompute-restamp template]]
+- [[luz_docs change tracking phase 1 is scoped to the documents collection only]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+- [[Diff-based write tracking dies silently if the write runs before the pre-read]]
+
+%% ai-graph-end %%

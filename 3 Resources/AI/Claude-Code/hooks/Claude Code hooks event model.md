@@ -1,22 +1,26 @@
 ---
-title: Claude Code hooks event model
-created: 2026-06-11
-type: concept
-status: seedling
-source: research session 2026-06-11
-tags:
-  - claude-code
-  - hooks
-  - accesstrade
-  - automation
-  - concept
+ai_hash: 09ccc07959e8043c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Claude hooks
-  - Claude Code hook events
-  - PreToolUse PostToolUse
-  - Affiliate automation hook patterns
-  - Affiliate hooks
-  - Accesstrade hook patterns
+- Claude hooks
+- Claude Code hook events
+- PreToolUse PostToolUse
+- Affiliate automation hook patterns
+- Affiliate hooks
+- Accesstrade hook patterns
+created: 2026-06-11
+entities: []
+source: research session 2026-06-11
+status: seedling
+tags:
+- claude-code
+- hooks
+- accesstrade
+- automation
+- concept
+title: Claude Code hooks event model
+type: concept
 ---
 
 # Claude Code hooks event model
@@ -90,3 +94,14 @@ Hooks fire on *Claude's* lifecycle, not the clock. For time-based jobs (a daily 
 - [[Secrets handling for affiliate API keys]]
 - [[Use case - automated daily conversion digest]]
 - [[Accesstrade API Integration - MOC]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Designing an Accesstrade skill for Claude Code]]
+- [[Use case - bulk tracking link generation]]
+- [[Accesstrade API Integration - MOC]]
+- [[Accesstrade postback and S2S conversion tracking]]
+- [[Skills vs Hooks vs MCP vs subagents]]
+
+%% ai-graph-end %%

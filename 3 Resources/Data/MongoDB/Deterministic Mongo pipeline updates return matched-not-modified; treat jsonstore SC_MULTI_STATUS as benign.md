@@ -1,10 +1,23 @@
 ---
-title: "Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign"
+ai_hash: 13e7e02da117882a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-08
-type: gotcha
+entities: []
+source: 'luz_docs materialize code review, 2026-06-07 / 2026-06-08 (finding #5)'
 status: seedling
-source: "luz_docs materialize code review, 2026-06-07 / 2026-06-08 (finding #5)"
-tags: [mongodb, jsonstore, luz-jsonstore, luz-docs, materialize, retry, idempotency, gotcha]
+tags:
+- mongodb
+- jsonstore
+- luz-jsonstore
+- luz-docs
+- materialize
+- retry
+- idempotency
+- gotcha
+title: Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore
+  SC_MULTI_STATUS as benign
+type: gotcha
 ---
 
 # Deterministic Mongo pipeline updates return matched-not-modified; treat jsonstore SC_MULTI_STATUS as benign
@@ -34,3 +47,14 @@ It also fires on the first attempt whenever any doc already carries the target v
 - [[Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
 - [[materialize-code-review]]
 - [[DistributionCacheException.isNotFound is inverted in luz_docs]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Tight updateMany filter makes HTTP 207 a reliable partial-write signal]]
+- [[Encode a benign-error decision in a dedicated exception type, not a swallowed catch on a magic status code]]
+- [[luz_docs parent-change cascade tightened with setEquals slot-differs expr to make 207 diagnostic]]
+- [[Materialize code review report - sprint-156 findings index]]
+- [[luz_docs materialize passive retry via cascade markers]]
+
+%% ai-graph-end %%

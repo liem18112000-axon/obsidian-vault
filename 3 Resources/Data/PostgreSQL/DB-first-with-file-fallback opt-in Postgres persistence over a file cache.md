@@ -1,10 +1,19 @@
 ---
-title: "DB-first-with-file-fallback: opt-in Postgres persistence over a file cache"
+ai_hash: e7646decddc991a7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: howto
+entities: []
+source: Vinnstack Graphify→Postgres 2026-07-03
 status: seedling
-source: "Vinnstack Graphify→Postgres 2026-07-03"
-tags: [postgres, persistence, design-pattern, jsonb, nextjs]
+tags:
+- postgres
+- persistence
+- design-pattern
+- jsonb
+- nextjs
+title: 'DB-first-with-file-fallback: opt-in Postgres persistence over a file cache'
+type: howto
 ---
 
 # DB-first-with-file-fallback: opt-in Postgres persistence over a file cache
@@ -23,3 +32,14 @@ Applied in Vinnstack for Graphify code-graphs (lib/graphifyStore.ts), mirroring 
 ## Related
 
 - [[node-postgres percent-decodes the connection-string password]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+- [[Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)]]
+- [[Version artifacts by lifecycle event with content-dedupe, store in DB not files]]
+- [[Do not hardcode a real DB password as a source-code fallback for a packaged desktop app]]
+- [[Auto-versioning generated files into a local git repo add -A + serialized queue + fire-and-forget]]
+
+%% ai-graph-end %%

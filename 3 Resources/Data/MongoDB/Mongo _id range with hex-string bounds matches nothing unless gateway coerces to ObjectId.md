@@ -1,10 +1,20 @@
 ---
-title: "Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId"
+ai_hash: 24dfbff6a3a26ffe
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: LUZ-154613 session 2026-06-16, empirically confirmed on dev tenant d0783310
 status: seedling
-source: "LUZ-154613 session 2026-06-16, empirically confirmed on dev tenant d0783310"
-tags: [mongodb, objectid, bson, gotcha, luz-docs]
+tags:
+- mongodb
+- objectid
+- bson
+- gotcha
+- luz-docs
+title: Mongo _id range with hex-string bounds matches nothing unless gateway coerces
+  to ObjectId
+type: lesson
 ---
 
 # Mongo _id range with hex-string bounds matches nothing unless gateway coerces to ObjectId
@@ -24,3 +34,14 @@ It only works if something coerces the bounds to real ObjectId. The luz_jsonstor
 - [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
 - [[Count fan-out _shard index must put _shard LAST in the compound key (ESR)]]
 - [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[MongoDB $expr + $toObjectId for _id range is correct but does not use the _id index (full scan)]]
+- [[Partition the materialized count on a uniform _countShard int, not _id]]
+- [[Frozen JsonStore gateway makes _id-range count fan-out a dead end — pivot to bitmapHLL]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[jsonstore $in vs $nin ObjectId conversion gap]]
+
+%% ai-graph-end %%

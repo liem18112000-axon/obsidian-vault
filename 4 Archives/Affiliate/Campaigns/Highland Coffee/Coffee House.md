@@ -1,3 +1,10 @@
+---
+ai_hash: e77ad0a995dddd56
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+---
+
 Cùng The Coffee House Lan Tỏa Niềm Vui, Nhận Ưu Đãi Hấp Dẫn! Sẵn sàng trải nghiệm chiến dịch đầy cảm hứng?
 The Coffee House - chuỗi cà phê hàng đầu Việt Nam với không gian ấm cúng, menu đa dạng và dịch vụ tận tâm, luôn đồng hành cùng bạn trong mọi khoảnh khắc.
 
@@ -12,3 +19,10 @@ Chi tiết chiến dịch:
 Truy cập ngay:  
 
 https://shorten.asia/Fz6pu9BK
+
+%% ai-graph-start %%
+
+**Related notes:**
+- _(none above threshold)_
+
+%% ai-graph-end %%

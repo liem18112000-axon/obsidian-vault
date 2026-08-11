@@ -1,10 +1,20 @@
 ---
-title: "Isolate the same scenarios on both branches to separate regression from flakiness"
+ai_hash: d8d887b4771ed1ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: howto
+entities: []
+source: session 2026-06-16
 status: evergreen
-source: "session 2026-06-16"
-tags: [behave, integration-test, debugging, regression, flakiness, technique]
+tags:
+- behave
+- integration-test
+- debugging
+- regression
+- flakiness
+- technique
+title: Isolate the same scenarios on both branches to separate regression from flakiness
+type: howto
 ---
 
 # Isolate the same scenarios on both branches to separate regression from flakiness
@@ -24,3 +34,14 @@ Related: [[luz-docs IT $SCn authorization failures were deterministic resolution
 ## Related
 
 - [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[behave step patterns differing only by quote style are distinct definitions]]
+- [[luz-docs IT $SCn authorization failures were deterministic resolution regressions, not membership]]
+- [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Flat-import Python modules can be relocated together without rewriting imports"
+ai_hash: d5bec1a17905c34c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: vault-graph refactor 2026-06-01
 status: seedling
-source: "vault-graph refactor 2026-06-01"
-tags: [python, imports, refactor, docker]
+tags:
+- python
+- imports
+- refactor
+- docker
+title: Flat-import Python modules can be relocated together without rewriting imports
+type: lesson
 ---
 
 # Flat-import Python modules can be relocated together without rewriting imports
@@ -25,3 +33,14 @@ This is why a "move all `*.py` into `src/`" refactor can be import-edit-free. Wa
 ## Related
 
 - [[Path(__file__).parent breaks when a module is moved to a deeper directory]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Path(__file__).parent breaks when a module is moved to a deeper directory]]
+- [[pip install does not bundle templatesstatic referenced relative to a package]]
+- [[Convert a Python module to a package without breaking importers via re-exporting __init__]]
+- [[Docker Compose path resolution env_file vs build context vs dockerfile]]
+- [[Relocating docker-compose.yml renames the Compose project and orphans volumes]]
+
+%% ai-graph-end %%

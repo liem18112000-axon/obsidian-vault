@@ -1,10 +1,17 @@
 ---
-title: "Claude Code official remote-control surfaces (web, Remote Control, Dispatch)"
+ai_hash: d841fa8883deeb46
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: reference
+entities: []
+source: research 2026-06-19
 status: seedling
-source: "research 2026-06-19"
-tags: [claude-code, remote-control, reference]
+tags:
+- claude-code
+- remote-control
+- reference
+title: Claude Code official remote-control surfaces (web, Remote Control, Dispatch)
+type: reference
 ---
 
 # Claude Code official remote-control surfaces (web, Remote Control, Dispatch)
@@ -22,3 +29,14 @@ Docs: code.claude.com/docs/en/remote-control · code.claude.com/docs/en/claude-c
 ## Related
 
 - [[Telegram remote-control bridge for Claude Code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Custom Telegram-Claude bridge vs official Claude Code Remote Control]]
+- [[Claude Code headless auth setup-token prints a 1-year token, inject via CLAUDE_CODE_OAUTH_TOKEN]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Remote permission approval via a blocking PreToolUse hook]]
+
+%% ai-graph-end %%

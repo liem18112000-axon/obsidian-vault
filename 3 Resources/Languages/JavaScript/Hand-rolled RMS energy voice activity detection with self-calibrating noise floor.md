@@ -1,10 +1,20 @@
 ---
-title: "Hand-rolled RMS energy voice activity detection with self-calibrating noise floor"
+ai_hash: 2f065bb2ace45fce
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: technique
+entities: []
+source: virtual-avatar session 2026-07-11, static/vad.js
 status: seedling
-source: "virtual-avatar session 2026-07-11, static/vad.js"
-tags: [javascript, web-audio-api, vad, voice-activity-detection, dsp]
+tags:
+- javascript
+- web-audio-api
+- vad
+- voice-activity-detection
+- dsp
+title: Hand-rolled RMS energy voice activity detection with self-calibrating noise
+  floor
+type: technique
 ---
 
 # Hand-rolled RMS energy voice activity detection with self-calibrating noise floor
@@ -24,3 +34,10 @@ Known limitation this technique does NOT solve on its own: if the same page is a
 ## Related
 
 - [[Poll a library's public boolean state flags with a grace period when there is no completion callback]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Poll a library's public boolean state flags with a grace period when there is no completion callback]]
+
+%% ai-graph-end %%

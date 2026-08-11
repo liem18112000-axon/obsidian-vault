@@ -1,10 +1,19 @@
 ---
-title: "Free built-in GCP domain: Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP"
+ai_hash: 5b212d55fedc7ae2
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: howto
+entities: []
+source: session 2026-07-04, vinnstack public domain
 status: seedling
-source: "session 2026-07-04, vinnstack public domain"
-tags: [gcp, dns, gke, cloud-endpoints]
+tags:
+- gcp
+- dns
+- gke
+- cloud-endpoints
+title: 'Free built-in GCP domain: Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog
+  to an IP'
+type: howto
 ---
 
 # Free built-in GCP domain: Cloud Endpoints DNS maps name.endpoints.PROJECT.cloud.goog to an IP
@@ -30,3 +39,12 @@ Prereqs/caveats:
 ## Related
 
 - [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[GKE managed-cert HTTPS global IP, DNS before cert, NEG service, FrontendConfig redirect]]
+- [[GKE LoadBalancer Service External vs Internal and how to tell by IP]]
+- [[Diagnose GCP console permission errors with the testIamPermissions REST probe]]
+
+%% ai-graph-end %%

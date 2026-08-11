@@ -1,10 +1,19 @@
 ---
-title: "Read a private Confluence page via REST API with ATLASSIAN API token"
+ai_hash: 6cb3e53483149b1e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: howto
+entities: []
+source: session 2026-07-27 (Ivy setup)
 status: seedling
-source: "session 2026-07-27 (Ivy setup)"
-tags: [atlassian, confluence, rest-api, curl, gotcha]
+tags:
+- atlassian
+- confluence
+- rest-api
+- curl
+- gotcha
+title: Read a private Confluence page via REST API with ATLASSIAN API token
+type: howto
 ---
 
 # Read a private Confluence page via REST API with ATLASSIAN API token
@@ -28,3 +37,14 @@ This is the fallback when the OAuth-based Atlassian MCP tools cannot reach a sit
 ## Related
 
 - [[Resources index]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Edit Confluence Cloud via authenticated Playwright browser when the Atlassian MCP app is not installed]]
+- [[Atlassian Cloud OAuth 3LO specifics JSON token body, rotating refresh, cloudId via accessible-resources]]
+- [[Atlassian MCP connector binds to one cloud site, which can differ from your REST token's site]]
+- [[Jira issue HTML export view bypasses missing MCP grant]]
+- [[claude.ai Atlassian MCP has Jira scopes only — Confluence returns 403 app-not-installed]]
+
+%% ai-graph-end %%

@@ -1,10 +1,19 @@
 ---
-title: "Facebook UID from a vanity handle via the mbasic lst token"
+ai_hash: 5643e06376fca694
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-21
-type: howto
+entities: []
+source: session 2026-06-21
 status: seedling
-source: "session 2026-06-21"
-tags: [facebook, scraping, uid, gotcha, fb-info-project]
+tags:
+- facebook
+- scraping
+- uid
+- gotcha
+- fb-info-project
+title: Facebook UID from a vanity handle via the mbasic lst token
+type: howto
 ---
 
 # Facebook UID from a vanity handle via the mbasic lst token
@@ -22,3 +31,11 @@ The **middle** value is the profile owner's UID. Colons are frequently URL-encod
 **When it applies:** use it as a *fallback* — parse the full page first; only if that yields no UID, refetch `mbasic.facebook.com/<handle>` (reusing the same authenticated session) and read the `lst` token. A `profile.php?id=<id>` link needs none of this — the id is already in the URL.
 
 In `fb-info-project` this is `MBASIC_UID_RX` in `patterns.py`, with `extract_uid_mbasic()` falling back to the generic `UID_RX` when no `lst` token is present.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Facebook page userID is the viewer not the profile owner]]
+- [[Facebook Comet comment DOM does not expose the commenter's numeric UID]]
+
+%% ai-graph-end %%

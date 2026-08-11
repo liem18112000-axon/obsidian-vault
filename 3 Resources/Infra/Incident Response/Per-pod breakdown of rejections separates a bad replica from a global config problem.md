@@ -1,10 +1,19 @@
 ---
-title: "Per-pod breakdown of rejections separates a bad replica from a global config problem"
+ai_hash: a89a7a7b77eb189c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
-type: lesson
+entities: []
+source: session 2026-07-16 Klara Widget Store PROD incident
 status: seedling
-source: "session 2026-07-16 Klara Widget Store PROD incident"
-tags: [incident-response, kubernetes, triage, gke]
+tags:
+- incident-response
+- kubernetes
+- triage
+- gke
+title: Per-pod breakdown of rejections separates a bad replica from a global config
+  problem
+type: lesson
 ---
 
 # Per-pod breakdown of rejections separates a bad replica from a global config problem
@@ -24,3 +33,14 @@ Query shape: pull the access-log/error entries and `sort | uniq -c` on the desti
 
 - [[Measure a feature outage's true blast radius by comparing any-severity vs error-severity user sets]]
 - [[Klara PROD log access]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Measure a feature outage's true blast radius by comparing any-severity vs error-severity user sets]]
+- [[Klara app API-key to token exchange flow (jwt-service to luztenant-service)]]
+- [[Istio DC response_flag with round latency = caller read timeout]]
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+
+%% ai-graph-end %%

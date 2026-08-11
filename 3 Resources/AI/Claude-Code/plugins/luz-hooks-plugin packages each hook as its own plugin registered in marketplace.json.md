@@ -1,10 +1,19 @@
 ---
-title: "luz-hooks-plugin packages each hook as its own plugin registered in marketplace.json"
+ai_hash: b3bb9361d6a56acb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: howto
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [claude-code, plugins, hooks, luz, kepler]
+tags:
+- claude-code
+- plugins
+- hooks
+- luz
+- kepler
+title: luz-hooks-plugin packages each hook as its own plugin registered in marketplace.json
+type: howto
 ---
 
 # luz-hooks-plugin packages each hook as its own plugin registered in marketplace.json
@@ -20,3 +29,14 @@ Gotcha (differs from [[luz-skills-plugin packages skills by category directory l
 ## Related
 
 - [[luz-skills-plugin packages skills by category directory listed in plugin.json]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Luz plugin repos how skills and hooks are packaged for distribution]]
+- [[luz-skills-plugin packages skills by category directory listed in plugin.json]]
+- [[luz-env-config-reminder hook nudges overlay propagation for new env reads in luz repos]]
+- [[luz-kubernetes-add-env skill propagates env properties across overlay environments]]
+- [[Relocating a hardcoded-path hook integration self-locate or patch every reference site]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "google-genai Client must be held in a variable during the request or it is GC-closed"
+ai_hash: 29a2650623ed9bc9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-14
-type: lesson
+entities: []
+source: Accesstrade integration, session 2026-06-13
 status: seedling
-source: "Accesstrade integration, session 2026-06-13"
-tags: [vertex-ai, google-genai, python, gotcha, gc]
+tags:
+- vertex-ai
+- google-genai
+- python
+- gotcha
+- gc
+title: google-genai Client must be held in a variable during the request or it is
+  GC-closed
+type: lesson
 ---
 
 # google-genai Client must be held in a variable during the request or it is GC-closed
@@ -31,3 +41,11 @@ See also [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
 ## Related
 
 - [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vertex models.list() shows the catalog, not what the project can invoke; Gemini 3 needs the global endpoint]]
+- [[Mounting host gcloud ADC into a container to authenticate Vertex AI]]
+
+%% ai-graph-end %%

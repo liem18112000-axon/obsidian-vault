@@ -1,10 +1,22 @@
 ---
-title: "Payrexx ISO 8583 decline code to meaning reference table"
+ai_hash: bb82f41758b53bb6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: term
+entities: []
+source: Payrexx merchant docs (docs.payrexx.com/merchant/english/payment/payment-status),
+  2026-07-23/24
 status: evergreen
-source: "Payrexx merchant docs (docs.payrexx.com/merchant/english/payment/payment-status), 2026-07-23/24"
-tags: [payrexx, payments, iso-8583, decline-codes, reference, LUZ-157809, luz-157476]
+tags:
+- payrexx
+- payments
+- iso-8583
+- decline-codes
+- reference
+- LUZ-157809
+- luz-157476
+title: Payrexx ISO 8583 decline code to meaning reference table
+type: term
 ---
 
 # Payrexx ISO 8583 decline code to meaning reference table
@@ -82,3 +94,14 @@ Draft category grouping (feeds LUZ-157809; counts over all 51 codes): **insuffic
 - [[Payrexx publishes no catalog of API wrapper error messages]]
 - [[luz_store TransactionStatus mirrors Payrexx API statuses plus two Klara-only values]]
 - [[1 Projects/luz_store/LUZ-157476/LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Payrexx v1.0 charge API returns only status+message on failure — no ISO 8583 code]]
+- [[Payrexx publishes no catalog of API wrapper error messages]]
+- [[LUZ-157476 decline taxonomy maps codes at luz_online_payment boundary]]
+- [[LUZ-157476 proposes seven failure categories with per-channel customer copy]]
+- [[LUZ-157476 decline-code flow luz-online-payment forwards, luz_store maps]]
+
+%% ai-graph-end %%

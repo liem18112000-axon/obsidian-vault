@@ -1,10 +1,19 @@
 ---
-title: "Parse structured tool_use blocks in a stream-json transcript, never substring-scan raw text"
+ai_hash: cbd6da6f07692824
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-08
-type: lesson
+entities: []
+source: vinnstack session, 2026-07-08
 status: seedling
-source: "vinnstack session, 2026-07-08"
-tags: [claude-code, stream-json, agent-sdk, parsing]
+tags:
+- claude-code
+- stream-json
+- agent-sdk
+- parsing
+title: Parse structured tool_use blocks in a stream-json transcript, never substring-scan
+  raw text
+type: lesson
 ---
 
 # Parse structured tool_use blocks in a stream-json transcript, never substring-scan raw text
@@ -15,3 +24,14 @@ Why: with `--include-partial-messages`, tool inputs also stream as fragmented `i
 
 ## Related
 [[Vinnstack skill-usage counter missed reads past a 4MB stdout cap]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack skill-usage counter missed reads past a 4MB stdout cap]]
+- [[runClaude onChunk streams stream-json; forward as NDJSON and read with getReader]]
+- [[Claude Code hooks see no token usage in their payload; read the transcript usage entries instead]]
+- [[Headless claude -p loads the user global CLAUDE.md; isolate per-selection AI transforms with delimiters + data-guard]]
+- [[Vinnstack AI calls are stateless headless claude CLI runs, not an agent runtime]]
+
+%% ai-graph-end %%

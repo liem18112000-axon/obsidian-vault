@@ -1,10 +1,21 @@
 ---
-title: "JSF LetterStorageDetail instance URL dies mid-benchmark; remint via eArchive menu"
+ai_hash: 626b5ddaaf93c64a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26
 status: seedling
-source: "session 2026-06-26"
-tags: [klara, earchive, playwright, jsf, gotcha, benchmark]
+tags:
+- klara
+- earchive
+- playwright
+- jsf
+- gotcha
+- benchmark
+title: JSF LetterStorageDetail instance URL dies mid-benchmark; remint via eArchive
+  menu
+type: lesson
 ---
 
 # JSF LetterStorageDetail instance URL dies mid-benchmark; remint via eArchive menu
@@ -24,3 +35,14 @@ The re-drill traffic lands inside the same run window, so per-endpoint stats sti
 
 - [[playwright-klara-earchive skill]]
 - [[eArchive index benchmark suite (no_index vs a_vu vs liem)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[eArchive perf test plan 5 scenarios, all automated by trace tool]]
+- [[Trace tool folder-drill waits 3min because folder view lacks Documents-Custom counters]]
+- [[Server-rendered JSF apps never expose their internal API calls to browser network capture]]
+- [[eArchive page DOM selectors (performance automation)]]
+- [[Perf 800k tenant eArchive reload timing]]
+
+%% ai-graph-end %%

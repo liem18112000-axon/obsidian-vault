@@ -1,10 +1,19 @@
 ---
-title: "Humorous Southern-VI voiceover must sound natural, not forced slang"
+ai_hash: 884385600b5dd8ab
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19 · user feedback
 status: seedling
-source: "session 2026-06-19 · user feedback"
-tags: [voiceover, vietnamese, tts, feedback, style]
+tags:
+- voiceover
+- vietnamese
+- tts
+- feedback
+- style
+title: Humorous Southern-VI voiceover must sound natural, not forced slang
+type: lesson
 ---
 
 # Humorous Southern-VI voiceover must sound natural, not forced slang
@@ -18,3 +27,10 @@ How to apply: read every VI block aloud (mentally) before rendering; prefer plai
 ## Related
 
 - [[concept-to-video skill turns a concept into deck, voiceover and narrated avatar video]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vietnamese Google Cloud TTS write AI as trí tuệ nhân tạo, chunk per request, audio not video]]
+
+%% ai-graph-end %%

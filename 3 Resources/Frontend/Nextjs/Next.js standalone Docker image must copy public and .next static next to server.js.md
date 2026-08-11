@@ -1,5 +1,13 @@
 ---
-tags: [nextjs, docker, standalone, deployment]
+ai_hash: 4dd83f68ec4e1ef4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- nextjs
+- docker
+- standalone
+- deployment
 ---
 
 # Next.js standalone Docker image must copy public and .next/static next to server.js
@@ -19,3 +27,14 @@ COPY --from=builder /app/.next/static ./.next/static
 **Gotcha for apps that shell out:** standalone only traces *Node module* deps — it can't include external CLIs the app spawns (`claude`, `gcloud`, `git`, …). For a "self-runnable" image of a local-first app you must `apt-get`/`npm -g` install those tools in the runner stage yourself, and mount the app's data/vault + supply credentials at runtime. See [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]].
 
 Related: [[Next.js standalone bundle breaks when the dot-prefixed .next folder is dropped in transfer]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Next.js standalone bundle breaks when the dot-prefixed .next folder is dropped in transfer]]
+- [[Next.js .nextcache is a build-time-only cache, never bundle it]]
+- [[Hydration mismatches only surface as minified errors in production not dev]]
+- [[Next.js production server never loads the native SWC binary at runtime]]
+- [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+
+%% ai-graph-end %%

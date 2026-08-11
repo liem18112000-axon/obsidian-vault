@@ -1,10 +1,23 @@
 ---
-title: "Count fan-out _shard index must put _shard LAST in the compound key (ESR)"
+ai_hash: dc86786148579a2b
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-23
-type: lesson
+entities: []
+source: luz-docs LUZ-154613, sessions 2026-06-17 / 06-23 / 06-26
 status: seedling
-source: "luz-docs LUZ-154613, sessions 2026-06-17 / 06-23 / 06-26"
-tags: [mongodb, indexing, esr, luz-docs, count-fanout, fanout, sharding, performance, gotcha]
+tags:
+- mongodb
+- indexing
+- esr
+- luz-docs
+- count-fanout
+- fanout
+- sharding
+- performance
+- gotcha
+title: Count fan-out _shard index must put _shard LAST in the compound key (ESR)
+type: lesson
 ---
 
 # Count fan-out _shard index must put _shard LAST in the compound key (ESR)
@@ -32,3 +45,14 @@ luz-docs `parallelize` package: `ParallelizePartitioner` / `ParallelizeCount`, S
 - [[3 Resources/Data/MongoDB/Mongo facet $group count index only helps the $match prefix, not the count]]
 - [[Random shard key gives balanced fan-out partitions (equal-width = equal-work only if uniform)]]
 - [[Don't share one predicate between a read-path gate and a backfill selector]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Production security count is already COUNT_SCAN (covered); benchmark query's FETCH is inherent (multikey+$or+$nin)]]
+- [[Divide-and-Conquer Visible-Document Count]]
+- [[_shard fan-out uses idx_shard (IXSCAN exact slice); local port-forward masks the speedup]]
+- [[luz-docs parallelized count undercounts documents missing _shard]]
+- [[Fan-out count needs an explicit key-absent sub-count to stay exact during shard backfill]]
+
+%% ai-graph-end %%

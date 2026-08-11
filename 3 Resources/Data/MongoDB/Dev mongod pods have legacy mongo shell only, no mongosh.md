@@ -1,10 +1,18 @@
 ---
-title: "Dev mongod pods have legacy mongo shell only, no mongosh"
+ai_hash: 9608bb481ec86c25
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: lesson
+entities: []
+source: session 2026-07-22
 status: seedling
-source: "session 2026-07-22"
-tags: [mongodb, kubernetes, luz, gotcha]
+tags:
+- mongodb
+- kubernetes
+- luz
+- gotcha
+title: Dev mongod pods have legacy mongo shell only, no mongosh
+type: lesson
 ---
 
 # Dev mongod pods have legacy mongo shell only, no mongosh
@@ -22,3 +30,14 @@ kubectl exec luz-mongodb01-cluster-rs-1 -n dev-mongodb-clusters -- mongo --quiet
 ## Related
 
 - [[NotWritablePrimary via port-forward means forward targets a secondary]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[NotWritablePrimary via port-forward means forward targets a secondary]]
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+- [[Stale kubectl port-forward on a reused local port causes silent wrong-target auth failures]]
+- [[dev-staging tenants live on a separate mongo cluster from dev]]
+- [[eArchive dev skills are self-contained copies, not shared helpers]]
+
+%% ai-graph-end %%

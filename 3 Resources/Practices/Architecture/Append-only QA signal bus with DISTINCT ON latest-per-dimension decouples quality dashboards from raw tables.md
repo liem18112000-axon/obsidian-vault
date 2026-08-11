@@ -1,10 +1,20 @@
 ---
-title: "Append-only QA signal bus with DISTINCT ON latest-per-dimension decouples quality dashboards from raw tables"
+ai_hash: 43fa4c248a595f77
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-19
-type: model
+entities: []
+source: Vinnstack QA Cockpit 2026-07-19
 status: seedling
-source: "Vinnstack QA Cockpit 2026-07-19"
-tags: [architecture, qa, postgres, event-log, vinnstack]
+tags:
+- architecture
+- qa
+- postgres
+- event-log
+- vinnstack
+title: Append-only QA signal bus with DISTINCT ON latest-per-dimension decouples quality
+  dashboards from raw tables
+type: model
 ---
 
 # Append-only QA signal bus with DISTINCT ON latest-per-dimension decouples quality dashboards from raw tables
@@ -24,3 +34,14 @@ Related: [[Self-migrating Postgres tables via memoized CREATE TABLE IF NOT EXIST
 ## Related
 
 - [[Self-migrating Postgres tables via memoized CREATE TABLE IF NOT EXISTS]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Per-key write lock for parallel aggregate writes; self-migrating column via idempotent ALTER]]
+- [[Keep the release gate deterministic; put AI judgment in upstream signals not the gate]]
+- [[Migrating Vinnstack Interrogation Room from JSON files to normalized Postgres (design)]]
+- [[Batch multi-row INSERTs to cut round-trips on aggregate saves (Postgres)]]
+- [[Vinnstack interrogationStore full-aggregate rewrite loses concurrent updates to the same epic]]
+
+%% ai-graph-end %%

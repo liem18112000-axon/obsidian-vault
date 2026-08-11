@@ -1,10 +1,19 @@
 ---
-title: "CompletableFuture parallel fan-out needs .toList() barrier before joining"
+ai_hash: 5a3404b096e74786
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: LUZ-154613 session 2026-06-16
 status: seedling
-source: "LUZ-154613 session 2026-06-16"
-tags: [java, concurrency, completablefuture, streams, gotcha]
+tags:
+- java
+- concurrency
+- completablefuture
+- streams
+- gotcha
+title: CompletableFuture parallel fan-out needs .toList() barrier before joining
+type: lesson
 ---
 
 # CompletableFuture parallel fan-out needs .toList() barrier before joining
@@ -34,3 +43,14 @@ Fail-loud is preserved without an explicit `CompletableFuture.allOf(...).join()`
 ## Related
 
 - [[1 Projects/luz-docs/count/optimize/Divide-and-Conquer Visible-Document Count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[ManagedExecutorService.execute loses CDI request context]]
+- [[Semaphore permit leak when risky code sits between acquire and try]]
+- [[Widening fan-out threads doesn't help once MongoDB is the count bottleneck]]
+- [[Per-pod single-flight kills cache stampede without semantic change]]
+- [[Semaphore acquire before try leaks permits on static semaphores]]
+
+%% ai-graph-end %%

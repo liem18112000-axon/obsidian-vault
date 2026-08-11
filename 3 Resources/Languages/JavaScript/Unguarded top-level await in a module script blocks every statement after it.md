@@ -1,10 +1,19 @@
 ---
-title: "Unguarded top-level await in a module script blocks every statement after it"
+ai_hash: cf7240dd0fe83f6e
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar session 2026-07-11, static/app.js
 status: seedling
-source: "virtual-avatar session 2026-07-11, static/app.js"
-tags: [javascript, async-await, es-modules, error-handling, gotcha]
+tags:
+- javascript
+- async-await
+- es-modules
+- error-handling
+- gotcha
+title: Unguarded top-level await in a module script blocks every statement after it
+type: lesson
 ---
 
 # Unguarded top-level await in a module script blocks every statement after it
@@ -22,3 +31,13 @@ If `showAvatar()` failed or hung (e.g., a slow/broken default avatar file), `loa
 Fix: wrap the risky operation in the same try/catch used elsewhere for the same operation (this codebase already had a `switchAvatar()` helper with try/catch for later avatar switches — reusing it for the *initial* load too, instead of a bare unguarded call, fixed it) so a failure there can't cascade into blocking every subsequent independent initialization step.
 
 General lesson: when a module's initialization does several independent things via sequential top-level `await`, guard each one (or at least the risky/network-dependent ones) individually — an unguarded early step can silently prevent unrelated later steps from ever running, and the resulting bug report will describe the *later* steps as broken, not the actual failing one.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[State machines must catch expected-failure operations or they get stuck forever]]
+- [[Poll a library's public boolean state flags with a grace period when there is no completion callback]]
+- [[Cached-rejected lazy import silently breaks a feature for the whole session]]
+- [[A render crash masks latent crashes elsewhere in the same React subtree]]
+
+%% ai-graph-end %%

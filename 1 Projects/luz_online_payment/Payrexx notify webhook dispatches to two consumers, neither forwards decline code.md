@@ -1,10 +1,67 @@
 ---
-title: "Payrexx notify webhook dispatches to two consumers, neither forwards decline code"
+ai_hash: 37d41843d513deaa
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: observation
+entities:
+- Payrexx
+- webhook
+- decline code
+- luz_online_payment
+- NotifiedTransactionService
+- NotifiedTransactionService.handle()
+- OrderGateway status
+- NotifiedTransactionConsumerFactory
+- orderGateway.getGatewayType()
+- ONLINE_SHOP
+- OnlineShopTransactionConsumer
+- onlineShopAdapterCaller
+- onlineShopAdapterCaller.notifyTransaction()
+- DTO
+- KlaraPayTransaction.toKlaraPayTx()
+- WIDGET_STORE
+- ServiceTenantTransactionPaymentConsumer
+- serviceTenantPaymentCaller
+- CustomerPaymentTransaction
+- transaction.metadata
+- transaction.metadata.decline_code
+- luz_store
+- LUZ-157476
+- declineCode field
+- resolver
+- Retry asymmetry
+- exceptions
+- Payrexx retry
+- downstream failure
+- ValidationException
+- gateway not found
+- status update
+- Declined payloads
+- bean validation
+- Transaction.payment
+- invoice
+- '@NotNull @Valid'
+- declined charge
+- endpoint
+- '@PermitAll'
+- Payrexx signature verification
+- Factory
+- service tenant transaction consumer
+- log bug
+- luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES
+  off
+- DeclineCodes resolver misses nested metadata.decline_code
+source: LUZ-157476 investigation 2026-07
 status: seedling
-source: "LUZ-157476 investigation 2026-07"
-tags: [payrexx, webhook, luz-online-payment, luz-157476, gotcha]
+tags:
+- payrexx
+- webhook
+- luz-online-payment
+- luz-157476
+- gotcha
+title: Payrexx notify webhook dispatches to two consumers, neither forwards decline
+  code
+type: observation
 ---
 
 # Payrexx notify webhook dispatches to two consumers, neither forwards decline code
@@ -28,3 +85,65 @@ Related: [[luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with
 
 - [[luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off]]
 - [[DeclineCodes resolver misses nested metadata.decline_code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_online_payment notify webhook silently 400-rejects ~43% of Payrexx webhooks on dev]]
+- [[DeclineCodes resolver misses nested metadata.decline_code]]
+- [[Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
+- [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
+
+**Relations:**
+- Payrexx — *dispatches* — webhook
+- webhook — *dispatches to* — OnlineShopTransactionConsumer
+- webhook — *dispatches to* — ServiceTenantTransactionPaymentConsumer
+- webhook — *does not forward* — decline code
+- luz_online_payment — *contains* — NotifiedTransactionService
+- NotifiedTransactionService.handle() — *updates* — OrderGateway status
+- NotifiedTransactionService.handle() — *dispatches to* — NotifiedTransactionConsumerFactory
+- NotifiedTransactionConsumerFactory — *keyed on* — orderGateway.getGatewayType()
+- orderGateway.getGatewayType() — *is* — ONLINE_SHOP
+- ONLINE_SHOP — *routes to* — OnlineShopTransactionConsumer
+- OnlineShopTransactionConsumer — *calls* — onlineShopAdapterCaller.notifyTransaction()
+- onlineShopAdapterCaller.notifyTransaction() — *uses* — DTO
+- DTO — *built by* — KlaraPayTransaction.toKlaraPayTx()
+- orderGateway.getGatewayType() — *is* — WIDGET_STORE
+- WIDGET_STORE — *routes to* — ServiceTenantTransactionPaymentConsumer
+- ServiceTenantTransactionPaymentConsumer — *calls* — serviceTenantPaymentCaller
+- serviceTenantPaymentCaller — *uses* — CustomerPaymentTransaction
+- CustomerPaymentTransaction — *is a* — DTO
+- DTO — *does not carry* — decline code
+- DTO — *does not read* — transaction.metadata
+- transaction.metadata — *contains* — transaction.metadata.decline_code
+- transaction.metadata.decline_code — *is a* — decline code
+- decline code — *is dropped before* — luz_store
+- LUZ-157476 — *is about* — declined txns
+- LUZ-157476 — *requires adding* — declineCode field
+- declineCode field — *to* — DTO
+- LUZ-157476 — *requires* — resolver
+- resolver — *to read* — transaction.metadata
+- ServiceTenantTransactionPaymentConsumer — *catches* — exceptions
+- ServiceTenantTransactionPaymentConsumer — *prevents* — Payrexx retry
+- OnlineShopTransactionConsumer — *does not catch* — exceptions
+- OnlineShopTransactionConsumer — *causes* — Payrexx retry
+- Payrexx retry — *on* — downstream failure
+- gateway not found — *throws* — ValidationException
+- ValidationException — *causes* — Payrexx retry
+- status update — *rolls back with* — ValidationException
+- Declined payloads — *may fail* — bean validation
+- Transaction.payment — *is* — @NotNull @Valid
+- invoice — *is* — @NotNull @Valid
+- Payrexx — *omits* — Transaction.payment
+- Transaction.payment — *on* — declined charge
+- webhook — *is rejected if* — Transaction.payment
+- endpoint — *is* — @PermitAll
+- endpoint — *lacks* — Payrexx signature verification
+- Factory — *has* — log bug
+- log bug — *involves* — service tenant transaction consumer
+- luz_online_payment Payrexx webhook uses JSON-only Jackson mapper with FAIL_ON_UNKNOWN_PROPERTIES off — *relates to* — webhook
+- DeclineCodes resolver misses nested metadata.decline_code — *relates to* — resolver
+- DeclineCodes resolver misses nested metadata.decline_code — *relates to* — decline code
+
+%% ai-graph-end %%

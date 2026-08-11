@@ -1,11 +1,20 @@
 ---
-title: "Excalidraw text does not auto-wrap or auto-center"
+ai_hash: 12f90d29f749d7de
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-updated: 2026-07-31
-type: lesson
+entities: []
+source: sessions 2026-06-18 / 2026-06-20 / 2026-07-13
 status: seedling
-source: "sessions 2026-06-18 / 2026-06-20 / 2026-07-13"
-tags: [excalidraw, diagrams, gotcha, rendering, text-alignment]
+tags:
+- excalidraw
+- diagrams
+- gotcha
+- rendering
+- text-alignment
+title: Excalidraw text does not auto-wrap or auto-center
+type: lesson
+updated: 2026-07-31
 ---
 
 # Excalidraw text does not auto-wrap or auto-center
@@ -40,3 +49,14 @@ Hit in the hook-present deck diagrams (`gen-05.js` / `gen-loops.js`), the AppsFl
 
 - [[3 Resources/AI/Claude-Code/pptx/QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
 - [[3 Resources/AI/Claude-Code/pptx/pptxgenjs addImage stretches when wh aspect drifts from the real image — read PNG IHDR size]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Full-bleed slide images need ~169 aspect or their text renders too small]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
+- [[Narration-synced highlight region-based dimemphasize excalidraw variants + timed xfade]]
+
+%% ai-graph-end %%

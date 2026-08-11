@@ -1,10 +1,18 @@
 ---
-title: "vi.clearAllMocks() does not undo a prior mockReturnValue"
+ai_hash: 315dfa65c9af860c
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: vinnstack session 2026-07-08/09
 status: seedling
-source: "vinnstack session 2026-07-08/09"
-tags: [vitest, mocking, gotcha, testing]
+tags:
+- vitest
+- mocking
+- gotcha
+- testing
+title: vi.clearAllMocks() does not undo a prior mockReturnValue
+type: lesson
 ---
 
 # vi.clearAllMocks() does not undo a prior mockReturnValue
@@ -30,3 +38,14 @@ Treat `clearAllMocks()` as clearing call history ONLY — never assume it restor
 ## Related
 
 - [[mockReset does not reliably restore a vi.hoisted factory implementation]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[mockReset does not reliably restore a vi.hoisted factory implementation]]
+- [[vi.mock factory must return every named export the SUT imports]]
+- [[vi.mock of a node builtin needs a default export too (Vite CJS interop)]]
+- [[Test module-load env decisions with vi.resetModules plus dynamic import per case]]
+- [[vi.fn with a zero-arg default locks the mock to a zero-arg signature]]
+
+%% ai-graph-end %%

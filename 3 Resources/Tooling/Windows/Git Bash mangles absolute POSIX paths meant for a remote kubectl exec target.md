@@ -1,9 +1,17 @@
 ---
-title: "Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target"
+ai_hash: dc1b1b8ba181d1b1
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
+entities: []
+source: session 2026-07-23, luz-docs resource-specs investigation
+tags:
+- gitbash
+- windows
+- kubernetes
+- gotcha
+title: Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target
 type: lesson
-source: "session 2026-07-23, luz-docs resource-specs investigation"
-tags: [gitbash, windows, kubernetes, gotcha]
 ---
 
 # Git Bash mangles absolute POSIX paths meant for a remote kubectl exec target
@@ -18,3 +26,11 @@ Where this bit specifically: `kubectl exec pod -c container -- /opt/java/openjdk
 
 - [[Read JVM/process thread count via /proc/pid/status]]
 - [[no app auth needed]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Windows Python resolves a leading-slash path to C-colon-tmp, not Git Bash tmp]]
+- [[Read JVMprocess thread count via procpidstatus, no app auth needed]]
+
+%% ai-graph-end %%

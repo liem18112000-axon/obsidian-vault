@@ -1,10 +1,18 @@
 ---
-title: "JsonObjectUtil.convertJsonArrayToListString unwraps JsonString already"
+ai_hash: 404f20675202c685
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-01
-type: lesson
+entities: []
+source: session 2026-06-01
 status: seedling
-source: "session 2026-06-01"
-tags: [java, jsonp, luz-docs, refactoring]
+tags:
+- java
+- jsonp
+- luz-docs
+- refactoring
+title: JsonObjectUtil.convertJsonArrayToListString unwraps JsonString already
+type: lesson
 ---
 
 # JsonObjectUtil.convertJsonArrayToListString unwraps JsonString already
@@ -25,3 +33,12 @@ Compare with the previous 4-line stream form — same output, less ceremony, no 
 
 ## Related
 [[Empty per-folder codes means public, not no-access]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[userSecurityClassCodes param must be JSON array text not comma-separated]]
+- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+- [[JSON-P createArrayBuilder(Collection) rejects built JsonValues]]
+
+%% ai-graph-end %%

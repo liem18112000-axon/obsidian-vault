@@ -1,10 +1,20 @@
 ---
-title: "A webhook receiver deploys as an always-on service, not a scheduled job"
+ai_hash: a6a609d3cf1f1450
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-26
-type: lesson
+entities: []
+source: session 2026-06-26 feat/appsflyer-push-layer; DESIGN_PUSH.md
 status: seedling
-source: "session 2026-06-26 feat/appsflyer-push-layer; DESIGN_PUSH.md"
-tags: [deployment, webhook, kubernetes, high-availability, appsflyer, leo-cdp]
+tags:
+- deployment
+- webhook
+- kubernetes
+- high-availability
+- appsflyer
+- leo-cdp
+title: A webhook receiver deploys as an always-on service, not a scheduled job
+type: lesson
 ---
 
 # A webhook receiver deploys as an always-on service, not a scheduled job
@@ -27,3 +37,14 @@ See [[AppsFlyer Push API is the inverse of the Pull API]] and [[AppsFlyer Push l
 
 - [[AppsFlyer Push API is the inverse of the Pull API]]
 - [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Split Terraform cluster-provisioning state separate from in-cluster workload state]]
+- [[Kafka sink append-only log, idempotency via dedupe_key message key]]
+- [[AppsFlyer Push layer appends per-event while Pull replaces the day]]
+- [[AppsFlyer Push API is the inverse of the Pull API]]
+- [[AppsFlyer connector dropped Kafka sink and S3 raw landing]]
+
+%% ai-graph-end %%

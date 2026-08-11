@@ -1,10 +1,17 @@
 ---
-title: "A render crash masks latent crashes elsewhere in the same React subtree"
+ai_hash: 48b0e58fdab73ae7
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-26
-type: lesson
+entities: []
+source: vinnstack cloud-build fix, session 2026-07-26
 status: seedling
-source: "vinnstack cloud-build fix, session 2026-07-26"
-tags: [react, debugging, gotcha]
+tags:
+- react
+- debugging
+- gotcha
+title: A render crash masks latent crashes elsewhere in the same React subtree
+type: lesson
 ---
 
 # A render crash masks latent crashes elsewhere in the same React subtree
@@ -20,3 +27,14 @@ See also [[Validate fetch response shape in hooks - catch-all test mocks return 
 ## Related
 
 - [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Validate fetch response shape in hooks - catch-all test mocks return wrong bodies]]
+- [[When a merge turns CI red decide test-vs-source fix by reading code intent]]
+- [[Cached-rejected lazy import silently breaks a feature for the whole session]]
+- [[Unmask a silently-caught error by replaying its logic via browser_evaluate]]
+- [[Unguarded top-level await in a module script blocks every statement after it]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "Payrexx decline code lives at transaction.metadata.decline_code"
+ai_hash: 05ba30666e54ade4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-31
-type: observation
+entities: []
+source: LUZ-157476 sample webhook payload 2026-07
 status: seedling
-source: "LUZ-157476 sample webhook payload 2026-07"
-tags: [payrexx, webhook, decline-code, luz-157476]
+tags:
+- payrexx
+- webhook
+- decline-code
+- luz-157476
+title: Payrexx decline code lives at transaction.metadata.decline_code
+type: observation
 ---
 
 # Payrexx decline code lives at transaction.metadata.decline_code
@@ -26,3 +34,14 @@ Related: [[Payrexx delivers decline code only via webhook, not sync response]], 
 
 - [[3 Resources/Work-Kepler/Payrexx/Payrexx delivers decline code only via webhook, not sync response]]
 - [[DeclineCodes resolver misses nested metadata.decline_code]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Payrexx delivers decline code only via webhook, not sync response]]
+- [[DeclineCodes resolver misses nested metadata.decline_code]]
+- [[Enumerate real Payrexx decline codes via chargeTransactionId lookup, not via service responses]]
+- [[KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code]]
+- [[Payrexx v1.0 charge API returns only status+message on failure — no ISO 8583 code]]
+
+%% ai-graph-end %%

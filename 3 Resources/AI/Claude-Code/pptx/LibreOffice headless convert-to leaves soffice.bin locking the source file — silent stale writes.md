@@ -1,10 +1,22 @@
 ---
-title: "LibreOffice headless convert-to leaves soffice.bin locking the source file — silent stale writes"
+ai_hash: 802a510b3e5200ff
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-18
-type: lesson
+entities: []
+source: session 2026-06-18
 status: seedling
-source: "session 2026-06-18"
-tags: [libreoffice, soffice, pptx, file-lock, windows, gotcha, python-pptx]
+tags:
+- libreoffice
+- soffice
+- pptx
+- file-lock
+- windows
+- gotcha
+- python-pptx
+title: LibreOffice headless convert-to leaves soffice.bin locking the source file
+  — silent stale writes
+type: lesson
 ---
 
 # LibreOffice headless convert-to leaves soffice.bin locking the source file — silent stale writes
@@ -29,3 +41,11 @@ Context: Claude Hooks & Skills deck, `C:\Users\dvtliem\.claude\docs\hook-present
 ## Related
 
 - [[3 Resources/AI/Claude-Code/pptx/QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[QA a pptx on Windows LibreOffice to PDF then PyMuPDF render (thumbnail.py AF_UNIX fails)]]
+- [[pptxgenjs addImage stretches when wh aspect drifts from the real image — read PNG IHDR size]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Cascade-marker pattern for crash-safe async retry"
+ai_hash: 8d9928b438692e7a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: model
+entities: []
+source: MaterializeFolderRenameService.java 2026-06-05; materialize-gate reliability
+  research 2026-07-15
 status: seedling
-source: "MaterializeFolderRenameService.java 2026-06-05; materialize-gate reliability research 2026-07-15"
-tags: [luz-docs, materialize, design-pattern, reliability, resilience, cdi]
+tags:
+- luz-docs
+- materialize
+- design-pattern
+- reliability
+- resilience
+- cdi
+title: Cascade-marker pattern for crash-safe async retry
+type: model
 ---
 
 # Cascade-marker pattern for crash-safe async retry
@@ -29,3 +40,14 @@ luz_docs' reusable shape for **durable retry of a fire-and-forget async write, w
 - [[luz_docs migration campaigns retry on next tenant request, not cron]]
 - [[DualCache L1 write ignores per-call TTL (uses domain default)]]
 - [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_docs materialize passive retry via cascade markers]]
+- [[Cascade marker pattern for bulk update resilience]]
+- [[luz_docs has two materialize cascade delivery mechanisms]]
+- [[07 Operational Notes]]
+- [[Snapshot for rollback must live outside retry boundary]]
+
+%% ai-graph-end %%

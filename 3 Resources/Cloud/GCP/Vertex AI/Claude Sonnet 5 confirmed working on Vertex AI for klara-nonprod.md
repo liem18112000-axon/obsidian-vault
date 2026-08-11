@@ -1,10 +1,18 @@
 ---
-title: "Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod"
+ai_hash: 9f40593e24b9fe61
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: observation
+entities: []
+source: session 2026-07-11
 status: seedling
-source: "session 2026-07-11"
-tags: [gcp, vertex-ai, klara-nonprod, claude]
+tags:
+- gcp
+- vertex-ai
+- klara-nonprod
+- claude
+title: Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod
+type: observation
 ---
 
 # Claude Sonnet 5 confirmed working on Vertex AI for klara-nonprod
@@ -25,3 +33,14 @@ See [[Vertex AI global endpoint host has no region prefix]] and [[Vertex AI Mode
 
 - [[Vertex AI global endpoint host has no region prefix]]
 - [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vertex AI Model Garden enablement and quota are separate, per-model steps]]
+- [[Vertex AI global endpoint host has no region prefix]]
+- [[Claude models are available on GCP Vertex AI Model Garden]]
+- [[List Anthropic models on Vertex via the publisherModels REST endpoint]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+
+%% ai-graph-end %%

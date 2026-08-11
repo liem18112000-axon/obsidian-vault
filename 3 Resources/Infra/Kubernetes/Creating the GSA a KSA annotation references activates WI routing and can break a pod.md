@@ -1,10 +1,20 @@
 ---
-title: "Creating the GSA a KSA annotation references activates WI routing and can break a pod"
+ai_hash: 7d08b86c41ec1658
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-03
-type: lesson
+entities: []
+source: Vinnstack GKE deploy 2026-07-03
 status: seedling
-source: "Vinnstack GKE deploy 2026-07-03"
-tags: [gke, workload-identity, gcp, iam, gotcha]
+tags:
+- gke
+- workload-identity
+- gcp
+- iam
+- gotcha
+title: Creating the GSA a KSA annotation references activates WI routing and can break
+  a pod
+type: lesson
 ---
 
 # Creating the GSA a KSA annotation references activates WI routing and can break a pod
@@ -16,3 +26,14 @@ On a GKE cluster with Workload Identity enabled, creating the Google service acc
 ## Related
 
 - [[3 Resources/Infra/Kubernetes/GKE LoadBalancer Service External vs Internal and how to tell by IP]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Non-WI GKE Google API auth mount a GSA key at the well-known ADC path]]
+- [[Cloud SQL Auth Proxy needs roles-cloudsql.client on the connecting identity or it 403s NOT_AUTHORIZED]]
+- [[Deploying a stateful single-tenant app to GKE with a Cloud SQL proxy sidecar]]
+- [[GKE managed-cert HTTPS global IP, DNS before cert, NEG service, FrontendConfig redirect]]
+- [[Set up GitHub Actions to GCP via Workload Identity Federation]]
+
+%% ai-graph-end %%

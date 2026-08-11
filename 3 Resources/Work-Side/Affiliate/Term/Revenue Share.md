@@ -1,8 +1,19 @@
 ---
-type: term
+ai_hash: 6271c7a482dc5f2a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- RevShare
+- Revenue Share
+- Rev Share
+- Recurring Commission
+- Lifetime Commission
 domain: affiliate-marketing
-aliases: [RevShare, Revenue Share, Rev Share, Recurring Commission, Lifetime Commission]
-tags: [affiliate, pricing-model]
+entities: []
+tags:
+- affiliate
+- pricing-model
+type: term
 ---
 
 # Revenue Share
@@ -81,3 +92,14 @@ If the product churns fast, or it's a one-time purchase, a flat [[Cost per Sale]
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Lifetime Value]]
+- [[Term]]
+- [[Cost per Sale]]
+- [[Cost per Action]]
+- [[Cost per Registration]]
+
+%% ai-graph-end %%

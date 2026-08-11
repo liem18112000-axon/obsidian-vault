@@ -1,10 +1,20 @@
 ---
-title: "Offset-paging loop with while(offset % pageSize == 0) infinite-loops on exact-multiple counts"
+ai_hash: f1d56aeb2ac16f7a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-21
-type: lesson
+entities: []
+source: session 2026-06-21 luz-docs delete-folder review
 status: seedling
-source: "session 2026-06-21 luz-docs delete-folder review"
-tags: [pagination, gotcha, infinite-loop, luz-docs, mongodb]
+tags:
+- pagination
+- gotcha
+- infinite-loop
+- luz-docs
+- mongodb
+title: Offset-paging loop with while(offset % pageSize == 0) infinite-loops on exact-multiple
+  counts
+type: lesson
 ---
 
 # Offset-paging loop with while(offset % pageSize == 0) infinite-loops on exact-multiple counts
@@ -23,3 +33,14 @@ Found in luz_docs `FolderUtil` (`forEachDocumentPage` + `getSubFolders`), folder
 ## Related
 
 - [[3 Resources/Languages/Java/JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[JsonValue.NULL is a non-null Java object so ObjectsnonNull does not drop JSON null elements]]
+- [[JAX-RS DefaultValue does not apply when a bean param is constructed in code]]
+- [[luz-docs folder delete filter double-fetched every subfolder]]
+- [[luz-jsonstore find returns 200 empty string, not [], on zero matches]]
+- [[Minimal meaningful test fixture size is bounded by the real page size]]
+
+%% ai-graph-end %%

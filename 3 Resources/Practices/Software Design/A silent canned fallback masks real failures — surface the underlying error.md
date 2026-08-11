@@ -1,10 +1,19 @@
 ---
-title: "A silent canned fallback masks real failures — surface the underlying error"
+ai_hash: 63396e6ad55d7e85
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-29
-type: lesson
+entities: []
+source: Vinnstack debugging session 2026-06-29
 status: seedling
-source: "Vinnstack debugging session 2026-06-29"
-tags: [error-handling, fallback, observability, design, gotcha]
+tags:
+- error-handling
+- fallback
+- observability
+- design
+- gotcha
+title: A silent canned fallback masks real failures — surface the underlying error
+type: lesson
 ---
 
 # A silent canned fallback masks real failures — surface the underlying error
@@ -23,3 +32,14 @@ Rule of thumb: a fallback may be graceful, but it must be **honest** — degrade
 ## Related
 
 - [[3 Resources/Languages/Node.js/Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Node spawn shellfalse on Windows won't run .cmd.ps1 wrappers (ENOENT)]]
+- [[Never cache a negative fallback in the same slot as a resolved value]]
+- [[Classify stream failures on the server, not the client]]
+- [[Headless claude exit 0 does not mean the operation succeeded]]
+- [[Spawning a prompting CLI hangs on open stdin — use stdio stdin ignore for EOF]]
+
+%% ai-graph-end %%

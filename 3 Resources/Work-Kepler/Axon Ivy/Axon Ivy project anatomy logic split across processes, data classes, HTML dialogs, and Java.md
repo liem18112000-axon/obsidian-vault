@@ -1,10 +1,19 @@
 ---
-title: "Axon Ivy project anatomy: logic split across processes, data classes, HTML dialogs, and Java"
+ai_hash: c5855e193c00c099
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-27
-type: concept
+entities: []
+source: session 2026-07-27 luz_finance setup
 status: seedling
-source: "session 2026-07-27 luz_finance setup"
-tags: [axon-ivy, klara-luz, project-structure, java]
+tags:
+- axon-ivy
+- klara-luz
+- project-structure
+- java
+title: 'Axon Ivy project anatomy: logic split across processes, data classes, HTML
+  dialogs, and Java'
+type: concept
 ---
 
 # Axon Ivy project anatomy: logic split across processes, data classes, HTML dialogs, and Java
@@ -24,3 +33,14 @@ An Axon Ivy project is not just Java — application logic is deliberately split
 ## Related
 
 - [[3 Resources/Work-Kepler/Klara/KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[KlaraLuz Axon Ivy projects on master still target Ivy 10.0.15, not 12]]
+- [[3 Resources]]
+- [[luz_epost_business_web to luz_docs_view_controller integration goes through one REST client package]]
+- [[KlaraLuz Maven builds resolve dependencies from Google Artifact Registry and require gcloud auth]]
+- [[luz_finance and luz_components move in lockstep SNAPSHOTs; a 'method not applicable' compile error usually means a skew]]
+
+%% ai-graph-end %%

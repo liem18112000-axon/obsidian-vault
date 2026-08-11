@@ -1,10 +1,22 @@
 ---
-title: "Unsigned NSIS install under Defender: ~2min of zero files is pre-scan, not a hang"
+ai_hash: 3369b488fab062e4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-17
-type: lesson
+entities: []
+source: Vinnstack session 2026-07-17
 status: seedling
-source: "Vinnstack session 2026-07-17"
-tags: [electron-builder, nsis, windows-defender, install, gotcha, vinnstack, code-signing]
+tags:
+- electron-builder
+- nsis
+- windows-defender
+- install
+- gotcha
+- vinnstack
+- code-signing
+title: 'Unsigned NSIS install under Defender: ~2min of zero files is pre-scan, not
+  a hang'
+type: lesson
 ---
 
 # Unsigned NSIS install under Defender: ~2min of zero files is pre-scan, not a hang
@@ -20,3 +32,14 @@ Context: Vinnstack, electron-builder NSIS oneClick (perMachine:false), Electron 
 ## Related
 
 - [[3 Resources/Frontend/Electron/Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Unsigned Electron app first-launch transient Cannot find module during Defender post-install scan]]
+- [[Unsigned asarfalse Electron app ~30s first-launch delay is Defender scanning loose files]]
+- [[electron-updater skips NSIS signature verification when the installed app is unsigned]]
+- [[electron-builder portable self-extracts on launch — use portable.splashImage for that UI-less gap]]
+- [[Since June 2023 code-signing certs must be on HSM — CI needs a cloud signing service, not a .pfx]]
+
+%% ai-graph-end %%

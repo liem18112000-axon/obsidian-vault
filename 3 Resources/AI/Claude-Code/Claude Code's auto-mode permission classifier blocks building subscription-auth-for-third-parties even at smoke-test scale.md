@@ -1,10 +1,20 @@
 ---
-title: "Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale"
+ai_hash: 22ec904f3046de54
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar session, 2026-07-11
 status: evergreen
-source: "virtual-avatar session, 2026-07-11"
-tags: [claude, claude-code, tos, permissions, auto-mode]
+tags:
+- claude
+- claude-code
+- tos
+- permissions
+- auto-mode
+title: Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties
+  even at smoke-test scale
+type: lesson
 ---
 
 # Claude Code's auto-mode permission classifier blocks building subscription-auth-for-third-parties even at smoke-test scale
@@ -20,3 +30,14 @@ Why this matters: this is a second, independent enforcement layer beyond the ToS
 - [[Claude subscription OAuth cannot power a third-party audience-facing app]]
 - [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
 - [[Virtual avatar presenter project design plan]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Claude subscription OAuth cannot power a third-party audience-facing app]]
+- [[vinnstack spawns the local claude CLI for subscription-authenticated automation]]
+- [[Claude Code hooks fire for any spawned claude process, not just interactive sessions]]
+- [[Anthropic has no third-party OAuth; in-app Claude login means driving the claude auth CLI]]
+- [[Claude Code runs on Vertex AI via three env vars with gcloud ADC]]
+
+%% ai-graph-end %%

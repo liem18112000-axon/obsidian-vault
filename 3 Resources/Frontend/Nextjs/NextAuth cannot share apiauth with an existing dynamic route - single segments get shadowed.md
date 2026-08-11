@@ -1,10 +1,19 @@
 ---
-title: "NextAuth cannot share /api/auth with an existing dynamic route - single segments get shadowed"
+ai_hash: 50d2309347c435bb
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-04
-type: gotcha
+entities: []
+source: session 2026-07-04, vinnstack Google OAuth
 status: seedling
-source: "session 2026-07-04, vinnstack Google OAuth"
-tags: [nextjs, nextauth, routing, vinnstack]
+tags:
+- nextjs
+- nextauth
+- routing
+- vinnstack
+title: NextAuth cannot share /api/auth with an existing dynamic route - single segments
+  get shadowed
+type: gotcha
 ---
 
 # NextAuth cannot share /api/auth with an existing dynamic route - single segments get shadowed
@@ -20,3 +29,14 @@ Miss any one and you get redirect_uri_mismatch or a session that never loads. Sy
 ## Related
 
 - [[Next.js App Router route.ts files can only export recognized handler names]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Next.js App Router route.ts files can only export recognized handler names]]
+- [[Arm a new login gate by env presence so shipping auth cannot lock the operator out]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+- [[Per-account write silently skipped when the server cant resolve the session looks saved, isnt]]
+- [[Local-app OAuth bridges the browser callback to the waiting login via an in-memory state-to-resolver map]]
+
+%% ai-graph-end %%

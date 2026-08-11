@@ -1,10 +1,19 @@
 ---
-title: "KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code"
+ai_hash: 809d7ba99a7303ee
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-23
-type: lesson
+entities: []
+source: luz_online_payment code verification 2026-07-23
 status: budding
-source: "luz_online_payment code verification 2026-07-23"
-tags: [klarapay, payrexx, jackson, deserialization, gotcha]
+tags:
+- klarapay
+- payrexx
+- jackson
+- deserialization
+- gotcha
+title: KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code
+type: lesson
 ---
 
 # KlaraPay DTOs are code-blind - lenient Jackson drops any Payrexx decline code
@@ -16,3 +25,14 @@ Lesson: lenient deserialization (ignore-unknown) hides available upstream data â
 ## Related
 - [[1 Projects/luz_store/LUZ-157476/Payrexx card declines reach luz_store as ERROR with prose, not DECLINED]]
 - [[Payrexx ISO 8583 decline code to meaning reference table]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Enumerate real Payrexx decline codes via chargeTransactionId lookup, not via service responses]]
+- [[luz_online_payment silently drops Payrexx decline codes]]
+- [[Payrexx v1.0 charge API returns only status+message on failure â€” no ISO 8583 code]]
+- [[KlaraPay V2 Java classes still call Payrexx API v1.0 on the consumer flow]]
+- [[luz_online_payment notify webhook silently 400-rejects ~43% of Payrexx webhooks on dev]]
+
+%% ai-graph-end %%

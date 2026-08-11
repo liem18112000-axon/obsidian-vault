@@ -1,10 +1,19 @@
 ---
-title: "Verify test files still exist on disk before trusting prior green test runs"
+ai_hash: 599c7e6bbc8cb657
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-09
-type: lesson
+entities: []
+source: luz_docs estimatedcount session, 2026-07-09 — two test files vanished untracked,
+  no error signal, only surefire's zero-tests-matched message
 status: seedling
-source: "luz_docs estimatedcount session, 2026-07-09 — two test files vanished untracked, no error signal, only surefire's zero-tests-matched message"
-tags: [testing, debugging, gotcha, maven]
+tags:
+- testing
+- debugging
+- gotcha
+- maven
+title: Verify test files still exist on disk before trusting prior green test runs
+type: lesson
 ---
 
 # Verify test files still exist on disk before trusting prior green test runs
@@ -14,3 +23,14 @@ In a session where background automation (linters, autonomous fix-agents, hooks)
 The symptom was subtle: `mvn test -Dtest="X*Test"` failed with "No tests matching pattern... were executed", NOT a compile error and NOT an obviously-test-related error message, plus the maven log casually said "Nothing to compile - all classes are up to date" for both compile and testCompile -- easy to misread as "everything is fine, tests just did not match the glob" rather than "the source files are gone."
 
 Lesson: when a test run that previously passed suddenly reports zero matching tests, do not assume a glob/pattern typo -- verify with `ls`/`find` that the source files still physically exist before debugging the test command itself. In an environment with background file-modifying automation, "I verified this compiles and passes" is a point-in-time fact, not a durable guarantee -- re-verify before reporting final status if meaningful time/turns have passed since the last check.
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[A refactor that removes a method must grep tests for its name before merging]]
+- [[Backgrounded shell exit code reflects the last command, not the build]]
+- [[Gate behavior changes must update tests asserting old fallthrough in the same commit]]
+- [[dorny test-reporter hard-fails when zero report files match]]
+- [[Run the full affected test package locally, not a hand-picked subset]]
+
+%% ai-graph-end %%

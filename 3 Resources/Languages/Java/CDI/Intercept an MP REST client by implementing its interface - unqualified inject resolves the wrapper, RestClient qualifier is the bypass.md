@@ -1,10 +1,21 @@
 ---
-title: "Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass"
+ai_hash: 8f48556b9216e695
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-05
-type: howto
+entities: []
+source: TrackingJsonStoreClient refactor, session 2026-06-05
 status: budding
-source: "TrackingJsonStoreClient refactor, session 2026-06-05"
-tags: [java, cdi, microprofile, rest-client, interceptor, luz-docs]
+tags:
+- java
+- cdi
+- microprofile
+- rest-client
+- interceptor
+- luz-docs
+title: Intercept an MP REST client by implementing its interface - unqualified inject
+  resolves the wrapper, RestClient qualifier is the bypass
+type: howto
 ---
 
 # Intercept an MP REST client by implementing its interface - unqualified inject resolves the wrapper, RestClient qualifier is the bypass
@@ -32,3 +43,14 @@ Applied in luz_docs (WildFly 26, javax), commit 0ec298177: JsonStoreMongoService
 
 - [[CDI observer methods are inherited from superclasses but not across packages if package-private]]
 - [[luz_docs change tracking dropped the ChangeOrigin event marker - thread-local suppression is the loop guard]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[CDI decorators and interceptors never fire on MicroProfile REST client proxies]]
+- [[Implementing a @Path-annotated interface auto-registers the class as a JAX-RS server resource]]
+- [[luz_docs JsonStore change tracking via client-layer wrapper and CDI async events]]
+- [[luz_docs tracked-write template folds the four single-doc ops into one gate-preread-write-fire method]]
+- [[Mockito @InjectMocks by type stale @Mock after @RestClient swap leaves real field null]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "GKE log FRESHNESS window gets swamped by noise on high-traffic clusters"
+ai_hash: 03aacea6c76599cd
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-22
-type: lesson
+entities: []
+source: session 2026-07-22
 status: seedling
-source: "session 2026-07-22"
-tags: [gcp-logging, gke, debugging, gotcha]
+tags:
+- gcp-logging
+- gke
+- debugging
+- gotcha
+title: GKE log FRESHNESS window gets swamped by noise on high-traffic clusters
+type: lesson
 ---
 
 # GKE log FRESHNESS window gets swamped by noise on high-traffic clusters
@@ -20,3 +28,14 @@ See [[Materialize gate cache never latches, hammers campaign service on every co
 ## Related
 
 - [[1 Projects/luz-docs/materialize/Materialize gate cache never latches, hammers campaign service on every count]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[gcloud-logging-shard-field-vs-sharding-keyword]]
+- [[Materialize gate cache never latches, hammers campaign service on every count]]
+- [[Cache-epoch invalidation fails if the epoch is read through a local L1]]
+- [[Cloud Logging share link endTime can truncate a job's logs mid-run]]
+- [[dev-staging luz-docs IT failures cluster on the materialize read-path]]
+
+%% ai-graph-end %%

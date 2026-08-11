@@ -1,7 +1,16 @@
 ---
-title: Luz performance env cluster topology
-tags: [luz, performance, gke, mongodb, infra]
+ai_hash: cb3f13d7d251dd25
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-16
+entities: []
+tags:
+- luz
+- performance
+- gke
+- mongodb
+- infra
+title: Luz performance env cluster topology
 ---
 
 # Luz performance env cluster topology
@@ -33,3 +42,14 @@ luz-docs also runs `luz-docs-batch` + `luz-docs-import` (separate workloads, own
 `kubectl set image` against the already-built tag in Artifact Registry (`klara-repo`) — no rebuild. luz-docs is a StatefulSet (partitioned rolling update, one pod at a time). Verify tag exists first: `gcloud artifacts docker images describe <repo>/<img>:<sha>`.
 
 Related: [[Luz K count-partitions env var]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz-docs performance JVM thread metrics endpoint]]
+- [[Performance-env mongo cluster for a tenant = luz-mongodbNN by first hex char]]
+- [[Count _shard docs per tenant via in-pod Percona mongo shell on dev]]
+- [[klara-prod is a separate GCP project, not a namespace]]
+- [[Luz services access MongoDB only through the luz_jsonstore REST API]]
+
+%% ai-graph-end %%

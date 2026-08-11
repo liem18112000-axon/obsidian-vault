@@ -1,11 +1,23 @@
 ---
-title: "Cache-epoch invalidation fails if the epoch is read through a local L1"
+ai_hash: f28f9e502398df53
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- epoch invalidation L1 staleness
 created: 2026-06-20
-aliases: ["epoch invalidation L1 staleness"]
-type: lesson
+entities: []
+source: session 2026-06-20 LUZ-154613 code review
 status: seedling
-source: "session 2026-06-20 LUZ-154613 code review"
-tags: [caching, invalidation, distributed-systems, dualcache, multi-pod, gotcha, luz-docs]
+tags:
+- caching
+- invalidation
+- distributed-systems
+- dualcache
+- multi-pod
+- gotcha
+- luz-docs
+title: Cache-epoch invalidation fails if the epoch is read through a local L1
+type: lesson
 ---
 
 # Cache-epoch invalidation fails if the epoch is read through a local L1
@@ -27,3 +39,14 @@ tags: [caching, invalidation, distributed-systems, dualcache, multi-pod, gotcha,
 - [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
 - [[DualCache L1 L2 near-cache pattern]]
 - [[reference_count_api_and_K_rollout]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Two-tier cache must propagate caller TTL to every tier]]
+- [[DualCache L1 write ignores per-call TTL (uses domain default)]]
+- [[luz_docs stamps _shard on create to keep sharding gate stable]]
+- [[Delete-then-stale-put race bounds cache invalidation freshness at full TTL]]
+- [[Raising negative-cache TTL turns transient failures into long-lived poison]]
+
+%% ai-graph-end %%

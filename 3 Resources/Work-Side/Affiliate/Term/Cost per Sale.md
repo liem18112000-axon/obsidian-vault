@@ -1,8 +1,19 @@
 ---
-type: term
+ai_hash: b0b154097e6184a8
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- CPS
+- Pay per Sale
+- PPS
+- Cost per Order
 domain: affiliate-marketing
-aliases: [CPS, Pay per Sale, PPS, Cost per Order]
-tags: [affiliate, pricing-model, metric]
+entities: []
+tags:
+- affiliate
+- pricing-model
+- metric
+type: term
 ---
 
 # Cost per Sale
@@ -86,3 +97,14 @@ If the purchase happens offline or weeks later (insurance, mortgages, enterprise
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Action]]
+- [[Cost per Lead]]
+- [[Term]]
+- [[Cost per Registration]]
+- [[Cost per Quality Lead]]
+
+%% ai-graph-end %%

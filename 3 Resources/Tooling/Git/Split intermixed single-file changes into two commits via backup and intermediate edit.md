@@ -1,10 +1,19 @@
 ---
-title: "Split intermixed single-file changes into two commits via backup and intermediate edit"
+ai_hash: 41494c8419e21f05
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-04
-type: howto
+entities: []
+source: session 2026-06-04
 status: seedling
-source: "session 2026-06-04"
-tags: [git, windows, powershell, technique]
+tags:
+- git
+- windows
+- powershell
+- technique
+title: Split intermixed single-file changes into two commits via backup and intermediate
+  edit
+type: howto
 ---
 
 # Split intermixed single-file changes into two commits via backup and intermediate edit
@@ -25,3 +34,13 @@ Related: [[LUZ-155107 shipped as two commits so the inheritedSecurityClassCode f
 ## Related
 
 - [[LUZ-155107 shipped as two commits so the inheritedSecurityClassCode fix can cherry-pick to earchive-master]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Pre-staged files silently merge selective commit batches - check the index first]]
+- [[A concurrent session's git stash can silently revert your in-progress edits]]
+- [[Branch created from current HEAD drags unrelated commits — verify against originmaster]]
+- [[Apply one feature from a stale branch without reverting newer work (checkout ref -- paths)]]
+
+%% ai-graph-end %%

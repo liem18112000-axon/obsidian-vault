@@ -1,10 +1,20 @@
 ---
-title: "Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan"
+ai_hash: 510c6a8afb23f0b6
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: lesson
+entities: []
+source: session 2026-06-19 monthly->yearly investigation
 status: seedling
-source: "session 2026-06-19 monthly->yearly investigation"
-tags: [luz_store, hibernate, envers, audit, gotcha]
+tags:
+- luz_store
+- hibernate
+- envers
+- audit
+- gotcha
+title: Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits
+  price_plan
+type: lesson
 ---
 
 # Hibernate Envers on luz_store SubscriptionEntity is field-scoped and omits price_plan
@@ -18,3 +28,14 @@ The gotcha: `subscription_revision` has **no `price_plan`, `subscription_until`,
 ## Related
 
 - [[luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[luz_store subscription.price_plan is ORM-immutable but bulk-SQL writable]]
+- [[A luz_store subscription changes billing period only by new-row or direct DB write]]
+- [[Attributing a luz_store subscription's origin from created_by, method and updated_by]]
+- [[luz_store product.price_plans is a joined string that constrains a subscription's allowed plans]]
+- [[luz_store company_uri format and marketing-code price-plan suffixes]]
+
+%% ai-graph-end %%

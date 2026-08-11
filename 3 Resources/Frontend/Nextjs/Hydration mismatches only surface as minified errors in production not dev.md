@@ -1,5 +1,15 @@
 ---
-tags: [nextjs, react, hydration, ssr, production, debugging]
+ai_hash: 24b806b97ee68559
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+entities: []
+tags:
+- nextjs
+- react
+- hydration
+- ssr
+- production
+- debugging
 ---
 
 # Hydration mismatches only surface as minified errors in production not dev
@@ -15,3 +25,14 @@ The page still *works* — React discards the SSR output and re-renders on the c
 **Fixes:** compute random/time values in a `useEffect` (after mount) instead of during render; or gate the varying subtree behind a mounted flag; or `suppressHydrationWarning` for genuinely unavoidable cases (e.g. a clock). Module-level `Math.random()` seeding data is a common culprit because the server and client bundles evaluate the module separately, so the "constants" differ.
 
 Related: [[Next.js standalone Docker image must copy public and .next static next to server.js]].
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Two next dev instances sharing one .next corrupt the webpack PackFileCache]]
+- [[Next.js dev server webpack chunk cache corrupts after many route addsdeletes]]
+- [[Next.js standalone Docker image must copy public and .next static next to server.js]]
+- [[A literal inside a CSS comment closes it early and breaks next build's cssnano minify]]
+- [[Next.js standalone bundle breaks when the dot-prefixed .next folder is dropped in transfer]]
+
+%% ai-graph-end %%

@@ -1,10 +1,18 @@
 ---
-title: "luz_docs has two materialize cascade delivery mechanisms"
+ai_hash: fe7832861e24f240
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-04
-type: concept
+entities: []
+source: LUZ-155107 investigation, session 2026-06-04
 status: budding
-source: "LUZ-155107 investigation, session 2026-06-04"
-tags: [luz-docs, materialize, cascade, architecture]
+tags:
+- luz-docs
+- materialize
+- cascade
+- architecture
+title: luz_docs has two materialize cascade delivery mechanisms
+type: concept
 ---
 
 # luz_docs has two materialize cascade delivery mechanisms
@@ -24,3 +32,14 @@ Related: [[FolderService.recoverFolder is not materialize-aware]]
 ## Related
 
 - [[FolderService.recoverFolder is not materialize-aware]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Folder recovery reuses the parent-change materialize cascade]]
+- [[luz_docs materialize passive retry via cascade markers]]
+- [[FolderService.recoverFolder is not materialize-aware]]
+- [[luz_docs onFolderParentsChange risk profile - sync fan-out, page-read gap, paging races]]
+- [[Materialize folder parentFolderIds change cascade (LUZ-154159)]]
+
+%% ai-graph-end %%

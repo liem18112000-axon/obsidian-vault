@@ -1,10 +1,18 @@
 ---
-title: "Property damage falls outside person-directed violence taxonomies"
+ai_hash: 22da40ab85649f5f
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-20
-type: lesson
+entities: []
+source: session 2026-07-20
 status: seedling
-source: "session 2026-07-20"
-tags: [content-moderation, taxonomy, llm-judge, gotcha]
+tags:
+- content-moderation
+- taxonomy
+- llm-judge
+- gotcha
+title: Property damage falls outside person-directed violence taxonomies
+type: lesson
 ---
 
 # Property damage falls outside person-directed violence taxonomies
@@ -19,3 +27,12 @@ Lesson: label ambiguity in a test set is often a taxonomy-definition gap, not a 
 
 - [[Moderation taxonomies split violence into subtypes]]
 - [[3 Resources/AI/Safety/Violence detection needs a trained classifier, not keyword lists]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Moderation taxonomies split violence into subtypes]]
+- [[Violence detection needs a trained classifier, not keyword lists]]
+- [[Model options for detecting violent text by weight class]]
+
+%% ai-graph-end %%

@@ -1,10 +1,20 @@
 ---
-title: "Excalimate cloud share links are CORS-broken — use Connect to MCP server instead"
+ai_hash: b43a39d1ccdba5b4
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-16
-type: lesson
+entities: []
+source: session 2026-06-16 divide-conquer-count overview
 status: seedling
-source: "session 2026-06-16 divide-conquer-count overview"
-tags: [excalimate, excalidraw, gif, export, gotcha, cors]
+tags:
+- excalimate
+- excalidraw
+- gif
+- export
+- gotcha
+- cors
+title: Excalimate cloud share links are CORS-broken — use Connect to MCP server instead
+type: lesson
 ---
 
 # Excalimate cloud share links are CORS-broken — use Connect to MCP server instead
@@ -19,3 +29,14 @@ Caveat: the MCP server runs only while the Claude Code session is alive. After i
 
 - [[Export a static .excalidraw from an Excalimate animated scene via get_scene]]
 - [[Excalimate camera pan = translateX keyframes at each scene's center X]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Excalimate export is browser-only; headless export needs Playwright + share URL]]
+- [[Export a static .excalidraw from an Excalimate animated scene via get_scene]]
+- [[Running Excalimate locally skills in ~.claudeskills plus MCP server on port 3001]]
+- [[Excalimate is AI skills plus an optional MCP server, not one app]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+
+%% ai-graph-end %%

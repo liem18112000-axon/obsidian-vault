@@ -1,10 +1,18 @@
 ---
-title: "VRM Blender add-on ships classic and Extension zip variants"
+ai_hash: 00cf31f3ed642329
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-07-11
-type: lesson
+entities: []
+source: virtual-avatar project, 2026-07-11
 status: seedling
-source: "virtual-avatar project, 2026-07-11"
-tags: [blender, vrm, addon, automation]
+tags:
+- blender
+- vrm
+- addon
+- automation
+title: VRM Blender add-on ships classic and Extension zip variants
+type: lesson
 ---
 
 # VRM Blender add-on ships classic and Extension zip variants
@@ -17,3 +25,12 @@ For scripted/headless installs, the classic zip is the simpler target: the class
 
 - [[TalkingHead requires offline Blender conversion for VRM avatars]]
 - [[Blender headless add-on install via bpy.ops.preferences]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Blender release-zip addon module name may not match the source package name]]
+- [[Blender headless add-on install via bpy.ops.preferences]]
+- [[TalkingHead requires offline Blender conversion for VRM avatars]]
+
+%% ai-graph-end %%

@@ -1,10 +1,21 @@
 ---
-title: "Embed brand SVG icons in an Excalidraw diagram (image element + files dataURL; Simple Icons CDN)"
+ai_hash: 7f0d3798f2ad3944
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-19
-type: howto
+entities: []
+source: session 2026-06-19
 status: seedling
-source: "session 2026-06-19"
-tags: [excalidraw, icons, svg, simple-icons, diagrams, branding]
+tags:
+- excalidraw
+- icons
+- svg
+- simple-icons
+- diagrams
+- branding
+title: Embed brand SVG icons in an Excalidraw diagram (image element + files dataURL;
+  Simple Icons CDN)
+type: howto
 ---
 
 # Embed brand SVG icons in an Excalidraw diagram (image element + files dataURL; Simple Icons CDN)
@@ -31,3 +42,14 @@ Set `doc.files = files` (not `{}`). Confirmed: the `render_excalidraw.py` render
 Put icons on title-bar/title-row corners or as a hero inside a node — keep them off the body text. SVG scales crisply at any size.
 
 Context: C:\Users\dvtliem\.claude\docs\obsidian-present\build\gen-ecosystem.js (Claude / Obsidian / GitHub / Google Cloud / Gemini icons).
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Convert Excalidraw to draw.io by reading exported PNGs instead of the JSON]]
+- [[Render Excalidraw-style hand-drawn PNGs headlessly with rough.js in the Playwright browser]]
+- [[Centering an embedded image in Obsidian]]
+- [[Excalidraw text does not auto-wrap or auto-center]]
+- [[Render .excalidraw to PNG headlessly with excalidraw-brute-export-cli]]
+
+%% ai-graph-end %%

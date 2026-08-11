@@ -1,10 +1,19 @@
 ---
-title: "Cascading DC: follow the timeout chain one layer down"
+ai_hash: 4863a8fe90c82d5a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 created: 2026-06-30
-type: lesson
+entities: []
+source: PROD jwt-service investigation 2026-06-30
 status: seedling
-source: "PROD jwt-service investigation 2026-06-30"
-tags: [istio, timeout, diagnostics, root-cause, klara]
+tags:
+- istio
+- timeout
+- diagnostics
+- root-cause
+- klara
+title: 'Cascading DC: follow the timeout chain one layer down'
+type: lesson
 ---
 
 # Cascading DC: follow the timeout chain one layer down
@@ -21,3 +30,14 @@ Technique base: [[Istio DC response_flag with round latency = caller read timeou
 
 - [[Istio DC response_flag with round latency = caller read timeout]]
 - [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Downstream timeout must sit well below caller timeout (fail-fast ladder)]]
+- [[Istio DC response_flag with round latency = caller read timeout]]
+- [[Log red herrings enclosing class name and baseline-noise lines]]
+- [[Off-mesh services (istio inject=false) have no Istio access logs]]
+- [[Luz caller read-timeout settings to jwt-service]]
+
+%% ai-graph-end %%

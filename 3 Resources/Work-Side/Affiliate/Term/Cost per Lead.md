@@ -1,8 +1,18 @@
 ---
-type: term
+ai_hash: 67e43d952b046c8a
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
+aliases:
+- CPL
+- Pay per Lead
+- PPL
 domain: affiliate-marketing
-aliases: [CPL, Pay per Lead, PPL]
-tags: [affiliate, pricing-model, metric]
+entities: []
+tags:
+- affiliate
+- pricing-model
+- metric
+type: term
 ---
 
 # Cost per Lead
@@ -85,3 +95,14 @@ If the product is a simple one-click purchase, [[Cost per Sale]] usually pays yo
 
 ---
 *See also: [[3 Resources/Work-Side/Affiliate/Term|all affiliate terms]]*
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Cost per Quality Lead]]
+- [[Cost per Action]]
+- [[Cost per Sale]]
+- [[Term]]
+- [[Cost per Registration]]
+
+%% ai-graph-end %%

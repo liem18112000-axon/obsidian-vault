@@ -1,13 +1,23 @@
 ---
-title: "Vinnstack auth providers: two patterns and the rule for adding one"
-created: 2026-07-02
-type: lesson
-status: seedling
-source: "session 2026-07-02 — Polaris integration"
-tags: [vinnstack, auth, architecture, design-decision, provider-pattern, implementation]
+ai_hash: 7a162c9a1b2460b9
+ai_model: google/gemini-2.5-flash
+ai_updated: '2026-07-31'
 aliases:
-  - Auth provider implementation checklist
-  - How to add a new auth provider to Vinnstack
+- Auth provider implementation checklist
+- How to add a new auth provider to Vinnstack
+created: 2026-07-02
+entities: []
+source: session 2026-07-02 — Polaris integration
+status: seedling
+tags:
+- vinnstack
+- auth
+- architecture
+- design-decision
+- provider-pattern
+- implementation
+title: 'Vinnstack auth providers: two patterns and the rule for adding one'
+type: lesson
 ---
 
 # Vinnstack auth providers: two patterns and the rule for adding one
@@ -30,3 +40,14 @@ Vinnstack's auth-provider layer (`lib/authProviders.ts`) grew from two ways a pr
 4. Add it to `REGISTRY` in `lib/authProviders.ts`. Nothing else to wire.
 
 Example — Polaris (ePost): the research doc *assumed* an ePost document mailbox needing OAuth tokens, so a first pass built a credential-entry provider. The actual `polaris-cli` source showed Polaris is a **CLI wiring cloud-hosted AI agents/skills into editors over an MCP tunnel**, authed by Google Cloud ADC — no token at all. Rebuilt as **status-only** (`kind: "agents"`, `statusOnly: true`) where "connected" = installed (binary on `~/.polaris/bin` or PATH); tunnel state (TCP probe on `POLARIS_MCP_LOCAL_PORT`, default 3003) and Google-ADC presence show as detail. Gating on "bootstrapped" was abandoned — [[polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]. **Lesson: verify a research doc's premise against the real source before implementing.**
+
+%% ai-graph-start %%
+
+**Related notes:**
+- [[Vinnstack Polaris integration is three passive touchpoints]]
+- [[Vinnstack provider abstraction enables pluggable auth without UIroute changes]]
+- [[Local-app provider sign-in drive the vendor CLI; Vertex is the exception (gcloud ADC + projectregion)]]
+- [[Wiring an external MCP-serving CLI into a Next.js app status-on-provider, actions-on-dedicated-route]]
+- [[polaris-cli never writes ~.polarisstate.json — no reliable bootstrapped signal]]
+
+%% ai-graph-end %%
